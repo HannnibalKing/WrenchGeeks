@@ -1,0 +1,126 @@
+{
+  "parts": [
+    {
+      "id": "gm_synchromesh_fm",
+      "category": "Fluids",
+      "name": "GM Synchromesh Friction Modified",
+      "description": "The 'Magic Fluid'. Originally for GM transmissions, but legendary in the Honda/Acura community for curing 3rd gear grinds and notchiness in manual transmissions.",
+      "specs": [
+        "Part Number: 12377916 (ACDelco 10-4014)",
+        "Semi-Synthetic",
+        "Contains friction modifiers for brass synchros"
+      ],
+      "compatibility": [
+        { "make": "Honda", "models": [{ "name": "Civic Si / Type R", "years": "All", "notes": "Fixes grinds" }, { "name": "S2000", "years": "All", "notes": "Smooths shifting" }] },
+        { "make": "Acura", "models": [{ "name": "Integra / RSX", "years": "All", "notes": "Fixes grinds" }] }
+      ],
+      "compatibility_smart": { "platforms": ["HONDA_CIVIC_GOLDEN", "HONDA_S2000", "ACURA_INTEGRA_DC2"] }
+    },
+    {
+      "id": "rotella_t6",
+      "category": "Fluids",
+      "name": "Shell Rotella T6 5W-40",
+      "description": "Technically a diesel oil, but widely used by Subaru WRX/STI and motorcycle owners. It has high shear stability and high zinc content (ZDDP) which protects turbo bearings and flat-tappet cams.",
+      "specs": [
+        "5W-40 Full Synthetic",
+        "High ZDDP (Zinc)",
+        "JASO MA/MA2 certified (Safe for wet clutches)"
+      ],
+      "compatibility": [
+        { "make": "Subaru", "models": [{ "name": "WRX / STI", "years": "2002-2021", "notes": "Community Favorite" }] }
+      ],
+      "compatibility_smart": { "platforms": ["SUBARU_IMPREZA_GD", "SUBARU_IMPREZA_GR_GV", "SUBARU_WRX_VA"] }
+    },
+    {
+      "id": "honda_bond_ht",
+      "category": "Maintenance",
+      "name": "HondaBond HT",
+      "description": "The best liquid gasket money can buy. High-temp silicone RTV used by Honda factory. Far superior to generic auto parts store RTV. Seals oil pans and valve covers permanently.",
+      "specs": [
+        "High Temperature",
+        "Oil Resistant",
+        "Grey color (OEM look)"
+      ],
+      "compatibility": [
+        { "make": "Universal", "models": [{ "name": "All Engines", "years": "All", "notes": "The leak stopper" }] }
+      ],
+      "compatibility_smart": { "platforms": [] }
+    },
+    {
+      "id": "paint_championship_white",
+      "category": "Paint Code",
+      "name": "Honda Championship White (NH-0)",
+      "description": "The iconic Type R color. A creamy off-white that dates back to Honda's first F1 win in 1965.",
+      "specs": [
+        "Code: NH-0",
+        "Type: Solid (No Metallic)",
+        "Usage: Type R models only (historically)"
+      ],
+      "compatibility": [
+        { "make": "Honda", "models": [{ "name": "Integra Type R", "years": "1997-2001", "notes": "OEM Color" }, { "name": "Civic Type R", "years": "1997-Present", "notes": "OEM Color" }] }
+      ],
+      "compatibility_smart": { "platforms": ["HONDA_CIVIC_GOLDEN", "ACURA_INTEGRA_DC2"] }
+    },
+    {
+      "id": "paint_world_rally_blue",
+      "category": "Paint Code",
+      "name": "Subaru World Rally Blue (02C)",
+      "description": "The definitive Subaru color. Originally 'WR Blue Mica', it defined the Colin McRae rally era.",
+      "specs": [
+        "Code: 02C (Classic) / K7X (Modern)",
+        "Type: Pearl / Mica",
+        "Pair with: Gold Wheels"
+      ],
+      "compatibility": [
+        { "make": "Subaru", "models": [{ "name": "Impreza WRX / STI", "years": "1993-Present", "notes": "The Rally Look" }] }
+      ],
+      "compatibility_smart": { "platforms": ["SUBARU_IMPREZA_GC", "SUBARU_IMPREZA_GD"] }
+    },
+    {
+      "id": "paint_midnight_purple",
+      "category": "Paint Code",
+      "name": "Nissan Midnight Purple (LP2/LV4/LX0)",
+      "description": "The legendary color-shifting purple found on Skyline GT-Rs. There are three versions (I, II, and III), with III being the most dramatic and expensive.",
+      "specs": [
+        "LP2: Midnight Purple I (Deep Purple)",
+        "LV4: Midnight Purple II (Blue/Green shift)",
+        "LX0: Midnight Purple III (Blue/Gold/Purple shift)"
+      ],
+      "compatibility": [
+        { "make": "Nissan", "models": [{ "name": "Skyline GT-R (R33/R34)", "years": "1995-2002", "notes": "Rare OEM Color" }] }
+      ],
+      "compatibility_smart": { "platforms": ["NISSAN_SKYLINE_R33", "NISSAN_SKYLINE_R34"] }
+    },
+    {
+      "id": "ford_mercon_v",
+      "category": "Fluids",
+      "name": "Ford Mercon V ATF",
+      "description": "Do NOT use generic 'Multi-Vehicle' ATF in older Fords. The 4R70W and 4R75W transmissions require Mercon V specifically to prevent torque converter shudder.",
+      "specs": [
+        "Semi-Synthetic",
+        "Anti-Shudder additives",
+        "Backwards compatible with Mercon"
+      ],
+      "compatibility": [
+        { "make": "Ford", "models": [{ "name": "F-150", "years": "1997-2008", "notes": "Mandatory Fluid" }, { "name": "Crown Victoria", "years": "1992-2011", "notes": "Mandatory Fluid" }, { "name": "Mustang", "years": "1996-2010", "notes": "Mandatory Fluid" }] }
+      ],
+      "compatibility_smart": { "platforms": ["FORD_F_SERIES_GEN_10", "FORD_PANTHER", "FORD_SN95"] }
+    },
+    {
+      "id": "tipm_bypass_cable",
+      "category": "Electrical",
+      "name": "TIPM Fuel Pump Bypass Cable",
+      "description": "The 'TIPM Saver'. On 2007-2014 Chrysler/Dodge/Jeep vehicles, the fuel pump relay is soldered onto the circuit board (TIPM) and fails often. This cable bypasses the internal relay using a fuse slot, saving you $1000 on a new TIPM.",
+      "specs": [
+        "Connects M7/M25 fuse slots",
+        "Simple plug-and-play fix",
+        "Restores fuel pump power"
+      ],
+      "compatibility": [
+        { "make": "Dodge", "models": [{ "name": "Ram 1500/2500", "years": "2007-2012", "notes": "Common Failure" }, { "name": "Grand Caravan", "years": "2008-2016", "notes": "Common Failure" }] },
+        { "make": "Jeep", "models": [{ "name": "Grand Cherokee (WK2)", "years": "2011-2013", "notes": "Common Failure" }, { "name": "Wrangler (JK)", "years": "2007-2016", "notes": "Common Failure" }] }
+      ],
+      "compatibility_smart": { "platforms": ["JEEP_WRANGLER_JK", "DODGE_RAM_3RD_GEN", "DODGE_RAM_4TH_GEN"] }
+    }
+  ]
+}
