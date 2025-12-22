@@ -144,7 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataFiles = [
         'data/relationships.json',
         'data/tips.json',
-        'data/3d_printing.json',
         'data/fuel_system.json',
         'data/electrical_sensors.json',
         'data/suspension_steering.json',
@@ -157,7 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let relationships = { engines: {}, platforms: {} };
-    let printingData = {};
 
     Promise.all(dataFiles.map(file => fetch(`${file}?v=${new Date().getTime()}`).then(resp => {
             if (!resp.ok) throw new Error(`Failed to load ${file}: ${resp.status}`);
@@ -170,12 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 compatibilityEngine = new CompatibilityEngine(relationships);
             }
             
-            // Find 3D printing data (it's an object with keys like MAZDA_NA_NB, not an array of parts)
-            const printingDataFile = allData.find(d => d.MAZDA_NA_NB || d.BMW_E30);
-            if (printingDataFile) {
-                printingData = printingDataFile;
-            }
-
             partsData = allData.filter(d => d.parts).flatMap(d => d.parts);
             tipsData = allData.filter(d => d.tips).flatMap(d => d.tips);
 
@@ -188,21 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (relationships.engines) {
                 Object.values(relationships.engines).flat().forEach(v => {
                     addToIndex(v.make, [v], null);
-                });
-            }
-
-            // Populate index from 3D Printing Data
-            if (printingData) {
-                Object.keys(printingData).forEach(key => {
-                    // Try to find which platform this key corresponds to in relationships
-                    // This is tricky because keys like "MAZDA_NA_NB" might not match exactly if not defined in relationships
-                    // But let's try to map them if possible, or just rely on the fact that they should be in relationships.
-                    // Actually, let's just ensure the vehicles for these keys are in the index.
-                    
-                    // If the key exists in relationships.platforms, add those vehicles
-                    if (relationships.platforms && relationships.platforms[key]) {
-                         relationships.platforms[key].forEach(v => addToIndex(v.make, [v], null));
-                    }
                 });
             }
 
@@ -315,11 +292,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Check for parts
         if (vehicleIndex[make][model] && vehicleIndex[make][model].length > 0) return true;
         
-        // Check for 3D prints
-        if (compatibilityEngine) {
-            const attrs = compatibilityEngine.getVehicleAttributes(make, model);
-            if (attrs.platformId && printingData[attrs.platformId]) return true;
-        }
         return false;
     }
 
@@ -436,7 +408,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             displayTips(make, model);
-            display3DPrints(vehicleAttrs.platformId);
 
             let filteredParts = parts;
 
@@ -527,38 +498,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>${tip.content}</p>
                 `;
                 tipsList.appendChild(div);
-            });
-        }
-    }
-
-    function display3DPrints(platformId) {
-        const printingList = document.getElementById('printingList');
-        if (!printingList) return;
-        
-        printingList.innerHTML = '';
-        printingList.classList.add('hidden');
-
-        if (!platformId || !printingData[platformId]) return;
-
-        const prints = printingData[platformId];
-        if (prints && prints.length > 0) {
-            printingList.classList.remove('hidden');
-            // Add header
-            const header = document.createElement('h4');
-            header.textContent = '🖨️ 3D Printable Parts';
-            header.style.gridColumn = '1 / -1';
-            header.style.marginBottom = '0.5rem';
-            printingList.appendChild(header);
-
-            prints.forEach(print => {
-                const div = document.createElement('div');
-                div.className = 'print-card';
-                div.innerHTML = `
-                    <h4>${print.name}</h4>
-                    <p>${print.description}</p>
-                    <a href="https://www.yeggi.com/q/${encodeURIComponent(print.search_term)}/" target="_blank" class="print-btn">Search Files ↗</a>
-                `;
-                printingList.appendChild(div);
             });
         }
     }
