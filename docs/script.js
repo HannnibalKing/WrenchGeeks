@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function populateMakes() {
-        // Filter makes to only those that have models with parts or 3D prints
+        // Filter makes to only those that have models with parts
         const makes = Object.keys(vehicleIndex).filter(make => {
             return Object.keys(vehicleIndex[make]).some(model => hasContent(make, model));
         }).sort();
@@ -296,7 +296,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const subsystemOptions = [
-        '3D Printing',
         'Body Exterior',
         'Body Interior',
         'Brakes',
