@@ -1,0 +1,74 @@
+[
+  {
+    "partName": "GM 'Squarebody' Front Clip Swap",
+    "compatibleVehicles": [
+      "Chevrolet C/K Truck (1973-1980)",
+      "Chevrolet C/K Truck (1981-1987)",
+      "Chevrolet Suburban / Blazer (1973-1991)"
+    ],
+    "years": "1973-1991",
+    "notes": "You can swap the entire front clip (fenders, hood, core support, grille) between the 73-80 'Round Eye' and 81-87 'Stacked Headlight' eras. The cab lines match perfectly. Allows you to update an older truck or backdate a newer one.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "S10 Frame Swap (for 40s/50s Trucks)",
+    "compatibleVehicles": [
+      "Chevrolet Advance Design Trucks (1947-1955)",
+      "Ford F-1 (1948-1952)",
+      "Chevrolet S10 / GMC Sonoma (1982-2004)"
+    ],
+    "years": "1947-2004",
+    "notes": "The Chevy S10 (especially the long bed standard cab) frame is nearly the perfect wheelbase for 1947-1955 Chevy trucks and some 40s/50s Fords. It provides modern suspension, disc brakes, and power steering for a classic body. Requires fabricating body mounts.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Ford F-Series Disc Brake Swap (Dentside to Bumpside)",
+    "compatibleVehicles": [
+      "Ford F-100 / F-150 (1973-1979 'Dentside')",
+      "Ford F-100 (1967-1972 'Bumpside')"
+    ],
+    "years": "1967-1979",
+    "notes": "The entire I-Beam front suspension with disc brakes from a 73-79 F-100/F-150 bolts directly into the older 67-72 trucks (which had drums). It's the easiest way to get power disc brakes on a classic Ford truck. Grab the proportioning valve and booster too.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "GM OBS (GMT400) Vortec Head Swap",
+    "compatibleVehicles": [
+      "Chevrolet C/K 1500/2500 (1988-1995 TBI)",
+      "Chevrolet C/K 1500/2500 (1996-1999 Vortec)"
+    ],
+    "years": "1988-1999",
+    "notes": "The 'Vortec' heads (062 or 906 casting) from 96-99 trucks flow significantly better than the older TBI heads. They bolt onto the older TBI blocks but require a specific Vortec-pattern intake manifold and self-aligning rocker arms. Massive torque gain.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Suburban Gas Tank Swap (Squarebody)",
+    "compatibleVehicles": [
+      "Chevrolet C/K Pickup (1973-1987)",
+      "Chevrolet Suburban (1973-1991)"
+    ],
+    "years": "1973-1991",
+    "notes": "Squarebody pickups have 'saddle' tanks outside the frame rails (dangerous in T-bone crashes). You can mount a 31 or 40-gallon Suburban fuel tank between the rear frame rails. Requires moving a crossmember and cutting a fuel filler door in the bed floor.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Toyota Pickup Solid Axle Swap (SAS)",
+    "compatibleVehicles": [
+      "Toyota Pickup / 4Runner (1986-1995 IFS)",
+      "Toyota Pickup / 4Runner (1979-1985 Solid Axle)"
+    ],
+    "years": "1979-1995",
+    "notes": "The solid front axle from a 79-85 Toyota is the holy grail for 86-95 IFS truck owners. It requires a 'SAS Kit' (hangers, shackles) to weld onto the IFS frame. The 85 axle is best because it has extra trussing, but any 79-85 axle works.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Ford 300 Inline-6 EFI Manifold Swap",
+    "compatibleVehicles": [
+      "Ford F-Series 4.9L / 300 I6 (1965-1986 Carb)",
+      "Ford F-Series 4.9L / 300 I6 (1987-1996 EFI)"
+    ],
+    "years": "1965-1996",
+    "notes": "The EFI exhaust manifolds from an 87-96 4.9L flow much better than the restrictive log manifold on older carbureted engines. They are essentially a factory split-header design. Requires fabricating a Y-pipe to connect to the exhaust system.",
+    "matchLevel": "Match - Minor Mods"
+  }
+]
