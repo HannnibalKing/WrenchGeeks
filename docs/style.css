@@ -1,23 +1,27 @@
 :root {
-    /* Psychological "Car Lover" Theme */
-    /* Dark Asphalt / Carbon Background */
-    --background: #0f172a; 
-    /* Surface: Darker Grey (Workshop Floor) */
-    --surface: #1e293b;
-    /* Primary: "Redline" Red (Excitement, Speed, Tools) */
-    --primary: #ef4444;
-    --primary-dark: #dc2626;
-    /* Secondary: "Chrome" / Steel */
-    --secondary: #94a3b8;
-    /* Text: White / Off-White */
-    --text: #f8fafc;
-    --text-light: #cbd5e1;
-    /* Borders: Subtle Metallic */
-    --border: #334155;
+    /* Hospital / Surgical Theme */
+    /* Background: Sterile White / Very Light Teal */
+    --background: #f0fdfa; 
+    /* Surface: Clean White (Charts/Trays) */
+    --surface: #ffffff;
+    /* Primary: Surgical Scrub Teal */
+    --primary: #0d9488;
+    --primary-dark: #0f766e;
+    /* Secondary: Surgical Steel */
+    --secondary: #64748b;
+    /* Text: Dark Ink / Monitor Black */
+    --text: #0f172a;
+    --text-light: #475569;
+    /* Borders: Light Grey / Aluminum */
+    --border: #cbd5e1;
     
-    --success: #10b981;
-    --radius: 8px;
-    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    /* Accents */
+    --danger: #ef4444; /* Blood / Critical */
+    --warning: #f59e0b; /* Biohazard */
+    --success: #10b981; /* Stable Vitals */
+    
+    --radius: 4px; /* Sharper corners, more clinical */
+    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 * {
@@ -27,10 +31,12 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Clean, legible */
     background-color: var(--background);
     color: var(--text);
     line-height: 1.6;
+    background-image: radial-gradient(#ccfbf1 1px, transparent 1px);
+    background-size: 20px 20px; /* Subtle grid like graph paper */
 }
 
 .container {
@@ -41,20 +47,26 @@ body {
 
 header {
     background-color: var(--surface);
-    border-bottom: 2px solid var(--primary); /* Redline accent */
+    border-bottom: 4px solid var(--primary);
     padding: 2rem 0;
     margin-bottom: 2rem;
     text-align: center;
-    background-image: linear-gradient(45deg, #1e293b 25%, #243042 25%, #243042 50%, #1e293b 50%, #1e293b 75%, #243042 75%, #243042 100%);
-    background-size: 20px 20px; /* Carbon fiber-ish pattern */
+    box-shadow: var(--shadow);
+    background-image: none; /* Remove carbon fiber */
 }
 
 header h1 {
-    color: var(--primary);
+    color: var(--primary-dark);
     margin-bottom: 0.5rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 0px #000;
+    letter-spacing: 2px;
+    text-shadow: none;
+    font-weight: 800;
+}
+
+header p {
+    color: var(--secondary);
+    font-style: italic;
 }
 
 .card {
@@ -64,6 +76,7 @@ header h1 {
     box-shadow: var(--shadow);
     margin-bottom: 1.5rem;
     border: 1px solid var(--border);
+    border-top: 4px solid var(--secondary); /* Like a clipboard clip */
 }
 
 .highlight-border {
@@ -101,13 +114,13 @@ select {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     font-size: 1rem;
-    background-color: #0f172a; /* Darker input background */
+    background-color: #ffffff; /* Clean white input */
     color: var(--text);
 }
 
 select:disabled {
-    background-color: #1e293b;
-    color: #475569;
+    background-color: #f1f5f9;
+    color: #94a3b8;
     cursor: not-allowed;
     border-color: var(--border);
 }
@@ -123,12 +136,24 @@ select:disabled {
 }
 
 .part-item {
-    background: #243042; /* Slightly lighter than surface */
+    background: #ffffff;
     border: 1px solid var(--border);
     padding: 1rem;
     border-radius: var(--radius);
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.part-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--secondary); /* Default status bar */
 }
 
 .part-item:hover {
@@ -138,12 +163,13 @@ select:disabled {
 }
 
 .part-item h4 {
-    color: var(--text);
+    color: var(--primary-dark);
     margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 .part-item p {
-    color: var(--secondary);
+    color: var(--text-light);
     font-size: 0.9rem;
 }
 
@@ -157,11 +183,13 @@ select:disabled {
     margin-bottom: 1rem;
     font-size: 0.9rem;
     transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn-secondary:hover {
     background: var(--secondary);
-    color: var(--background);
+    color: white;
 }
 
 .btn-primary {
@@ -177,10 +205,14 @@ select:disabled {
     text-decoration: none;
     display: inline-block;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .btn-primary:hover {
     background-color: var(--primary-dark);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .btn-primary:disabled {
@@ -274,12 +306,12 @@ li {
 
 .address {
     display: block;
-    background: #0f172a; /* Dark background for code */
+    background: #f1f5f9; /* Light background for code */
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-family: monospace;
     word-break: break-all;
-    color: var(--primary); /* Red accent for address */
+    color: var(--primary-dark); /* Teal accent for address */
     user-select: all; 
     border: 1px solid var(--border);
 }
@@ -301,11 +333,11 @@ li {
     box-shadow: var(--shadow);
 }
 
-.tip-critical { border-left-color: #ef4444; background-color: #450a0a; } /* Dark Red bg */
-.tip-high { border-left-color: #f97316; background-color: #431407; } /* Dark Orange bg */
-.tip-medium { border-left-color: #eab308; background-color: #422006; } /* Dark Yellow bg */
-.tip-low { border-left-color: #3b82f6; background-color: #172554; } /* Dark Blue bg */
-.tip-info { border-left-color: #64748b; background-color: #1e293b; }
+.tip-critical { border-left-color: #ef4444; background-color: #fef2f2; } /* Light Red bg */
+.tip-high { border-left-color: #f97316; background-color: #fff7ed; } /* Light Orange bg */
+.tip-medium { border-left-color: #eab308; background-color: #fefce8; } /* Light Yellow bg */
+.tip-low { border-left-color: #3b82f6; background-color: #eff6ff; } /* Light Blue bg */
+.tip-info { border-left-color: #64748b; background-color: #f8fafc; }
 
 .tip-card h4 { margin-bottom: 0.5rem; color: var(--text); }
 .tip-card small { display: block; margin-top: 0.5rem; color: var(--secondary); }
@@ -313,11 +345,12 @@ li {
 
 /* Compatibility Score Styles */
 .score-container {
-    background: #0f172a; /* Darker background */
+    background: #ffffff; /* Clean white */
     border-radius: var(--radius);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border: 1px solid var(--border);
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); /* Inset shadow like a tray */
 }
 
 .score-header {
@@ -341,7 +374,7 @@ li {
 }
 
 .score-breakdown li {
-    background: var(--surface);
+    background: #f8fafc;
     padding: 0.5rem;
     border-radius: 4px;
     border: 1px solid var(--border);

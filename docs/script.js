@@ -113,10 +113,10 @@ class CompatibilityEngine {
     }
     
     getRiskLevel(score) {
-        if (score >= 90) return { level: "OEM Bolt-On", cssClass: "risk-green" };
-        if (score >= 75) return { level: "OEM+ Upgrade", cssClass: "risk-blue" };
-        if (score >= 50) return { level: "Fabrication Required", cssClass: "risk-yellow" };
-        return { level: "Expert Only", cssClass: "risk-red" };
+        if (score >= 90) return { level: "Direct Transplant (Low Risk)", cssClass: "risk-green" };
+        if (score >= 75) return { level: "Compatible Donor (Moderate Risk)", cssClass: "risk-blue" };
+        if (score >= 50) return { level: "Invasive Surgery (High Risk)", cssClass: "risk-yellow" };
+        return { level: "Experimental (Critical Risk)", cssClass: "risk-red" };
     }
 }
 
@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedVehicleName = document.getElementById('selectedVehicleName');
     const makeLoadStatus = document.getElementById('makeLoadStatus');
     const subsystemSelect = document.getElementById('subsystemSelect');
+    const yearSelect = document.getElementById('yearSelect');
     const searchButton = document.getElementById('searchButton');
 
     const dataFiles = [
@@ -283,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (makeLoadStatus) {
-            makeLoadStatus.textContent = makes.length > 0 ? `Loaded ${makes.length} makes` : 'No makes loaded';
+            makeLoadStatus.textContent = makes.length > 0 ? `Registry Online: ${makes.length} Manufacturers Loaded` : 'Registry Offline: No Manufacturers Found';
         }
         if (subsystemSelect) subsystemSelect.disabled = false;
     }
@@ -326,6 +327,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedMake = makeSelect.value;
         modelSelect.innerHTML = '<option value="">-- Select Model --</option>';
         modelSelect.disabled = true;
+        yearSelect.innerHTML = '<option value="">-- Select Year --</option>';
+        yearSelect.disabled = true;
         if (subsystemSelect) subsystemSelect.disabled = true;
         if (searchButton) searchButton.disabled = true;
         resultsSection.classList.add('hidden');
@@ -351,15 +354,102 @@ document.addEventListener('DOMContentLoaded', () => {
         const make = makeSelect.value;
         const model = modelSelect.value;
         
+        yearSelect.innerHTML = '<option value="">-- Select Year --</option>';
+        yearSelect.disabled = true;
+        if (searchButton) searchButton.disabled = true;
+
         if (make && model) {
+            populateYears(make, model);
+        } else {
+            resultsSection.classList.add('hidden');
+        }
+    });
+
+    yearSelect.addEventListener('change', () => {
+        const make = makeSelect.value;
+        const model = modelSelect.value;
+        const year = yearSelect.value;
+
+        if (make && model && year) {
             if (subsystemSelect) subsystemSelect.disabled = false;
             if (searchButton) searchButton.disabled = false;
         } else {
             if (subsystemSelect) subsystemSelect.disabled = true;
             if (searchButton) searchButton.disabled = true;
-            resultsSection.classList.add('hidden');
         }
     });
+
+    function populateYears(make, model) {
+        // Find the vehicle definition to get the year range
+        let yearRange = null;
+        
+        // Check platforms
+        if (relationships.platforms) {
+            for (const vehicles of Object.values(relationships.platforms)) {
+                const match = vehicles.find(v => v.make === make && (v.model === model || v.name === model));
+                if (match && match.years) {
+                    yearRange = match.years;
+                    break;
+                }
+            }
+        }
+        // Check engines if not found
+        if (!yearRange && relationships.engines) {
+            for (const vehicles of Object.values(relationships.engines)) {
+                const match = vehicles.find(v => v.make === make && (v.model === model || v.name === model));
+                if (match && match.years) {
+                    yearRange = match.years;
+                    break;
+                }
+            }
+        }
+
+        if (yearRange) {
+            const years = parseYearRange(yearRange);
+            years.sort((a, b) => b - a); // Descending
+            years.forEach(y => {
+                const option = document.createElement('option');
+                option.value = y;
+                option.textContent = y;
+                yearSelect.appendChild(option);
+            });
+            yearSelect.disabled = false;
+        } else {
+            // Fallback if no years found (shouldn't happen with good data)
+            const option = document.createElement('option');
+            option.value = "Unknown";
+            option.textContent = "Unknown Year";
+            yearSelect.appendChild(option);
+            yearSelect.disabled = false;
+        }
+    }
+
+    function parseYearRange(rangeStr) {
+        const years = [];
+        const parts = rangeStr.split('–'); // En dash
+        if (parts.length === 2) {
+            const start = parseInt(parts[0]);
+            let end = parts[1].toLowerCase() === 'present' ? new Date().getFullYear() : parseInt(parts[1]);
+            if (isNaN(end)) end = start; // Handle single year or bad format
+            
+            for (let i = start; i <= end; i++) {
+                years.push(i);
+            }
+        } else if (parts.length === 1) {
+             // Try hyphen if en dash failed
+             const parts2 = rangeStr.split('-');
+             if (parts2.length === 2) {
+                const start = parseInt(parts2[0]);
+                let end = parts2[1].toLowerCase() === 'present' ? new Date().getFullYear() : parseInt(parts2[1]);
+                for (let i = start; i <= end; i++) {
+                    years.push(i);
+                }
+             } else {
+                 years.push(parseInt(rangeStr));
+             }
+        }
+        return years;
+    }
 
     if (subsystemSelect) {
         subsystemSelect.addEventListener('change', () => {
@@ -371,32 +461,33 @@ document.addEventListener('DOMContentLoaded', () => {
         searchButton.addEventListener('click', () => {
             const make = makeSelect.value;
             const model = modelSelect.value;
-            console.log('Search clicked for:', make, model);
+            const year = yearSelect.value;
+            console.log('Search clicked for:', make, model, year);
             if (make && model) {
-                showPartsForVehicle(make, model);
+                showPartsForVehicle(make, model, year);
             } else {
                 console.warn('Search clicked but make/model missing');
             }
         });
     }
 
-    function showPartsForVehicle(make, model) {
+    function showPartsForVehicle(make, model, year) {
         try {
-            console.log('Showing parts for:', make, model);
+            console.log('Showing parts for:', make, model, year);
             
             // Ensure results section is visible immediately to show we are trying
             resultsSection.classList.remove('hidden');
-            partsList.innerHTML = '<p>Searching database...</p>';
+            partsList.innerHTML = '<p>Scanning donor network...</p>';
 
             const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
             console.log('Parts found in index:', parts ? parts.length : 0);
             
             if (!parts) {
-                partsList.innerHTML = '<p>No parts found for this specific model in the index.</p>';
+                partsList.innerHTML = '<p>No compatible organs found in the registry.</p>';
                 return;
             }
 
-            selectedVehicleName.textContent = `${make} ${model}`;
+            selectedVehicleName.textContent = `${make} ${model} ${year && year !== 'Unknown' ? `(${year})` : ''}`;
             partsList.innerHTML = '';
             
             const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
@@ -410,13 +501,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let filteredParts = parts;
 
+            // Filter by Year if provided
+            if (year && year !== "Unknown") {
+                const selectedYear = parseInt(year);
+                filteredParts = filteredParts.filter(part => {
+                    // Check for explicit compatibility restrictions
+                    if (part.compatibility) {
+                        const makeEntry = part.compatibility.find(c => c.make === make);
+                        if (makeEntry) {
+                            // Find model entry that matches the selected model name
+                            const modelEntry = makeEntry.models.find(m => m.name === model || model.includes(m.name) || m.name.includes(model));
+                            
+                            if (modelEntry && modelEntry.years) {
+                                const allowedYears = parseYearRange(modelEntry.years);
+                                if (!allowedYears.includes(selectedYear)) {
+                                    return false; // Explicitly restricted to other years
+                                }
+                            }
+                        }
+                    }
+                    return true; // No explicit restriction found, or matches
+                });
+            }
+
             if (activeSubsystem) {
             console.log('Filtering by subsystem:', activeSubsystem);
             // Normalize for looser matching (e.g. "Suspension/Steering" vs "Suspension & Steering")
             const normalize = s => s.toLowerCase().replace(/[^a-z0-9]/g, '');
             const search = normalize(activeSubsystem);
 
-            filteredParts = parts.filter(part => {
+            filteredParts = filteredParts.filter(part => {
                 const cat = normalize(part.category || '');
                 // Check if one contains the other
                 return cat.includes(search) || search.includes(cat);
@@ -455,13 +569,13 @@ document.addEventListener('DOMContentLoaded', () => {
             selectorSection.classList.remove('hidden');
         } else {
             console.log('No parts found, showing empty message');
-            partsList.innerHTML = '<p>No compatible parts found in database matching your criteria.</p>';
+            partsList.innerHTML = '<p>No matches found in donor registry.</p>';
             resultsSection.classList.remove('hidden');
         }
         } catch (e) {
             console.error("CRITICAL ERROR in showPartsForVehicle:", e);
             partsList.innerHTML = `<div class="card" style="border-left: 4px solid red;">
-                <h3>⚠️ Application Error</h3>
+                <h3>⚠️ System Failure</h3>
                 <p>Something went wrong while displaying parts.</p>
                 <p>Error: ${e.message}</p>
             </div>`;

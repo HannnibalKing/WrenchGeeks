@@ -3,90 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WrenchGeeks - The Open Source Car Part Database</title>
+    <title>The O.R. - Auto Transplant Center</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>WrenchGeeks 🔧🤓</h1>
-            <p>The ultimate open-source car part database. Don't overpay—find a donor.</p>
+            <h1>The O.R. 🏥</h1>
+            <p>Auto Transplant Center. Find compatible organ donors for your vehicle.</p>
         </div>
     </header>
 
     <main class="container">
         <section id="selector" class="card">
-            <h2>Select Your Vehicle</h2>
-            <p id="makeLoadStatus" class="hint" style="margin-bottom:0.75rem;">Loading makes…</p>
+            <h2>📋 Patient Intake Form</h2>
+            <p id="makeLoadStatus" class="hint" style="margin-bottom:0.75rem;">Loading patient records…</p>
 
             <div class="controls">
                 <div class="form-group">
-                    <label for="makeSelect">Make</label>
+                    <label for="makeSelect">Patient Make</label>
                     <select id="makeSelect">
                         <option value="">-- Select Make --</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="modelSelect">Model</label>
+                    <label for="modelSelect">Patient Model</label>
                     <select id="modelSelect" disabled>
                         <option value="">-- Select Model --</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="subsystemSelect">Subsystem</label>
+                    <label for="yearSelect">Patient Year</label>
+                    <select id="yearSelect" disabled>
+                        <option value="">-- Select Year --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subsystemSelect">Organ System</label>
                     <select id="subsystemSelect" disabled>
-                        <option value="">All subsystems</option>
+                        <option value="">All Systems</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label>&nbsp;</label>
-                    <button id="searchButton" class="btn-primary" disabled>Find Parts 🔎</button>
+                    <button id="searchButton" class="btn-primary" disabled>Begin Triage 🩺</button>
                 </div>
             </div>
             
         </section>
 
         <section id="results" class="hidden">
-            <h3>Available Parts for <span id="selectedVehicleName"></span></h3>
+            <h3>Compatible Organs for <span id="selectedVehicleName"></span></h3>
             <div id="tipsList" class="tips-container hidden"></div>
             <div id="partsList" class="grid-list"></div>
             <div id="donorList" class="card hidden" style="margin-top: 1rem;">
-                <h4>🔄 Donor Vehicles (Same Platform / Engine)</h4>
-                <p class="hint">Use these as donor sources for compatible suspension, brakes, wiring, or drivetrain components.</p>
+                <h4>🧬 Genetic Matches (Platform / Engine Donors)</h4>
+                <p class="hint">These vehicles share DNA (Platform/Engine) and are prime candidates for transplants.</p>
                 <ul id="donorVehicles"></ul>
             </div>
         </section>
 
         <section id="partDetails" class="hidden">
-            <button id="backButton" class="btn-secondary">← Back to Parts</button>
+            <button id="backButton" class="btn-secondary">← Back to Triage</button>
             
             <div class="part-header">
-                <h2 id="partName">Part Name</h2>
-                <span id="partCategory" class="badge">Category</span>
+                <h2 id="partName">Organ Name</h2>
+                <span id="partCategory" class="badge">System</span>
             </div>
             <p id="partDescription">Description goes here.</p>
+
+            <div id="proTipSection" class="card highlight-gold hidden" style="margin-bottom: 1.5rem; border-left: 4px solid #f59e0b;">
+                <h4>👨‍⚕️ Surgeon's Notes & Lore</h4>
+                <div id="proTipContent"></div>
+            </div>
             
             <div class="details-grid">
                 <div class="card highlight-border">
-                    <h4>✅ Specs to Match</h4>
+                    <h4>✅ Vital Signs (Specs)</h4>
                     <ul id="partSpecs"></ul>
                 </div>
                 
                 <div class="card">
-                    <h4>🔄 Compatible Vehicles (Donors/Recipients)</h4>
-                    <p class="hint">These cars use the same part or a compatible swap.</p>
+                    <h4>🏥 Verified Donors / Recipients</h4>
+                    <p class="hint">These patients are confirmed matches for this organ.</p>
                     <div id="compatibleVehicles"></div>
                 </div>
 
                 <div class="card">
-                    <h4>📦 Universal / Aftermarket Options</h4>
+                    <h4>🦾 Prosthetics / Aftermarket</h4>
                     <ul id="universalParts"></ul>
                 </div>
             </div>
         </section>
 
         <section id="donate" class="card highlight-gold">
-            <h3>🔧 Fueling the Ultimate Open-Source Database</h3>
+            <h3>💉 Support the Transplant Network</h3>
             <p>If we saved you money on parts, help us replace the 10mm sockets we keep losing.</p>
             <div class="donation-actions" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1.5rem;">
                 <a href="https://cwallet.com/t/GVBV3SPY" target="_blank" class="btn-primary" style="text-decoration: none; background: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: bold; display: inline-block;">
