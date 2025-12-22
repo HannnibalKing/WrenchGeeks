@@ -1,0 +1,72 @@
+[
+  {
+    "partName": "BMW Steering Rack Upgrade (Purple Tag)",
+    "compatibleVehicles": [
+      "BMW 3-Series E46 (1999-2006)",
+      "BMW 3-Series E36 (1992-1999)",
+      "BMW Z3"
+    ],
+    "years": "1992-2006",
+    "notes": "The E46 'Purple Tag' rack (ID ending in 067) is a legendary upgrade for E30 and E36 BMWs. It has a faster ratio (3.0 turns lock-to-lock). Requires E36 tie rods when installing on an E30 or E36. Direct bolt-on for E36, requires spacers for E30.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Nissan S-Chassis Suspension Mix",
+    "compatibleVehicles": [
+      "Nissan 240SX / Silvia (S13)",
+      "Nissan 240SX / Silvia (S14)",
+      "Nissan Silvia (S15)",
+      "Nissan Skyline (R32/R33/R34 RWD)",
+      "Nissan 300ZX (Z32)"
+    ],
+    "years": "1989-2002",
+    "notes": "The 'Lego' cars. S14/S15 rear subframes bolt into S13s (wider track, better geometry) with offset bushings. Z32 rear uprights (aluminum) are a lightweight upgrade for S-chassis. Z32 brakes (4-piston front, 2-piston rear) are the standard upgrade for all S-chassis (requires drilling rotors to 4-lug or swapping to 5-lug hubs).",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Honda K-Series Oil Pump Swap",
+    "compatibleVehicles": [
+      "Acura RSX Type-S (K20A2/Z1)",
+      "Honda Civic Si (K20Z3)",
+      "Acura TSX (K24A2)"
+    ],
+    "years": "2002-2011",
+    "notes": "The K20A2 (RSX-S) oil pump is the gold standard for high-revving K-series builds. It lacks the balance shafts found in the K24 (TSX) and K20Z3 (Civic Si) pumps, reducing drag and preventing cavitation above 8000 RPM. Requires modifying the K24 windage tray and plugging an oil port.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Toyota JZ / Supra Brakes",
+    "compatibleVehicles": [
+      "Toyota Supra Mk4 (JZA80)",
+      "Lexus SC300/SC400 (Z30)",
+      "Lexus GS300/GS400 (S160)",
+      "Toyota Soarer / Aristo"
+    ],
+    "years": "1993-2005",
+    "notes": "Supra Turbo (Mk4) 4-piston front brakes bolt directly onto the Lexus SC300/400 and GS300/400. Massive stopping power upgrade. Requires 17\"+ wheels to clear the calipers. The 'LS400 Brake Swap' is a cheaper alternative using Lexus LS400 4-piston calipers (aluminum, very light) but requires RCA spacers to clear suspension arms on some models.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Subaru 4/2 Pot Brake Upgrade",
+    "compatibleVehicles": [
+      "Subaru WRX (2006-2007)",
+      "Subaru Impreza GC8 (JDM)",
+      "Subaru Forester XT",
+      "Subaru Legacy GT"
+    ],
+    "years": "1993-2014",
+    "notes": "The red 4-piston front / 2-piston rear calipers from the 06-07 WRX (and older JDM STis) bolt onto almost any Subaru from 1993-2014. They fit under many 16\" wheels (unlike Brembos). A fantastic upgrade for N/A Imprezas, Foresters, and Legacys. Rear swap may require backing plate adapters depending on the model.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Mercedes 190E / W124 Brake Upgrade",
+    "compatibleVehicles": [
+      "Mercedes 190E (W201)",
+      "Mercedes E-Class (W124)",
+      "Mercedes SL (R129)"
+    ],
+    "years": "1984-1995",
+    "notes": "4-piston calipers from the W124 400E/500E or R129 SL models bolt onto the smaller W201 190E. Massive stopping power. Requires the matching larger rotors and usually 16\"+ wheels (Evo I/II wheels or similar).",
+    "matchLevel": "Match - Direct Fit"
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "partName": "Global Platform: Ford C1 (Volvo/Mazda/Ford)",
+    "compatibleVehicles": [
+      "Volvo S40/V50 (2004-2012)",
+      "Volvo C30 (2006-2013)",
+      "Mazda 3 (BK/BL 2004-2013)",
+      "Ford Focus Mk2 (Euro Spec)",
+      "Ford Focus (US 2012+)"
+    ],
+    "years": "2004-2013",
+    "notes": "The 'C1' platform is a goldmine. Volvo 300mm/320mm brakes bolt onto Mazda 3s and Focuses for a massive upgrade. Control arms are often interchangeable but check ball joint sizes (18mm vs 21mm). Rear sway bars interchange between Mazdaspeed3 and Volvo V50 AWD.",
+    "matchLevel": "Match - Possible Mods"
+  },
+  {
+    "partName": "Global Platform: GM Epsilon II (Buick/Opel/Saab)",
+    "compatibleVehicles": [
+      "Buick Regal (2011-2017)",
+      "Opel Insignia A (2008-2017)",
+      "Saab 9-5 (NG 2010-2012)",
+      "Chevrolet Malibu (2013-2015)"
+    ],
+    "years": "2008-2017",
+    "notes": "The US Buick Regal IS an Opel Insignia. Body panels, suspension, and interior bits often swap. The Saab 9-5 NG uses the long-wheelbase version of this platform. Brembo brakes from the Regal GS/Insignia OPC bolt onto standard Malibus with 19\"+ wheels.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Global Platform: Mitsubishi GS (Dodge/Jeep/Mitsu)",
+    "compatibleVehicles": [
+      "Mitsubishi Lancer (2008-2017)",
+      "Mitsubishi Outlander (2007-2013)",
+      "Dodge Caliber (2007-2012)",
+      "Jeep Compass/Patriot (2007-2017)",
+      "Chrysler Sebring/200 (2007-2014)"
+    ],
+    "years": "2007-2017",
+    "notes": "The 'World Engine' accessories (alternators, AC compressors) often swap between Chrysler 2.4L and Mitsubishi 4B11/4B12. Suspension arms are highly interchangeable. Lancer Evolution X suspension parts can sometimes be fitted to Outlanders for lowering.",
+    "matchLevel": "Match - Possible Mods"
+  },
+  {
+    "partName": "Global Platform: Ford CD4 (Fusion/Mondeo)",
+    "compatibleVehicles": [
+      "Ford Fusion (US 2013-2020)",
+      "Ford Mondeo Mk5 (Euro 2014-2022)",
+      "Lincoln MKZ (2013-2020)",
+      "Ford Edge (2015+)"
+    ],
+    "years": "2013-2020",
+    "notes": "US Fusion and Euro Mondeo are twins. Headlights (with coding), suspension, and interior trim swap. The Lincoln MKZ offers aluminum suspension components that are a direct lightweight upgrade for the Fusion/Mondeo.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Global Platform: Fiat Compact Wide (Dodge/Alfa)",
+    "compatibleVehicles": [
+      "Dodge Dart (2013-2016)",
+      "Alfa Romeo Giulietta (2010-2020)",
+      "Jeep Cherokee KL (2014+)",
+      "Chrysler 200 (2015-2017)"
+    ],
+    "years": "2010-2020",
+    "notes": "The Dodge Dart is basically a widened Alfa Giulietta. Brake components and some suspension architecture are shared. The Jeep Cherokee KL uses a lifted version; 3.2L Pentastar parts are unique, but 2.4L Tigershark engine parts are shared with the Dart.",
+    "matchLevel": "Match - Possible Mods"
+  },
+  {
+    "partName": "Global Platform: GM Gamma II (Sonic/Spark/Trax)",
+    "compatibleVehicles": [
+      "Chevrolet Sonic / Aveo (2012-2020)",
+      "Chevrolet Trax (2013+)",
+      "Buick Encore (2013+)",
+      "Opel Mokka"
+    ],
+    "years": "2012-2020",
+    "notes": "Buick Encore and Opel Mokka are identical. Chevy Sonic RS brakes (4-lug disc) are a popular upgrade for lower trim Sonics and older Aveos with modification. 1.4L Turbo Ecotec engine parts are universal across this platform.",
+    "matchLevel": "Match - Direct Fit"
+  }
+]
