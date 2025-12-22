@@ -238,6 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    let activeBuildFilter = null; // Global filter for Quick Builds
+
     makeSelect.addEventListener('change', () => {
         const selectedMake = makeSelect.value;
         modelSelect.innerHTML = '<option value="">-- Select Model --</option>';
@@ -246,7 +248,17 @@ document.addEventListener('DOMContentLoaded', () => {
         partDetailsSection.classList.add('hidden');
 
         if (selectedMake && vehicleIndex[selectedMake]) {
-            const models = Object.keys(vehicleIndex[selectedMake]).sort();
+            let models = Object.keys(vehicleIndex[selectedMake]).sort();
+            
+            // Apply Quick Build Filter if active
+            if (activeBuildFilter && activeBuildFilter.make === selectedMake) {
+                models = models.filter(model => {
+                    return activeBuildFilter.keywords.some(keyword => 
+                        model.toLowerCase().includes(keyword.toLowerCase())
+                    );
+                });
+            }
+
             models.forEach(model => {
                 const option = document.createElement('option');
                 option.value = model;
@@ -497,75 +509,68 @@ document.addEventListener('DOMContentLoaded', () => {
     if (quickBuildSelect) {
         quickBuildSelect.addEventListener('change', (e) => {
             const build = e.target.value;
-            if (!build) return;
+            
+            // Reset filter if empty selection
+            if (!build) {
+                activeBuildFilter = null;
+                makeSelect.value = "";
+                makeSelect.dispatchEvent(new Event('change'));
+                return;
+            }
 
             let targetMake = "";
-            let targetModel = "";
+            let filterKeywords = [];
 
             switch (build) {
                 case 'safari':
                     targetMake = "Porsche";
-                    targetModel = "911 (G-Series/964)";
+                    filterKeywords = ["G-Series", "964", "993", "SC", "Carrera"];
                     break;
                 case 'exocet':
-                    targetMake = "Exomotive";
-                    targetModel = "Exocet";
+                    targetMake = "Mazda"; // Exocet uses Miata donor
+                    filterKeywords = ["Miata (NA)", "Miata (NB)"];
                     break;
                 case 'goblin':
-                    targetMake = "DF Kit Car";
-                    targetModel = "Goblin";
+                    targetMake = "Chevrolet"; // Goblin uses Cobalt donor
+                    filterKeywords = ["Cobalt"];
                     break;
                 case 'barra':
                     targetMake = "Ford";
-                    targetModel = "Falcon XR6 Turbo";
+                    filterKeywords = ["Falcon", "Territory"];
                     break;
                 case 'kswap':
                     targetMake = "Honda";
-                    targetModel = "Civic Type R (EP3/FD2)";
+                    filterKeywords = ["Civic", "Integra", "RSX", "TSX"];
                     break;
                 case 'ls_swap':
                     targetMake = "Chevrolet";
-                    targetModel = "Silverado 1500 (GMT800 - 1st Gen)";
+                    filterKeywords = ["Silverado", "Corvette", "Camaro", "Tahoe"];
                     break;
                 case 'rally_lancia':
                     targetMake = "Lancia";
-                    targetModel = "Delta HF Integrale";
+                    filterKeywords = ["Delta"];
                     break;
                 case 'rally_ford':
                     targetMake = "Ford";
-                    targetModel = "Escort RS Cosworth";
+                    filterKeywords = ["Escort", "Sierra", "Focus RS"];
                     break;
                 case 'kei_sport':
-                    targetMake = "Autozam";
-                    targetModel = "AZ-1";
+                    targetMake = "Suzuki"; // Broaden to Suzuki for Cappuccino/Alto
+                    filterKeywords = ["Cappuccino", "Alto", "Jimny"];
                     break;
             }
 
-            if (targetMake && targetModel) {
-                // Simulate selection
+            if (targetMake) {
+                // Set Global Filter
+                activeBuildFilter = { make: targetMake, keywords: filterKeywords };
+
+                // Trigger Make Selection
                 makeSelect.value = targetMake;
                 makeSelect.dispatchEvent(new Event('change'));
                 
-                // Wait for models to populate
-                setTimeout(() => {
-                    // Find the option that matches loosely (contains the string)
-                    const options = Array.from(modelSelect.options);
-                    // Improved matching logic: check if option contains target OR target contains option
-                    // Also normalize strings to lowercase for better matching
-                    const match = options.find(opt => {
-                        if (!opt.value) return false;
-                        const optVal = opt.value.toLowerCase();
-                        const targetVal = targetModel.toLowerCase();
-                        return optVal.includes(targetVal) || targetVal.includes(optVal);
-                    });
-
-                    if (match) {
-                        modelSelect.value = match.value;
-                        modelSelect.dispatchEvent(new Event('change'));
-                    } else {
-                        console.warn(`Quick Build: Could not find model match for "${targetModel}" in ${targetMake}`);
-                    }
-                }, 100);
+                // Visual Feedback
+                modelSelect.focus();
+                // Optional: Open dropdown if possible (browser restrictions usually prevent this)
             }
         });
     }
