@@ -280,7 +280,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let activeBuildFilter = null; // Global filter for Quick Builds
 
-    makeSelect.addEventListener('change', () => {
+    makeSelect.addEventListener('change', (e) => {
+        // If user manually selects a make, clear any active filters/banners
+        if (e.isTrusted) {
+            activeBuildFilter = null;
+            if (quickBuildSelect) quickBuildSelect.value = "";
+            if (buildGuideBanner) buildGuideBanner.classList.add('hidden');
+        }
+
         const selectedMake = makeSelect.value;
         modelSelect.innerHTML = '<option value="">-- Select Model --</option>';
         modelSelect.disabled = true;
