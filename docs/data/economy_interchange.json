@@ -1,0 +1,72 @@
+[
+  {
+    "partName": "Nissan CVT Cooler Upgrade (The 'Transmission Saver')",
+    "compatibleVehicles": [
+      "Nissan Altima (2007-2018)",
+      "Nissan Sentra (2007-2019)",
+      "Nissan Rogue (2008-2020)",
+      "Nissan Juke"
+    ],
+    "years": "2007-2020",
+    "notes": "The Jatco CVTs in these cars die from heat. Adding an external transmission cooler (from a heavy-duty towing package or aftermarket Hayden/Mishimoto) can double the life of the transmission. You can often adapt the cooler from a Nissan Pathfinder or Rogue with the tow package.",
+    "matchLevel": "Critical Reliability"
+  },
+  {
+    "partName": "Mitsubishi Lancer / Outlander Sport Suspension",
+    "compatibleVehicles": [
+      "Mitsubishi Lancer (DE/ES/GTS 2008-2017)",
+      "Mitsubishi Outlander Sport / RVR (2011+)",
+      "Mitsubishi Outlander (2007-2013)"
+    ],
+    "years": "2008-2017",
+    "notes": "The base Lancer shares its 'GS Platform' with the Outlander Sport. Coilovers, control arms, and sway bars often interchange. You can lift a Lancer using Outlander springs or lower an Outlander using Lancer springs.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Nissan Leaf / Juke Suspension Swap",
+    "compatibleVehicles": [
+      "Nissan Leaf (ZE0/ZE1 2011+)",
+      "Nissan Juke (F15 2010-2019)",
+      "Nissan Sentra (B17)"
+    ],
+    "years": "2011-Present",
+    "notes": "The Nissan Leaf uses suspension components very similar to the Juke and Sentra. Leaf owners often use Juke coilovers to lower the car. The rear torsion beam design is shared across many Nissan compacts, allowing for sway bar swaps.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Nissan QR25DE Engine Parts (Altima/Sentra/Rogue)",
+    "compatibleVehicles": [
+      "Nissan Altima 2.5S",
+      "Nissan Sentra SE-R / Spec-V",
+      "Nissan Rogue",
+      "Nissan Frontier (2.5L)"
+    ],
+    "years": "2002-2018",
+    "notes": "The 2.5L QR25DE is Nissan's workhorse. Intake manifolds, headers, and throttle bodies often interchange between the Sentra Spec-V (performance) and the Altima/Rogue (commuter). The Sentra Spec-V intake manifold is a popular upgrade for Altimas.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Mitsubishi Galant / Eclipse Parts Bin",
+    "compatibleVehicles": [
+      "Mitsubishi Galant (1999-2003)",
+      "Mitsubishi Eclipse (2000-2005)",
+      "Dodge Stratus Coupe (2001-2005)",
+      "Chrysler Sebring Coupe (2001-2005)"
+    ],
+    "years": "1999-2005",
+    "notes": "The 8th Gen Galant and 3rd Gen Eclipse share the same chassis. Suspension, brakes, and the V6 (6G72) engine parts are interchangeable. The Dodge Stratus Coupe is actually a rebadged Mitsubishi Eclipse, so parts fit the Galant too.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Toyota Corolla / Matrix / Pontiac Vibe Brakes",
+    "compatibleVehicles": [
+      "Toyota Corolla (2003-2008)",
+      "Toyota Matrix (2003-2008)",
+      "Pontiac Vibe (2003-2008)",
+      "Toyota Celica GT (2000-2005)"
+    ],
+    "years": "2000-2008",
+    "notes": "The Corolla XRS / Matrix XRS / Vibe GT use 4-wheel disc brakes. These rear disc brakes can be swapped onto base model Corollas and Vibes (which have drums). Requires the entire rear hub/knuckle assembly and e-brake cables.",
+    "matchLevel": "Match - Major Mods"
+  }
+]
