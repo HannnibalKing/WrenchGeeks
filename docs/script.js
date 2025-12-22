@@ -730,7 +730,35 @@ document.addEventListener("DOMContentLoaded", () => {
                 const ul = document.createElement("ul");
                 group.models.forEach(m => {
                     const li = document.createElement("li");
-                    li.innerHTML = `<strong>${m.name || m.model}</strong> (${m.years}) <br><small>${m.notes}</small>`;
+                    
+                    // Try to find vehicle lore
+                    let lore = "";
+                    if (compatibilityEngine) {
+                        const normalize = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+                        const target = normalize(m.name || m.model);
+                        
+                        const findLore = (collection) => {
+                            if (!collection) return null;
+                            for (const vehicles of Object.values(collection)) {
+                                const match = vehicles.find(v => {
+                                    if (v.make !== group.make) return false;
+                                    const vName = normalize(v.model || v.name);
+                                    return vName === target || vName.includes(target) || target.includes(vName);
+                                });
+                                if (match && match.notes && match.notes !== "Platform Mate") return match.notes;
+                            }
+                            return null;
+                        };
+                        
+                        const platformLore = findLore(relationships.platforms);
+                        const engineLore = findLore(relationships.engines);
+                        if (platformLore) lore = platformLore;
+                        else if (engineLore) lore = engineLore;
+                    }
+
+                    const loreHtml = lore ? `<br><span style="color:var(--accent-color); font-size:0.85em;"><em>"${lore}"</em></span>` : "";
+
+                    li.innerHTML = `<strong>${m.name || m.model}</strong> (${m.years}) <br><small>${m.notes}</small>${loreHtml}`;
                     ul.appendChild(li);
                 });
                 div.appendChild(ul);
