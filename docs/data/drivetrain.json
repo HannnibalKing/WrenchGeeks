@@ -179,6 +179,79 @@
         { "name": "Febi Bilstein Kit", "notes": "Includes connector plug and filter" },
         { "name": "Meyle Platinum", "notes": "Improved circuit board design" }
       ]
+    },
+    {
+      "id": "dana_30_front_axle",
+      "category": "Drivetrain & Transmission",
+      "name": "Dana 30 Front Axle Parts",
+      "description": "The Dana 30 is the standard front axle for the AMC Eagle, Jeep XJ, YJ, TJ, and ZJ. While housing widths vary, internal parts like carriers, gears, and lockers are largely interchangeable.",
+      "specs": [
+        "Ring Gear: 7.12\"",
+        "Spline Count: 27 (usually)",
+        "Rotation: Standard or Reverse (High Pinion)"
+      ],
+      "compatibility": [
+        {
+          "make": "AMC",
+          "models": [
+            { "name": "Eagle", "years": "1980–1987", "notes": "Stock Axle (IFS center section uses D30 internals)" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Cherokee (XJ)", "years": "1984–2001", "notes": "High Pinion D30 (Desirable)" },
+            { "name": "Wrangler (YJ/TJ)", "years": "1987–2006", "notes": "D30 Front" },
+            { "name": "Grand Cherokee (ZJ)", "years": "1993–1998", "notes": "D30 Front" }
+          ]
+        },
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "240 / 740 / 940", "years": "1975–1998", "notes": "Dana 30 Rear Axle (Internals compatible)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["JEEP_XJ", "NICHE_BUILD_BATTLEWAGON"]
+      },
+      "universal_alternatives": [
+        { "name": "Spartan Locker", "notes": "Lunchbox locker for D30" },
+        { "name": "Chromoly Shafts", "notes": "Strength upgrade" }
+      ]
+    },
+    {
+      "id": "np242_transfer_case",
+      "category": "Drivetrain & Transmission",
+      "name": "New Process 242 Transfer Case",
+      "description": "Select-Trac transfer case offering 2WD, 4 Part-Time, 4 Full-Time, and 4 Low. A popular swap for AMC Eagles (replacing the NP119/129) to gain a true low range and 2WD option.",
+      "specs": [
+        "Modes: 2WD, 4PT, 4FT, N, 4LO",
+        "Chain Driven",
+        "Spline: 21 or 23 input (check donor)"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Cherokee (XJ)", "years": "1987–2001", "notes": "Common Donor (Select-Trac)" },
+            { "name": "Grand Cherokee (ZJ/WJ)", "years": "1993–2004", "notes": "Donor (Check input shaft length)" },
+            { "name": "Liberty (KJ)", "years": "2002–2007", "notes": "Donor" }
+          ]
+        },
+        {
+          "make": "AMC",
+          "models": [
+            { "name": "Eagle", "years": "1980–1987", "notes": "Upgrade (Requires swap)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["JEEP_XJ", "NICHE_BUILD_BATTLEWAGON"]
+      },
+      "universal_alternatives": [
+        { "name": "Slip Yoke Eliminator (SYE)", "notes": "Recommended for lifted vehicles" }
+      ]
     }
   ]
 }

@@ -438,6 +438,71 @@
         { "name": "C6 Z06 Calipers", "notes": "6-piston, but padlets are annoying" },
         { "name": "Wilwood Aero6", "notes": "Aftermarket alternative" }
       ]
+    },
+    {
+      "id": "gm_metric_caliper_d154",
+      "category": "Brakes",
+      "name": "GM Metric Caliper (D154)",
+      "description": "Single piston floating caliper used on a massive range of GM vehicles and the AMC Eagle. Cheap, reliable, and easy to find.",
+      "specs": [
+        "Piston: Single (usually 2.5\")",
+        "Mount: 5.47\" spacing",
+        "Pad Shape: D154"
+      ],
+      "compatibility": [
+        {
+          "make": "AMC",
+          "models": [
+            { "name": "Eagle", "years": "1980–1987", "notes": "Stock Part" },
+            { "name": "Concord / Spirit", "years": "1979–1983", "notes": "Stock Part" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "S-10 / Blazer", "years": "1982–2003", "notes": "Identical Caliper" },
+            { "name": "Monte Carlo / Malibu (G-Body)", "years": "1978–1988", "notes": "Identical Caliper" },
+            { "name": "Camaro", "years": "1982–1992", "notes": "Identical Caliper (Front)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["NICHE_BUILD_BATTLEWAGON"]
+      },
+      "universal_alternatives": [
+        { "name": "Wilwood D154", "notes": "Aluminum upgrade, direct bolt-on" }
+      ]
+    },
+    {
+      "id": "jeep_wj_brake_booster",
+      "category": "Brakes",
+      "name": "Jeep WJ/XJ Dual Diaphragm Booster",
+      "description": "Dual diaphragm brake booster and master cylinder from 1999-2004 Grand Cherokee (WJ) or 95+ XJ. Popular upgrade for AMC Eagles and older Jeeps for better stopping power.",
+      "specs": [
+        "Type: Dual Diaphragm",
+        "Benefit: Reduced pedal effort, increased pressure"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Grand Cherokee (WJ)", "years": "1999–2004", "notes": "Donor (Requires rod modification)" },
+            { "name": "Cherokee (XJ)", "years": "1995–2001", "notes": "Donor (Dual Diaphragm)" }
+          ]
+        },
+        {
+          "make": "AMC",
+          "models": [
+            { "name": "Eagle", "years": "1980–1987", "notes": "Upgrade (Requires modification)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["NICHE_BUILD_BATTLEWAGON", "JEEP_AMC_40"]
+      },
+      "universal_alternatives": [
+        { "name": "Navajo Brake Booster", "notes": "Aftermarket dual diaphragm" }
+      ]
     }
   ]
 }

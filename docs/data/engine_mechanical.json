@@ -1245,6 +1245,73 @@
         { "name": "Holley Hi-Ram", "notes": "Race use only" },
         { "name": "Edelbrock Pro-Flo", "notes": "Old school look" }
       ]
+    },
+    {
+      "id": "jeep_40_ho_head",
+      "category": "Engine Mechanical",
+      "name": "Jeep 4.0L High Output Cylinder Head (7120/0630)",
+      "description": "The '7120' (1991-1995) or '0630' (1996-1999) cylinder heads from the Jeep 4.0L HO engine flow significantly better than the stock AMC 4.2L head. A popular swap to gain ~30-40hp on the 4.2L engine.",
+      "specs": [
+        "Casting: 7120 (Best flow) or 0630",
+        "Valves: Larger than 4.2L",
+        "Requires: 4.0L Header, Head Bolts, Water Jacket modification"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Cherokee (XJ)", "years": "1991–1999", "notes": "Donor" },
+            { "name": "Wrangler (YJ/TJ)", "years": "1991–1999", "notes": "Donor" },
+            { "name": "Grand Cherokee (ZJ)", "years": "1993–1998", "notes": "Donor" }
+          ]
+        },
+        {
+          "make": "AMC",
+          "models": [
+            { "name": "Eagle", "years": "1980–1987", "notes": "Upgrade (Head Swap)" },
+            { "name": "Concord / Spirit", "years": "1979–1983", "notes": "Upgrade (Head Swap)" },
+            { "name": "CJ-7", "years": "1976–1986", "notes": "Upgrade (Head Swap)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["JEEP_AMC_40"]
+      },
+      "universal_alternatives": [
+        { "name": "Edelbrock Performer Head", "notes": "Aluminum aftermarket head" }
+      ]
+    },
+    {
+      "id": "amc_aluminum_valve_cover",
+      "category": "Engine Mechanical",
+      "name": "AMC 4.2L Aluminum Valve Cover",
+      "description": "The stock plastic valve cover on AMC 4.2L engines is notorious for leaking. Upgrading to an aluminum cover from an earlier AMC or aftermarket solves this.",
+      "specs": [
+        "Material: Cast Aluminum",
+        "Benefit: Stops oil leaks",
+        "Gasket: Cork or Rubber"
+      ],
+      "compatibility": [
+        {
+          "make": "AMC",
+          "models": [
+            { "name": "Eagle", "years": "1980–1987", "notes": "Upgrade" },
+            { "name": "CJ-7", "years": "1981–1986", "notes": "Upgrade" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Wrangler (YJ)", "years": "1987–1990", "notes": "Upgrade (4.2L models)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["JEEP_AMC_40"]
+      },
+      "universal_alternatives": [
+        { "name": "Clifford Performance Valve Cover", "notes": "Finned aluminum" }
+      ]
     }
   ]
 }

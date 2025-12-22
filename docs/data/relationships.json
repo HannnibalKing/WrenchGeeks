@@ -1075,6 +1075,7 @@
       { "make": "Chevrolet", "model": "Astro Van", "years": "1985–2005", "notes": "Van Source" }
     ],
     "JEEP_AMC_40": [
+      { "make": "AMC", "model": "Eagle", "years": "1980–1987", "notes": "4.2L (258ci) - Highly compatible with 4.0L parts" },
       { "make": "Jeep", "model": "Cherokee (XJ) 4.0L", "years": "1987–2001", "notes": "Legendary Reliability" },
       { "make": "Jeep", "model": "Wrangler (YJ/TJ) 4.0L", "years": "1991–2006", "notes": "Off-road Standard" },
       { "make": "Jeep", "model": "Grand Cherokee (ZJ/WJ) 4.0L", "years": "1993–2004", "notes": "Common Donor" }

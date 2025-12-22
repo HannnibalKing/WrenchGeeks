@@ -694,6 +694,77 @@
         { "name": "Meyle HD Link", "notes": "Reinforced ball joints" },
         { "name": "Lemforder Link", "notes": "OEM Quality" }
       ]
+    },
+    {
+      "id": "amc_eagle_xj_coils",
+      "category": "Suspension & Steering",
+      "name": "Jeep XJ/ZJ Front Coil Springs",
+      "description": "Front coil springs from Jeep Cherokee (XJ) or Grand Cherokee (ZJ). Used on AMC Eagle to provide lift and increased spring rate.",
+      "specs": [
+        "Type: Coil Spring",
+        "Lift: ~1-2 inches over stock Eagle springs (depending on donor)",
+        "Rate: Higher than stock Eagle"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Cherokee (XJ)", "years": "1984–2001", "notes": "Donor (V8 ZJ springs provide more lift)" },
+            { "name": "Grand Cherokee (ZJ)", "years": "1993–1998", "notes": "Donor (V8 springs recommended)" }
+          ]
+        },
+        {
+          "make": "AMC",
+          "models": [
+            { "name": "Eagle", "years": "1980–1987", "notes": "Upgrade (Lift)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["JEEP_XJ", "NICHE_BUILD_BATTLEWAGON"]
+      },
+      "universal_alternatives": [
+        { "name": "Aftermarket Lift Springs", "notes": "Specific lift kits" }
+      ]
+    },
+    {
+      "id": "saginaw_800_steering",
+      "category": "Suspension & Steering",
+      "name": "Saginaw 800 Steering Box",
+      "description": "Heavy-duty power steering box used in many GM and AMC vehicles. The AMC Eagle uses a version of this box, making swaps from other Saginaw-equipped vehicles possible (with pitman arm swaps).",
+      "specs": [
+        "Type: Recirculating Ball",
+        "Ratio: Variable (depending on donor)",
+        "Mount: 3 or 4 bolt (check pattern)"
+      ],
+      "compatibility": [
+        {
+          "make": "AMC",
+          "models": [
+            { "name": "Eagle", "years": "1980–1987", "notes": "Stock / Upgrade" },
+            { "name": "Javelin / AMX", "years": "1968–1974", "notes": "Similar box" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Cherokee (XJ)", "years": "1984–2001", "notes": "Similar box (check mounting)" },
+            { "name": "Wrangler (YJ/TJ)", "years": "1987–2006", "notes": "Similar box" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Camaro / Firebird", "years": "1982–1992", "notes": "Quick ratio internals swap candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["NICHE_BUILD_BATTLEWAGON"]
+      },
+      "universal_alternatives": [
+        { "name": "Redhead Steering Gears", "notes": "Remanufactured upgrades" }
+      ]
     }
   ]
 }
