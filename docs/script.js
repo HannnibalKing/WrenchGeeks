@@ -280,17 +280,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    let activeBuildFilter = null; // Global filter for Quick Builds
-    let quickBuildAutoSelectModel = false; // Auto-pick first model after quick build
+    let activeBuildFilter = null; // placeholder (unused now)
 
     makeSelect.addEventListener('change', (e) => {
-        // If user manually selects a make, clear any active filters/banners
-        if (e.isTrusted) {
-            activeBuildFilter = null;
-            if (quickBuildSelect) quickBuildSelect.value = "";
-            if (buildGuideBanner) buildGuideBanner.classList.add('hidden');
-        }
-
         const selectedMake = makeSelect.value;
         modelSelect.innerHTML = '<option value="">-- Select Model --</option>';
         modelSelect.disabled = true;
@@ -301,23 +293,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (selectedMake && vehicleIndex[selectedMake]) {
             let models = Object.keys(vehicleIndex[selectedMake]).sort();
             
-            // Apply Quick Build Filter if active
-            if (activeBuildFilter && activeBuildFilter.make === selectedMake) {
-                models = models.filter(model => {
-                    return activeBuildFilter.keywords.some(keyword => 
-                        model.toLowerCase().includes(keyword.toLowerCase())
-                    );
-                });
-
-                // If nothing matches the filtered keywords, fall back to all models
-                if (models.length === 0) {
-                    models = Object.keys(vehicleIndex[selectedMake]).sort();
-                    activeBuildFilter = null;
-                    if (quickBuildSelect) quickBuildSelect.value = "";
-                    if (buildGuideBanner) buildGuideBanner.classList.add('hidden');
-                }
-            }
-
             models.forEach(model => {
                 const option = document.createElement('option');
                 option.value = model;
@@ -325,13 +300,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 modelSelect.appendChild(option);
             });
             modelSelect.disabled = false;
-
-            // If coming from Quick Build, auto-select the first model and show parts
-            if (quickBuildAutoSelectModel && models.length > 0) {
-                modelSelect.value = models[0];
-                modelSelect.dispatchEvent(new Event('change'));
-                quickBuildAutoSelectModel = false;
-            }
         }
     });
 
@@ -355,6 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Show cross-platform / engine donor vehicles
         displayDonors(vehicleAttrs.platformId, vehicleAttrs.engineId, make, model);
+
 
         displayTips(make, model);
         display3DPrints(vehicleAttrs.platformId);
@@ -467,145 +436,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function display3DPrints(platformId) {
-        if (!platformId || !printingData[platformId]) return;
+    function displayKitDonors(kitKey) {
+        if (!donorList || !donorVehicles) return;
+        if (!kitDonors[kitKey]) return;
 
-        const prints = printingData[platformId];
-        const container = document.createElement('div');
-        container.className = 'printing-section';
-        container.innerHTML = `<h3>3D Printable Parts <span style="font-size:0.8em; color:#888;">(Community Verified)</span></h3>`;
-        
-        const grid = document.createElement('div');
-        grid.className = 'printing-grid';
-
-        prints.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'print-card';
-            
-            const searchUrl = `https://www.yeggi.com/q/${encodeURIComponent(item.search_term)}/`;
-            
-            card.innerHTML = `
-                <h4 style="margin-top:0;">${item.name}</h4>
-                <p style="font-size:0.9em; margin-bottom:10px;">${item.description}</p>
-                <a href="${searchUrl}" target="_blank" class="print-btn">Find STL Files ↗</a>
-            `;
-            grid.appendChild(card);
-        });
-
-        container.appendChild(grid);
-        partsList.appendChild(container);
-    }
-
-    function showPartDetails(part, make, model) {
-        selectorSection.classList.add('hidden');
-        resultsSection.classList.add('hidden');
-        partDetailsSection.classList.remove('hidden');
-
-        document.getElementById('partName').textContent = part.name;
-        document.getElementById('partCategory').textContent = part.category;
-        document.getElementById('partDescription').textContent = part.description;
-
-        // Calculate Score Breakdown for this specific vehicle
-        const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
-        const scoreData = compatibilityEngine ? compatibilityEngine.calculateScore(part, vehicleAttrs, make, model) : { total: 0, breakdown: {} };
-        const risk = compatibilityEngine ? compatibilityEngine.getRiskLevel(scoreData.total) : { level: "Unknown", color: "grey" };
-
-        // Inject Score Display
-        const scoreContainer = document.createElement('div');
-        scoreContainer.className = 'score-container';
-        scoreContainer.innerHTML = `
-            <div class="score-header">
-                <h3>Compatibility Score: ${scoreData.total}/100</h3>
-                <span class="risk-badge ${risk.cssClass}">${risk.level}</span>
-            </div>
-            <ul class="score-breakdown">
-                <li><strong>Platform Match:</strong> ${scoreData.breakdown.platform}/30</li>
-                <li><strong>Engine Match:</strong> ${scoreData.breakdown.engine}/25</li>
-                <li><strong>Mounting Match:</strong> ${scoreData.breakdown.mounting}/20</li>
-                <li><strong>Protocol Match:</strong> ${scoreData.breakdown.protocol}/15</li>
-                <li><strong>Era Match:</strong> ${scoreData.breakdown.era}/10</li>
-            </ul>
-        `;
-        
-        // Insert after description
-        const desc = document.getElementById('partDescription');
-        if(desc.nextSibling && desc.nextSibling.className === 'score-container') {
-            desc.nextSibling.remove();
-        }
-        desc.parentNode.insertBefore(scoreContainer, desc.nextSibling);
-
-
-        const specsList = document.getElementById('partSpecs');
-        specsList.innerHTML = '';
-        part.specs.forEach(spec => {
+        // append (do not clear) to combine dynamic donors with kit list
+        kitDonors[kitKey].forEach(d => {
             const li = document.createElement('li');
-            li.textContent = spec;
-            specsList.appendChild(li);
+            const notesText = d.notes ? ` (${d.notes})` : '';
+            li.textContent = `${d.make} ${d.model}${d.years ? ' [' + d.years + ']' : ''}${notesText}`;
+            donorVehicles.appendChild(li);
         });
-
-        const vehiclesContainer = document.getElementById('compatibleVehicles');
-        vehiclesContainer.innerHTML = '';
-        
-        let allVehicles = [];
-        if (part.compatibility) {
-            part.compatibility.forEach(group => {
-                group.models.forEach(m => allVehicles.push({ ...m, make: group.make }));
-            });
-        }
-        if (part.compatibility_smart) {
-             if (part.compatibility_smart.platforms) {
-                part.compatibility_smart.platforms.forEach(pid => {
-                    const v = relationships.platforms[pid];
-                    if(v) allVehicles.push(...v);
-                });
-             }
-             if (part.compatibility_smart.engines) {
-                part.compatibility_smart.engines.forEach(eid => {
-                    const v = relationships.engines[eid];
-                    if(v) allVehicles.push(...v);
-                });
-             }
-        }
-
-        const grouped = groupBy(allVehicles, 'make');
-        Object.keys(grouped).sort().forEach(make => {
-            const groupDiv = document.createElement('div');
-            groupDiv.className = 'vehicle-group';
-            const header = document.createElement('h5');
-            header.textContent = make;
-            groupDiv.appendChild(header);
-            const ul = document.createElement('ul');
-            const uniqueModels = [];
-            const seen = new Set();
-            grouped[make].forEach(model => {
-                const name = model.name || model.model;
-                if(!seen.has(name)) {
-                    seen.add(name);
-                    uniqueModels.push(model);
-                }
-            });
-            uniqueModels.forEach(model => {
-                const li = document.createElement('li');
-                const name = model.name || model.model;
-                li.innerHTML = `<strong>${name}</strong> (${model.years}) - ${model.notes}`;
-                ul.appendChild(li);
-            });
-            groupDiv.appendChild(ul);
-            vehiclesContainer.appendChild(groupDiv);
-        });
-
-        const universalList = document.getElementById('universalParts');
-        universalList.innerHTML = '';
-        if (part.universal_alternatives && part.universal_alternatives.length > 0) {
-            part.universal_alternatives.forEach(alt => {
-                const li = document.createElement('li');
-                li.innerHTML = `<strong>${alt.name}</strong>: ${alt.notes}`;
-                universalList.appendChild(li);
-            });
-        } else {
-            universalList.innerHTML = '<li>No universal alternatives listed.</li>';
-        }
+        donorList.classList.remove('hidden');
     }
+
 
     backButton.addEventListener('click', () => {
         partDetailsSection.classList.add('hidden');
@@ -617,12 +461,58 @@ document.addEventListener('DOMContentLoaded', () => {
     const buildGuides = {
         'exocet': {
             title: "Exomotive Exocet (Kit Car)",
-            description: "Miata-based tube frame. Strip NA/NB Miata donors and reuse the subframes, drivetrain, and wiring as the backbone of the kit."
+            description: "Miata-based tube frame. Strip NA/NB (and some NC) Miata donors and reuse subframes, drivetrain, and wiring as the backbone of the kit."
+        },
+        'mev_mevster': {
+            title: "MEV Mevster (Kit Car)",
+            description: "Miata donor, but with more bodywork/roof than the bare Exocet. Keep Miata running gear and wiring, add weather protection." 
+        },
+        'mev_replicar': {
+            title: "MEV Replicar (Kit Car)",
+            description: "Aston DBR1-inspired body over Miata running gear. Uses Miata donor parts throughout (engine, suspension, wiring)."
         },
         'goblin': {
             title: "DF Goblin (Kit Car)",
-            description: "Cobalt-based mid-engine kit. Pull the Cobalt powertrain and harness; the chassis bolts up to the Goblin frame. SS/SC trims give you the strongest drivetrains."
+            description: "Cobalt-based mid-engine kit. Pull the Cobalt powertrain, harness, pedal box, hubs; the chassis bolts to the Goblin frame. SS/SC trims are best."
+        },
+        'factory_five_818': {
+            title: "Factory Five 818 (Kit Car)",
+            description: "Subaru WRX donor (2002–2007 common). Uses engine, trans, suspension, brakes, wiring. Mid-engine layout with turbo potential." 
+        },
+        'caterham_seven': {
+            title: "Caterham/Westfield (Kit Car)",
+            description: "Lotus Seven style. Often Ford donors (Sierra/Focus). Lightweight, front-engine RWD with donor suspension/brakes/drivetrain." 
         }
+    };
+
+    const kitDonors = {
+        'exocet': [
+            { make: 'Mazda', model: 'MX-5 Miata (NA)', years: '1990–1997', notes: 'Primary donor' },
+            { make: 'Mazda', model: 'MX-5 Miata (NB)', years: '1999–2005', notes: 'Primary donor' },
+            { make: 'Mazda', model: 'MX-5 Miata (NC)', years: '2006–2015', notes: 'Some kits support NC' }
+        ],
+        'mev_mevster': [
+            { make: 'Mazda', model: 'MX-5 Miata (NA)', years: '1990–1997', notes: 'Donor' },
+            { make: 'Mazda', model: 'MX-5 Miata (NB)', years: '1999–2005', notes: 'Donor' },
+            { make: 'Mazda', model: 'MX-5 Miata (NC)', years: '2006–2015', notes: 'Possible donor' }
+        ],
+        'mev_replicar': [
+            { make: 'Mazda', model: 'MX-5 Miata (NA)', years: '1990–1997', notes: 'Donor' },
+            { make: 'Mazda', model: 'MX-5 Miata (NB)', years: '1999–2005', notes: 'Donor' }
+        ],
+        'goblin': [
+            { make: 'Chevrolet', model: 'Cobalt', years: '2005–2010', notes: 'Donor' },
+            { make: 'Pontiac', model: 'G5', years: '2007–2010', notes: 'Donor' },
+            { make: 'Chevrolet', model: 'Cobalt SS', years: '2005–2010', notes: 'Best drivetrains (LSJ/LNF)' }
+        ],
+        'factory_five_818': [
+            { make: 'Subaru', model: 'Impreza WRX (GD/GG)', years: '2002–2007', notes: 'Primary donor' },
+            { make: 'Subaru', model: 'Impreza WRX STI (GD)', years: '2004–2007', notes: 'Premium donor' }
+        ],
+        'caterham_seven': [
+            { make: 'Ford', model: 'Sierra', years: '1982–1993', notes: 'Common donor (EU)' },
+            { make: 'Ford', model: 'Focus (Mk1)', years: '1998–2004', notes: 'Donor for later kits' }
+        ]
     };
 
     // Quick Build Handler
@@ -656,12 +546,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
             switch (build) {
                 case 'exocet':
-                    targetMake = "Mazda"; // Exocet uses Miata donor
-                    filterKeywords = ["Miata (NA)", "Miata (NB)"];
+                case 'mev_mevster':
+                case 'mev_replicar':
+                    targetMake = "Mazda"; // Miata donor
+                    filterKeywords = ["MX-5", "Miata", "MX-5 Miata (NA)", "MX-5 Miata (NB)", "MX-5 Miata (NC)"];
                     break;
                 case 'goblin':
                     targetMake = "Chevrolet"; // Goblin uses Cobalt donor
-                    filterKeywords = ["Cobalt"];
+                    filterKeywords = ["Cobalt", "Cobalt SS", "G5"];
+                    break;
+                case 'factory_five_818':
+                    targetMake = "Subaru"; // WRX donor
+                    filterKeywords = ["Impreza", "WRX", "WRX STI"];
+                    break;
+                case 'caterham_seven':
+                    targetMake = "Ford"; // Ford donors
+                    filterKeywords = ["Sierra", "Focus"];
                     break;
             }
 
@@ -669,6 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Set Global Filter
                 activeBuildFilter = { make: targetMake, keywords: filterKeywords };
                 quickBuildAutoSelectModel = true;
+                quickBuildActiveKit = build;
 
                 // Trigger Make Selection
                 makeSelect.value = targetMake;
