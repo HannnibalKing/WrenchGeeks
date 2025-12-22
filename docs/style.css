@@ -1,15 +1,23 @@
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
-    --secondary: #64748b;
-    --background: #f8fafc;
-    --surface: #ffffff;
-    --text: #0f172a;
-    --text-light: #475569;
-    --border: #e2e8f0;
+    /* Psychological "Car Lover" Theme */
+    /* Dark Asphalt / Carbon Background */
+    --background: #0f172a; 
+    /* Surface: Darker Grey (Workshop Floor) */
+    --surface: #1e293b;
+    /* Primary: "Redline" Red (Excitement, Speed, Tools) */
+    --primary: #ef4444;
+    --primary-dark: #dc2626;
+    /* Secondary: "Chrome" / Steel */
+    --secondary: #94a3b8;
+    /* Text: White / Off-White */
+    --text: #f8fafc;
+    --text-light: #cbd5e1;
+    /* Borders: Subtle Metallic */
+    --border: #334155;
+    
     --success: #10b981;
     --radius: 8px;
-    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
 
 * {
@@ -33,15 +41,20 @@ body {
 
 header {
     background-color: var(--surface);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 2px solid var(--primary); /* Redline accent */
     padding: 2rem 0;
     margin-bottom: 2rem;
     text-align: center;
+    background-image: linear-gradient(45deg, #1e293b 25%, #243042 25%, #243042 50%, #1e293b 50%, #1e293b 75%, #243042 75%, #243042 100%);
+    background-size: 20px 20px; /* Carbon fiber-ish pattern */
 }
 
 header h1 {
     color: var(--primary);
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0px #000;
 }
 
 .card {
@@ -77,7 +90,10 @@ header h1 {
 label {
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--text-light);
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
 }
 
 select {
@@ -85,12 +101,15 @@ select {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     font-size: 1rem;
-    background-color: var(--surface);
+    background-color: #0f172a; /* Darker input background */
+    color: var(--text);
 }
 
 select:disabled {
-    background-color: var(--background);
+    background-color: #1e293b;
+    color: #475569;
     cursor: not-allowed;
+    border-color: var(--border);
 }
 
 .hidden {
@@ -104,12 +123,12 @@ select:disabled {
 }
 
 .part-item {
-    background: var(--surface);
+    background: #243042; /* Slightly lighter than surface */
     border: 1px solid var(--border);
     padding: 1rem;
     border-radius: var(--radius);
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .part-item:hover {
@@ -119,8 +138,13 @@ select:disabled {
 }
 
 .part-item h4 {
-    color: var(--primary);
+    color: var(--text);
     margin-bottom: 0.5rem;
+}
+
+.part-item p {
+    color: var(--secondary);
+    font-size: 0.9rem;
 }
 
 .btn-secondary {
@@ -132,11 +156,12 @@ select:disabled {
     cursor: pointer;
     margin-bottom: 1rem;
     font-size: 0.9rem;
+    transition: all 0.2s;
 }
 
 .btn-secondary:hover {
     background: var(--secondary);
-    color: white;
+    color: var(--background);
 }
 
 .details-grid {
@@ -165,19 +190,20 @@ li {
 }
 
 .badge {
-    background: var(--background);
-    color: var(--text-light);
+    background: var(--primary);
+    color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-size: 0.8rem;
-    border: 1px solid var(--border);
+    border: none;
     vertical-align: middle;
     margin-left: 0.5rem;
+    font-weight: bold;
 }
 
 .hint {
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: var(--secondary);
     margin-bottom: 1rem;
     font-style: italic;
 }
@@ -187,7 +213,7 @@ li {
 }
 
 .vehicle-group h5 {
-    color: var(--text);
+    color: var(--primary); /* Accent color for headers */
     border-bottom: 1px solid var(--border);
     padding-bottom: 0.25rem;
     margin-bottom: 0.5rem;
@@ -196,7 +222,7 @@ li {
 /* Donation Section */
 .highlight-gold {
     border-left: 4px solid #f59e0b; /* Amber/Gold */
-    background: linear-gradient(to right, var(--surface), #fffbeb);
+    background: linear-gradient(to right, var(--surface), #2a2210); /* Dark gold gradient */
 }
 
 .crypto-grid {
@@ -207,7 +233,7 @@ li {
 }
 
 .crypto-item {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05); /* Subtle transparency */
     border: 1px solid var(--border);
     padding: 0.75rem;
     border-radius: var(--radius);
@@ -217,19 +243,20 @@ li {
 .coin-name {
     display: block;
     font-weight: bold;
-    color: var(--text-light);
+    color: var(--secondary);
     margin-bottom: 0.25rem;
 }
 
 .address {
     display: block;
-    background: #f1f5f9;
+    background: #0f172a; /* Dark background for code */
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-family: monospace;
     word-break: break-all;
-    color: var(--primary-dark);
-    user-select: all; /* Makes it easy to select */
+    color: var(--primary); /* Red accent for address */
+    user-select: all; 
+    border: 1px solid var(--border);
 }
 
 /* Tips Section */
@@ -249,19 +276,19 @@ li {
     box-shadow: var(--shadow);
 }
 
-.tip-critical { border-left-color: #ef4444; background-color: #fef2f2; }
-.tip-high { border-left-color: #f97316; background-color: #fff7ed; }
-.tip-medium { border-left-color: #eab308; background-color: #fefce8; }
-.tip-low { border-left-color: #3b82f6; background-color: #eff6ff; }
-.tip-info { border-left-color: #64748b; }
+.tip-critical { border-left-color: #ef4444; background-color: #450a0a; } /* Dark Red bg */
+.tip-high { border-left-color: #f97316; background-color: #431407; } /* Dark Orange bg */
+.tip-medium { border-left-color: #eab308; background-color: #422006; } /* Dark Yellow bg */
+.tip-low { border-left-color: #3b82f6; background-color: #172554; } /* Dark Blue bg */
+.tip-info { border-left-color: #64748b; background-color: #1e293b; }
 
-.tip-card h4 { margin-bottom: 0.5rem; }
-.tip-card small { display: block; margin-top: 0.5rem; color: var(--text-light); }
+.tip-card h4 { margin-bottom: 0.5rem; color: var(--text); }
+.tip-card small { display: block; margin-top: 0.5rem; color: var(--secondary); }
 
 
 /* Compatibility Score Styles */
 .score-container {
-    background: var(--background);
+    background: #0f172a; /* Darker background */
     border-radius: var(--radius);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -273,6 +300,10 @@ li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.score-header h3 {
+    color: var(--text);
 }
 
 .score-breakdown {
@@ -290,6 +321,11 @@ li {
     border-radius: 4px;
     border: 1px solid var(--border);
     font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.score-breakdown li strong {
+    color: var(--primary);
 }
 
 .risk-badge {

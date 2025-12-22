@@ -550,10 +550,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     // Find the option that matches loosely (contains the string)
                     const options = Array.from(modelSelect.options);
-                    const match = options.find(opt => opt.value.includes(targetModel) || opt.text.includes(targetModel));
+                    // Improved matching logic: check if option contains target OR target contains option
+                    // Also normalize strings to lowercase for better matching
+                    const match = options.find(opt => {
+                        if (!opt.value) return false;
+                        const optVal = opt.value.toLowerCase();
+                        const targetVal = targetModel.toLowerCase();
+                        return optVal.includes(targetVal) || targetVal.includes(optVal);
+                    });
+
                     if (match) {
                         modelSelect.value = match.value;
                         modelSelect.dispatchEvent(new Event('change'));
+                    } else {
+                        console.warn(`Quick Build: Could not find model match for "${targetModel}" in ${targetMake}`);
                     }
                 }, 100);
             }
