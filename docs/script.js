@@ -383,26 +383,32 @@ document.addEventListener('DOMContentLoaded', () => {
         // Find the vehicle definition to get the year range
         let yearRange = null;
         
-        // Check platforms
-        if (relationships.platforms) {
-            for (const vehicles of Object.values(relationships.platforms)) {
-                const match = vehicles.find(v => v.make === make && (v.model === model || v.name === model));
-                if (match && match.years) {
-                    yearRange = match.years;
-                    break;
-                }
+        const normalize = (str) => str.toLowerCase().replace(/[^a-z0-9]/g, '');
+        const target = normalize(model);
+
+        const findMatch = (collection) => {
+            if (!collection) return null;
+            for (const vehicles of Object.values(collection)) {
+                // Try exact match first, then fuzzy
+                const match = vehicles.find(v => {
+                    if (v.make !== make) return false;
+                    const vName = normalize(v.model || v.name);
+                    return vName === target || vName.includes(target) || target.includes(vName);
+                });
+                if (match && match.years) return match.years;
             }
-        }
+            return null;
+        };
+
+        // Check platforms first
+        yearRange = findMatch(relationships.platforms);
+        
         // Check engines if not found
-        if (!yearRange && relationships.engines) {
-            for (const vehicles of Object.values(relationships.engines)) {
-                const match = vehicles.find(v => v.make === make && (v.model === model || v.name === model));
-                if (match && match.years) {
-                    yearRange = match.years;
-                    break;
-                }
-            }
+        if (!yearRange) {
+            yearRange = findMatch(relationships.engines);
         }
+
+        yearSelect.innerHTML = '<option value="">-- Select Year --</option>'; // Reset
 
         if (yearRange) {
             const years = parseYearRange(yearRange);
@@ -415,12 +421,41 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             yearSelect.disabled = false;
         } else {
-            // Fallback if no years found (shouldn't happen with good data)
-            const option = document.createElement('option');
-            option.value = "Unknown";
-            option.textContent = "Unknown Year";
-            yearSelect.appendChild(option);
-            yearSelect.disabled = false;
+            // Fallback: If we can't find the years in relationships.json, 
+            // try to infer from the parts data itself for this model
+            const inferredYears = new Set();
+            if (vehicleIndex[make] && vehicleIndex[make][model]) {
+                vehicleIndex[make][model].forEach(part => {
+                    if (part.compatibility) {
+                        part.compatibility.forEach(c => {
+                            if (c.make === make) {
+                                c.models.forEach(m => {
+                                    if ((m.name === model || m.name.includes(model)) && m.years) {
+                                        parseYearRange(m.years).forEach(y => inferredYears.add(y));
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+
+            if (inferredYears.size > 0) {
+                const sortedYears = Array.from(inferredYears).sort((a, b) => b - a);
+                sortedYears.forEach(y => {
+                    const option = document.createElement('option');
+                    option.value = y;
+                    option.textContent = y;
+                    yearSelect.appendChild(option);
+                });
+                yearSelect.disabled = false;
+            } else {
+                const option = document.createElement('option');
+                option.value = "Unknown";
+                option.textContent = "Unknown Year";
+                yearSelect.appendChild(option);
+                yearSelect.disabled = false;
+            }
         }
     }
 
