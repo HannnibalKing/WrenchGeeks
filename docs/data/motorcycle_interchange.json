@@ -1,0 +1,59 @@
+[
+  {
+    "partName": "Suzuki GSX-R Front End Swap",
+    "compatibleVehicles": [
+      "Suzuki SV650 (1999-2009)",
+      "Suzuki GSX-R 600/750/1000 (2000-2010)",
+      "Suzuki Bandit 600/1200"
+    ],
+    "years": "1999-2010",
+    "notes": "The 'Gixxer' front end swap is the standard upgrade for the SV650. It replaces the budget damper-rod forks with fully adjustable inverted cartridge forks and massive brakes. Requires the GSX-R forks, triple clamps, wheel, rotors, and calipers. Steering bearings usually need a conversion race.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Yamaha R1/R6 Brembo Master Cylinder",
+    "compatibleVehicles": [
+      "Yamaha YZF-R1 (2004+)",
+      "Yamaha YZF-R6 (2005+)",
+      "Honda CBR600RR / CBR1000RR",
+      "Kawasaki Ninja ZX-6R / ZX-10R",
+      "Suzuki GSX-R"
+    ],
+    "years": "2004-2020",
+    "notes": "Yamaha started using high-quality Brembo radial master cylinders as OEM equipment on the R1 and R6 around 2004/2005. These are a massive, cheap upgrade for other Japanese sportbikes that came with axial master cylinders (spongy feel). Direct bolt-on to 7/8\" bars.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Harley Sportster / Big Twin Parts",
+    "compatibleVehicles": [
+      "Harley Davidson Sportster (Evo 1986+)",
+      "Harley Davidson Dyna / Softail"
+    ],
+    "years": "1986-2020",
+    "notes": "Many controls (pegs, grips, mirrors) are universal across Harleys. However, engine parts are distinct. CV carburetors (Keihin CV40) are shared and are a great upgrade for older 'Butterfly' carb Harleys. 39mm front forks are common on Sportsters and older Dynas, allowing for easy front-end swaps.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Honda MOSFET Regulator/Rectifier Upgrade",
+    "compatibleVehicles": [
+      "Honda CBR600F2/F3/F4i",
+      "Honda VFR750/800",
+      "Yamaha R1/R6 (Older)",
+      "Suzuki GSX-R (Older)"
+    ],
+    "years": "1990-2005",
+    "notes": "Older Japanese bikes used shunt-type regulators that ran hot and failed constantly. The MOSFET regulator (FH012AA / FH020AA) found on newer Yamahas (R1/FJR1300) runs cool and is bulletproof. It can be wired into almost any older bike to solve charging issues forever.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Kawasaki ZX-10R Rear Shock Swap",
+    "compatibleVehicles": [
+      "Kawasaki Ninja ZX-10R (2004-2007)",
+      "Suzuki SV650 (2nd Gen)",
+      "Yamaha FZ-07 / MT-07"
+    ],
+    "years": "2004-2015",
+    "notes": "The rear shock from a ZX-10R is a popular budget upgrade for the SV650 and MT-07. It is fully adjustable (preload, compression, rebound) and cheap. Length and spring rate must be checked for your rider weight, but it's far better than the stock 'pogo stick' shocks on budget bikes.",
+    "matchLevel": "Match - Minor Mods"
+  }
+]

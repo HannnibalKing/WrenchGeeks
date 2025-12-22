@@ -1,0 +1,57 @@
+[
+  {
+    "partName": "Cummins 12V P-Pump Conversion",
+    "compatibleVehicles": [
+      "Dodge Ram 2500/3500 (1994-1998 12V)",
+      "Dodge Ram 2500/3500 (1998.5-2002 24V)",
+      "Ford F-250/F-350 (Cummins Swaps)"
+    ],
+    "years": "1994-2002",
+    "notes": "The Bosch P7100 mechanical injection pump ('P-Pump') from the 94-98 12-valve Cummins is the holy grail for reliability and power. It can be swapped onto the later 24-valve Cummins (VP44 pump) to eliminate the unreliable electronics. Requires new fuel lines, timing case, and injectors.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Ford 7.3L Powerstroke / International T444E",
+    "compatibleVehicles": [
+      "Ford F-250/F-350 (1994-2003)",
+      "International 3800 School Bus",
+      "International 4700 Truck"
+    ],
+    "years": "1994-2003",
+    "notes": "The Ford 7.3L Powerstroke IS an International T444E. However, the electronics, water pump, and accessory drive differ. The long block (heads, block, rotating assembly) is identical. T444E parts are often cheaper but check for specific sensor locations.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Allison 1000 Transmission Swap",
+    "compatibleVehicles": [
+      "Chevrolet Silverado 2500HD/3500HD (Duramax)",
+      "Dodge Ram 2500/3500 (Cummins)",
+      "Ford F-250/F-350 (Powerstroke)"
+    ],
+    "years": "2001-2010",
+    "notes": "The Allison 1000 5/6-speed automatic found behind the Duramax is legendary for strength. It is a popular swap for Dodge Cummins trucks (replacing the weak 47RE/48RE) and older Fords. Requires an adapter plate, flexplate, and a standalone transmission controller.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Dana 60 Kingpin Front Axle",
+    "compatibleVehicles": [
+      "Ford F-350 (1978-1979)",
+      "Ford F-350 (1985-1991)",
+      "Chevy K30 (1977-1987)",
+      "Dodge W350 (1975-1993)"
+    ],
+    "years": "1975-1993",
+    "notes": "The 'Kingpin' Dana 60 is the strongest front axle ever put in light trucks. Ford versions (driver's side drop) are sought after for Jeep swaps. Chevy/Dodge versions (passenger side drop) are for older builds. Kingpins are stronger and more durable than the later ball-joint Dana 60s.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "HE351CW Turbo Upgrade",
+    "compatibleVehicles": [
+      "Dodge Ram 2500/3500 (2004.5-2007)",
+      "Dodge Ram 2500/3500 (1994-2002)"
+    ],
+    "years": "1994-2007",
+    "notes": "The Holset HE351CW turbo from the 04.5-07 'Common Rail' Cummins flows much better than the HX35 found on older 12V/24V trucks. It's a cheap junkyard upgrade for 2nd Gen Rams. Requires modifying the intercooler pipe (clocking the housing) and a new downpipe flange.",
+    "matchLevel": "Match - Minor Mods"
+  }
+]

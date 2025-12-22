@@ -168,7 +168,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/aussie_muscle.json",
         "data/kei_car_secrets.json",
         "data/american_muscle.json",
-        "data/french_connection.json"
+        "data/french_connection.json",
+        "data/heavy_duty_diesel.json",
+        "data/motorcycle_interchange.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };
