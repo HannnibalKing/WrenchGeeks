@@ -1,0 +1,39 @@
+[
+  {
+    "partName": "Fabrication: Welding Exhausts",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Stainless Steel (304) expands more than mild steel when hot. Always 'back purge' (fill the inside of the pipe with Argon) when TIG welding stainless to prevent 'sugaring' (crystallization) inside the pipe, which causes turbulence and cracking. Use V-Band clamps for modularity instead of slip-fits.",
+    "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Fabrication: Rust Repair / Patch Panels",
+    "compatibleVehicles": [
+      "Classic Cars",
+      "Trucks"
+    ],
+    "years": "Universal",
+    "notes": "1. CUT: Cut out the rust until you see clean, shiny metal. Do not weld over rust. 2. SHAPE: Use cardboard templates to match the curve. 3. WELD: Use 'stitch welding' (short zaps spaced out) to prevent warping the panel from heat. Cool with compressed air between welds. 4. PROTECT: Coat the BACK side of the patch with weld-through primer before installing.",
+    "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Wiring: Crimping vs Soldering",
+    "compatibleVehicles": [
+      "Automotive Wiring"
+    ],
+    "years": "Universal",
+    "notes": "In high-vibration automotive environments, a proper CRIMP is often better than solder. Solder creates a rigid point that can crack under vibration. Use uninsulated barrel crimps with high-quality heat shrink (adhesive lined) for the most durable, weather-tight connection.",
+    "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Painting: Rattle Can Tips",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "You CAN get pro results with spray cans. 1. PREP: Sand with 400 grit, then clean with wax/grease remover. 2. WARMTH: Put the cans in a bucket of warm water for 10 mins before spraying (increases pressure, finer mist). 3. CLEAR COAT: Use a '2K' (2-part) Clear Coat in a can (has a button on the bottom to mix hardener). It is fuel resistant and won't fade like cheap 1K clear.",
+    "matchLevel": "Tech Advice"
+  }
+]

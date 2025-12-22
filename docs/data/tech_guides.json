@@ -1,0 +1,52 @@
+[
+  {
+    "partName": "Guide: General Seat Swap Instructions",
+    "compatibleVehicles": [
+      "All Vehicles"
+    ],
+    "years": "Universal",
+    "notes": "1. SAFETY FIRST: Disconnect the battery negative terminal and wait 15 mins before touching seats with airbags. 2. MEASURE: Measure the width of the new seat rails vs your floor mounting points. 3. ADAPT: If rails don't match, you can often swap the 'seat pans' (the metal bottom of the seat) or fabricate flat steel adapter brackets. 4. WIRING: You may need to bypass airbag sensors (use a resistor) or swap the buckle pre-tensioners from your old seats.",
+    "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Guide: LS Engine Swap Basics",
+    "compatibleVehicles": [
+      "GM LS Series Engines",
+      "Classic Muscle Cars",
+      "Trucks"
+    ],
+    "years": "Universal",
+    "notes": "The 'Holy Trinity' of LS swaps: 1. MOUNTS: You need adapter plates to move the engine mount location (usually 1-inch back). 2. OIL PAN: Truck pans hang too low for cars; use a 'Muscle Car' pan (LH8) or F-Body pan. 3. WIRING: Standalone harnesses require only 3 wires to run (Ignition, Battery, Ground). Don't forget to delete VATS (Vehicle Anti-Theft) from the ECU.",
+    "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Guide: Brake Upgrade / Caliper Swap",
+    "compatibleVehicles": [
+      "All Vehicles"
+    ],
+    "years": "Universal",
+    "notes": "When swapping larger calipers: 1. MASTER CYLINDER: Larger calipers need more fluid. If your pedal feels 'long' or mushy, upgrade to a larger bore master cylinder. 2. PROPORTIONING: Disc/Disc setups need a different valve than Disc/Drum. Install an adjustable proportioning valve to prevent rear lockup. 3. BLEEDING: Bleed the furthest caliper from the master cylinder first (usually Rear Right).",
+    "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Guide: Hydroboost Conversion",
+    "compatibleVehicles": [
+      "Classic Cars",
+      "Diesel Trucks"
+    ],
+    "years": "Universal",
+    "notes": "Hydroboost uses power steering pressure for brake assist. 1. PLUMBING: Route Pump -> Hydroboost -> Steering Box -> Cooler -> Reservoir. 2. RETURN LINES: You MUST have two separate return lines to the reservoir (or a T-fitting very close to the reservoir) to prevent backpressure, which causes self-braking. 3. FLUID: Use synthetic power steering fluid to handle the heat.",
+    "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Guide: Solid Axle Swap (SAS) Tips",
+    "compatibleVehicles": [
+      "Toyota Trucks",
+      "Chevy S10",
+      "Ford Ranger"
+    ],
+    "years": "Universal",
+    "notes": "1. STEERING: You will need 'Crossover Steering' to prevent bump steer. The drag link should be parallel to the track bar. 2. FRAME PLATING: Always weld reinforcement plates to the frame rails before welding on shock hoops or spring hangers. 3. DRIVESHAFTS: You will likely need custom length driveshafts (Long Travel splines recommended).",
+    "matchLevel": "Tech Advice"
+  }
+]
