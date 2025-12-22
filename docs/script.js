@@ -382,18 +382,25 @@ document.addEventListener('DOMContentLoaded', () => {
         searchButton.addEventListener('click', () => {
             const make = makeSelect.value;
             const model = modelSelect.value;
+            console.log('Search clicked for:', make, model);
             if (make && model) {
                 showPartsForVehicle(make, model);
+            } else {
+                console.warn('Search clicked but make/model missing');
             }
         });
     }
 
     function showPartsForVehicle(make, model) {
+        console.log('Showing parts for:', make, model);
         const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
+        console.log('Parts found in index:', parts.length);
+        
         selectedVehicleName.textContent = `${make} ${model}`;
         partsList.innerHTML = '';
         
         const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
+        console.log('Vehicle Attributes:', vehicleAttrs);
 
         // Show cross-platform / engine donor vehicles
         displayDonors(vehicleAttrs.platformId, vehicleAttrs.engineId, make, model);
@@ -405,11 +412,13 @@ document.addEventListener('DOMContentLoaded', () => {
         let filteredParts = parts;
 
         if (activeSubsystem) {
+            console.log('Filtering by subsystem:', activeSubsystem);
             filteredParts = parts.filter(part => {
                 const cat = (part.category || '').toLowerCase();
                 return cat.includes(activeSubsystem.toLowerCase());
             });
         }
+        console.log('Filtered parts count:', filteredParts.length);
 
         if (filteredParts && filteredParts.length > 0) {
             // Calculate scores for all parts
@@ -441,6 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
             partDetailsSection.classList.add('hidden');
             selectorSection.classList.remove('hidden');
         } else {
+            console.log('No parts found, showing empty message');
             partsList.innerHTML = '<p>No compatible parts found in database.</p>';
             resultsSection.classList.remove('hidden');
         }
