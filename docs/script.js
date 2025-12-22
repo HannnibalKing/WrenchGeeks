@@ -291,7 +291,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function populateMakes() {
-        const makes = Object.keys(vehicleIndex).sort();
+        // Filter makes to only those that have models with parts or 3D prints
+        const makes = Object.keys(vehicleIndex).filter(make => {
+            return Object.keys(vehicleIndex[make]).some(model => hasContent(make, model));
+        }).sort();
+
         makeSelect.innerHTML = '<option value="">-- Select Make --</option>';
         makes.forEach(make => {
             if (!make) return;
@@ -305,6 +309,18 @@ document.addEventListener('DOMContentLoaded', () => {
             makeLoadStatus.textContent = makes.length > 0 ? `Loaded ${makes.length} makes` : 'No makes loaded';
         }
         if (subsystemSelect) subsystemSelect.disabled = false;
+    }
+
+    function hasContent(make, model) {
+        // Check for parts
+        if (vehicleIndex[make][model] && vehicleIndex[make][model].length > 0) return true;
+        
+        // Check for 3D prints
+        if (compatibilityEngine) {
+            const attrs = compatibilityEngine.getVehicleAttributes(make, model);
+            if (attrs.platformId && printingData[attrs.platformId]) return true;
+        }
+        return false;
     }
 
     const subsystemOptions = [
@@ -346,7 +362,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (donorList) donorList.classList.add('hidden');
 
         if (selectedMake && vehicleIndex[selectedMake]) {
-            let models = Object.keys(vehicleIndex[selectedMake]).sort();
+            let models = Object.keys(vehicleIndex[selectedMake])
+                .filter(model => hasContent(selectedMake, model))
+                .sort();
             
             models.forEach(model => {
                 const option = document.createElement('option');
@@ -509,6 +527,38 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>${tip.content}</p>
                 `;
                 tipsList.appendChild(div);
+            });
+        }
+    }
+
+    function display3DPrints(platformId) {
+        const printingList = document.getElementById('printingList');
+        if (!printingList) return;
+        
+        printingList.innerHTML = '';
+        printingList.classList.add('hidden');
+
+        if (!platformId || !printingData[platformId]) return;
+
+        const prints = printingData[platformId];
+        if (prints && prints.length > 0) {
+            printingList.classList.remove('hidden');
+            // Add header
+            const header = document.createElement('h4');
+            header.textContent = '🖨️ 3D Printable Parts';
+            header.style.gridColumn = '1 / -1';
+            header.style.marginBottom = '0.5rem';
+            printingList.appendChild(header);
+
+            prints.forEach(print => {
+                const div = document.createElement('div');
+                div.className = 'print-card';
+                div.innerHTML = `
+                    <h4>${print.name}</h4>
+                    <p>${print.description}</p>
+                    <a href="https://www.yeggi.com/q/${encodeURIComponent(print.search_term)}/" target="_blank" class="print-btn">Search Files ↗</a>
+                `;
+                printingList.appendChild(div);
             });
         }
     }
