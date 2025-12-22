@@ -444,6 +444,9 @@
       "category": "Brakes",
       "name": "GM Metric Caliper (D154)",
       "description": "Single piston floating caliper used on a massive range of GM vehicles and the AMC Eagle. Cheap, reliable, and easy to find.",
+      "history": "AMC was cash-strapped in the 80s and raided the GM parts bin. The 'Metric' caliper is one of the most common brake calipers in history, used on everything from Malibus to S10s.",
+      "pro_tip": "Since these are so common, you can upgrade to 'loaded' calipers from a parts store for cheap, or bolt on Wilwood D154 aluminum calipers for a massive weight savings.",
+      "average_price": "$30 - $60 (Per Caliper, New)",
       "specs": [
         "Piston: Single (usually 2.5\")",
         "Mount: 5.47\" spacing",
@@ -482,6 +485,7 @@
         "Type: Dual Diaphragm",
         "Benefit: Reduced pedal effort, increased pressure"
       ],
+      "average_price": "$50 - $120 (Used/Reman)",
       "compatibility": [
         {
           "make": "Jeep",

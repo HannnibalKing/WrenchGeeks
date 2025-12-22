@@ -540,6 +540,88 @@ document.addEventListener('DOMContentLoaded', () => {
             donorList.classList.add('hidden');
         }
     }
+
+    function showPartDetails(part, make, model) {
+        const partName = document.getElementById('partName');
+        const partCategory = document.getElementById('partCategory');
+        const partDescription = document.getElementById('partDescription');
+        const partSpecs = document.getElementById('partSpecs');
+        const compatibleVehicles = document.getElementById('compatibleVehicles');
+        const universalParts = document.getElementById('universalParts');
+        const proTipSection = document.getElementById('proTipSection');
+        const proTipContent = document.getElementById('proTipContent');
+
+        partName.textContent = part.name;
+        partCategory.textContent = part.category;
+        partDescription.textContent = part.description;
+
+        // Specs
+        partSpecs.innerHTML = '';
+        if (part.average_price) {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>💰 Average Price:</strong> ${part.average_price}`;
+            li.style.color = '#10b981'; // Green color for money
+            partSpecs.appendChild(li);
+        }
+        if (part.specs) {
+            part.specs.forEach(spec => {
+                const li = document.createElement('li');
+                li.textContent = spec;
+                partSpecs.appendChild(li);
+            });
+        }
+
+        // Compatible Vehicles
+        compatibleVehicles.innerHTML = '';
+        if (part.compatibility) {
+            part.compatibility.forEach(group => {
+                const div = document.createElement('div');
+                div.className = 'vehicle-group';
+                div.innerHTML = `<h5>${group.make}</h5>`;
+                const ul = document.createElement('ul');
+                group.models.forEach(m => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<strong>${m.name || m.model}</strong> (${m.years}) <br><small>${m.notes}</small>`;
+                    ul.appendChild(li);
+                });
+                div.appendChild(ul);
+                compatibleVehicles.appendChild(div);
+            });
+        }
+
+        // Universal / Aftermarket
+        universalParts.innerHTML = '';
+        if (part.universal_alternatives) {
+            part.universal_alternatives.forEach(alt => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${alt.name}</strong>: ${alt.notes}`;
+                universalParts.appendChild(li);
+            });
+        }
+
+        // Pro Tip / History
+        if (proTipSection) {
+            if (part.pro_tip || part.history) {
+                proTipSection.classList.remove('hidden');
+                proTipContent.innerHTML = '';
+                if (part.history) {
+                     proTipContent.innerHTML += `<p style="margin-bottom:0.5rem;"><strong>📜 History:</strong> ${part.history}</p>`;
+                }
+                if (part.pro_tip) {
+                     proTipContent.innerHTML += `<p><strong>💡 Pro Tip:</strong> ${part.pro_tip}</p>`;
+                }
+            } else {
+                proTipSection.classList.add('hidden');
+            }
+        }
+
+        // Show/Hide Sections
+        selectorSection.classList.add('hidden');
+        resultsSection.classList.add('hidden');
+        partDetailsSection.classList.remove('hidden');
+        window.scrollTo(0, 0);
+    }
+
     backButton.addEventListener('click', () => {
         partDetailsSection.classList.add('hidden');
         selectorSection.classList.remove('hidden');

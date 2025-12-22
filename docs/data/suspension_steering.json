@@ -700,6 +700,9 @@
       "category": "Suspension & Steering",
       "name": "Jeep XJ/ZJ Front Coil Springs",
       "description": "Front coil springs from Jeep Cherokee (XJ) or Grand Cherokee (ZJ). Used on AMC Eagle to provide lift and increased spring rate.",
+      "history": "The AMC Eagle was the first mass-produced crossover, essentially a Concord body on a Jeep-derived 4WD chassis. Because of this, many suspension parts are direct swaps from the XJ Cherokee.",
+      "pro_tip": "When using ZJ V8 springs, you might need to cut a coil to get the ride height correct, otherwise your CV axles will be at a bad angle.",
+      "average_price": "$50 - $100 (Pair, Used/New)",
       "specs": [
         "Type: Coil Spring",
         "Lift: ~1-2 inches over stock Eagle springs (depending on donor)",
@@ -737,6 +740,7 @@
         "Ratio: Variable (depending on donor)",
         "Mount: 3 or 4 bolt (check pattern)"
       ],
+      "average_price": "$150 - $300 (Remanufactured)",
       "compatibility": [
         {
           "make": "AMC",

@@ -763,16 +763,6 @@
       { "make": "Mitsubishi", "model": "Galant VR-4", "years": "1987–1992", "notes": "Evo Predecessor" },
       { "make": "Subaru", "model": "Legacy RS", "years": "1989–1993", "notes": "McRae's First Ride" },
       { "make": "Nissan", "model": "Pulsar GTI-R", "years": "1990–1994", "notes": "Baby Godzilla" }
-    ],
-    "NICHE_BUILD_SAFARI": [
-      { "make": "Porsche", "model": "911 (G-Series/964)", "years": "1974–1994", "notes": "Ideal Safari Base (Torsion Bar/Coilover)" },
-      { "make": "Porsche", "model": "944", "years": "1982–1991", "notes": "Budget Safari Build" },
-      { "make": "Mazda", "model": "MX-5 Miata (NA/NB)", "years": "1990–2005", "notes": "Paco Motorsports Lift Kit Candidate" }
-    ],
-    "NICHE_BUILD_BATTLEWAGON": [
-      { "make": "AMC", "model": "Eagle", "years": "1980–1987", "notes": "The Original Crossover" },
-      { "make": "Volvo", "model": "XC70 / V70 XC", "years": "1998–2007", "notes": "Tank with Clearance" },
-      { "make": "Subaru", "model": "Outback (BG/BH)", "years": "1994–2004", "notes": "Lifted Wagon Icon" }
     ]
   },
   "engines": {

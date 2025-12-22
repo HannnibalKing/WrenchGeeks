@@ -1256,6 +1256,7 @@
         "Valves: Larger than 4.2L",
         "Requires: 4.0L Header, Head Bolts, Water Jacket modification"
       ],
+      "average_price": "$100 - $250 (Used Head)",
       "compatibility": [
         {
           "make": "Jeep",
@@ -1291,6 +1292,7 @@
         "Benefit: Stops oil leaks",
         "Gasket: Cork or Rubber"
       ],
+      "average_price": "$50 - $150 (Used/New)",
       "compatibility": [
         {
           "make": "AMC",

@@ -185,6 +185,9 @@
       "category": "Drivetrain & Transmission",
       "name": "Dana 30 Front Axle Parts",
       "description": "The Dana 30 is the standard front axle for the AMC Eagle, Jeep XJ, YJ, TJ, and ZJ. While housing widths vary, internal parts like carriers, gears, and lockers are largely interchangeable.",
+      "history": "The Eagle uses a unique Independent Front Suspension (IFS) version of the Dana 30. The center section is fixed to the engine, unlike the solid axle found in Jeeps.",
+      "pro_tip": "While the housing is unique, the carrier and gears are standard Dana 30. You can install a locker or limited slip from a Jeep XJ, but remember the Eagle uses a vacuum disconnect system that might need bypassing.",
+      "average_price": "$100 - $300 (Used Carrier/Gears)",
       "specs": [
         "Ring Gear: 7.12\"",
         "Spline Count: 27 (usually)",
@@ -230,6 +233,7 @@
         "Chain Driven",
         "Spline: 21 or 23 input (check donor)"
       ],
+      "average_price": "$150 - $400 (Used)",
       "compatibility": [
         {
           "make": "Jeep",
