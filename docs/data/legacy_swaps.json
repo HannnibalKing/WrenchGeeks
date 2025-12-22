@@ -1,0 +1,144 @@
+{
+  "parts": [
+    {
+      "id": "vw_mk1_mk2_02a_swap",
+      "category": "Drivetrain",
+      "name": "VW 02A Transmission Swap",
+      "description": "Swapping the cable-shifted 02A transmission (from Corrado/Passat/Mk3) into Mk1/Mk2 chassis. Stronger than the stock 020 rod-shifted box.",
+      "specs": [
+        "Hydraulic clutch conversion required (or cable actuator)",
+        "100mm axle flanges",
+        "Cable shifter box"
+      ],
+      "compatibility": [
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf (Mk1)", "years": "1974-1983", "notes": "Upgrade" },
+            { "name": "Golf (Mk2)", "years": "1983-1992", "notes": "Upgrade" },
+            { "name": "Jetta (Mk1)", "years": "1979-1984", "notes": "Upgrade" },
+            { "name": "Jetta (Mk2)", "years": "1984-1992", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VOLKSWAGEN_GOLF__A1___MK1_", "VOLKSWAGEN_GOLF__A2___MK2_", "VOLKSWAGEN_JETTA__A1___MK1_", "VOLKSWAGEN_JETTA__A2___MK2_"]
+      }
+    },
+    {
+      "id": "honda_civic_ef_eg_b_swap",
+      "category": "Engine",
+      "name": "Honda B-Series Engine Swap",
+      "description": "The legendary B16/B18 swap. Drops directly into EF/EG/EK chassis with appropriate mounts and linkage.",
+      "specs": [
+        "DOHC VTEC",
+        "Hydraulic transmission (EG/EK)",
+        "Cable transmission (EF)"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic (EF)", "years": "1988-1991", "notes": "Requires cable trans or conversion" },
+            { "name": "Civic (EG)", "years": "1992-1995", "notes": "Direct bolt-in" },
+            { "name": "Civic (EK)", "years": "1996-2000", "notes": "Direct bolt-in" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["HONDA_CIVIC__SB_SG___1ST_GEN_", "HONDA_CIVIC_GOLDEN"]
+      }
+    },
+    {
+      "id": "jeep_xj_zj_tie_rod",
+      "category": "Suspension & Steering",
+      "name": "Jeep ZJ V8 Tie Rod Upgrade",
+      "description": "Using the solid steel tie rod from a V8 Grand Cherokee (ZJ) on an XJ/TJ/YJ. Much stronger than the stock hollow tube.",
+      "specs": [
+        "Solid steel construction",
+        "Direct bolt-on",
+        "Heavy duty"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Cherokee (XJ)", "years": "1984-2001", "notes": "Upgrade" },
+            { "name": "Wrangler (TJ)", "years": "1997-2006", "notes": "Upgrade" },
+            { "name": "Wrangler (YJ)", "years": "1987-1995", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["JEEP_CHEROKEE_XJ", "JEEP_WRANGLER__YJ_", "JEEP_WRANGLER__TJ_"]
+      }
+    },
+    {
+      "id": "fox_body_5_lug",
+      "category": "Brakes",
+      "name": "Fox Body 5-Lug Conversion",
+      "description": "Converting the 4-lug Fox Body Mustang to 5-lug using SN95 or Ranger parts. Opens up wheel options and better brake choices.",
+      "specs": [
+        "Front: SN95 Spindles/Rotors",
+        "Rear: Ranger/Aerostar Axles (Drum) or SN95 (Disc)"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang (Fox Body)", "years": "1979-1993", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_FOX"]
+      }
+    },
+    {
+      "id": "bmw_e30_e36_rack",
+      "category": "Suspension & Steering",
+      "name": "BMW E36/Z3 Steering Rack Swap",
+      "description": "Replacing the slow E30 steering rack with a quicker ratio rack from an E36 or Z3.",
+      "specs": [
+        "Requires spacers for mounting",
+        "Requires modified steering knuckle/linkage",
+        "Z3 1.9L rack is the quickest (linear)"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "E30 3-series", "years": "1982-1994", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["BMW_E30"]
+      }
+    },
+    {
+      "id": "subaru_wrx_brake_swap",
+      "category": "Brakes",
+      "name": "Subaru 4-Pot/2-Pot Brake Swap",
+      "description": "Installing the 4-piston front and 2-piston rear calipers from the WRX (06-07) or JDM STI onto older Imprezas/Foresters.",
+      "specs": [
+        "Fits under some 16-inch wheels",
+        "Requires rear backing plate adapter for some models",
+        "Significant stopping power increase"
+      ],
+      "compatibility": [
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "Impreza (GC8)", "years": "1993-2001", "notes": "Upgrade" },
+            { "name": "Impreza (GD)", "years": "2002-2007", "notes": "Upgrade (if not equipped)" },
+            { "name": "Forester (SF/SG)", "years": "1998-2008", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["SUBARU_IMPREZA_GC", "SUBARU_IMPREZA_GD", "SUBARU_FORESTER_SF", "SUBARU_FORESTER_SG"]
+      }
+    }
+  ]
+}

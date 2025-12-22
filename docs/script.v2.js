@@ -151,7 +151,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/cooling_hvac.json",
         "data/body_interior.json",
         "data/drivetrain.json",
-        "data/body_exterior.json"
+        "data/body_exterior.json",
+        "data/legacy_swaps.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };
