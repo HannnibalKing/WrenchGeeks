@@ -171,7 +171,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/french_connection.json",
         "data/heavy_duty_diesel.json",
         "data/motorcycle_interchange.json",
-        "data/classic_trucks.json"
+        "data/classic_trucks.json",
+        "data/truck_car_interchange.json",
+        "data/interior_interchange.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };

@@ -1,0 +1,67 @@
+[
+  {
+    "partName": "GM Truck Intake Manifold (LQ4/LM7) on Cars",
+    "compatibleVehicles": [
+      "Chevrolet Silverado / Sierra (1999-2007)",
+      "Chevrolet Chevelle / Nova / Camaro (LS Swaps)"
+    ],
+    "years": "1999-2007",
+    "notes": "The 'ugly' truck intake manifold actually flows incredibly well (better than the LS1 car intake) and makes great torque. It fits under the hood of many older muscle cars (Chevelle, Nova, C10) but is too tall for 4th Gen Camaros or Corvettes. The cheapest way to make power on an LS swap.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "GM Hydroboost Brake Upgrade",
+    "compatibleVehicles": [
+      "Chevrolet Silverado / Sierra 2500HD/3500HD (2001-2010)",
+      "Chevrolet Astro Van (1996-2005)",
+      "Classic Muscle Cars (Camaro, Chevelle, Mustang)"
+    ],
+    "years": "1996-2010",
+    "notes": "Hydroboost units from GM HD trucks or Astro vans use power steering pressure instead of engine vacuum for brake assist. This is a massive upgrade for classic cars with big cams (low vacuum) or turbo builds. Requires custom hoses and sometimes a firewall adapter plate.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Ford 8.8 Axle (Explorer) into Cars",
+    "compatibleVehicles": [
+      "Ford Explorer (1995-2001)",
+      "Ford Mustang (Fox Body / SN95)",
+      "Jeep Wrangler (YJ/TJ)"
+    ],
+    "years": "1995-2001",
+    "notes": "The Explorer 8.8 rear end is a common swap for Mustangs and Jeeps. It's stronger than the stock Mustang 8.8 (31-spline vs 28-spline) and comes with disc brakes. For Mustangs, the axle tubes are slightly different lengths, so you need to shorten one side or use offset wheels.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "GM High-Amp Alternator (KG3/AD244)",
+    "compatibleVehicles": [
+      "Chevrolet Tahoe / Suburban / Silverado (2000-2006)",
+      "Chevrolet Camaro / Corvette (LS1)"
+    ],
+    "years": "2000-2006",
+    "notes": "The 145-amp (KG3 option) or 160-amp alternators found on fully loaded Tahoes and Suburbans are a direct bolt-on upgrade for LS1 Camaros and lesser trucks (which came with 105-amp units). Essential for big stereo systems or electric fans.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Toyota 4Runner/Truck Brake Master Cylinder",
+    "compatibleVehicles": [
+      "Toyota T100 (1-inch bore)",
+      "Toyota 4Runner (1990-1995)",
+      "Toyota AE86 Corolla",
+      "Toyota Celica / Supra (Older)"
+    ],
+    "years": "1990-1998",
+    "notes": "The 1-inch bore master cylinder from a T100 or V6 4Runner is a popular upgrade for AE86 Corollas and older Toyotas when upgrading to larger calipers. It firms up the pedal feel significantly.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Subaru Forester Struts (Lift Kit for Cars)",
+    "compatibleVehicles": [
+      "Subaru Forester (SF/SG 1998-2008)",
+      "Subaru Impreza (GC/GD 1993-2007)",
+      "Subaru Legacy (BG/BH)"
+    ],
+    "years": "1998-2008",
+    "notes": "Want to lift your Impreza for rallycross or winter? Forester struts and springs bolt directly in. They provide about 2-3 inches of lift and allow for larger tires. You may need the Forester trailing arm brackets to re-center the rear wheels.",
+    "matchLevel": "Match - Direct Fit"
+  }
+]

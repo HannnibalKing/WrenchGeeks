@@ -1,0 +1,76 @@
+[
+  {
+    "partName": "Honda S2000 Seats in Civic/Integra",
+    "compatibleVehicles": [
+      "Honda S2000 (AP1/AP2)",
+      "Honda Civic (EG/EK)",
+      "Acura Integra (DC2)"
+    ],
+    "years": "1992-2009",
+    "notes": "S2000 seats are legendary for support and style. They physically fit in Civics and Integras, but the rails are different. You need to swap the S2000 seat pans onto your Civic/Integra rails (requires drilling spot welds) or buy aftermarket conversion rails.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Subaru WRX / STi Seats in Forester",
+    "compatibleVehicles": [
+      "Subaru WRX / STi (2002-2007 GD)",
+      "Subaru Forester (1998-2008 SF/SG)"
+    ],
+    "years": "1998-2008",
+    "notes": "Front seats from a 'Bugeye', 'Blobeye', or 'Hawkeye' WRX/STi bolt directly into the SF and SG Forester. Massive upgrade in bolstering over the flat Forester seats. The rear seats do NOT swap directly (sedan vs wagon).",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Ford Mustang Seat Swap (Fox/SN95/New Edge)",
+    "compatibleVehicles": [
+      "Ford Mustang SN95 (1994-1998)",
+      "Ford Mustang New Edge (1999-2004)",
+      "Ford Mustang Fox Body (1979-1993)"
+    ],
+    "years": "1979-2004",
+    "notes": "Seats from 94-04 Mustangs bolt directly onto the seat tracks of 79-93 Fox Bodies. This is the most common interior upgrade for Fox owners, getting rid of the flat, worn-out original seats for the more supportive SN95 buckets.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Mazda Miata Seats (NB in NA)",
+    "compatibleVehicles": [
+      "Mazda Miata NB (1999-2005)",
+      "Mazda Miata NA (1990-1997)"
+    ],
+    "years": "1990-2005",
+    "notes": "NB Miata seats bolt directly into the older NA Miata. They are more comfortable and have higher headrests. RX-8 seats can also be fitted to NC Miatas with some rail modification.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "BMW E46 Sport Seats in E36",
+    "compatibleVehicles": [
+      "BMW 3-Series E46 (1999-2006)",
+      "BMW 3-Series E36 (1992-1999)"
+    ],
+    "years": "1992-2006",
+    "notes": "E46 seats can be fitted to E36s. The bolt pattern on the rails is slightly different (requires elongating the rear holes on the rails). Wiring for power/heat requires splicing connectors. A great way to get modern comfort in an E36.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Nissan S15 / R32 / R33 Seats in S13/S14",
+    "compatibleVehicles": [
+      "Nissan Silvia S15",
+      "Nissan Skyline R32/R33/R34",
+      "Nissan 240SX S13/S14"
+    ],
+    "years": "1989-2002",
+    "notes": "Nissan sports car seats from the 90s are highly interchangeable. S15 seats bolt into S13/S14s (sometimes requiring swapping one mounting foot). R32/R33 GTR seats are a premium upgrade and fit with minor rail modifications.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "VW Golf Mk4 / Audi TT / A3 Interior Swap",
+    "compatibleVehicles": [
+      "VW Golf Mk4 / Jetta Mk4",
+      "Audi TT Mk1 (8N)",
+      "Audi A3 (8L)"
+    ],
+    "years": "1999-2006",
+    "notes": "Front seats interchange between these platform mates. Audi TT seats in a Golf Mk4 is a classic upgrade. Steering wheels also interchange (check airbag connector types). TT pedals (aluminum) fit Golfs.",
+    "matchLevel": "Match - Direct Fit"
+  }
+]
