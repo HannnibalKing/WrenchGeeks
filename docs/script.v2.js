@@ -176,7 +176,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/interior_interchange.json",
         "data/tech_guides.json",
         "data/fabrication_tips.json",
-        "data/workshop_hacks.json"
+        "data/workshop_hacks.json",
+        "data/electrical_basics.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };

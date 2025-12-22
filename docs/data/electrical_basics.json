@@ -1,0 +1,56 @@
+[
+  {
+    "partName": "Multimeter 101: Tracing a Wire (Continuity)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Set your meter to the 'Sound Wave' or Diode symbol. Touch the probes together; it should beep. To trace a wire: Put one probe on one end of the wire and the other probe on the other end. If it beeps, the wire is intact. If it stays silent (OL), the wire is broken.",
+    "matchLevel": "Electrical Basics"
+  },
+  {
+    "partName": "Multimeter 101: Testing Grounds (Ohms)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Set meter to Ohms (Ω). Touch one probe to the chassis (clean metal) and the other to your ground wire/pin. A perfect ground is 0.0 Ω. Anything under 0.5 Ω is good. If you see 5.0 Ω or higher, you have a bad ground (corrosion or loose bolt), which causes weird electrical gremlins.",
+    "matchLevel": "Electrical Basics"
+  },
+  {
+    "partName": "Safety: Why NOT to use a Higher Fuse",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "DANGER: Fuses are rated to protect the WIRE, not the device. If a circuit has 18-gauge wire (rated for ~10 Amps) and you put a 20A fuse in it, the wire will melt and catch fire BEFORE the fuse blows. NEVER replace a blown fuse with a higher rating.",
+    "matchLevel": "Critical Safety"
+  },
+  {
+    "partName": "Theory: Fuse Ratings Explained",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "A fuse is a deliberate weak point. If a 10A fuse blows, it means more than 10 Amps flowed through it. This is usually caused by a 'Short to Ground' (power wire touching metal). Putting a bigger fuse just allows more current to flow into the short, turning your wiring harness into a heater.",
+    "matchLevel": "Electrical Basics"
+  },
+  {
+    "partName": "Multimeter 101: Voltage Drop Testing",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "The best way to find a bad connection. With the circuit ON (under load), put one probe on the battery positive and the other on the device positive. The meter shows how much voltage is 'lost' in the wire. Ideally, it should be < 0.5 Volts. If you see 2V+, you have a corroded wire or switch.",
+    "matchLevel": "Electrical Basics"
+  },
+  {
+    "partName": "Theory: Parasitic Draw Test",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "If your battery dies overnight: 1. Disconnect Negative battery terminal. 2. Set meter to Amps (A) and move red probe to the '10A' port. 3. Connect meter in SERIES between the battery post and the cable. 4. Normal draw is < 0.05 Amps (50mA). If higher, pull fuses one by one until it drops.",
+    "matchLevel": "Electrical Basics"
+  }
+]
