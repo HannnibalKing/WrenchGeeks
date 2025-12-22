@@ -281,6 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let activeBuildFilter = null; // Global filter for Quick Builds
+    let quickBuildAutoSelectModel = false; // Auto-pick first model after quick build
 
     makeSelect.addEventListener('change', (e) => {
         // If user manually selects a make, clear any active filters/banners
@@ -307,6 +308,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         model.toLowerCase().includes(keyword.toLowerCase())
                     );
                 });
+
+                // If nothing matches the filtered keywords, fall back to all models
+                if (models.length === 0) {
+                    models = Object.keys(vehicleIndex[selectedMake]).sort();
+                    activeBuildFilter = null;
+                    if (quickBuildSelect) quickBuildSelect.value = "";
+                    if (buildGuideBanner) buildGuideBanner.classList.add('hidden');
+                }
             }
 
             models.forEach(model => {
@@ -316,6 +325,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 modelSelect.appendChild(option);
             });
             modelSelect.disabled = false;
+
+            // If coming from Quick Build, auto-select the first model and show parts
+            if (quickBuildAutoSelectModel && models.length > 0) {
+                modelSelect.value = models[0];
+                modelSelect.dispatchEvent(new Event('change'));
+                quickBuildAutoSelectModel = false;
+            }
         }
     });
 
@@ -652,6 +668,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetMake) {
                 // Set Global Filter
                 activeBuildFilter = { make: targetMake, keywords: filterKeywords };
+                quickBuildAutoSelectModel = true;
 
                 // Trigger Make Selection
                 makeSelect.value = targetMake;
