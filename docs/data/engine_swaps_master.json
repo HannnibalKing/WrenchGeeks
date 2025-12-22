@@ -1,0 +1,140 @@
+{
+  "parts": [
+    {
+      "id": "ls_swap_s_chassis",
+      "category": "Engine Swap",
+      "name": "GM LS V8 Swap (Nissan S-Chassis)",
+      "description": "The 'LS-S' swap. Dropping a GM LS1/LS2/LS3 or truck motor (LM7/LQ4/LQ9) into a Nissan 240SX. Offers massive torque and reliability compared to the SR20DET.",
+      "specs": [
+        "Requires swap kit (Mounts, Oil Pan, Headers)",
+        "T56 or CD009 Transmission adapter needed",
+        "Wiring harness conversion required"
+      ],
+      "compatibility": [
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "240SX (S13)", "years": "1989-1994", "notes": "Most popular drift chassis for LS swap" },
+            { "name": "240SX (S14)", "years": "1995-1998", "notes": "Popular swap candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["NISSAN_S_CHASSIS"]
+      }
+    },
+    {
+      "id": "k_swap_miata",
+      "category": "Engine Swap",
+      "name": "Honda K24 Swap (Mazda Miata)",
+      "description": "The 'K-Miata' swap. Replacing the aging Mazda B6/BP engine with a high-revving Honda K24. Doubles the horsepower while keeping the car naturally aspirated and lightweight.",
+      "specs": [
+        "Requires adapter plate for Miata transmission OR BMW ZF transmission",
+        "Tubular subframe usually required",
+        "K24A2 (TSX) engine is preferred"
+      ],
+      "compatibility": [
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "MX-5 Miata (NA)", "years": "1990-1997", "notes": "Transformative upgrade" },
+            { "name": "MX-5 Miata (NB)", "years": "1999-2005", "notes": "Transformative upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["MAZDA_MIATA_NA", "MAZDA_MIATA_NB"]
+      }
+    },
+    {
+      "id": "ls_swap_e36",
+      "category": "Engine Swap",
+      "name": "GM LS V8 Swap (BMW E36)",
+      "description": "The 'E36 LS'. Fits surprisingly well in the E36 engine bay. Excellent weight distribution and parts availability.",
+      "specs": [
+        "Requires custom headers (tight steering shaft clearance)",
+        "GTO oil pan often used",
+        "CAN bus integration not needed for E36 (simpler electronics)"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "3-Series (E36)", "years": "1992-1999", "notes": "Popular track car swap" },
+            { "name": "M3 (E36)", "years": "1995-1999", "notes": "Replaces expensive S50/S52" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["BMW_E36"]
+      }
+    },
+    {
+      "id": "coyote_swap_fox",
+      "category": "Engine Swap",
+      "name": "Ford 5.0L Coyote Swap (Fox Body)",
+      "description": "Modern power in a classic chassis. The DOHC Coyote engine is physically large but fits in a Fox Body with the right K-member.",
+      "specs": [
+        "Requires tubular K-member (stock one won't clear oil pan/headers)",
+        "Hydroboost brake conversion often needed (vacuum booster is too big)",
+        "Control Pack ECU simplifies wiring"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang (Fox Body)", "years": "1979-1993", "notes": "The ultimate restomod" },
+            { "name": "Mustang (SN95)", "years": "1994-2004", "notes": "Also fits well" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_FOX", "FORD_SN95"]
+      }
+    },
+    {
+      "id": "k_swap_mr2",
+      "category": "Engine Swap",
+      "name": "Honda K20/K24 Swap (Toyota MR2 Spyder)",
+      "description": "Fixing the one flaw of the MR2 Spyder (the weak 1ZZ engine). A K20 or K24 turns this chassis into a Lotus Elise killer.",
+      "specs": [
+        "Requires swap mounts and axles",
+        "Stock Toyota transmission cannot be used (use Honda 6-speed)",
+        "Shifter mechanism conversion required"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "MR2 Spyder (ZZW30)", "years": "2000-2005", "notes": "Best bang-for-buck track car" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["TOYOTA_MR2_W30"]
+      }
+    },
+    {
+      "id": "jz_swap_is300",
+      "category": "Engine Swap",
+      "name": "2JZ-GTE Swap (Lexus IS300)",
+      "description": "The IS300 came with the non-turbo 2JZ-GE. Swapping in the turbo 2JZ-GTE (from an Aristo or Supra) is the natural evolution.",
+      "specs": [
+        "Direct physical fit (engine mounts match)",
+        "Wiring harness merge required",
+        "Stock W55 transmission is weak (upgrade to R154 or CD009 recommended)"
+      ],
+      "compatibility": [
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "IS300", "years": "2001-2005", "notes": "The 4-door Supra" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["LEXUS_IS_XE10"]
+      }
+    }
+  ]
+}
