@@ -1,0 +1,116 @@
+{
+  "parts": [
+    {
+      "id": "saab_92x_mechanicals",
+      "category": "Mechanical",
+      "name": "Saab 9-2X 'Saabaru' Mechanical Parts",
+      "description": "The Saab 9-2X is literally a Subaru Impreza Wagon with a different nose and tail. Almost every mechanical part (Engine, Transmission, Suspension, Brakes) is identical to the Subaru Impreza.",
+      "specs": [
+        "9-2X Linear = Impreza 2.5TS (EJ253)",
+        "9-2X Aero (2005) = WRX 2.0L (EJ205)",
+        "9-2X Aero (2006) = WRX 2.5L (EJ255)"
+      ],
+      "compatibility": [
+        { "make": "Saab", "models": [{ "name": "9-2X Linear", "years": "2005-2006", "notes": "Recipient" }, { "name": "9-2X Aero", "years": "2005-2006", "notes": "Recipient" }] },
+        { "make": "Subaru", "models": [{ "name": "Impreza Wagon", "years": "2002-2007", "notes": "Donor (Body/Glass/Mechanicals)" }, { "name": "Impreza WRX", "years": "2002-2007", "notes": "Donor (Aero Mechanicals)" }] }
+      ],
+      "compatibility_smart": { "platforms": ["SUBARU_IMPREZA_GD"] }
+    },
+    {
+      "id": "crossfire_slk_parts",
+      "category": "Chassis & Drivetrain",
+      "name": "Chrysler Crossfire / Mercedes SLK R170 Parts",
+      "description": "The Chrysler Crossfire is 80% Mercedes SLK320 (R170 chassis) underneath. The engine (M112), transmission (722.6), suspension, and steering are all Mercedes parts stamped with Chrysler logos (or sometimes Mercedes logos!).",
+      "specs": [
+        "Engine: Mercedes M112 V6",
+        "Chassis: R170 Platform",
+        "Electronics: Mercedes Proprietary"
+      ],
+      "compatibility": [
+        { "make": "Chrysler", "models": [{ "name": "Crossfire", "years": "2004-2008", "notes": "Recipient" }] },
+        { "make": "Mercedes-Benz", "models": [{ "name": "SLK320 (R170)", "years": "2001-2004", "notes": "Donor (Engine/Trans/Suspension)" }, { "name": "SLK32 AMG", "years": "2002-2004", "notes": "Donor (SRT-6 Engine/Brakes)" }] }
+      ],
+      "compatibility_smart": { "platforms": ["MERCEDES_R170"] }
+    },
+    {
+      "id": "vibe_matrix_parts",
+      "category": "Mechanical",
+      "name": "Pontiac Vibe / Toyota Matrix Parts",
+      "description": "The Pontiac Vibe was built by NUMMI (GM/Toyota joint venture). It is mechanically identical to the Toyota Matrix and Toyota Corolla. You can buy Toyota parts (often cheaper or better quality) for your Pontiac.",
+      "specs": [
+        "Engine: 1ZZ-FE (Base/AWD) or 2ZZ-GE (GT)",
+        "Chassis: Toyota Corolla E130",
+        "Interior: Shared switchgear"
+      ],
+      "compatibility": [
+        { "make": "Pontiac", "models": [{ "name": "Vibe", "years": "2003-2008", "notes": "Recipient" }] },
+        { "make": "Toyota", "models": [{ "name": "Matrix", "years": "2003-2008", "notes": "Identical Twin" }, { "name": "Corolla", "years": "2003-2008", "notes": "Mechanical Donor" }] }
+      ],
+      "compatibility_smart": { "platforms": ["TOYOTA_COROLLA_E120", "TOYOTA_MATRIX_E130"] }
+    },
+    {
+      "id": "aston_miata_door_handles",
+      "category": "Interior",
+      "name": "Aston Martin DB7 Door Handles",
+      "description": "A famous example of parts bin sharing. The interior door handles on the exquisite Aston Martin DB7 are actually from a Mazda Miata (NB).",
+      "specs": [
+        "Part: Interior Door Release Handle",
+        "Material: Chromed Plastic (Aston) vs Plastic/Chrome (Mazda)",
+        "Fitment: Direct Swap"
+      ],
+      "compatibility": [
+        { "make": "Aston Martin", "models": [{ "name": "DB7", "years": "1994-2004", "notes": "Recipient" }] },
+        { "make": "Mazda", "models": [{ "name": "MX-5 Miata (NB)", "years": "1999-2005", "notes": "Donor" }] }
+      ],
+      "compatibility_smart": { "platforms": ["MAZDA_MIATA_NB"] }
+    },
+    {
+      "id": "diablo_300zx_headlights",
+      "category": "Exterior",
+      "name": "Lamborghini Diablo Headlights",
+      "description": "The facelifted Lamborghini Diablo (1999+) ditched the pop-up headlights for fixed units. These units were sourced directly from the Nissan 300ZX (Z32). Lamborghini even included a carbon fiber strip to cover the Nissan logo on the lens!",
+      "specs": [
+        "Part: Composite Headlight Assembly",
+        "Origin: Nissan Z32",
+        "Modification: Carbon strip covers 'Nissan' logo"
+      ],
+      "compatibility": [
+        { "make": "Lamborghini", "models": [{ "name": "Diablo VT 6.0", "years": "1999-2001", "notes": "Recipient" }] },
+        { "make": "Nissan", "models": [{ "name": "300ZX (Z32)", "years": "1990-1996", "notes": "Donor" }] }
+      ],
+      "compatibility_smart": { "platforms": ["NISSAN_Z_CAR"] }
+    },
+    {
+      "id": "ranger_bseries_parts",
+      "category": "Body & Mechanical",
+      "name": "Ford Ranger / Mazda B-Series Parts",
+      "description": "The Mazda B-Series (1994+) in North America is a rebadged Ford Ranger. Doors, beds (sometimes), engines, and transmissions are interchangeable.",
+      "specs": [
+        "Engines: 2.3L, 3.0L, 4.0L (Ford Cologne)",
+        "Transmissions: M5OD-R1 (Manual), 4R44E/5R55E (Auto)",
+        "Interior: Dash and seats swap"
+      ],
+      "compatibility": [
+        { "make": "Mazda", "models": [{ "name": "B2300 / B3000 / B4000", "years": "1994-2009", "notes": "Recipient" }] },
+        { "make": "Ford", "models": [{ "name": "Ranger", "years": "1993-2011", "notes": "Donor / Twin" }] }
+      ],
+      "compatibility_smart": { "platforms": ["FORD_RANGER_GEN_2", "FORD_RANGER_GEN_3"] }
+    },
+    {
+      "id": "landrover_bmw_m62",
+      "category": "Engine",
+      "name": "Range Rover (L322) BMW V8 Parts",
+      "description": "The early L322 Range Rover (2002-2005) was developed while BMW owned Land Rover. It uses the BMW M62TUB44 V8 engine. You can use BMW engine parts (VANOS solenoids, sensors, gaskets) which are often cheaper than 'Land Rover' boxed parts.",
+      "specs": [
+        "Engine: BMW M62TUB44 (4.4L V8)",
+        "Electronics: BMW E39/E38 generation",
+        "Transmission: ZF 5HP24"
+      ],
+      "compatibility": [
+        { "make": "Land Rover", "models": [{ "name": "Range Rover (L322)", "years": "2002-2005", "notes": "Recipient" }] },
+        { "make": "BMW", "models": [{ "name": "X5 (E53) 4.4i", "years": "2000-2003", "notes": "Donor" }, { "name": "540i (E39)", "years": "1998-2003", "notes": "Donor" }, { "name": "740i (E38)", "years": "1998-2001", "notes": "Donor" }] }
+      ],
+      "compatibility_smart": { "platforms": ["BMW_E39", "BMW_E38", "BMW_X5_E53"] }
+    }
+  ]
+}
