@@ -164,7 +164,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/global_platforms.json",
         "data/jdm_euro_legends.json",
         "data/offroad_legends.json",
-        "data/euro_vag_secrets.json"
+        "data/euro_vag_secrets.json",
+        "data/aussie_muscle.json",
+        "data/kei_car_secrets.json",
+        "data/american_muscle.json",
+        "data/french_connection.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };

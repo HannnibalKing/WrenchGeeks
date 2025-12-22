@@ -1,0 +1,48 @@
+[
+  {
+    "partName": "PSA Platform Sharing (Peugeot/Citroen)",
+    "compatibleVehicles": [
+      "Peugeot 106",
+      "Citroen Saxo",
+      "Peugeot 206",
+      "Citroen C2 / C3"
+    ],
+    "years": "1996-2004",
+    "notes": "The Peugeot 106 and Citroen Saxo are twins. Suspension, brakes (VTS/GTI), and engines interchange. The later Citroen C2 VTS shares parts with the Peugeot 206 GTI. Rear beams are a common failure point but interchange between similar models.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Renault F4R Engine Parts",
+    "compatibleVehicles": [
+      "Renault Clio RS (172/182)",
+      "Renault Megane",
+      "Renault Laguna",
+      "Renault Scenic"
+    ],
+    "years": "1998-2012",
+    "notes": "The F4R 2.0L engine is found in many Renaults. The high-performance RS versions use different heads/intakes, but the blocks are often shared. You can use a Scenic or Laguna block to build a high-compression Clio RS engine.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Prince Engine (Mini / Peugeot / Citroen)",
+    "compatibleVehicles": [
+      "Mini Cooper S (R56 2006-2013)",
+      "Peugeot 207 GTi / RC",
+      "Citroen DS3",
+      "Peugeot 308"
+    ],
+    "years": "2006-2015",
+    "notes": "The 1.6L Turbo 'Prince' engine (N14/N18 in Mini terms, THP in PSA terms) is shared. High-pressure fuel pumps (HPFP), turbos, and timing chain kits are often identical but cheaper when bought in a Peugeot/Citroen box instead of a BMW/Mini box.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Renault 5 GT Turbo / Volvo 400 Series",
+    "compatibleVehicles": [
+      "Renault 5 GT Turbo",
+      "Volvo 440 / 460 / 480 Turbo"
+    ],
+    "years": "1985-1996",
+    "notes": "The Volvo 400 series used Renault engines. The B18FT (Volvo 1.7 Turbo) is based on the Renault F-series architecture. Some parts interchange with the Renault 5 GT Turbo and Clio engines.",
+    "matchLevel": "Match - Possible Mods"
+  }
+]

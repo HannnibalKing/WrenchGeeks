@@ -1,0 +1,59 @@
+[
+  {
+    "partName": "Holden Commodore / Pontiac GTO / Monaro Interchange",
+    "compatibleVehicles": [
+      "Holden Commodore VT/VX/VY/VZ (1997-2006)",
+      "Pontiac GTO (2004-2006)",
+      "Holden Monaro (2001-2005)",
+      "Chevrolet Lumina (Middle East/South Africa)"
+    ],
+    "years": "1997-2006",
+    "notes": "The 2004-2006 Pontiac GTO IS a Holden Monaro. Almost all body panels, interior parts, and suspension components interchange with the Holden Commodore VT-VZ series. LS1 and LS2 engine parts are standard GM Gen III/IV architecture.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Holden Commodore VE/VF / Pontiac G8 / Chevy SS",
+    "compatibleVehicles": [
+      "Holden Commodore VE (2006-2013)",
+      "Holden Commodore VF (2013-2017)",
+      "Pontiac G8 (2008-2009)",
+      "Chevrolet SS (2014-2017)",
+      "Chevrolet Caprice PPV (2011-2017)"
+    ],
+    "years": "2006-2017",
+    "notes": "The 'Zeta' platform cars. Pontiac G8 GT/GXP parts are interchangeable with Holden Commodore VE. Chevy SS parts interchange with Holden Commodore VF. You can swap the entire front end (bumper, hood, lights) between G8/VE and SS/VF to 'convert' the look.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Ford Barra Engine Swap (Falcon/Territory)",
+    "compatibleVehicles": [
+      "Ford Falcon BA/BF/FG (2002-2016)",
+      "Ford Territory SX/SY/SZ (2004-2016)"
+    ],
+    "years": "2002-2016",
+    "notes": "The Ford Territory is the 'SUV Falcon'. It uses the same Barra 4.0L I6 engine (N/A and Turbo). The Territory Turbo engine is a cheap source for a Barra swap. Front suspension components (control arms, uprights) are often shared or adaptable.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Holden Banjo / Salisbury Diff Swap",
+    "compatibleVehicles": [
+      "Holden Torana LH/LX/UC",
+      "Holden Commodore VB-VL",
+      "Holden Kingswood HQ-WB"
+    ],
+    "years": "1971-1988",
+    "notes": "Older Holdens often swapped differentials. The 'Salisbury' 10-bolt from V8 Commodores or Kingswoods is a common upgrade for the weaker 'Banjo' diffs found in 6-cylinder Toranas and early Commodores. Requires checking width and mounting points.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Ford 9-Inch Diff (Australian Production)",
+    "compatibleVehicles": [
+      "Ford Falcon GT (XY/XA/XB)",
+      "Ford Fairlane (ZF/ZG/ZH)",
+      "Ford F-100 (Australian delivered)"
+    ],
+    "years": "1970-1980",
+    "notes": "Australian Fords often used the legendary 9-inch rear end. These are highly sought after for drag racing builds worldwide. The housing width varies, but the center section (pumpkin) is universal.",
+    "matchLevel": "Match - Minor Mods"
+  }
+]

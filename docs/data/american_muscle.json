@@ -1,0 +1,54 @@
+[
+  {
+    "partName": "Fox Body / SN95 / New Edge Mustang Suspension",
+    "compatibleVehicles": [
+      "Ford Mustang Fox Body (1979-1993)",
+      "Ford Mustang SN95 (1994-1998)",
+      "Ford Mustang New Edge (1999-2004)"
+    ],
+    "years": "1979-2004",
+    "notes": "The chassis is largely the same. SN95 front control arms are longer (wider track) and 5-lug, a common upgrade for Fox Bodies. SN95 spindles allow for better brake options (Cobra brakes). Rear control arms interchange but lengths vary slightly.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Ford Explorer Intake Manifold (5.0L)",
+    "compatibleVehicles": [
+      "Ford Mustang 5.0L (1986-1995)",
+      "Ford Explorer 5.0L (1996-2001)",
+      "Mercury Mountaineer 5.0L"
+    ],
+    "years": "1986-2001",
+    "notes": "The 'GT40' and 'GT40P' intake manifolds found on V8 Explorers flow significantly better than the stock Mustang HO intake. It's the cheapest horsepower upgrade for a Fox Body. Requires the matching throttle body and EGR setup.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Lincoln Mark VIII Engine (Teksid Block)",
+    "compatibleVehicles": [
+      "Lincoln Mark VIII (1993-1998)",
+      "Ford Mustang SVT Cobra (1996-1998)"
+    ],
+    "years": "1993-1998",
+    "notes": "The Lincoln Mark VIII uses the same 4.6L DOHC V8 as the Cobra. The 93-98 blocks are cast by Teksid in Italy and are the strongest aluminum modular blocks Ford ever made, capable of 1000+ hp. A cheap junkyard find for high-power builds.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Cobra IRS Swap (Independent Rear Suspension)",
+    "compatibleVehicles": [
+      "Ford Mustang SVT Cobra (1999-2004)",
+      "Ford Mustang Fox Body / SN95 (Solid Axle)"
+    ],
+    "years": "1979-2004",
+    "notes": "The IRS from the 99-04 Cobra bolts into any 79-04 Mustang chassis (the mounting holes are already there in the frame rails!). Provides better handling and ride quality but is heavier than the solid axle. Popular for track cars.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Crown Victoria Front Suspension (CV Swap)",
+    "compatibleVehicles": [
+      "Ford F-100 / F-150 (1960s-1970s)",
+      "Ford Crown Victoria (2003-2011)"
+    ],
+    "years": "2003-2011",
+    "notes": "The entire front suspension crossmember from a 2003+ Crown Vic (aluminum, rack and pinion, disc brakes) bolts into older Ford F-series trucks with relatively minor fabrication. It lowers the truck and provides modern handling.",
+    "matchLevel": "Match - Major Mods"
+  }
+]
