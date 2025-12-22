@@ -1,0 +1,59 @@
+[
+  {
+    "partName": "Warning: Radiator 'Stop Leak' (Alumaseal, Bars Leaks)",
+    "compatibleVehicles": [
+      "All Vehicles"
+    ],
+    "years": "Universal",
+    "notes": "AVOID. These products use metal flakes or pellets to plug leaks. They cannot distinguish between a leak and your heater core or radiator tubes. They frequently clog the heater core (no heat) and the radiator (overheating), turning a $100 repair into a $1000 disaster.",
+    "matchLevel": "Snake Oil Warning"
+  },
+  {
+    "partName": "Warning: 'Head Gasket Fix' in a Bottle",
+    "compatibleVehicles": [
+      "All Vehicles"
+    ],
+    "years": "Universal",
+    "notes": "Sodium Silicate (Liquid Glass) products claim to fix blown head gaskets. While they might seal a minor leak temporarily, they often solidify inside the water pump, thermostat, and engine block passages. This is a 'last resort' for a car you plan to scrap, not fix.",
+    "matchLevel": "Snake Oil Warning"
+  },
+  {
+    "partName": "Warning: Thick Oil Stabilizers (Lucas, etc.) in Modern Engines",
+    "compatibleVehicles": [
+      "Engines with VVT / VTEC / Cylinder Deactivation",
+      "Ford 5.4L 3V",
+      "Honda K-Series",
+      "GM AFM/DOD Engines"
+    ],
+    "years": "2000-Present",
+    "notes": "Modern engines use oil pressure to actuate Variable Valve Timing (VVT) and cylinder deactivation. Adding thick 'stabilizers' changes the oil viscosity, causing VVT solenoids to lag or fail, triggering Check Engine lights and potential timing chain damage. Stick to the factory viscosity.",
+    "matchLevel": "Critical Warning"
+  },
+  {
+    "partName": "Warning: Transmission 'Stop Slip' Additives",
+    "compatibleVehicles": [
+      "Automatic Transmissions"
+    ],
+    "years": "Universal",
+    "notes": "These additives work by swelling the rubber seals inside the transmission to increase pressure. However, they also soften the seals, eventually causing them to turn to mush and fail completely. They also alter the friction modifiers, which can glaze the clutch packs.",
+    "matchLevel": "Snake Oil Warning"
+  },
+  {
+    "partName": "Warning: Engine Flushes on High-Mileage Cars",
+    "compatibleVehicles": [
+      "High Mileage Engines (>150k miles)"
+    ],
+    "years": "Universal",
+    "notes": "If an engine has been neglected and is full of sludge, using a strong 'Motor Flush' solvent can be fatal. It breaks loose large chunks of sludge all at once, which fall into the oil pan and clog the oil pickup screen, starving the engine of oil and causing immediate seizure.",
+    "matchLevel": "Critical Warning"
+  },
+  {
+    "partName": "Warning: 'Performance' Chips / OBD2 Dongles",
+    "compatibleVehicles": [
+      "All Vehicles"
+    ],
+    "years": "1996-Present",
+    "notes": "Cheap ($20-$50) 'Performance Chips' found on eBay/Amazon are usually just a resistor in a box that tricks the Intake Air Temp sensor, making the car run rich. They do not add power and can wash down cylinder walls with excess fuel. Real tuning requires ECU remapping.",
+    "matchLevel": "Snake Oil Warning"
+  }
+]
