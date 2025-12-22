@@ -130,6 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const modelSelect = document.getElementById('modelSelect');
     const resultsSection = document.getElementById('results');
     const partsList = document.getElementById('partsList');
+    const donorList = document.getElementById('donorList');
+    const donorVehicles = document.getElementById('donorVehicles');
     const tipsList = document.getElementById('tipsList');
     const partDetailsSection = document.getElementById('partDetails');
     const selectorSection = document.getElementById('selector');
@@ -293,6 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modelSelect.disabled = true;
         resultsSection.classList.add('hidden');
         partDetailsSection.classList.add('hidden');
+        if (donorList) donorList.classList.add('hidden');
 
         if (selectedMake && vehicleIndex[selectedMake]) {
             let models = Object.keys(vehicleIndex[selectedMake]).sort();
@@ -333,6 +336,9 @@ document.addEventListener('DOMContentLoaded', () => {
         partsList.innerHTML = '';
         
         const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
+
+        // Show cross-platform / engine donor vehicles
+        displayDonors(vehicleAttrs.platformId, vehicleAttrs.engineId, make, model);
 
         displayTips(make, model);
         display3DPrints(vehicleAttrs.platformId);
@@ -402,6 +408,46 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 tipsList.appendChild(div);
             });
+        }
+    }
+
+    function displayDonors(platformId, engineId, make, model) {
+        if (!donorList || !donorVehicles) return;
+        donorVehicles.innerHTML = '';
+
+        const donors = [];
+        const addDonor = (v, reason) => {
+            const name = v.model || v.name;
+            if (!name) return;
+            const display = `${v.make} ${name}`;
+            if (display.toLowerCase() === `${make} ${model}`.toLowerCase()) return; // skip self
+            donors.push({ display, years: v.years || '', notes: v.notes || '', reason });
+        };
+
+        if (platformId && relationships.platforms && relationships.platforms[platformId]) {
+            relationships.platforms[platformId].forEach(v => addDonor(v, 'Same platform'));
+        }
+        if (engineId && relationships.engines && relationships.engines[engineId]) {
+            relationships.engines[engineId].forEach(v => addDonor(v, 'Shared engine'));
+        }
+
+        // Deduplicate by display name + reason
+        const seen = new Set();
+        donors.forEach(d => {
+            const key = `${d.display}-${d.reason}`;
+            if (seen.has(key)) return;
+            seen.add(key);
+            const li = document.createElement('li');
+            const reasonText = d.reason ? ` – ${d.reason}` : '';
+            const notesText = d.notes ? ` (${d.notes})` : '';
+            li.textContent = `${d.display}${d.years ? ' [' + d.years + ']' : ''}${reasonText}${notesText}`;
+            donorVehicles.appendChild(li);
+        });
+
+        if (donors.length > 0) {
+            donorList.classList.remove('hidden');
+        } else {
+            donorList.classList.add('hidden');
         }
     }
 
@@ -553,41 +599,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Build Guide Data
     const buildGuides = {
-        'safari': {
-            title: "Porsche 911 Safari Build",
-            description: "The ultimate go-anywhere sports car. Key mods include long-travel suspension, A/T tires, skid plates, and rally lighting. Best donors are G-Series (SC/Carrera) or 964 models."
-        },
         'exocet': {
-            title: "Exomotive Exocet Build",
-            description: "A lightweight tube-frame kit car that uses Mazda Miata (NA/NB) running gear. You strip the body off a Miata and bolt the Exocet chassis to the subframes."
+            title: "Exomotive Exocet (Kit Car)",
+            description: "Miata-based tube frame. Strip NA/NB Miata donors and reuse the subframes, drivetrain, and wiring as the backbone of the kit."
         },
         'goblin': {
-            title: "DF Goblin Build",
-            description: "Mid-engine kit car using a Chevrolet Cobalt donor. Requires stripping the Cobalt wiring harness and powertrain."
-        },
-        'barra': {
-            title: "Ford Barra Swap",
-            description: "Australia's 2JZ. The Ford Barra 4.0L I6 is a torque monster capable of 1000hp on stock internals. Common donors: Falcon XR6 Turbo, Territory."
-        },
-        'kswap': {
-            title: "Honda K-Swap",
-            description: "The modern standard for 4-cylinder swaps. K20/K24 engines offer high revs and reliability. Best donors: RSX Type-S, Civic Si, TSX."
-        },
-        'ls_swap': {
-            title: "LS Swap (The World)",
-            description: "The answer to everything. Cheap, reliable V8 power. Truck engines (5.3L/6.0L) from Silverados/Tahoes are the budget choice; LS1/LS3 from Corvettes are premium."
-        },
-        'rally_lancia': {
-            title: "Lancia Delta Integrale Rally Spec",
-            description: "Restoring or modifying the rally legend. Focus on cooling, suspension reinforcement, and period-correct wheels."
-        },
-        'rally_ford': {
-            title: "Ford Escort RS Cosworth Rally Spec",
-            description: "The whale-tail icon. Maintenance is key (YB Cosworth engine). Look for Group A parts and upgraded turbos."
-        },
-        'kei_sport': {
-            title: "Kei Car Sports Modding",
-            description: "Tiny turbo fun. AZ-1, Beat, Cappuccino. Focus on F6A/K6A engine tuning, suspension stiffening, and weight reduction."
+            title: "DF Goblin (Kit Car)",
+            description: "Cobalt-based mid-engine kit. Pull the Cobalt powertrain and harness; the chassis bolts up to the Goblin frame. SS/SC trims give you the strongest drivetrains."
         }
     };
 
@@ -621,10 +639,6 @@ document.addEventListener('DOMContentLoaded', () => {
             let filterKeywords = [];
 
             switch (build) {
-                case 'safari':
-                    targetMake = "Porsche";
-                    filterKeywords = ["G-Series", "964", "993", "SC", "Carrera"];
-                    break;
                 case 'exocet':
                     targetMake = "Mazda"; // Exocet uses Miata donor
                     filterKeywords = ["Miata (NA)", "Miata (NB)"];
@@ -632,30 +646,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'goblin':
                     targetMake = "Chevrolet"; // Goblin uses Cobalt donor
                     filterKeywords = ["Cobalt"];
-                    break;
-                case 'barra':
-                    targetMake = "Ford";
-                    filterKeywords = ["Falcon", "Territory"];
-                    break;
-                case 'kswap':
-                    targetMake = "Honda";
-                    filterKeywords = ["Civic", "Integra", "RSX", "TSX"];
-                    break;
-                case 'ls_swap':
-                    targetMake = "Chevrolet";
-                    filterKeywords = ["Silverado", "Corvette", "Camaro", "Tahoe"];
-                    break;
-                case 'rally_lancia':
-                    targetMake = "Lancia";
-                    filterKeywords = ["Delta"];
-                    break;
-                case 'rally_ford':
-                    targetMake = "Ford";
-                    filterKeywords = ["Escort", "Sierra", "Focus RS"];
-                    break;
-                case 'kei_sport':
-                    targetMake = "Suzuki"; // Broaden to Suzuki for Cappuccino/Alto
-                    filterKeywords = ["Cappuccino", "Alto", "Jimny"];
                     break;
             }
 
