@@ -1,0 +1,134 @@
+{
+  "parts": [
+    {
+      "id": "gm_ad244_alternator",
+      "category": "Electrical",
+      "name": "GM AD244 Alternator (145 Amp)",
+      "description": "The 'High Output' King. Found on large GM trucks/SUVs. It puts out 145+ amps (compared to 105A standard) and has a larger case for better cooling. A direct bolt-on for many smaller GM engines and a popular swap for Jeeps/Toyotas with minor bracket mods.",
+      "specs": [
+        "Amperage: 145A (Stock) / 200A+ (Aftermarket)",
+        "Connector: 4-Pin Oval",
+        "Mount: 2-Bolt"
+      ],
+      "compatibility": [
+        { "make": "Chevrolet", "models": [{ "name": "Silverado / Tahoe / Suburban", "years": "1999-2006", "notes": "Stock on heavy duty models" }, { "name": "S10 / Blazer", "years": "1996-2004", "notes": "Upgrade (Tight fit)" }] },
+        { "make": "Jeep", "models": [{ "name": "Cherokee (XJ)", "years": "1987-2001", "notes": "Upgrade (Requires bracket mod)" }] }
+      ],
+      "compatibility_smart": { "platforms": ["GM_GMT800", "GM_S10_2ND_GEN", "JEEP_CHEROKEE_XJ"] }
+    },
+    {
+      "id": "toyota_tundra_brakes_13wl",
+      "category": "Brakes",
+      "name": "Toyota Tundra '13WL' Caliper Upgrade",
+      "description": "The definitive brake upgrade for 1st Gen Tacomas and 3rd Gen 4Runners. Uses the massive 4-piston calipers (marked '13WL') and larger rotors from the 1st Gen Tundra.",
+      "specs": [
+        "Caliper Casting: 13WL (231mm)",
+        "Rotor Size: 319mm (vs 297mm stock)",
+        "Direct Bolt-on (Requires trimming dust shield)"
+      ],
+      "compatibility": [
+        { "make": "Toyota", "models": [{ "name": "4Runner (3rd Gen)", "years": "1996-2002", "notes": "Upgrade" }, { "name": "Tacoma (1st Gen)", "years": "1995-2004", "notes": "Upgrade" }, { "name": "Tundra (1st Gen)", "years": "2000-2006", "notes": "Donor Vehicle" }] }
+      ],
+      "compatibility_smart": { "platforms": ["TOYOTA_4RUNNER_N180", "TOYOTA_TACOMA_N140"] }
+    },
+    {
+      "id": "ford_green_top_injectors",
+      "category": "Engine",
+      "name": "Ford 'Green Top' 42lb Injectors",
+      "description": "Bosch EV1 style injectors found on the F-150 Lightning and Mustang Cobra. They flow 42lbs/hr and are the gold standard for budget turbo builds on older cars (BMW E30, Fox Body, Volvo Redblock).",
+      "specs": [
+        "Flow Rate: 42lb/hr (440cc)",
+        "Connector: Jetronic / EV1",
+        "Impedance: High (Saturated)"
+      ],
+      "compatibility": [
+        { "make": "Ford", "models": [{ "name": "F-150 Lightning", "years": "1999-2004", "notes": "Donor Vehicle" }, { "name": "Mustang Cobra", "years": "2003-2004", "notes": "Donor Vehicle" }] },
+        { "make": "BMW", "models": [{ "name": "E30 / E36", "years": "1984-1999", "notes": "Upgrade (Turbo)" }] },
+        { "make": "Volvo", "models": [{ "name": "240 / 740 / 940 (Turbo)", "years": "1985-1998", "notes": "Upgrade" }] }
+      ],
+      "compatibility_smart": { "platforms": ["FORD_F_SERIES_GEN_10", "BMW_E30", "BMW_E36", "VOLVO_200_SERIES", "VOLVO_700_SERIES"] }
+    },
+    {
+      "id": "gm_3bar_map",
+      "category": "Sensors",
+      "name": "GM 3-Bar MAP Sensor",
+      "description": "The universal boost sensor. Originally for the Turbo Trans Am, this sensor reads up to 29psi of boost. It is the default sensor for almost all aftermarket ECUs (Megasquirt, Holley, Haltech).",
+      "specs": [
+        "Part Number: 12223861",
+        "Range: 3 Bar (approx 44psi absolute / 29psi boost)",
+        "Connector: Weatherpack 3-pin"
+      ],
+      "compatibility": [
+        { "make": "Universal", "models": [{ "name": "Turbo Builds", "years": "All", "notes": "The Standard" }] },
+        { "make": "Pontiac", "models": [{ "name": "Turbo Trans Am", "years": "1989", "notes": "Donor Vehicle" }] }
+      ],
+      "compatibility_smart": { "platforms": [] }
+    },
+    {
+      "id": "cadillac_cts_v_brakes",
+      "category": "Brakes",
+      "name": "Cadillac CTS-V (Gen 1/2) Brembo Swap",
+      "description": "Cheap, massive Brembos. The 4-piston (Gen 1) or 6-piston (Gen 2) calipers from the CTS-V are widely used on other GM cars like the Camaro, G8, and even 350Zs with adapters.",
+      "specs": [
+        "Gen 1: 4-Piston Brembo (Fits under some 17s)",
+        "Gen 2: 6-Piston Brembo (Requires 18s/19s)",
+        "Bolt Pattern: GM Spacing"
+      ],
+      "compatibility": [
+        { "make": "Cadillac", "models": [{ "name": "CTS-V", "years": "2004-2014", "notes": "Donor Vehicle" }] },
+        { "make": "Chevrolet", "models": [{ "name": "Camaro (Gen 5)", "years": "2010-2015", "notes": "Upgrade" }, { "name": "Corvette (C5/C6)", "years": "1997-2013", "notes": "Upgrade (Requires brackets)" }] },
+        { "make": "Pontiac", "models": [{ "name": "G8 GT / GXP", "years": "2008-2009", "notes": "Upgrade" }] }
+      ],
+      "compatibility_smart": { "platforms": ["GM_ZETA", "GM_Y_BODY"] }
+    },
+    {
+      "id": "nissan_quest_alternator",
+      "category": "Electrical",
+      "name": "Nissan Quest (VQ35) Alternator",
+      "description": "The high-amp upgrade for VQ engines. The Quest minivan alternator puts out more amps (125A+) than the standard 350Z/G35 unit and is more reliable.",
+      "specs": [
+        "Amperage: 125A+",
+        "Direct Bolt-on (mostly)",
+        "Fixes dimming lights on Z/G cars"
+      ],
+      "compatibility": [
+        { "make": "Nissan", "models": [{ "name": "Quest", "years": "2004-2009", "notes": "Donor Vehicle" }, { "name": "350Z (Z33)", "years": "2003-2006", "notes": "Upgrade" }, { "name": "Maxima", "years": "2002-2008", "notes": "Upgrade" }] },
+        { "make": "Infiniti", "models": [{ "name": "G35", "years": "2003-2007", "notes": "Upgrade" }] }
+      ],
+      "compatibility_smart": { "platforms": ["NISSAN_FM_PLATFORM", "NISSAN_Z_CAR"] }
+    },
+    {
+      "id": "walbro_255_pump",
+      "category": "Fuel System",
+      "name": "Walbro 255LPH Fuel Pump (GSS342)",
+      "description": "The 'Wally'. The most common aftermarket fuel pump in the world. Supports up to ~500hp. Fits in almost any fuel tank with minor modification.",
+      "specs": [
+        "Flow: 255 Liters Per Hour",
+        "Type: In-Tank",
+        "Noise: The famous 'Walbro Whine'"
+      ],
+      "compatibility": [
+        { "make": "Universal", "models": [{ "name": "Most Import/Domestic Cars", "years": "1990-2010", "notes": "Universal Upgrade" }] },
+        { "make": "Subaru", "models": [{ "name": "WRX / STI", "years": "2002-2014", "notes": "Standard Upgrade" }] },
+        { "make": "Nissan", "models": [{ "name": "240SX / Silvia", "years": "1989-1998", "notes": "Standard Upgrade" }] }
+      ],
+      "compatibility_smart": { "platforms": ["SUBARU_IMPREZA_GD", "NISSAN_S_CHASSIS"] }
+    },
+    {
+      "id": "honda_rbb_intake",
+      "category": "Engine",
+      "name": "Honda 'RBC' / 'RRC' Intake Manifold",
+      "description": "The best OEM Honda K-Series intakes. The RBC (Civic Si) and RRC (Civic Type R) flow significantly better than the plastic manifolds found on the CR-V or Accord.",
+      "specs": [
+        "Material: Aluminum",
+        "RBC: 2006-2011 Civic Si (Cheap, Good Gains)",
+        "RRC: 2007-2011 Civic Type R (Expensive, Best Gains)"
+      ],
+      "compatibility": [
+        { "make": "Honda", "models": [{ "name": "Civic Si (8th Gen)", "years": "2006-2011", "notes": "Donor (RBC)" }, { "name": "Civic Type R (FD2)", "years": "2007-2011", "notes": "Donor (RRC)" }, { "name": "Accord / CR-V (K24)", "years": "2003-2012", "notes": "Upgrade (Requires adapter)" }] },
+        { "make": "Acura", "models": [{ "name": "TSX (K24)", "years": "2004-2008", "notes": "Upgrade" }, { "name": "RSX Type-S", "years": "2002-2006", "notes": "Upgrade (Requires cutting flange)" }] }
+      ],
+      "compatibility_smart": { "platforms": ["HONDA_CIVIC_MODERN", "ACURA_RSX_DC5"] }
+    }
+  ]
+}
