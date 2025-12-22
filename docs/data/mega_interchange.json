@@ -1,0 +1,290 @@
+{
+  "parts": [
+    {
+      "id": "gm_corvette_servo",
+      "category": "Drivetrain",
+      "name": "Corvette Servo (4L60E)",
+      "description": "The legendary 'Vette Servo'. A cheap, easy upgrade for any GM truck or car with the 4L60E transmission. Firms up the 1-2 shift and increases holding power.",
+      "specs": [
+        "Part Number: 8492969 (Piston) + 8642486 (Cover)",
+        "Increases band apply area",
+        "Can be installed without removing transmission"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Silverado 1500", "years": "1999-2013", "notes": "Best bang-for-buck trans upgrade" },
+            { "name": "Tahoe / Suburban", "years": "1995-2013", "notes": "Recommended for towing" },
+            { "name": "Camaro / Firebird", "years": "1993-2002", "notes": "Upgrade" },
+            { "name": "S10 / Blazer", "years": "1993-2004", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_GMT800", "GM_GMT400", "GM_F_BODY_4TH_GEN", "GM_S10_2ND_GEN"]
+      }
+    },
+    {
+      "id": "ford_taurus_efan",
+      "category": "Cooling",
+      "name": "Ford Taurus 2-Speed E-Fan",
+      "description": "The 'Taurus Fan'. Pulled from 3.8L V6 Taurus models (early 90s). Moves an insane amount of air (approx 4000 CFM on high). The go-to junkyard fan for V8 swaps and Jeeps.",
+      "specs": [
+        "2-Speed Motor",
+        "Requires high-amp relays (draws 40A+ on startup)",
+        "Integrated shroud fits many radiators perfectly"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Taurus (3.8L)", "years": "1990-1995", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Wrangler (YJ/TJ)", "years": "1987-2006", "notes": "Popular Swap (Replaces clutch fan)" },
+            { "name": "Cherokee (XJ)", "years": "1984-2001", "notes": "Popular Swap" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "S10 / Blazer", "years": "1982-2004", "notes": "Fits V8 swap radiators well" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["JEEP_WRANGLER__YJ_", "JEEP_WRANGLER__TJ_", "JEEP_CHEROKEE_XJ", "GM_S10_2ND_GEN"]
+      }
+    },
+    {
+      "id": "porsche_17z_18z_calipers",
+      "category": "Brakes",
+      "name": "Porsche 17Z/18Z Brembo Calipers",
+      "description": "6-piston Brembo calipers found on the Porsche Cayenne, Audi Q7, and VW Touareg. Can be adapted to fit VW Golfs, Audi A4s, and even Volvos.",
+      "specs": [
+        "17Z: Fits 330mm rotors (min 17\" wheels)",
+        "18Z: Fits 350mm rotors (min 18\" wheels)",
+        "Uses Mercedes C230 Sport rotors (often) for VW applications"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "Cayenne (955/957)", "years": "2003-2010", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf GTI (Mk5/Mk6)", "years": "2006-2014", "notes": "Upgrade (Requires bolts/sleeves)" },
+            { "name": "Jetta (Mk5/Mk6)", "years": "2005-2014", "notes": "Upgrade" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5/B6/B7)", "years": "1996-2008", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VOLKSWAGEN_GOLF__A5___MK5_", "VOLKSWAGEN_GOLF__A6___MK6_", "AUDI_A4_B5", "AUDI_A4_B6", "AUDI_A4_B7"]
+      }
+    },
+    {
+      "id": "tbss_intake_swap",
+      "category": "Engine",
+      "name": "Trailblazer SS (TBSS) Intake Manifold",
+      "description": "The best factory cathedral-port intake manifold for GM LS truck engines. Flows significantly better than the standard truck intake and looks cleaner.",
+      "specs": [
+        "90mm Throttle Body opening (requires 4-bolt TB)",
+        "Requires X-Link adapter for older drive-by-wire trucks",
+        "Gains of 15-25 HP over stock truck intake"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Silverado 1500 (4.8/5.3/6.0)", "years": "1999-2007", "notes": "Upgrade" },
+            { "name": "Tahoe / Suburban", "years": "2000-2006", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_GMT800"]
+      }
+    },
+    {
+      "id": "rx8_yellow_injectors",
+      "category": "Engine",
+      "name": "Mazda RX-8 'Yellow' Injectors",
+      "description": "425cc Denso injectors from the RX-8. A direct drop-in upgrade for Miata turbos and many other Japanese cars using Denso top-feed injectors.",
+      "specs": [
+        "Flow Rate: ~425cc @ 3 bar",
+        "High Impedance (Saturated)",
+        "Denso connector"
+      ],
+      "compatibility": [
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "RX-8", "years": "2004-2008", "notes": "Donor Vehicle" },
+            { "name": "MX-5 Miata (NA/NB)", "years": "1990-2005", "notes": "Upgrade (Perfect for mild turbo builds)" }
+          ]
+        },
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Corolla / Matrix (1ZZ)", "years": "1998-2008", "notes": "Upgrade (Turbo)" },
+            { "name": "MR2 Spyder", "years": "2000-2005", "notes": "Upgrade (Turbo)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["MAZDA_MIATA_NA", "MAZDA_MIATA_NB", "TOYOTA_MR2_W30"]
+      }
+    },
+    {
+      "id": "zj_disc_brake_swap",
+      "category": "Brakes",
+      "name": "Jeep ZJ Rear Disc Conversion",
+      "description": "Ditching the drum brakes on a Cherokee (XJ) or Wrangler (YJ/TJ) using the backing plates and calipers from a Grand Cherokee (ZJ).",
+      "specs": [
+        "Direct bolt-on for Dana 35 and Chrysler 8.25 axles",
+        "Requires longer wheel studs usually",
+        "Requires ZJ proportioning valve internals"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Grand Cherokee (ZJ)", "years": "1993-1998", "notes": "Donor Vehicle" },
+            { "name": "Cherokee (XJ)", "years": "1984-2001", "notes": "Upgrade" },
+            { "name": "Wrangler (YJ/TJ)", "years": "1987-2006", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["JEEP_CHEROKEE_XJ", "JEEP_WRANGLER__YJ_", "JEEP_WRANGLER__TJ_"]
+      }
+    },
+    {
+      "id": "dodge_neon_coil_pack",
+      "category": "Engine",
+      "name": "Dodge Neon Coil Pack Upgrade",
+      "description": "Using the 'Screamin Demon' or stock coil pack from a Dodge Neon on a Mini Cooper (R50/R53). Stronger spark and cheaper replacement cost.",
+      "specs": [
+        "Requires custom plug wires or modifying stock ones",
+        "Connector splice required (sometimes)",
+        "Cheaper and more reliable than OEM Mini coil"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper / Cooper S (R50/R53)", "years": "2002-2006", "notes": "Upgrade" }
+          ]
+        },
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Neon", "years": "1995-2005", "notes": "Donor Vehicle" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["MINI_R50_R53"]
+      }
+    },
+    {
+      "id": "honda_s2000_seats",
+      "category": "Interior",
+      "name": "Honda S2000 Seats",
+      "description": "High-bolstered, colorful leather seats from the S2000. They sit very low and look amazing. A popular swap into Civics, Integras, and Del Sols.",
+      "specs": [
+        "Requires swapping seat pans or custom rails",
+        "Very desirable (high resale value)",
+        "Available in Red, Blue, Tan, Black"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "S2000", "years": "2000-2009", "notes": "Donor Vehicle" },
+            { "name": "Civic (EG/EK)", "years": "1992-2000", "notes": "Upgrade (Pan swap needed)" },
+            { "name": "Civic Del Sol", "years": "1993-1997", "notes": "Upgrade (Direct fit with rail swap)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["HONDA_CIVIC_GOLDEN", "HONDA_CIVIC_DEL_SOL"]
+      }
+    },
+    {
+      "id": "bmw_x5_wheels_van",
+      "category": "Wheels",
+      "name": "BMW X5 Wheels on Vans",
+      "description": "The 'Tiger Claw' or 'Style 63' wheels from the BMW X5 fit perfectly on VW Transporters and Vauxhall Vivaro vans. They are load-rated for heavy SUVs, making them safe for vans.",
+      "specs": [
+        "Bolt Pattern: 5x120",
+        "Center Bore: 72.6mm (Requires hub rings for some vans)",
+        "Width: 9J Front / 10J Rear (Staggered)"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "X5 (E53)", "years": "1999-2006", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Transporter T5/T6", "years": "2003-Present", "notes": "Direct Fit (Need bolts/rings)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": []
+      }
+    },
+    {
+      "id": "subaru_brz_frs_seats",
+      "category": "Interior",
+      "name": "BRZ / FRS Seats",
+      "description": "Modern, high-grip bucket seats that are surprisingly cheap. They are narrow and fit into many older Japanese cars like Miatas and Corollas.",
+      "specs": [
+        "Manual adjustment (lightweight)",
+        "Requires custom brackets",
+        "Very supportive shoulder bolsters"
+      ],
+      "compatibility": [
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "BRZ", "years": "2013-2020", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "86 / FR-S", "years": "2013-2020", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "MX-5 Miata", "years": "1990-2005", "notes": "Upgrade (Tight fit)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["MAZDA_MIATA_NA", "MAZDA_MIATA_NB"]
+      }
+    }
+  ]
+}
