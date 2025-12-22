@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     Promise.all(dataFiles.map(file => fetch(file).then(resp => {
             if (!resp.ok) throw new Error(`Failed to load ${file}: ${resp.status}`);
             return resp.json();
-        })))
+        }).catch(err => { throw new Error(`Fetch error for ${file}: ${err.message}`); })))
         .then(allData => {
             const relationshipData = allData.find(d => d.platforms || d.engines);
             if (relationshipData) {
@@ -208,10 +208,15 @@ document.addEventListener('DOMContentLoaded', () => {
             buildIndex(partsData);
             populateMakes();
             populateSubsystems();
+            const totalMakes = Object.keys(vehicleIndex).length;
+            const totalModels = Object.values(vehicleIndex).reduce((acc, models) => acc + Object.keys(models).length, 0);
+            const totalParts = partsData.length;
             if (makeLoadStatus) {
-                const totalMakes = Object.keys(vehicleIndex).length;
-                makeLoadStatus.textContent = totalMakes > 0 ? `Loaded ${totalMakes} makes` : 'No makes loaded';
+                makeLoadStatus.textContent = totalMakes > 0
+                    ? `Loaded ${totalMakes} makes / ${totalModels} models / ${totalParts} parts`
+                    : 'No makes loaded';
             }
+            console.info('Data loaded', { totalMakes, totalModels, totalParts });
         })
         .catch(err => {
             console.error('Error loading data:', err);
