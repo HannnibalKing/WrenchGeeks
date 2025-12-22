@@ -392,30 +392,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showPartsForVehicle(make, model) {
-        console.log('Showing parts for:', make, model);
-        const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
-        console.log('Parts found in index:', parts.length);
-        
-        selectedVehicleName.textContent = `${make} ${model}`;
-        partsList.innerHTML = '';
-        
-        const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
-        console.log('Vehicle Attributes:', vehicleAttrs);
+        try {
+            console.log('Showing parts for:', make, model);
+            
+            // Ensure results section is visible immediately to show we are trying
+            resultsSection.classList.remove('hidden');
+            partsList.innerHTML = '<p>Searching database...</p>';
 
-        // Show cross-platform / engine donor vehicles
-        displayDonors(vehicleAttrs.platformId, vehicleAttrs.engineId, make, model);
+            const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
+            console.log('Parts found in index:', parts ? parts.length : 0);
+            
+            if (!parts) {
+                partsList.innerHTML = '<p>No parts found for this specific model in the index.</p>';
+                return;
+            }
+
+            selectedVehicleName.textContent = `${make} ${model}`;
+            partsList.innerHTML = '';
+            
+            const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
+            console.log('Vehicle Attributes:', vehicleAttrs);
+
+            // Show cross-platform / engine donor vehicles
+            displayDonors(vehicleAttrs.platformId, vehicleAttrs.engineId, make, model);
 
 
-        displayTips(make, model);
-        display3DPrints(vehicleAttrs.platformId);
+            displayTips(make, model);
+            display3DPrints(vehicleAttrs.platformId);
 
-        let filteredParts = parts;
+            let filteredParts = parts;
 
-        if (activeSubsystem) {
+            if (activeSubsystem) {
             console.log('Filtering by subsystem:', activeSubsystem);
+            // Normalize for looser matching (e.g. "Suspension/Steering" vs "Suspension & Steering")
+            const normalize = s => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+            const search = normalize(activeSubsystem);
+
             filteredParts = parts.filter(part => {
-                const cat = (part.category || '').toLowerCase();
-                return cat.includes(activeSubsystem.toLowerCase());
+                const cat = normalize(part.category || '');
+                // Check if one contains the other
+                return cat.includes(search) || search.includes(cat);
             });
         }
         console.log('Filtered parts count:', filteredParts.length);
@@ -451,8 +467,16 @@ document.addEventListener('DOMContentLoaded', () => {
             selectorSection.classList.remove('hidden');
         } else {
             console.log('No parts found, showing empty message');
-            partsList.innerHTML = '<p>No compatible parts found in database.</p>';
+            partsList.innerHTML = '<p>No compatible parts found in database matching your criteria.</p>';
             resultsSection.classList.remove('hidden');
+        }
+        } catch (e) {
+            console.error("CRITICAL ERROR in showPartsForVehicle:", e);
+            partsList.innerHTML = `<div class="card" style="border-left: 4px solid red;">
+                <h3>⚠️ Application Error</h3>
+                <p>Something went wrong while displaying parts.</p>
+                <p>Error: ${e.message}</p>
+            </div>`;
         }
     }
 
