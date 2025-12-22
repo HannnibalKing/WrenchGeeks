@@ -1,0 +1,79 @@
+[
+  {
+    "partName": "Honda H22A Swap (The 'H2B' or Accord Swap)",
+    "compatibleVehicles": [
+      "Honda Accord (1990-1993 CB7)",
+      "Honda Accord (1994-1997 CD5)",
+      "Honda Prelude (1992-2001)",
+      "Honda Civic (EG/EK with H2B kit)"
+    ],
+    "years": "1990-2001",
+    "notes": "The H22A (Prelude VTEC) drops directly into 90-97 Accords with factory mounts (using the F22 transmission side mount). It's the easiest way to give an old Accord 200hp. For Civics, 'H2B' kits allow you to mate the H22 engine to a B-series transmission for better gearing.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Honda J-Series 'Frankenstein' V6",
+    "compatibleVehicles": [
+      "Acura TL Type-S (J32A2)",
+      "Honda Odyssey (J35A)",
+      "Honda Accord V6 (J30A)",
+      "Acura MDX (J35/J37)"
+    ],
+    "years": "1999-2008",
+    "notes": "The 'J-Swap' secret: Put J32A2 heads (from TL Type-S) onto a J35A block (from Odyssey/MDX). You get the high-flowing heads and cams of the Type-S with the massive torque and displacement of the minivan engine. A cheap way to build a 300hp N/A V6.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Honda D-Series 'Mini-Me' Swap",
+    "compatibleVehicles": [
+      "Honda Civic DX/LX (D15B7 / D16Y7)",
+      "Honda Civic EX/Si (D16Z6 / D16Y8)"
+    ],
+    "years": "1992-2000",
+    "notes": "The cheapest VTEC upgrade. Take the VTEC cylinder head (D16Z6 or D16Y8) from an EX/Si and bolt it onto your non-VTEC block (D15B7 or D16Y7). Requires the VTEC solenoid, a timing belt match (usually the Z6 belt), and wiring the VTEC pressure switch to the ECU.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Honda AWD Conversion (The 'Wagon' Parts)",
+    "compatibleVehicles": [
+      "Honda CR-V (RD1 1997-2001)",
+      "Honda Civic (EG/EK)",
+      "Acura Integra (DC2)"
+    ],
+    "years": "1992-2001",
+    "notes": "You can convert a FWD Civic/Integra to AWD using the transmission, driveshaft, and rear differential from a 1st Gen CR-V (B20 engine). Requires welding the rear differential support into the Civic floorpan and using custom rear trailing arms or modifying the CR-V ones.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Mitsubishi DSM 1G Head on 2G Block (6-Bolt vs 7-Bolt)",
+    "compatibleVehicles": [
+      "Mitsubishi Eclipse GSX/GST (1990-1994 1G)",
+      "Mitsubishi Eclipse GSX/GST (1995-1999 2G)",
+      "Eagle Talon / Plymouth Laser"
+    ],
+    "years": "1990-1999",
+    "notes": "The 1G (90-94) 4G63 head has massive intake ports compared to the 2G (95-99). Putting a 1G head on a 2G block is a classic high-flow upgrade. Requires matching the intake manifold and drilling out the head bolt holes (11mm vs 12mm) to fit the 2G block studs.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Mitsubishi 3000GT VR4 Brakes on DSM/Galant",
+    "compatibleVehicles": [
+      "Mitsubishi 3000GT VR4 (1991-1999)",
+      "Mitsubishi Eclipse (1G/2G)",
+      "Mitsubishi Galant VR4 (1991-1992)"
+    ],
+    "years": "1991-1999",
+    "notes": "The 4-piston front calipers from a 3000GT VR4 (1st Gen) bolt directly onto 1G DSMs and Galant VR4s. Massive stopping power. 2nd Gen 3000GT brakes are even bigger but require custom brackets. Requires 16-inch or larger wheels.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Mitsubishi Mirage to Evo Conversion (The 'Miragevo')",
+    "compatibleVehicles": [
+      "Mitsubishi Mirage (1997-2002)",
+      "Mitsubishi Lancer Evolution 4/5/6"
+    ],
+    "years": "1997-2002",
+    "notes": "The 5th Gen Mirage Coupe (US) is the same chassis as the JDM Evo 4/5/6. You can swap the entire Evo drivetrain (4G63T, AWD system, suspension) into the Mirage. The floorpan requires modification to fit the rear diff and driveshaft, but the suspension pickup points are largely there.",
+    "matchLevel": "Match - Major Mods"
+  }
+]
