@@ -1,0 +1,120 @@
+{
+  "parts": [
+    {
+      "id": "volvo_ford_v8_swap",
+      "category": "Engine",
+      "name": "Ford 5.0L V8 Swap (Volvo 240/740/940)",
+      "description": "The 'Converge' swap. Fitting a Ford 302 (5.0L) V8 into a RWD Volvo. The distributor location on the Ford V8 clears the Volvo firewall better than a Chevy Small Block.",
+      "specs": [
+        "Requires custom mounts (available from Converse Engineering etc.)",
+        "Ford T5 transmission fits well",
+        "Dana 30 rear end holds up to mild V8s"
+      ],
+      "compatibility": [
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "240 / 242 / 244 / 245", "years": "1975-1993", "notes": "Popular Swap Candidate" },
+            { "name": "740 / 760", "years": "1983-1992", "notes": "Popular Swap Candidate" },
+            { "name": "940 / 960", "years": "1990-1998", "notes": "Popular Swap Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VOLVO_200_SERIES", "VOLVO_700_SERIES", "VOLVO_900_SERIES"]
+      }
+    },
+    {
+      "id": "honda_legend_caliper_swap",
+      "category": "Brakes",
+      "name": "Acura Legend Dual-Piston Caliper Swap",
+      "description": "Upgrading Honda Civic/Integra brakes using the dual-piston calipers from an Acura Legend (GS Sedan or Coupe).",
+      "specs": [
+        "Dual-piston design",
+        "Requires 11-inch rotors (Prelude VTEC or Mini Cooper S re-drilled)",
+        "Requires milling caliper bracket 3mm for some knuckles"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic (EG/EK)", "years": "1992-2000", "notes": "Upgrade (Requires 11\" rotors)" },
+            { "name": "Integra (DC2)", "years": "1994-2001", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["HONDA_CIVIC_GOLDEN", "ACURA_INTEGRA_DC2"]
+      }
+    },
+    {
+      "id": "gm_big_3_upgrade",
+      "category": "Electrical",
+      "name": "The 'Big 3' Electrical Upgrade",
+      "description": "Replacing the three main electrical cables (Alternator to Battery+, Battery- to Chassis, Engine to Chassis) with 0-gauge or 4-gauge wire. Essential for older GM cars with weak charging systems.",
+      "specs": [
+        "Improves charging voltage",
+        "Fixes dimming headlights",
+        "Universal for almost all vehicles, critical for GM"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Caprice / Impala SS", "years": "1991-1996", "notes": "Highly Recommended" },
+            { "name": "Tahoe / Suburban", "years": "1992-2006", "notes": "Highly Recommended" },
+            { "name": "Camaro / Firebird", "years": "1982-2002", "notes": "Highly Recommended" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_B_BODY", "GM_GMT400", "GM_F_BODY_3RD_GEN", "GM_F_BODY_4TH_GEN"]
+      }
+    },
+    {
+      "id": "mazda_miata_rx7_afm",
+      "category": "Engine",
+      "name": "RX-7 AFM Swap (1.6L Miata)",
+      "description": "Swapping the restrictive Air Flow Meter (AFM) on a 1.6L Miata for the larger unit from an RX-7 (FC non-turbo).",
+      "specs": [
+        "Larger internal diameter",
+        "Requires swapping the electronic guts from the Miata AFM",
+        "Small top-end power gain"
+      ],
+      "compatibility": [
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "MX-5 Miata (NA6)", "years": "1990-1993", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["MAZDA_MIATA_NA"]
+      }
+    },
+    {
+      "id": "crown_vic_suspension_swap",
+      "category": "Suspension & Steering",
+      "name": "Crown Vic Front Suspension Swap (F100)",
+      "description": "Swapping the entire aluminum front crossmember, suspension, and steering from a 2003-2011 Crown Victoria into older Ford F100 trucks.",
+      "specs": [
+        "Modern IFS (Independent Front Suspension)",
+        "Rack and Pinion steering",
+        "Disc brakes included",
+        "Lowers the truck significantly"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "F-100 / F-150", "years": "1967-1979", "notes": "Popular Swap" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_F_SERIES_GEN_5", "FORD_F_SERIES_GEN_6"]
+      }
+    }
+  ]
+}
