@@ -3,6 +3,10 @@ class CompatibilityEngine {
         this.relationships = relationships;
     }
 
+    normalize(str) {
+        return str ? str.toLowerCase().replace(/[^a-z0-9]/g, "") : "";
+    }
+
     getVehicleAttributes(make, model) {
         const attributes = {
             platformId: null,
@@ -10,10 +14,16 @@ class CompatibilityEngine {
             yearRange: null
         };
 
+        const target = this.normalize(model);
+
         // Find Platform
         if (this.relationships.platforms) {
             for (const [id, vehicles] of Object.entries(this.relationships.platforms)) {
-                const match = vehicles.find(v => v.make === make && (v.model === model || v.name === model));
+                const match = vehicles.find(v => {
+                    if (v.make !== make) return false;
+                    const vName = this.normalize(v.model || v.name);
+                    return vName === target || vName.includes(target) || target.includes(vName);
+                });
                 if (match) {
                     attributes.platformId = id;
                     attributes.yearRange = match.years;
@@ -24,7 +34,11 @@ class CompatibilityEngine {
         // Find Engine
         if (this.relationships.engines) {
             for (const [id, vehicles] of Object.entries(this.relationships.engines)) {
-                const match = vehicles.find(v => v.make === make && (v.model === model || v.name === model));
+                const match = vehicles.find(v => {
+                    if (v.make !== make) return false;
+                    const vName = this.normalize(v.model || v.name);
+                    return vName === target || vName.includes(target) || target.includes(vName);
+                });
                 if (match) {
                     attributes.engineId = id;
                     if (!attributes.yearRange) attributes.yearRange = match.years;
@@ -38,83 +52,68 @@ class CompatibilityEngine {
     calculateScore(part, vehicleAttributes, make, model) {
         let score = 0;
         let breakdown = {
-            platform: 0,
-            engine: 0,
-            mounting: 0,
-            protocol: 0,
-            era: 0
+            source: "Unknown",
+            base: 0,
+            modifiers: []
         };
 
-        // 1. Platform Match (30%)
-        if (part.compatibility_smart?.platforms?.includes(vehicleAttributes.platformId)) {
-            score += 30;
-            breakdown.platform = 30;
-        }
+        const target = this.normalize(model);
 
-        // 2. Engine Match (25%)
-        if (part.compatibility_smart?.engines?.includes(vehicleAttributes.engineId)) {
-            score += 25;
-            breakdown.engine = 25;
-        }
-
-        // Check explicit compatibility list for specific notes
+        // 1. Determine Base Match Type
         let explicitMatch = null;
         if (part.compatibility) {
             part.compatibility.forEach(group => {
                 if (group.make === make) {
-                    const modelMatch = group.models.find(m => (m.name === model || m.model === model));
+                    const modelMatch = group.models.find(m => {
+                        const mName = this.normalize(m.name || m.model);
+                        return mName === target || mName.includes(target) || target.includes(mName);
+                    });
                     if (modelMatch) explicitMatch = modelMatch;
                 }
             });
         }
 
-        // Fallback: If explicit match exists but no smart match, award base points
         if (explicitMatch) {
-             if (breakdown.platform === 0 && breakdown.engine === 0) {
-                 score += 30; 
-                 breakdown.platform = 30;
-             }
+            score = 100;
+            breakdown.source = "Verified Record";
+            breakdown.base = 100;
+        } else if (part.compatibility_smart?.platforms?.includes(vehicleAttributes.platformId)) {
+            score = 80;
+            breakdown.source = "Platform Mate";
+            breakdown.base = 80;
+        } else if (part.compatibility_smart?.engines?.includes(vehicleAttributes.engineId)) {
+            score = 70;
+            breakdown.source = "Engine Share";
+            breakdown.base = 70;
         }
 
-        // 3. Mounting Match (20%)
-        let mountingScore = 0;
+        // 2. Apply Modifiers based on Notes (Text Analysis)
         if (explicitMatch) {
             const notes = (explicitMatch.notes || "").toLowerCase();
-            if (notes.includes("bracket") || notes.includes("adapter") || notes.includes("modify") || notes.includes("requires")) {
-                mountingScore = 10;
-            } else {
-                mountingScore = 20; // Assume stock/direct fit
+            if (notes.includes("modify") || notes.includes("drill") || notes.includes("cut") || notes.includes("weld")) {
+                score -= 40;
+                breakdown.modifiers.push("Requires Fabrication (-40)");
+            } else if (notes.includes("bracket") || notes.includes("adapter") || notes.includes("spacer") || notes.includes("upgrade")) {
+                score -= 20;
+                breakdown.modifiers.push("Requires Adapters/Mods (-20)");
+            } else if (notes.includes("direct fit") || notes.includes("bolt-on") || notes.includes("plug and play") || notes.includes("stock")) {
+                // Keep at 100
+                breakdown.modifiers.push("Direct Fit Verified");
             }
-        } else if (breakdown.platform > 0 || breakdown.engine > 0) {
-            mountingScore = 20; // Platform/Engine mates usually bolt on
-        }
-        score += mountingScore;
-        breakdown.mounting = mountingScore;
-
-        // 4. Protocol Match (15%)
-        let protocolScore = 0;
-        if (breakdown.platform > 0 || breakdown.engine > 0) {
-            protocolScore = 15;
-        } else if (explicitMatch) {
-            protocolScore = 15; // If it's listed, it likely works
         } else {
-            protocolScore = 0;
-        }
-        score += protocolScore;
-        breakdown.protocol = protocolScore;
-
-        // 5. Era Match (10%)
-        if (score > 0) {
-            score += 10;
-            breakdown.era = 10;
+            // For Platform/Engine matches without explicit notes, assume some risk
+            if (score > 0) {
+                score -= 10; // Uncertainty penalty
+                breakdown.modifiers.push("Unverified Fitment (-10)");
+            }
         }
 
-        return { total: Math.min(score, 100), breakdown };
+        return { total: Math.max(0, Math.min(score, 100)), breakdown };
     }
     
     getRiskLevel(score) {
         if (score >= 90) return { level: "Direct Fit", cssClass: "match-perfect" };
-        if (score >= 75) return { level: "Minor Mods", cssClass: "match-good" };
+        if (score >= 70) return { level: "Minor Mods", cssClass: "match-good" };
         if (score >= 50) return { level: "Major Mods", cssClass: "match-possible" };
         return { level: "Custom Fab", cssClass: "match-possible" };
     }
