@@ -155,7 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/legacy_swaps.json",
         "data/interchange_plus.json",
         "data/engine_swaps_master.json",
-        "data/mega_interchange.json"
+        "data/mega_interchange.json",
+        "data/old_timer_secrets.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };
