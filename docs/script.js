@@ -80,7 +80,7 @@ class CompatibilityEngine {
         let mountingScore = 0;
         if (explicitMatch) {
             const notes = (explicitMatch.notes || "").toLowerCase();
-            if (notes.includes('bracket') || notes.includes('adapter') || notes.includes('modify') || notes.includes('requires')) {
+            if (notes.includes("bracket") || notes.includes("adapter") || notes.includes("modify") || notes.includes("requires")) {
                 mountingScore = 10;
             } else {
                 mountingScore = 20; // Assume stock/direct fit
@@ -113,47 +113,46 @@ class CompatibilityEngine {
     }
     
     getRiskLevel(score) {
-        if (score >= 90) return { level: "Direct Transplant (Low Risk)", cssClass: "risk-green" };
-        if (score >= 75) return { level: "Compatible Donor (Moderate Risk)", cssClass: "risk-blue" };
-        if (score >= 50) return { level: "Invasive Surgery (High Risk)", cssClass: "risk-yellow" };
-        return { level: "Experimental (Critical Risk)", cssClass: "risk-red" };
+        if (score >= 90) return { level: "Direct Fit", cssClass: "match-perfect" };
+        if (score >= 75) return { level: "Minor Mods", cssClass: "match-good" };
+        if (score >= 50) return { level: "Major Mods", cssClass: "match-possible" };
+        return { level: "Custom Fab", cssClass: "match-possible" };
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     let partsData = [];
     let tipsData = [];
     let vehicleIndex = {}; 
     let compatibilityEngine = null;
 
-    const makeSelect = document.getElementById('makeSelect');
-    const modelSelect = document.getElementById('modelSelect');
-    const resultsSection = document.getElementById('results');
-    const partsList = document.getElementById('partsList');
-    const donorList = document.getElementById('donorList');
-    const donorVehicles = document.getElementById('donorVehicles');
-    const tipsList = document.getElementById('tipsList');
-    const partDetailsSection = document.getElementById('partDetails');
-    const selectorSection = document.getElementById('selector');
-    const backButton = document.getElementById('backButton');
-    const selectedVehicleName = document.getElementById('selectedVehicleName');
-    const makeLoadStatus = document.getElementById('makeLoadStatus');
-    const subsystemSelect = document.getElementById('subsystemSelect');
-    const yearSelect = document.getElementById('yearSelect');
-    const searchButton = document.getElementById('searchButton');
+    const makeSelect = document.getElementById("makeSelect");
+    const modelSelect = document.getElementById("modelSelect");
+    const resultsSection = document.getElementById("results");
+    const partsList = document.getElementById("partsList");
+    const donorList = document.getElementById("donorList");
+    const donorVehicles = document.getElementById("donorVehicles");
+    const tipsList = document.getElementById("tipsList");
+    const partDetailsSection = document.getElementById("partDetails");
+    const backButton = document.getElementById("backButton");
+    const selectedVehicleName = document.getElementById("selectedVehicleName");
+    const makeLoadStatus = document.getElementById("makeLoadStatus");
+    const subsystemSelect = document.getElementById("subsystemSelect");
+    const yearSelect = document.getElementById("yearSelect");
+    const searchButton = document.getElementById("searchButton");
 
     const dataFiles = [
-        'data/relationships.json',
-        'data/tips.json',
-        'data/fuel_system.json',
-        'data/electrical_sensors.json',
-        'data/suspension_steering.json',
-        'data/brakes.json',
-        'data/engine_mechanical.json',
-        'data/cooling_hvac.json',
-        'data/body_interior.json',
-        'data/drivetrain.json',
-        'data/body_exterior.json'
+        "data/relationships.json",
+        "data/tips.json",
+        "data/fuel_system.json",
+        "data/electrical_sensors.json",
+        "data/suspension_steering.json",
+        "data/brakes.json",
+        "data/engine_mechanical.json",
+        "data/cooling_hvac.json",
+        "data/body_interior.json",
+        "data/drivetrain.json",
+        "data/body_exterior.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };
@@ -193,20 +192,20 @@ document.addEventListener('DOMContentLoaded', () => {
             if (makeLoadStatus) {
                 makeLoadStatus.textContent = totalMakes > 0
                     ? `Loaded ${totalMakes} makes / ${totalModels} models / ${totalParts} parts`
-                    : 'No makes loaded';
+                    : "No makes loaded";
             }
-            console.info('Data loaded', { totalMakes, totalModels, totalParts });
+            console.info("Data loaded", { totalMakes, totalModels, totalParts });
         })
         .catch(err => {
-            console.error('Error loading data:', err);
+            console.error("Error loading data:", err);
             resultsSection.innerHTML = `<div class="card" style="border-left: 4px solid red;">
-                <h3>⚠️ Data Load Error</h3>
+                <h3> Data Load Error</h3>
                 <p>Could not load the database. Please check your internet connection or try refreshing.</p>
                 <p><strong>Tip:</strong> Try a Hard Refresh (Ctrl+F5 or Cmd+Shift+R) to clear old data.</p>
                 <p>Details: ${err.message}</p>
             </div>`;
-            resultsSection.classList.remove('hidden');
-            if (makeLoadStatus) makeLoadStatus.textContent = 'Error loading data';
+            resultsSection.classList.remove("hidden");
+            if (makeLoadStatus) makeLoadStatus.textContent = "Error loading data";
         });
 
     function buildIndex(parts) {
@@ -221,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     part.compatibility_smart.platforms.forEach(platformId => {
                         const vehicles = relationships.platforms[platformId];
                         if (vehicles) {
-                            const byMake = groupBy(vehicles, 'make');
+                            const byMake = groupBy(vehicles, "make");
                             Object.keys(byMake).forEach(make => {
                                 addToIndex(make, byMake[make], part);
                             });
@@ -232,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     part.compatibility_smart.engines.forEach(engineId => {
                         const vehicles = relationships.engines[engineId];
                         if (vehicles) {
-                            const byMake = groupBy(vehicles, 'make');
+                            const byMake = groupBy(vehicles, "make");
                             Object.keys(byMake).forEach(make => {
                                 addToIndex(make, byMake[make], part);
                             });
@@ -274,17 +273,17 @@ document.addEventListener('DOMContentLoaded', () => {
             return Object.keys(vehicleIndex[make]).some(model => hasContent(make, model));
         }).sort();
 
-        makeSelect.innerHTML = '<option value="">-- Select Make --</option>';
+        makeSelect.innerHTML = "<option value=\"\">-- Select Make --</option>";
         makes.forEach(make => {
             if (!make) return;
-            const option = document.createElement('option');
+            const option = document.createElement("option");
             option.value = make;
             option.textContent = make;
             makeSelect.appendChild(option);
         });
 
         if (makeLoadStatus) {
-            makeLoadStatus.textContent = makes.length > 0 ? `Registry Online: ${makes.length} Manufacturers Loaded` : 'Registry Offline: No Manufacturers Found';
+            makeLoadStatus.textContent = makes.length > 0 ? `Registry Online: ${makes.length} Manufacturers Loaded` : "Registry Offline: No Manufacturers Found";
         }
         if (subsystemSelect) subsystemSelect.disabled = false;
     }
@@ -297,24 +296,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const subsystemOptions = [
-        'Body Exterior',
-        'Body Interior',
-        'Brakes',
-        'Cooling/HVAC',
-        'Drivetrain',
-        'Electrical/Sensors',
-        'Engine Mechanical',
-        'Fuel System',
-        'Suspension/Steering'
+        "Body Exterior",
+        "Body Interior",
+        "Brakes",
+        "Cooling/HVAC",
+        "Drivetrain",
+        "Electrical/Sensors",
+        "Engine Mechanical",
+        "Fuel System",
+        "Suspension/Steering"
     ];
 
-    let activeSubsystem = '';
+    let activeSubsystem = "";
 
     function populateSubsystems() {
         if (!subsystemSelect) return;
-        subsystemSelect.innerHTML = '<option value="">All subsystems</option>';
+        subsystemSelect.innerHTML = "<option value=\"\">All subsystems</option>";
         subsystemOptions.forEach(name => {
-            const option = document.createElement('option');
+            const option = document.createElement("option");
             option.value = name;
             option.textContent = name;
             subsystemSelect.appendChild(option);
@@ -323,17 +322,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let activeBuildFilter = null; // placeholder (unused now)
 
-    makeSelect.addEventListener('change', (e) => {
+    makeSelect.addEventListener("change", (e) => {
         const selectedMake = makeSelect.value;
-        modelSelect.innerHTML = '<option value="">-- Select Model --</option>';
+        modelSelect.innerHTML = "<option value=\"\">-- Select Model --</option>";
         modelSelect.disabled = true;
-        yearSelect.innerHTML = '<option value="">-- Select Year --</option>';
+        yearSelect.innerHTML = "<option value=\"\">-- Select Year --</option>";
         yearSelect.disabled = true;
         if (subsystemSelect) subsystemSelect.disabled = true;
         if (searchButton) searchButton.disabled = true;
-        resultsSection.classList.add('hidden');
-        partDetailsSection.classList.add('hidden');
-        if (donorList) donorList.classList.add('hidden');
+        resultsSection.classList.add("hidden");
+        partDetailsSection.classList.add("hidden");
+        if (donorList) donorList.classList.add("hidden");
 
         if (selectedMake && vehicleIndex[selectedMake]) {
             let models = Object.keys(vehicleIndex[selectedMake])
@@ -341,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 .sort();
             
             models.forEach(model => {
-                const option = document.createElement('option');
+                const option = document.createElement("option");
                 option.value = model;
                 option.textContent = model;
                 modelSelect.appendChild(option);
@@ -350,22 +349,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    modelSelect.addEventListener('change', () => {
+    modelSelect.addEventListener("change", () => {
         const make = makeSelect.value;
         const model = modelSelect.value;
         
-        yearSelect.innerHTML = '<option value="">-- Select Year --</option>';
+        yearSelect.innerHTML = "<option value=\"\">-- Select Year --</option>";
         yearSelect.disabled = true;
         if (searchButton) searchButton.disabled = true;
 
         if (make && model) {
             populateYears(make, model);
         } else {
-            resultsSection.classList.add('hidden');
+            resultsSection.classList.add("hidden");
         }
     });
 
-    yearSelect.addEventListener('change', () => {
+    yearSelect.addEventListener("change", () => {
         const make = makeSelect.value;
         const model = modelSelect.value;
         const year = yearSelect.value;
@@ -383,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Find the vehicle definition to get the year range
         let yearRange = null;
         
-        const normalize = (str) => str.toLowerCase().replace(/[^a-z0-9]/g, '');
+        const normalize = (str) => str.toLowerCase().replace(/[^a-z0-9]/g, "");
         const target = normalize(model);
 
         const findMatch = (collection) => {
@@ -408,13 +407,13 @@ document.addEventListener('DOMContentLoaded', () => {
             yearRange = findMatch(relationships.engines);
         }
 
-        yearSelect.innerHTML = '<option value="">-- Select Year --</option>'; // Reset
+        yearSelect.innerHTML = "<option value=\"\">-- Select Year --</option>"; // Reset
 
         if (yearRange) {
             const years = parseYearRange(yearRange);
             years.sort((a, b) => b - a); // Descending
             years.forEach(y => {
-                const option = document.createElement('option');
+                const option = document.createElement("option");
                 option.value = y;
                 option.textContent = y;
                 yearSelect.appendChild(option);
@@ -443,14 +442,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (inferredYears.size > 0) {
                 const sortedYears = Array.from(inferredYears).sort((a, b) => b - a);
                 sortedYears.forEach(y => {
-                    const option = document.createElement('option');
+                    const option = document.createElement("option");
                     option.value = y;
                     option.textContent = y;
                     yearSelect.appendChild(option);
                 });
                 yearSelect.disabled = false;
             } else {
-                const option = document.createElement('option');
+                const option = document.createElement("option");
                 option.value = "Unknown";
                 option.textContent = "Unknown Year";
                 yearSelect.appendChild(option);
@@ -461,10 +460,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function parseYearRange(rangeStr) {
         const years = [];
-        const parts = rangeStr.split('–'); // En dash
+        const parts = rangeStr.split(""); // En dash
         if (parts.length === 2) {
             const start = parseInt(parts[0]);
-            let end = parts[1].toLowerCase() === 'present' ? new Date().getFullYear() : parseInt(parts[1]);
+            let end = parts[1].toLowerCase() === "present" ? new Date().getFullYear() : parseInt(parts[1]);
             if (isNaN(end)) end = start; // Handle single year or bad format
             
             for (let i = start; i <= end; i++) {
@@ -472,10 +471,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } else if (parts.length === 1) {
              // Try hyphen if en dash failed
-             const parts2 = rangeStr.split('-');
+             const parts2 = rangeStr.split("-");
              if (parts2.length === 2) {
                 const start = parseInt(parts2[0]);
-                let end = parts2[1].toLowerCase() === 'present' ? new Date().getFullYear() : parseInt(parts2[1]);
+                let end = parts2[1].toLowerCase() === "present" ? new Date().getFullYear() : parseInt(parts2[1]);
                 for (let i = start; i <= end; i++) {
                     years.push(i);
                 }
@@ -487,46 +486,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (subsystemSelect) {
-        subsystemSelect.addEventListener('change', () => {
-            activeSubsystem = subsystemSelect.value || '';
+        subsystemSelect.addEventListener("change", () => {
+            activeSubsystem = subsystemSelect.value || "";
         });
     }
 
     if (searchButton) {
-        searchButton.addEventListener('click', () => {
+        searchButton.addEventListener("click", () => {
             const make = makeSelect.value;
             const model = modelSelect.value;
             const year = yearSelect.value;
-            console.log('Search clicked for:', make, model, year);
+            console.log("Search clicked for:", make, model, year);
             if (make && model) {
                 showPartsForVehicle(make, model, year);
             } else {
-                console.warn('Search clicked but make/model missing');
+                console.warn("Search clicked but make/model missing");
             }
         });
     }
 
     function showPartsForVehicle(make, model, year) {
         try {
-            console.log('Showing parts for:', make, model, year);
+            console.log("Showing parts for:", make, model, year);
             
             // Ensure results section is visible immediately to show we are trying
-            resultsSection.classList.remove('hidden');
-            partsList.innerHTML = '<p>Scanning donor network...</p>';
+            resultsSection.classList.remove("hidden");
+            partsList.innerHTML = "<p>Searching parts bin...</p>";
 
             const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
-            console.log('Parts found in index:', parts ? parts.length : 0);
+            console.log("Parts found in index:", parts ? parts.length : 0);
             
             if (!parts) {
-                partsList.innerHTML = '<p>No compatible organs found in the registry.</p>';
+                partsList.innerHTML = "<p>No compatible parts found in the registry.</p>";
                 return;
             }
 
-            selectedVehicleName.textContent = `${make} ${model} ${year && year !== 'Unknown' ? `(${year})` : ''}`;
-            partsList.innerHTML = '';
+            selectedVehicleName.textContent = `${make} ${model} ${year && year !== "Unknown" ? `(${year})` : ""}`;
+            partsList.innerHTML = "";
             
             const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
-            console.log('Vehicle Attributes:', vehicleAttrs);
+            console.log("Vehicle Attributes:", vehicleAttrs);
 
             // Show cross-platform / engine donor vehicles
             displayDonors(vehicleAttrs.platformId, vehicleAttrs.engineId, make, model);
@@ -560,18 +559,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (activeSubsystem) {
-            console.log('Filtering by subsystem:', activeSubsystem);
+            console.log("Filtering by subsystem:", activeSubsystem);
             // Normalize for looser matching (e.g. "Suspension/Steering" vs "Suspension & Steering")
-            const normalize = s => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+            const normalize = s => s.toLowerCase().replace(/[^a-z0-9]/g, "");
             const search = normalize(activeSubsystem);
 
             filteredParts = filteredParts.filter(part => {
-                const cat = normalize(part.category || '');
+                const cat = normalize(part.category || "");
                 // Check if one contains the other
                 return cat.includes(search) || search.includes(cat);
             });
         }
-        console.log('Filtered parts count:', filteredParts.length);
+        console.log("Filtered parts count:", filteredParts.length);
 
         if (filteredParts && filteredParts.length > 0) {
             // Calculate scores for all parts
@@ -587,8 +586,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             scoredParts.forEach(item => {
                 const { part, score, risk } = item;
-                const div = document.createElement('div');
-                div.className = `part-item ${risk.cssClass}-border`;
+                const div = document.createElement("div");
+                div.className = `part-item ${risk.cssClass}`;
                 div.innerHTML = `
                     <div style="display:flex; justify-content:space-between; align-items:center;">
                         <h4>${part.name}</h4>
@@ -596,21 +595,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <p>${part.category}</p>
                 `;
-                div.addEventListener('click', () => showPartDetails(part, make, model));
+                div.addEventListener("click", () => showPartDetails(part, make, model));
                 partsList.appendChild(div);
             });
-            resultsSection.classList.remove('hidden');
-            partDetailsSection.classList.add('hidden');
-            selectorSection.classList.remove('hidden');
+            resultsSection.classList.remove("hidden");
+            partDetailsSection.classList.add("hidden");
+            // selectorSection.classList.remove("hidden"); // Keep selector visible
         } else {
-            console.log('No parts found, showing empty message');
-            partsList.innerHTML = '<p>No matches found in donor registry.</p>';
-            resultsSection.classList.remove('hidden');
+            console.log("No parts found, showing empty message");
+            partsList.innerHTML = "<p>No matches found.</p>";
+            resultsSection.classList.remove("hidden");
         }
         } catch (e) {
             console.error("CRITICAL ERROR in showPartsForVehicle:", e);
             partsList.innerHTML = `<div class="card" style="border-left: 4px solid red;">
-                <h3>⚠️ System Failure</h3>
+                <h3> System Failure</h3>
                 <p>Something went wrong while displaying parts.</p>
                 <p>Error: ${e.message}</p>
             </div>`;
@@ -619,8 +618,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayTips(make, model) {
         if (!tipsList) return;
-        tipsList.innerHTML = '';
-        tipsList.classList.add('hidden');
+        tipsList.innerHTML = "";
+        tipsList.classList.add("hidden");
 
         const relevantIds = [];
         for (const [id, vehicles] of Object.entries(relationships.platforms || {})) {
@@ -637,10 +636,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const relevantTips = tipsData.filter(tip => relevantIds.includes(tip.platform));
 
         if (relevantTips.length > 0) {
-            tipsList.classList.remove('hidden');
+            tipsList.classList.remove("hidden");
             relevantTips.forEach(tip => {
-                const div = document.createElement('div');
-                div.className = `tip-card tip-${tip.severity ? tip.severity.toLowerCase() : 'info'}`;
+                const div = document.createElement("div");
+                div.className = `tip-card tip-${tip.severity ? tip.severity.toLowerCase() : "info"}`;
                 div.innerHTML = `
                     <h4> ${tip.title}</h4>
                     <p>${tip.content}</p>
@@ -652,7 +651,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayDonors(platformId, engineId, make, model) {
         if (!donorList || !donorVehicles) return;
-        donorVehicles.innerHTML = '';
+        donorVehicles.innerHTML = "";
 
         const donors = [];
         const addDonor = (v, reason) => {
@@ -660,14 +659,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!name) return;
             const display = `${v.make} ${name}`;
             if (display.toLowerCase() === `${make} ${model}`.toLowerCase()) return; // skip self
-            donors.push({ display, years: v.years || '', notes: v.notes || '', reason });
+            donors.push({ display, years: v.years || "", notes: v.notes || "", reason });
         };
 
         if (platformId && relationships.platforms && relationships.platforms[platformId]) {
-            relationships.platforms[platformId].forEach(v => addDonor(v, 'Same platform'));
+            relationships.platforms[platformId].forEach(v => addDonor(v, "Same platform"));
         }
         if (engineId && relationships.engines && relationships.engines[engineId]) {
-            relationships.engines[engineId].forEach(v => addDonor(v, 'Shared engine'));
+            relationships.engines[engineId].forEach(v => addDonor(v, "Shared engine"));
         }
 
         // Deduplicate by display name + reason
@@ -676,60 +675,61 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = `${d.display}-${d.reason}`;
             if (seen.has(key)) return;
             seen.add(key);
-            const li = document.createElement('li');
-            const reasonText = d.reason ? ` – ${d.reason}` : '';
-            const notesText = d.notes ? ` (${d.notes})` : '';
-            li.textContent = `${d.display}${d.years ? ' [' + d.years + ']' : ''}${reasonText}${notesText}`;
+            const li = document.createElement("li");
+            const reasonText = d.reason ? `  ${d.reason}` : "";
+            const notesText = d.notes ? ` (${d.notes})` : "";
+            li.textContent = `${d.display}${d.years ? " [" + d.years + "]" : ""}${reasonText}${notesText}`;
             donorVehicles.appendChild(li);
         });
 
         if (donors.length > 0) {
-            donorList.classList.remove('hidden');
+            donorList.classList.remove("hidden");
         } else {
-            donorList.classList.add('hidden');
+            donorList.classList.add("hidden");
         }
     }
 
     function showPartDetails(part, make, model) {
-        const partName = document.getElementById('partName');
-        const partCategory = document.getElementById('partCategory');
-        const partDescription = document.getElementById('partDescription');
-        const partSpecs = document.getElementById('partSpecs');
-        const compatibleVehicles = document.getElementById('compatibleVehicles');
-        const universalParts = document.getElementById('universalParts');
-        const proTipSection = document.getElementById('proTipSection');
-        const proTipContent = document.getElementById('proTipContent');
+        const partName = document.getElementById("partName");
+        const partCategory = document.getElementById("partCategory");
+        const partDescription = document.getElementById("partDescription");
+        const partSpecs = document.getElementById("partSpecs");
+        const compatibleVehicles = document.getElementById("compatibleVehicles");
+        const universalParts = document.getElementById("universalParts");
+        const proTipSection = document.getElementById("proTipSection");
+        const proTipContent = document.getElementById("proTipContent");
+        const selectorSection = document.getElementById("selector"); // Re-select here to be safe
 
         partName.textContent = part.name;
         partCategory.textContent = part.category;
         partDescription.textContent = part.description;
 
         // Specs
-        partSpecs.innerHTML = '';
+        partSpecs.innerHTML = "";
         if (part.average_price) {
-            const li = document.createElement('li');
-            li.innerHTML = `<strong>💰 Average Price:</strong> ${part.average_price}`;
-            li.style.color = '#10b981'; // Green color for money
+            const li = document.createElement("li");
+            li.innerHTML = `<strong> Average Price:</strong> ${part.average_price}`;
+            li.style.color = "#10b981"; // Green color for money
             partSpecs.appendChild(li);
         }
         if (part.specs) {
             part.specs.forEach(spec => {
-                const li = document.createElement('li');
+                const li = document.createElement("li");
                 li.textContent = spec;
                 partSpecs.appendChild(li);
             });
         }
 
         // Compatible Vehicles
-        compatibleVehicles.innerHTML = '';
+        compatibleVehicles.innerHTML = "";
         if (part.compatibility) {
             part.compatibility.forEach(group => {
-                const div = document.createElement('div');
-                div.className = 'vehicle-group';
+                const div = document.createElement("div");
+                div.className = "vehicle-group";
                 div.innerHTML = `<h5>${group.make}</h5>`;
-                const ul = document.createElement('ul');
+                const ul = document.createElement("ul");
                 group.models.forEach(m => {
-                    const li = document.createElement('li');
+                    const li = document.createElement("li");
                     li.innerHTML = `<strong>${m.name || m.model}</strong> (${m.years}) <br><small>${m.notes}</small>`;
                     ul.appendChild(li);
                 });
@@ -739,10 +739,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Universal / Aftermarket
-        universalParts.innerHTML = '';
+        universalParts.innerHTML = "";
         if (part.universal_alternatives) {
             part.universal_alternatives.forEach(alt => {
-                const li = document.createElement('li');
+                const li = document.createElement("li");
                 li.innerHTML = `<strong>${alt.name}</strong>: ${alt.notes}`;
                 universalParts.appendChild(li);
             });
@@ -751,29 +751,29 @@ document.addEventListener('DOMContentLoaded', () => {
         // Pro Tip / History
         if (proTipSection) {
             if (part.pro_tip || part.history) {
-                proTipSection.classList.remove('hidden');
-                proTipContent.innerHTML = '';
+                proTipSection.classList.remove("hidden");
+                proTipContent.innerHTML = "";
                 if (part.history) {
-                     proTipContent.innerHTML += `<p style="margin-bottom:0.5rem;"><strong>📜 History:</strong> ${part.history}</p>`;
+                     proTipContent.innerHTML += `<p style="margin-bottom:0.5rem;"><strong> History:</strong> ${part.history}</p>`;
                 }
                 if (part.pro_tip) {
-                     proTipContent.innerHTML += `<p><strong>💡 Pro Tip:</strong> ${part.pro_tip}</p>`;
+                     proTipContent.innerHTML += `<p><strong> Pro Tip:</strong> ${part.pro_tip}</p>`;
                 }
             } else {
-                proTipSection.classList.add('hidden');
+                proTipSection.classList.add("hidden");
             }
         }
 
         // Show/Hide Sections
-        selectorSection.classList.add('hidden');
-        resultsSection.classList.add('hidden');
-        partDetailsSection.classList.remove('hidden');
+        // selectorSection.classList.add("hidden"); // Don't hide selector in new layout
+        resultsSection.classList.add("hidden");
+        partDetailsSection.classList.remove("hidden");
         window.scrollTo(0, 0);
     }
 
-    backButton.addEventListener('click', () => {
-        partDetailsSection.classList.add('hidden');
-        selectorSection.classList.remove('hidden');
-        resultsSection.classList.remove('hidden');
+    backButton.addEventListener("click", () => {
+        partDetailsSection.classList.add("hidden");
+        // selectorSection.classList.remove("hidden");
+        resultsSection.classList.remove("hidden");
     });
 });

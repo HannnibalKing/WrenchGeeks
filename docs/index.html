@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The O.R. - Auto Transplant Center</title>
+    <title>WrenchGeeks - The Garage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>The O.R. 🏥</h1>
-            <p>Auto Transplant Center. Find compatible organ donors for your vehicle.</p>
+            <h1>WrenchGeeks </h1>
+            <p>The Ultimate Part Interchange Garage. Built for those who fix it themselves.</p>
         </div>
     </header>
 
     <main class="container">
-        <section id="selector" class="card">
-            <h2>📋 Patient Intake Form</h2>
-            <p id="makeLoadStatus" class="hint" style="margin-bottom:0.75rem;">Loading patient records…</p>
+        <aside id="selector" class="sidebar">
+            <h2>Project Vehicle</h2>
+            <p id="makeLoadStatus" class="hint" style="margin-bottom:0.75rem;">Loading manufacturers...</p>
 
             <div class="controls">
                 <div class="form-group">
-                    <label for="makeSelect">Patient Make</label>
+                    <label for="makeSelect">Make</label>
                     <select id="makeSelect">
                         <option value="">-- Select Make --</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="modelSelect">Patient Model</label>
+                    <label for="modelSelect">Model</label>
                     <select id="modelSelect" disabled>
                         <option value="">-- Select Model --</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="yearSelect">Patient Year</label>
+                    <label for="yearSelect">Year</label>
                     <select id="yearSelect" disabled>
                         <option value="">-- Select Year --</option>
                     </select>
@@ -46,74 +46,70 @@
                 </div>
                 <div class="form-group">
                     <label>&nbsp;</label>
-                    <button id="searchButton" class="btn-primary" disabled>Begin Triage 🩺</button>
+                    <button id="searchButton" disabled>Find Parts </button>
                 </div>
             </div>
-            
-        </section>
+        </aside>
 
-        <section id="results" class="hidden">
-            <h3>Compatible Organs for <span id="selectedVehicleName"></span></h3>
-            <div id="tipsList" class="tips-container hidden"></div>
-            <div id="partsList" class="grid-list"></div>
-            <div id="donorList" class="card hidden" style="margin-top: 1rem;">
-                <h4>🧬 Genetic Matches (Platform / Engine Donors)</h4>
-                <p class="hint">These vehicles share DNA (Platform/Engine) and are prime candidates for transplants.</p>
-                <ul id="donorVehicles"></ul>
-            </div>
-        </section>
-
-        <section id="partDetails" class="hidden">
-            <button id="backButton" class="btn-secondary">← Back to Triage</button>
-            
-            <div class="part-header">
-                <h2 id="partName">Organ Name</h2>
-                <span id="partCategory" class="badge">System</span>
-            </div>
-            <p id="partDescription">Description goes here.</p>
-
-            <div id="proTipSection" class="card highlight-gold hidden" style="margin-bottom: 1.5rem; border-left: 4px solid #f59e0b;">
-                <h4>👨‍⚕️ Surgeon's Notes & Lore</h4>
-                <div id="proTipContent"></div>
-            </div>
-            
-            <div class="details-grid">
-                <div class="card highlight-border">
-                    <h4>✅ Vital Signs (Specs)</h4>
-                    <ul id="partSpecs"></ul>
+        <div class="main-content">
+            <section id="results" class="hidden">
+                <div class="card">
+                    <h3>Compatible Parts for <span id="selectedVehicleName" style="color: var(--accent-color);"></span></h3>
+                    <div id="tipsList" class="tips-container hidden"></div>
                 </div>
                 
-                <div class="card">
-                    <h4>🏥 Verified Donors / Recipients</h4>
-                    <p class="hint">These patients are confirmed matches for this organ.</p>
-                    <div id="compatibleVehicles"></div>
+                <div id="partsList" class="grid-list"></div>
+                
+                <div id="donorList" class="card hidden">
+                    <h4> Platform Mates (Donor Vehicles)</h4>
+                    <p class="hint">These vehicles share the same platform or engine. Great for sourcing parts at the junkyard.</p>
+                    <ul id="donorVehicles"></ul>
                 </div>
+            </section>
 
+            <section id="partDetails" class="hidden">
+                <button id="backButton" class="btn-secondary"> Back to Results</button>
+                
                 <div class="card">
-                    <h4>🦾 Prosthetics / Aftermarket</h4>
-                    <ul id="universalParts"></ul>
-                </div>
-            </div>
-        </section>
+                    <div class="part-header">
+                        <h2 id="partName" style="color: var(--accent-color);">Part Name</h2>
+                        <span id="partCategory" class="badge">System</span>
+                    </div>
+                    <p id="partDescription">Description goes here.</p>
 
-        <section id="donate" class="card highlight-gold">
-            <h3>💉 Support the Transplant Network</h3>
-            <p>If we saved you money on parts, help us replace the 10mm sockets we keep losing.</p>
-            <div class="donation-actions" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1.5rem;">
-                <a href="https://cwallet.com/t/GVBV3SPY" target="_blank" class="btn-primary" style="text-decoration: none; background: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: bold; display: inline-block;">
-                    💸 Send a Tip (Cwallet)
-                </a>
-                <p class="hint" style="font-size: 0.9rem; color: #475569;">
-                    $5 = New 10mm Socket | $15 = Junkyard Entry Fee | $50 = Full Tank of Gas
-                </p>
-            </div>
-        </section>
+                    <div id="proTipSection" class="highlight-gold hidden" style="margin-top: 1rem; padding: 1rem; background: rgba(255, 152, 0, 0.1); border-left: 4px solid var(--accent-color);">
+                        <h4 style="margin-top:0;"> Mechanic's Notes</h4>
+                        <div id="proTipContent"></div>
+                    </div>
+                </div>
+                
+                <div class="details-grid">
+                    <div class="card">
+                        <h4> Tech Specs</h4>
+                        <ul id="partSpecs"></ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h4> Verified Fitment</h4>
+                        <p class="hint">Confirmed vehicles this part was originally found on.</p>
+                        <div id="compatibleVehicles"></div>
+                    </div>
+
+                    <div class="card">
+                        <h4> Aftermarket / Universal</h4>
+                        <ul id="universalParts"></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="donate" class="card">
+                <h3> Fuel the Garage</h3>
+                <p>If this tool helped you fix your ride, consider buying us a coffee (or a 10mm socket).</p>
+                <button class="btn-secondary" onclick="alert('Thanks for the support! Link coming soon.')">Donate</button>
+            </section>
+        </div>
     </main>
 
-    <footer class="container">
-        <p>WrenchGeeks &copy; 2025</p>
-    </footer>
-
-    <script src="script.js?v=2"></script>
+    <script src="script.js"></script>
 </body>
 </html>
