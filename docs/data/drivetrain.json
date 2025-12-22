@@ -1,0 +1,184 @@
+{
+  "parts": [
+    {
+      "id": "tiptronic_filter_zf5hp19",
+      "category": "Drivetrain & Transmission",
+      "name": "Tiptronic Transmission Filter (ZF 5HP19)",
+      "description": "Transmission fluid filter for the 5-speed Tiptronic automatic. The transmission is a ZF 5HP19, shared with BMW and Audi.",
+      "specs": [
+        "Transmission: ZF 5HP19 (5-Speed Auto)",
+        "Porsche Part: 986 307 403 00",
+        "ZF Part: 0501 209 251"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Tiptronic models" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Tiptronic models" }
+          ]
+        },
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "3-Series (E46)", "years": "1999–2005", "notes": "Models with ZF 5HP19" },
+            { "name": "5-Series (E39)", "years": "1997–2003", "notes": "Models with ZF 5HP19" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5/B6)", "years": "1996–2004", "notes": "Quattro Tiptronic models" },
+            { "name": "A6 (C5)", "years": "1998–2004", "notes": "Quattro Tiptronic models" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_PL45", "PORSCHE_986_996", "BMW_E46"]
+      },
+      "universal_alternatives": [
+        { "name": "Filtran Filter", "notes": "OEM Supplier to ZF" },
+        { "name": "Meyle Transmission Kit", "notes": "Includes gasket and hardware" }
+      ]
+    },
+    {
+      "id": "nag1_blue_top_solenoids",
+      "category": "Drivetrain & Transmission",
+      "name": "Mercedes 'Blue Top' Transmission Solenoids",
+      "description": "High-pressure shift solenoids from the Mercedes SLR McLaren / Maybach. Installing these in a standard NAG1 (W5A580) transmission significantly firms up shifts and reduces slip.",
+      "specs": [
+        "Color: Blue Top (Brown Top is stock)",
+        "Transmission: NAG1 / 722.6 / W5A580",
+        "Effect: Firmer, faster shifts"
+      ],
+      "compatibility": [
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "SLR McLaren", "years": "2003–2010", "notes": "Stock Part" },
+            { "name": "Maybach 57/62", "years": "2002–2012", "notes": "Stock Part" }
+          ]
+        },
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger R/T / SRT8", "years": "2006–2014", "notes": "Upgrade (NAG1 5-Speed)" },
+            { "name": "Challenger R/T / SRT8", "years": "2008–2014", "notes": "Upgrade (NAG1 5-Speed)" },
+            { "name": "Magnum R/T / SRT8", "years": "2005–2008", "notes": "Upgrade (NAG1 5-Speed)" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C", "years": "2005–2014", "notes": "Upgrade (NAG1 5-Speed)" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Grand Cherokee SRT8 (WK1)", "years": "2006–2010", "notes": "Upgrade" },
+            { "name": "Wrangler (JK)", "years": "2012–2018", "notes": "Upgrade (WA580 Auto)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Paramount Performance Valve Body", "notes": "Full valve body build" }
+      ]
+    },
+    {
+      "id": "mini_psa_clutch_kit",
+      "category": "Drivetrain & Transmission",
+      "name": "Clutch Kit (Cooper S / THP)",
+      "description": "Single mass or dual mass flywheel clutch kit. The pressure plate and friction disc are shared across the platform.",
+      "specs": [
+        "Diameter: 228mm or 235mm",
+        "Spline Count: 18",
+        "Mini Part: 21207572843",
+        "PSA Part: 2052.P5"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2013", "notes": "N14/N18 Engine" },
+            { "name": "JCW (R56)", "years": "2009–2013", "notes": "Upgraded clamping force recommended" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3 1.6 THP", "years": "2009–2015", "notes": "Identical clutch" },
+            { "name": "C4", "years": "2008–2011", "notes": "Identical clutch" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 GTi", "years": "2007–2012", "notes": "Identical clutch" },
+            { "name": "RCZ", "years": "2010–2015", "notes": "Identical clutch" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Sachs Clutch Kit", "notes": "OEM Supplier" },
+        { "name": "Valeo Single Mass Conversion", "notes": "Replaces expensive dual mass flywheel" }
+      ]
+    },
+    {
+      "id": "nag1_conductor_plate",
+      "category": "Drivetrain & Transmission",
+      "name": "NAG1 / 722.6 Conductor Plate",
+      "description": "The electrical brain inside the transmission. Speed sensors fail, causing 'Limp Mode' (stuck in 2nd gear). The Dodge part is just a Mercedes part in a Mopar box.",
+      "specs": [
+        "Transmission: NAG1 (Dodge) / 722.6 (Mercedes) 5-Speed Auto",
+        "Mopar Part: 52108308AA",
+        "Mercedes Part: 140 270 11 61"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger (5-Speed)", "years": "2006–2014", "notes": "NAG1 Transmission" },
+            { "name": "Challenger (5-Speed)", "years": "2008–2014", "notes": "NAG1 Transmission" },
+            { "name": "Magnum", "years": "2005–2008", "notes": "NAG1 Transmission" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C", "years": "2005–2014", "notes": "NAG1 Transmission" },
+            { "name": "Crossfire", "years": "2004–2008", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E-Class (W210/W211)", "years": "1996–2009", "notes": "722.6 Transmission" },
+            { "name": "C-Class (W203)", "years": "2001–2007", "notes": "722.6 Transmission" },
+            { "name": "S-Class (W220)", "years": "1999–2005", "notes": "722.6 Transmission" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Grand Cherokee (WK)", "years": "2005–2013", "notes": "3.7L/6.1L with NAG1" },
+            { "name": "Wrangler (JK)", "years": "2012–2018", "notes": "WA580 (NAG1 variant)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Febi Bilstein Kit", "notes": "Includes connector plug and filter" },
+        { "name": "Meyle Platinum", "notes": "Improved circuit board design" }
+      ]
+    }
+  ]
+}

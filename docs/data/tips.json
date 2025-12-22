@@ -1,0 +1,68 @@
+{
+  "tips": [
+    {
+      "id": "tip_996_ims",
+      "platform": "PORSCHE_986_996",
+      "title": "IMS Bearing Failure (The Elephant in the Room)",
+      "content": "The Intermediate Shaft (IMS) bearing on M96 engines (1997-2005) is a sealed ball bearing that can fail catastrophically, destroying the engine. It is strongly recommended to replace this bearing with a ceramic or oil-fed upgrade whenever the transmission is removed (e.g., for a clutch job).",
+      "severity": "Critical",
+      "related_parts": ["porsche_ims_bearing"]
+    },
+    {
+      "id": "tip_996_aos",
+      "platform": "PORSCHE_986_996",
+      "title": "Air Oil Separator (AOS) Failure",
+      "content": "If your 996/986 starts smoking heavily (white smoke) on startup or under cornering, the AOS diaphragm has likely failed. This allows oil to be sucked into the intake. If ignored, it can cause hydrolock.",
+      "severity": "High",
+      "related_parts": ["porsche_aos_996"]
+    },
+    {
+      "id": "tip_bmw_cooling",
+      "platform": "BMW_E46",
+      "title": "The 100k Mile Cooling Overhaul",
+      "content": "BMW E36/E46 cooling systems are made almost entirely of plastic. By 100,000 miles, the radiator necks, expansion tank, and thermostat housing become brittle and WILL crack. It is considered mandatory maintenance to replace the entire cooling stack (Radiator, Tank, Hoses, Pump, Thermostat) every 80k-100k miles.",
+      "severity": "High",
+      "related_parts": ["bmw_expansion_tank", "stewart_water_pump"]
+    },
+    {
+      "id": "tip_bmw_disa",
+      "platform": "BMW_E46",
+      "title": "DISA Valve 'Rattle of Death'",
+      "content": "The DISA valve (intake adjuster) on M54 engines has a plastic flap held by a metal pin. The flap wears out and rattles. If the metal pin falls out, it gets sucked into the engine, destroying valves/pistons. Upgrade to a metal flap kit immediately if you hear rattling.",
+      "severity": "Critical",
+      "related_parts": ["bmw_disa_valve_upgrade"]
+    },
+    {
+      "id": "tip_lx_pinky_thing",
+      "platform": "DAIMLER_CHRYSLER_LX",
+      "title": "Stuck in Park? (The 'Pinky Thing')",
+      "content": "Early Charger/300/Magnum models have a plastic shift interlock latch (often called the 'Pinky Thing') inside the shifter assembly. It breaks, leaving the car stuck in Park. You can override it with a screwdriver, but the permanent fix is an aluminum replacement latch.",
+      "severity": "Medium",
+      "related_parts": ["lx_shift_interlock_billet"]
+    },
+    {
+      "id": "tip_lx_hemi_tick",
+      "platform": "DAIMLER_CHRYSLER_LX",
+      "title": "The 'Hemi Tick'",
+      "content": "A ticking noise on Hemi engines is often caused by broken exhaust manifold bolts (the heads snap off). It goes away as the engine warms up and the metal expands. Replace with ARP bolts to prevent recurrence.",
+      "severity": "Low",
+      "related_parts": ["hemi_exhaust_bolts"]
+    },
+    {
+      "id": "tip_mini_death_rattle",
+      "platform": "PSA_PRINCE",
+      "title": "Timing Chain 'Death Rattle'",
+      "content": "The N14/N18 Prince engines are notorious for timing chain tensioner failure. If you hear a loud rattling/clattering on cold start (sounds like a diesel), DO NOT DRIVE. The tensioner has failed and the chain is loose. Engine destruction is imminent.",
+      "severity": "Critical",
+      "related_parts": ["mini_timing_chain_kit"]
+    },
+    {
+      "id": "tip_mini_carbon",
+      "platform": "PSA_PRINCE",
+      "title": "Intake Valve Carbon Buildup",
+      "content": "Direct Injection engines (Cooper S / THP) do not wash the intake valves with fuel. Carbon builds up rapidly, causing misfires and power loss. Walnut blasting the intake valves is required maintenance every 40k-60k miles.",
+      "severity": "Medium",
+      "related_parts": []
+    }
+  ]
+}

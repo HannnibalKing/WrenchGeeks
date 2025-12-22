@@ -1,0 +1,549 @@
+{
+  "parts": [
+    {
+      "id": "bosch_lsu_49",
+      "category": "Electrical & Sensors",
+      "name": "Bosch LSU 4.9 Wideband O2 Sensor",
+      "description": "The industry standard wideband oxygen sensor for aftermarket ECUs and tuning.",
+      "specs": [
+        "5-wire wideband sensor",
+        "Faster response than LSU 4.2",
+        "Requires compatible controller"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Aftermarket ECUs (AEM, Haltech, MoTeC)", "years": "All", "notes": "Standard sensor" },
+            { "name": "Wideband Gauges (AEM UEGO)", "years": "All", "notes": "Replacement sensor" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf R (Mk6)", "years": "2012–2013", "notes": "OEM replacement" },
+            { "name": "GTI (Mk6)", "years": "2010–2014", "notes": "OEM replacement" }
+          ]
+        },
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang GT (Coyote)", "years": "2011–2014", "notes": "OEM replacement" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "AEM 30-2004", "notes": "Rebranded Bosch sensor" }
+      ]
+    },
+    {
+      "id": "vag_r8_coils",
+      "category": "Electrical & Sensors",
+      "name": "Audi R8 Ignition Coils (Red Top)",
+      "description": "High-output ignition coils originally for the Audi R8/RS4. A very popular upgrade for 1.8T and 2.0T FSI engines to prevent spark blowout at high boost.",
+      "specs": [
+        "Color: Red Top",
+        "Spark Energy: Higher than stock 1.8T",
+        "Requires: Adapter plate for 1.8T valve cover"
+      ],
+      "compatibility": [
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "R8 V8/V10", "years": "2008–2015", "notes": "Stock Part" },
+            { "name": "A4 1.8T (B5/B6)", "years": "1997–2005", "notes": "Upgrade (Requires adapters)" },
+            { "name": "TT 1.8T (Mk1)", "years": "2000–2006", "notes": "Upgrade (Requires adapters)" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf/Jetta 1.8T (Mk4)", "years": "1999–2005", "notes": "Upgrade (Requires adapters)" },
+            { "name": "GTI 2.0T FSI (Mk5)", "years": "2006–2008", "notes": "Upgrade (Direct fit)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["VAG_18T"]
+      },
+      "universal_alternatives": [
+        { "name": "Okada Projects Plasma Direct", "notes": "Extremely expensive high-end option" }
+      ]
+    },
+    {
+      "id": "ls400_alternator",
+      "category": "Electrical & Sensors",
+      "name": "Lexus LS400 Alternator (Round Plug)",
+      "description": "High-output alternator from the 1UZ-FE. Often fails due to power steering fluid leaking from the pump directly above it. The 'Round Plug' version (1993-1997) is a common upgrade for other Toyotas.",
+      "specs": [
+        "Amperage: 100A (Stock)",
+        "Plug Type: Round (3-pin)",
+        "Mount: 1UZ Specific"
+      ],
+      "compatibility": [
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "LS400", "years": "1993–1997", "notes": "Stock Part (Round Plug)" },
+            { "name": "SC400", "years": "1992–1997", "notes": "Stock Part" }
+          ]
+        },
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Supra (MK4)", "years": "1993–1998", "notes": "Upgrade (Requires modification)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["TOYOTA_UZ_FE"]
+      },
+      "universal_alternatives": [
+        { "name": "Denso Reman", "notes": "OEM Quality" }
+      ]
+    },
+    {
+      "id": "gm_3bar_map",
+      "category": "Electrical & Sensors",
+      "name": "GM 3-Bar MAP Sensor",
+      "description": "Manifold Absolute Pressure sensor capable of reading up to ~29 psi of boost (plus atmospheric).",
+      "specs": [
+        "Reads up to 3 Bar (absolute)",
+        "Linear 0-5V output",
+        "Commonly used in turbo conversions"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Turbo Builds", "years": "All", "notes": "Standard upgrade for forced induction" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Corvette ZR1", "years": "2009–2013", "notes": "OEM part" },
+            { "name": "Camaro ZL1", "years": "2012–2015", "notes": "OEM part" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "AEM 3.5 Bar MAP", "notes": "Higher range alternative" },
+        { "name": "Omni Power 4 Bar", "notes": "Plug and play for Honda/Mitsu" }
+      ]
+    },
+    {
+      "id": "gm_iat_sensor",
+      "category": "Electrical & Sensors",
+      "name": "GM Open Element IAT Sensor",
+      "description": "Fast-acting Intake Air Temperature sensor. The open element design provides quicker readings than closed sensors.",
+      "specs": [
+        "Open element thermistor",
+        "3/8 NPT thread (usually)",
+        "2-pin connector"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Aftermarket ECUs", "years": "All", "notes": "Standard IAT sensor for tuning" },
+            { "name": "Turbo/Supercharger Kits", "years": "All", "notes": "Used to measure charge temp" }
+          ]
+        },
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Typhoon", "years": "1992–1993", "notes": "OEM part" },
+            { "name": "Syclone", "years": "1991", "notes": "OEM part" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "AEM IAT Sensor", "notes": "Includes weld-on bung" },
+        { "name": "Haltech Air Temp Sensor", "notes": "Standard 1/4 NPT" }
+      ]
+    },
+    {
+      "id": "nag1_pilot_bushing",
+      "category": "Electrical & Sensors",
+      "name": "Transmission Adapter Plug (Pilot Bushing)",
+      "description": "The connector plug housing for the NAG1/722.6 transmission. The O-rings fail, wicking transmission fluid up the harness into the TCU, destroying it.",
+      "specs": [
+        "Pins: 13-pin connector",
+        "Mopar Part: 68021352AA",
+        "Mercedes Part: 203 540 02 53"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger", "years": "2006–2014", "notes": "5-Speed Auto (NAG1)" },
+            { "name": "Challenger", "years": "2008–2014", "notes": "5-Speed Auto (NAG1)" },
+            { "name": "Magnum", "years": "2005–2008", "notes": "5-Speed Auto (NAG1)" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C", "years": "2005–2014", "notes": "5-Speed Auto (NAG1)" },
+            { "name": "Crossfire", "years": "2004–2008", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E-Class (W210/W211)", "years": "1996–2009", "notes": "722.6 Transmission" },
+            { "name": "C-Class (W203/W204)", "years": "2001–2011", "notes": "722.6 Transmission" },
+            { "name": "Sprinter Van", "years": "2003–2009", "notes": "722.6 Transmission" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Grand Cherokee (WK)", "years": "2005–2013", "notes": "NAG1 Transmission" },
+            { "name": "Wrangler (JK)", "years": "2012–2018", "notes": "WA580 Transmission" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Febi Bilstein Plug", "notes": "OEM Quality" },
+        { "name": "Meyle Connector", "notes": "Improved O-rings" }
+      ]
+    },
+    {
+      "id": "lx_abs_sensor_rear",
+      "category": "Electrical & Sensors",
+      "name": "ABS Wheel Speed Sensor (Rear)",
+      "description": "Rear wheel speed sensor. Failure causes ABS/ESP lights and loss of cruise control. The LX rear suspension is derived from the Mercedes W211.",
+      "specs": [
+        "Position: Rear Left / Right",
+        "Connector: 2-pin",
+        "Mopar Part: 4779244AB"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger", "years": "2006–2010", "notes": "RWD Models" },
+            { "name": "Magnum", "years": "2005–2008", "notes": "RWD Models" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C", "years": "2005–2010", "notes": "RWD Models" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E-Class (W211)", "years": "2003–2009", "notes": "Sensor logic is identical, check cable length/connector shape" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "ATE Wheel Speed Sensor", "notes": "OEM Supplier to Mercedes" },
+        { "name": "Standard Motor Products", "notes": "Aftermarket replacement" }
+      ]
+    },
+    {
+      "id": "bosch_maf_996",
+      "category": "Electrical & Sensors",
+      "name": "Bosch Mass Air Flow Sensor (MAF)",
+      "description": "Standard Bosch hot-film air mass meter. The sensor element itself is often identical across many European cars, even if the housing differs.",
+      "specs": [
+        "Bosch Part: 0 280 218 055",
+        "Porsche Part: 996.606.125.01"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2001", "notes": "Direct fit" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf 2.0L (Mk4)", "years": "1999–2005", "notes": "Sensor element often swaps" },
+            { "name": "Jetta 2.0L (Mk4)", "years": "1999–2005", "notes": "Sensor element often swaps" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PORSCHE_M96"]
+      },
+      "universal_alternatives": [
+        { "name": "Pierburg MAF", "notes": "Often considered more durable than Bosch" }
+      ]
+    },
+    {
+      "id": "porsche_944_dme_relay",
+      "category": "Electrical & Sensors",
+      "name": "DME Relay (Fuel Pump Relay)",
+      "description": "The infamous 'DME Relay' that controls the fuel pump and DME. Known for solder joint failures.",
+      "specs": [
+        "Part Number: 993.615.227.00 (Solid State Upgrade)",
+        "Original Part: 944.615.227.00"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "944", "years": "1982–1991", "notes": "Critical spare part" },
+            { "name": "924S", "years": "1986–1988", "notes": "Critical spare part" },
+            { "name": "968", "years": "1992–1995", "notes": "Critical spare part" },
+            { "name": "911 (964/993)", "years": "1989–1998", "notes": "Same relay logic" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PORSCHE_924_944"]
+      },
+      "universal_alternatives": [
+        { "name": "F-Tech Solid State Relay", "notes": "Modern reliable replacement" }
+      ]
+    },
+    {
+      "id": "bosch_alternator_regulator",
+      "category": "Electrical & Sensors",
+      "name": "Bosch Alternator Voltage Regulator",
+      "description": "The replaceable brush pack/regulator on the back of Bosch alternators. Fixes charging issues without replacing the whole unit.",
+      "specs": [
+        "Voltage: 14.5V",
+        "Fitment: Bosch Compact Alternators (Internal Fan)",
+        "Part Number: F 00M 145 225 (Common variation)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Fits Bosch 120A/150A alternators" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Fits Bosch alternators" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf (Mk4)", "years": "1999–2005", "notes": "Fits Bosch alternators" },
+            { "name": "Passat (B5)", "years": "1998–2005", "notes": "Fits Bosch alternators" }
+          ]
+        },
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "E46 3-Series", "years": "1999–2005", "notes": "Fits Bosch alternators (Valeo differs)" },
+            { "name": "E39 5-Series", "years": "1997–2003", "notes": "Fits Bosch alternators" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VW_MK4", "VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Huco Regulator", "notes": "Quality aftermarket" }
+      ]
+    },
+    {
+      "id": "brake_light_switch_vag",
+      "category": "Electrical & Sensors",
+      "name": "Brake Light Switch (4-Pin)",
+      "description": "Common failure causing 'ABS/PSM Failure' lights. It's a cheap VW part.",
+      "specs": [
+        "Pins: 4-pin connector",
+        "Part Number: 1J0 945 511 A (VW) / 996 613 113 02 (Porsche)",
+        "Color: Purple or Green (Updated version)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Direct fit" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf (Mk4)", "years": "1999–2005", "notes": "Identical part" },
+            { "name": "Jetta (Mk4)", "years": "1999–2005", "notes": "Identical part" },
+            { "name": "Beetle", "years": "1998–2010", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "TT (Mk1)", "years": "2000–2006", "notes": "Identical part" },
+            { "name": "A3 (8L)", "years": "1996–2003", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VW_MK4"]
+      },
+      "universal_alternatives": [
+        { "name": "Febi Bilstein Switch", "notes": "OEM Supplier ($10 vs $40)" }
+      ]
+    },
+    {
+      "id": "oil_pressure_sender_vdo",
+      "category": "Electrical & Sensors",
+      "name": "Oil Pressure Sender (VDO)",
+      "description": "Dual pole sender for gauge and warning light. VDO makes the Porsche part.",
+      "specs": [
+        "Range: 0-5 Bar",
+        "Thread: M10x1.0",
+        "Terminals: 2 (Gauge + Warning Light)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "OEM is VDO" },
+            { "name": "911 (993)", "years": "1995–1998", "notes": "OEM is VDO" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf (Mk1/Mk2) GTI", "years": "1983–1992", "notes": "Used on console gauges" },
+            { "name": "Cabriolet", "years": "1985–1993", "notes": "Used on console gauges" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "Coupe Quattro", "years": "1990–1991", "notes": "Standard VDO sender" },
+            { "name": "4000 Quattro", "years": "1984–1987", "notes": "Standard VDO sender" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "VDO 360-009", "notes": "Generic VDO part number (Check thread pitch)" }
+      ]
+    },
+    {
+      "id": "crank_position_sensor_bosch",
+      "category": "Electrical & Sensors",
+      "name": "Crankshaft Position Sensor (Bosch)",
+      "description": "Inductive pulse sensor. Failure causes no-start (especially when hot).",
+      "specs": [
+        "Bosch Part: 0 261 210 128 (or similar)",
+        "Connector: 3-pin Bosch Jetronic",
+        "Cable Length: Varies by car, sensor head is identical"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Identical sensor head" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Identical sensor head" }
+          ]
+        },
+        {
+          "make": "Bosch",
+          "models": [
+            { "name": "Universal Bosch Sensor", "years": "All", "notes": "Used on Alfa, BMW, Volvo, VAG. Check cable length." }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PORSCHE_M96"]
+      },
+      "universal_alternatives": [
+        { "name": "Vemo Sensor", "notes": "Aftermarket replacement" }
+      ]
+    },
+    {
+      "id": "mini_psa_map_sensor",
+      "category": "Electrical & Sensors",
+      "name": "MAP Sensor (Manifold Absolute Pressure)",
+      "description": "Intake manifold pressure sensor. Critical for turbo boost control. Often gets clogged with oil blow-by.",
+      "specs": [
+        "Pressure Range: 2.5 Bar (approx)",
+        "Mini Part: 13627535068",
+        "PSA Part: 1920.CZ"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2010", "notes": "N14 Engine" },
+            { "name": "JCW (R56)", "years": "2009–2012", "notes": "N14 Engine" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3 1.6 THP", "years": "2009–2015", "notes": "Identical part" },
+            { "name": "C4 Picasso", "years": "2008–2013", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 GTi", "years": "2007–2012", "notes": "Identical part" },
+            { "name": "RCZ", "years": "2010–2015", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Bosch 0261230135", "notes": "OEM Manufacturer" }
+      ]
+    },
+    {
+      "id": "mini_psa_cam_sensor",
+      "category": "Electrical & Sensors",
+      "name": "Camshaft Position Sensor",
+      "description": "Hall effect sensor for camshaft position. Failure causes hard starting and limp mode.",
+      "specs": [
+        "Connector: 3-pin",
+        "Mini Part: 13627525014",
+        "PSA Part: 1920.AW"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2013", "notes": "N14/N18 Engine" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "C3 / DS3", "years": "2009–2015", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 / 308", "years": "2007–2013", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "1-Series (F20) 116i/118i", "years": "2011–2015", "notes": "N13 Engine (Prince derivative)" },
+            { "name": "3-Series (F30) 316i", "years": "2012–2015", "notes": "N13 Engine" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "VDO S119445001Z", "notes": "OEM Manufacturer" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1250 @@
+{
+  "parts": [
+    {
+      "id": "srt6_sc_pulley",
+      "category": "Engine Mechanical",
+      "name": "Crossfire SRT-6 / SLK32 AMG Supercharger Pulley",
+      "description": "Smaller supercharger pulley for the M112K engine found in the Crossfire SRT-6 and SLK32 AMG. Increases boost for significant torque gains.",
+      "specs": [
+        "Size: 65mm (Stock is 74mm)",
+        "Gains: ~30-40hp / 40tq",
+        "Requires: ECU Tune, Cooler Plugs"
+      ],
+      "compatibility_smart": {
+        "engines": ["MERCEDES_M112"]
+      },
+      "universal_alternatives": [
+        { "name": "Needswings Pulley Kit", "notes": "Includes belt and tune" }
+      ]
+    },
+    {
+      "id": "prowler_trans_cooler",
+      "category": "Engine Mechanical",
+      "name": "Prowler Transmission Cooler Kit",
+      "description": "Essential upgrade for the Plymouth/Chrysler Prowler. The factory transmission cooling is inadequate, leading to 42LE transmission failure. This kit adds a dedicated external cooler.",
+      "specs": [
+        "Type: Stacked Plate",
+        "Location: Front Grille",
+        "Benefit: Extends Transmission Life"
+      ],
+      "compatibility_smart": {
+        "platforms": ["CHRYSLER_PROWLER"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "evo_16g_turbo",
+      "category": "Engine Mechanical",
+      "name": "Mitsubishi TD05H-16G6 Turbo (Evo III)",
+      "description": "The 'Big 16G' turbo from the Evo III. The ultimate upgrade for 1G/2G DSMs, capable of supporting ~350-380whp with near-stock spool.",
+      "specs": [
+        "Compressor: 16G6",
+        "Turbine: TD05H",
+        "Flange: DSM Bolt-on"
+      ],
+      "compatibility_smart": {
+        "engines": ["MITSUBISHI_4G63"]
+      },
+      "universal_alternatives": [
+        { "name": "Evo IX Turbo (TD05H-16G6C)", "notes": "Twin-scroll, requires manifold swap" }
+      ]
+    },
+    {
+      "id": "volvo_19t_turbo",
+      "category": "Engine Mechanical",
+      "name": "Mitsubishi TD04HL-19T Turbo",
+      "description": "The largest factory turbo for the Volvo Whiteblock engines (found on V70R). A direct upgrade for 850/S70 T5 models running the smaller 15G/16T turbos.",
+      "specs": [
+        "Compressor: 19T (Billet upgrades available)",
+        "Turbine: TD04HL (Angled or Straight flange)",
+        "Power Potential: ~300-330hp"
+      ],
+      "compatibility_smart": {
+        "engines": ["VOLVO_WHITEBLOCK"]
+      },
+      "universal_alternatives": [
+        { "name": "K24 (S60R)", "notes": "Requires oil/water line modification" }
+      ]
+    },
+    {
+      "id": "k20_oil_pump_swap",
+      "category": "Engine Mechanical",
+      "name": "K20A2 Oil Pump Swap",
+      "description": "Swapping the balance-shaft-free oil pump from the RSX Type-S (K20A2) into K24 engines. Essential for high-RPM reliability (8000+ RPM) in K24 builds.",
+      "specs": [
+        "Removes Balance Shafts",
+        "Reduces Rotational Mass",
+        "Prevents Oil Cavitation at High RPM"
+      ],
+      "compatibility_smart": {
+        "engines": ["HONDA_K_SERIES"]
+      },
+      "universal_alternatives": [
+        { "name": "S2000 Oil Pump (Modified)", "notes": "Even better for extreme RPM" }
+      ]
+    },
+    {
+      "id": "sr20det_t28_turbo",
+      "category": "Engine Mechanical",
+      "name": "S15 T28 Ball Bearing Turbo",
+      "description": "The factory turbocharger from the S15 Silvia Spec-R. A popular upgrade for S13/S14 SR20DETs, offering faster spool and support for ~300whp.",
+      "specs": [
+        "Bearing: Ball Bearing",
+        "Compressor: T28",
+        "Response: Instant"
+      ],
+      "compatibility_smart": {
+        "engines": ["NISSAN_SR20"]
+      },
+      "universal_alternatives": [
+        { "name": "Garrett GT2860RS", "notes": "The 'Disco Potato'" }
+      ]
+    },
+    {
+      "id": "lsj_stage2_pulley",
+      "category": "Engine Mechanical",
+      "name": "GM Stage 2 Supercharger Pulley (3.0\")",
+      "description": "Smaller pulley for the Eaton M62 supercharger on the LSJ engine (Ion Red Line / Cobalt SS). Part of the official GM Stage 2 kit.",
+      "specs": [
+        "Size: 3.0 inches (77.9mm)",
+        "Boost: ~15-16 psi",
+        "Requires: 42lb Injectors, Tune"
+      ],
+      "compatibility_smart": {
+        "engines": ["GM_ECOTEC_LSJ"]
+      },
+      "universal_alternatives": [
+        { "name": "2.8\" Pulley", "notes": "Requires cooling mods and 60lb injectors" }
+      ]
+    },
+    {
+      "id": "metro_xfi_cam",
+      "category": "Engine Mechanical",
+      "name": "Geo Metro XFi Camshaft",
+      "description": "The legendary 'fuel economy' camshaft from the Metro XFi model. Swapping this into a standard Metro or Swift 1.0L can improve MPG significantly at the cost of high-RPM power.",
+      "specs": [
+        "Duration: Low",
+        "Lift: Low",
+        "Target: Maximum MPG"
+      ],
+      "compatibility_smart": {
+        "engines": ["SUZUKI_G_SERIES"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "l67_supercharger_pulley",
+      "category": "Engine Mechanical",
+      "name": "ZZP 3.4\" Modular Supercharger Pulley",
+      "description": "Smaller diameter pulley for the Eaton M90 supercharger found on GM 3800 Series II/III engines. Increases boost from stock ~6-8psi to ~10psi.",
+      "specs": [
+        "Size: 3.4 inches (Street Safe)",
+        "Material: Aluminum",
+        "Requires: Modular Hub System"
+      ],
+      "compatibility_smart": {
+        "engines": ["GM_3800_SERIES"]
+      },
+      "universal_alternatives": [
+        { "name": "3.2\" Pulley", "notes": "Requires supporting mods (headers, intercooler) to prevent knock" }
+      ]
+    },
+    {
+      "id": "hellcat_supercharger_pulley",
+      "category": "Engine Mechanical",
+      "name": "Metco Motorsports 2.85\" Supercharger Pulley",
+      "description": "Smaller diameter supercharger pulley for 6.2L Hellcat/Demon engines. Increases boost by 2-3 psi for significant power gains.",
+      "specs": [
+        "Size: 2.85 inches",
+        "Material: Billet Aluminum",
+        "Requires shorter belt and tuning"
+      ],
+      "compatibility_smart": {
+        "engines": ["CHRYSLER_HEMI_62_SC"]
+      },
+      "universal_alternatives": [
+        { "name": "Litens Hellraiser", "notes": "Decoupling pulley to reduce belt stress" }
+      ]
+    },
+    {
+      "id": "demon_crate_pcm",
+      "category": "Engine Mechanical",
+      "name": "Direct Connection High-Octane PCM",
+      "description": "Unlocked PCM calibrated for 100+ octane fuel. Originally part of the Demon Crate, now available for Hellcat/Redeye models.",
+      "specs": [
+        "Unlocks High Octane Mode",
+        "Optimized Spark/Fuel Maps",
+        "Plug and Play for 6.2L SC"
+      ],
+      "compatibility_smart": {
+        "engines": ["CHRYSLER_HEMI_62_SC"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "hellcat_lower_airbox",
+      "category": "Engine Mechanical",
+      "name": "Hellcat Lower Airbox",
+      "description": "The lower portion of the airbox from the Hellcat. It features an open front that draws air from the headlight duct (on Challengers) or grille, flowing significantly more air than the standard R/T or Scat Pack airbox.",
+      "specs": [
+        "Intake Source: Headlight Duct (Challenger)",
+        "Fitment: Direct drop-in for many LX/LD/LA cars",
+        "Gains: Lower IATs, slight HP increase"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Challenger Hellcat", "years": "2015–Present", "notes": "Stock Part" },
+            { "name": "Challenger R/T / Scat Pack", "years": "2015–Present", "notes": "Direct Upgrade" },
+            { "name": "Charger R/T / Scat Pack", "years": "2015–Present", "notes": "Direct Upgrade (Requires grille duct)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Mopar Cold Air Intake", "notes": "More expensive, looks cooler" }
+      ]
+    },
+    {
+      "id": "cummins_grid_heater_delete",
+      "category": "Engine Mechanical",
+      "name": "Cummins 6.7L Grid Heater Delete",
+      "description": "Replaces the restrictive factory intake heater grid with a high-flow plate. The factory heater bolt is notorious for breaking off and falling into cylinder #6, causing catastrophic engine failure.",
+      "specs": [
+        "Material: Billet Aluminum",
+        "Flow Increase: ~30%",
+        "Reliability: Eliminates 'Killer Bolt' risk"
+      ],
+      "compatibility": [
+        {
+          "make": "Ram",
+          "models": [
+            { "name": "2500/3500 (6.7L Cummins)", "years": "2007–Present", "notes": "Recommended Reliability Mod" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["CUMMINS_ISB_67"]
+      },
+      "universal_alternatives": [
+        { "name": "Banks Monster Ram", "notes": "Complete intake elbow replacement" }
+      ]
+    },
+    {
+      "id": "f150_coyote_intake_swap",
+      "category": "Engine Mechanical",
+      "name": "Mustang GT Intake Manifold (Coyote)",
+      "description": "Swapping the Mustang GT intake manifold onto an F-150 5.0L Coyote. The truck manifold is designed for low-end torque, while the Mustang manifold flows better at high RPM for peak horsepower.",
+      "specs": [
+        "Powerband: Shifts power to higher RPM",
+        "Gains: ~15-30hp peak (losses in low-end torque)",
+        "Tuning: Required"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang GT", "years": "2011–Present", "notes": "Stock Part (Donor)" },
+            { "name": "F-150 5.0L", "years": "2011–Present", "notes": "High-RPM Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["FORD_COYOTE"]
+      },
+      "universal_alternatives": [
+        { "name": "Boss 302 Manifold", "notes": "Even higher RPM bias" },
+        { "name": "Cobra Jet Manifold", "notes": "Race use only" }
+      ]
+    },
+    {
+      "id": "crown_vic_p71_intake",
+      "category": "Engine Mechanical",
+      "name": "Crown Vic Police Interceptor (P71) Airbox & Zip Tube",
+      "description": "The air intake system from the P71 Police Interceptor. It has a larger Mass Air Flow (MAF) housing (80mm vs 70mm) and a smoother intake tube ('Zip Tube').",
+      "specs": [
+        "MAF Size: 80mm",
+        "Tube: Smooth silicone/rubber (no resonators)",
+        "Gains: ~10-15hp (Requires Tune)"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Crown Victoria P71", "years": "2004–2011", "notes": "Stock Part" },
+            { "name": "Crown Victoria LX", "years": "2004–2011", "notes": "Upgrade (Requires Tune)" },
+            { "name": "Grand Marquis", "years": "2004–2011", "notes": "Upgrade (Requires Tune)" },
+            { "name": "Town Car", "years": "2004–2011", "notes": "Upgrade (Requires Tune)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_PANTHER"]
+      },
+      "universal_alternatives": [
+        { "name": "ADTR Intake", "notes": "Aftermarket performance option" }
+      ]
+    },
+    {
+      "id": "bmw_m50_manifold",
+      "category": "Engine Mechanical",
+      "name": "BMW M50 Intake Manifold",
+      "description": "Intake manifold from the OBD1 M50B25 engine. Has significantly larger runners than the OBD2 M52/S52 manifold. A legendary 'cheap horsepower' swap for E36 328i and M3 owners.",
+      "specs": [
+        "Runner Width: Larger than M52",
+        "Material: Composite",
+        "Gains: ~15-20whp at high RPM (losses at low RPM)"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "325i (E36)", "years": "1992–1995", "notes": "Stock Part" },
+            { "name": "525i (E34)", "years": "1991–1995", "notes": "Stock Part" },
+            { "name": "328i (E36)", "years": "1996–1999", "notes": "Upgrade (Requires conversion kit)" },
+            { "name": "M3 (E36)", "years": "1996–1999", "notes": "Upgrade (Requires conversion kit)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["BMW_M50_M52"]
+      },
+      "universal_alternatives": [
+        { "name": "M50 Manifold Conversion Kit", "notes": "Hoses/brackets to fit M50 on M52" }
+      ]
+    },
+    {
+      "id": "hemi_64_manifold",
+      "category": "Engine Mechanical",
+      "name": "6.4L (392) Hemi Intake Manifold",
+      "description": "Active runner intake manifold from the 6.4L SRT engine. Can be adapted to 5.7L Eagle Hemi engines for significant top-end power gains.",
+      "specs": [
+        "Runner Type: Dual Runner (Active)",
+        "Port Shape: Eagle/Apache",
+        "Requires: MSD RPM Switch (to activate runners)"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Challenger SRT 392", "years": "2011–2023", "notes": "Stock Part" },
+            { "name": "Charger SRT 392", "years": "2011–2023", "notes": "Stock Part" },
+            { "name": "Challenger R/T (5.7L)", "years": "2009–2023", "notes": "Upgrade (Requires adapter/controller)" },
+            { "name": "Charger R/T (5.7L)", "years": "2009–2023", "notes": "Upgrade (Requires adapter/controller)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Holley Hi-Ram", "notes": "Race-only application" }
+      ]
+    },
+    {
+      "id": "saab_b207_coils",
+      "category": "Engine Mechanical",
+      "name": "Saab B207 Ignition Coils (Yellow Top)",
+      "description": "Ignition coils for the Saab 9-3 Sport Sedan (B207 engine). The 'Yellow Top' coils are the updated, more reliable version compared to the older black tops.",
+      "specs": [
+        "OEM Part: 12787707",
+        "Color: Yellow epoxy top",
+        "System: Ion Sensing Ignition (Trionic 8)"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-3 2.0T", "years": "2003–2011", "notes": "Stock replacement" }
+          ]
+        },
+        {
+          "make": "Cadillac",
+          "models": [
+            { "name": "BLS 2.0T", "years": "2005–2010", "notes": "Stock replacement" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["GM_ECOTEC_GEN2"]
+      },
+      "universal_alternatives": [
+        { "name": "NGK Ignition Coils", "notes": "High quality aftermarket" }
+      ]
+    },
+    {
+      "id": "saab_v6_coils",
+      "category": "Engine Mechanical",
+      "name": "Bosch Ignition Coils (2.8T V6)",
+      "description": "Ignition coils for the 2.8L Turbo V6. These are known to fail due to heat in the tight engine bay.",
+      "specs": [
+        "Bosch Part: 0221604112",
+        "GM Part: 12629037",
+        "Set of 6 required"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-3 Aero V6", "years": "2006–2009", "notes": "Stock replacement" },
+            { "name": "9-5 NG Turbo6", "years": "2010–2011", "notes": "Stock replacement" }
+          ]
+        },
+        {
+          "make": "Cadillac",
+          "models": [
+            { "name": "SRX 2.8T", "years": "2010–2011", "notes": "Stock replacement" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["GM_HFV6_TURBO"]
+      },
+      "universal_alternatives": [
+        { "name": "ACDelco Coils", "notes": "OEM GM replacement" }
+      ]
+    },
+    {
+      "id": "sti_intercooler",
+      "category": "Engine Mechanical",
+      "name": "STI Top Mount Intercooler (TMIC)",
+      "description": "Larger factory intercooler from the STI. A common upgrade for WRX and Saab 9-2X Aero to support more boost.",
+      "specs": [
+        "Core Size: ~20% larger than WRX",
+        "Construction: Aluminum",
+        "Logo: STI stenciled (usually)"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-2X Aero", "years": "2005–2006", "notes": "Upgrade (Requires STI BPV hose)" }
+          ]
+        },
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "Impreza WRX", "years": "2002–2007", "notes": "Upgrade (Requires STI BPV hose)" },
+            { "name": "Forester XT", "years": "2004–2008", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["SUBARU_EJ205", "SUBARU_EJ255"]
+      },
+      "universal_alternatives": [
+        { "name": "Process West TMIC", "notes": "High-end aftermarket" }
+      ]
+    },
+    {
+      "id": "ls2_intake_manifold",
+      "category": "Engine Mechanical",
+      "name": "GM LS2 Intake Manifold (Cathedral Port)",
+      "description": "Factory intake manifold from the LS2 engine. Can be used on other cathedral port LS engines (LS1/LS6) with adapters, or as a replacement for truck intakes for hood clearance.",
+      "specs": [
+        "Port Shape: Cathedral",
+        "Throttle Body: 90mm 4-bolt",
+        "Material: Composite"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-7X Aero", "years": "2008–2009", "notes": "Stock Part (LS2)" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "TrailBlazer SS", "years": "2006–2009", "notes": "Stock Part" },
+            { "name": "Corvette (C6)", "years": "2005–2007", "notes": "Stock Part" },
+            { "name": "GTO", "years": "2005–2006", "notes": "Stock Part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["GM_LS_GEN3", "GM_LS_GEN4"]
+      },
+      "universal_alternatives": [
+        { "name": "FAST 102 Intake", "notes": "High performance aftermarket" }
+      ]
+    },
+    {
+      "id": "ls7_lifters",
+      "category": "Engine Mechanical",
+      "name": "GM Performance LS7 Lifters",
+      "description": "Hydraulic roller lifters originally for the LS7, but the standard replacement/upgrade for all LS-series engines.",
+      "specs": [
+        "Hydraulic Roller",
+        "Set of 16",
+        "Supports higher RPM than standard LS1 lifters"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Corvette C5", "years": "1997–2004", "notes": "Direct upgrade" },
+            { "name": "Corvette C6", "years": "2005–2013", "notes": "Standard replacement" },
+            { "name": "Camaro SS (4th Gen)", "years": "1998–2002", "notes": "Direct upgrade" },
+            { "name": "Silverado 1500 (V8)", "years": "1999–2013", "notes": "Direct upgrade for LS-based engines" }
+          ]
+        },
+        {
+          "make": "Pontiac",
+          "models": [
+            { "name": "GTO", "years": "2004–2006", "notes": "Direct upgrade" },
+            { "name": "Firebird Trans Am", "years": "1998–2002", "notes": "Direct upgrade" }
+          ]
+        },
+        {
+          "make": "Cadillac",
+          "models": [
+            { "name": "CTS-V (Gen 1)", "years": "2004–2007", "notes": "Direct upgrade" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Morel 5315", "notes": "Drop-in hydraulic roller lifter upgrade" },
+        { "name": "Johnson 2110", "notes": "Premium short-travel lifter for high RPM" }
+      ]
+    },
+    {
+      "id": "arp_rod_bolts_ls",
+      "category": "Engine Mechanical",
+      "name": "ARP Connecting Rod Bolts (LS Series)",
+      "description": "High-strength rod bolts for cracked-cap connecting rods found in Gen III/IV LS engines.",
+      "specs": [
+        "Material: ARP2000",
+        "Tensile Strength: 220,000 psi",
+        "Replaces factory TTY bolts"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "LS1/LS6 Engines", "years": "All", "notes": "Essential for high RPM" },
+            { "name": "LM7/LQ4/LQ9 Truck Engines", "years": "All", "notes": "Essential for high RPM" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Katech Rod Bolts", "notes": "High-strength alternative" }
+      ]
+    },
+    {
+      "id": "toyota_2jz_oil_pump",
+      "category": "Engine Mechanical",
+      "name": "Toyota 2JZ-GTE Oil Pump",
+      "description": "High-flow oil pump from the GTE turbo engine. Often used on GE non-turbo blocks for better oiling.",
+      "specs": [
+        "Higher flow rate than GE pump",
+        "Requires modification for crank sensor on some GE blocks"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Supra MK4 (Turbo)", "years": "1993–1998", "notes": "Stock replacement" },
+            { "name": "Supra MK4 (NA)", "years": "1993–1998", "notes": "Upgrade (requires mod)" },
+            { "name": "SC300", "years": "1992–2000", "notes": "Upgrade for 2JZ-GE" },
+            { "name": "IS300", "years": "2001–2005", "notes": "Upgrade for 2JZ-GE" }
+          ]
+        },
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "GS300", "years": "1993–2005", "notes": "Upgrade for 2JZ-GE" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Titan Motorsports Billet Pump", "notes": "Race-grade upgrade" }
+      ]
+    },
+    {
+      "id": "om642_oil_cooler_seals",
+      "category": "Engine Mechanical",
+      "name": "Oil Cooler Seals (OM642 Diesel)",
+      "description": "The infamous 'Purple Seals'. The original orange seals leak oil into the valley of the V6 diesel engine. The updated purple Viton seals are the permanent fix.",
+      "specs": [
+        "Material: Viton (Purple)",
+        "Mercedes Part: 642 188 04 80",
+        "Mopar Part: 68001294AA"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Grand Cherokee (WK) CRD", "years": "2007–2010", "notes": "OM642 Engine" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C CRD (Europe/Aus)", "years": "2005–2010", "notes": "OM642 Engine" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E320 / E350 BlueTec", "years": "2007–2016", "notes": "OM642 Engine" },
+            { "name": "ML320 / ML350 CDI", "years": "2007–2015", "notes": "OM642 Engine" },
+            { "name": "Sprinter 2500/3500", "years": "2007–Present", "notes": "OM642 Engine" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["MB_OM642"]
+      },
+      "universal_alternatives": [
+        { "name": "Elring Seal Kit", "notes": "OEM Supplier" }
+      ]
+    },
+    {
+      "id": "porsche_ims_bearing",
+      "category": "Engine Mechanical",
+      "name": "IMS Bearing Retrofit Kit",
+      "description": "The infamous Intermediate Shaft Bearing. The factory sealed bearing fails, destroying the engine. This kit replaces it with a ceramic or oil-fed bearing.",
+      "specs": [
+        "Type: Single Row or Double Row (Check VIN/Engine #)",
+        "Material: Ceramic Hybrid or Steel",
+        "Includes: Flange, Seals, Bolts"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "M96 Engine" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "M96 Engine" },
+            { "name": "Boxster (987.1)", "years": "2005–2008", "notes": "M97 Engine (Check bearing type)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PORSCHE_M96"]
+      },
+      "universal_alternatives": [
+        { "name": "LN Engineering Retrofit", "notes": "The gold standard solution" },
+        { "name": "EPS Eternal Fix", "notes": "Oil-fed roller bearing" }
+      ]
+    },
+    {
+      "id": "porsche_aos_996",
+      "category": "Engine Mechanical",
+      "name": "Air Oil Separator (AOS)",
+      "description": "Separates oil mist from crankcase gases. Failure sucks oil into the intake, causing massive smoke screens and potential hydrolock.",
+      "specs": [
+        "Porsche Part: 996 107 023 04",
+        "Location: Top of engine (rear)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Common failure" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Common failure" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PORSCHE_M96"]
+      },
+      "universal_alternatives": [
+        { "name": "Genuine Porsche", "notes": "Recommended over aftermarket" }
+      ]
+    },
+    {
+      "id": "bmw_disa_valve_upgrade",
+      "category": "Engine Mechanical",
+      "name": "DISA Valve (Intake Adjuster Unit)",
+      "description": "Adjusts intake runner length. The plastic flap breaks and the metal pin can fall into the engine. Upgrade kits replace the plastic flap with aluminum.",
+      "specs": [
+        "Engine: M54 (2.5L or 3.0L)",
+        "BMW Part: 11617544805 (3.0L) / 11617544806 (2.5L)"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "330i (E46)", "years": "2001–2005", "notes": "M54B30" },
+            { "name": "530i (E39)", "years": "2001–2003", "notes": "M54B30" },
+            { "name": "X5 3.0i (E53)", "years": "2001–2006", "notes": "M54B30" },
+            { "name": "Z3 3.0i", "years": "2001–2002", "notes": "M54B30" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "German Auto Solutions Kit", "notes": "Aluminum flap upgrade" },
+        { "name": "Vaico DISA Valve", "notes": "Standard replacement" }
+      ]
+    },
+    {
+      "id": "mini_timing_chain_kit",
+      "category": "Engine Mechanical",
+      "name": "Timing Chain Kit (Prince Engine)",
+      "description": "Complete timing chain kit including tensioner, guides, and sprockets. The 'Death Rattle' fix.",
+      "specs": [
+        "Includes: Chain, Tensioner (Updated), Guides, Sprockets",
+        "Mini Part: 11311439853 (Chain)"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2010", "notes": "N14 Engine (Critical)" },
+            { "name": "JCW (R56)", "years": "2009–2012", "notes": "N14 Engine" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3 1.6 THP", "years": "2009–2015", "notes": "Identical engine" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 GTi", "years": "2007–2012", "notes": "Identical engine" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Febi Bilstein Chain Kit", "notes": "OEM Quality" },
+        { "name": "Fai AutoParts Kit", "notes": "Complete kit" }
+      ]
+    },
+    {
+      "id": "honda_k20_oil_pump",
+      "category": "Engine Mechanical",
+      "name": "Honda K20A2 Oil Pump",
+      "description": "The 'Type-S' oil pump. Popular upgrade for K24 engines to remove balance shafts and allow higher RPM.",
+      "specs": [
+        "No balance shafts",
+        "Reduced rotational mass",
+        "Higher cavitation threshold"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "RSX Type-S", "years": "2002–2006", "notes": "Stock replacement" },
+            { "name": "Civic Si (K20)", "years": "2006–2011", "notes": "Stock replacement" }
+          ]
+        },
+        {
+          "make": "Acura",
+          "models": [
+            { "name": "TSX (K24)", "years": "2004–2008", "notes": "Popular upgrade (requires modification to block)" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "4 Piston Racing Ported Pump", "notes": "Modified OEM pump for better flow" }
+      ]
+    },
+    {
+      "id": "cayenne_v6_engine_mounts",
+      "category": "Engine Mechanical",
+      "name": "VR6 Engine Mounts (PL71)",
+      "description": "Hydraulic engine mounts for the VR6 engine. Common failure item causing vibration.",
+      "specs": [
+        "Hydraulic fluid filled",
+        "Left and Right specific",
+        "VW Part: 7L0 199 131"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "Cayenne (3.2L/3.6L)", "years": "2003–2010", "notes": "Stock part" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Touareg (3.2L/3.6L)", "years": "2002–2010", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "Q7 (3.6L)", "years": "2007–2010", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["VAG_VR6_32"]
+      },
+      "universal_alternatives": [
+        { "name": "034Motorsport Density Line", "notes": "Solid rubber upgrade (no fluid to leak)" }
+      ]
+    },
+    {
+      "id": "porsche_924_oil_filter",
+      "category": "Engine Mechanical",
+      "name": "Oil Filter (2.0L / 2.5L)",
+      "description": "Standard spin-on oil filter. The 924 uses the same block architecture as many VW/Audi cars of the era.",
+      "specs": [
+        "Thread: 3/4-16 UNF",
+        "Mahle Part: OC 47",
+        "Mann Part: W 719/30"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "924 (2.0L)", "years": "1976–1985", "notes": "Direct fit" },
+            { "name": "944 (2.5L)", "years": "1982–1989", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Rabbit / Golf Mk1", "years": "1975–1984", "notes": "Same filter" },
+            { "name": "Scirocco", "years": "1975–1988", "notes": "Same filter" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "4000 / 80", "years": "1980–1987", "notes": "Same filter" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "K&N HP-2004", "notes": "High flow filter with nut" },
+        { "name": "Mobil 1 M1-204", "notes": "Premium synthetic filter" }
+      ]
+    },
+    {
+      "id": "vag_18t_coil_packs",
+      "category": "Engine Mechanical",
+      "name": "R8 / 2.0T Ignition Coils",
+      "description": "Modern 'Red Top' ignition coils. A very popular upgrade for older Porsche 996/997 and 1.8T engines to fix misfires and run larger gaps.",
+      "specs": [
+        "Higher voltage output",
+        "Built-in igniter",
+        "Requires adapter plate for 1.8T / 2.7T"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 (996/997)", "years": "1999–2008", "notes": "Popular upgrade (requires longer bolts/spacers)" },
+            { "name": "Boxster (986/987)", "years": "1997–2008", "notes": "Popular upgrade" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "R8 V8/V10", "years": "2008–2015", "notes": "Stock part" },
+            { "name": "RS4 (B7)", "years": "2006–2008", "notes": "Stock part" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf R (Mk6)", "years": "2012–2013", "notes": "Stock part" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "APR Ignition Coils", "notes": "High output aftermarket coils" },
+        { "name": "MSD Blaster Coils", "notes": "Red aftermarket coils" }
+      ]
+    },
+    {
+      "id": "coolant_g12_plus",
+      "category": "Engine Mechanical",
+      "name": "G12+ / G13 Coolant (Pink)",
+      "description": "The standard 'Pink' organic acid technology (OAT) coolant. Porsche sells it in 1L bottles for a premium. It is identical to VW/Audi G12+/G13.",
+      "specs": [
+        "Color: Pink / Violet",
+        "Type: OAT (Organic Acid Technology)",
+        "Specification: VW TL 774 F/G"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 (996/997/991)", "years": "1999–Present", "notes": "Standard fill" },
+            { "name": "Boxster/Cayman", "years": "1997–Present", "notes": "Standard fill" },
+            { "name": "Cayenne/Macan", "years": "2003–Present", "notes": "Standard fill" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "All Models", "years": "1997–Present", "notes": "Standard G12/G13 coolant" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "All Models", "years": "1997–Present", "notes": "Standard G12/G13 coolant" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Pentosin SF", "notes": "OEM Supplier" },
+        { "name": "Zerex G40", "notes": "Widely available equivalent" }
+      ]
+    },
+    {
+      "id": "pentosin_chf11s",
+      "category": "Engine Mechanical",
+      "name": "Pentosin CHF 11S / 202",
+      "description": "Green hydraulic fluid for Power Steering and Convertible Top hydraulics. DO NOT mix with ATF.",
+      "specs": [
+        "Color: Green",
+        "Base: Synthetic",
+        "Temp Range: -40C to +130C"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 (996/997)", "years": "1999–2012", "notes": "Power Steering & Cabrio Top" },
+            { "name": "Boxster (986/987)", "years": "1997–2012", "notes": "Power Steering" }
+          ]
+        },
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "All Models", "years": "1990–Present", "notes": "Standard Power Steering Fluid" }
+          ]
+        },
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper (R50/R53)", "years": "2002–2006", "notes": "Electric Power Steering Pump" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Febi Bilstein 06161", "notes": "Equivalent fluid" },
+        { "name": "Liqui Moly Central Hydraulic Oil", "notes": "Equivalent fluid" }
+      ]
+    },
+    {
+      "id": "mahle_oil_filter_kit",
+      "category": "Engine Mechanical",
+      "name": "Mahle Oil Filter Kit (OX 128/1 D)",
+      "description": "The OEM oil filter kit. Buying the 'Porsche' branded box costs significantly more for the exact same Mahle filter inside.",
+      "specs": [
+        "Includes: Filter element and O-ring",
+        "Porsche Part: 996 107 225 60",
+        "Mahle Part: OX 128/1 D"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "OEM Filter" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "OEM Filter" },
+            { "name": "Cayenne S/Turbo (955)", "years": "2003–2006", "notes": "4.5L V8 uses same filter element" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Mann HU 719/5 x", "notes": "High quality alternative" },
+        { "name": "Hengst E14H D77", "notes": "OEM quality" }
+      ]
+    },
+    {
+      "id": "mini_psa_hpfp",
+      "category": "Engine Mechanical",
+      "name": "High Pressure Fuel Pump (HPFP) - Prince Engine",
+      "description": "The notorious HPFP for the Mini Cooper S (N14/N18). The Mini branded part is exorbitantly expensive. The Citroën/Peugeot part is identical and much cheaper.",
+      "specs": [
+        "Manufacturer: Continental",
+        "Mini Part: 13517588879",
+        "PSA Part: 1920LL / 9819938480"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2010", "notes": "N14 Engine (Check specific year split)" },
+            { "name": "JCW (R56)", "years": "2009–2012", "notes": "N14 Engine" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3 1.6 THP", "years": "2009–2015", "notes": "Identical pump" },
+            { "name": "C4", "years": "2008–2011", "notes": "Identical pump" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 GTi", "years": "2007–2012", "notes": "Identical pump" },
+            { "name": "RCZ", "years": "2010–2015", "notes": "Identical pump" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "OES Continental Pump", "notes": "Buy the manufacturer box, not the car brand box" }
+      ]
+    },
+    {
+      "id": "mini_psa_vanos_solenoid",
+      "category": "Engine Mechanical",
+      "name": "VANOS Solenoid (Variable Valve Timing)",
+      "description": "Solenoid valve controlling the variable valve timing. Clogs with oil sludge causing rough idle and power loss.",
+      "specs": [
+        "Location: Intake (Rear) and Exhaust (Front)",
+        "Mini Part: 11367604292",
+        "PSA Part: V758776080"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper (R56)", "years": "2007–2013", "notes": "N12/N16 Engine" },
+            { "name": "Cooper S (R56)", "years": "2007–2013", "notes": "N14/N18 Engine" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "C3 / DS3", "years": "2009–2015", "notes": "Identical part" },
+            { "name": "C4", "years": "2008–2015", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 / 208", "years": "2007–2015", "notes": "Identical part" },
+            { "name": "308", "years": "2007–2013", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Pierburg 7.06117.24.0", "notes": "OEM Manufacturer" }
+      ]
+    },
+    {
+      "id": "mini_psa_ignition_coil",
+      "category": "Engine Mechanical",
+      "name": "Ignition Coil (Prince Engine)",
+      "description": "Pencil-style ignition coil. Common failure causing misfires.",
+      "specs": [
+        "Connector: 3-pin",
+        "Mini Part: 12137594937",
+        "PSA Part: 5970.64"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2013", "notes": "N14/N18 Engine" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3 1.6 THP", "years": "2009–2015", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 GTi", "years": "2007–2012", "notes": "Identical part" },
+            { "name": "RCZ", "years": "2010–2015", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "116i / 118i (F20)", "years": "2011–2015", "notes": "N13 Engine" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Delphi GN10219", "notes": "OEM Manufacturer" },
+        { "name": "Bosch 0221504470", "notes": "High quality alternative" }
+      ]
+    },
+    {
+      "id": "mini_psa_turbo_oil_line",
+      "category": "Engine Mechanical",
+      "name": "Turbo Oil Feed Line",
+      "description": "The oil feed line to the turbocharger. The stock line has a heat shield that hides leaks until it's too late. Coking blocks oil flow, killing the turbo.",
+      "specs": [
+        "Mini Part: 11657534454",
+        "PSA Part: 0379.56",
+        "Recommendation: Replace with braided line"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2010", "notes": "N14 Engine (Critical failure point)" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3 1.6 THP", "years": "2009–2015", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 GTi", "years": "2007–2012", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Detroit Tuned Braided Line", "notes": "Heat resistant upgrade" },
+        { "name": "Mamba Braided Line", "notes": "Budget upgrade" }
+      ]
+    },
+    {
+      "id": "ford_explorer_gt40_intake",
+      "category": "Engine Mechanical",
+      "name": "Ford Explorer 5.0L Intake Manifold (GT40 Style)",
+      "description": "Upper and lower intake manifold from 1996-2001 Ford Explorer/Mercury Mountaineer 5.0L V8. Based on the legendary GT40 design, it flows significantly better than the stock Fox Body/SN95 HO intake.",
+      "specs": [
+        "Runner Design: Tubular (GT40 style)",
+        "Material: Aluminum",
+        "Gains: ~20-30hp over stock HO intake"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Explorer (V8)", "years": "1996–2001", "notes": "Stock Part (Donor)" },
+            { "name": "Mustang (Fox Body)", "years": "1986–1993", "notes": "Direct Swap (Requires EGR/Throttle Cable mods)" },
+            { "name": "Mustang (SN95)", "years": "1994–1995", "notes": "Direct Swap (Requires Elbow Adapter)" }
+          ]
+        },
+        {
+          "make": "Mercury",
+          "models": [
+            { "name": "Mountaineer", "years": "1997–2001", "notes": "Stock Part (Donor)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["FORD_WINDSOR_50"]
+      },
+      "universal_alternatives": [
+        { "name": "Edelbrock Performer", "notes": "Aftermarket alternative" },
+        { "name": "Holley Systemax", "notes": "High-RPM alternative" }
+      ]
+    },
+    {
+      "id": "ford_coyote_gen3_manifold",
+      "category": "Engine Mechanical",
+      "name": "Ford Coyote Gen 3 Intake Manifold (2018+)",
+      "description": "Stock intake manifold from the 2018+ (Gen 3) Coyote 5.0L. It features larger runners and volume than Gen 1/2 manifolds, offering significant top-end power gains for earlier Coyotes.",
+      "specs": [
+        "Port Injection: Yes",
+        "Direct Injection: Yes (Rails present but unused on Gen 1/2)",
+        "Gains: ~15-25whp on Gen 1/2 Coyote"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang GT", "years": "2018–2023", "notes": "Stock Part" },
+            { "name": "Mustang GT", "years": "2011–2017", "notes": "Upgrade (Requires IMRC lockout or logic box)" },
+            { "name": "F-150 5.0L", "years": "2011–2020", "notes": "High-RPM Upgrade (Sacrifices low-end torque)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["FORD_COYOTE"]
+      },
+      "universal_alternatives": [
+        { "name": "Boss 302 Manifold", "notes": "Higher RPM, less torque" },
+        { "name": "Cobra Jet Manifold", "notes": "Maximum NA power, requires throttle body upgrade" }
+      ]
+    },
+    {
+      "id": "ls6_intake_manifold",
+      "category": "Engine Mechanical",
+      "name": "GM LS6 Intake Manifold",
+      "description": "The intake manifold from the C5 Z06 (LS6). It flows significantly better than the standard LS1 intake and is a direct bolt-on upgrade. It deletes the EGR provision found on early LS1 intakes.",
+      "specs": [
+        "Runner Design: Optimized plenum and runners",
+        "Material: Composite",
+        "Gains: ~15-20whp over LS1 intake"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Corvette Z06 (C5)", "years": "2001–2004", "notes": "Stock Part" },
+            { "name": "Corvette (C5)", "years": "1997–2000", "notes": "Direct Upgrade" },
+            { "name": "Camaro SS / Z28 (Gen 4)", "years": "1998–2000", "notes": "Direct Upgrade" },
+            { "name": "Silverado (4.8/5.3/6.0)", "years": "1999–2007", "notes": "Upgrade (Requires accessory drive mods)" }
+          ]
+        },
+        {
+          "make": "Pontiac",
+          "models": [
+            { "name": "Firebird Trans Am", "years": "1998–2000", "notes": "Direct Upgrade" },
+            { "name": "GTO", "years": "2004", "notes": "Stock Part (LS1)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["GM_LS_GEN3"]
+      },
+      "universal_alternatives": [
+        { "name": "FAST 92mm", "notes": "Aftermarket king" },
+        { "name": "Dorman LS6", "notes": "Budget reproduction" }
+      ]
+    },
+    {
+      "id": "tbss_intake_manifold",
+      "category": "Engine Mechanical",
+      "name": "Trailblazer SS (TBSS) Intake Manifold",
+      "description": "The intake manifold from the Trailblazer SS (LS2) and newer Gen 4 trucks (NNBS). It is the best flowing factory cathedral port intake, outperforming even the LS6 intake in torque and matching it in horsepower.",
+      "specs": [
+        "Throttle Body: 4-bolt (90mm)",
+        "Runner Design: Long runners for torque",
+        "Gains: ~15-25hp over standard truck intake"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Trailblazer SS", "years": "2006–2009", "notes": "Stock Part" },
+            { "name": "Silverado (GMT900)", "years": "2007–2013", "notes": "Stock Part" },
+            { "name": "Silverado (GMT800)", "years": "1999–2007", "notes": "Upgrade (Requires 90mm TB & X-Link)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["GM_LS_GEN3", "GM_LS_GEN4"]
+      },
+      "universal_alternatives": [
+        { "name": "Holley Hi-Ram", "notes": "Race use only" },
+        { "name": "Edelbrock Pro-Flo", "notes": "Old school look" }
+      ]
+    }
+  ]
+}

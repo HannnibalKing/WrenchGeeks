@@ -1,0 +1,106 @@
+{
+  "MAZDA_MIATA": [
+    {
+      "name": "Visor Delete Plates (NA/NB)",
+      "description": "Blanking plates to cover holes from removed sun visors.",
+      "search_term": "Miata visor delete"
+    },
+    {
+      "name": "Tombstone Radio Bezel (NA/NB)",
+      "description": "Center console panel for double-DIN radios or gauge pods.",
+      "search_term": "Miata tombstone bezel"
+    },
+    {
+      "name": "Air Vent Gauge Pods (NA/NB)",
+      "description": "Replaces 'eyeball' vents with 52mm gauge mounts.",
+      "search_term": "Miata vent gauge pod"
+    }
+  ],
+  "BMW_E30": [
+    {
+      "name": "Odometer Gears",
+      "description": "Replacement gears for broken VDO odometers.",
+      "search_term": "E30 odometer gears"
+    },
+    {
+      "name": "Cup Holders",
+      "description": "Inserts for center console ashtray or cassette holder.",
+      "search_term": "E30 cup holder"
+    }
+  ],
+  "BMW_E36": [
+    {
+      "name": "Window Switch Bezels",
+      "description": "Surrounds for center console window switches.",
+      "search_term": "E36 window switch bezel"
+    },
+    {
+      "name": "Cup Holders",
+      "description": "Center console inserts.",
+      "search_term": "E36 cup holder"
+    }
+  ],
+  "PORSCHE_924_944": [
+    {
+      "name": "Odometer Gear Sets",
+      "description": "Fix for VDO gauges.",
+      "search_term": "944 odometer gears"
+    },
+    {
+      "name": "Sun Visor Clips",
+      "description": "Replacement for broken plastic visor clips.",
+      "search_term": "944 sun visor clip"
+    },
+    {
+      "name": "Heater Control Knobs",
+      "description": "Replacement slider knobs.",
+      "search_term": "944 heater knob"
+    }
+  ],
+  "HONDA_CIVIC_GOLDEN": [
+    {
+      "name": "Cup Holder Inserts (EG/EK)",
+      "description": "Adapters for larger bottles.",
+      "search_term": "Civic EG cup holder"
+    },
+    {
+      "name": "ECU Mounts",
+      "description": "Brackets for aftermarket ECUs.",
+      "search_term": "Civic ECU bracket"
+    }
+  ],
+  "SAAB_SUBARU_GG": [
+    {
+      "name": "Accessport Mount",
+      "description": "Vent or dash mount for Cobb Accessport.",
+      "search_term": "Subaru Accessport mount"
+    },
+    {
+      "name": "Alternator Cover",
+      "description": "Decorative belt guard.",
+      "search_term": "Subaru alternator cover"
+    },
+    {
+      "name": "Center Gauge Pod",
+      "description": "Replaces clock pod for 52mm/60mm gauges.",
+      "search_term": "Subaru clock gauge pod"
+    }
+  ],
+  "SUBARU_WRX_STI": [
+    {
+      "name": "Accessport Mount",
+      "description": "Vent or dash mount for Cobb Accessport.",
+      "search_term": "Subaru Accessport mount"
+    },
+    {
+      "name": "Alternator Cover",
+      "description": "Decorative belt guard.",
+      "search_term": "Subaru alternator cover"
+    },
+    {
+      "name": "Center Gauge Pod",
+      "description": "Replaces clock pod for 52mm/60mm gauges.",
+      "search_term": "Subaru clock gauge pod"
+    }
+  ]
+}

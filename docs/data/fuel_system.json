@@ -1,0 +1,352 @@
+{
+  "parts": [
+    {
+      "id": "fuel_pump_bosch_43mm",
+      "category": "Fuel System",
+      "name": "Fuel Pump (Bosch 43mm Turbine Style)",
+      "description": "In-tank turbine fuel pump. Common Bosch design used in many European vehicles.",
+      "specs": [
+        "43mm pump body diameter",
+        "In-tank turbine style",
+        "High-pressure EFI output (3.8–4 bar)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "996.1 Carrera (C2)", "years": "1999–2001", "notes": "Direct fit" },
+            { "name": "Boxster 986", "years": "1997–2004", "notes": "Direct fit" },
+            { "name": "996.2", "years": "2002–2004", "notes": "Pump internals match, housings differ slightly" }
+          ]
+        },
+        {
+          "make": "VW",
+          "models": [
+            { "name": "Golf", "years": "1999–2005", "notes": "Swap cartridge" },
+            { "name": "Jetta", "years": "1999–2005", "notes": "Swap cartridge" },
+            { "name": "Passat", "years": "1999–2005", "notes": "Swap cartridge" },
+            { "name": "Jetta 1.8T", "years": "Any", "notes": "Common donor" },
+            { "name": "Passat 1.8T", "years": "Any", "notes": "Common donor" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4", "years": "1998–2004", "notes": "Swap cartridge" },
+            { "name": "A6", "years": "1998–2004", "notes": "Swap cartridge" },
+            { "name": "A4 1.8T", "years": "Any", "notes": "Common donor" }
+          ]
+        },
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "E36 3-series", "years": "1992–1999", "notes": "Swap cartridge" },
+            { "name": "E46 3-series", "years": "1999–2005", "notes": "Swap cartridge" },
+            { "name": "325i", "years": "Any", "notes": "Common donor" },
+            { "name": "328i", "years": "Any", "notes": "Common donor" },
+            { "name": "330i", "years": "Any", "notes": "Common donor" }
+          ]
+        },
+        {
+          "make": "Mercedes",
+          "models": [
+            { "name": "C-Class", "years": "1995–2005", "notes": "Swap cartridge" },
+            { "name": "E-Class", "years": "1995–2005", "notes": "Swap cartridge" },
+            { "name": "C230", "years": "Any", "notes": "Common donor" },
+            { "name": "C240", "years": "Any", "notes": "Common donor" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Walbro 255 LPH", "notes": "Fits inside pump bucket with rubber sleeve" },
+        { "name": "Walbro 400 LPH", "notes": "Fits inside pump bucket with rubber sleeve" },
+        { "name": "AEM 50-1000", "notes": "Fits inside pump bucket with rubber sleeve" },
+        { "name": "Quantum 255 LPH", "notes": "Fits inside pump bucket with rubber sleeve" }
+      ]
+    },
+    {
+      "id": "fuel_pressure_regulator_bosch",
+      "category": "Fuel System",
+      "name": "Fuel Pressure Regulator (FPR)",
+      "description": "Regulates fuel pressure at the rail. Stock is 3.8 Bar, but 4.0 Bar is a common compatible upgrade/replacement.",
+      "specs": [
+        "Bosch Style Regulator",
+        "3.8 Bar (Stock) or 4.0 Bar (Compatible)",
+        "OEM Part: Bosch 0 280 160 535 (3.8) / 0 280 160 557 (4.0)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "996.1 Carrera", "years": "1999–2001", "notes": "Stock is 3.8 Bar" },
+            { "name": "Boxster 986", "years": "1997–2004", "notes": "Direct fit" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["VAG_18T"]
+      },
+      "universal_alternatives": [
+        { "name": "Bosch 0 280 160 557", "notes": "4.0 Bar Regulator (Commonly available)" }
+      ]
+    },
+    {
+      "id": "mini_psa_fuel_injector",
+      "category": "Fuel System",
+      "name": "Fuel Injector (Direct Injection)",
+      "description": "High-pressure direct injection fuel injector. Prone to clogging or leaking, causing misfires and smoke.",
+      "specs": [
+        "Type: GDI (Gasoline Direct Injection)",
+        "Mini Part: 13537550055",
+        "PSA Part: 1980.L3 / 9802541680"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2013", "notes": "N14/N18 Engine" },
+            { "name": "JCW (R56)", "years": "2009–2012", "notes": "N14 Engine" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3 1.6 THP", "years": "2009–2015", "notes": "Identical part" },
+            { "name": "C4", "years": "2008–2011", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 GTi", "years": "2007–2012", "notes": "Identical part" },
+            { "name": "RCZ", "years": "2010–2015", "notes": "Identical part" },
+            { "name": "308 GT", "years": "2008–2013", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Bosch 0261500029", "notes": "OEM Manufacturer" }
+      ]
+    },
+    {
+      "id": "evap_purge_valve_bosch",
+      "category": "Fuel System",
+      "name": "EVAP Purge Valve / Regeneration Valve",
+      "description": "Controls fuel vapor flow from the charcoal canister to the engine. A failing valve causes rough idle or hard starting after fueling.",
+      "specs": [
+        "Bosch Part: 0 280 142 300",
+        "Porsche Part: 996.605.201.01"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "996.1 Carrera", "years": "1999–2001", "notes": "Direct fit" },
+            { "name": "Boxster 986", "years": "1997–2004", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "850 Turbo", "years": "1995–1997", "notes": "Identical Bosch part" },
+            { "name": "S70 / V70 Turbo", "years": "1998", "notes": "Identical Bosch part" },
+            { "name": "C70 Turbo", "years": "1998", "notes": "Identical Bosch part" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Standard Motor Products CP416", "notes": "Aftermarket replacement" }
+      ]
+    },
+    {
+      "id": "fuel_filter_mahle_kl80",
+      "category": "Fuel System",
+      "name": "Fuel Filter (Inline)",
+      "description": "Standard inline fuel filter. Located underneath the car near the coolant pipes on the 996.",
+      "specs": [
+        "Mahle Part: KL 80",
+        "Porsche Part: 996.110.253.01"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "996.1 Carrera", "years": "1999–2001", "notes": "Direct fit" },
+            { "name": "Boxster 986", "years": "1997–2004", "notes": "Direct fit" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Mahle KL 80", "notes": "OEM Manufacturer part, widely available" },
+        { "name": "Mann WK 726", "notes": "Compatible aftermarket" }
+      ]
+    },
+    {
+      "id": "fuel_injector_bosch_ev6",
+      "category": "Fuel System",
+      "name": "Fuel Injector (Bosch EV6)",
+      "description": "Standard Bosch EV6 style fuel injector. Specific flow rate and impedance for Porsche 3.4L/2.7L/3.2L engines.",
+      "specs": [
+        "Bosch EV6 body",
+        "High Impedance",
+        "Porsche Part: 996.606.122.00",
+        "Bosch Part: 0 280 156 053"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "996.1 Carrera (3.4L)", "years": "1999–2001", "notes": "Direct fit" },
+            { "name": "Boxster (2.7L)", "years": "2000–2004", "notes": "Direct fit" },
+            { "name": "Boxster S (3.2L)", "years": "2000–2004", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Bosch",
+          "models": [
+            { "name": "Generic EV6", "years": "N/A", "notes": "No direct VW/Audi interchange found for this specific part number. Unique flow/spray pattern." }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Bosch 0 280 156 053", "notes": "OEM part" }
+      ]
+    },
+    {
+      "id": "fuel_tank_cap",
+      "category": "Fuel System",
+      "name": "Fuel Tank Cap",
+      "description": "Gas cap with seal. A bad seal often causes Check Engine Light (EVAP leak).",
+      "specs": [
+        "Porsche Part: 996.201.241.03"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "996 Carrera", "years": "1999–2005", "notes": "Direct fit" },
+            { "name": "Boxster 986/987", "years": "1997–2012", "notes": "Direct fit" },
+            { "name": "Cayman", "years": "2006–2012", "notes": "Direct fit" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Stant 10841", "notes": "Compatible aftermarket cap" }
+      ]
+    },
+    {
+      "id": "evap_purge_valve_n80",
+      "category": "Fuel System",
+      "name": "EVAP Purge Valve (N80)",
+      "description": "The infamous 'N80' valve. Controls fuel vapor flow to the intake. Failure causes rough idle and 'Check Gas Cap' lights.",
+      "specs": [
+        "Bosch Part: 0 280 142 345 (or similar ending in 300)",
+        "Connector: 2-pin Bosch Jetronic",
+        "Function: Pulsed solenoid"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Identical Bosch part" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Identical Bosch part" },
+            { "name": "Cayenne (955)", "years": "2003–2010", "notes": "Identical Bosch part" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf (Mk4) 1.8T/VR6", "years": "1999–2005", "notes": "Identical Bosch part" },
+            { "name": "Passat (B5) 1.8T/V6", "years": "1998–2005", "notes": "Identical Bosch part" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5/B6)", "years": "1996–2005", "notes": "Identical Bosch part" },
+            { "name": "TT (Mk1)", "years": "2000–2006", "notes": "Identical Bosch part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VW_MK4", "VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Bosch 0280142345", "notes": "OEM replacement" }
+      ]
+    },
+    {
+      "id": "fuel_pressure_regulator_4bar",
+      "category": "Fuel System",
+      "name": "Fuel Pressure Regulator (4.0 Bar)",
+      "description": "Drop-in fuel pressure regulator. Upgrading from 3.0 Bar to 4.0 Bar increases injector flow capacity.",
+      "specs": [
+        "Pressure: 4.0 Bar (58 psi)",
+        "Fitment: Bosch 'Mini' regulator housing"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2001", "notes": "Stock is 3.8 Bar, 4.0 Bar is a slight bump" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "RS4 (B5)", "years": "2000–2001", "notes": "Stock 4.0 Bar regulator" },
+            { "name": "TT (225hp)", "years": "2000–2006", "notes": "Stock 3.0 Bar, upgradeable to 4.0 Bar" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf (Mk4) VR6", "years": "1999–2005", "notes": "Stock 3.0 Bar, upgradeable" },
+            { "name": "Passat (B5) 1.8T", "years": "1998–2005", "notes": "Stock 3.0/4.0 Bar depending on year" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VW_MK4", "VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Bosch 0280160575", "notes": "4.0 Bar Regulator" }
+      ]
+    },
+    {
+      "id": "mopar_stage2_injectors",
+      "category": "Fuel System",
+      "name": "Mopar Stage 2/3 Fuel Injectors (Pink)",
+      "description": "High-flow fuel injectors from the Mopar Performance Stage 2 and Stage 3 turbo upgrade kits for the Neon SRT-4. Essential for big turbo builds or E85 conversions on the 2.4L Turbo platform.",
+      "specs": [
+        "Flow Rate: ~682cc/min at 58psi",
+        "Impedance: High",
+        "Connector: USCAR (EV6)"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Neon SRT-4", "years": "2003–2005", "notes": "Direct Upgrade" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "PT Cruiser GT", "years": "2003–2010", "notes": "Direct Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["DODGE_24_TURBO"]
+      },
+      "universal_alternatives": [
+        { "name": "Injector Dynamics ID1050x", "notes": "Modern, better atomization" },
+        { "name": "Siemens Deka 80lb", "notes": "Budget high-flow option" }
+      ]
+    }
+  ]
+}

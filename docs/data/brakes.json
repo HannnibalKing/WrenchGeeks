@@ -1,0 +1,443 @@
+{
+  "parts": [
+    {
+      "id": "porsche_996_calipers",
+      "category": "Brakes",
+      "name": "Porsche 996 Brembo Calipers (Front)",
+      "description": "4-piston aluminum monoblock calipers. Very popular for big brake upgrades on other European cars.",
+      "specs": [
+        "4-piston design",
+        "Radial mount",
+        "Uses standard Porsche pads"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2004", "notes": "Stock part" },
+            { "name": "Boxster S (986)", "years": "2000–2004", "notes": "Stock part" }
+          ]
+        },
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "E46 M3", "years": "2001–2006", "notes": "Upgrade (requires brackets)" },
+            { "name": "E36 M3", "years": "1995–1999", "notes": "Upgrade (requires brackets)" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf GTI (Mk4)", "years": "1999–2005", "notes": "Upgrade (requires brackets)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PORSCHE_986_996"]
+      },
+      "universal_alternatives": [
+        { "name": "Boxster S Calipers", "notes": "Identical casting, different color" }
+      ]
+    },
+    {
+      "id": "saab_314mm_brakes",
+      "category": "Brakes",
+      "name": "Saab 314mm Aero Brakes (Front)",
+      "description": "Large single-piston calipers and 314mm rotors found on the V6 Aero models. A direct bolt-on upgrade for Linear/Arc models and other Epsilon cars.",
+      "specs": [
+        "Rotor Size: 314mm x 28mm",
+        "Caliper: Single Piston Floating (Large)",
+        "Min Wheel Size: 16-inch (some), usually 17-inch"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-3 Aero V6", "years": "2006–2009", "notes": "Stock part" },
+            { "name": "9-3 Turbo X", "years": "2008", "notes": "Stock part (345mm is upgrade)" },
+            { "name": "9-3 Linear/Arc", "years": "2003–2011", "notes": "Direct bolt-on upgrade" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Malibu (Gen 6)", "years": "2004–2008", "notes": "Direct bolt-on upgrade" }
+          ]
+        },
+        {
+          "make": "Pontiac",
+          "models": [
+            { "name": "G6", "years": "2005–2010", "notes": "Direct bolt-on upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_EPSILON_1"]
+      },
+      "universal_alternatives": [
+        { "name": "Opel Vectra OPC Brakes", "notes": "345mm version (requires 18\" wheels)" }
+      ]
+    },
+    {
+      "id": "subaru_4pot_brakes",
+      "category": "Brakes",
+      "name": "Subaru 4-Pot Front Calipers (Red/Black)",
+      "description": "Fixed 4-piston calipers originally from the JDM WRX and US 06-07 WRX. A popular upgrade for older Imprezas and the Saab 9-2X Linear.",
+      "specs": [
+        "4-piston fixed caliper",
+        "Uses 294mm rotors",
+        "Clears some 16-inch wheels, mostly 17-inch"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-2X Linear", "years": "2005–2006", "notes": "Upgrade (Direct Bolt-on)" },
+            { "name": "9-2X Aero", "years": "2005", "notes": "Stock on '06, Upgrade for '05" }
+          ]
+        },
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "Impreza WRX", "years": "2002–2005", "notes": "Upgrade (Direct Bolt-on)" },
+            { "name": "Impreza RS/2.5i", "years": "1998–2007", "notes": "Upgrade (Direct Bolt-on)" },
+            { "name": "Forester (SF/SG)", "years": "1998–2008", "notes": "Upgrade (Direct Bolt-on)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["SAAB_SUBARU_GG"]
+      },
+      "universal_alternatives": [
+        { "name": "Subaru 2-Pot Rear Calipers", "notes": "Matching rear upgrade (requires backing plate adapter)" }
+      ]
+    },
+    {
+      "id": "brembo_18z_calipers",
+      "category": "Brakes",
+      "name": "Brembo 18Z 6-Piston Calipers",
+      "description": "Massive 6-piston calipers originally found on the Porsche Cayenne, Audi Q7, and VW Touareg.",
+      "specs": [
+        "6-piston design",
+        "Designed for 350mm rotors",
+        "Radial mount"
+      ],
+      "compatibility": [
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5/B6/B7)", "years": "1996–2008", "notes": "Popular upgrade (requires 350mm rotors)" },
+            { "name": "S4 (B5)", "years": "2000–2002", "notes": "Popular upgrade" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf R32", "years": "2004, 2008", "notes": "Upgrade (requires brackets)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_PL71"]
+      },
+      "universal_alternatives": [
+        { "name": "Brembo 17Z", "notes": "Smaller 6-piston for 330mm rotors" }
+      ]
+    },
+    {
+      "id": "ls400_calipers",
+      "category": "Brakes",
+      "name": "Lexus LS400 (UCF20) 4-Piston Calipers",
+      "description": "Aluminum 4-piston fixed calipers from the 1995-2000 LS400. Extremely popular upgrade for other Lexus/Toyota models due to light weight and stopping power.",
+      "specs": [
+        "4-piston aluminum monoblock",
+        "Rotor Size: 315mm x 28mm",
+        "Mounting: 140mm spacing (Toyota standard)"
+      ],
+      "compatibility": [
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "LS400 (UCF20)", "years": "1995–2000", "notes": "Stock Part" },
+            { "name": "SC300 / SC400", "years": "1992–2000", "notes": "Upgrade (Direct Bolt-on)" },
+            { "name": "GS300 / GS400", "years": "1993–2005", "notes": "Upgrade (Direct Bolt-on)" },
+            { "name": "IS300", "years": "2001–2005", "notes": "Upgrade (Requires RCA/Brackets)" }
+          ]
+        },
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Supra (MK4) NA", "years": "1993–1998", "notes": "Upgrade (Direct Bolt-on)" },
+            { "name": "Chaser / Mark II (JZX100)", "years": "1996–2001", "notes": "Upgrade (Direct Bolt-on)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["LEXUS_LS_UCF"]
+      },
+      "universal_alternatives": [
+        { "name": "Supra TT Calipers", "notes": "Larger 4-piston, heavier, more expensive" }
+      ]
+    },
+    {
+      "id": "mini_psa_brake_pads_front",
+      "category": "Brakes",
+      "name": "Front Brake Pads (Cooper S / THP)",
+      "description": "Standard front brake pads for the performance models of the Mini/PSA platform.",
+      "specs": [
+        "System: ATE or TRW (Check caliper)",
+        "Mini Part: 34116778320",
+        "PSA Part: 4254.C0"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2013", "notes": "Stock pads" },
+            { "name": "Clubman S (R55)", "years": "2007–2014", "notes": "Stock pads" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3 1.6 THP", "years": "2009–2015", "notes": "Identical pads" },
+            { "name": "C4 VTS", "years": "2004–2011", "notes": "Identical pads" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 GTi", "years": "2007–2012", "notes": "Identical pads" },
+            { "name": "208 GTi", "years": "2012–2019", "notes": "Check specific year/caliper" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PSA_PF1"]
+      },
+      "universal_alternatives": [
+        { "name": "EBC Redstuff", "notes": "Low dust ceramic upgrade" },
+        { "name": "Ferodo DS2500", "notes": "Street/Track hybrid pad" }
+      ]
+    },
+    {
+      "id": "mini_psa_brake_rotors_front",
+      "category": "Brakes",
+      "name": "Front Brake Rotors (294mm)",
+      "description": "Vented front brake discs. 294mm diameter is standard for the Cooper S and equivalent PSA hot hatches.",
+      "specs": [
+        "Diameter: 294mm",
+        "Thickness: 22mm",
+        "Bolt Pattern: 4x100 (Mini) / 4x108 (PSA) - WARNING: ROTORS ARE NOT ALWAYS INTERCHANGEABLE DUE TO BOLT PATTERN",
+        "Note": "While calipers/pads are shared, the rotor bolt pattern differs between Mini (4x100) and Citroën/Peugeot (4x108). DO NOT SWAP ROTORS DIRECTLY."
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R53/R56)", "years": "2002–2013", "notes": "4x100 Bolt Pattern" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3", "years": "2009–2015", "notes": "4x108 Bolt Pattern (Same dimensions otherwise)" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Brembo High Carbon", "notes": "Resistant to warping" },
+        { "name": "Zimmermann Drilled", "notes": "Sport look and cooling" }
+      ]
+    },
+    {
+      "id": "macan_4pot_calipers",
+      "category": "Brakes",
+      "name": "Macan / Q5 4-Piston Calipers",
+      "description": "Modern 4-piston Brembo calipers. A very popular, affordable upgrade for MQB platform cars (Golf Mk7, Audi A3 8V).",
+      "specs": [
+        "4-piston design",
+        "Radial mount",
+        "Uses 340mm or 345mm rotors"
+      ],
+      "compatibility": [
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf GTI (Mk7)", "years": "2015–2021", "notes": "Direct bolt-on upgrade" },
+            { "name": "Golf R (Mk7)", "years": "2015–2021", "notes": "Stock or similar" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "S3 (8V)", "years": "2015–2020", "notes": "Stock or similar" },
+            { "name": "A3 (8V)", "years": "2015–2020", "notes": "Direct bolt-on upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_MLB_GEN1"]
+      },
+      "universal_alternatives": [
+        { "name": "Audi TTS Calipers", "notes": "Similar 4-piston design" }
+      ]
+    },
+    {
+      "id": "wilwood_dynalite",
+      "category": "Brakes",
+      "name": "Wilwood Forged Dynalite Caliper",
+      "description": "Lightweight, versatile 4-piston caliper used in many aftermarket kits and custom builds.",
+      "specs": [
+        "Forged aluminum body",
+        "4-piston",
+        "Lug mount (usually)"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Custom Builds", "years": "All", "notes": "Requires custom mounting" },
+            { "name": "Drag Cars", "years": "All", "notes": "Popular for lightweight brakes" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "Miata (NA/NB)", "years": "1990–2005", "notes": "Popular aftermarket kit component" }
+          ]
+        },
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic", "years": "1992–2000", "notes": "Popular aftermarket kit component" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "StopTech ST-40", "notes": "Stiffer caliper body" }
+      ]
+    },
+    {
+      "id": "ford_cobra_brakes_13in",
+      "category": "Brakes",
+      "name": "Ford Mustang Cobra 13-inch Front Brakes",
+      "description": "PBR dual-piston calipers and 13-inch rotors found on SN95 Cobras, Mach 1s, and Bullitts. A massive upgrade for GT/V6 Mustangs.",
+      "specs": [
+        "Rotor Size: 13-inch (330mm)",
+        "Caliper: PBR Dual Piston (Aluminum)",
+        "Min Wheel Size: 17-inch"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang Cobra", "years": "1994–2004", "notes": "Stock Part" },
+            { "name": "Mustang Mach 1", "years": "2003–2004", "notes": "Stock Part" },
+            { "name": "Mustang Bullitt", "years": "2001", "notes": "Stock Part" },
+            { "name": "Mustang GT/V6 (SN95)", "years": "1994–2004", "notes": "Direct Bolt-on Upgrade" },
+            { "name": "Mustang (Fox Body)", "years": "1979–1993", "notes": "Upgrade (Requires SN95 Spindles & 5-lug conversion)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_SN95_NEWEDGE"]
+      },
+      "universal_alternatives": [
+        { "name": "Baer Track Kit", "notes": "Based on same PBR caliper" }
+      ]
+    },
+    {
+      "id": "ford_s550_brembo_4piston",
+      "category": "Brakes",
+      "name": "Ford Mustang S550 4-Piston Calipers (Base GT)",
+      "description": "4-piston fixed calipers from the 2015+ Mustang GT (Base). These are a direct bolt-on upgrade for S197 Mustangs, offering massive stopping power for cheap.",
+      "specs": [
+        "Rotor Size: 14-inch (355mm)",
+        "Caliper: 4-Piston Fixed",
+        "Min Wheel Size: 18-inch (usually)"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang GT (S550)", "years": "2015–2023", "notes": "Stock Part (Base GT)" },
+            { "name": "Mustang (S197)", "years": "2005–2014", "notes": "Direct Bolt-on Upgrade (Requires S550 Rotors)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_S550", "FORD_S197"]
+      },
+      "universal_alternatives": [
+        { "name": "S550 6-Piston Brembos", "notes": "Performance Pack upgrade (also fits S197)" }
+      ]
+    },
+    {
+      "id": "focus_rs_brembo_swap",
+      "category": "Brakes",
+      "name": "Focus RS Brembo Calipers (Front)",
+      "description": "4-piston Brembo calipers from the Mk3 Focus RS. A popular bolt-on upgrade for Focus ST owners looking for better track performance.",
+      "specs": [
+        "Caliper: 4-Piston Fixed (Brembo)",
+        "Rotor Size: 350mm",
+        "Color: Nitrous Blue (Stock)"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Focus RS (Mk3)", "years": "2016–2018", "notes": "Stock Part" },
+            { "name": "Focus ST (Mk3)", "years": "2013–2018", "notes": "Direct Bolt-on (Requires RS Rotors)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_COMPACT_PERFORMANCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Wilwood Big Brake Kit", "notes": "Lighter, more expensive" }
+      ]
+    },
+    {
+      "id": "gm_brembo_4piston",
+      "category": "Brakes",
+      "name": "GM Brembo 4-Piston Calipers (CTS-V / Camaro SS)",
+      "description": "4-piston Brembo calipers found on the Gen 1/2 CTS-V, Gen 5 Camaro SS, and Pontiac G8 GXP. These are massive, affordable calipers that are widely adapted to older GM muscle cars and trucks.",
+      "specs": [
+        "Caliper: 4-Piston Fixed (Brembo)",
+        "Rotor Size: 14-inch (355mm) usually",
+        "Mount: Radial (requires brackets for older cars)"
+      ],
+      "compatibility": [
+        {
+          "make": "Cadillac",
+          "models": [
+            { "name": "CTS-V (Gen 1)", "years": "2004–2007", "notes": "Stock Part" },
+            { "name": "CTS-V (Gen 2)", "years": "2009–2015", "notes": "Stock Part (6-piston front / 4-piston rear)" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Camaro SS (Gen 5)", "years": "2010–2015", "notes": "Stock Part" },
+            { "name": "Corvette (C7) Base", "years": "2014–2019", "notes": "Similar Casting" }
+          ]
+        },
+        {
+          "make": "Pontiac",
+          "models": [
+            { "name": "G8 GXP", "years": "2009", "notes": "Stock Part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["GM_LS_GEN3", "GM_LS_GEN4", "GM_LT_GEN5"]
+      },
+      "universal_alternatives": [
+        { "name": "C6 Z06 Calipers", "notes": "6-piston, but padlets are annoying" },
+        { "name": "Wilwood Aero6", "notes": "Aftermarket alternative" }
+      ]
+    }
+  ]
+}

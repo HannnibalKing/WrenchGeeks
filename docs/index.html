@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrenchGeeks - The Open Source Car Part Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>WrenchGeeks 🔧🤓</h1>
+            <p>The ultimate open-source car part database. Don't overpay—find a donor.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="selector" class="card">
+            <h2>Select Your Vehicle</h2>
+            
+            <!-- New Quick Build Selector -->
+            <div class="form-group" style="margin-bottom: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
+                <label for="quickBuildSelect">🔥 Popular / Niche Builds (Quick Select) <span class="badge" style="background:#ef4444; color:white; border:none;">NEW</span></label>
+                <select id="quickBuildSelect">
+                    <option value="">-- Choose a Build Style --</option>
+                    <option value="safari">Safari 911 (Off-Road Porsche)</option>
+                    <option value="exocet">Exomotive Exocet (Miata Kart)</option>
+                    <option value="goblin">DF Goblin (Cobalt Kart)</option>
+                    <option value="barra">Ford Barra Swap (Aussie Legend)</option>
+                    <option value="kswap">Honda K-Swap (The World)</option>
+                    <option value="ls_swap">LS Swap (The Universe)</option>
+                    <option value="rally_lancia">Lancia Delta Integrale (Rally)</option>
+                    <option value="rally_ford">Ford Escort RS Cosworth (Rally)</option>
+                    <option value="kei_sport">Kei Sports (AZ-1/Beat/Cappuccino)</option>
+                </select>
+            </div>
+
+            <div class="controls">
+                <div class="form-group">
+                    <label for="makeSelect">Make</label>
+                    <select id="makeSelect">
+                        <option value="">-- Select Make --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modelSelect">Model</label>
+                    <select id="modelSelect" disabled>
+                        <option value="">-- Select Model --</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="results" class="hidden">
+            <h3>Available Parts for <span id="selectedVehicleName"></span></h3>
+            <div id="tipsList" class="tips-container hidden"></div>
+            <div id="partsList" class="grid-list"></div>
+        </section>
+
+        <section id="partDetails" class="hidden">
+            <button id="backButton" class="btn-secondary">← Back to Parts</button>
+            
+            <div class="part-header">
+                <h2 id="partName">Part Name</h2>
+                <span id="partCategory" class="badge">Category</span>
+            </div>
+            <p id="partDescription">Description goes here.</p>
+            
+            <div class="details-grid">
+                <div class="card highlight-border">
+                    <h4>✅ Specs to Match</h4>
+                    <ul id="partSpecs"></ul>
+                </div>
+                
+                <div class="card">
+                    <h4>🔄 Compatible Vehicles (Donors/Recipients)</h4>
+                    <p class="hint">These cars use the same part or a compatible swap.</p>
+                    <div id="compatibleVehicles"></div>
+                </div>
+
+                <div class="card">
+                    <h4>📦 Universal / Aftermarket Options</h4>
+                    <ul id="universalParts"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate" class="card highlight-gold">
+            <h3>🔧 Fueling the Ultimate Open-Source Database</h3>
+            <p>If we saved you money on parts, help us replace the 10mm sockets we keep losing.</p>
+            <div class="donation-actions" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1.5rem;">
+                <a href="https://cwallet.com/t/GVBV3SPY" target="_blank" class="btn-primary" style="text-decoration: none; background: #2563eb; color: white; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: bold; display: inline-block;">
+                    💸 Send a Tip (Cwallet)
+                </a>
+                <p class="hint" style="font-size: 0.9rem; color: #475569;">
+                    $5 = New 10mm Socket | $15 = Junkyard Entry Fee | $50 = Full Tank of Gas
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>WrenchGeeks &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

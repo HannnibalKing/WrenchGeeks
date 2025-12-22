@@ -1,0 +1,385 @@
+{
+  "parts": [
+    {
+      "id": "spal_12_fan",
+      "category": "Cooling & HVAC",
+      "name": "Spal 12-inch High Performance Fan",
+      "description": "High-flow electric fan, commonly used as a pusher or puller in tight engine bays.",
+      "specs": [
+        "Flow: ~1200-1600 CFM (depending on model)",
+        "Profile: Low profile or High Performance",
+        "Voltage: 12V"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Custom Radiator Setups", "years": "All", "notes": "Requires mounting brackets" },
+            { "name": "Oil Cooler Fan", "years": "All", "notes": "Common use" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Mishimoto 12-inch Fan", "notes": "Budget friendly alternative" }
+      ]
+    },
+    {
+      "id": "ls400_fan_clutch",
+      "category": "Cooling & HVAC",
+      "name": "Lexus LS400 Fan Clutch",
+      "description": "Heavy-duty mechanical fan clutch. Often used as an upgrade for 2JZ-GTE swaps or Supras to improve cooling over the stock Supra clutch.",
+      "specs": [
+        "Type: Thermal Viscous",
+        "Mount: 4-bolt water pump flange",
+        "Engagement: Lower temp than Supra"
+      ],
+      "compatibility": [
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "LS400", "years": "1990–2000", "notes": "Stock Part" },
+            { "name": "SC400", "years": "1992–2000", "notes": "Stock Part" }
+          ]
+        },
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Supra (MK4)", "years": "1993–1998", "notes": "Upgrade (Better cooling)" },
+            { "name": "Soarer (JZZ30)", "years": "1991–2000", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["TOYOTA_UZ_FE", "TOYOTA_2JZ_GE"]
+      },
+      "universal_alternatives": [
+        { "name": "Electric Fan Conversion", "notes": "Frees up horsepower but less reliable" }
+      ]
+    },
+    {
+      "id": "saab_coolant_tank",
+      "category": "Cooling & HVAC",
+      "name": "Saab 9-3 Coolant Expansion Tank",
+      "description": "Pressurized coolant reservoir. Known to crack with age. Identical to the unit found in the Cadillac BLS.",
+      "specs": [
+        "Material: Plastic",
+        "Cap Pressure: 140 kPa (20 psi)",
+        "Sensor: Integrated Level Sensor"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-3 (NG)", "years": "2003–2011", "notes": "Stock Part" }
+          ]
+        },
+        {
+          "make": "Cadillac",
+          "models": [
+            { "name": "BLS", "years": "2005–2010", "notes": "Stock Part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_EPSILON_1"]
+      },
+      "universal_alternatives": [
+        { "name": "Aluminum Tank", "notes": "Aftermarket upgrade to prevent cracking" }
+      ]
+    },
+    {
+      "id": "bosch_cobra_pump",
+      "category": "Cooling & HVAC",
+      "name": "Bosch Cobra Intercooler Pump",
+      "description": "Water-to-air intercooler circulation pump. OEM quality and reliability.",
+      "specs": [
+        "Flow: 1200 Liters/Hour",
+        "Magnetic drive (no shaft seal to leak)",
+        "Quiet operation"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang Cobra (Terminator)", "years": "2003–2004", "notes": "OEM part" },
+            { "name": "Lightning F-150", "years": "1999–2004", "notes": "OEM part" }
+          ]
+        },
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Supercharger Kits", "years": "All", "notes": "Standard pump for aftermarket kits" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Jabsco Cyclone", "notes": "High flow marine pump often used" },
+        { "name": "Davies Craig EWP", "notes": "Electric water pump alternative" }
+      ]
+    },
+    {
+      "id": "setrab_oil_cooler_series6",
+      "category": "Cooling & HVAC",
+      "name": "Setrab Series 6 Oil Cooler",
+      "description": "Premium oil cooler core used in high-end motorsport applications.",
+      "specs": [
+        "Rows: Available in 10, 13, 16, 19, 25 rows",
+        "Fitting: M22 ports (requires adapters)",
+        "Low pressure drop"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Track Cars", "years": "All", "notes": "Requires custom lines and mounting" }
+          ]
+        },
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 (Air Cooled)", "years": "1965–1998", "notes": "Popular auxiliary cooler" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Mocal Heavy Duty", "notes": "Similar construction and performance" },
+        { "name": "Earl's Temp-A-Cure", "notes": "Budget friendly alternative" }
+      ]
+    },
+    {
+      "id": "coolant_cap_blue_vag",
+      "category": "Cooling & HVAC",
+      "name": "Coolant Expansion Tank Cap (Updated Blue)",
+      "description": "The updated 'Blue' coolant cap. The original black caps on Porsche 996/986 are prone to leaking pressure, causing overheating. The VW/Audi blue cap is the fix.",
+      "specs": [
+        "Pressure Rating: 1.5 Bar (approx)",
+        "Part Number: 1J0 121 321 B (VW) / 996 106 447 01 (Porsche)",
+        "Color: Blue (indicates updated revision)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Essential upgrade over black cap" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Essential upgrade over black cap" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf (Mk4)", "years": "1999–2005", "notes": "Standard part" },
+            { "name": "Passat (B5)", "years": "1998–2005", "notes": "Standard part" },
+            { "name": "Jetta (Mk4)", "years": "1999–2005", "notes": "Standard part" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5/B6)", "years": "1996–2005", "notes": "Standard part" },
+            { "name": "TT (Mk1)", "years": "2000–2006", "notes": "Standard part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VW_MK4", "VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Febi Bilstein Cap", "notes": "OEM supplier" }
+      ]
+    },
+    {
+      "id": "hvac_blower_regulator",
+      "category": "Cooling & HVAC",
+      "name": "HVAC Blower Motor Resistor (Porcupine)",
+      "description": "The 'Porcupine' resistor that controls fan speed. If your fan only works on High or not at all, this is the culprit.",
+      "specs": [
+        "Design: Aluminum heat sink spikes",
+        "Part Number: 996 573 926 00 (Porsche) / 8D0 959 501 (Audi)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Direct fit" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5)", "years": "1996–2001", "notes": "Identical part" },
+            { "name": "A8 (D2)", "years": "1997–2003", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Passat (B5)", "years": "1998–2005", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Behr Hella Resistor", "notes": "OEM manufacturer" }
+      ]
+    },
+    {
+      "id": "aux_water_pump_bosch",
+      "category": "Cooling & HVAC",
+      "name": "Auxiliary Water Pump (Bosch)",
+      "description": "Electric water pump used for after-run cooling or heater circulation. Common failure item.",
+      "specs": [
+        "Connector: 2-pin Bosch Jetronic",
+        "Part Number: 0392020034 (Bosch Universal)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Turbo (996)", "years": "2001–2005", "notes": "Turbo cooling pump" },
+            { "name": "Cayenne (955)", "years": "2003–2006", "notes": "Rest heat pump" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf VR6 (Mk3/Mk4)", "years": "1994–2004", "notes": "Auxiliary cooling pump" },
+            { "name": "Eurovan", "years": "1993–2003", "notes": "Auxiliary cooling pump" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "C-Class (W202/W203)", "years": "1994–2005", "notes": "Heater circulation pump" },
+            { "name": "ML-Class (W163)", "years": "1998–2005", "notes": "Heater circulation pump" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Bosch 0392022002", "notes": "Higher flow upgrade (Cobra pump)" }
+      ]
+    },
+    {
+      "id": "mini_psa_thermostat",
+      "category": "Cooling & HVAC",
+      "name": "Thermostat Housing (Prince Engine)",
+      "description": "Complete thermostat housing assembly. A very common failure point on Mini Coopers and PSA cars, leaking coolant or failing electronically.",
+      "specs": [
+        "Opening Temp: 105°C",
+        "Includes: Housing, Sensor, Gasket",
+        "Mini Part: 11537534521",
+        "PSA Part: 1336.Z6"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2010", "notes": "N14 Engine" },
+            { "name": "Clubman (R55)", "years": "2007–2010", "notes": "N14 Engine" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3 1.6 THP", "years": "2009–2015", "notes": "Identical part" },
+            { "name": "C4", "years": "2008–2011", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 GTi", "years": "2007–2012", "notes": "Identical part" },
+            { "name": "308", "years": "2007–2013", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Bremmen Parts Housing", "notes": "Aftermarket replacement" },
+        { "name": "Mahle TM 14 105", "notes": "OEM Supplier" }
+      ]
+    },
+    {
+      "id": "mini_psa_water_pump",
+      "category": "Cooling & HVAC",
+      "name": "Water Pump (Prince Engine)",
+      "description": "Mechanical water pump driven by a friction wheel. The friction wheel mechanism is unique to this engine family.",
+      "specs": [
+        "Material: Composite or Metal impeller",
+        "Mini Part: 11517550484",
+        "PSA Part: 1201.H4"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R56)", "years": "2007–2013", "notes": "N14/N18 Engine" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3", "years": "2009–2015", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 / 208", "years": "2007–2015", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["PSA_PRINCE"]
+      },
+      "universal_alternatives": [
+        { "name": "Saleri SIL PA1416", "notes": "OEM Supplier" },
+        { "name": "Graf PA1060", "notes": "Metal impeller upgrade" }
+      ]
+    },
+    {
+      "id": "viper_electric_fan",
+      "category": "Cooling & HVAC",
+      "name": "Dodge Viper Electric Fan (Gen 2)",
+      "description": "Massive 18-inch electric cooling fan from the Gen 2 Viper. Known for moving an incredible amount of air (over 4000 CFM in some tests), making it a legendary upgrade for Jeeps, trucks, and muscle cars.",
+      "specs": [
+        "Diameter: 18 inches",
+        "CFM: ~4000+",
+        "Current Draw: High (Requires heavy duty relay/wiring)"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Viper (Gen 2)", "years": "1996–2002", "notes": "Stock Part" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Wrangler (TJ/YJ)", "years": "1987–2006", "notes": "Popular Upgrade (Requires trimming)" },
+            { "name": "Cherokee (XJ)", "years": "1984–2001", "notes": "Popular Upgrade (Tight fit)" }
+          ]
+        },
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Dakota", "years": "1997–2004", "notes": "Popular Upgrade" },
+            { "name": "Durango", "years": "1998–2003", "notes": "Popular Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DODGE_VIPER"]
+      },
+      "universal_alternatives": [
+        { "name": "Ford Taurus Fan", "notes": "Similar performance, cheaper junkyard find" },
+        { "name": "Lincoln Mark VIII Fan", "notes": "The other legendary high-CFM fan" }
+      ]
+    }
+  ]
+}

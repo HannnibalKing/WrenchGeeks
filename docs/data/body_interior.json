@@ -1,0 +1,523 @@
+{
+  "parts": [
+    {
+      "id": "aston_martin_key",
+      "category": "Body & Interior",
+      "name": "Aston Martin Crystal Key (ECU)",
+      "description": "The prestigious 'Emotion Control Unit' key fob for the DB9, Vantage, and DBS is actually a leather-wrapped Volvo key. If you peel back the leather, you can see the Volvo logo.",
+      "specs": [
+        "Manufacturer: Volvo / Valeo",
+        "Frequency: 315MHz / 433MHz",
+        "Trivia: $2000 from Aston, $150 from Volvo"
+      ],
+      "compatibility_smart": {
+        "platforms": ["ASTON_MARTIN_VH"]
+      },
+      "universal_alternatives": [
+        { "name": "Volvo P2 Key Fob", "notes": "The exact same internal electronics" }
+      ]
+    },
+    {
+      "id": "mclaren_f1_mirrors",
+      "category": "Body & Interior",
+      "name": "McLaren F1 Side Mirrors",
+      "description": "The side mirrors on the McLaren F1, the fastest naturally aspirated car ever made, are taken directly from the Volkswagen Corrado.",
+      "specs": [
+        "Source: VW Corrado",
+        "Aerodynamics: Surprisingly good",
+        "Trivia: Also used on TVR Cerbera"
+      ],
+      "compatibility_smart": {
+        "platforms": ["MCLAREN_F1"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "lotus_esprit_tail_lights",
+      "category": "Body & Interior",
+      "name": "Lotus Esprit Tail Lights (Toyota AE86)",
+      "description": "The Lotus Esprit (S4/V8) uses the iconic ribbed tail lights from the Toyota Corolla AE86 (Levin coupe).",
+      "specs": [
+        "Source: Toyota AE86 Levin",
+        "Type: Ribbed Lens",
+        "Fitment: Direct fit for Esprit"
+      ],
+      "compatibility_smart": {
+        "platforms": ["LOTUS_ESPRIT"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "maserati_window_switches",
+      "category": "Body & Interior",
+      "name": "Maserati GranTurismo Window Switches",
+      "description": "The window switches and headlight knob in the $150,000 Maserati GranTurismo are the exact same cheap plastic parts found in the Dodge Dart and Chrysler 200.",
+      "specs": [
+        "Source: Chrysler / Dodge",
+        "Feel: Cheap",
+        "Price: Maserati charges 10x"
+      ],
+      "compatibility_smart": {
+        "platforms": ["MASERATI_M145"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "g8_gxp_diffuser",
+      "category": "Body & Interior",
+      "name": "G8 GXP Rear Diffuser",
+      "description": "Aggressive rear diffuser from the G8 GXP. Direct swap for G8 GT and Base models, providing a sportier look and better exhaust tip clearance.",
+      "specs": [
+        "Material: ABS Plastic",
+        "Fitment: Direct Clip-in",
+        "Exhaust: Accommodates quad tips"
+      ],
+      "compatibility_smart": {
+        "platforms": ["PONTIAC_G8"]
+      },
+      "universal_alternatives": [
+        { "name": "Maverick Man Carbon Diffuser", "notes": "Carbon fiber version" }
+      ]
+    },
+    {
+      "id": "diablo_headlight_conversion",
+      "category": "Body & Interior",
+      "name": "Nissan 300ZX (Z32) Headlights",
+      "description": "The exact headlights used on the Lamborghini Diablo (facelift). Lamborghini licensed them from Nissan to replace the pop-up headlights. A carbon fiber strip was used to cover the 'Nissan' logo on the lens.",
+      "specs": [
+        "Source: Nissan 300ZX (1990-1996)",
+        "Fitment: Direct fit for Diablo (1999-2001)",
+        "Trivia: Saved Lamborghini millions in R&D"
+      ],
+      "compatibility_smart": {
+        "platforms": ["LAMBORGHINI_V12", "NISSAN_Z_CAR"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "hella_4169_tail_lights",
+      "category": "Body & Interior",
+      "name": "Hella 4169 'Bus' Tail Lights",
+      "description": "The most ubiquitous tail light in supercar history. Originally designed for tractors and buses, these simple round lights were used on the Lamborghini Diablo, Saleen S7, Pagani Zonda, and Spyker C8.",
+      "specs": [
+        "Manufacturer: Hella",
+        "Part Number: 4169",
+        "Applications: Tractors, Buses, Supercars"
+      ],
+      "compatibility_smart": {
+        "platforms": ["LAMBORGHINI_V12"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "recaro_pole_position",
+      "category": "Body & Interior",
+      "name": "Recaro Pole Position (FIA)",
+      "description": "Classic fixed-back bucket seat. FIA approved for racing, but comfortable enough for street use.",
+      "specs": [
+        "Fiberglass shell",
+        "Weight: ~7kg",
+        "Belt slots for 4, 5, or 6-point harnesses"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Track/Street Cars", "years": "All", "notes": "Requires vehicle-specific seat rails" }
+          ]
+        },
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 (964/993)", "years": "1989–1998", "notes": "Period correct upgrade" },
+            { "name": "911 (996/997)", "years": "1999–2012", "notes": "Popular track seat" }
+          ]
+        },
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "M3 (E30/E36/E46)", "years": "1986–2006", "notes": "Popular track seat" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Sparco Evo", "notes": "Similar sizing and FIA approval" },
+        { "name": "OMP WRC", "notes": "Slightly wider shoulder support" }
+      ]
+    },
+    {
+      "id": "is300_steering_wheel",
+      "category": "Body & Interior",
+      "name": "Lexus IS300 Steering Wheel (3-Spoke)",
+      "description": "Sporty 3-spoke steering wheel with airbag. A popular direct bolt-on upgrade for the older SC300/400 and Supra, offering a more modern look.",
+      "specs": [
+        "Design: 3-Spoke Sport",
+        "Airbag: Single Stage (Early models)",
+        "Diameter: 370mm"
+      ],
+      "compatibility": [
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "IS300", "years": "2001–2005", "notes": "Stock Part" },
+            { "name": "SC300 / SC400", "years": "1992–2000", "notes": "Upgrade (Direct Bolt-on)" },
+            { "name": "GS300 / GS400", "years": "1998–2005", "notes": "Upgrade (Direct Bolt-on)" }
+          ]
+        },
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Supra (MK4)", "years": "1993–1998", "notes": "Upgrade (Direct Bolt-on)" },
+            { "name": "Celica (Gen 7)", "years": "2000–2005", "notes": "Similar design" },
+            { "name": "MR2 Spyder", "years": "2000–2005", "notes": "Similar design" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["TOYOTA_2JZ_GE", "TOYOTA_UZ_FE"]
+      },
+      "universal_alternatives": [
+        { "name": "TRD Steering Wheel", "notes": "Rare, expensive factory option" }
+      ]
+    },
+    {
+      "id": "nardi_classic_wheel",
+      "category": "Body & Interior",
+      "name": "Nardi Classic Steering Wheel",
+      "description": "Timeless wood or leather steering wheel design.",
+      "specs": [
+        "Diameter: 330mm or 360mm",
+        "Material: Wood or Leather",
+        "Spokes: Polished or Black"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Classic Cars", "years": "All", "notes": "Requires Nardi-pattern hub adapter" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "Miata (NA)", "years": "1990–1997", "notes": "Iconic upgrade (V-Special came with one)" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Momo Prototipo", "notes": "Classic racing look" },
+        { "name": "Personal Grinta", "notes": "Similar feel, different spoke design" }
+      ]
+    },
+    {
+      "id": "takata_drift_harness",
+      "category": "Body & Interior",
+      "name": "Takata Drift III Harness",
+      "description": "Street-legal 4-point harness with ASM (Anti-Submarining) technology.",
+      "specs": [
+        "4-point design",
+        "3-inch shoulder belts",
+        "2-inch lap belts",
+        "DOT approved"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Modified Vehicles", "years": "All", "notes": "Requires harness bar or roll cage" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Schroth Rallye 4", "notes": "DOT approved with ASM technology" },
+        { "name": "Sabelt 4-Point", "notes": "Budget friendly alternative" }
+      ]
+    },
+    {
+      "id": "lx_multifunction_switch",
+      "category": "Body & Interior",
+      "name": "Multifunction Switch (Turn Signal / Wiper)",
+      "description": "The combination switch for turn signals and wipers. A common failure point causing wipers to stay on or signals to fail. The Dodge part is a Mercedes design.",
+      "specs": [
+        "Functions: Turn Signal, High Beam, Wipers",
+        "Mopar Part: 68041485AC",
+        "Mercedes Design: Based on W210/W203 architecture"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger", "years": "2006–2010", "notes": "Pre-facelift models" },
+            { "name": "Magnum", "years": "2005–2008", "notes": "All models" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C", "years": "2005–2010", "notes": "Pre-facelift models" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E-Class (W210)", "years": "1996–2002", "notes": "Similar design logic, check pinout" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Standard Motor Products Switch", "notes": "Aftermarket replacement" }
+      ]
+    },
+    {
+      "id": "lx_sunroof_motor",
+      "category": "Body & Interior",
+      "name": "Sunroof Motor (Webasto)",
+      "description": "The electric motor driving the sunroof glass. Made by Webasto, shared with many German cars.",
+      "specs": [
+        "Manufacturer: Webasto",
+        "Voltage: 12V",
+        "Gear: Metal or Plastic drive gear"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger", "years": "2006–2010", "notes": "Webasto system" },
+            { "name": "Magnum", "years": "2005–2008", "notes": "Webasto system" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C", "years": "2005–2010", "notes": "Webasto system" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "C-Class (W203)", "years": "2001–2007", "notes": "Identical motor unit on some years" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Webasto Replacement Motor", "notes": "OEM Supplier" }
+      ]
+    },
+    {
+      "id": "lx_shift_interlock_billet",
+      "category": "Body & Interior",
+      "name": "Shift Interlock Latch ('Pinky Thing')",
+      "description": "The plastic hook inside the shifter assembly that breaks, leaving the car stuck in Park. The 'Pinky Thing' nickname comes from the pink plastic piece.",
+      "specs": [
+        "Material: Billet Aluminum (Upgrade) or Plastic (Stock)",
+        "Fixes: Stuck in Park condition"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger", "years": "2006–2007", "notes": "Common failure on early models" },
+            { "name": "Magnum", "years": "2005–2007", "notes": "Common failure" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C", "years": "2005–2007", "notes": "Common failure" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Billet Technology Catch Can", "notes": "Also makes the pinky thing replacement" },
+        { "name": "Dorman 924-706", "notes": "Aluminum replacement kit" }
+      ]
+    },
+    {
+      "id": "ignition_switch_electrical",
+      "category": "Body & Interior",
+      "name": "Ignition Switch (Electrical Portion)",
+      "description": "The electrical switch behind the ignition lock cylinder. Failure causes electrical gremlins, no-start, or accessory power loss.",
+      "specs": [
+        "Part Number: 4A0 905 849 B",
+        "Color: White or Black housing",
+        "Pins: Standard VAG ignition pinout"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2004", "notes": "Direct fit" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5)", "years": "1996–2001", "notes": "Identical part" },
+            { "name": "A6 (C5)", "years": "1998–2004", "notes": "Identical part" },
+            { "name": "A8 (D2)", "years": "1997–2003", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Passat (B5)", "years": "1998–2005", "notes": "Identical part" },
+            { "name": "Golf (Mk3/Mk4)", "years": "1994–2002", "notes": "Check specific VIN split" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Meyle Ignition Switch", "notes": "Reliable aftermarket option" }
+      ]
+    },
+    {
+      "id": "climate_control_lcd",
+      "category": "Body & Interior",
+      "name": "Climate Control LCD Screen",
+      "description": "Replacement LCD glass for the HVAC unit. The original screens often 'bleed' or lose pixels.",
+      "specs": [
+        "Component: LCD Glass Panel only",
+        "Requires soldering/disassembly of unit"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2001", "notes": "Shared screen component" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Shared screen component" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5)", "years": "1996–2001", "notes": "Climate unit internals are shared" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Aftermarket LCD Repair Kit", "notes": "Available from instrument cluster repair shops" }
+      ]
+    },
+    {
+      "id": "headlight_switch_vag",
+      "category": "Body & Interior",
+      "name": "Headlight Switch (Euro Style)",
+      "description": "Rotary headlight switch. The VW/Audi versions are physically interchangeable with Porsche 996/986, though illumination color may differ (Red/Green vs Amber).",
+      "specs": [
+        "Connector: 17-pin flat connector",
+        "Functions: Parking lights, Low beam, Fogs (pull out)",
+        "Porsche Part: 996 613 535 00",
+        "VW/Audi Part: 8L1 941 531"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Direct fit (check backlight color)" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Direct fit (check backlight color)" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5)", "years": "1996–2001", "notes": "Identical fitment" },
+            { "name": "TT (Mk1)", "years": "2000–2006", "notes": "Identical fitment" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Passat (B5)", "years": "1998–2005", "notes": "Identical fitment" },
+            { "name": "Golf (Mk4)", "years": "1999–2005", "notes": "Identical fitment" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_PL45", "VW_MK4"]
+      },
+      "universal_alternatives": [
+        { "name": "Euro Switch (Aftermarket)", "notes": "Adds parking light position and rear fog control" }
+      ]
+    },
+    {
+      "id": "mirror_switch_vag",
+      "category": "Body & Interior",
+      "name": "Power Mirror Adjustment Switch",
+      "description": "Joystick knob for adjusting side mirrors. A common failure point where the joystick snaps off.",
+      "specs": [
+        "Connector: 10-pin",
+        "Part Number: 4B0 959 565 A"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Shared part" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Shared part" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A6 (C5)", "years": "1998–2004", "notes": "Identical part" },
+            { "name": "A3 (8L)", "years": "1996–2003", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Topran Mirror Switch", "notes": "German aftermarket replacement" }
+      ]
+    },
+    {
+      "id": "window_switch_vag",
+      "category": "Body & Interior",
+      "name": "Power Window Switch (Single)",
+      "description": "Single button window switch. Often used on passenger side or rear doors.",
+      "specs": [
+        "Connector: 4-pin",
+        "Part Number: 996 613 156 00 (Porsche) / 1J0 959 855 (VW)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Direct fit" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf (Mk4)", "years": "1999–2005", "notes": "Identical part" },
+            { "name": "Passat (B5)", "years": "1998–2005", "notes": "Identical part" },
+            { "name": "Bora / Jetta", "years": "1999–2005", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VW_MK4", "VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Febi Bilstein Window Switch", "notes": "OEM quality" }
+      ]
+    }
+  ]
+}

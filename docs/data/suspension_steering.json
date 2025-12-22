@@ -1,0 +1,699 @@
+{
+  "parts": [
+    {
+      "id": "bmw_e36_steering_rack",
+      "category": "Suspension & Steering",
+      "name": "BMW E36 Steering Rack",
+      "description": "Hydraulic power steering rack from the E36 3-series. Popular swap for older BMWs due to quicker ratio.",
+      "specs": [
+        "Hydraulic power assist",
+        "Ratio: 3.2 turns lock-to-lock (standard)",
+        "Z3 version is 2.7 turns (linear)"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "E30 3-series", "years": "1982–1994", "notes": "Popular upgrade (requires spacers)" },
+            { "name": "E36 3-series", "years": "1992–1999", "notes": "Stock replacement" },
+            { "name": "Z3", "years": "1996–2002", "notes": "Interchangeable" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["BMW_E36"]
+      },
+      "universal_alternatives": [
+        { "name": "Z3 Steering Rack", "notes": "Even quicker ratio (2.7 turns)" },
+        { "name": "E46 Purple Tag Rack", "notes": "Popular upgrade (3.0 turns)" }
+      ]
+    },
+    {
+      "id": "porsche_gt3_lca",
+      "category": "Suspension & Steering",
+      "name": "Porsche GT3 Adjustable Lower Control Arms",
+      "description": "Two-piece adjustable lower control arms from the 911 GT3. Allows for significant camber adjustment using shims. Fits almost all water-cooled Porsches.",
+      "specs": [
+        "Design: Split arm with shims",
+        "Adjustment: Camber (via shims)",
+        "Bushing: Solid rubber or monoball (Cup)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 GT3 (996/997/991)", "years": "1999–2019", "notes": "Stock Part" },
+            { "name": "911 Carrera (996/997/991)", "years": "1999–2019", "notes": "Upgrade (Front & Rear)" },
+            { "name": "Boxster (986/987/981/718)", "years": "1997–Present", "notes": "Upgrade (Front & Rear)" },
+            { "name": "Cayman (987/981/718)", "years": "2006–Present", "notes": "Upgrade (Front & Rear)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PORSCHE_986_996", "PORSCHE_987_997", "PORSCHE_981_991", "PORSCHE_718_992"]
+      },
+      "universal_alternatives": [
+        { "name": "RSS Tarmac Series Arms", "notes": "Aftermarket monoball arms" },
+        { "name": "Elephant Racing Arms", "notes": "Highly adjustable aftermarket" }
+      ]
+    },
+    {
+      "id": "ls400_ps_pump",
+      "category": "Suspension & Steering",
+      "name": "Lexus LS400 Power Steering Pump",
+      "description": "Hydraulic power steering pump for the 1UZ-FE engine. Notorious for leaking fluid directly onto the alternator, causing it to fail. The 'Air Control Valve' on the pump is a common leak point.",
+      "specs": [
+        "Type: Vane Pump",
+        "Drive: Belt Driven",
+        "Common Issue: ACV Leak"
+      ],
+      "compatibility": [
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "LS400", "years": "1990–1997", "notes": "Stock Part" },
+            { "name": "SC400", "years": "1992–1997", "notes": "Stock Part" }
+          ]
+        },
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Celsior", "years": "1990–1997", "notes": "Stock Part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "engines": ["TOYOTA_UZ_FE"]
+      },
+      "universal_alternatives": [
+        { "name": "Delete ACV", "notes": "Plug the valve to prevent leaks (may affect idle)" }
+      ]
+    },
+    {
+      "id": "epsilon_rear_upper_arm",
+      "category": "Suspension & Steering",
+      "name": "Rear Upper Control Arm (Banana Arm)",
+      "description": "Curved aluminum upper control arm. Bushings wear out rapidly, causing excessive negative camber and tire cupping on the rear axle.",
+      "specs": [
+        "Material: Aluminum",
+        "Shape: Curved ('Banana')",
+        "Position: Rear Upper"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-3 Sport Sedan", "years": "2003–2011", "notes": "Common failure" },
+            { "name": "9-3 SportCombi", "years": "2005–2011", "notes": "Common failure" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Malibu (Gen 6)", "years": "2004–2008", "notes": "Common failure" }
+          ]
+        },
+        {
+          "make": "Opel",
+          "models": [
+            { "name": "Vectra C", "years": "2002–2008", "notes": "Common failure" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_EPSILON_1"]
+      },
+      "universal_alternatives": [
+        { "name": "Lemforder Arm", "notes": "OEM Supplier" },
+        { "name": "Powerflex Bushings", "notes": "Polyurethane upgrade to fix alignment" }
+      ]
+    },
+    {
+      "id": "sti_rear_swaybar",
+      "category": "Suspension & Steering",
+      "name": "STI Rear Sway Bar (20mm)",
+      "description": "Thicker rear sway bar from the STI. Reduces understeer significantly on WRX and Saab 9-2X models.",
+      "specs": [
+        "Diameter: 20mm (vs 17mm stock WRX)",
+        "Mounts: Requires STI mounts/bushings",
+        "Effect: Reduces understeer"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-2X Aero", "years": "2005–2006", "notes": "Upgrade" },
+            { "name": "9-2X Linear", "years": "2005–2006", "notes": "Upgrade" }
+          ]
+        },
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "Impreza WRX (GD/GG)", "years": "2002–2007", "notes": "Upgrade" },
+            { "name": "Forester XT (SG)", "years": "2004–2008", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["SAAB_SUBARU_GG"]
+      },
+      "universal_alternatives": [
+        { "name": "Whiteline 22mm Bar", "notes": "Adjustable aftermarket option" }
+      ]
+    },
+    {
+      "id": "gmt360_ss_swaybar",
+      "category": "Suspension & Steering",
+      "name": "Trailblazer SS Front Sway Bar",
+      "description": "Thicker front sway bar from the Trailblazer SS. Improves handling on standard GMT360 SUVs like the Saab 9-7X.",
+      "specs": [
+        "Diameter: 34mm (Solid)",
+        "Position: Front",
+        "OEM Part: GM 15288535"
+      ],
+      "compatibility": [
+        {
+          "make": "Saab",
+          "models": [
+            { "name": "9-7X 4.2i / 5.3i", "years": "2005–2009", "notes": "Upgrade" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "TrailBlazer LS/LT", "years": "2002–2009", "notes": "Upgrade" }
+          ]
+        },
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Envoy", "years": "2002–2009", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_GMT360"]
+      },
+      "universal_alternatives": [
+        { "name": "Addco Sway Bar", "notes": "Aftermarket heavy duty" }
+      ]
+    },
+    {
+      "id": "lx_tension_strut",
+      "category": "Suspension & Steering",
+      "name": "Front Tension Strut (Thrust Arm)",
+      "description": "The forward-facing lower control arm. The large hydraulic bushing fails, causing a 'clunk' when braking. The Dodge LX suspension is derived from the Mercedes W220 S-Class.",
+      "specs": [
+        "Position: Front Lower Forward",
+        "Bushing: Hydraulic (Fluid Filled)",
+        "Mopar Part: 4782612AC",
+        "Mercedes Design: W220 S-Class Geometry"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger (RWD)", "years": "2006–2023", "notes": "Common failure" },
+            { "name": "Challenger", "years": "2008–2023", "notes": "Common failure" },
+            { "name": "Magnum", "years": "2005–2008", "notes": "Common failure" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C (RWD)", "years": "2005–2023", "notes": "Common failure" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "S-Class (W220)", "years": "1999–2005", "notes": "Suspension geometry donor (Parts similar, check specific interchange)" },
+            { "name": "E-Class (W211)", "years": "2003–2009", "notes": "Rear suspension donor" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Meyle HD Strut", "notes": "Solid rubber bushing upgrade" },
+        { "name": "Lemforder Arm", "notes": "OEM Supplier" }
+      ]
+    },
+    {
+      "id": "universal_air_bellows",
+      "category": "Suspension & Steering",
+      "name": "Universal Air Suspension Bellows (2500 Series)",
+      "description": "Double convoluted air spring for custom suspension setups.",
+      "specs": [
+        "Max Load: 2500 lbs @ 100 psi",
+        "Min Height: 2.8 inches",
+        "Max Height: 10.5 inches"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Custom Hot Rods", "years": "All", "notes": "Fabrication required" },
+            { "name": "Mini Trucks", "years": "All", "notes": "Fabrication required" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Firestone 2500", "notes": "Industry standard air bag" },
+        { "name": "Slam Specialties SS-5", "notes": "Non-ballooning design" }
+      ]
+    },
+    {
+      "id": "lx_rear_camber_link",
+      "category": "Suspension & Steering",
+      "name": "Rear Camber Link (Upper Control Arm)",
+      "description": "Upper rear control arm responsible for camber. The LX rear suspension is almost identical to the Mercedes W211 E-Class.",
+      "specs": [
+        "Position: Rear Upper",
+        "Mopar Part: 4782536AB",
+        "Mercedes Part: 211 350 03 53 (Check specific length/bushing)"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger", "years": "2006–2023", "notes": "RWD Models" },
+            { "name": "Challenger", "years": "2008–2023", "notes": "RWD Models" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C", "years": "2005–2023", "notes": "RWD Models" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E-Class (W211)", "years": "2003–2009", "notes": "Suspension donor platform" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "SPC Adjustable Camber Arm", "notes": "Allows camber adjustment for lowered cars" },
+        { "name": "Lemforder Link", "notes": "OEM Supplier to Mercedes" }
+      ]
+    },
+    {
+      "id": "lx_rear_subframe_bushings",
+      "category": "Suspension & Steering",
+      "name": "Rear Subframe Bushings (Cradle Bushings)",
+      "description": "The 4 large rubber bushings mounting the rear subframe to the chassis. Stock ones are soft and allow 'cradle walk'.",
+      "specs": [
+        "Quantity: 4 per car",
+        "Mopar Part: 4782859AB",
+        "Mercedes Design: W211 Rear Subframe"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger", "years": "2006–2023", "notes": "Common upgrade" },
+            { "name": "Challenger", "years": "2008–2023", "notes": "Common upgrade" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300C", "years": "2005–2023", "notes": "Common upgrade" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E-Class (W211)", "years": "2003–2009", "notes": "Similar bushing design" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["DAIMLER_CHRYSLER_LX"]
+      },
+      "universal_alternatives": [
+        { "name": "Whiteline KDT911", "notes": "Polyurethane inserts (easier install)" },
+        { "name": "Prothane Full Bushings", "notes": "Solid polyurethane replacement" }
+      ]
+    },
+    {
+      "id": "kw_v3_coilovers_911",
+      "category": "Suspension & Steering",
+      "name": "KW Variant 3 Coilovers",
+      "description": "High-end coilover suspension with adjustable compression and rebound damping.",
+      "specs": [
+        "Stainless steel construction",
+        "Independently adjustable compression/rebound",
+        "Lowering range: 30-60mm"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 (996)", "years": "1999–2004", "notes": "Direct fit" },
+            { "name": "911 (997)", "years": "2005–2012", "notes": "Direct fit (specific part number)" }
+          ]
+        },
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "M3 (E46)", "years": "2001–2006", "notes": "Direct fit (specific part number)" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Ohlins Road & Track", "notes": "Premium DFV technology" },
+        { "name": "Bilstein PSS10", "notes": "Easy adjustment dial" }
+      ]
+    },
+    {
+      "id": "cayenne_control_arms",
+      "category": "Suspension & Steering",
+      "name": "Front Lower Control Arms (PL71)",
+      "description": "Heavy duty front lower control arms. The bushings are a common failure point. Parts are identical across the platform.",
+      "specs": [
+        "Material: Cast Iron or Aluminum (depending on year)",
+        "Includes ball joint and bushings",
+        "Interchangeable between Cayenne, Touareg, Q7"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "Cayenne (955/957)", "years": "2003–2010", "notes": "Stock part" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Touareg (7L)", "years": "2002–2010", "notes": "Identical part (often cheaper)" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "Q7 (4L)", "years": "2005–2015", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_PL71"]
+      },
+      "universal_alternatives": [
+        { "name": "Lemforder Control Arms", "notes": "OEM Supplier (High Quality)" },
+        { "name": "Meyle HD", "notes": "Upgraded solid rubber bushings" }
+      ]
+    },
+    {
+      "id": "macan_control_arms",
+      "category": "Suspension & Steering",
+      "name": "Front Upper Control Arms (MLB)",
+      "description": "Multi-link front suspension arms. Common wear item causing clunking noises.",
+      "specs": [
+        "Aluminum construction",
+        "Pinch-bolt ball joint style",
+        "Shared with Audi B8/8R platform"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "Macan (Gen 1)", "years": "2014–2018", "notes": "Stock part" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "Q5 (8R)", "years": "2008–2017", "notes": "Identical part" },
+            { "name": "A4 (B8)", "years": "2008–2016", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_MLB_GEN1"]
+      },
+      "universal_alternatives": [
+        { "name": "034Motorsport Density Line", "notes": "Stiffer rubber for better handling" },
+        { "name": "SPC Adjustable Arms", "notes": "Allows camber adjustment" }
+      ]
+    },
+    {
+      "id": "strut_mount_front_996",
+      "category": "Suspension & Steering",
+      "name": "Front Strut Top Mount",
+      "description": "Rubber and bearing assembly connecting the strut to the chassis. Rubber collapses over time causing clunks and ride height loss.",
+      "specs": [
+        "Part Number: 996 343 018 03",
+        "Includes bearing (often replaceable separately)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "C2/C4/Turbo share similar mounts" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Lemforder Strut Mount", "notes": "OEM Supplier" },
+        { "name": "Elephant Racing Monoball", "notes": "Performance upgrade (harsher ride)" }
+      ]
+    },
+    {
+      "id": "sway_bar_link_front_996",
+      "category": "Suspension & Steering",
+      "name": "Front Sway Bar End Link",
+      "description": "Long drop link connecting the sway bar to the strut housing. Ball joints wear out causing rattling.",
+      "specs": [
+        "Length: Extended drop link",
+        "Part Number: 996 343 069 04"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Standard suspension" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Standard suspension" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "TRW End Link", "notes": "OEM Supplier" },
+        { "name": "Tarett Adjustable Links", "notes": "For corner balancing/removing preload" }
+      ]
+    },
+    {
+      "id": "rear_track_rod_996",
+      "category": "Suspension & Steering",
+      "name": "Rear Toe Control Arm (Track Rod)",
+      "description": "Adjustable arm that sets rear toe. The eccentric bolt often seizes, making alignment impossible.",
+      "specs": [
+        "Part Number: 996 331 045 12",
+        "Includes inner rubber bushing and outer ball joint"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "All models" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "All models" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Meyle Track Rod", "notes": "Standard replacement" },
+        { "name": "RSS Adjustable Toe Link", "notes": "Eliminates eccentric bolt for precise alignment" }
+      ]
+    },
+    {
+      "id": "wheel_bearing_front_996",
+      "category": "Suspension & Steering",
+      "name": "Front Wheel Bearing",
+      "description": "Standard sealed wheel bearing. Buying the 'Porsche' box costs double. It's a standard Audi/VW size.",
+      "specs": [
+        "Dimensions: 45x80x45mm (approx)",
+        "Part Number: 999 053 041 03 (Porsche)",
+        "Audi Part: 4A0 407 625 A"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "C2/C4 Front" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Front and Rear (Base/S)" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B5)", "years": "1996–2001", "notes": "Front Quattro / Rear FWD" },
+            { "name": "A6 (C4/C5)", "years": "1995–2004", "notes": "Front" },
+            { "name": "100 / 200", "years": "1989–1994", "notes": "Front" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Passat (B5)", "years": "1998–2005", "notes": "Front" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "FAG Wheel Bearing", "notes": "OEM Supplier (Often $30 vs $100)" },
+        { "name": "SKF Wheel Bearing", "notes": "Top tier quality" }
+      ]
+    },
+    {
+      "id": "porsche_coffin_arm",
+      "category": "Suspension & Steering",
+      "name": "Lower Control Arm ('Coffin Arm')",
+      "description": "The main lower suspension arm for 996/986. Named for its shape. Ball joints often fail.",
+      "specs": [
+        "Cast Aluminum",
+        "Integrated Ball Joint (non-replaceable on stock arm)",
+        "Part Number: 996 341 053 17"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Front and Rear (check specific part # for rear)" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Front and Rear" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "GT3 Adjustable Arm", "notes": "Split design allows shim adjustment for camber" },
+        { "name": "Meyle HD Coffin Arm", "notes": "Replaceable ball joint version" }
+      ]
+    },
+    {
+      "id": "zf_power_steering_reservoir",
+      "category": "Suspension & Steering",
+      "name": "ZF Power Steering Reservoir",
+      "description": "Standard black plastic reservoir with integrated filter. The filter clogs, starving the pump.",
+      "specs": [
+        "Integrated mesh filter (non-serviceable)",
+        "Inlet/Outlet: 12mm / 16mm (approx)",
+        "Cap includes dipstick"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "3-Series (E30/E36/E46)", "years": "1984–2006", "notes": "Standard fitment" },
+            { "name": "5-Series (E34/E39)", "years": "1988–2003", "notes": "Standard fitment" }
+          ]
+        },
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 (964/993)", "years": "1989–1998", "notes": "Standard fitment" }
+          ]
+        },
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Custom Power Steering", "years": "All", "notes": "Easy to mount remote reservoir" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Chase Bays Reservoir", "notes": "Aluminum upgrade with AN fittings" }
+      ]
+    },
+    {
+      "id": "mini_psa_control_arm_bushing",
+      "category": "Suspension & Steering",
+      "name": "Front Control Arm Bushing (Rear Position)",
+      "description": "The rear bushing of the front control arm. Stock rubber bushings tear easily. Polyurethane upgrades are popular.",
+      "specs": [
+        "Position: Front Axle, Rear",
+        "Mini Part: 31126772299",
+        "PSA Part: 3523.92"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper (R50/R53)", "years": "2001–2006", "notes": "Common failure" },
+            { "name": "Cooper (R56)", "years": "2007–2013", "notes": "Common failure" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "DS3", "years": "2009–2015", "notes": "Identical part" },
+            { "name": "C3", "years": "2002–2015", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207", "years": "2006–2014", "notes": "Identical part" },
+            { "name": "208", "years": "2012–2019", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PSA_PF1"]
+      },
+      "universal_alternatives": [
+        { "name": "Powerflex PFF5-101", "notes": "Polyurethane upgrade" },
+        { "name": "Whiteline KCA426", "notes": "Anti-lift kit" }
+      ]
+    },
+    {
+      "id": "mini_psa_sway_bar_link",
+      "category": "Suspension & Steering",
+      "name": "Front Sway Bar Link",
+      "description": "Connects the sway bar to the strut. Ball joints wear out causing clunking over bumps.",
+      "specs": [
+        "Length: 298mm (approx)",
+        "Thread: M10x1.5",
+        "Mini Part: 31356778831",
+        "PSA Part: 5087.57"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper (R50/R53)", "years": "2001–2006", "notes": "Direct fit" },
+            { "name": "Cooper (R56)", "years": "2007–2013", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Citroën",
+          "models": [
+            { "name": "C3 / DS3", "years": "2002–2015", "notes": "Identical part" },
+            { "name": "C4", "years": "2004–2011", "notes": "Identical part" }
+          ]
+        },
+        {
+          "make": "Peugeot",
+          "models": [
+            { "name": "207 / 208", "years": "2006–2019", "notes": "Identical part" },
+            { "name": "307 / 308", "years": "2001–2013", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PSA_PF1", "PSA_PF2"]
+      },
+      "universal_alternatives": [
+        { "name": "Meyle HD Link", "notes": "Reinforced ball joints" },
+        { "name": "Lemforder Link", "notes": "OEM Quality" }
+      ]
+    }
+  ]
+}

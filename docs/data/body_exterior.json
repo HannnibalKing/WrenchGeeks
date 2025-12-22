@@ -1,0 +1,109 @@
+{
+  "parts": [
+    {
+      "id": "door_lock_actuator_vag",
+      "category": "Body & Exterior",
+      "name": "Door Lock Actuator (Front)",
+      "description": "The electromechanical door latch assembly. Known for microswitch failure (window doesn't drop, interior lights don't turn on).",
+      "specs": [
+        "Pins: 9-pin connector",
+        "Porsche Part: 8N1 837 015 (Left) / 8N1 837 016 (Right)",
+        "VW Part: 3B1 837 015 A (Left) / 3B1 837 016 A (Right)"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Direct fit (VW part is identical)" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Direct fit (VW part is identical)" }
+          ]
+        },
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf (Mk4)", "years": "1999–2005", "notes": "Identical part" },
+            { "name": "Jetta (Mk4)", "years": "1999–2005", "notes": "Identical part" },
+            { "name": "Passat (B5)", "years": "1998–2005", "notes": "Identical part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VW_MK4", "VAG_PL45"]
+      },
+      "universal_alternatives": [
+        { "name": "Dorman Door Lock Actuator", "notes": "Aftermarket replacement" },
+        { "name": "VEMO Actuator", "notes": "OEM quality replacement" }
+      ]
+    },
+    {
+      "id": "frunk_struts_996",
+      "category": "Body & Exterior",
+      "name": "Front Hood (Frunk) Gas Struts",
+      "description": "Gas dampers that hold the front hood open. When they fail, the hood falls on your head.",
+      "specs": [
+        "Length: 245mm (approx)",
+        "Force: 460N",
+        "Part Number: 996 511 551 01"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Direct fit" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Direct fit" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Stabilus SG406023", "notes": "OEM Supplier (Made in Germany)" },
+        { "name": "Monroe Max-Lift", "notes": "Budget alternative" }
+      ]
+    },
+    {
+      "id": "engine_lid_struts_996",
+      "category": "Body & Exterior",
+      "name": "Rear Engine Lid Gas Struts",
+      "description": "Gas dampers for the rear engine cover. Different pressure ratings for standard decklid vs. Aerokit/Turbo wings.",
+      "specs": [
+        "Standard Force: 380N",
+        "Aerokit/Turbo Force: 560N (Heavier)",
+        "Part Number: 996 512 551 03"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Check wing weight for correct pressure" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Stabilus SG406024", "notes": "Standard pressure" },
+        { "name": "Stabilus SG406025", "notes": "Heavy duty (for wings)" }
+      ]
+    },
+    {
+      "id": "door_check_strap_996",
+      "category": "Body & Exterior",
+      "name": "Door Check Strap (Stop)",
+      "description": "The mechanism that holds the door open at detents. Failure causes clicking/popping noises or the door swinging freely.",
+      "specs": [
+        "Part Number: 996 537 161 00",
+        "Mounting: 2 bolts to door, 1 pin to pillar"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 Carrera (996)", "years": "1999–2005", "notes": "Common failure item" },
+            { "name": "Boxster (986)", "years": "1997–2004", "notes": "Common failure item" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Meyle Door Check", "notes": "Reinforced design" },
+        { "name": "URO Parts", "notes": "Budget replacement" }
+      ]
+    }
+  ]
+}
