@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let relationships = { engines: {}, platforms: {} };
     let printingData = {};
 
-    Promise.all(dataFiles.map(file => fetch(file).then(resp => {
+    Promise.all(dataFiles.map(file => fetch(`${file}?v=${new Date().getTime()}`).then(resp => {
             if (!resp.ok) throw new Error(`Failed to load ${file}: ${resp.status}`);
             return resp.json();
         }).catch(err => { throw new Error(`Fetch error for ${file}: ${err.message}`); })))
@@ -220,7 +220,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(err => {
             console.error('Error loading data:', err);
-            resultsSection.innerHTML = `<div class="card" style="border-left: 4px solid red;"><h3>⚠️ Data Load Error</h3><p>Could not load the database. Please check your internet connection or try refreshing.</p><p>Details: ${err.message}</p></div>`;
+            resultsSection.innerHTML = `<div class="card" style="border-left: 4px solid red;">
+                <h3>⚠️ Data Load Error</h3>
+                <p>Could not load the database. Please check your internet connection or try refreshing.</p>
+                <p><strong>Tip:</strong> Try a Hard Refresh (Ctrl+F5 or Cmd+Shift+R) to clear old data.</p>
+                <p>Details: ${err.message}</p>
+            </div>`;
             resultsSection.classList.remove('hidden');
             if (makeLoadStatus) makeLoadStatus.textContent = 'Error loading data';
         });
