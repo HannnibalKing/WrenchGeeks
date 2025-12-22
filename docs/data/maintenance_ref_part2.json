@@ -1,0 +1,118 @@
+{
+  "parts": [
+    {
+      "id": "toyota_sllc_coolant",
+      "category": "Fluids",
+      "name": "Toyota Super Long Life Coolant (Pink)",
+      "description": "The 'Pink Stuff'. Do NOT mix this with standard green coolant or even the older Toyota Red. It is a pre-mixed phosphated OAT coolant designed for aluminum engines.",
+      "specs": [
+        "Color: Pink (Pre-mixed)",
+        "Lifespan: 100,000 miles",
+        "Do not add water"
+      ],
+      "compatibility": [
+        { "make": "Toyota", "models": [{ "name": "All Models", "years": "2004-Present", "notes": "Mandatory" }] },
+        { "make": "Lexus", "models": [{ "name": "All Models", "years": "2004-Present", "notes": "Mandatory" }] },
+        { "make": "Scion", "models": [{ "name": "All Models", "years": "2004-2016", "notes": "Mandatory" }] }
+      ],
+      "compatibility_smart": { "platforms": [] }
+    },
+    {
+      "id": "bmw_chf11s",
+      "category": "Fluids",
+      "name": "Pentosin CHF 11S",
+      "description": "The 'Green Gold'. BMW power steering systems use this hydraulic fluid. Putting standard red ATF in a BMW power steering reservoir will destroy the pump and rack seals.",
+      "specs": [
+        "Color: Green",
+        "Type: Synthetic Hydraulic Fluid",
+        "Can: Green Metal Tin"
+      ],
+      "compatibility": [
+        { "make": "BMW", "models": [{ "name": "E36 / E46 / E39 / E90", "years": "1990-2012", "notes": "Mandatory (Check Cap)" }] },
+        { "make": "Mini", "models": [{ "name": "Cooper (R50/R53)", "years": "2002-2006", "notes": "Mandatory for EHPS" }] },
+        { "make": "Volkswagen", "models": [{ "name": "Golf / Jetta (Mk4+)", "years": "1999-Present", "notes": "Mandatory" }] }
+      ],
+      "compatibility_smart": { "platforms": ["BMW_E36", "BMW_E46", "MINI_R50_R53", "VOLKSWAGEN_GOLF__A4___MK4_"] }
+    },
+    {
+      "id": "mazda_motorcraft_xtm5qs",
+      "category": "Fluids",
+      "name": "Motorcraft XT-M5-QS",
+      "description": "The 'Unicorn Juice'. Ironically, the best transmission fluid for a Mazda Miata is made by Ford. It is legendary for curing cold-shift stiffness and notchiness in Aisin manual transmissions.",
+      "specs": [
+        "Full Synthetic Manual Transmission Fluid",
+        "75W-90 GL-4",
+        "Expensive but worth it"
+      ],
+      "compatibility": [
+        { "make": "Mazda", "models": [{ "name": "MX-5 Miata (NA/NB/NC)", "years": "1990-2015", "notes": "The Holy Grail Fluid" }] },
+        { "make": "Ford", "models": [{ "name": "Focus SVT", "years": "2002-2004", "notes": "Recommended" }] }
+      ],
+      "compatibility_smart": { "platforms": ["MAZDA_MIATA_NA", "MAZDA_MIATA_NB"] }
+    },
+    {
+      "id": "vw_g12_coolant",
+      "category": "Fluids",
+      "name": "VW G12 / G13 Coolant",
+      "description": "The 'Forbidden Jello'. VW coolant (Pink/Violet) reacts with standard green coolant to form a thick brown sludge that clogs heater cores and radiators. Never mix them.",
+      "specs": [
+        "Color: Pink (G12) or Violet (G12++/G13)",
+        "Silicate-free",
+        "Must be mixed with distilled water (unless pre-mixed)"
+      ],
+      "compatibility": [
+        { "make": "Volkswagen", "models": [{ "name": "All Models", "years": "1997-Present", "notes": "Mandatory" }] },
+        { "make": "Audi", "models": [{ "name": "All Models", "years": "1997-Present", "notes": "Mandatory" }] }
+      ],
+      "compatibility_smart": { "platforms": [] }
+    },
+    {
+      "id": "chrysler_atf_plus_4",
+      "category": "Fluids",
+      "name": "Mopar ATF+4",
+      "description": "Chrysler transmissions are notoriously picky. Using Dexron or Mercon in a Dodge/Jeep transmission causes shudder and failure. ATF+4 is a full synthetic fluid designed specifically for their clutch materials.",
+      "specs": [
+        "Full Synthetic",
+        "Red Color",
+        "Backwards compatible with ATF+3"
+      ],
+      "compatibility": [
+        { "make": "Dodge", "models": [{ "name": "Ram / Dakota / Durango", "years": "2000-Present", "notes": "Mandatory" }] },
+        { "make": "Jeep", "models": [{ "name": "Wrangler / Cherokee", "years": "2000-Present", "notes": "Mandatory" }] },
+        { "make": "Chrysler", "models": [{ "name": "300 / Sebring", "years": "2000-Present", "notes": "Mandatory" }] }
+      ],
+      "compatibility_smart": { "platforms": ["DAIMLER_CHRYSLER_LX", "JEEP_WRANGLER__TJ_", "JEEP_WRANGLER_JK"] }
+    },
+    {
+      "id": "nissan_cvt_ns2",
+      "category": "Fluids",
+      "name": "Nissan CVT Fluid (NS-2 / NS-3)",
+      "description": "The 'CVT Killer'. Nissan CVTs are fragile. Using generic 'Universal CVT Fluid' is a death sentence. You MUST use the specific Green NS-2 (older) or Blue NS-3 (newer) fluid and change it every 30k miles.",
+      "specs": [
+        "NS-2: Green (Older models ~2007-2012)",
+        "NS-3: Blue (Newer models 2013+)",
+        "Do not mix types"
+      ],
+      "compatibility": [
+        { "make": "Nissan", "models": [{ "name": "Altima / Sentra / Rogue", "years": "2007-Present", "notes": "Critical Maintenance Item" }] }
+      ],
+      "compatibility_smart": { "platforms": [] }
+    },
+    {
+      "id": "gm_dexcool",
+      "category": "Fluids",
+      "name": "GM Dex-Cool",
+      "description": "The 'Orange Stuff'. Designed for long life (5 years/150k miles). However, if air enters the system (bad cap/leak), it turns into a rusty sludge. Many owners flush it and switch to Global Yellow/Green.",
+      "specs": [
+        "Color: Orange",
+        "OAT Technology",
+        "Known for intake manifold gasket issues in 3.1/3.4/3.8L engines"
+      ],
+      "compatibility": [
+        { "make": "Chevrolet", "models": [{ "name": "All Models", "years": "1996-Present", "notes": "Standard Fill" }] },
+        { "make": "GMC", "models": [{ "name": "All Models", "years": "1996-Present", "notes": "Standard Fill" }] }
+      ],
+      "compatibility_smart": { "platforms": ["GM_GMT800", "GM_GMT400"] }
+    }
+  ]
+}
