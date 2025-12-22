@@ -162,7 +162,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/universal_parts.json",
         "data/badge_engineering.json",
         "data/global_platforms.json",
-        "data/jdm_euro_legends.json"
+        "data/jdm_euro_legends.json",
+        "data/offroad_legends.json",
+        "data/euro_vag_secrets.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };

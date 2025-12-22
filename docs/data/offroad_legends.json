@@ -1,0 +1,72 @@
+[
+  {
+    "partName": "Jeep XJ/ZJ/TJ Front Axle Swap (Dana 30/44)",
+    "compatibleVehicles": [
+      "Jeep Cherokee XJ (1984-2001)",
+      "Jeep Grand Cherokee ZJ (1993-1998)",
+      "Jeep Wrangler TJ (1997-2006)",
+      "Jeep Wrangler YJ (1987-1995)"
+    ],
+    "years": "1984-2006",
+    "notes": "The High Pinion Dana 30 from XJs (non-disconnect versions) is a direct bolt-in upgrade for TJs and ZJs (which often came with Low Pinion). ZJ V8 tie rods are a massive strength upgrade for XJ/TJ steering. Ford 8.8 rear axles (Explorer) are a common swap for the weak Dana 35 rear.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Toyota Land Cruiser / Lexus LX Interchange",
+    "compatibleVehicles": [
+      "Toyota Land Cruiser 80 Series (1990-1997)",
+      "Lexus LX450 (1996-1997)",
+      "Toyota Land Cruiser 100 Series (1998-2007)",
+      "Lexus LX470 (1998-2007)"
+    ],
+    "years": "1990-2007",
+    "notes": "Lexus LX450 IS a Land Cruiser 80. LX470 IS a Land Cruiser 100. Most mechanical parts (axles, suspension, engine parts) are identical. Lexus versions often have hydraulic suspension (AHC) which can be swapped for standard Land Cruiser coil springs/torsion bars for reliability.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Suzuki Samurai / Sidekick / Geo Tracker Mix",
+    "compatibleVehicles": [
+      "Suzuki Samurai (SJ413)",
+      "Suzuki Sidekick (1989-1998)",
+      "Geo Tracker (1989-1998)",
+      "Suzuki Jimny (JA11/JB23)"
+    ],
+    "years": "1986-1998",
+    "notes": "The 1.6L engine from the Sidekick/Tracker is a popular swap into the Samurai (which has a 1.3L). Requires an adapter plate for the transmission. Sidekick power steering boxes are also a common upgrade for Samurais. Geo Trackers are mechanically identical to Suzuki Sidekicks.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Land Rover Discovery / Defender / Range Rover Classic",
+    "compatibleVehicles": [
+      "Land Rover Discovery 1 (1989-1998)",
+      "Land Rover Defender 90/110 (Pre-2016)",
+      "Range Rover Classic (1970-1996)"
+    ],
+    "years": "1989-1998",
+    "notes": "These three share the same chassis architecture, axles, and suspension design. You can swap differentials (Rover type), suspension springs, and even engines (200Tdi/300Tdi/V8) between them with relative ease. Discovery 1 axles are a cheap source of disc brakes for older Series Land Rovers (with major mods).",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Ford Explorer 8.8 Rear Axle Swap",
+    "compatibleVehicles": [
+      "Ford Explorer (1995-2001)",
+      "Jeep Wrangler YJ/TJ",
+      "Jeep Cherokee XJ"
+    ],
+    "years": "1995-2001",
+    "notes": "The Ford 8.8 rear axle from 95-01 Explorers is legendary. It has 31-spline axles, disc brakes, and is nearly as strong as a Dana 60. It is the go-to swap for Jeeps running 35\"+ tires. Requires welding new spring perches and shock mounts.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Toyota Tacoma / 4Runner / Tundra Brake Upgrade",
+    "compatibleVehicles": [
+      "Toyota 4Runner (3rd Gen 1996-2002)",
+      "Toyota Tacoma (1st Gen 1995-2004)",
+      "Toyota Tundra (1st Gen 1999-2006)",
+      "Toyota Sequoia (1st Gen)"
+    ],
+    "years": "1996-2006",
+    "notes": "The 'Tundra Brake Upgrade' (199mm or 231mm calipers) is a direct bolt-on for 3rd Gen 4Runners and 1st Gen Tacomas. Significantly larger calipers and rotors. 231mm calipers (13WL) require 16\" wheels or larger. Massive stopping power improvement.",
+    "matchLevel": "Match - Direct Fit"
+  }
+]
