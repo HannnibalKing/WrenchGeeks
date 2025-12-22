@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const backButton = document.getElementById('backButton');
     const selectedVehicleName = document.getElementById('selectedVehicleName');
     const makeLoadStatus = document.getElementById('makeLoadStatus');
+    const subsystemSelect = document.getElementById('subsystemSelect');
 
     const dataFiles = [
         'data/relationships.json',
@@ -157,7 +158,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let relationships = { engines: {}, platforms: {} };
     let printingData = {};
 
-    Promise.all(dataFiles.map(file => fetch(file).then(resp => resp.json())))
+    Promise.all(dataFiles.map(file => fetch(file).then(resp => {
+            if (!resp.ok) throw new Error(`Failed to load ${file}: ${resp.status}`);
+            return resp.json();
+        })))
         .then(allData => {
             const relationshipData = allData.find(d => d.platforms || d.engines);
             if (relationshipData) {
@@ -203,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             buildIndex(partsData);
             populateMakes();
+            populateSubsystems();
             if (makeLoadStatus) {
                 const totalMakes = Object.keys(vehicleIndex).length;
                 makeLoadStatus.textContent = totalMakes > 0 ? `Loaded ${totalMakes} makes` : 'No makes loaded';
@@ -212,6 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error loading data:', err);
             resultsSection.innerHTML = `<div class="card" style="border-left: 4px solid red;"><h3>⚠️ Data Load Error</h3><p>Could not load the database. Please check your internet connection or try refreshing.</p><p>Details: ${err.message}</p></div>`;
             resultsSection.classList.remove('hidden');
+            if (makeLoadStatus) makeLoadStatus.textContent = 'Error loading data';
         });
 
     function buildIndex(parts) {
@@ -287,6 +293,33 @@ document.addEventListener('DOMContentLoaded', () => {
         if (makeLoadStatus) {
             makeLoadStatus.textContent = makes.length > 0 ? `Loaded ${makes.length} makes` : 'No makes loaded';
         }
+        if (subsystemSelect) subsystemSelect.disabled = false;
+    }
+
+    const subsystemOptions = [
+        '3D Printing',
+        'Body Exterior',
+        'Body Interior',
+        'Brakes',
+        'Cooling/HVAC',
+        'Drivetrain',
+        'Electrical/Sensors',
+        'Engine Mechanical',
+        'Fuel System',
+        'Suspension/Steering'
+    ];
+
+    let activeSubsystem = '';
+
+    function populateSubsystems() {
+        if (!subsystemSelect) return;
+        subsystemSelect.innerHTML = '<option value="">All subsystems</option>';
+        subsystemOptions.forEach(name => {
+            const option = document.createElement('option');
+            option.value = name;
+            option.textContent = name;
+            subsystemSelect.appendChild(option);
+        });
     }
 
     let activeBuildFilter = null; // placeholder (unused now)
@@ -323,6 +356,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    if (subsystemSelect) {
+        subsystemSelect.addEventListener('change', () => {
+            activeSubsystem = subsystemSelect.value || '';
+            const make = makeSelect.value;
+            const model = modelSelect.value;
+            if (make && model) {
+                showPartsForVehicle(make, model);
+            }
+        });
+    }
+
     function showPartsForVehicle(make, model) {
         const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
         selectedVehicleName.textContent = `${make} ${model}`;
@@ -337,10 +381,19 @@ document.addEventListener('DOMContentLoaded', () => {
         displayTips(make, model);
         display3DPrints(vehicleAttrs.platformId);
 
-        if (parts && parts.length > 0) {
+        let filteredParts = parts;
+
+        if (activeSubsystem) {
+            filteredParts = parts.filter(part => {
+                const cat = (part.category || '').toLowerCase();
+                return cat.includes(activeSubsystem.toLowerCase());
+            });
+        }
+
+        if (filteredParts && filteredParts.length > 0) {
             // Calculate scores for all parts
             
-            const scoredParts = parts.map(part => {
+            const scoredParts = filteredParts.map(part => {
                 const scoreData = compatibilityEngine ? compatibilityEngine.calculateScore(part, vehicleAttrs, make, model) : { total: 0, breakdown: {} };
                 const risk = compatibilityEngine ? compatibilityEngine.getRiskLevel(scoreData.total) : { level: "Unknown", color: "grey" };
                 return { part, score: scoreData.total, risk };
