@@ -171,10 +171,41 @@ document.addEventListener('DOMContentLoaded', () => {
             partsData = allData.filter(d => d.parts).flatMap(d => d.parts);
             tipsData = allData.filter(d => d.tips).flatMap(d => d.tips);
 
+            // Populate index from Relationships (so all vehicles appear, even without parts)
+            if (relationships.platforms) {
+                Object.values(relationships.platforms).flat().forEach(v => {
+                    addToIndex(v.make, [v], null); // Pass null as part to just register the vehicle
+                });
+            }
+            if (relationships.engines) {
+                Object.values(relationships.engines).flat().forEach(v => {
+                    addToIndex(v.make, [v], null);
+                });
+            }
+
+            // Populate index from 3D Printing Data
+            if (printingData) {
+                Object.keys(printingData).forEach(key => {
+                    // Try to find which platform this key corresponds to in relationships
+                    // This is tricky because keys like "MAZDA_NA_NB" might not match exactly if not defined in relationships
+                    // But let's try to map them if possible, or just rely on the fact that they should be in relationships.
+                    // Actually, let's just ensure the vehicles for these keys are in the index.
+                    
+                    // If the key exists in relationships.platforms, add those vehicles
+                    if (relationships.platforms && relationships.platforms[key]) {
+                         relationships.platforms[key].forEach(v => addToIndex(v.make, [v], null));
+                    }
+                });
+            }
+
             buildIndex(partsData);
             populateMakes();
         })
-        .catch(err => console.error('Error loading data:', err));
+        .catch(err => {
+            console.error('Error loading data:', err);
+            resultsSection.innerHTML = `<div class="card" style="border-left: 4px solid red;"><h3>⚠️ Data Load Error</h3><p>Could not load the database. Please check your internet connection or try refreshing.</p><p>Details: ${err.message}</p></div>`;
+            resultsSection.classList.remove('hidden');
+        });
 
     function buildIndex(parts) {
         parts.forEach(part => {
@@ -215,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
         models.forEach(model => {
             const modelName = model.name || model.model;
             if (!vehicleIndex[make][modelName]) vehicleIndex[make][modelName] = [];
-            if (!vehicleIndex[make][modelName].includes(part)) {
+            if (part && !vehicleIndex[make][modelName].includes(part)) {
                 vehicleIndex[make][modelName].push(part);
             }
         });
