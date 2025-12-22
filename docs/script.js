@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedVehicleName = document.getElementById('selectedVehicleName');
     const makeLoadStatus = document.getElementById('makeLoadStatus');
     const subsystemSelect = document.getElementById('subsystemSelect');
+    const searchButton = document.getElementById('searchButton');
 
     const dataFiles = [
         'data/relationships.json',
@@ -338,6 +339,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedMake = makeSelect.value;
         modelSelect.innerHTML = '<option value="">-- Select Model --</option>';
         modelSelect.disabled = true;
+        if (subsystemSelect) subsystemSelect.disabled = true;
+        if (searchButton) searchButton.disabled = true;
         resultsSection.classList.add('hidden');
         partDetailsSection.classList.add('hidden');
         if (donorList) donorList.classList.add('hidden');
@@ -360,8 +363,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const model = modelSelect.value;
         
         if (make && model) {
-            showPartsForVehicle(make, model);
+            if (subsystemSelect) subsystemSelect.disabled = false;
+            if (searchButton) searchButton.disabled = false;
         } else {
+            if (subsystemSelect) subsystemSelect.disabled = true;
+            if (searchButton) searchButton.disabled = true;
             resultsSection.classList.add('hidden');
         }
     });
@@ -369,6 +375,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (subsystemSelect) {
         subsystemSelect.addEventListener('change', () => {
             activeSubsystem = subsystemSelect.value || '';
+        });
+    }
+
+    if (searchButton) {
+        searchButton.addEventListener('click', () => {
             const make = makeSelect.value;
             const model = modelSelect.value;
             if (make && model) {

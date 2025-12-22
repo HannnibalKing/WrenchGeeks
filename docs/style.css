@@ -164,6 +164,31 @@ select:disabled {
     color: var(--background);
 }
 
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-primary:disabled {
+    background-color: var(--border);
+    color: var(--secondary);
+    cursor: not-allowed;
+}
+
 .details-grid {
     display: grid;
     grid-template-columns: 1fr;
