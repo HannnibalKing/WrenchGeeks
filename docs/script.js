@@ -242,12 +242,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function addToIndex(make, models, part) {
-        if (!vehicleIndex[make]) vehicleIndex[make] = {};
+        if (!make) return;
+        const cleanMake = make.trim();
+        
+        if (!vehicleIndex[cleanMake]) vehicleIndex[cleanMake] = {};
+        
         models.forEach(model => {
-            const modelName = model.name || model.model;
-            if (!vehicleIndex[make][modelName]) vehicleIndex[make][modelName] = [];
-            if (part && !vehicleIndex[make][modelName].includes(part)) {
-                vehicleIndex[make][modelName].push(part);
+            const rawName = model.name || model.model;
+            if (!rawName) return;
+            const modelName = rawName.trim();
+
+            if (!vehicleIndex[cleanMake][modelName]) vehicleIndex[cleanMake][modelName] = [];
+            if (part && !vehicleIndex[cleanMake][modelName].includes(part)) {
+                vehicleIndex[cleanMake][modelName].push(part);
             }
         });
     }
@@ -261,7 +268,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function populateMakes() {
         const makes = Object.keys(vehicleIndex).sort();
+        makeSelect.innerHTML = '<option value="">-- Select Make --</option>';
         makes.forEach(make => {
+            if (!make) return;
             const option = document.createElement('option');
             option.value = make;
             option.textContent = make;
@@ -535,8 +544,52 @@ document.addEventListener('DOMContentLoaded', () => {
         resultsSection.classList.remove('hidden');
     });
 
+    // Build Guide Data
+    const buildGuides = {
+        'safari': {
+            title: "Porsche 911 Safari Build",
+            description: "The ultimate go-anywhere sports car. Key mods include long-travel suspension, A/T tires, skid plates, and rally lighting. Best donors are G-Series (SC/Carrera) or 964 models."
+        },
+        'exocet': {
+            title: "Exomotive Exocet Build",
+            description: "A lightweight tube-frame kit car that uses Mazda Miata (NA/NB) running gear. You strip the body off a Miata and bolt the Exocet chassis to the subframes."
+        },
+        'goblin': {
+            title: "DF Goblin Build",
+            description: "Mid-engine kit car using a Chevrolet Cobalt donor. Requires stripping the Cobalt wiring harness and powertrain."
+        },
+        'barra': {
+            title: "Ford Barra Swap",
+            description: "Australia's 2JZ. The Ford Barra 4.0L I6 is a torque monster capable of 1000hp on stock internals. Common donors: Falcon XR6 Turbo, Territory."
+        },
+        'kswap': {
+            title: "Honda K-Swap",
+            description: "The modern standard for 4-cylinder swaps. K20/K24 engines offer high revs and reliability. Best donors: RSX Type-S, Civic Si, TSX."
+        },
+        'ls_swap': {
+            title: "LS Swap (The World)",
+            description: "The answer to everything. Cheap, reliable V8 power. Truck engines (5.3L/6.0L) from Silverados/Tahoes are the budget choice; LS1/LS3 from Corvettes are premium."
+        },
+        'rally_lancia': {
+            title: "Lancia Delta Integrale Rally Spec",
+            description: "Restoring or modifying the rally legend. Focus on cooling, suspension reinforcement, and period-correct wheels."
+        },
+        'rally_ford': {
+            title: "Ford Escort RS Cosworth Rally Spec",
+            description: "The whale-tail icon. Maintenance is key (YB Cosworth engine). Look for Group A parts and upgraded turbos."
+        },
+        'kei_sport': {
+            title: "Kei Car Sports Modding",
+            description: "Tiny turbo fun. AZ-1, Beat, Cappuccino. Focus on F6A/K6A engine tuning, suspension stiffening, and weight reduction."
+        }
+    };
+
     // Quick Build Handler
     const quickBuildSelect = document.getElementById('quickBuildSelect');
+    const buildGuideBanner = document.getElementById('buildGuideBanner');
+    const buildGuideTitle = document.getElementById('buildGuideTitle');
+    const buildGuideText = document.getElementById('buildGuideText');
+
     if (quickBuildSelect) {
         quickBuildSelect.addEventListener('change', (e) => {
             const build = e.target.value;
@@ -546,7 +599,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 activeBuildFilter = null;
                 makeSelect.value = "";
                 makeSelect.dispatchEvent(new Event('change'));
+                if(buildGuideBanner) buildGuideBanner.classList.add('hidden');
                 return;
+            }
+
+            // Show Build Guide
+            if (buildGuides[build] && buildGuideBanner) {
+                buildGuideTitle.textContent = buildGuides[build].title;
+                buildGuideText.textContent = buildGuides[build].description;
+                buildGuideBanner.classList.remove('hidden');
             }
 
             let targetMake = "";
@@ -583,6 +644,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
                 case 'rally_ford':
                     targetMake = "Ford";
+                    filterKeywords = ["Escort", "Sierra", "Focus RS"];
+                    break;
+                case 'kei_sport':
+                    targetMake = "Suzuki"; // Broaden to Suzuki for Cappuccino/Alto
+                    filterKeywords = ["Cappuccino", "Alto", "Jimny"];
+                    break;
+            }
+
+            if (targetMake) {
+                // Set Global Filter
+                activeBuildFilter = { make: targetMake, keywords: filterKeywords };
+
+                // Trigger Make Selection
+                makeSelect.value = targetMake;
+                // If the make exists in the list, trigger change to filter models
+                if (makeSelect.value === targetMake) {
+                    makeSelect.dispatchEvent(new Event('change'));
+                } else {
+                    // Fallback if make not found (e.g. "Lancia" might not be in top level if no parts yet, 
+                    // but we fixed populateMakes to include all relationships)
+                    console.warn(`Make ${targetMake} not found in dropdown`);
+                }
+            }
+        });
+    }
+});
                     filterKeywords = ["Escort", "Sierra", "Focus RS"];
                     break;
                 case 'kei_sport':
