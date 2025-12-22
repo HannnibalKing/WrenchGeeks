@@ -268,10 +268,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function populateMakes() {
-        // Filter makes to only those that have models with parts
-        const makes = Object.keys(vehicleIndex).filter(make => {
-            return Object.keys(vehicleIndex[make]).some(model => hasContent(make, model));
-        }).sort();
+        // Show ALL makes, even if they don't have parts yet
+        const makes = Object.keys(vehicleIndex).sort();
 
         makeSelect.innerHTML = "<option value=\"\">-- Select Make --</option>";
         makes.forEach(make => {
@@ -335,9 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (donorList) donorList.classList.add("hidden");
 
         if (selectedMake && vehicleIndex[selectedMake]) {
-            let models = Object.keys(vehicleIndex[selectedMake])
-                .filter(model => hasContent(selectedMake, model))
-                .sort();
+            let models = Object.keys(vehicleIndex[selectedMake]).sort();
             
             models.forEach(model => {
                 const option = document.createElement("option");
@@ -516,8 +512,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
             console.log("Parts found in index:", parts ? parts.length : 0);
             
-            if (!parts) {
-                partsList.innerHTML = "<p>No compatible parts found in catalog.</p>";
+            if (!parts || parts.length === 0) {
+                partsList.innerHTML = `
+                    <div class="card" style="border-left: 4px solid var(--accent-color);">
+                        <h3>🚧 Catalog Update Pending</h3>
+                        <p>We have this vehicle in our registry, but we haven't indexed any compatible parts for it yet.</p>
+                        <p>Check back soon as we continue to expand our interchange database.</p>
+                    </div>`;
                 return;
             }
 
