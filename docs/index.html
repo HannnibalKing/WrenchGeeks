@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WrenchGeeks - The Garage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.v2.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div style="display:flex; align-items:center; gap:1rem;">
-                <h1 style="margin:0;">WrenchGeeks 🔧</h1>
-                <span class="badge" style="background:#333; color:#aaa; font-weight:normal;">PART INTERCHANGE CATALOG</span>
-            </div>
-            <div style="flex-grow:1; max-width:400px; margin-left:2rem;">
-                <input type="text" placeholder="Search by Part Number or Keyword..." style="background:#333; border:1px solid #555; color:white; padding:0.5rem; width:100%; border-radius:4px;" disabled>
-            </div>
+        <div class="container" style="justify-content: center; display: flex;">
+            <h1 style="margin:0;">WrenchGeeks 🔧</h1>
         </div>
     </header>
 
@@ -38,9 +32,9 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="yearSelect">Year</label>
+                    <label for="yearSelect">Generation</label>
                     <select id="yearSelect" disabled>
-                        <option value="">-- Select Year --</option>
+                        <option value="">-- Select Generation --</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -115,6 +109,6 @@
         </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.v2.js"></script>
 </body>
 </html>

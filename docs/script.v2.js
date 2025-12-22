@@ -193,7 +193,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     ? `Loaded ${totalMakes} makes / ${totalModels} models / ${totalParts} parts`
                     : "No makes loaded";
             }
-            console.info("Data loaded", { totalMakes, totalModels, totalParts });
         })
         .catch(err => {
             console.error("Error loading data:", err);
@@ -266,6 +265,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }, {});
     }
 
+    let modelGroups = {}; // Store grouped models
+
     function populateMakes() {
         // Show ALL makes, even if they don't have parts yet
         const makes = Object.keys(vehicleIndex).sort();
@@ -323,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const selectedMake = makeSelect.value;
         modelSelect.innerHTML = "<option value=\"\">-- Select Model --</option>";
         modelSelect.disabled = true;
-        yearSelect.innerHTML = "<option value=\"\">-- Select Year --</option>";
+        yearSelect.innerHTML = "<option value=\"\">-- Select Generation --</option>";
         yearSelect.disabled = true;
         if (subsystemSelect) subsystemSelect.disabled = true;
         if (searchButton) searchButton.disabled = true;
@@ -332,12 +333,108 @@ document.addEventListener("DOMContentLoaded", () => {
         if (donorList) donorList.classList.add("hidden");
 
         if (selectedMake && vehicleIndex[selectedMake]) {
-            let models = Object.keys(vehicleIndex[selectedMake]).sort();
+            // Group models by Base Name
+            modelGroups = {};
+            const rawModels = Object.keys(vehicleIndex[selectedMake]).sort();
             
-            models.forEach(model => {
+            // Pass 1: Identify Canonical Base Models from "Name (Gen)" pattern
+            const canonicalBases = new Set();
+            
+            // Define explicit aliases to force grouping
+            const modelAliases = {
+                "Civic Si": "Civic",
+                "Civic Type R": "Civic",
+                "Impreza WRX": "Impreza / WRX",
+                "Impreza WRX STI": "Impreza / WRX",
+                "Impreza WRX/STI": "Impreza / WRX",
+                "WRX": "Impreza / WRX",
+                "WRX STI": "Impreza / WRX",
+                "WRX / STI": "Impreza / WRX",
+                "Impreza": "Impreza / WRX",
+                "Mustang GT": "Mustang",
+                "Mustang SVT Cobra": "Mustang",
+                "Shelby GT350": "Mustang",
+                "F-150": "F-Series",
+                "F-250": "F-Series",
+                "F-350": "F-Series",
+                "Silverado 1500": "Silverado",
+                "Sierra 1500": "Sierra",
+                "M3": "3-Series",
+                "M5": "5-Series",
+                "S4": "A4",
+                "RS4": "A4",
+                "S6": "A6",
+                "RS6": "A6",
+                "Golf R": "Golf",
+                "Golf GTI": "Golf",
+                "Golf R32": "Golf",
+                "Jetta GLI": "Jetta",
+                "Focus ST": "Focus",
+                "Focus RS": "Focus",
+                "Fiesta ST": "Fiesta",
+                "Lancer Evolution": "Lancer Evo",
+                "GR Supra": "Supra",
+                "S60": "S60 / V70",
+                "V70": "S60 / V70",
+                "S60 R / V70 R": "S60 / V70",
+                "S60R / V70R": "S60 / V70"
+            };
+
+            rawModels.forEach(fullModelName => {
+                // Match "Name (Gen)" OR "Name Gen X"
+                const match = fullModelName.match(/^(.*?)\s*\(.*\)$/);
+                if (match) {
+                    let base = match[1].trim();
+                    // Check alias
+                    if (modelAliases[base]) base = modelAliases[base];
+                    canonicalBases.add(base);
+                } else {
+                    // Check for "F-150 Gen 1" style without parens if any
+                    // But our data uses parens mostly.
+                    // Check if it matches an alias directly
+                    if (modelAliases[fullModelName]) {
+                        canonicalBases.add(modelAliases[fullModelName]);
+                    }
+                }
+            });
+
+            // Pass 2: Group models
+            rawModels.forEach(fullModelName => {
+                let baseName = fullModelName;
+                const match = fullModelName.match(/^(.*?)\s*\(.*\)$/);
+                
+                if (match) {
+                    baseName = match[1].trim();
+                } else {
+                    // Try to match orphans to canonical bases
+                    // e.g. "E36 3-series" -> "3-Series"
+                    // Sort bases by length desc to match "911 Carrera" before "911"
+                    const sortedBases = Array.from(canonicalBases).sort((a, b) => b.length - a.length);
+                    const normalize = s => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+                    const normalizedFull = normalize(fullModelName);
+                    
+                    for (const base of sortedBases) {
+                        const normalizedBase = normalize(base);
+                        if (normalizedFull.includes(normalizedBase)) {
+                            baseName = base;
+                            break;
+                        }
+                    }
+                }
+
+                // Apply Alias Check again for the final baseName
+                if (modelAliases[baseName]) baseName = modelAliases[baseName];
+                
+                if (!modelGroups[baseName]) modelGroups[baseName] = [];
+                modelGroups[baseName].push(fullModelName);
+            });
+
+            const baseModels = Object.keys(modelGroups).sort();
+            
+            baseModels.forEach(baseName => {
                 const option = document.createElement("option");
-                option.value = model;
-                option.textContent = model;
+                option.value = baseName;
+                option.textContent = baseName;
                 modelSelect.appendChild(option);
             });
             modelSelect.disabled = false;
@@ -346,14 +443,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     modelSelect.addEventListener("change", () => {
         const make = makeSelect.value;
-        const model = modelSelect.value;
+        const baseModel = modelSelect.value;
         
-        yearSelect.innerHTML = "<option value=\"\">-- Select Year --</option>";
+        yearSelect.innerHTML = "<option value=\"\">-- Select Generation --</option>";
         yearSelect.disabled = true;
         if (searchButton) searchButton.disabled = true;
 
-        if (make && model) {
-            populateYears(make, model);
+        if (make && baseModel && modelGroups[baseModel]) {
+            populateGenerations(make, baseModel);
         } else {
             resultsSection.classList.add("hidden");
         }
@@ -361,10 +458,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     yearSelect.addEventListener("change", () => {
         const make = makeSelect.value;
-        const model = modelSelect.value;
-        const year = yearSelect.value;
+        const generation = yearSelect.value; // This is now the Full Model Name
 
-        if (make && model && year) {
+        if (make && generation) {
             if (subsystemSelect) subsystemSelect.disabled = false;
             if (searchButton) searchButton.disabled = false;
         } else {
@@ -373,109 +469,103 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    function populateYears(make, model) {
-        // Find the vehicle definition to get the year range
-        let yearRange = null;
-        
-        const normalize = (str) => str.toLowerCase().replace(/[^a-z0-9]/g, "");
-        const target = normalize(model);
+    function populateGenerations(make, baseModel) {
+        try {
+            const variants = modelGroups[baseModel];
+            
+            // Create objects with sortable data
+            const variantObjects = variants.map(fullModelName => {
+                let yearRange = null;
+                let startYear = 9999;
+                
+                if (compatibilityEngine) {
+                    const attrs = compatibilityEngine.getVehicleAttributes(make, fullModelName);
+                    yearRange = attrs.yearRange;
+                    if (yearRange) {
+                        const match = yearRange.match(/(\d{4})/);
+                        if (match) startYear = parseInt(match[1]);
+                    }
+                }
+                
+                return {
+                    fullModelName,
+                    yearRange,
+                    startYear
+                };
+            });
 
-        const findMatch = (collection) => {
-            if (!collection) return null;
-            for (const vehicles of Object.values(collection)) {
-                // Try exact match first, then fuzzy
-                const match = vehicles.find(v => {
-                    if (v.make !== make) return false;
-                    const vName = normalize(v.model || v.name);
-                    return vName === target || vName.includes(target) || target.includes(vName);
-                });
-                if (match && match.years) return match.years;
-            }
-            return null;
-        };
+            // Sort by Start Year, then Alpha
+            variantObjects.sort((a, b) => {
+                if (a.startYear !== b.startYear) return a.startYear - b.startYear;
+                return a.fullModelName.localeCompare(b.fullModelName);
+            });
 
-        // Check platforms first
-        yearRange = findMatch(relationships.platforms);
-        
-        // Check engines if not found
-        if (!yearRange) {
-            yearRange = findMatch(relationships.engines);
-        }
+            yearSelect.innerHTML = "<option value=\"\">-- Select Generation --</option>";
 
-        yearSelect.innerHTML = "<option value=\"\">-- Select Year --</option>"; // Reset
-
-        if (yearRange) {
-            const years = parseYearRange(yearRange);
-            years.sort((a, b) => b - a); // Descending
-            years.forEach(y => {
+            variantObjects.forEach(obj => {
+                const { fullModelName, yearRange } = obj;
                 const option = document.createElement("option");
-                option.value = y;
-                option.textContent = y;
+                option.value = fullModelName; 
+                
+                // Display Text: Try to extract the generation info inside parens
+                // "911 Carrera (996.1 - 5th Gen)" -> "996.1 - 5th Gen"
+                const match = fullModelName.match(/\((.*?)\)$/);
+                let displayText = "";
+
+                if (match) {
+                    displayText = match[1];
+                } else {
+                    // It's an orphan (e.g. "E36 3-series") grouped under "3-Series"
+                    // Try to remove the base model name to clean it up
+                    // "E36 3-series" - "3-Series" -> "E36"
+                    const normalize = s => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+                    const normBase = normalize(baseModel);
+                    const normFull = normalize(fullModelName);
+                    
+                    if (normFull.includes(normBase) && normFull !== normBase) {
+                        // This is a bit tricky to do cleanly with regex without strict delimiters
+                        // Just show the full name for now, it's safer than showing "E36" if we strip wrong
+                        displayText = fullModelName;
+                    } else {
+                        displayText = fullModelName;
+                    }
+                }
+                
+                // If the display text is just the same as base model (no parens), show "Standard / All Years"
+                if (displayText === baseModel) displayText = "Standard / All Years";
+
+                // Try to find year range from relationships to append if not present
+                let yearInfo = "";
+                if (yearRange && !displayText.includes(yearRange)) {
+                    yearInfo = ` (${yearRange})`;
+                }
+
+                option.textContent = `${displayText}${yearInfo}`;
                 yearSelect.appendChild(option);
             });
+            
             yearSelect.disabled = false;
-        } else {
-            // Fallback: If we can't find the years in relationships.json, 
-            // try to infer from the parts data itself for this model
-            const inferredYears = new Set();
-            if (vehicleIndex[make] && vehicleIndex[make][model]) {
-                vehicleIndex[make][model].forEach(part => {
-                    if (part.compatibility) {
-                        part.compatibility.forEach(c => {
-                            if (c.make === make) {
-                                c.models.forEach(m => {
-                                    if ((m.name === model || m.name.includes(model)) && m.years) {
-                                        parseYearRange(m.years).forEach(y => inferredYears.add(y));
-                                    }
-                                });
-                            }
-                        });
-                    }
-                });
-            }
-
-            if (inferredYears.size > 0) {
-                const sortedYears = Array.from(inferredYears).sort((a, b) => b - a);
-                sortedYears.forEach(y => {
-                    const option = document.createElement("option");
-                    option.value = y;
-                    option.textContent = y;
-                    yearSelect.appendChild(option);
-                });
-                yearSelect.disabled = false;
-            } else {
-                const option = document.createElement("option");
-                option.value = "Unknown";
-                option.textContent = "Unknown Year";
-                yearSelect.appendChild(option);
-                yearSelect.disabled = false;
-            }
+        } catch (e) {
+            console.error("Error in populateGenerations:", e);
+            yearSelect.innerHTML = "<option value=\"\">Error loading generations</option>";
         }
     }
 
     function parseYearRange(rangeStr) {
+        if (!rangeStr) return [];
         const years = [];
-        const parts = rangeStr.split(""); // En dash
+        // Handle "1999–2005" (en dash) and "1999-2005" (hyphen)
+        const parts = rangeStr.split(/[–-]/); 
         if (parts.length === 2) {
             const start = parseInt(parts[0]);
-            let end = parts[1].toLowerCase() === "present" ? new Date().getFullYear() : parseInt(parts[1]);
+            let end = parts[1].toLowerCase().includes("present") ? new Date().getFullYear() : parseInt(parts[1]);
             if (isNaN(end)) end = start; // Handle single year or bad format
             
             for (let i = start; i <= end; i++) {
                 years.push(i);
             }
         } else if (parts.length === 1) {
-             // Try hyphen if en dash failed
-             const parts2 = rangeStr.split("-");
-             if (parts2.length === 2) {
-                const start = parseInt(parts2[0]);
-                let end = parts2[1].toLowerCase() === "present" ? new Date().getFullYear() : parseInt(parts2[1]);
-                for (let i = start; i <= end; i++) {
-                    years.push(i);
-                }
-             } else {
-                 years.push(parseInt(rangeStr));
-             }
+             years.push(parseInt(rangeStr));
         }
         return years;
     }
@@ -489,27 +579,24 @@ document.addEventListener("DOMContentLoaded", () => {
     if (searchButton) {
         searchButton.addEventListener("click", () => {
             const make = makeSelect.value;
-            const model = modelSelect.value;
-            const year = yearSelect.value;
-            console.log("Search clicked for:", make, model, year);
-            if (make && model) {
-                showPartsForVehicle(make, model, year);
-            } else {
-                console.warn("Search clicked but make/model missing");
+            // modelSelect.value is the Base Name (e.g. "911 Carrera")
+            // yearSelect.value is the Full Model Name (e.g. "911 Carrera (996)") which is the key in vehicleIndex
+            const fullModelName = yearSelect.value; 
+            
+            if (make && fullModelName) {
+                // Pass fullModelName as the model. Pass null for year since we are selecting by generation.
+                showPartsForVehicle(make, fullModelName, null);
             }
         });
     }
 
     function showPartsForVehicle(make, model, year) {
         try {
-            console.log("Showing parts for:", make, model, year);
-            
             // Ensure results section is visible immediately to show we are trying
             resultsSection.classList.remove("hidden");
             partsList.innerHTML = "<p>Checking catalog...</p>";
 
             const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
-            console.log("Parts found in index:", parts ? parts.length : 0);
             
             if (!parts || parts.length === 0) {
                 partsList.innerHTML = `
@@ -525,7 +612,6 @@ document.addEventListener("DOMContentLoaded", () => {
             partsList.innerHTML = "";
             
             const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
-            console.log("Vehicle Attributes:", vehicleAttrs);
 
             // Show cross-platform / engine donor vehicles
             displayDonors(vehicleAttrs.platformId, vehicleAttrs.engineId, make, model);
@@ -536,30 +622,33 @@ document.addEventListener("DOMContentLoaded", () => {
             let filteredParts = parts;
 
             // Filter by Year if provided
-            if (year && year !== "Unknown") {
-                const selectedYear = parseInt(year);
+            // Note: In the new UI, 'year' parameter is actually null because we select by Generation.
+            // However, if we wanted to filter by specific year within generation, we'd need a 4th dropdown.
+            // For now, we assume selecting the generation implies all years in that generation are valid context.
+            // But if the part has specific year restrictions, we should check against the Generation's year range.
+            
+            const generationYearRange = vehicleAttrs.yearRange;
+            if (generationYearRange) {
+                const genYears = parseYearRange(generationYearRange);
+                
                 filteredParts = filteredParts.filter(part => {
-                    // Check for explicit compatibility restrictions
                     if (part.compatibility) {
                         const makeEntry = part.compatibility.find(c => c.make === make);
                         if (makeEntry) {
-                            // Find model entry that matches the selected model name
                             const modelEntry = makeEntry.models.find(m => m.name === model || model.includes(m.name) || m.name.includes(model));
-                            
                             if (modelEntry && modelEntry.years) {
-                                const allowedYears = parseYearRange(modelEntry.years);
-                                if (!allowedYears.includes(selectedYear)) {
-                                    return false; // Explicitly restricted to other years
-                                }
+                                const partYears = parseYearRange(modelEntry.years);
+                                // Check if there is ANY overlap between generation years and part years
+                                const overlap = genYears.some(y => partYears.includes(y));
+                                return overlap;
                             }
                         }
                     }
-                    return true; // No explicit restriction found, or matches
+                    return true;
                 });
             }
 
             if (activeSubsystem) {
-            console.log("Filtering by subsystem:", activeSubsystem);
             // Normalize for looser matching (e.g. "Suspension/Steering" vs "Suspension & Steering")
             const normalize = s => s.toLowerCase().replace(/[^a-z0-9]/g, "");
             const search = normalize(activeSubsystem);
@@ -570,7 +659,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 return cat.includes(search) || search.includes(cat);
             });
         }
-        console.log("Filtered parts count:", filteredParts.length);
 
         if (filteredParts && filteredParts.length > 0) {
             // Calculate scores for all parts
@@ -602,7 +690,6 @@ document.addEventListener("DOMContentLoaded", () => {
             partDetailsSection.classList.add("hidden");
             // selectorSection.classList.remove("hidden"); // Keep selector visible
         } else {
-            console.log("No parts found, showing empty message");
             partsList.innerHTML = "<p>No matching parts found in inventory.</p>";
             resultsSection.classList.remove("hidden");
         }
