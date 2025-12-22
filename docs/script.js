@@ -511,13 +511,13 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // Ensure results section is visible immediately to show we are trying
             resultsSection.classList.remove("hidden");
-            partsList.innerHTML = "<p>Searching parts bin...</p>";
+            partsList.innerHTML = "<p>Checking catalog...</p>";
 
             const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
             console.log("Parts found in index:", parts ? parts.length : 0);
             
             if (!parts) {
-                partsList.innerHTML = "<p>No compatible parts found in the registry.</p>";
+                partsList.innerHTML = "<p>No compatible parts found in catalog.</p>";
                 return;
             }
 
@@ -603,7 +603,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // selectorSection.classList.remove("hidden"); // Keep selector visible
         } else {
             console.log("No parts found, showing empty message");
-            partsList.innerHTML = "<p>No matches found.</p>";
+            partsList.innerHTML = "<p>No matching parts found in inventory.</p>";
             resultsSection.classList.remove("hidden");
         }
         } catch (e) {

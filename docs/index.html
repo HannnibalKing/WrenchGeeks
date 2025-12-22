@@ -9,14 +9,19 @@
 <body>
     <header>
         <div class="container">
-            <h1>WrenchGeeks </h1>
-            <p>The Ultimate Part Interchange Garage. Built for those who fix it themselves.</p>
+            <div style="display:flex; align-items:center; gap:1rem;">
+                <h1 style="margin:0;">WrenchGeeks 🔧</h1>
+                <span class="badge" style="background:#333; color:#aaa; font-weight:normal;">PART INTERCHANGE CATALOG</span>
+            </div>
+            <div style="flex-grow:1; max-width:400px; margin-left:2rem;">
+                <input type="text" placeholder="Search by Part Number or Keyword..." style="background:#333; border:1px solid #555; color:white; padding:0.5rem; width:100%; border-radius:4px;" disabled>
+            </div>
         </div>
     </header>
 
     <main class="container">
         <aside id="selector" class="sidebar">
-            <h2>Project Vehicle</h2>
+            <h2>Vehicle Selector</h2>
             <p id="makeLoadStatus" class="hint" style="margin-bottom:0.75rem;">Loading manufacturers...</p>
 
             <div class="controls">
@@ -61,8 +66,8 @@
                 <div id="partsList" class="grid-list"></div>
                 
                 <div id="donorList" class="card hidden">
-                    <h4> Platform Mates (Donor Vehicles)</h4>
-                    <p class="hint">These vehicles share the same platform or engine. Great for sourcing parts at the junkyard.</p>
+                    <h4>🔄 Interchangeable Models</h4>
+                    <p class="hint">These vehicles share the same platform or engine. Excellent sources for compatible parts.</p>
                     <ul id="donorVehicles"></ul>
                 </div>
             </section>
