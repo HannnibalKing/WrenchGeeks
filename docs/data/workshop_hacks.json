@@ -1,0 +1,57 @@
+[
+  {
+    "partName": "Hack: The 'Dirt Dip' for Stripped Screws",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "If a screw head is slightly stripped, wet the tip of your screwdriver (saliva or water) and dip it into fine dirt, sand, or valve grinding compound. The grit fills the gaps between the tool and the screw head, providing massive extra grip to break it loose without drilling.",
+    "matchLevel": "Pro Tip"
+  },
+  {
+    "partName": "Safety: Brake Cleaner & Welding (DEADLY)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "NEVER weld on metal that has been cleaned with Chlorinated Brake Cleaner (usually Red bottle). The UV light from the welding arc turns the residue into Phosgene Gas (a WWI nerve agent). It can kill you or cause permanent lung damage instantly. Use Acetone or Non-Chlorinated cleaner for weld prep.",
+    "matchLevel": "Critical Safety"
+  },
+  {
+    "partName": "Solvents: What NOT to use on Plastic/Rubber",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "1. ACETONE: Instantly melts ABS plastic (interior trim, sensor housings). 2. BRAKE CLEANER: Swells and destroys rubber seals, o-rings, and boots. 3. GASOLINE: Dries out rubber, causing cracking. USE: Silicone spray or soapy water for rubber. Use Isopropyl Alcohol or dedicated interior cleaner for plastics.",
+    "matchLevel": "Pro Tip"
+  },
+  {
+    "partName": "Hack: The 'Acetone & ATF' Penetrating Fluid",
+    "compatibleVehicles": [
+      "Rusted Bolts"
+    ],
+    "years": "Universal",
+    "notes": "The best penetrating fluid isn't bought, it's made. Mix a 50/50 solution of Acetone and Automatic Transmission Fluid (ATF). Tests show this mixture penetrates rusted threads significantly better than WD-40 or PB Blaster. Shake well before use.",
+    "matchLevel": "Pro Tip"
+  },
+  {
+    "partName": "Cleaning: Aluminum vs. Oven Cleaner",
+    "compatibleVehicles": [
+      "Aluminum Heads",
+      "Intakes"
+    ],
+    "years": "Universal",
+    "notes": "NEVER use oven cleaner (Sodium Hydroxide / Lye) to clean aluminum parts. It reacts violently, turning the aluminum black and dissolving it. Use 'Aluminum Safe' degreasers (like Simple Green Aircraft or specific aluminum brighteners) or a brass wire brush.",
+    "matchLevel": "Pro Tip"
+  },
+  {
+    "partName": "Hack: Removing Broken Bolts (Welding Trick)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "If a bolt snaps off flush: 1. Place a washer over the hole. 2. Weld the washer to the broken bolt stud (the heat helps break the rust bond). 3. Weld a nut to the washer. 4. Let it cool slightly (not fully). 5. Unscrew it. The heat cycle is the secret sauce.",
+    "matchLevel": "Pro Tip"
+  }
+]
