@@ -508,26 +508,3 @@ document.addEventListener('DOMContentLoaded', () => {
         resultsSection.classList.remove('hidden');
     });
 });
-                    filterKeywords = ["Escort", "Sierra", "Focus RS"];
-                    break;
-                case 'kei_sport':
-                    targetMake = "Suzuki"; // Broaden to Suzuki for Cappuccino/Alto
-                    filterKeywords = ["Cappuccino", "Alto", "Jimny"];
-                    break;
-            }
-
-            if (targetMake) {
-                // Set Global Filter
-                activeBuildFilter = { make: targetMake, keywords: filterKeywords };
-
-                // Trigger Make Selection
-                makeSelect.value = targetMake;
-                makeSelect.dispatchEvent(new Event('change'));
-                
-                // Visual Feedback
-                modelSelect.focus();
-                // Optional: Open dropdown if possible (browser restrictions usually prevent this)
-            }
-        });
-    }
-});
