@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectorSection = document.getElementById('selector');
     const backButton = document.getElementById('backButton');
     const selectedVehicleName = document.getElementById('selectedVehicleName');
+    const makeLoadStatus = document.getElementById('makeLoadStatus');
 
     const dataFiles = [
         'data/relationships.json',
@@ -202,6 +203,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             buildIndex(partsData);
             populateMakes();
+            if (makeLoadStatus) {
+                const totalMakes = Object.keys(vehicleIndex).length;
+                makeLoadStatus.textContent = totalMakes > 0 ? `Loaded ${totalMakes} makes` : 'No makes loaded';
+            }
         })
         .catch(err => {
             console.error('Error loading data:', err);
@@ -278,6 +283,10 @@ document.addEventListener('DOMContentLoaded', () => {
             option.textContent = make;
             makeSelect.appendChild(option);
         });
+
+        if (makeLoadStatus) {
+            makeLoadStatus.textContent = makes.length > 0 ? `Loaded ${makes.length} makes` : 'No makes loaded';
+        }
     }
 
     let activeBuildFilter = null; // placeholder (unused now)
