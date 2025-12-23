@@ -57,17 +57,17 @@ header p {
     max-width: 1400px;
     margin: 2rem auto;
     padding: 0 1.5rem;
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 2.5rem;
+    display: block;
 }
 
-.container.kb-active {
-    grid-template-columns: 1fr;
+.split-view {
+    display: flex;
+    gap: 2rem;
 }
 
-.container.kb-active .sidebar {
-    display: none;
+.sidebar {
+    width: 320px;
+    flex-shrink: 0;
 }
 
 .sidebar {
