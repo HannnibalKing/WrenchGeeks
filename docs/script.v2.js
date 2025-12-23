@@ -927,7 +927,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // selectorSection.classList.remove("hidden");
         resultsSection.classList.remove("hidden");
     });
-});
 
     // --- Knowledge Base & Tab Logic ---
 
@@ -1040,3 +1039,5 @@ document.addEventListener("DOMContentLoaded", () => {
         renderKnowledgeBase('all');
     }, 1000);
 
+
+});
