@@ -1,0 +1,61 @@
+[
+  {
+    "partName": "BMW 3-Series Interchange (E30 / E36 / E46)",
+    "compatibleVehicles": [
+      "BMW 3-Series E30 (1982-1994)",
+      "BMW 3-Series E36 (1990-2000)",
+      "BMW 3-Series E46 (1998-2006)",
+      "BMW Z3 (E36/7)"
+    ],
+    "years": "1982-2006",
+    "notes": "The Golden Era. E36 steering racks fit E30s. E46 control arms fit E30/E36 (for wide angle/drift). E36 M3 brakes fit non-M E36s. Engines (M50/M52/S50/S52) are easily swapped into E30s. The Z3 is an E36 front / E30 rear hybrid.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "BMW 5-Series / 7-Series Interchange (E39 / E38)",
+    "compatibleVehicles": [
+      "BMW 5-Series E39 (1995-2003)",
+      "BMW 7-Series E38 (1994-2001)",
+      "BMW X5 E53 (1999-2006)"
+    ],
+    "years": "1994-2006",
+    "notes": "The E38 and E39 share many electronics, engines (M62 V8), and transmission parts. The E53 X5 is heavily based on the E39 5-series (electronics, engines) but with E46-like suspension. E38 'Contour' seats are a popular upgrade for E39s.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Mercedes 'Golden Era' (W201 / W124 / W126)",
+    "compatibleVehicles": [
+      "Mercedes 190E (W201)",
+      "Mercedes E-Class (W124)",
+      "Mercedes S-Class (W126)",
+      "Mercedes SL (R129)"
+    ],
+    "years": "1980-1995",
+    "notes": "The over-engineered era. W124 and W201 share suspension designs (multi-link rear). M103/M104 engines are interchangeable. R129 SL front brakes (4-piston) are a direct upgrade for W201/W124 (requires 16\" wheels). W124 Sportline steering boxes fit W201s for a quicker ratio.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Mercedes Kompressor Era (W203 / W211 / R171)",
+    "compatibleVehicles": [
+      "Mercedes C-Class (W203)",
+      "Mercedes E-Class (W211)",
+      "Mercedes SLK (R171)",
+      "Mercedes CLK (W209)"
+    ],
+    "years": "2000-2009",
+    "notes": "The M112 (V6) and M113 (V8) engines are bulletproof and shared across almost all models. The 5G-Tronic (722.6) transmission is also universal. E55 AMG (W211) brakes (8-piston!) can be fitted to other models with brackets. W203 and W209 share the entire chassis/suspension.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "BMW Turbo Era (N54 / N55 / B58)",
+    "compatibleVehicles": [
+      "BMW 3-Series (E90/E92 / F30)",
+      "BMW 1-Series (E82 / F20)",
+      "BMW 5-Series (E60 / F10)",
+      "Toyota Supra Mk5 (A90)"
+    ],
+    "years": "2006-Present",
+    "notes": "The N54/N55 engines are found in 1, 3, and 5 series cars. Intercoolers, downpipes, and charge pipes often interchange between E82 (1-series) and E90 (3-series). The B58 engine in the F30 340i is the same as the Mk5 Supra, meaning Supra performance parts fit BMWs and vice versa.",
+    "matchLevel": "Match - Direct Fit"
+  }
+]

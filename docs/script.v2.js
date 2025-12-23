@@ -185,7 +185,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/korean_genesis_secrets.json",
         "data/weird_euro_cousins.json",
         "data/audio_electronics.json",
-        "data/ecu_secrets.json"
+        "data/ecu_secrets.json",
+        "data/porsche_generations.json",
+        "data/bmw_mercedes_generations.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };
@@ -307,7 +309,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         makeSelect.innerHTML = "<option value=\"\">-- Select Make --</option>";
         makes.forEach(make => {
-            if (!make) return;
+            if (!make || make === "Universal") return; // Filter Universal
             const option = document.createElement("option");
             option.value = make;
             option.textContent = make;
@@ -926,3 +928,115 @@ document.addEventListener("DOMContentLoaded", () => {
         resultsSection.classList.remove("hidden");
     });
 });
+
+    // --- Knowledge Base & Tab Logic ---
+
+    const tabs = document.querySelectorAll('.nav-tab');
+    const sections = document.querySelectorAll('.content-section');
+    const kbFilters = document.querySelectorAll('.kb-filter');
+    const kbContent = document.getElementById('kbContent');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Toggle Tabs
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            // Toggle Sections
+            const targetId = tab.getAttribute('data-target');
+            sections.forEach(section => {
+                if (section.id === targetId) {
+                    section.classList.add('active-section');
+                    section.classList.remove('hidden');
+                } else {
+                    section.classList.remove('active-section');
+                    section.classList.add('hidden');
+                }
+            });
+        });
+    });
+
+    kbFilters.forEach(filter => {
+        filter.addEventListener('click', () => {
+            kbFilters.forEach(f => f.classList.remove('active'));
+            filter.classList.add('active');
+            renderKnowledgeBase(filter.getAttribute('data-category'));
+        });
+    });
+
+    function renderKnowledgeBase(category) {
+        if (!kbContent) return;
+        kbContent.innerHTML = '';
+
+        // Aggregate all 'Knowledge' items from partsData
+        // We identify them by specific matchLevels or keywords
+        const kbItems = partsData.filter(item => {
+            const level = (item.matchLevel || '').toLowerCase();
+            const notes = (item.notes || '').toLowerCase();
+            
+            // Define what counts as a KB item
+            const isKB = level.includes('tip') || 
+                         level.includes('hack') || 
+                         level.includes('guide') || 
+                         level.includes('safety') || 
+                         level.includes('basics') || 
+                         level.includes('secret') ||
+                         level.includes('theory') ||
+                         notes.includes('how to') ||
+                         notes.includes('warning');
+
+            if (!isKB) return false;
+
+            // Filter by Category
+            if (category === 'all') return true;
+            
+            if (category === 'electrical') {
+                return level.includes('electrical') || level.includes('sensor') || level.includes('ecu') || notes.includes('wire') || notes.includes('volt');
+            }
+            if (category === 'mechanical') {
+                return level.includes('fabrication') || level.includes('welding') || level.includes('mechanical') || notes.includes('bolt') || notes.includes('engine');
+            }
+            if (category === 'hacks') {
+                return level.includes('hack') || level.includes('tip') || level.includes('trick') || level.includes('secret');
+            }
+            
+            return false;
+        });
+
+        if (kbItems.length === 0) {
+            kbContent.innerHTML = '<p style=\'text-align:center; width:100%; color:var(--text-muted);\'>No articles found in this category.</p>';
+            return;
+        }
+
+        kbItems.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'kb-card';
+            
+            let tagClass = 'tag-hacks';
+            let tagText = 'Tip';
+            const level = (item.matchLevel || '').toLowerCase();
+
+            if (level.includes('electrical') || level.includes('safety')) {
+                tagClass = 'tag-electrical';
+                tagText = 'Electrical / Safety';
+            } else if (level.includes('fabrication') || level.includes('mechanical')) {
+                tagClass = 'tag-mechanical';
+                tagText = 'Mechanical';
+            }
+
+            card.innerHTML = \
+                <span class='kb-tag \'>\</span>
+                <h3 style='margin-top:0; color:var(--accent-color);'>\</h3>
+                <p>\</p>
+                <small style='color:var(--text-muted);'>Applies to: \</small>
+            \;
+            kbContent.appendChild(card);
+        });
+    }
+
+    // Initial Render
+    // Wait for data to load (simple timeout for now, ideally event driven)
+    setTimeout(() => {
+        renderKnowledgeBase('all');
+    }, 1000);
+

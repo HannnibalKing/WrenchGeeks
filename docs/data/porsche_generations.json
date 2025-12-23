@@ -1,0 +1,77 @@
+[
+  {
+    "partName": "Porsche 911 Air-Cooled Interchange (G-Series / 964 / 993)",
+    "compatibleVehicles": [
+      "Porsche 911 G-Series (1974-1989)",
+      "Porsche 911 964 (1989-1994)",
+      "Porsche 911 993 (1994-1998)"
+    ],
+    "years": "1974-1998",
+    "notes": "The air-cooled lineage shares many parts. 993 brake calipers ('Big Reds') can be adapted to 964 and G-Series cars. 3.2 Carrera engines can be swapped into earlier chassis. 964 aero mirrors are a popular upgrade for G-Series cars. Seats are interchangeable across almost all years up to 993.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Porsche 986/996 'Fried Egg' Era Interchange",
+    "compatibleVehicles": [
+      "Porsche 911 (996 1999-2004)",
+      "Porsche Boxster (986 1997-2004)"
+    ],
+    "years": "1997-2004",
+    "notes": "The 996 911 and 986 Boxster share the entire front end (headlights, fenders, hood, bumper) and the dashboard/interior. You can swap the 996 3.4L or 3.6L engine into a Boxster (requires wiring and ECU work) for a massive power boost. Suspension arms and brakes are also largely shared.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Porsche 997 / 987 Interchange",
+    "compatibleVehicles": [
+      "Porsche 911 (997 2005-2012)",
+      "Porsche Boxster / Cayman (987 2005-2012)"
+    ],
+    "years": "2005-2012",
+    "notes": "Similar to the previous generation, the 997 and 987 share many front suspension components, seats, steering wheels, and electronics (PCM 2.1 / 3.0). The Cayman S 3.4L engine is a popular swap for base Boxsters. GT3 control arms (adjustable) fit all 997/987 models for track alignment.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Porsche Transaxle Era (924/944/968/928)",
+    "compatibleVehicles": [
+      "Porsche 924 (1976-1988)",
+      "Porsche 944 (1982-1991)",
+      "Porsche 968 (1992-1995)",
+      "Porsche 928 (1978-1995)"
+    ],
+    "years": "1976-1995",
+    "notes": "The 924/944/968 share a chassis evolution. 968 door handles, mirrors, and rear wings fit 944s. 944 Turbo (951) brakes and suspension can be swapped onto base 944s. The 924 uses a VW/Audi engine block, sharing parts with the VW Vanagon and Audi 100. The 928 is largely unique but shares some electrical components.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Porsche Cayenne / VW Touareg / Audi Q7 (PL71/PL72)",
+    "compatibleVehicles": [
+      "Porsche Cayenne (955/957/958)",
+      "Volkswagen Touareg (7L/7P)",
+      "Audi Q7 (4L)"
+    ],
+    "years": "2002-2017",
+    "notes": "The 'Colorado' platform. Doors, glass, subframes, driveshafts, and even some engines (VR6, TDI) are shared. You can use VW Touareg control arms (cheaper) on a Cayenne. The Cayenne Turbo brakes (18Z/19Z) are a direct upgrade for Touaregs and Q7s.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Porsche Macan / Audi Q5 (MLB Platform)",
+    "compatibleVehicles": [
+      "Porsche Macan (95B 2014-Present)",
+      "Audi Q5 (8R 2008-2017)"
+    ],
+    "years": "2014-Present",
+    "notes": "The 1st Gen Macan is based on the Audi Q5 (MLB) platform. Suspension arms, wheel bearings, and some floorpan components are shared. However, Porsche heavily modified the engines and suspension tuning. The Macan 2.0T engine is an Audi EA888 Gen 3.",
+    "matchLevel": "Match - Reference Only"
+  },
+  {
+    "partName": "Porsche 991 / 981 / 718 Era",
+    "compatibleVehicles": [
+      "Porsche 911 (991 2012-2019)",
+      "Porsche Boxster / Cayman (981 2012-2016)",
+      "Porsche 718 (982 2016-Present)"
+    ],
+    "years": "2012-Present",
+    "notes": "The 991 and 981 share the new modular platform. Steering wheels (including the 918 Spyder style) are interchangeable. GT4 suspension parts fit regular Caymans/Boxsters. The 718 (4-cylinder turbo) shares the chassis with the 981 but has different rear subframes for the turbo plumbing.",
+    "matchLevel": "Match - Direct Fit"
+  }
+]

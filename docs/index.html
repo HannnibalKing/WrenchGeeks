@@ -8,13 +8,20 @@
 </head>
 <body>
     <header>
-        <div class="container" style="justify-content: center; display: flex;">
+        <div class="container" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
             <h1 style="margin:0;">WrenchGeeks 🔧</h1>
+            <nav class="main-nav">
+                <button class="nav-tab active" data-target="searchSection">Find Parts</button>
+                <button class="nav-tab" data-target="knowledgeSection">Knowledge Base</button>
+            </nav>
         </div>
     </header>
 
     <main class="container">
-        <aside id="selector" class="sidebar">
+        <!-- SEARCH SECTION -->
+        <div id="searchSection" class="content-section active-section">
+            <div class="split-view">
+                <aside id="selector" class="sidebar">
             <h2>Vehicle Selector</h2>
             <p id="makeLoadStatus" class="hint" style="margin-bottom:0.75rem;">Loading manufacturers...</p>
 
@@ -133,6 +140,27 @@
                 <p>This tool is built on thousands of hours of "Old Timer" knowledge, junkyard research, and busted knuckles. If we helped you save big on your build, consider tossing a few bucks in the jar. It keeps the servers running and the 10mm sockets stocked!</p>
                 <a href="https://cwallet.com/t/GVBV3SPY" target="_blank" class="btn-secondary" style="text-decoration: none; display: inline-block; text-align: center; width: 100%; font-weight: bold; color: var(--accent-color); border-color: var(--accent-color);">Donate & Support</a>
             </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- KNOWLEDGE BASE SECTION -->
+        <div id="knowledgeSection" class="content-section hidden">
+            <div class="kb-header">
+                <h2>The Garage Library</h2>
+                <p>Accumulated wisdom from decades of wrenching. No fluff, just facts.</p>
+            </div>
+            
+            <div class="kb-categories">
+                <button class="kb-filter active" data-category="all">All</button>
+                <button class="kb-filter" data-category="electrical">Electrical & ECU</button>
+                <button class="kb-filter" data-category="mechanical">Mechanical & Fab</button>
+                <button class="kb-filter" data-category="hacks">Hacks & Tips</button>
+            </div>
+
+            <div id="kbContent" class="grid-list">
+                <!-- KB Articles will be injected here -->
+            </div>
         </div>
     </main>
 
