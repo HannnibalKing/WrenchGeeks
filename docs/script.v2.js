@@ -184,7 +184,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/subaru_lego_city.json",
         "data/korean_genesis_secrets.json",
         "data/weird_euro_cousins.json",
-        "data/audio_electronics.json"
+        "data/audio_electronics.json",
+        "data/ecu_secrets.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };
