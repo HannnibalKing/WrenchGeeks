@@ -444,8 +444,8 @@ button#searchButton:not(:disabled) {
 
 .kb-filters {
     display: flex;
-    gap: 1rem;
-    justify-content: space-around;
+    gap: 2rem;
+    justify-content: center;
     margin-top: 1rem;
     flex-wrap: wrap;
 }
@@ -475,27 +475,4 @@ button#searchButton:not(:disabled) {
 .tag-electrical { background: rgba(100, 255, 218, 0.1); color: var(--success-color); }
 .tag-mechanical { background: rgba(255, 95, 95, 0.1); color: var(--danger-color); }
 .tag-hacks { background: rgba(255, 215, 0, 0.1); color: var(--accent-color); }
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .container {
-        max-width: none;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        padding: 1rem;
-    }
-    .sidebar {
-        display: none; /* Hide sidebar on mobile */
-    }
-    .grid-list {
-        grid-template-columns: 1fr; /* Single column on mobile */
-        gap: 1rem;
-    }
-    .kb-filters {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
 
