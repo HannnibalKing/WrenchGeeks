@@ -1,0 +1,56 @@
+[
+  {
+    "partName": "Subaru 'Lego' Suspension (Impreza/Forester)",
+    "compatibleVehicles": [
+      "Subaru Impreza WRX/STI (2002-2007 GD/GG)",
+      "Subaru Forester (1998-2008 SF/SG)",
+      "Subaru Legacy (1990-1999 BC/BF/BD/BG)"
+    ],
+    "years": "1993-2008",
+    "notes": "Subaru suspension is incredibly interchangeable. You can put WRX struts and springs on a Forester to lower it 2-3 inches and improve handling. Conversely, Forester struts on an Impreza give it a lift for rally/off-road. Top hats may need to be swapped depending on the year.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Subaru 4-Pot / 2-Pot Brake Upgrade",
+    "compatibleVehicles": [
+      "Subaru Impreza WRX (2006-2007)",
+      "Subaru Impreza RS / 2.5i (1998-2007)",
+      "Subaru Forester (SF/SG)",
+      "Subaru Legacy (BD/BG/BE/BH)"
+    ],
+    "years": "1998-2008",
+    "notes": "The red 4-piston front and 2-piston rear calipers from the 06-07 WRX (or JDM older models) bolt onto almost any older Subaru. A massive upgrade over the sliding calipers. Requires 16-inch or larger wheels (specifically ones that clear the calipers, like RS 6-spokes).",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Subaru EJ25 to EJ22 Head Swap ('Frankenstein')",
+    "compatibleVehicles": [
+      "Subaru Impreza (EJ251/EJ253)",
+      "Subaru Legacy / Outback (EJ25D)"
+    ],
+    "years": "1996-2004",
+    "notes": "Putting EJ22 heads (single port exhaust) on an EJ25 block raises compression for a torquey N/A build. Conversely, putting DOHC EJ25 heads on an EJ22 block lowers compression, making it 'turbo ready' on a budget.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Subaru STI 6-Speed Transmission Swap",
+    "compatibleVehicles": [
+      "Subaru Impreza WRX (2002-2014)",
+      "Subaru Forester XT (2004-2008)",
+      "Subaru Legacy GT (2005-2009)"
+    ],
+    "years": "2004-2020",
+    "notes": "The STI 6-speed is bulletproof (holds 600+hp). It can be swapped into WRXs and Foresters, but requires the matching rear differential (R180), axles, driveshaft, and hubs (or hybrid axles to use R160 hubs). It's a major job but solves the 'glass transmission' issue of the 5-speed.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Subaru H6 (EZ30/EZ36) Swap",
+    "compatibleVehicles": [
+      "Subaru Impreza (GC/GD)",
+      "Subaru Legacy (Tribeca/Outback H6 engines)"
+    ],
+    "years": "2000-2014",
+    "notes": "The 3.0L (EZ30) and 3.6L (EZ36) flat-six engines fit in the Impreza engine bay. It's tight (radiator clearance is an issue), but it's the 'Subaru Porsche' build. Requires custom wiring or a standalone ECU.",
+    "matchLevel": "Match - Major Mods"
+  }
+]

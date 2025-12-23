@@ -180,7 +180,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/electrical_basics.json",
         "data/additive_warnings.json",
         "data/economy_interchange.json",
-        "data/honda_mitsubishi_deep_dive.json"
+        "data/honda_mitsubishi_deep_dive.json",
+        "data/subaru_lego_city.json",
+        "data/korean_genesis_secrets.json",
+        "data/weird_euro_cousins.json"
     ];
 
     let relationships = { engines: {}, platforms: {} };

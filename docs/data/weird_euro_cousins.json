@@ -1,0 +1,56 @@
+[
+  {
+    "partName": "Saab 9-3 / Chevy Malibu Brakes (GM Epsilon)",
+    "compatibleVehicles": [
+      "Saab 9-3 (2003-2011)",
+      "Chevrolet Malibu (2004-2008)",
+      "Pontiac G6",
+      "Saturn Aura"
+    ],
+    "years": "2003-2011",
+    "notes": "The Saab 9-3 sits on the GM Epsilon platform. Brake rotors, pads, and even calipers often interchange with the Chevy Malibu and Pontiac G6. The 'Aero' brakes are larger (314mm) and are a cheap upgrade for base model Malibus/G6s.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Jaguar X-Type / Ford Mondeo Suspension",
+    "compatibleVehicles": [
+      "Jaguar X-Type (2001-2009)",
+      "Ford Mondeo (Mk3 2000-2007)",
+      "Ford Contour / Mercury Mystique (Earlier platform cousins)"
+    ],
+    "years": "2001-2009",
+    "notes": "The Jaguar X-Type is famously based on the Ford Mondeo platform. Control arms, struts, and many suspension bushings are identical to the Ford Mondeo. You can buy 'Ford' parts for a fraction of the 'Jaguar' price.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Aston Martin Key Fob / Volvo Key",
+    "compatibleVehicles": [
+      "Aston Martin V8 Vantage / DB9",
+      "Volvo S40 / V50 / C30"
+    ],
+    "years": "2005-2015",
+    "notes": "The expensive Aston Martin 'Crystal Key' (ECU) is internally a Volvo key fob. If you peel back the leather on a standard Aston plastic key, it says Volvo. You can program a Volvo key to work with an Aston Martin (though it won't look as fancy).",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Mini Cooper (R50/R53) / Chrysler Neon Engine Parts",
+    "compatibleVehicles": [
+      "Mini Cooper (2001-2006 Tritec Engine)",
+      "Chrysler Neon (Export markets)",
+      "Chery A11 (China)"
+    ],
+    "years": "2001-2006",
+    "notes": "The 1st Gen Mini used the 'Tritec' engine, a joint venture between Chrysler and Rover. Some internal parts and sensors are shared with Chrysler Neons (specifically export models). The supercharged R53 engine is unique, but the block architecture is shared.",
+    "matchLevel": "Match - Reference Only"
+  },
+  {
+    "partName": "Lamborghini Diablo / Nissan 300ZX Headlights",
+    "compatibleVehicles": [
+      "Lamborghini Diablo (1999 Facelift)",
+      "Nissan 300ZX (Z32 1990-1996)"
+    ],
+    "years": "1990-2001",
+    "notes": "Lamborghini famously licensed the headlights from the Nissan 300ZX (Z32) for the facelifted Diablo. They even have the Nissan logo on the top edge (covered by a carbon fiber strip on the Lambo).",
+    "matchLevel": "Match - Direct Fit"
+  }
+]
