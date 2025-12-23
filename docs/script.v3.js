@@ -948,8 +948,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const tabs = document.querySelectorAll('.nav-tab');
     const sections = document.querySelectorAll('.content-section');
-    const kbFilters = document.querySelectorAll('.kb-filter');
-    const kbContent = document.getElementById('kbContent');
+    const kbFilters = document.querySelectorAll('.filter-btn'); // Updated selector to match HTML
+    const kbContent = document.getElementById('kbGrid'); // Updated ID to match HTML
 
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
@@ -975,83 +975,47 @@ document.addEventListener("DOMContentLoaded", () => {
         filter.addEventListener('click', () => {
             kbFilters.forEach(f => f.classList.remove('active'));
             filter.classList.add('active');
-            renderKnowledgeBase(filter.getAttribute('data-category'));
+            renderKnowledgeBase(filter.getAttribute('data-filter')); // Changed attribute to data-filter
         });
     });
 
-    function renderKnowledgeBase(category) {
+    function renderKnowledgeBase(filter) {
         if (!kbContent) return;
         kbContent.innerHTML = '';
 
-        // Aggregate all 'Knowledge' items from partsData
-        // We identify them by specific matchLevels or keywords
-        const kbItems = partsData.filter(item => {
-            const level = (item.matchLevel || '').toLowerCase();
-            const notes = (item.notes || '').toLowerCase();
-            
-            // Define what counts as a KB item
-            const isKB = level.includes('tip') || 
-                         level.includes('hack') || 
-                         level.includes('guide') || 
-                         level.includes('safety') || 
-                         level.includes('basics') || 
-                         level.includes('secret') ||
-                         level.includes('theory') ||
-                         notes.includes('how to') ||
-                         notes.includes('warning');
-
-            if (!isKB) return false;
-
-            // Filter by Category
-            if (category === 'all') return true;
-            
-            if (category === 'electrical') {
-                return level.includes('electrical') || level.includes('sensor') || level.includes('ecu') || notes.includes('wire') || notes.includes('volt');
-            }
-            if (category === 'mechanical') {
-                return level.includes('fabrication') || level.includes('welding') || level.includes('mechanical') || notes.includes('bolt') || notes.includes('engine');
-            }
-            if (category === 'hacks') {
-                return level.includes('hack') || level.includes('tip') || level.includes('trick') || level.includes('secret');
-            }
-            
-            return false;
+        // Use the global WRENCHGEEKS_KB_DATA variable
+        const kbItems = (typeof WRENCHGEEKS_KB_DATA !== 'undefined' ? WRENCHGEEKS_KB_DATA : []).filter(item => {
+            const cat = (item.category || '').toLowerCase();
+            if (filter === 'all') return true;
+            return cat === filter;
         });
 
         if (kbItems.length === 0) {
-            kbContent.innerHTML = '<p style=\'text-align:center; width:100%; color:var(--text-muted);\'>No articles found in this category.</p>';
+            kbContent.innerHTML = '<p style=\'grid-column: 1/-1; text-align:center; color:var(--text-muted);\'>No articles found in this category.</p>';
             return;
         }
 
         kbItems.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'kb-card';
+            const div = document.createElement('div');
+            div.className = 'card'; // Use card class from CSS
             
-            let tagClass = 'tag-hacks';
-            let tagText = 'Tip';
-            const level = (item.matchLevel || '').toLowerCase();
+            const title = item.title || item.partName || 'Untitled';
+            const content = item.content || item.notes || item.description || '';
+            const severity = item.severity || item.matchLevel || '';
+            const cat = item.category || 'General';
 
-            if (level.includes('electrical') || level.includes('safety')) {
-                tagClass = 'tag-electrical';
-                tagText = 'Electrical / Safety';
-            } else if (level.includes('fabrication') || level.includes('mechanical')) {
-                tagClass = 'tag-mechanical';
-                tagText = 'Mechanical';
-            }
-
-            card.innerHTML = '<span class="kb-tag ' + tagClass + '">' + tagText + '</span>' +
-                '<h3 style="margin-top:0; color:var(--accent-color);">' + item.partName + '</h3>' +
-                '<p>' + item.notes + '</p>' +
-                '<small style="color:var(--text-muted);">Applies to: ' + (item.compatibleVehicles || []).join(', ') + '</small>';
-            kbContent.appendChild(card);
+            div.innerHTML = `
+                <span class="tag" style="display:inline-block; font-size:0.75em; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; color:var(--text-muted); border:1px solid var(--border-color); padding:2px 5px; border-radius:3px;">${cat}</span>
+                ${severity ? `<span class="badge" style="float:right; font-size:0.8em; padding:2px 6px; border-radius:4px; background:rgba(100, 255, 218, 0.1); color:var(--accent-color);">${severity}</span>` : ''}
+                <h3 style="margin-top:0; color:#fff;">${title}</h3>
+                <p>${content}</p>
+            `;
+            kbContent.appendChild(div);
         });
     }
 
     // Initial Render
-    // Wait for data to load (simple timeout for now, ideally event driven)
-    setTimeout(() => {
-        renderKnowledgeBase('all');
-    }, 1000);
+    renderKnowledgeBase('all');
 
 
 });
