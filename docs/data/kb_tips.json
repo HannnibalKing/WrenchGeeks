@@ -1,0 +1,23 @@
+[
+  {
+    "category": "tips",
+    "title": "IMS Bearing Failure (The Elephant in the Room)",
+    "content": "The Intermediate Shaft (IMS) bearing on M96 engines (1997-2005) is a sealed ball bearing that can fail catastrophically, destroying the engine. It is strongly recommended to replace this bearing with a ceramic or oil-fed upgrade whenever the transmission is removed (e.g., for a clutch job).",
+    "severity": "Critical",
+    "related_parts": ["porsche_ims_bearing"]
+  },
+  {
+    "category": "tips",
+    "title": "Air Oil Separator (AOS) Failure",
+    "content": "If your 996/986 starts smoking heavily (white smoke) on startup or under cornering, the AOS diaphragm has likely failed. This allows oil to be sucked into the intake. If ignored, it can cause hydrolock.",
+    "severity": "High",
+    "related_parts": ["porsche_aos_996"]
+  },
+  {
+    "category": "tips",
+    "title": "General Maintenance Tip",
+    "content": "Always check fluid levels when the engine is cold. Hot fluids expand and give false readings. Use the dipstick for oil, and check the reservoir for other fluids.",
+    "severity": "Medium",
+    "related_parts": []
+  }
+]

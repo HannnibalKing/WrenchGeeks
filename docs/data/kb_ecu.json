@@ -1,0 +1,84 @@
+[
+  {
+    "category": "ecu",
+    "partName": "GM '0411' PCM Swap (The LS Holy Grail)",
+    "compatibleVehicles": [
+      "Chevy Silverado / Tahoe (1999-2002)",
+      "Chevy Express Van (2001-2002)",
+      "Chevy Camaro / Corvette (LS1)"
+    ],
+    "years": "1999-2002",
+    "notes": "The '0411' (Service #12200411) PCM is the gold standard for Gen 3 LS swaps. It has the fastest processor for that era and supports custom operating systems (COS) for boost/nitrous via HP Tuners or EFI Live. It can replace the slower '99-'00 'black box' ECUs in trucks with a pinout swap.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "category": "ecu",
+    "partName": "Honda OBD1 ECU Chipping (P28 / P72 / P06)",
+    "compatibleVehicles": [
+      "Honda Civic (1992-1995 EG)",
+      "Honda Integra (1994-1995 DC)",
+      "Honda Prelude (1992-1995)"
+    ],
+    "years": "1992-1995",
+    "notes": "Honda OBD1 ECUs are legendary. You can solder a socket into them ('chipping') to run custom tunes (Hondata, Crome, Neptune). The P28 (Civic Si) is the most common VTEC ECU. The P06 (DX) can be converted to VTEC. The P72 (GSR) controls secondary intake runners (IABs).",
+    "matchLevel": "Match - Modification"
+  },
+  {
+    "category": "ecu",
+    "partName": "Ford A9L / A9P ECU (Foxbody Mustang)",
+    "compatibleVehicles": [
+      "Ford Mustang 5.0L (1989-1993)",
+      "Ford Mustang (Mass Air Conversions)"
+    ],
+    "years": "1989-1993",
+    "notes": "The A9L (Manual) and A9P (Auto) are the most desirable Foxbody ECUs. They have the most aggressive fuel/timing curves and work best with modifications (heads/cam/intake). Warning: 30+ year old capacitors inside these OFTEN leak and destroy the board. Open it up and check!",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "category": "ecu",
+    "partName": "The 'Capacitor Plague' (90s ECU Repair)",
+    "compatibleVehicles": [
+      "Mitsubishi Eclipse / Talon (1G DSM)",
+      "Toyota Supra / Lexus LS400 (Early 90s)",
+      "Ford Mustang (Foxbody)",
+      "Jeep Cherokee (XJ Renix/Mopar)"
+    ],
+    "years": "1988-1998",
+    "notes": "If your 90s car has weird electrical gremlins, fishy smells, or won't start, check the ECU capacitors. Electrolytic capacitors from this era leak acid onto the circuit board. Replacing them ($5 in parts) can save a $500 ECU. Look for bulging tops or brown goo on the board.",
+    "matchLevel": "Match - Repair"
+  },
+  {
+    "category": "ecu",
+    "partName": "VW / Audi Immobilizer Defeat (Immo 2/3)",
+    "compatibleVehicles": [
+      "Volkswagen Golf / Jetta Mk4",
+      "Audi A4 (B5/B6)",
+      "Volkswagen Passat B5"
+    ],
+    "years": "1999-2005",
+    "notes": "You cannot just swap an ECU in these cars; the Immobilizer will shut off the engine after 2 seconds. You must either: 1) Clone the EEPROM from the old ECU to the new one, 2) Use VCDS/Vag-Tacho to pair the cluster and keys, or 3) Flash an 'Immo Off' file to the ECU EEPROM.",
+    "matchLevel": "Match - Tech Info"
+  },
+  {
+    "category": "ecu",
+    "partName": "How to Replace an ECU (General Guide)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "All",
+    "notes": "1. DISCONNECT BATTERY NEGATIVE terminal (wait 10 mins for capacitors to discharge). 2. Locate ECU (usually behind glovebox, in kick panel, or under hood). 3. Unplug harness connectors (be gentle with plastic tabs!). 4. Unbolt bracket. 5. Install new ECU. 6. Reconnect battery. 7. Perform 'Idle Relearn' (usually let car idle for 10-15 mins with AC off, then 10 mins with AC on).",
+    "matchLevel": "Match - Guide"
+  },
+  {
+    "category": "ecu",
+    "partName": "Nissan Nistune / Daughterboard",
+    "compatibleVehicles": [
+      "Nissan 300ZX (Z32)",
+      "Nissan Skyline (R32/R33/R34)",
+      "Nissan Silvia / 240SX (S13/S14)"
+    ],
+    "years": "1989-2002",
+    "notes": "Nissan ECUs from the 90s can be modified with a 'daughterboard' (Nistune) that allows real-time tuning via USB, just like a standalone ECU, but retaining factory driveability and sensors. Much cheaper than a full Haltech/Link setup for street cars.",
+    "matchLevel": "Match - Modification"
+  }
+]

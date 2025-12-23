@@ -1,0 +1,68 @@
+[
+  {
+    "category": "safety",
+    "title": "If it smells wrong, stop.",
+    "content": "Burning coolant, hot brakes, fried wiring — your nose catches danger before your eyes do.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "If a bolt fights you, it's telling you something.",
+    "content": "Don't force it. Heat it, soak it, tap it, or rethink the angle.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "Batteries don't care about your feelings.",
+    "content": "Treat every battery like it's ready to arc. Remove negative terminal first, reconnect last.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "Gravity is undefeated.",
+    "content": "Anything heavy will fall the moment you stop respecting it — hoods, rotors, transmissions, springs.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "If you drop a tool, step back — not forward.",
+    "content": "Old-timers learned this after stepping on a falling pry bar or wrench.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "Lefty loosey, righty tighty — unless it ain't.",
+    "content": "Some components use reverse threads: fan clutches, some axle nuts, certain suspension parts.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "If the car just came off the road, it's too hot to touch.",
+    "content": "Let it cool. Radiators, manifolds, and brake rotors stay hot longer than you think.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "Springs and tensioned parts are the silent killers.",
+    "content": "Coil springs, serpentine tensioners, and clutch assemblies can launch tools — or fingers.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "Never trust a previous mechanic.",
+    "content": "Always double-check torque, routing, and fastener type. People do wild things.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "If you're tired, you're dangerous.",
+    "content": "Mistakes happen when you rush or wrench half-asleep.",
+    "severity": "Critical"
+  },
+  {
+    "category": "safety",
+    "title": "Things to Look Out For (Across All Vehicle Types)",
+    "content": "Rust around suspension mounts — catastrophic failure risk. Cracked or swollen brake hoses — they can burst under pressure. Loose or missing wheel fasteners — wheels can walk off. Fuel line seepage or damp spots — fire hazard. Battery corrosion or bulging — risk of acid leaks or explosion. Worn engine/transmission mounts — can cause sudden shifts or binding. Rodent damage to wiring — especially in parked or stored vehicles. Old or brittle vacuum lines — cause stalling, surging, or lean conditions. Loose heat shields or exhaust hangers — can drop or rattle into moving parts. Tire dry rot — even if tread looks good.",
+    "severity": "Critical"
+  }
+]

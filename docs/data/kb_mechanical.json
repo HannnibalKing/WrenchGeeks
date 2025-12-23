@@ -1,0 +1,32 @@
+[
+  {
+    "category": "mechanical",
+    "partName": "Engine Timing Belt Replacement",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Timing belts should be replaced every 60,000-100,000 miles depending on manufacturer. Always replace tensioner, idler pulleys, and seals at the same time. If the belt breaks on an interference engine, valves will bend. Check for oil leaks that could contaminate the belt.",
+    "matchLevel": "Maintenance"
+  },
+  {
+    "category": "mechanical",
+    "partName": "Brake Rotor Resurfacing vs Replacement",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Rotors can be resurfaced if they have at least 0.020\" of material above the discard thickness (stamped on rotor). Check for runout (should be <0.002\") and parallelism. Replace if cracked, warped, or below minimum thickness.",
+    "matchLevel": "Maintenance"
+  },
+  {
+    "category": "mechanical",
+    "partName": "Suspension Bushings Replacement",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Worn bushings cause vague steering, clunking, and poor handling. Press out old bushings and press in new ones using a hydraulic press. Use polyurethane for performance, rubber for comfort. Torque to spec and grease if applicable.",
+    "matchLevel": "Maintenance"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "category": "electrical",
+    "partName": "Multimeter 101: The 'Continuity Trap' (Beep Test)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "WARNING: The 'Beep' (Continuity) test only tells you the circuit is not completely open. Most meters will beep even with 50+ Ohms of resistance. A battery cable holding on by ONE strand of copper will beep, but it will fail under load. Never trust a beep for high-current circuits.",
+    "matchLevel": "Critical Safety"
+  },
+  {
+    "category": "electrical",
+    "partName": "Multimeter 101: Diode Mode vs. Ohms",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Diode Mode (Arrow symbol) sends a specific voltage to test semiconductor junctions (diodes/transistors). Ohms Mode (O) measures resistance. Do not use Diode mode to check resistance; it gives confusing readings. Use Ohms for wires/grounds, Diode for alternators/rectifiers.",
+    "matchLevel": "Electrical Basics"
+  },
+  {
+    "category": "electrical",
+    "partName": "Multimeter 101: Voltage Drop (The Only Real Test)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Resistance checks (Ohms) can lie because the circuit is off. Voltage Drop tests the circuit ON and UNDER LOAD. 1. Turn circuit ON. 2. Put one probe on Battery Pos, other on Device Pos. 3. Reading should be < 0.5V. If it reads 2V, you are losing 2V to corrosion in that wire.",
+    "matchLevel": "Pro Tip"
+  },
+  {
+    "category": "electrical",
+    "partName": "Multimeter 101: Testing Grounds (Ohms)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Set meter to Ohms (O). Touch one probe to the chassis (clean metal) and the other to your ground wire/pin. A perfect ground is 0.0 O. Anything under 0.5 O is good. If you see 5.0 O or higher, you have a bad ground (corrosion or loose bolt), which causes weird electrical gremlins.",
+    "matchLevel": "Electrical Basics"
+  },
+  {
+    "category": "electrical",
+    "partName": "Safety: Why NOT to use a Higher Fuse",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "DANGER: Fuses are rated to protect the WIRE, not the device. If a circuit has 18-gauge wire (rated for ~10 Amps) and you put a 20A fuse in it, the wire will melt and catch fire BEFORE the fuse blows. NEVER replace a blown fuse with a higher rating.",
+    "matchLevel": "Critical Safety"
+  },
+  {
+    "category": "electrical",
+    "partName": "Theory: Fuse Ratings Explained",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "A fuse is a deliberate weak point. If a 10A fuse blows, it means more than 10 Amps flowed through it. This is usually caused by a 'Short to Ground' (power wire touching metal). Putting a bigger fuse just allows more current to flow into the short, turning your wiring harness into a heater.",
+    "matchLevel": "Electrical Basics"
+  },
+  {
+    "category": "electrical",
+    "partName": "Theory: Parasitic Draw Test",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "If your battery dies overnight: 1. Disconnect Negative battery terminal. 2. Set meter to Amps (A) and move red probe to the '10A' port. 3. Connect meter in SERIES between the battery post and the cable. 4. Normal draw is < 0.05 Amps (50mA). If higher, pull fuses one by one until it drops.",
+    "matchLevel": "Electrical Basics"
+  }
+]
