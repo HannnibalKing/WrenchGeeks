@@ -2158,6 +2158,300 @@
         "notes": "Platform Mate"
       }
     ],
+    "MITSUBISHI_GALANT_LEGNUM": [
+      {
+        "make": "Mitsubishi",
+        "model": "Galant VR-4 (E39A)",
+        "years": "1987-1992",
+        "notes": "4G63T AWD (The 'Dad' of the Evo)"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant VR-4 (EC5A)",
+        "years": "1996-2002",
+        "notes": "2.5L V6 Twin Turbo (6A13TT)"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Legnum VR-4",
+        "years": "1996-2002",
+        "notes": "Wagon version of Galant VR-4"
+      }
+    ],
+    "MITSUBISHI_PAJERO_MONTERO": [
+      {
+        "make": "Mitsubishi",
+        "model": "Pajero / Montero (V20)",
+        "years": "1991-1999",
+        "notes": "The Dakar Legend"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Pajero Evolution (V55W)",
+        "years": "1997-1999",
+        "notes": "Homologation Special"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Galloper",
+        "years": "1991-2003",
+        "notes": "Licensed Pajero Clone"
+      }
+    ],
+    "NISSAN_S_CHASSIS": [
+      {
+        "make": "Nissan",
+        "model": "Silvia / 240SX (S13)",
+        "years": "1989-1994",
+        "notes": "Drift Legend"
+      },
+      {
+        "make": "Nissan",
+        "model": "Silvia / 240SX (S14)",
+        "years": "1995-1998",
+        "notes": "Zenki / Kouki"
+      },
+      {
+        "make": "Nissan",
+        "model": "Silvia (S15)",
+        "years": "1999-2002",
+        "notes": "JDM Only"
+      },
+      {
+        "make": "Nissan",
+        "model": "180SX / 200SX",
+        "years": "1989-1998",
+        "notes": "Hatchback S-Chassis"
+      }
+    ],
+    "NISSAN_SKYLINE_GT_R": [
+      {
+        "make": "Nissan",
+        "model": "Skyline GT-R (R32)",
+        "years": "1989-1994",
+        "notes": "Godzilla"
+      },
+      {
+        "make": "Nissan",
+        "model": "Skyline GT-R (R33)",
+        "years": "1995-1998",
+        "notes": "The Boat"
+      },
+      {
+        "make": "Nissan",
+        "model": "Skyline GT-R (R34)",
+        "years": "1999-2002",
+        "notes": "The Legend"
+      }
+    ],
+    "NISSAN_Z_CAR": [
+      {
+        "make": "Nissan",
+        "model": "300ZX (Z32)",
+        "years": "1990-1996",
+        "notes": "VG30DETT"
+      },
+      {
+        "make": "Nissan",
+        "model": "350Z (Z33)",
+        "years": "2003-2008",
+        "notes": "VQ35DE / HR"
+      },
+      {
+        "make": "Nissan",
+        "model": "370Z (Z34)",
+        "years": "2009-2020",
+        "notes": "VQ37VHR"
+      },
+      {
+        "make": "Nissan",
+        "model": "Z (RZ34)",
+        "years": "2023-Present",
+        "notes": "VR30DDTT"
+      }
+    ],
+    "HONDA_CIVIC_LEGENDS": [
+      {
+        "make": "Honda",
+        "model": "Civic (EF)",
+        "years": "1988-1991",
+        "notes": "4th Gen"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (EG)",
+        "years": "1992-1995",
+        "notes": "5th Gen"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (EK)",
+        "years": "1996-2000",
+        "notes": "6th Gen"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (EP3)",
+        "years": "2002-2005",
+        "notes": "Hatchback"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (FA5/FG2)",
+        "years": "2006-2011",
+        "notes": "8th Gen"
+      }
+    ],
+    "HONDA_INTEGRA_RSX": [
+      {
+        "make": "Acura",
+        "model": "Integra (DA9)",
+        "years": "1990-1993",
+        "notes": "2nd Gen"
+      },
+      {
+        "make": "Acura",
+        "model": "Integra (DC2/DC4)",
+        "years": "1994-2001",
+        "notes": "3rd Gen / Type R"
+      },
+      {
+        "make": "Acura",
+        "model": "RSX (DC5)",
+        "years": "2002-2006",
+        "notes": "4th Gen Integra"
+      }
+    ],
+    "VOLVO_REDBLOCK": [
+      {
+        "make": "Volvo",
+        "model": "240 Series",
+        "years": "1975-1993",
+        "notes": "The Brick"
+      },
+      {
+        "make": "Volvo",
+        "model": "740 / 760",
+        "years": "1982-1992",
+        "notes": "Turbo Bricks"
+      },
+      {
+        "make": "Volvo",
+        "model": "940 / 960",
+        "years": "1990-1998",
+        "notes": "Last RWD Volvos"
+      }
+    ],
+    "VOLVO_P80_PLATFORM": [
+      {
+        "make": "Volvo",
+        "model": "850 / 850 R",
+        "years": "1992-1997",
+        "notes": "5-Cylinder FWD/AWD"
+      },
+      {
+        "make": "Volvo",
+        "model": "S70 / V70 (Gen 1)",
+        "years": "1997-2000",
+        "notes": "Refined 850"
+      },
+      {
+        "make": "Volvo",
+        "model": "C70 (Gen 1)",
+        "years": "1997-2005",
+        "notes": "Coupe/Convertible"
+      }
+    ],
+    "SAAB_LEGENDS": [
+      {
+        "make": "Saab",
+        "model": "900 Classic",
+        "years": "1978-1993",
+        "notes": "Turbo Pioneer"
+      },
+      {
+        "make": "Saab",
+        "model": "9000",
+        "years": "1984-1998",
+        "notes": "Type 4 Platform"
+      },
+      {
+        "make": "Saab",
+        "model": "9-3 (OG)",
+        "years": "1998-2002",
+        "notes": "Viggen Era"
+      },
+      {
+        "make": "Saab",
+        "model": "9-5 (OG)",
+        "years": "1997-2009",
+        "notes": "Aero Era"
+      }
+    ],
+    "SUZUKI_SWIFT_CULTUS": [
+      {
+        "make": "Suzuki",
+        "model": "Swift GTi (AA34S)",
+        "years": "1988-1994",
+        "notes": "Cultus GTi - High revving 1.3L"
+      },
+      {
+        "make": "Geo",
+        "model": "Metro",
+        "years": "1989-1994",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Swift Sport (ZC31S)",
+        "years": "2005-2010",
+        "notes": "Modern Hot Hatch"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Swift Sport (ZC32S)",
+        "years": "2010-2017",
+        "notes": "1.6L NA"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Swift Sport (ZC33S)",
+        "years": "2017-Present",
+        "notes": "1.4L Turbo"
+      }
+    ],
+    "SUZUKI_OFFROAD": [
+      {
+        "make": "Suzuki",
+        "model": "Samurai / Jimny (SJ413)",
+        "years": "1984-1998",
+        "notes": "Solid Axle Legend"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Jimny (JB23/JB43)",
+        "years": "1998-2018",
+        "notes": "3rd Gen"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Jimny (JB64/JB74)",
+        "years": "2018-Present",
+        "notes": "4th Gen (Mini G-Wagon)"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Sidekick / Vitara (1st Gen)",
+        "years": "1988-1998",
+        "notes": "Body on Frame"
+      },
+      {
+        "make": "Geo",
+        "model": "Tracker",
+        "years": "1989-1998",
+        "notes": "Rebadged Sidekick"
+      }
+    ],
     "SUBARU_WRX_STI": [
       {
         "make": "Subaru",
@@ -4670,6 +4964,86 @@
         "model": "Grand Cherokee (ZJ/WJ) 4.0L",
         "years": "1993–2004",
         "notes": "Common Donor"
+      }
+    ],
+    "HYUNDAI_KIA_E_GMP": [
+      {
+        "make": "Hyundai",
+        "model": "Ioniq 5",
+        "years": "2021-Present",
+        "notes": "E-GMP Platform"
+      },
+      {
+        "make": "Kia",
+        "model": "EV6",
+        "years": "2021-Present",
+        "notes": "E-GMP Platform"
+      },
+      {
+        "make": "Genesis",
+        "model": "GV60",
+        "years": "2021-Present",
+        "notes": "E-GMP Platform"
+      }
+    ],
+    "HYUNDAI_KIA_N3": [
+      {
+        "make": "Hyundai",
+        "model": "Sonata (DN8)",
+        "years": "2019-Present",
+        "notes": "N3 Platform"
+      },
+      {
+        "make": "Kia",
+        "model": "K5 (DL3)",
+        "years": "2019-Present",
+        "notes": "N3 Platform"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Tucson (NX4)",
+        "years": "2020-Present",
+        "notes": "N3 Platform"
+      },
+      {
+        "make": "Kia",
+        "model": "Sportage (NQ5)",
+        "years": "2021-Present",
+        "notes": "N3 Platform"
+      }
+    ],
+    "HYUNDAI_KIA_J_PLATFORM": [
+      {
+        "make": "Hyundai",
+        "model": "Elantra (CN7)",
+        "years": "2020-Present",
+        "notes": "K3 Platform"
+      },
+      {
+        "make": "Kia",
+        "model": "Forte / K3 (BD)",
+        "years": "2018-Present",
+        "notes": "J6 Platform"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Veloster (JS)",
+        "years": "2018-2022",
+        "notes": "J6 Platform"
+      }
+    ],
+    "HYUNDAI_KIA_RWD_SPORT": [
+      {
+        "make": "Kia",
+        "model": "Stinger",
+        "years": "2017-2023",
+        "notes": "RWD/AWD Sport Sedan"
+      },
+      {
+        "make": "Genesis",
+        "model": "G70",
+        "years": "2017-Present",
+        "notes": "Platform Mate to Stinger"
       }
     ]
   },

@@ -68,5 +68,46 @@
     "years": "1996-2006",
     "notes": "The 'Tundra Brake Upgrade' (199mm or 231mm calipers) is a direct bolt-on for 3rd Gen 4Runners and 1st Gen Tacomas. Significantly larger calipers and rotors. 231mm calipers (13WL) require 16\" wheels or larger. Massive stopping power improvement.",
     "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Suzuki Samurai / Sidekick Engine Swap (1.6L)",
+    "compatibleVehicles": [
+      "Suzuki Samurai (SJ413)",
+      "Suzuki Sidekick / Geo Tracker (1.6L 8v/16v)"
+    ],
+    "years": "1986-1998",
+    "notes": "The 1.3L engine in the Samurai is underpowered. The 1.6L 8-valve or 16-valve engine from a Sidekick/Tracker bolts to the Samurai transmission with an adapter plate (Petroworks/Trail Tough). It's the most common power upgrade for Samurais.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Suzuki Jimny (JB23/JB43) Transfer Case Gears",
+    "compatibleVehicles": [
+      "Suzuki Jimny (1998-2018)",
+      "Suzuki Samurai"
+    ],
+    "years": "1998-2018",
+    "notes": "Stock Jimny transfer case gearing is too high for big tires. You can install 'crawler gears' (reduction gears) inside the stock case. Some owners swap in the older, stronger Samurai transfer case (gear driven vs chain driven) for extreme rock crawling.",
+    "matchLevel": "Upgrade"
+  },
+  {
+    "partName": "Suzuki Vitara / Grand Vitara Steel Front Diff",
+    "compatibleVehicles": [
+      "Suzuki Grand Vitara (1999-2005)",
+      "Suzuki XL-7 (2001-2006)",
+      "Suzuki Sidekick / Tracker"
+    ],
+    "years": "1999-2006",
+    "notes": "The aluminum front differential housing on Sidekicks/Trackers is prone to cracking off-road. The steel front differential housing and third member from the manual transmission Grand Vitara / XL-7 is a direct bolt-in upgrade and is much stronger.",
+    "matchLevel": "Upgrade"
+  },
+  {
+    "partName": "Suzuki Samurai Toyota Axle Swap",
+    "compatibleVehicles": [
+      "Suzuki Samurai",
+      "Toyota Pickup / 4Runner (Solid Axle)"
+    ],
+    "years": "1986-1995",
+    "notes": "For tires larger than 33 inches, stock Samurai axles break. Swapping in Toyota Pickup (Hilux) solid axles is the standard solution. They are wider (more stability) and significantly stronger. Requires custom spring perches and steering linkage.",
+    "matchLevel": "Match - Major Mods"
   }
 ]

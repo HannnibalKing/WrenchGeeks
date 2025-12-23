@@ -75,5 +75,78 @@
     "years": "1997-2002",
     "notes": "The 5th Gen Mirage Coupe (US) is the same chassis as the JDM Evo 4/5/6. You can swap the entire Evo drivetrain (4G63T, AWD system, suspension) into the Mirage. The floorpan requires modification to fit the rear diff and driveshaft, but the suspension pickup points are largely there.",
     "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Mitsubishi 4G63T Crankwalk (7-Bolt)",
+    "compatibleVehicles": [
+      "Mitsubishi Eclipse (1995-1999)",
+      "Eagle Talon (1995-1998)"
+    ],
+    "years": "1995-1999",
+    "notes": "The 2nd Gen DSM 7-bolt 4G63T is infamous for 'crankwalk' (thrust bearing failure), which destroys the engine block. The 1G 6-bolt engine (1990-1992.5) is immune. Many 2G owners swap in a 6-bolt engine to avoid this.",
+    "matchLevel": "Warning"
+  },
+  {
+    "partName": "Mitsubishi Evo X / Ralliart SST Transmission Issues",
+    "compatibleVehicles": [
+      "Mitsubishi Lancer Evolution X MR",
+      "Mitsubishi Lancer Ralliart"
+    ],
+    "years": "2008-2015",
+    "notes": "The Getrag TC-SST dual-clutch transmission is prone to clutch fork magnet failure and overheating. Regular fluid changes (DiaQueen SSTF-I) are critical. Installing an external transmission cooler is mandatory for track use.",
+    "matchLevel": "Warning"
+  },
+  {
+    "partName": "Mitsubishi Galant VR-4 (E39A) 4-Lug to 5-Lug Swap",
+    "compatibleVehicles": [
+      "Mitsubishi Galant VR-4 (1991-1992)",
+      "Mitsubishi Eclipse (1G DSM)"
+    ],
+    "years": "1990-1994",
+    "notes": "The Galant VR-4 (US Spec) came with 4x114.3 hubs. You can swap to 5x114.3 hubs using parts from a 1G Eclipse GSX (AWD) or specific non-US Galant knuckles. Opens up a huge range of wheel options.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Mitsubishi 6A13TT Swap into FTO/Mirage",
+    "compatibleVehicles": [
+      "Mitsubishi FTO",
+      "Mitsubishi Mirage / Lancer",
+      "Mitsubishi Galant / Legnum VR-4"
+    ],
+    "years": "1994-2002",
+    "notes": "The 2.5L Twin Turbo V6 (6A13TT) from the Galant VR-4 fits into the FTO and Lancer engine bays. It's a tight squeeze, but provides 280hp stock. The FTO's FWD gearbox can be used, but traction will be an issue.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Honda K20/K24 'Frankenstein' (K24 Bottom / K20 Head)",
+    "compatibleVehicles": [
+      "Honda Civic Si (K20Z3)",
+      "Acura RSX Type-S (K20A2)",
+      "Honda Accord / CR-V (K24A2/K24A4)"
+    ],
+    "years": "2002-2011",
+    "notes": "The ultimate NA Honda build. Use the 2.4L block (K24) from an Accord/CR-V for torque, and the head from a K20A2/Z3 (RSX-S/Civic Si) for high RPM flow. Requires a K24 head gasket and CR-V passenger side engine mount bracket.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Honda B-Series Transmission Interchange",
+    "compatibleVehicles": [
+      "Honda Civic Si (1999-2000)",
+      "Acura Integra (1994-2001)",
+      "Honda CR-V (1997-2001)"
+    ],
+    "years": "1994-2001",
+    "notes": "All hydraulic B-series transmissions interchange. The B16 (Civic Si) and B18C (GSR/Type R) have short gears for acceleration. The LS (Integra non-VTEC) has long gears for highway cruising. The CR-V transmission is AWD but has very short gears.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Honda S2000 AP1 vs AP2 Retainers",
+    "compatibleVehicles": [
+      "Honda S2000 (AP1 2000-2003)",
+      "Honda S2000 (AP2 2004-2009)"
+    ],
+    "years": "2000-2009",
+    "notes": "AP1 (F20C) valve retainers are prone to cracking if over-revved. Upgrading to AP2 (F22C) retainers is a standard reliability mod for AP1 owners. They are stronger and a direct fit.",
+    "matchLevel": "Upgrade"
   }
 ]

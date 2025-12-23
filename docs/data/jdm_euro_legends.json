@@ -68,5 +68,49 @@
     "years": "1984-1995",
     "notes": "4-piston calipers from the W124 400E/500E or R129 SL models bolt onto the smaller W201 190E. Massive stopping power. Requires the matching larger rotors and usually 16\"+ wheels (Evo I/II wheels or similar).",
     "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Nissan RB Engine Oil Pump Drive Collar",
+    "compatibleVehicles": [
+      "Nissan Skyline GT-R (R32/R33/R34)",
+      "Nissan Skyline GTS-t (R32/R33)",
+      "Nissan Stagea (RB25/RB26)"
+    ],
+    "years": "1989-2002",
+    "notes": "The stock RB crank oil pump drive collar is narrow and can strip at high RPM, causing instant oil pressure loss. Installing a 'crank collar' (wider drive surface) is mandatory for any high-power RB build. Requires machining the crank nose.",
+    "matchLevel": "Warning"
+  },
+  {
+    "partName": "Nissan Z32 MAF Sensor Upgrade",
+    "compatibleVehicles": [
+      "Nissan Silvia / 240SX (S13/S14/S15)",
+      "Nissan Skyline (R32/R33)",
+      "Nissan 300ZX (Z32)"
+    ],
+    "years": "1989-2002",
+    "notes": "The Z32 300ZX Mass Air Flow (MAF) sensor (N62) is the standard upgrade for SR20DET and RB20/25 engines. It can read up to ~500hp, whereas stock SR/RB MAFs max out around 300hp. Requires ECU tuning (Nistune/PowerFC).",
+    "matchLevel": "Upgrade"
+  },
+  {
+    "partName": "Nissan CD009 Transmission Swap",
+    "compatibleVehicles": [
+      "Nissan 350Z (2003-2006)",
+      "Nissan 370Z",
+      "Universal (LS Swaps, JZ Swaps)"
+    ],
+    "years": "2003-Present",
+    "notes": "The CD009 (6-speed manual from late 350Z/370Z) is nearly indestructible. It's the go-to transmission for high horsepower builds (1000hp+). Adapter kits exist to mate it to 2JZ, LS, RB, and SR engines. Note: It is very bulky and often requires tunnel hammering.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Nissan S14/S15 Rear Subframe in S13",
+    "compatibleVehicles": [
+      "Nissan 240SX / Silvia (S13)",
+      "Nissan 240SX / Silvia (S14)",
+      "Nissan Silvia (S15)"
+    ],
+    "years": "1989-2002",
+    "notes": "The S14/S15 rear subframe has better geometry (less anti-squat) than the S13, providing more traction. It bolts into the S13 chassis but requires offset subframe bushings to align the mounting holes. Widens the rear track slightly.",
+    "matchLevel": "Match - Minor Mods"
   }
 ]

@@ -104,6 +104,80 @@
         { "name": "Meyle Door Check", "notes": "Reinforced design" },
         { "name": "URO Parts", "notes": "Budget replacement" }
       ]
+    },
+    {
+      "id": "s2000_antenna_stubby",
+      "category": "Body & Exterior",
+      "name": "Honda S2000 'Stubby' Antenna",
+      "description": "The short, rubberized antenna from the Honda S2000 is a direct thread-on upgrade for many vehicles with long 'RC car' style whips. It improves aesthetics significantly.",
+      "specs": [
+        "Thread: M5 x 0.8",
+        "Length: ~7 inches",
+        "Honda Part: 39151-S2H-E01"
+      ],
+      "compatibility": [
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf / GTI (Mk4)", "years": "1999–2005", "notes": "Direct fit" },
+            { "name": "Jetta (Mk4)", "years": "1999–2005", "notes": "Direct fit" },
+            { "name": "Passat (B5/B5.5)", "years": "1998–2005", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "MX-5 Miata (NC)", "years": "2006–2015", "notes": "Direct fit" },
+            { "name": "Mazda3 (1st Gen)", "years": "2004–2009", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Celica (7th Gen)", "years": "2000–2005", "notes": "Direct fit" },
+            { "name": "MR2 Spyder", "years": "2000–2005", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "350Z", "years": "2003–2008", "notes": "Direct fit" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "Perrin Shorty Antenna", "notes": "Aftermarket option" },
+        { "name": "CravenSpeed Stubby", "notes": "Aftermarket option" }
+      ]
+    },
+    {
+      "id": "subaru_hella_horns",
+      "category": "Body & Exterior",
+      "name": "Hella Supertone / Sharptone Horns",
+      "description": "While technically electrical, these are a staple 'exterior' mod for Subarus, often visible through the grille. They are much louder than stock and have a distinctive look.",
+      "specs": [
+        "Voltage: 12V",
+        "Tone: High/Low dual tone",
+        "Mounting: Universal bracket required usually"
+      ],
+      "compatibility": [
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "WRX / STI (All Gens)", "years": "2002–Present", "notes": "The 'Subie Wave' accessory. Requires Grimmspeed or similar bracket for clean install." },
+            { "name": "Forester", "years": "1998–Present", "notes": "Popular mod" }
+          ]
+        },
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Any 12V Vehicle", "years": "All", "notes": "Can be fitted to anything with a relay harness." }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "PIAA Sports Horn", "notes": "Similar sound, different look" }
+      ]
     }
   ]
 }

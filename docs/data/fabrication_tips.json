@@ -35,5 +35,32 @@
     "years": "Universal",
     "notes": "You CAN get pro results with spray cans. 1. PREP: Sand with 400 grit, then clean with wax/grease remover. 2. WARMTH: Put the cans in a bucket of warm water for 10 mins before spraying (increases pressure, finer mist). 3. CLEAR COAT: Use a '2K' (2-part) Clear Coat in a can (has a button on the bottom to mix hardener). It is fuel resistant and won't fade like cheap 1K clear.",
     "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Fabrication: Cardboard Aided Design (CAD)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "Before cutting expensive metal, mock up your brackets using cereal box cardboard. It mimics the thickness of 16-18 gauge steel well. Use scissors and tape to refine the shape, then trace onto your metal. 'Measure twice, cut once' becomes 'Cut cardboard ten times, cut metal once'.",
+    "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Fabrication: Rivnuts / Nutserts",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "The cleanest way to add a threaded mounting point to a blind panel (where you can't reach the back for a nut). Requires a setting tool. Aluminum rivnuts are easier to set but strip easier; Steel rivnuts are stronger but require a heavy-duty tool. Great for mounting catch cans, reservoirs, and ground straps.",
+    "matchLevel": "Tech Advice"
+  },
+  {
+    "partName": "Fabrication: AN Fittings & Hoses",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "AN (Army-Navy) sizes are in 1/16th of an inch. AN-6 = 6/16\" = 3/8\" ID. AN-8 = 1/2\" ID. AN-10 = 5/8\" ID. PTFE lined hose is mandatory for modern fuels (E85) to prevent smell permeation. Rubber lined hose will rot with ethanol. Always use aluminum wrenches on aluminum fittings to prevent marring.",
+    "matchLevel": "Tech Advice"
   }
 ]

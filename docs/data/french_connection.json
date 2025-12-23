@@ -44,5 +44,37 @@
     "years": "1985-1996",
     "notes": "The Volvo 400 series used Renault engines. The B18FT (Volvo 1.7 Turbo) is based on the Renault F-series architecture. Some parts interchange with the Renault 5 GT Turbo and Clio engines.",
     "matchLevel": "Match - Possible Mods"
+  },
+  {
+    "partName": "Prince Engine (Mini / PSA) Timing Chain Issues",
+    "compatibleVehicles": [
+      "Mini Cooper S (R56)",
+      "Peugeot 207 GTi",
+      "Citroen DS3",
+      "Peugeot RCZ"
+    ],
+    "years": "2006-2014",
+    "notes": "The 'Prince' engine (N14/N18 in Mini, THP in PSA) is notorious for timing chain tensioner failure (Death Rattle). The updated tensioner from the later N18 engine is a direct retrofit and highly recommended for all early models. Keep oil topped up!",
+    "matchLevel": "Warning"
+  },
+  {
+    "partName": "Renault Clio 197/200 Gearbox Issues",
+    "compatibleVehicles": [
+      "Renault Clio RS 197",
+      "Renault Clio RS 200 (Mk3)"
+    ],
+    "years": "2006-2012",
+    "notes": "The TL4 gearbox in the Mk3 Clio RS is known for weak synchros (especially 3rd and 4th gear). Using high-quality gear oil (Elf Tranself NFP 75W-80) is critical. Do not use generic GL-5 oils as they can corrode the brass synchros.",
+    "matchLevel": "Warning"
+  },
+  {
+    "partName": "Peugeot 205 GTI / 309 GTI Rear Beam",
+    "compatibleVehicles": [
+      "Peugeot 205 GTI",
+      "Peugeot 309 GTI"
+    ],
+    "years": "1984-1994",
+    "notes": "The rear torsion beam suspension uses needle bearings that rust and seize, causing the wheels to lean in (negative camber). Rebuild kits are available, but often the shaft itself is pitted. The 309 GTI beam is wider and is a popular upgrade for the 205 for better stability.",
+    "matchLevel": "Upgrade"
   }
 ]

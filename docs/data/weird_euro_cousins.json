@@ -52,5 +52,49 @@
     "years": "1990-2001",
     "notes": "Lamborghini famously licensed the headlights from the Nissan 300ZX (Z32) for the facelifted Diablo. They even have the Nissan logo on the top edge (covered by a carbon fiber strip on the Lambo).",
     "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Volvo Redblock (B230) 16V Head Swap",
+    "compatibleVehicles": [
+      "Volvo 240 / 740 / 940 (8V Redblock)",
+      "Volvo 740 / 940 GLE (16V B234F)"
+    ],
+    "years": "1988-1995",
+    "notes": "The 16-valve head from the B234F (found in GLE models) bolts onto the robust B230 Turbo block. This creates a high-flowing, turbo-ready monster. Requires custom timing belt tensioner setup (often using VW parts) and piston flycutting.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Saab Trionic 5.5 / 7 Engine Management",
+    "compatibleVehicles": [
+      "Saab 9000",
+      "Saab 900 (NG)",
+      "Saab 9-3 (OG)",
+      "Universal (4-Cylinder Turbos)"
+    ],
+    "years": "1993-2002",
+    "notes": "Saab's Trionic engine management uses the spark plugs as combustion sensors (Ion Sensing). It is incredibly advanced for its time and can be adapted to other 4-cylinder engines (like Vauxhall/Opel C20XE) for perfect knock control and boost management.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Volvo 850 / S70 'Porsche' Brakes",
+    "compatibleVehicles": [
+      "Volvo 850",
+      "Volvo S70 / V70 (Gen 1)",
+      "Porsche 993 Twin Turbo"
+    ],
+    "years": "1993-2000",
+    "notes": "The 'Big Brake Kit' for 850s often uses Porsche 993 Twin Turbo calipers (Big Reds) with custom brackets. Volvo actually used similar Brembo calipers on the S60R/V70R later on, which are a more direct swap for P2 platform cars.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Saab B204/B234 Engine Strength",
+    "compatibleVehicles": [
+      "Saab 9000",
+      "Saab 900 (NG)",
+      "Saab 9-3 (OG)"
+    ],
+    "years": "1994-2002",
+    "notes": "The Saab H-Engine (B204/B234) found in the 9000 and early 9-3 is legendary. Stock internals can handle 400-500hp. It is a popular swap for RWD conversions (using an Omega gearbox) in Europe due to its cheap cost and immense strength.",
+    "matchLevel": "Info"
   }
 ]
