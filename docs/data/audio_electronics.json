@@ -1,0 +1,92 @@
+[
+  {
+    "partName": "VW RCD330 Plus (CarPlay/Android Auto Upgrade)",
+    "compatibleVehicles": [
+      "Volkswagen Golf Mk5/Mk6 (2003-2013)",
+      "Volkswagen Jetta Mk5/Mk6 (2005-2015)",
+      "Volkswagen Passat B6/B7 (2005-2014)",
+      "Volkswagen Tiguan (2007-2015)"
+    ],
+    "years": "2003-2015",
+    "notes": "The RCD330 Plus is an OEM VW radio from the Chinese market. It fits directly into older VW dashboards and adds Apple CarPlay and Android Auto for cheap. No dash kit required. Ensure you get the 'No Name' (Desay) version for best compatibility. May require a CAN-bus gateway upgrade on pre-2008 models to prevent battery drain.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Ford Sync 2 to Sync 3 Upgrade",
+    "compatibleVehicles": [
+      "Ford F-150 (2013-2015)",
+      "Ford Fusion (2013-2016)",
+      "Ford Focus (2012-2015)",
+      "Ford Mustang (2015-2016)"
+    ],
+    "years": "2012-2016",
+    "notes": "Vehicles equipped with the slow, resistive-touch 'MyFord Touch' (Sync 2) can be upgraded to the capacitive-touch, CarPlay/Android Auto capable Sync 3 system. You need the Sync 3 APIM (module) and screen, plus a new USB hub for CarPlay support. Requires FORScan programming to match your vehicle options.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "GM 'Lux' Amp Upgrade (GMT800)",
+    "compatibleVehicles": [
+      "Chevy Silverado / Tahoe / Suburban (2003-2006)",
+      "GMC Sierra / Yukon (2003-2006)",
+      "Cadillac Escalade (2003-2006)"
+    ],
+    "years": "2003-2006",
+    "notes": "GMT800 trucks came with 'Non-Lux' (dumb) or 'Lux' (smart/DSP) Bose amps. You can swap the superior 'Lux' amp (usually from an Escalade or Denali, part #15114454) into a Chevy/GMC. Requires moving a few pins in the harness and reprogramming the head unit (or using a Lux-compatible head unit). Drastically improves sound quality.",
+    "matchLevel": "Match - Major Mods"
+  },
+  {
+    "partName": "Honda Active Noise Cancellation (ANC) Delete",
+    "compatibleVehicles": [
+      "Honda Accord (2008-Present)",
+      "Honda Odyssey (2011-Present)",
+      "Honda Pilot (2009-Present)",
+      "Acura TLX / MDX"
+    ],
+    "years": "2008-2024",
+    "notes": "If you add an aftermarket subwoofer to these vehicles, the ANC system will detect the bass as 'noise' and try to cancel it out, creating a loud booming feedback loop. You must unplug the ANC module (usually under the dash or behind the glovebox) or disconnect the ANC microphones in the headliner.",
+    "matchLevel": "Match - Modification"
+  },
+  {
+    "partName": "Toyota '200mm Wide' Head Unit Standard",
+    "compatibleVehicles": [
+      "Toyota Corolla (2000s-2010s)",
+      "Toyota Camry (2000s-2010s)",
+      "Toyota Tacoma / Tundra / 4Runner",
+      "Subaru BRZ / Scion FR-S"
+    ],
+    "years": "2000-2018",
+    "notes": "Most Toyotas use a radio that is 200mm wide, which is wider than the standard Double DIN (180mm). If installing a standard aftermarket radio, you need 'ears' (filler panels) to fill the gap. Alternatively, you can buy 'Toyota specific' Android head units that are 200mm wide for a factory look.",
+    "matchLevel": "Match - Reference Only"
+  },
+  {
+    "partName": "BMW E39/E46/E53 'OEM Look' Android Units",
+    "compatibleVehicles": [
+      "BMW 3-Series E46 (1999-2006)",
+      "BMW 5-Series E39 (1996-2003)",
+      "BMW X5 E53 (2000-2006)"
+    ],
+    "years": "1996-2006",
+    "notes": "These cars have unique dashboard shapes. Standard Double DIN radios look out of place. Companies like Dynavin, Eonon, and Avin make Android head units shaped exactly like the factory navigation screen but with modern tech. If you have factory DSP/Navigation, you may need a 6-meter extension cable to bypass the amp in the trunk.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "The 'Big 3' Electrical Upgrade",
+    "compatibleVehicles": [
+      "Universal (All Vehicles)"
+    ],
+    "years": "All",
+    "notes": "Essential for high-power audio systems or winches. Replace/upgrade three cables with 0-gauge or 4-gauge wire: 1) Alternator positive to Battery positive. 2) Battery negative to Chassis ground. 3) Engine block to Chassis ground. Reduces voltage drop and dimming lights.",
+    "matchLevel": "Match - Universal"
+  },
+  {
+    "partName": "Subaru Under-Seat Subwoofer",
+    "compatibleVehicles": [
+      "Subaru Impreza / WRX",
+      "Subaru Forester",
+      "Subaru Crosstrek"
+    ],
+    "years": "2002-2020",
+    "notes": "Subaru offers an OEM accessory subwoofer that mounts under the driver or passenger seat. It plugs directly into the factory harness. While not earth-shattering bass, it fills out the low end nicely and takes up zero cargo space. Often interchangeable between models with similar seat rails.",
+    "matchLevel": "Match - Direct Fit"
+  }
+]
