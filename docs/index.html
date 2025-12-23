@@ -12,6 +12,7 @@
             <h1 style="margin:0;">WrenchGeeks 🔧</h1>
             <nav class="main-nav">
                 <button class="nav-tab active" data-target="searchSection">Find Parts</button>
+                <button class="nav-tab" data-target="knowledgeSection">Knowledge Base</button>
             </nav>
         </div>
     </header>
@@ -140,6 +141,29 @@
                 <a href="https://cwallet.com/t/GVBV3SPY" target="_blank" class="btn-secondary" style="text-decoration: none; display: inline-block; text-align: center; width: 100%; font-weight: bold; color: var(--accent-color); border-color: var(--accent-color);">Donate & Support</a>
             </section>
                 </div>
+            </div>
+        </div>
+
+        <!-- KNOWLEDGE BASE SECTION -->
+        <div id="knowledgeSection" class="content-section hidden">
+            <div class="kb-header" style="text-align:center; margin-bottom:2rem;">
+                <h2>The Archive</h2>
+                <p>Ancient scrolls, wiring diagrams, and safety warnings written in blood.</p>
+            </div>
+            
+            <div class="kb-controls" style="display:flex; justify-content:center; gap:0.5rem; margin-bottom:2rem; flex-wrap:wrap;">
+                <button class="btn-secondary filter-btn active" data-filter="all">All</button>
+                <button class="btn-secondary filter-btn" data-filter="safety">Safety</button>
+                <button class="btn-secondary filter-btn" data-filter="mechanical">Mechanical</button>
+                <button class="btn-secondary filter-btn" data-filter="electrical">Electrical</button>
+                <button class="btn-secondary filter-btn" data-filter="fabrication">Fabrication</button>
+                <button class="btn-secondary filter-btn" data-filter="hacks">Hacks</button>
+                <button class="btn-secondary filter-btn" data-filter="ecu">ECU Tuning</button>
+                <button class="btn-secondary filter-btn" data-filter="tips">Pro Tips</button>
+            </div>
+
+            <div id="kbGrid" class="grid-list">
+                <!-- Content injected by JS -->
             </div>
         </div>
     </main>
