@@ -61,13 +61,18 @@ header p {
 }
 
 .split-view {
-    display: flex;
+    display: grid;
+    grid-template-columns: 320px 1fr;
     gap: 2rem;
 }
 
 .sidebar {
-    width: 320px;
-    flex-shrink: 0;
+    /* width: 320px; */
+    /* flex-shrink: 0; */
+}
+
+.main-content {
+    /* flex: 1; */
 }
 
 .sidebar {
