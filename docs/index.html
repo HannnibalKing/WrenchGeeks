@@ -13,9 +13,41 @@
             <nav class="main-nav">
                 <button class="nav-tab active" data-target="searchSection">Find Parts</button>
                 <button class="nav-tab" data-target="knowledgeSection">Knowledge Base</button>
+                <button class="nav-tab" id="donateBtn" style="border-color: var(--success-color); color: var(--success-color);">Support Us $</button>
             </nav>
         </div>
     </header>
+
+    <!-- DONATE MODAL -->
+    <div id="donateModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="color: var(--success-color); text-align: center;">Fuel the Project ⛽</h2>
+            <p style="text-align: center; color: var(--text-muted);">Server costs and coffee aren't free. Drop a tip if this saved your knuckles.</p>
+            
+            <div class="payment-options">
+                <!-- Cash App QR Code Section -->
+                <div style="text-align:center; margin-bottom:1rem;">
+                    <img src="cashapp_qr.png" alt="Scan to Pay on Cash App" style="max-width: 180px; width: 100%; border-radius: 12px; border: 3px solid #00D632; box-shadow: 0 4px 15px rgba(0, 214, 50, 0.3);">
+                    <p style="font-size: 0.9em; color: #00D632; margin-top: 5px; font-weight:bold;">$Mechforge3dservices</p>
+                    <p style="font-size: 0.75em; color: var(--text-muted); margin-top: 2px;">(All payments are private)</p>
+                </div>
+
+                <a href="https://cash.app/$Mechforge3dservices" target="_blank" class="pay-btn cashapp">
+                    <span>Open Cash App</span>
+                </a>
+                <a href="https://venmo.com/" target="_blank" class="pay-btn venmo">
+                    <span>Venmo</span>
+                </a>
+                <a href="https://paypal.me/" target="_blank" class="pay-btn paypal">
+                    <span>PayPal</span>
+                </a>
+                <a href="#" class="pay-btn crypto">
+                    <span>Crypto (BTC/ETH/LTC)</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <main class="container">
         <!-- SEARCH SECTION -->
@@ -54,13 +86,6 @@
                     <label>&nbsp;</label>
                     <button id="searchButton" disabled>Find Parts </button>
                 </div>
-            </div>
-
-            <!-- CashApp QR Code -->
-            <div style="margin-top: 2rem; text-align: center; padding-top: 1rem; border-top: 1px solid var(--border-color);">
-                <p style="font-size: 0.85rem; color: var(--success-color); margin-bottom: 0.5rem; font-weight: bold;">Support the Project 🔧</p>
-                <img src="cashapp_qr.png" alt="CashApp QR" style="width: 120px; border-radius: 8px; border: 2px solid var(--success-color);">
-                <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">$Mechforge3dservices</p>
             </div>
         </aside>
 
