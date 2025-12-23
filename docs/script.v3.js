@@ -1017,5 +1017,37 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial Render
     renderKnowledgeBase('all');
 
+    // --- Donate Modal Logic ---
+    const donateBtn = document.getElementById('donateBtn');
+    const donateModal = document.getElementById('donateModal');
+    const closeModal = document.querySelector('.close-modal');
+
+    if (donateBtn && donateModal && closeModal) {
+        donateBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            donateModal.classList.remove('hidden');
+            // Small timeout to allow display:flex to apply before opacity transition
+            setTimeout(() => {
+                donateModal.classList.add('active');
+            }, 10);
+        });
+
+        closeModal.addEventListener('click', () => {
+            donateModal.classList.remove('active');
+            setTimeout(() => {
+                donateModal.classList.add('hidden');
+            }, 300); // Match CSS transition time
+        });
+
+        // Close on click outside
+        donateModal.addEventListener('click', (e) => {
+            if (e.target === donateModal) {
+                donateModal.classList.remove('active');
+                setTimeout(() => {
+                    donateModal.classList.add('hidden');
+                }, 300);
+            }
+        });
+    }
 
 });
