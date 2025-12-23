@@ -1039,12 +1039,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 tagText = 'Mechanical';
             }
 
-            card.innerHTML = \
-                <span class='kb-tag \'>\</span>
-                <h3 style='margin-top:0; color:var(--accent-color);'>\</h3>
-                <p>\</p>
-                <small style='color:var(--text-muted);'>Applies to: \</small>
-            \;
+            card.innerHTML = '<span class="kb-tag ' + tagClass + '">' + tagText + '</span>' +
+                '<h3 style="margin-top:0; color:var(--accent-color);">' + item.partName + '</h3>' +
+                '<p>' + item.notes + '</p>' +
+                '<small style="color:var(--text-muted);">Applies to: ' + (item.compatibleVehicles || []).join(', ') + '</small>';
             kbContent.appendChild(card);
         });
     }
