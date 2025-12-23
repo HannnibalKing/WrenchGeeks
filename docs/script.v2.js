@@ -192,11 +192,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let relationships = { engines: {}, platforms: {} };
 
-    Promise.all(dataFiles.map(file => fetch(`${file}?v=${new Date().getTime()}`).then(resp => {
-            if (!resp.ok) throw new Error(`Failed to load ${file}: ${resp.status}`);
-            return resp.json();
-        }).catch(err => { throw new Error(`Fetch error for ${file}: ${err.message}`); })))
-        .then(allData => {
+    // Resilient Loader: Load all files, but don't crash if one fails
+    Promise.all(dataFiles.map(file => 
+        fetch(`${file}?v=${new Date().getTime()}`)
+            .then(resp => {
+                if (!resp.ok) throw new Error(`${resp.status} ${resp.statusText}`);
+                return resp.json();
+            })
+            .catch(err => {
+                console.error(`Failed to load ${file}:`, err);
+                return { error: true, file: file, message: err.message }; // Return error object instead of throwing
+            })
+    ))
+    .then(results => {
+        // Filter out errors and log them
+        const errors = results.filter(r => r && r.error);
+        if (errors.length > 0) {
+            console.warn("Some files failed to load:", errors);
+            // Optional: Show a non-blocking toast or warning
+            const warningDiv = document.createElement('div');
+            warningDiv.style.cssText = "background:#ff9800; color:black; padding:5px; text-align:center; font-size:0.8em;";
+            warningDiv.textContent = `Warning: ${errors.length} data files failed to load. Some parts may be missing.`;
+            document.body.insertBefore(warningDiv, document.body.firstChild);
+        }
+
+        const allData = results.filter(r => r && !r.error);
             const relationshipData = allData.find(d => d.platforms || d.engines);
             if (relationshipData) {
                 relationships = relationshipData;
@@ -231,15 +251,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         })
         .catch(err => {
-            console.error("Error loading data:", err);
-            resultsSection.innerHTML = `<div class="card" style="border-left: 4px solid red;">
-                <h3> Data Load Error</h3>
-                <p>Could not load the database. Please check your internet connection or try refreshing.</p>
-                <p><strong>Tip:</strong> Try a Hard Refresh (Ctrl+F5 or Cmd+Shift+R) to clear old data.</p>
-                <p>Details: ${err.message}</p>
-            </div>`;
-            resultsSection.classList.remove("hidden");
-            if (makeLoadStatus) makeLoadStatus.textContent = "Error loading data";
+            console.error("Data Load Error:", err);
+            if (makeLoadStatus) {
+                makeLoadStatus.textContent = "Error loading data: " + err.message;
+                makeLoadStatus.className = "status-error";
+            }
         });
 
     function buildIndex(parts) {
