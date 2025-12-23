@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB Debugger</title>
+    <style>
+        body { background: #111; color: #eee; font-family: monospace; padding: 20px; }
+        .success { color: #0f0; }
+        .error { color: #f00; }
+        .warning { color: #fa0; }
+        .box { border: 1px solid #333; padding: 10px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Knowledge Base Debugger</h1>
+    <div id="log"></div>
+
+    <script>
+        const log = document.getElementById('log');
+        function print(msg, type='info') {
+            const div = document.createElement('div');
+            div.className = type;
+            div.textContent = msg;
+            log.appendChild(div);
+        }
+
+        const files = [
+            "data/kb_safety.json",
+            "data/kb_hacks.json",
+            "data/kb_mechanical.json"
+        ];
+
+        print("Starting fetch test...");
+
+        files.forEach(file => {
+            print(`Fetching ${file}...`);
+            fetch(file + '?t=' + Date.now())
+                .then(res => {
+                    if (res.ok) {
+                        print(`${file}: HTTP ${res.status} OK`, 'success');
+                        return res.json();
+                    } else {
+                        throw new Error(`HTTP ${res.status}`);
+                    }
+                })
+                .then(data => {
+                    print(`${file}: Parsed JSON. Type: ${Array.isArray(data) ? 'Array' : typeof data}`, 'success');
+                    if (Array.isArray(data)) {
+                        print(`${file}: Items: ${data.length}`, 'success');
+                        if (data.length > 0) {
+                            print(`${file}: First Item Category: ${data[0].category}`, 'success');
+                        }
+                    }
+                })
+                .catch(err => {
+                    print(`${file}: FAILED - ${err.message}`, 'error');
+                });
+        });
+    </script>
+</body>
+</html>
