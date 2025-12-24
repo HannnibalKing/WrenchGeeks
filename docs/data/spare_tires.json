@@ -1,218 +1,4175 @@
 [
   {
-    "id": "6x139_GM_TRUCK",
-    "bolt_pattern": "6x139.7 (6x5.5)",
-    "hub_bore": "78.1mm",
-    "advice": "The standard GM 6-lug pattern. Used on almost all 1500 trucks/SUVs from 1999 to present. Toyota 6-lug wheels (Tacoma/Tundra) share the bolt pattern but have a larger hub bore (106mm), so they fit GM trucks if you use hub rings. GM wheels DO NOT fit Toyotas (hub too small).",
+    "bolt_pattern": "4x100",
+    "hub_bore": "57.1mm",
+    "advice": "Classic BMW 4-lug. Shares specs with VW 4-lug.",
+    "id": "4x100_BMW",
     "vehicles": [
-      { "make": "Chevrolet", "model": "Silverado 1500", "type": "Truck" },
-      { "make": "Chevrolet", "model": "Tahoe", "type": "SUV" },
-      { "make": "Chevrolet", "model": "Suburban 1500", "type": "SUV" },
-      { "make": "GMC", "model": "Sierra 1500", "type": "Truck" },
-      { "make": "GMC", "model": "Yukon", "type": "SUV" },
-      { "make": "Cadillac", "model": "Escalade", "type": "SUV" }
+      {
+        "make": "BMW",
+        "model": "3-Series (E30)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (E30)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "3-Series (E21 - 1st Gen)",
+        "type": "Car"
+      }
     ]
   },
   {
-    "id": "8x165_GM_DODGE_OLD",
-    "bolt_pattern": "8x165.1 (8x6.5)",
-    "hub_bore": "116.7mm (GM) / 121.3mm (Dodge)",
-    "advice": "The classic 8-lug pattern. Used on Chevy HD trucks until 2010 and Dodge Ram HD until present. WARNING: 2011+ Chevy HD switched to 8x180mm. Ford used 8x6.5 until 1997, then switched to 8x170mm in 1999.",
-    "vehicles": [
-      { "make": "Chevrolet", "model": "Silverado 2500HD/3500HD", "type": "Truck" },
-      { "make": "Dodge", "model": "Ram 2500/3500", "type": "Truck" },
-      { "make": "Ford", "model": "F-250/F-350 (Pre-97)", "type": "Truck" }
-    ]
-  },
-  {
-    "id": "8x170_FORD_SUPERDUTY",
-    "bolt_pattern": "8x170mm",
-    "hub_bore": "124.9mm",
-    "advice": "Ford Super Duty specific. Introduced in 1999. DOES NOT interchange with Chevy or Dodge 8-lug wheels. 2005+ wheels have a different offset (coil spring suspension) than 99-04 (leaf spring), so check backspacing.",
-    "vehicles": [
-      { "make": "Ford", "model": "F-250 Super Duty", "type": "Truck" },
-      { "make": "Ford", "model": "F-350 Super Duty", "type": "Truck" },
-      { "make": "Ford", "model": "Excursion", "type": "SUV" }
-    ]
-  },
-  {
-    "id": "5x114_NISSAN_66",
-    "bolt_pattern": "5x114.3",
-    "hub_bore": "66.1mm",
-    "advice": "The 'Space Saver' from a Maxima or Altima often fits the Z/G cars if you don't have the Brembo brakes. If you have Brembos, you need the specific 18-inch spare from a G35 Coupe or 350Z Track model.",
-    "vehicles": [
-      { "make": "Nissan", "model": "350Z", "type": "Car" },
-      { "make": "Infiniti", "model": "G35 Coupe", "type": "Car" },
-      { "make": "Infiniti", "model": "G35 Sedan", "type": "Car" },
-      { "make": "Nissan", "model": "Maxima", "type": "Car" },
-      { "make": "Nissan", "model": "Altima", "type": "Car" },
-      { "make": "Nissan", "model": "Rogue", "type": "SUV" },
-      { "make": "Nissan", "model": "Murano", "type": "SUV" },
-      { "make": "Infiniti", "model": "G37", "type": "Car" },
-      { "make": "Infiniti", "model": "Q50", "type": "Car" }
-    ]
-  },
-  {
-    "id": "5x120_BMW_72",
     "bolt_pattern": "5x120",
     "hub_bore": "72.56mm",
-    "advice": "BMW spares are plentiful. A 3-Series spare (E46) is a great trunk-saver for other 5x120 cars. Watch out for the E39 5-Series—it has a huge hub bore (74.1mm) and won't fit other BMWs without rings, and other BMW wheels won't fit IT at all.",
+    "advice": "The standard BMW fitment. Fits almost all 5-lug BMWs except E39.",
+    "id": "5x120_BMW_STD",
     "vehicles": [
-      { "make": "BMW", "model": "3-Series", "type": "Car" },
-      { "make": "BMW", "model": "Z3", "type": "Car" },
-      { "make": "BMW", "model": "Z4", "type": "Car" },
-      { "make": "BMW", "model": "5-Series", "type": "Car" },
-      { "make": "BMW", "model": "1-Series", "type": "Car" },
-      { "make": "BMW", "model": "X3", "type": "SUV" },
-      { "make": "BMW", "model": "X5", "type": "SUV" }
+      {
+        "make": "BMW",
+        "model": "3-Series (E36 - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (E36 - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "3-Series (E46 - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (E46 - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "3-Series Sedan (E90)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "3-Series Coupe (E92)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "M3 (E90/E92/E93)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "325i (E36)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "525i (E34)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "328i (E36)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "323i/328i (E46)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "528i (E39)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "Z3 2.8",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "335i (E90/E92)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "135i (E82)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "535i (E60)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "Z4 sDrive35i",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "335i (E90/E92 LCI)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "M2 (F87)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "5-Series (E12 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "5-Series (E28 - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "5-Series (E34 - 3rd Gen)",
+        "type": "Car"
+      }
     ]
   },
   {
-    "id": "4x100_JDM_MIX",
+    "bolt_pattern": "5x120",
+    "hub_bore": "74.1mm",
+    "advice": "Unique hub bore. Requires hub rings to fit other BMW wheels, or boring out other wheels to fit E39.",
+    "id": "5x120_BMW_E39",
+    "vehicles": [
+      {
+        "make": "BMW",
+        "model": "5-Series (E39)",
+        "type": "Car"
+      },
+      {
+        "make": "BMW",
+        "model": "M5 (E39)",
+        "type": "Car"
+      }
+    ]
+  },
+  {
     "bolt_pattern": "4x100",
-    "hub_bore": "Mixed (54.1mm - 56.1mm)",
-    "advice": "The 'Miata Daisy' spare is legendary, but for a cheap replacement, grab a 4x100 donut from a 90s Corolla or Civic. Just check the center hole—Honda hubs are slightly bigger (56.1mm) than Mazda (54.1mm), so a Honda spare fits a Miata, but a Miata spare won't fit a Civic!",
+    "hub_bore": "57.1mm",
+    "advice": "Ubiquitous 4-lug pattern. Fits VW, Audi, older BMW, Honda (with rings), Miata (with rings).",
+    "id": "4x100_VW",
     "vehicles": [
-      { "make": "Mazda", "model": "Miata", "type": "Car" },
-      { "make": "Honda", "model": "Civic", "type": "Car" },
-      { "make": "Toyota", "model": "Corolla", "type": "Car" },
-      { "make": "Acura", "model": "Integra", "type": "Car" },
-      { "make": "Honda", "model": "Fit", "type": "Car" },
-      { "make": "Toyota", "model": "Yaris", "type": "Car" },
-      { "make": "Mazda", "model": "Protege", "type": "Car" }
+      {
+        "make": "Volkswagen",
+        "model": "Golf (A1 - Mk1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Golf (A2 - Mk2)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Golf (A3 - Mk3)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Jetta (A1 - Mk1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Jetta (A2 - Mk2)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Jetta (A3 - Mk3)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Passat (B1 - Mk1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Passat (B2 - Mk2)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Passat (B3 - Mk3)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Passat (B4 - Mk4)",
+        "type": "Car"
+      },
+      {
+        "make": "Geo",
+        "model": "Metro",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Metro",
+        "type": "Car"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Swift",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Firefly",
+        "type": "Car"
+      },
+      {
+        "make": "Geo",
+        "model": "Prizm",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Prizm",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Corolla",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "SL (Sedan)",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "SC (Coupe)",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "SW (Wagon)",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "Ion (Sedan/Coupe)",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "Ion Red Line",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Cobalt",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "HHR",
+        "type": "Car"
+      }
     ]
   },
   {
-    "id": "5x114_FORD_70",
-    "bolt_pattern": "5x114.3",
-    "hub_bore": "70.5mm",
-    "advice": "Mustang spares are easy to find. They share the bolt pattern with Nissan/Toyota, but the Ford hub is HUGE (70.5mm). This means a Mustang wheel fits almost anything (Nissan, Toyota, etc.), but nothing else fits a Mustang.",
-    "vehicles": [
-      { "make": "Ford", "model": "Mustang", "type": "Car" },
-      { "make": "Ford", "model": "Crown Victoria", "type": "Car" },
-      { "make": "Lincoln", "model": "Town Car", "type": "Car" },
-      { "make": "Mercury", "model": "Grand Marquis", "type": "Car" },
-      { "make": "Ford", "model": "Ranger", "type": "Truck" },
-      { "make": "Ford", "model": "Explorer", "type": "SUV" }
-    ]
-  },
-  {
-    "id": "5x114_TOYOTA_60",
-    "bolt_pattern": "5x114.3",
-    "hub_bore": "60.1mm",
-    "advice": "Toyota uses a 60.1mm hub bore. This is smaller than Nissan (66.1) and Ford (70.5). You CANNOT use a Toyota spare on a Nissan or Ford, but you CAN use a Nissan or Ford spare on a Toyota (it will just be lug-centric, which is fine for a temporary spare).",
-    "vehicles": [
-      { "make": "Toyota", "model": "Camry", "type": "Car" },
-      { "make": "Toyota", "model": "Avalon", "type": "Car" },
-      { "make": "Toyota", "model": "RAV4", "type": "SUV" },
-      { "make": "Toyota", "model": "Highlander", "type": "SUV" },
-      { "make": "Lexus", "model": "IS", "type": "Car" },
-      { "make": "Lexus", "model": "ES", "type": "Car" },
-      { "make": "Lexus", "model": "GS", "type": "Car" },
-      { "make": "Lexus", "model": "RX", "type": "SUV" }
-    ]
-  },
-  {
-    "id": "5x114_HONDA_64",
-    "bolt_pattern": "5x114.3",
-    "hub_bore": "64.1mm",
-    "advice": "Honda uses a 64.1mm hub. Similar to Toyota, you can use a Nissan (66.1) or Ford (70.5) spare on a Honda, but a Honda spare won't fit a Nissan. Acura TL/TSX spares are great donors for 5-lug Civics.",
-    "vehicles": [
-      { "make": "Honda", "model": "Accord", "type": "Car" },
-      { "make": "Honda", "model": "Civic", "type": "Car" },
-      { "make": "Honda", "model": "CR-V", "type": "SUV" },
-      { "make": "Honda", "model": "Element", "type": "SUV" },
-      { "make": "Acura", "model": "TSX", "type": "Car" },
-      { "make": "Acura", "model": "TL", "type": "Car" },
-      { "make": "Acura", "model": "RSX", "type": "Car" }
-    ]
-  },
-  {
-    "id": "5x100_SUBARU_56",
     "bolt_pattern": "5x100",
-    "hub_bore": "56.1mm (Subaru) vs 57.1mm (VW)",
-    "advice": "Subaru spares are tricky because of AWD. You MUST ensure the spare tire diameter matches your other tires within 1/4 inch, or you will destroy your center differential. Note on Hubs: VW hubs are 57.1mm, Subaru is 56.1mm. A VW spare fits a Subaru (loose), but a Subaru spare WON'T fit a VW.",
+    "hub_bore": "57.1mm (VW) / 56.1mm (Subaru)",
+    "advice": "Common on Mk4 VW and most Subarus. Subaru wheels fit VW with 1mm hub ring. VW wheels need boring for Subaru (rare).",
+    "id": "5x100_VW_SUBARU",
     "vehicles": [
-      { "make": "Subaru", "model": "Impreza", "type": "Car" },
-      { "make": "Subaru", "model": "WRX", "type": "Car" },
-      { "make": "Subaru", "model": "Forester", "type": "SUV" },
-      { "make": "Subaru", "model": "Legacy", "type": "Car" },
-      { "make": "Subaru", "model": "Outback", "type": "SUV" },
-      { "make": "Toyota", "model": "Celica", "type": "Car" },
-      { "make": "Toyota", "model": "Matrix", "type": "Car" },
-      { "make": "Volkswagen", "model": "Golf", "type": "Car" },
-      { "make": "Volkswagen", "model": "Jetta", "type": "Car" },
-      { "make": "Scion", "model": "tC", "type": "Car" },
-      { "make": "Scion", "model": "FR-S", "type": "Car" },
-      { "make": "Toyota", "model": "86", "type": "Car" },
-      { "make": "Subaru", "model": "BRZ", "type": "Car" }
+      {
+        "make": "Volkswagen",
+        "model": "Golf (Mk4 - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Jetta (Mk4 - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Beetle (A4 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Audi",
+        "model": "TT (Mk1 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Audi",
+        "model": "A3 (8L - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Golf (A4 - Mk4)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Jetta (A4 - Mk4)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Impreza WRX/STI (GC8)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Impreza WRX/STI (GD - Bugeye)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Impreza WRX/STI (GD - Blobeye)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Impreza WRX/STI (GD - Hawkeye)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Impreza WRX/STI (GR/GV)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "WRX / STI (VA)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "WRX (VB)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Legacy (BC/BF/BJ - Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Legacy (BD/BG/BK - Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Legacy (BE/BH - Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Legacy (BL/BP - Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Legacy (BM/BR - Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Forester (SF - Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Forester (SG - Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Forester (SH - Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Forester (SJ - Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "BRZ (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "86 / GT86",
+        "type": "Car"
+      },
+      {
+        "make": "Scion",
+        "model": "FR-S",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "BRZ (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "GR86",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "BRZ (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Scion",
+        "model": "FR-S",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "86",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "BRZ (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "GR86",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Cavalier (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Cavalier (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Sunbird",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Sunfire",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Vibe",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Matrix",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Fiero",
+        "type": "Car"
+      },
+      {
+        "make": "Plymouth",
+        "model": "Prowler",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "Prowler",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Spirit",
+        "type": "Car"
+      },
+      {
+        "make": "Plymouth",
+        "model": "Acclaim",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Shadow",
+        "type": "Car"
+      },
+      {
+        "make": "Plymouth",
+        "model": "Sundance",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "LeBaron (Sedan/Coupe)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Caravan / Grand Caravan (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Plymouth",
+        "model": "Voyager / Grand Voyager (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "Town & Country (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Caravan (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Caravan (Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Neon (1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Neon (2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Neon SRT-4",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "PT Cruiser",
+        "type": "Car"
+      }
     ]
   },
   {
-    "id": "5x114_ASIAN_67",
-    "bolt_pattern": "5x114.3",
-    "hub_bore": "67.1mm",
-    "advice": "The 'Universal Asian' size. Hyundai, Kia, Mazda, and Mitsubishi all use the 67.1mm hub. This is slightly larger than Nissan (66.1) and Toyota (60.1). A spare from this group fits almost ANY 5-lug Asian car (except Honda/Subaru), but Nissan/Toyota spares are too small to fit these cars.",
-    "vehicles": [
-      { "make": "Hyundai", "model": "Genesis Coupe", "type": "Car" },
-      { "make": "Hyundai", "model": "Veloster", "type": "Car" },
-      { "make": "Hyundai", "model": "Sonata", "type": "Car" },
-      { "make": "Hyundai", "model": "Elantra", "type": "Car" },
-      { "make": "Kia", "model": "Optima", "type": "Car" },
-      { "make": "Kia", "model": "Stinger", "type": "Car" },
-      { "make": "Kia", "model": "Forte", "type": "Car" },
-      { "make": "Mazda", "model": "Mazda3", "type": "Car" },
-      { "make": "Mazda", "model": "Mazda6", "type": "Car" },
-      { "make": "Mazda", "model": "RX-8", "type": "Car" },
-      { "make": "Mitsubishi", "model": "Lancer", "type": "Car" },
-      { "make": "Mitsubishi", "model": "Eclipse", "type": "Car" },
-      { "make": "Mitsubishi", "model": "Evo", "type": "Car" }
-    ]
-  },
-  {
-    "id": "5x112_GERMAN_66",
     "bolt_pattern": "5x112",
-    "hub_bore": "66.6mm (Merc/Audi) vs 57.1mm (VW)",
-    "advice": "Mercedes and newer Audis use 66.6mm hubs. Older VWs/Audis use 57.1mm. A Mercedes spare fits a VW (with a gap), but a VW spare won't fit a Mercedes. Always check caliper clearance on German cars!",
+    "hub_bore": "57.1mm (Older VAG) / 66.6mm (Merc/Newer Audi)",
+    "advice": "Mercedes wheels fit VW/Audi with hub rings. VW/Audi wheels need boring to fit Mercedes.",
+    "id": "5x112_VAG_MERC",
     "vehicles": [
-      { "make": "Volkswagen", "model": "Golf", "type": "Car" },
-      { "make": "Volkswagen", "model": "GTI", "type": "Car" },
-      { "make": "Volkswagen", "model": "Passat", "type": "Car" },
-      { "make": "Audi", "model": "A4", "type": "Car" },
-      { "make": "Audi", "model": "A6", "type": "Car" },
-      { "make": "Mercedes-Benz", "model": "C-Class", "type": "Car" },
-      { "make": "Mercedes-Benz", "model": "E-Class", "type": "Car" }
+      {
+        "make": "Volkswagen",
+        "model": "Golf (A5 - Mk5)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Golf (A6 - Mk6)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Golf (A7 - Mk7)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Golf (A8 - Mk8)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Jetta (A5 - Mk5)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Jetta (A6 - Mk6)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Jetta (A7 - Mk7)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Passat (B5 - Mk5)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Passat (B6 - Mk6)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Passat (B7 - Mk7)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Passat (B8 - Mk8)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Cayenne (955/957 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Touareg (7L - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Audi",
+        "model": "Q7 (4L - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Macan (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Audi",
+        "model": "Q5 (8R - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Audi",
+        "model": "A4 (B8 - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Passat (B5/B5.5 - 5th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Audi",
+        "model": "A4 (B5 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Audi",
+        "model": "A6 (C5 - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "E-Class (W123)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "E-Class (W124)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "190E (W201)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "190E (W201)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "C-Class (W202)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "C-Class (W203)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "C-Class (W204)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "C-Class (W205)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "E-Class (W123)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "E-Class (W124)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "E-Class (W210)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "E-Class (W211)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "E-Class (W212)",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "Crossfire",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "Crossfire SRT-6",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "SLK320 (R170)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "SLK32 AMG (R170)",
+        "type": "Car"
+      }
     ]
   },
   {
-    "id": "5x108_FORD_VOLVO",
+    "bolt_pattern": "5x130",
+    "hub_bore": "71.6mm",
+    "advice": "Exclusive to Porsche (and Q7/Touareg). High offset usually required.",
+    "id": "5x130_PORSCHE",
+    "vehicles": [
+      {
+        "make": "Porsche",
+        "model": "911 Carrera (996.1 - 5th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 Carrera (996.2 - 5th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Boxster (986 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 (993 - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 (964 - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 G-Series (SC/Carrera)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 Classic (Longhood)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 Carrera (997.1 - 6th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 Carrera (997.2 - 6th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Boxster (987 - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Cayman (987c - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 Carrera (991.1 - 7th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 Carrera (991.2 - 7th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Boxster (981 - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Cayman (981c - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "911 Carrera (992 - 8th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "718 Boxster (982 - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "718 Cayman (982c - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Panamera (970 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Panamera (971 - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "Taycan (J1)",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "914",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "928",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "968",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "924",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "944",
+        "type": "Car"
+      },
+      {
+        "make": "Porsche",
+        "model": "968",
+        "type": "Car"
+      }
+    ]
+  },
+  {
     "bolt_pattern": "5x108",
-    "hub_bore": "63.4mm",
-    "advice": "The 'Ford/Volvo Alliance' means spares from a Volvo S40/V50/S60 often fit Ford Focus (2012+) and Fusion. Jaguar also uses this pattern. It's a weird size, so grab one if you see it.",
+    "hub_bore": "65.1mm (Volvo) / 63.4mm (Ford)",
+    "advice": "Volvo wheels fit Ford Focus/Fusion with rings. Ford wheels need boring for Volvo.",
+    "id": "5x108_VOLVO_FORD",
     "vehicles": [
-      { "make": "Ford", "model": "Focus", "type": "Car" },
-      { "make": "Ford", "model": "Fusion", "type": "Car" },
-      { "make": "Volvo", "model": "S40", "type": "Car" },
-      { "make": "Volvo", "model": "S60", "type": "Car" },
-      { "make": "Volvo", "model": "V50", "type": "Car" },
-      { "make": "Volvo", "model": "XC60", "type": "SUV" },
-      { "make": "Jaguar", "model": "X-Type", "type": "Car" }
+      {
+        "make": "Volvo",
+        "model": "240 Series",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "740 / 760",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "940 / 960",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "850 / 850 R",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "S70 / V70 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "C70 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "240 Series",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "740/760",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "940/960",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "850 T-5R / R",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "S70 / V70 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "C70 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "S60 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "V70 (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "S60R / V70R",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "XC90 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "S80 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "S60 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "V70 (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "S60 R / V70 R",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "XC90 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "240 Series",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "740 / 760",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "940 / 960",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Escort (Gen 2 - US)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Escort (Gen 3 - US)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercury",
+        "model": "Tracer",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "Proteg\u00e9 (BG)",
+        "type": "Car"
+      },
+      {
+        "make": "Jaguar",
+        "model": "X-Type",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mondeo (Mk3)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Contour / Mystique",
+        "type": "Car"
+      },
+      {
+        "make": "Ferrari",
+        "model": "308 GTB/GTS",
+        "type": "Car"
+      },
+      {
+        "make": "Ferrari",
+        "model": "328 GTB/GTS",
+        "type": "Car"
+      },
+      {
+        "make": "Ferrari",
+        "model": "348",
+        "type": "Car"
+      },
+      {
+        "make": "Ferrari",
+        "model": "F355",
+        "type": "Car"
+      },
+      {
+        "make": "Ferrari",
+        "model": "360 Modena",
+        "type": "Car"
+      },
+      {
+        "make": "Ferrari",
+        "model": "F430",
+        "type": "Car"
+      },
+      {
+        "make": "Ferrari",
+        "model": "458 Italia",
+        "type": "Car"
+      }
     ]
   },
   {
-    "id": "6x139_TRUCK_TITAN",
-    "bolt_pattern": "6x139.7 (6x5.5)",
-    "hub_bore": "Various (106mm+)",
-    "advice": "The universal truck pattern. Chevy Silverado, Toyota Tacoma/Tundra, and Nissan Titan all share the bolt pattern. However, hub bores vary wildly. A Chevy wheel (78mm hub) won't fit a Toyota (106mm hub), but a Toyota wheel fits almost anything.",
+    "bolt_pattern": "4x108",
+    "hub_bore": "63.4mm (Ford) / 65.1mm (PSA)",
+    "advice": "Ford Fox body and Peugeot/Citroen share the pattern but offsets are wildly different.",
+    "id": "4x108_FORD_PSA",
     "vehicles": [
-      { "make": "Chevrolet", "model": "Silverado", "type": "Truck" },
-      { "make": "Chevrolet", "model": "Tahoe", "type": "SUV" },
-      { "make": "GMC", "model": "Sierra", "type": "Truck" },
-      { "make": "Toyota", "model": "Tacoma", "type": "Truck" },
-      { "make": "Toyota", "model": "Tundra", "type": "Truck" },
-      { "make": "Toyota", "model": "4Runner", "type": "SUV" },
-      { "make": "Nissan", "model": "Titan", "type": "Truck" },
-      { "make": "Nissan", "model": "Armada", "type": "SUV" }
+      {
+        "make": "Ford",
+        "model": "Mustang (Fox Body)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercury",
+        "model": "Capri",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Fairmont",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Thunderbird (Fox)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Focus ST (Mk3)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Focus RS (Mk3)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Fiesta ST (Mk7)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Escort RS Cosworth",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "900 Classic",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "9000",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "9-3 (OG)",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "9-5 (OG)",
+        "type": "Car"
+      },
+      {
+        "make": "Peugeot",
+        "model": "205 GTI",
+        "type": "Car"
+      },
+      {
+        "make": "Peugeot",
+        "model": "106 Rallye",
+        "type": "Car"
+      },
+      {
+        "make": "Peugeot",
+        "model": "306 GTI-6",
+        "type": "Car"
+      },
+      {
+        "make": "Citro\u00ebn",
+        "model": "Saxo VTS",
+        "type": "Car"
+      },
+      {
+        "make": "Citro\u00ebn",
+        "model": "AX GT",
+        "type": "Car"
+      },
+      {
+        "make": "Caterham",
+        "model": "Seven",
+        "type": "Car"
+      },
+      {
+        "make": "Lotus",
+        "model": "Seven",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Sierra",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "4x100",
+    "hub_bore": "56.1mm (Honda) / 54.1mm (Mazda/Toyota)",
+    "advice": "Honda wheels fit Mazda/Toyota with rings. Mazda/Toyota wheels need boring for Honda.",
+    "id": "4x100_HONDA_MAZDA",
+    "vehicles": [
+      {
+        "make": "Honda",
+        "model": "Civic (EF - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (EG - 5th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (EK - 6th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "CR-X (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Del Sol",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "Integra (DA - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "Integra (DC2 - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (EF)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (EG)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (EK)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (EP3)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (FA5/FG2)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (SB/SG - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (SL/SS - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (AG/AH/AT - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "MX-5 Miata (NA)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "MX-5 Miata (NB)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "MX-5 Miata (NC)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "MX-5 Miata (ND)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Corolla (E80 - 5th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Corolla (E90 - 6th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Corolla (E100 - 7th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "MR2 (AW11 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "MR2 (SW20 - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "MR2 Spyder (ZZW30)",
+        "type": "Car"
+      },
+      {
+        "make": "Autozam",
+        "model": "AZ-1",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Beat",
+        "type": "Car"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Cappuccino",
+        "type": "Car"
+      },
+      {
+        "make": "Daihatsu",
+        "model": "Copen",
+        "type": "Car"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Swift GTi (AA34S)",
+        "type": "Car"
+      },
+      {
+        "make": "Geo",
+        "model": "Metro",
+        "type": "Car"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Swift Sport (ZC31S)",
+        "type": "Car"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Swift Sport (ZC32S)",
+        "type": "Car"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Swift Sport (ZC33S)",
+        "type": "Car"
+      },
+      {
+        "make": "Exomotive",
+        "model": "Exocet",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "MX-5 Miata (NA/NB)",
+        "type": "Car"
+      },
+      {
+        "make": "Ariel",
+        "model": "Atom 2",
+        "type": "Car"
+      },
+      {
+        "make": "Ariel",
+        "model": "Atom 3",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Type R (EP3/FD2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Cobalt SS",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x114.3 (5x4.5)",
+    "hub_bore": "Varies (60.1 - 70.5mm)",
+    "advice": "The most common 5-lug pattern. Ford/Mopar/Nissan/Toyota/Honda. Check hub bore! Ford/Mopar (70.5mm) wheels fit everything else with rings.",
+    "id": "5x114_JDM_FORD",
+    "vehicles": [
+      {
+        "make": "Honda",
+        "model": "Accord (CB7 - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CD - 5th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CG - 6th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "CR-V (RD1 - Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "CR-V (RD4 - Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "CR-V (RE - Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "CR-V (RM - Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "CR-V (RW - Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "CR-V (RS - Gen 6)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "S2000 (AP1)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "S2000 (AP2)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "Integra (DA9)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "Integra (DC2/DC4)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "RSX (DC5)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "RSX (DC5)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (EP3)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (FG2/FA5)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "TSX (CL9)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (EP3 - 7th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "RSX (DC5)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (FA/FG - 8th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (FB/FG - 9th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (FC/FK - 10th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic (FL - 11th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "S2000 (AP1)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "S2000 (AP2)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "NSX (NA1)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "NSX (NA2)",
+        "type": "Car"
+      },
+      {
+        "make": "Acura",
+        "model": "NSX (NC1)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (SJ/SM - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (SY/AC/AD - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CA - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CB - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CD/CE - 5th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CG/CF - 6th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CM/CL - 7th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CP/CS - 8th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CR - 9th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CV - 10th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "RAV4 (XA10 - Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "RAV4 (XA20 - Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "RAV4 (XA30 - Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "RAV4 (XA40 - Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "RAV4 (XA50 - Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV10)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV20)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "ES300 (XV10)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "ES300 (XV20)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV30 - Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV40 - Gen 6)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV50 - Gen 7)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV70 - Gen 8)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Supra (Mk3 - A70)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Supra (Mk4 - A80)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "SC300 / SC400",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "GR Supra (Mk5 - A90)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "GR86",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "GR Corolla",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "GR Yaris",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (V10 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (V20 - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV10 - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV20 - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV30 - 5th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV40 - 6th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV50 - 7th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Camry (XV70 - 8th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Corolla (E110 - 8th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Corolla (E120/E130 - 9th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Corolla (E140/E150 - 10th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Corolla (E160/E170 - 11th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Corolla (E210 - 12th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Supra (MK4 - 4th Gen) NA",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "SC300 (Z30 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "GS300 (S140/S160)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "IS300 (XE10 - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "LS400 (UCF10/20)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "SC400 (UZZ30)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "GS400 (UZS160)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "LS430 (UCF30)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "GS430 (UZS190)",
+        "type": "Car"
+      },
+      {
+        "make": "Lexus",
+        "model": "SC430 (UZZ40)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Silvia / 240SX (S13)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Silvia / 240SX (S14)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Silvia (S15)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "180SX / 200SX",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "300ZX (Z32)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "350Z (Z33)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "370Z (Z34)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Z (RZ34)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Skyline GT-R (R32)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Skyline GT-R (R33)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Skyline GT-R (R34)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "GT-R (R35)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Skyline GT-R (R32)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Skyline GT-R (R33)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Skyline GT-R (R34)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "240Z / 260Z / 280Z (S30)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "280ZX (S130)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "300ZX (Z31)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "300ZX (Z32)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "350Z (Z33)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "370Z (Z34)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Z (RZ34)",
+        "type": "Car"
+      },
+      {
+        "make": "Infiniti",
+        "model": "G35 Coupe/Sedan",
+        "type": "Car"
+      },
+      {
+        "make": "Infiniti",
+        "model": "G37 Coupe/Sedan",
+        "type": "Car"
+      },
+      {
+        "make": "Infiniti",
+        "model": "Q50 / Q60",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Altima (U13 - Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Altima (L30 - Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Altima (L31 - Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Altima (L32 - Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Altima (L33 - Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Altima (L34 - Gen 6)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Maxima (J30 - Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Maxima (A32 - Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Maxima (A33 - Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Nissan",
+        "model": "Maxima (A34 - Gen 6)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "RX-7 (FC)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "RX-7 (FD)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "RX-7 (FB - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "RX-7 (FC - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "RX-7 (FD - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "RX-8 (SE3P)",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Lancer Evolution (I-III)",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Lancer Evolution (IV-VI)",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Lancer Evolution (VII-IX)",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Lancer Evolution (X)",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Eclipse (1G)",
+        "type": "Car"
+      },
+      {
+        "make": "Eagle",
+        "model": "Talon (1G)",
+        "type": "Car"
+      },
+      {
+        "make": "Plymouth",
+        "model": "Laser",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Eclipse (2G)",
+        "type": "Car"
+      },
+      {
+        "make": "Eagle",
+        "model": "Talon (2G)",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "3000GT VR-4",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Stealth R/T Turbo",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant VR-4 (E39A)",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant VR-4 (EC5A)",
+        "type": "Car"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Legnum VR-4",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Impreza WRX STI (GD - Blobeye/Hawkeye)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Impreza WRX STI (GR/GV - Hatch/Sedan)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "WRX STI (VA)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Legacy GT (BL/BP)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Legacy (BN/BS - Gen 6)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Legacy (BW/BT - Gen 7)",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Forester (SK - Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Genesis Coupe (BK1)",
+        "type": "Car"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Genesis Coupe (BK2)",
+        "type": "Car"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Ioniq 5",
+        "type": "Car"
+      },
+      {
+        "make": "Kia",
+        "model": "EV6",
+        "type": "Car"
+      },
+      {
+        "make": "Genesis",
+        "model": "GV60",
+        "type": "Car"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Sonata (DN8)",
+        "type": "Car"
+      },
+      {
+        "make": "Kia",
+        "model": "K5 (DL3)",
+        "type": "Car"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Tucson (NX4)",
+        "type": "Car"
+      },
+      {
+        "make": "Kia",
+        "model": "Sportage (NQ5)",
+        "type": "Car"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Elantra (CN7)",
+        "type": "Car"
+      },
+      {
+        "make": "Kia",
+        "model": "Forte / K3 (BD)",
+        "type": "Car"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Veloster (JS)",
+        "type": "Car"
+      },
+      {
+        "make": "Kia",
+        "model": "Stinger",
+        "type": "Car"
+      },
+      {
+        "make": "Genesis",
+        "model": "G70",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang II (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (Fox Body - Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (SN95 - Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (S197 - Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (S550 - Gen 6)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (S650 - Gen 7)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (SN95)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (New Edge)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (S197 - Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (S197 - Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (S550)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Shelby GT350",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "B-Series (B2300/B3000/B4000)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Explorer (Gen 1/2)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 1/2)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (T6)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Crown Victoria",
+        "type": "Car"
+      },
+      {
+        "make": "Mercury",
+        "model": "Grand Marquis",
+        "type": "Car"
+      },
+      {
+        "make": "Lincoln",
+        "model": "Town Car",
+        "type": "Car"
+      },
+      {
+        "make": "Mercury",
+        "model": "Marauder",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Falcon (XK-XP)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Falcon (XR-XY)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Falcon (XA-XC)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Falcon (XD-XF)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Falcon (EA-ED)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Falcon (EF-EL)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Falcon (AU)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Falcon (BA/BF)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Falcon (FG/FG X)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Territory (SX-SZ)",
+        "type": "Car"
+      },
+      {
+        "make": "Jeep",
+        "model": "Cherokee (XJ)",
+        "type": "Car"
+      },
+      {
+        "make": "Jeep",
+        "model": "Comanche (MJ)",
+        "type": "Car"
+      },
+      {
+        "make": "Jeep",
+        "model": "Grand Cherokee (ZJ)",
+        "type": "Car"
+      },
+      {
+        "make": "Jeep",
+        "model": "Wrangler (TJ)",
+        "type": "Car"
+      },
+      {
+        "make": "Jeep",
+        "model": "Wrangler Unlimited (LJ)",
+        "type": "Car"
+      },
+      {
+        "make": "AMC",
+        "model": "Eagle",
+        "type": "Car"
+      },
+      {
+        "make": "Jeep",
+        "model": "Cherokee (XJ) 4.0L",
+        "type": "Car"
+      },
+      {
+        "make": "Jeep",
+        "model": "Wrangler (YJ/TJ) 4.0L",
+        "type": "Car"
+      },
+      {
+        "make": "Jeep",
+        "model": "Grand Cherokee (ZJ/WJ) 4.0L",
+        "type": "Car"
+      },
+      {
+        "make": "Jeep",
+        "model": "Cherokee (XJ)",
+        "type": "Car"
+      },
+      {
+        "make": "Factory Five",
+        "model": "Mk4 Roadster",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang (Fox/SN95)",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "6x139.7 (6x5.5)",
+    "hub_bore": "78.1mm (GM) / 106mm (Toyota)",
+    "advice": "Toyota wheels fit GM with rings. GM wheels DO NOT fit Toyota (hub too small).",
+    "id": "6x139_TRUCK",
+    "vehicles": [
+      {
+        "make": "Chevrolet",
+        "model": "C/K Series (Action Line)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "C/K Series (Square Body)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "C/K Series (GMT400 - OBS)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 1500 (GMT800 - NBS)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 2500HD/3500HD (GMT800)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 1500 (GMT900 - NNBS)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 2500HD/3500HD (GMT900)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 1500 (K2XX)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 2500HD/3500HD (K2XX)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 1500 (T1XX)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 2500HD/3500HD (T1XX)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "S10 (Gen 1)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "S10 (Gen 2)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Colorado (Gen 1)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Colorado (Gen 2)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Colorado (Gen 3)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "C/K Series (Square Body)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "C/K Series (GMT400 - OBS)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "GMC",
+        "model": "Sierra (GMT400)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 1500 (GMT800 - NBS)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "GMC",
+        "model": "Sierra 1500 (GMT800)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Tahoe / Suburban (GMT800)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 1500 (GMT900 - NNBS)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 1500 (K2XX)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Silverado 1500 (T1XX)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Toyota",
+        "model": "Land Cruiser (J80)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Lexus",
+        "model": "LX450",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Toyota",
+        "model": "Land Cruiser (J100)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Lexus",
+        "model": "LX470",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Toyota",
+        "model": "4Runner (3rd Gen)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Toyota",
+        "model": "Tacoma (1st Gen)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Pajero / Montero (V20)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Pajero Evolution (V55W)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Galloper",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Pre-1983)",
+        "type": "Truck/SUV"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x120",
+    "hub_bore": "66.9mm (Camaro/VE) / 69.6mm (Older Holden)",
+    "advice": "Metric 5x120. NOT the same as 5x120.65 (4.75). Do not mix.",
+    "id": "5x120_GM_HOLDEN",
+    "vehicles": [
+      {
+        "make": "Chevrolet",
+        "model": "Cruze (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Cruze (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Equinox (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Equinox (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Traverse (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Traverse (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Sonic",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Spark",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Malibu (Gen 4 - G-Body)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Malibu (Gen 5 - N-Body)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Malibu (Gen 6 - Epsilon)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Malibu (Gen 7)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Malibu (Gen 8)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Malibu (Gen 9)",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "9-5 (NG - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Buick",
+        "model": "Regal (Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Buick",
+        "model": "LaCrosse (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Opel",
+        "model": "Insignia A",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Malibu (Gen 8)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Camaro (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Camaro (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Camaro (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Camaro (Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Camaro (Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Camaro (Gen 6)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "G8 Base",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "G8 GT",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "G8 GXP",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "SS Sedan",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Caprice PPV",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "GTO (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "GTO (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "GTO (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "GTO (Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "GTO (Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "Commodore (VB-VL)",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "Calais (VK-VL)",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "VL Turbo",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "Commodore (VN-VS)",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "Ute (VG-VS)",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "Statesman (VQ-VS)",
+        "type": "Car"
+      },
+      {
+        "make": "Toyota",
+        "model": "Lexcen",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "Commodore (VT-VZ)",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "Monaro (V2/VZ)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "GTO (Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Lumina SS",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "Commodore (VE)",
+        "type": "Car"
+      },
+      {
+        "make": "Holden",
+        "model": "Commodore (VF)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "G8",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "SS Sedan",
+        "type": "Car"
+      },
+      {
+        "make": "Cadillac",
+        "model": "Catera",
+        "type": "Car"
+      },
+      {
+        "make": "Opel",
+        "model": "Omega B",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "GTO (Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "900 (NG)",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "9-3 (OG)",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "9-5 (OG)",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x120.65 (5x4.75)",
+    "hub_bore": "70.3mm",
+    "advice": "Classic Chevy pattern. S10, Corvette, Camaro (Pre-2010).",
+    "id": "5x120_65_GM_RWD",
+    "vehicles": [
+      {
+        "make": "Chevrolet",
+        "model": "Corvette (C1)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Corvette (C2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Corvette (C3)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Corvette (C4)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Corvette (C5)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Corvette (C6)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Corvette (C7)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Corvette (C8)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "S-10 (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "GMC",
+        "model": "Sonoma (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Blazer",
+        "type": "Car"
+      },
+      {
+        "make": "GMC",
+        "model": "Jimmy",
+        "type": "Car"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "Bravada",
+        "type": "Car"
+      },
+      {
+        "make": "Buick",
+        "model": "Regal / Grand National",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Monte Carlo",
+        "type": "Car"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "Cutlass Supreme",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Grand Prix",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "El Camino",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Chevelle",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Nova",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Impala",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "El Camino",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Firebird (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Firebird (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Firebird (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Firebird (Gen 4)",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x115",
+    "hub_bore": "70.3mm (GM) / 71.5mm (Mopar)",
+    "advice": "FWD GM and modern Dodge Charger/Challenger. Very close to 5x114.3 but NOT interchangeable safely.",
+    "id": "5x115_GM_MOPAR",
+    "vehicles": [
+      {
+        "make": "Buick",
+        "model": "Regal",
+        "type": "Car"
+      },
+      {
+        "make": "Buick",
+        "model": "Century",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Grand Prix",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Impala",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Monte Carlo",
+        "type": "Car"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "Intrigue",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Grand Prix",
+        "type": "Car"
+      },
+      {
+        "make": "Buick",
+        "model": "LaCrosse",
+        "type": "Car"
+      },
+      {
+        "make": "Buick",
+        "model": "Allure",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Impala",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Monte Carlo",
+        "type": "Car"
+      },
+      {
+        "make": "Buick",
+        "model": "LeSabre",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Bonneville",
+        "type": "Car"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "Aurora",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Grand Prix (Gen 5-8)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Bonneville",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Charger (LX - 6th Gen) Base/SXT",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Charger (LX - 6th Gen) R/T",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Charger (LX - 6th Gen) SRT8",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Charger (LD - 7th Gen) SXT/GT",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Charger (LD - 7th Gen) R/T",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Charger (LD - 7th Gen) Scat Pack",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Charger (LD - 7th Gen) SRT Hellcat",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger (LC - 3rd Gen) Base/SXT",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger (LC - 3rd Gen) R/T",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger (LC - 3rd Gen) SRT8",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger (LA - 3rd Gen Facelift) SXT/GT",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger (LA - 3rd Gen Facelift) R/T",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger (LA - 3rd Gen Facelift) Scat Pack",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger (LA - 3rd Gen Facelift) SRT Hellcat",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger (LA - 3rd Gen Facelift) SRT Demon",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "300 (LX - 1st Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "300 (LD - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "E-Class (W211 - 3rd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Mercedes-Benz",
+        "model": "S-Class (W220 - 4th Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "300M",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "Concorde",
+        "type": "Car"
+      },
+      {
+        "make": "Chrysler",
+        "model": "LHS",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Intrepid",
+        "type": "Car"
+      },
+      {
+        "make": "Eagle",
+        "model": "Vision",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x110",
+    "hub_bore": "65.1mm",
+    "advice": "Oddball GM pattern. Malibu, Cobalt SS, Saab 9-3.",
+    "id": "5x110_GM",
+    "vehicles": [
+      {
+        "make": "Saab",
+        "model": "9-3 (NG - 2nd Gen)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Malibu (Gen 6)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "G6",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "Aura",
+        "type": "Car"
+      },
+      {
+        "make": "Opel",
+        "model": "Vectra C",
+        "type": "Car"
+      },
+      {
+        "make": "Cadillac",
+        "model": "BLS",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Solstice",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "Sky",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "L-Series (Sedan/Wagon)",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "9-5 (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "Vue (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Saturn",
+        "model": "Vue (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Equinox (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Torrent",
+        "type": "Car"
+      },
+      {
+        "make": "DF Kit Car",
+        "model": "Goblin",
+        "type": "Car"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Cobalt SS",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x127 (5x5)",
+    "hub_bore": "71.5mm (Jeep) / 78.1mm (GM)",
+    "advice": "Jeep JK/JL and GM 1500 trucks (Pre-99) / SUVs.",
+    "id": "5x127_JEEP_GM",
+    "vehicles": [
+      {
+        "make": "Jeep",
+        "model": "Wrangler (JK)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Jeep",
+        "model": "Wrangler Unlimited (JKU)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Jeep",
+        "model": "Wrangler (YJ)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Jeep",
+        "model": "Wrangler (TJ)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Jeep",
+        "model": "Wrangler (JK)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Jeep",
+        "model": "Wrangler (JL)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Jeep",
+        "model": "Gladiator (JT)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Saab",
+        "model": "9-7X",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "TrailBlazer",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "GMC",
+        "model": "Envoy",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Buick",
+        "model": "Rainier",
+        "type": "Truck/SUV"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x139.7 (5x5.5)",
+    "hub_bore": "77.8mm (Dodge) / 87mm (Ford)",
+    "advice": "Classic Ford truck and modern Ram 1500. Ford hub is huge.",
+    "id": "5x139_RAM_FORD",
+    "vehicles": [
+      {
+        "make": "Dodge",
+        "model": "Ram (Gen 1 - D/W Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Dodge",
+        "model": "Ram 1500 (Gen 2 - BR/BE)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Dodge",
+        "model": "Ram 2500/3500 (Gen 2)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Dodge",
+        "model": "Ram 1500 (Gen 3 - DR/DH)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Dodge",
+        "model": "Ram 2500/3500 (Gen 3)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ram",
+        "model": "1500 (Gen 4 - DS)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ram",
+        "model": "2500/3500 (Gen 4 - DJ/D2)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ram",
+        "model": "1500 (Gen 5 - DT)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ram",
+        "model": "2500/3500 (Gen 5)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Dodge",
+        "model": "Dakota (Gen 1)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Dodge",
+        "model": "Dakota (Gen 2)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Dodge",
+        "model": "Dakota (Gen 3)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ram",
+        "model": "1500 (DS - 4th Gen)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ram",
+        "model": "1500 Classic (DS)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ram",
+        "model": "1500 (DT - 5th Gen)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-1 / F-100 (Gen 1)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-100 (Gen 2)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-100 (Gen 3-5)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-100 / F-150 (Gen 6 - Dentside)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 7-9 - Bullnose/Brick/OBS)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "Bronco (Gen 1)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "Bronco (Gen 2-5)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "Bronco (Gen 6)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "Bronco Sport",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 1 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 2 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 3 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 4 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 5 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 6 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 7 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 8 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 9 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Samurai / Jimny (SJ413)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Jimny (JB23/JB43)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Jimny (JB64/JB74)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Sidekick / Vitara (1st Gen)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Geo",
+        "model": "Tracker",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Geo",
+        "model": "Tracker",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Tracker",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Sidekick",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Vitara",
+        "type": "Truck/SUV"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "6x135",
+    "hub_bore": "87mm",
+    "advice": "Ford F-150 2004-Present. Unique to Ford.",
+    "id": "6x135_FORD",
+    "vehicles": [
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 10 - Jellybean)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 11)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 12)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 13 - Aluminum)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 14)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 11 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 12 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 13 - F-Series)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 14 - F-Series)",
+        "type": "Truck/SUV"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x135",
+    "hub_bore": "87mm",
+    "advice": "Ford F-150 1997-2003. One generation only.",
+    "id": "5x135_FORD",
+    "vehicles": [
+      {
+        "make": "Ford",
+        "model": "F-150 (Gen 10 - F-Series)",
+        "type": "Truck/SUV"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "8x170",
+    "hub_bore": "124.9mm",
+    "advice": "Ford Super Duty 1999+. Does not fit older 8x6.5 trucks.",
+    "id": "8x170_FORD",
+    "vehicles": [
+      {
+        "make": "Ford",
+        "model": "F-250/F-350 Super Duty (Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "F-250/F-350 Super Duty (Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "F-250/F-350 Super Duty (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "F-250/F-350 Super Duty (Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "F-250/F-350 Super Duty (Gen 5)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 1/2)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 5 - T6)",
+        "type": "Car"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger (Gen 6 - P703)",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "4x130",
+    "hub_bore": "78.6mm",
+    "advice": "Classic VW Beetle (Late).",
+    "id": "4x130_VW_AIR",
+    "vehicles": [
+      {
+        "make": "Volkswagen",
+        "model": "Beetle (Type 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Bus / Transporter (Type 2 T1)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Bus / Transporter (Type 2 T2)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Type 3 (Squareback/Fastback)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Karmann Ghia (Type 14)",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Super Beetle",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Thing (Type 181)",
+        "type": "Car"
+      },
+      {
+        "make": "Meyers Manx",
+        "model": "Manx",
+        "type": "Car"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Beetle (Type 1)",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "4x98",
+    "hub_bore": "58.1mm",
+    "advice": "Fiat/Alfa/Lancia. Can use 4x100 with wobble bolts (sketchy).",
+    "id": "4x98_FIAT",
+    "vehicles": [
+      {
+        "make": "Fiat",
+        "model": "500 Abarth",
+        "type": "Car"
+      },
+      {
+        "make": "Fiat",
+        "model": "124 Spider",
+        "type": "Car"
+      },
+      {
+        "make": "Alfa Romeo",
+        "model": "Giulia (952)",
+        "type": "Car"
+      },
+      {
+        "make": "Alfa Romeo",
+        "model": "Stelvio (949)",
+        "type": "Car"
+      },
+      {
+        "make": "Alfa Romeo",
+        "model": "4C",
+        "type": "Car"
+      },
+      {
+        "make": "Saab",
+        "model": "9000",
+        "type": "Car"
+      },
+      {
+        "make": "Alfa Romeo",
+        "model": "164",
+        "type": "Car"
+      },
+      {
+        "make": "Fiat",
+        "model": "Croma",
+        "type": "Car"
+      },
+      {
+        "make": "Lancia",
+        "model": "Thema",
+        "type": "Car"
+      },
+      {
+        "make": "Lancia",
+        "model": "Delta HF Integrale",
+        "type": "Car"
+      },
+      {
+        "make": "Lancia",
+        "model": "Stratos",
+        "type": "Car"
+      },
+      {
+        "make": "Lancia",
+        "model": "037",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "4x114.3",
+    "hub_bore": "66.1mm",
+    "advice": "Older Nissan/Datsun 4-lug.",
+    "id": "4x114_NISSAN_OLD",
+    "vehicles": [
+      {
+        "make": "Nissan",
+        "model": "Altima (U13 - Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Alto Works",
+        "type": "Car"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Jimny (JA11/JA12/JA22)",
+        "type": "Car"
+      },
+      {
+        "make": "Suzuki",
+        "model": "Carry / Every",
+        "type": "Car"
+      },
+      {
+        "make": "Geo",
+        "model": "Storm",
+        "type": "Car"
+      },
+      {
+        "make": "Isuzu",
+        "model": "Impulse (Gen 2)",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "6x114.3",
+    "hub_bore": "71.5mm",
+    "advice": "Dodge Viper and Dakota/Durango. Weird size.",
+    "id": "6x114_VIPER",
+    "vehicles": [
+      {
+        "make": "Dodge",
+        "model": "Viper (SR I - Gen 1)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Viper (SR II - Gen 2)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Viper (ZB I - Gen 3)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Viper (ZB II - Gen 4)",
+        "type": "Car"
+      },
+      {
+        "make": "Dodge",
+        "model": "Viper (VX - Gen 5)",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x165.1",
+    "hub_bore": "114mm",
+    "advice": "Classic Land Rover Defender/Discovery 1.",
+    "id": "5x165_LANDROVER",
+    "vehicles": [
+      {
+        "make": "Land Rover",
+        "model": "Defender 90/110",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Land Rover",
+        "model": "Discovery 1",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Land Rover",
+        "model": "Discovery 2",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Land Rover",
+        "model": "Range Rover Classic",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Land Rover",
+        "model": "Range Rover (P38)",
+        "type": "Truck/SUV"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "5x120",
+    "hub_bore": "72.56mm",
+    "advice": "Range Rover L322 (BMW Era) uses BMW wheels.",
+    "id": "5x120_LANDROVER",
+    "vehicles": [
+      {
+        "make": "Land Rover",
+        "model": "Range Rover (L322 - BMW Era)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Land Rover",
+        "model": "Range Rover (L322 - Ford Era)",
+        "type": "Truck/SUV"
+      },
+      {
+        "make": "Land Rover",
+        "model": "Range Rover (L322 - Facelift)",
+        "type": "Truck/SUV"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "4x101.6 (4x4)",
+    "hub_bore": "59.1mm",
+    "advice": "Classic Mini and Austin. Tiny wheels.",
+    "id": "4x101_MINI",
+    "vehicles": [
+      {
+        "make": "Mini",
+        "model": "Cooper (R50)",
+        "type": "Car"
+      },
+      {
+        "make": "Mini",
+        "model": "Cooper S (R53)",
+        "type": "Car"
+      },
+      {
+        "make": "Mini",
+        "model": "Cooper S (R56)",
+        "type": "Car"
+      },
+      {
+        "make": "Mini",
+        "model": "Cooper S (F56)",
+        "type": "Car"
+      },
+      {
+        "make": "Austin-Healey",
+        "model": "Sprite (Frogeye)",
+        "type": "Car"
+      },
+      {
+        "make": "Austin-Healey",
+        "model": "3000",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "4x114.3",
+    "hub_bore": "Varies",
+    "advice": "MGB, Triumph TR6.",
+    "id": "4x114_BRITISH",
+    "vehicles": [
+      {
+        "make": "MG",
+        "model": "MGB",
+        "type": "Car"
+      },
+      {
+        "make": "MG",
+        "model": "Midget",
+        "type": "Car"
+      },
+      {
+        "make": "MG",
+        "model": "MGA",
+        "type": "Car"
+      },
+      {
+        "make": "Triumph",
+        "model": "Spitfire",
+        "type": "Car"
+      },
+      {
+        "make": "Triumph",
+        "model": "TR6",
+        "type": "Car"
+      },
+      {
+        "make": "Triumph",
+        "model": "GT6",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "Center Lock",
+    "hub_bore": "N/A",
+    "advice": "Racing wheels. Single nut.",
+    "id": "CENTERLOCK",
+    "vehicles": [
+      {
+        "make": "Bugatti",
+        "model": "Type 35",
+        "type": "Car"
+      },
+      {
+        "make": "Alfa Romeo",
+        "model": "8C 2300",
+        "type": "Car"
+      },
+      {
+        "make": "Bentley",
+        "model": "Blower Bentley (4\u00bd Litre)",
+        "type": "Car"
+      },
+      {
+        "make": "KTM",
+        "model": "X-Bow",
+        "type": "Car"
+      },
+      {
+        "make": "Audi",
+        "model": "TT 2.0 TFSI",
+        "type": "Car"
+      }
+    ]
+  },
+  {
+    "bolt_pattern": "Varies",
+    "hub_bore": "Varies",
+    "advice": "Check specific model.",
+    "id": "VARIES",
+    "vehicles": [
+      {
+        "make": "Duesenberg",
+        "model": "Model J",
+        "type": "Car"
+      },
+      {
+        "make": "Packard",
+        "model": "Twelve",
+        "type": "Car"
+      },
+      {
+        "make": "Cadillac",
+        "model": "V-16",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Outback (Legacy Based)",
+        "type": "Car"
+      },
+      {
+        "make": "Volvo",
+        "model": "V70 XC / XC70",
+        "type": "Car"
+      },
+      {
+        "make": "AMC",
+        "model": "Eagle Wagon",
+        "type": "Car"
+      },
+      {
+        "make": "Factory Five",
+        "model": "818 S/R/C",
+        "type": "Car"
+      },
+      {
+        "make": "Subaru",
+        "model": "Impreza WRX (GD/GG)",
+        "type": "Car"
+      }
     ]
   }
 ]

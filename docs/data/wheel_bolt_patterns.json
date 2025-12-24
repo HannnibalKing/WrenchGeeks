@@ -1,0 +1,743 @@
+[
+  {
+    "id": "4x100_BMW_VW",
+    "bolt_pattern": "4x100",
+    "hub_bore": "57.1mm",
+    "platforms": [
+      "BMW_E30",
+      "BMW_3_SERIES__E21___1ST_GEN_",
+      "VOLKSWAGEN_GOLF__A1___MK1_",
+      "VOLKSWAGEN_JETTA__A1___MK1_",
+      "VOLKSWAGEN_GOLF__A2___MK2_",
+      "VOLKSWAGEN_JETTA__A2___MK2_",
+      "VOLKSWAGEN_GOLF__A3___MK3_",
+      "VOLKSWAGEN_JETTA__A3___MK3_",
+      "VOLKSWAGEN_PASSAT__B1___MK1_",
+      "VOLKSWAGEN_PASSAT__B2___MK2_",
+      "VOLKSWAGEN_PASSAT__B3___MK3_",
+      "VOLKSWAGEN_PASSAT__B4___MK4_"
+    ]
+  },
+  {
+    "id": "4x100_MINI",
+    "bolt_pattern": "4x100",
+    "hub_bore": "56.1mm",
+    "platforms": [
+      "MINI_COOPER_MODERN"
+    ]
+  },
+  {
+    "id": "4x100_RENAULT",
+    "bolt_pattern": "4x100",
+    "hub_bore": "60.1mm",
+    "platforms": [
+      "FRENCH_HOT_HATCH_RENAULT"
+    ]
+  },
+  {
+    "id": "5x100_VW",
+    "bolt_pattern": "5x100",
+    "hub_bore": "57.1mm",
+    "platforms": [
+      "VW_MK4",
+      "VOLKSWAGEN_GOLF__A4___MK4_",
+      "VOLKSWAGEN_JETTA__A4___MK4_"
+    ]
+  },
+  {
+    "id": "5x100_SUBARU",
+    "bolt_pattern": "5x100",
+    "hub_bore": "56.1mm",
+    "platforms": [
+      "SAAB_SUBARU_GG",
+      "SUBARU_BRZ_86",
+      "SUBARU_IMPREZA_WRX",
+      "SUBARU_LEGACY__BC_BF_BJ___GEN_1_",
+      "SUBARU_LEGACY__BD_BG_BK___GEN_2_",
+      "SUBARU_LEGACY__BE_BH___GEN_3_",
+      "SUBARU_LEGACY__BL_BP___GEN_4_",
+      "SUBARU_LEGACY__BM_BR___GEN_5_",
+      "SUBARU_LEGACY__BN_BS___GEN_6_",
+      "SUBARU_LEGACY__BW_BT___GEN_7_",
+      "SUBARU_FORESTER__SF___GEN_1_",
+      "SUBARU_FORESTER__SG___GEN_2_",
+      "SUBARU_FORESTER__SH___GEN_3_",
+      "SUBARU_FORESTER__SJ___GEN_4_",
+      "SUBARU_FORESTER__SK___GEN_5_",
+      "SUBARU_TOYOTA_TWINS"
+    ]
+  },
+  {
+    "id": "5x112_VW_AUDI_OLD",
+    "bolt_pattern": "5x112",
+    "hub_bore": "57.1mm",
+    "platforms": [
+      "VOLKSWAGEN_GOLF__A5___MK5_",
+      "VOLKSWAGEN_JETTA__A5___MK5_",
+      "VOLKSWAGEN_GOLF__A6___MK6_",
+      "VOLKSWAGEN_JETTA__A6___MK6_",
+      "VOLKSWAGEN_GOLF__A7___MK7_",
+      "VOLKSWAGEN_JETTA__A7___MK7_",
+      "VOLKSWAGEN_GOLF__A8___MK8_",
+      "VOLKSWAGEN_PASSAT__B5___MK5_",
+      "VAG_PL45",
+      "VOLKSWAGEN_PASSAT__B6___MK6_",
+      "VOLKSWAGEN_PASSAT__B7___MK7_",
+      "VOLKSWAGEN_PASSAT__B8___MK8_"
+    ]
+  },
+  {
+    "id": "5x112_MERCEDES",
+    "bolt_pattern": "5x112",
+    "hub_bore": "66.6mm",
+    "platforms": [
+      "MERCEDES_W123_W124",
+      "MERCEDES_C_CLASS",
+      "MERCEDES_E_CLASS"
+    ]
+  },
+  {
+    "id": "5x112_AUDI_NEW",
+    "bolt_pattern": "5x112",
+    "hub_bore": "66.5mm",
+    "platforms": [
+      "VAG_MLB_GEN1"
+    ]
+  },
+  {
+    "id": "5x120_BMW",
+    "bolt_pattern": "5x120",
+    "hub_bore": "72.56mm",
+    "platforms": [
+      "BMW_E36",
+      "BMW_E46",
+      "BMW_E90_E92",
+      "BMW_M50_M52",
+      "BMW_N54_N55",
+      "BMW_5_SERIES__E12___1ST_GEN_",
+      "BMW_5_SERIES__E28___2ND_GEN_",
+      "BMW_5_SERIES__E34___3RD_GEN_",
+      "LAND_ROVER_L322"
+    ]
+  },
+  {
+    "id": "5x120_BMW_E39",
+    "bolt_pattern": "5x120",
+    "hub_bore": "74.1mm",
+    "platforms": [
+      "BMW_E39"
+    ]
+  },
+  {
+    "id": "5x130_PORSCHE",
+    "bolt_pattern": "5x130",
+    "hub_bore": "71.6mm",
+    "platforms": [
+      "PORSCHE_924_944",
+      "PORSCHE_TRANSAXLE",
+      "PORSCHE_986_996",
+      "PORSCHE_987_997",
+      "PORSCHE_981_991",
+      "PORSCHE_718_992",
+      "PORSCHE_AIRCOOLED_911",
+      "PORSCHE_OTHER",
+      "VAG_PL71"
+    ]
+  },
+  {
+    "id": "5x108_VOLVO",
+    "bolt_pattern": "5x108",
+    "hub_bore": "65.1mm",
+    "platforms": [
+      "VOLVO_REDBLOCK",
+      "VOLVO_RWD_BRICKS",
+      "VOLVO_RWD_TURBO",
+      "VOLVO_P80",
+      "VOLVO_P80_PLATFORM",
+      "VOLVO_P2",
+      "VOLVO_P2_PLATFORM"
+    ]
+  },
+  {
+    "id": "5x108_JAGUAR",
+    "bolt_pattern": "5x108",
+    "hub_bore": "63.4mm",
+    "platforms": [
+      "JAGUAR_X_TYPE"
+    ]
+  },
+  {
+    "id": "4x108_PSA_SAAB",
+    "bolt_pattern": "4x108",
+    "hub_bore": "65.1mm",
+    "platforms": [
+      "FRENCH_HOT_HATCH_PEUGEOT",
+      "FRENCH_HOT_HATCH_CITROEN",
+      "SAAB_LEGENDS"
+    ]
+  },
+  {
+    "id": "5x110_SAAB_ALFA",
+    "bolt_pattern": "5x110",
+    "hub_bore": "65.1mm",
+    "platforms": [
+      "SAAB_GM2900",
+      "ALFA_ROMEO_MODERN"
+    ]
+  },
+  {
+    "id": "4x98_FIAT_ALFA",
+    "bolt_pattern": "4x98",
+    "hub_bore": "58.1mm",
+    "platforms": [
+      "FIAT_500_ABARTH",
+      "TYPE_FOUR_PLATFORM"
+    ]
+  },
+  {
+    "id": "4x114_3_BRITISH",
+    "bolt_pattern": "4x114.3",
+    "hub_bore": "Various",
+    "platforms": [
+      "BRITISH_ROADSTER_MG",
+      "BRITISH_ROADSTER_TRIUMPH"
+    ]
+  },
+  {
+    "id": "4x101_6_BRITISH",
+    "bolt_pattern": "4x101.6",
+    "hub_bore": "Various",
+    "platforms": [
+      "BRITISH_ROADSTER_AUSTIN"
+    ]
+  },
+  {
+    "id": "5x165_1_LAND_ROVER",
+    "bolt_pattern": "5x165.1",
+    "hub_bore": "113mm",
+    "platforms": [
+      "LAND_ROVER_CLASSIC"
+    ]
+  },
+  {
+    "id": "4x130_VW_AIRCOOLED",
+    "bolt_pattern": "4x130",
+    "hub_bore": "78.6mm",
+    "platforms": [
+      "VW_AIRCOOLED_LEGENDS"
+    ]
+  },
+  {
+    "id": "4x100_HONDA",
+    "bolt_pattern": "4x100",
+    "hub_bore": "56.1mm",
+    "platforms": [
+      "HONDA_CIVIC_GOLDEN",
+      "HONDA_CIVIC__SB_SG___1ST_GEN_",
+      "HONDA_CIVIC__SL_SS___2ND_GEN_",
+      "HONDA_CIVIC__AG_AH_AT___3RD_GEN_",
+      "HONDA_ACCORD__SJ_SM___1ST_GEN_",
+      "HONDA_ACCORD__SY_AC_AD___2ND_GEN_",
+      "HONDA_ACCORD__CA___3RD_GEN_"
+    ]
+  },
+  {
+    "id": "4x114_HONDA",
+    "bolt_pattern": "4x114.3",
+    "hub_bore": "64.1mm",
+    "platforms": [
+      "HONDA_ACCORD__CB___4TH_GEN_",
+      "HONDA_ACCORD__CD_CE___5TH_GEN_"
+    ]
+  },
+  {
+    "id": "5x114_HONDA",
+    "bolt_pattern": "5x114.3",
+    "hub_bore": "64.1mm",
+    "platforms": [
+      "HONDA_ACCORD_CLASSIC",
+      "HONDA_CRV_RD",
+      "HONDA_CRV_MODERN",
+      "HONDA_S2000",
+      "HONDA_CIVIC_LEGENDS",
+      "HONDA_INTEGRA_RSX",
+      "HONDA_DC5_EP3",
+      "HONDA_CIVIC_MODERN",
+      "HONDA_RWD_MID",
+      "HONDA_ACCORD__CG_CF___6TH_GEN_",
+      "HONDA_ACCORD__CM_CL___7TH_GEN_",
+      "HONDA_ACCORD__CP_CS___8TH_GEN_",
+      "HONDA_ACCORD__CR___9TH_GEN_",
+      "HONDA_ACCORD__CV___10TH_GEN_"
+    ]
+  },
+  {
+    "id": "4x100_TOYOTA_MAZDA",
+    "bolt_pattern": "4x100",
+    "hub_bore": "54.1mm",
+    "platforms": [
+      "TOYOTA_COROLLA__E80___5TH_GEN_",
+      "TOYOTA_COROLLA__E90___6TH_GEN_",
+      "TOYOTA_COROLLA__E100___7TH_GEN_",
+      "TOYOTA_COROLLA__E110___8TH_GEN_",
+      "TOYOTA_CAMRY__V10___1ST_GEN_",
+      "TOYOTA_CAMRY__V20___2ND_GEN_",
+      "TOYOTA_MR2",
+      "MAZDA_MIATA",
+      "SUZUKI_SWIFT_CULTUS",
+      "ABC_KEI_SPORTS",
+      "SUZUKI_KEI_CLASSIC"
+    ]
+  },
+  {
+    "id": "5x100_TOYOTA",
+    "bolt_pattern": "5x100",
+    "hub_bore": "54.1mm",
+    "platforms": [
+      "TOYOTA_COROLLA__E120_E130___9TH_GEN_",
+      "TOYOTA_COROLLA__E140_E150___10TH_GEN_",
+      "TOYOTA_COROLLA__E160_E170___11TH_GEN_",
+      "TOYOTA_COROLLA__E210___12TH_GEN_"
+    ]
+  },
+  {
+    "id": "5x114_TOYOTA",
+    "bolt_pattern": "5x114.3",
+    "hub_bore": "60.1mm",
+    "platforms": [
+      "TOYOTA_RAV4_GENERATIONS",
+      "TOYOTA_CAMRY_CLASSIC",
+      "TOYOTA_CAMRY_MODERN",
+      "TOYOTA_SUPRA_LEGACY",
+      "TOYOTA_GR_MODERN",
+      "TOYOTA_CAMRY__XV10___3RD_GEN_",
+      "TOYOTA_CAMRY__XV20___4TH_GEN_",
+      "TOYOTA_CAMRY__XV30___5TH_GEN_",
+      "TOYOTA_CAMRY__XV40___6TH_GEN_",
+      "TOYOTA_CAMRY__XV50___7TH_GEN_",
+      "TOYOTA_CAMRY__XV70___8TH_GEN_",
+      "TOYOTA_2JZ_GE",
+      "TOYOTA_UZ_FE"
+    ]
+  },
+  {
+    "id": "6x139_TOYOTA",
+    "bolt_pattern": "6x139.7",
+    "hub_bore": "106mm",
+    "platforms": [
+      "TOYOTA_LAND_CRUISER",
+      "TOYOTA_4RUNNER_N180"
+    ]
+  },
+  {
+    "id": "4x114_NISSAN",
+    "bolt_pattern": "4x114.3",
+    "hub_bore": "66.1mm",
+    "platforms": [
+      "NISSAN_ALTIMA__U13___GEN_1_"
+    ]
+  },
+  {
+    "id": "5x114_NISSAN",
+    "bolt_pattern": "5x114.3",
+    "hub_bore": "66.1mm",
+    "platforms": [
+      "NISSAN_S_CHASSIS",
+      "NISSAN_Z_CAR",
+      "NISSAN_SKYLINE_GTR",
+      "NISSAN_SKYLINE_GT_R",
+      "NISSAN_Z_LEGACY",
+      "NISSAN_FM_PLATFORM",
+      "NISSAN_ALTIMA__L30___GEN_2_",
+      "NISSAN_ALTIMA__L31___GEN_3_",
+      "NISSAN_ALTIMA__L32___GEN_4_",
+      "NISSAN_ALTIMA__L33___GEN_5_",
+      "NISSAN_ALTIMA__L34___GEN_6_",
+      "NISSAN_MAXIMA__J30___GEN_3_",
+      "NISSAN_MAXIMA__A32___GEN_4_",
+      "NISSAN_MAXIMA__A33___GEN_5_",
+      "NISSAN_MAXIMA__A34___GEN_6_"
+    ]
+  },
+  {
+    "id": "5x114_MAZDA_MITSU_HYUNDAI",
+    "bolt_pattern": "5x114.3",
+    "hub_bore": "67.1mm",
+    "platforms": [
+      "MAZDA_RX7",
+      "MAZDA_ROTARY",
+      "MITSUBISHI_EVO",
+      "MITSUBISHI_DSM",
+      "MITSUBISHI_3000GT",
+      "MITSUBISHI_GALANT_LEGNUM",
+      "HYUNDAI_GENESIS_COUPE",
+      "HYUNDAI_KIA_E_GMP",
+      "HYUNDAI_KIA_N3",
+      "HYUNDAI_KIA_J_PLATFORM",
+      "HYUNDAI_KIA_RWD_SPORT"
+    ]
+  },
+  {
+    "id": "6x139_MITSU",
+    "bolt_pattern": "6x139.7",
+    "hub_bore": "67.1mm",
+    "platforms": [
+      "MITSUBISHI_PAJERO_MONTERO"
+    ]
+  },
+  {
+    "id": "5x114_SUBARU",
+    "bolt_pattern": "5x114.3",
+    "hub_bore": "56.1mm",
+    "platforms": [
+      "SUBARU_WRX_STI"
+    ]
+  },
+  {
+    "id": "5x139_SUZUKI",
+    "bolt_pattern": "5x139.7",
+    "hub_bore": "108mm",
+    "platforms": [
+      "SUZUKI_OFFROAD"
+    ]
+  },
+  {
+    "id": "5x120.65_GM_RWD",
+    "bolt_pattern": "5x120.65",
+    "hub_bore": "70.3mm",
+    "platforms": [
+      "CHEVY_CORVETTE",
+      "CHEVY_CAMARO",
+      "GM_S10_SONOMA",
+      "GM_G_BODY_RWD",
+      "GM_MUSCLE_CLASSIC",
+      "PONTIAC_FIREBIRD",
+      "BUICK_LEGENDS"
+    ]
+  },
+  {
+    "id": "5x115_GM_FWD",
+    "bolt_pattern": "5x115",
+    "hub_bore": "70.3mm",
+    "platforms": [
+      "GM_W_BODY_GEN2",
+      "GM_W_BODY_GEN3",
+      "GM_H_BODY",
+      "PONTIAC_GRAND_PRIX",
+      "CHEVY_MODERN_FAMILY",
+      "SATURN_VUE"
+    ]
+  },
+  {
+    "id": "5x120_GM_HOLDEN",
+    "bolt_pattern": "5x120",
+    "hub_bore": "66.9mm",
+    "platforms": [
+      "PONTIAC_GTO",
+      "PONTIAC_G8",
+      "GM_EPSILON_2"
+    ]
+  },
+  {
+    "id": "5x110_GM_EPSILON",
+    "bolt_pattern": "5x110",
+    "hub_bore": "65.1mm",
+    "platforms": [
+      "GM_EPSILON_1",
+      "SATURN_L_SERIES",
+      "CADILLAC_CATERA",
+      "PONTIAC_SOLSTICE",
+      "CHEVY_MALIBU_GENERATIONS"
+    ]
+  },
+  {
+    "id": "5x100_GM_SMALL",
+    "bolt_pattern": "5x100",
+    "hub_bore": "57.1mm",
+    "platforms": [
+      "GM_J_BODY",
+      "PONTIAC_FIERO",
+      "PONTIAC_VIBE",
+      "DODGE_PL",
+      "CHRYSLER_K_DERIVATIVES"
+    ]
+  },
+  {
+    "id": "4x100_SATURN_GEO",
+    "bolt_pattern": "4x100",
+    "hub_bore": "57.1mm",
+    "platforms": [
+      "SATURN_S_SERIES",
+      "SATURN_ION",
+      "GEO_METRO",
+      "GEO_PRIZM",
+      "GEO_STORM",
+      "FORD_CT120_ESCORT"
+    ]
+  },
+  {
+    "id": "6x139.7_GM_TRUCK",
+    "bolt_pattern": "6x139.7",
+    "hub_bore": "78.1mm",
+    "platforms": [
+      "GM_TRUCK_GENERATIONS",
+      "GM_TRUCK_CLASSIC",
+      "GM_TRUCK_MODERN"
+    ]
+  },
+  {
+    "id": "6x127_GM_MIDSIZE_TRUCK",
+    "bolt_pattern": "6x127",
+    "hub_bore": "78.1mm",
+    "platforms": [
+      "GM_GMT360"
+    ]
+  },
+  {
+    "id": "5x114.3_FORD_RWD",
+    "bolt_pattern": "5x114.3",
+    "hub_bore": "70.5mm",
+    "platforms": [
+      "FORD_MUSTANG_GENERATIONS",
+      "FORD_SN95_NEWEDGE",
+      "FORD_S197",
+      "FORD_S550",
+      "FORD_RANGER",
+      "FORD_RANGER_MAZDA_B",
+      "FORD_PANTHER"
+    ]
+  },
+  {
+    "id": "4x108_FORD_FOX",
+    "bolt_pattern": "4x108",
+    "hub_bore": "63.4mm",
+    "platforms": [
+      "FORD_FOX",
+      "FORD_COMPACT_PERFORMANCE"
+    ]
+  },
+  {
+    "id": "5x139.7_FORD_OLD_TRUCK",
+    "bolt_pattern": "5x139.7",
+    "hub_bore": "87.1mm",
+    "platforms": [
+      "FORD_F_SERIES_CLASSIC",
+      "FORD_BRONCO",
+      "FORD_MODEL_T_A",
+      "FORD_FLATHEAD_ERA",
+      "FORD_RANGER__PRE_1983_",
+      "FORD_F_150__GEN_1___F_SERIES_",
+      "FORD_F_150__GEN_2___F_SERIES_",
+      "FORD_F_150__GEN_3___F_SERIES_",
+      "FORD_F_150__GEN_4___F_SERIES_",
+      "FORD_F_150__GEN_5___F_SERIES_",
+      "FORD_F_150__GEN_6___F_SERIES_",
+      "FORD_F_150__GEN_7___F_SERIES_",
+      "FORD_F_150__GEN_8___F_SERIES_",
+      "FORD_F_150__GEN_9___F_SERIES_"
+    ]
+  },
+  {
+    "id": "5x135_FORD_F150_GEN10",
+    "bolt_pattern": "5x135",
+    "hub_bore": "87.1mm",
+    "platforms": [
+      "FORD_F_150__GEN_10___F_SERIES_"
+    ]
+  },
+  {
+    "id": "6x135_FORD_TRUCK",
+    "bolt_pattern": "6x135",
+    "hub_bore": "87.1mm",
+    "platforms": [
+      "FORD_F_SERIES_MODERN",
+      "FORD_F_150__GEN_11___F_SERIES_",
+      "FORD_F_150__GEN_12___F_SERIES_",
+      "FORD_F_150__GEN_13___F_SERIES_",
+      "FORD_F_150__GEN_14___F_SERIES_"
+    ]
+  },
+  {
+    "id": "8x170_FORD_HD",
+    "bolt_pattern": "8x170",
+    "hub_bore": "124.9mm",
+    "platforms": [
+      "FORD_SUPER_DUTY_GENERATIONS"
+    ]
+  },
+  {
+    "id": "5x115_MOPAR_RWD",
+    "bolt_pattern": "5x115",
+    "hub_bore": "71.5mm",
+    "platforms": [
+      "DAIMLER_CHRYSLER_LX",
+      "CHRYSLER_PROWLER"
+    ]
+  },
+  {
+    "id": "5x114.3_JEEP_MOPAR",
+    "bolt_pattern": "5x114.3",
+    "hub_bore": "71.5mm",
+    "platforms": [
+      "JEEP_CHEROKEE_XJ",
+      "JEEP_WRANGLER_TJ",
+      "JEEP_WRANGLER",
+      "JEEP_XJ",
+      "JEEP_AMC_40",
+      "JEEP_CHEROKEE",
+      "CHRYSLER_LH_PLATFORM",
+      "CHRYSLER_MINIVANS",
+      "MOPAR_CLASSIC_B_BODY",
+      "MOPAR_CLASSIC_E_BODY"
+    ]
+  },
+  {
+    "id": "5x127_JEEP_JK",
+    "bolt_pattern": "5x127",
+    "hub_bore": "71.5mm",
+    "platforms": [
+      "JEEP_WRANGLER_JK"
+    ]
+  },
+  {
+    "id": "5x139.7_DODGE_RAM",
+    "bolt_pattern": "5x139.7",
+    "hub_bore": "77.8mm",
+    "platforms": [
+      "DODGE_RAM_GENERATIONS",
+      "RAM_DS_DT"
+    ]
+  },
+  {
+    "id": "6x114.3_VIPER",
+    "bolt_pattern": "6x114.3",
+    "hub_bore": "71.5mm",
+    "platforms": [
+      "DODGE_VIPER"
+    ]
+  },
+  {
+    "id": "5x112_CROSSFIRE",
+    "bolt_pattern": "5x112",
+    "hub_bore": "66.6mm",
+    "platforms": [
+      "CHRYSLER_CROSSFIRE"
+    ]
+  },
+  {
+    "id": "5x139.7_GEO_TRACKER",
+    "bolt_pattern": "5x139.7",
+    "hub_bore": "108mm",
+    "platforms": [
+      "GEO_TRACKER"
+    ]
+  },
+  {
+    "id": "5x120_HOLDEN_PRE_VE",
+    "bolt_pattern": "5x120",
+    "hub_bore": "69.6mm",
+    "platforms": [
+      "HOLDEN_COMMODORE_CLASSIC",
+      "HOLDEN_COMMODORE_VN_VS",
+      "HOLDEN_COMMODORE_VT_VZ"
+    ]
+  },
+  {
+    "id": "5x120_HOLDEN_VE_VF",
+    "bolt_pattern": "5x120",
+    "hub_bore": "66.9mm",
+    "platforms": [
+      "HOLDEN_COMMODORE_VE_VF"
+    ]
+  },
+  {
+    "id": "5x114.3_FORD_FALCON",
+    "bolt_pattern": "5x114.3",
+    "hub_bore": "70.5mm",
+    "platforms": [
+      "FORD_FALCON_CLASSIC",
+      "FORD_FALCON_EA_AU",
+      "FORD_FALCON_BA_FG"
+    ]
+  },
+  {
+    "id": "5x114.3_KIT_FF_MK4",
+    "bolt_pattern": "5x114.3",
+    "hub_bore": "70.3mm",
+    "platforms": [
+      "KIT_FACTORY_FIVE_MK4"
+    ]
+  },
+  {
+    "id": "5x100_KIT_FF_818",
+    "bolt_pattern": "5x100",
+    "hub_bore": "56.1mm",
+    "platforms": [
+      "KIT_FACTORY_FIVE_818"
+    ]
+  },
+  {
+    "id": "4x100_KIT_EXOCET",
+    "bolt_pattern": "4x100",
+    "hub_bore": "54.1mm",
+    "platforms": [
+      "KIT_EXOMOTIVE_EXOCET"
+    ]
+  },
+  {
+    "id": "5x110_KIT_GOBLIN",
+    "bolt_pattern": "5x110",
+    "hub_bore": "65.1mm",
+    "platforms": [
+      "KIT_DF_GOBLIN"
+    ]
+  },
+  {
+    "id": "4x130_KIT_MANX",
+    "bolt_pattern": "4x130",
+    "hub_bore": "78.6mm",
+    "platforms": [
+      "KIT_MEYERS_MANX"
+    ]
+  },
+  {
+    "id": "4x100_EXO_ATOM",
+    "bolt_pattern": "4x100",
+    "hub_bore": "56.1mm",
+    "platforms": [
+      "EXO_ARIEL_ATOM"
+    ]
+  },
+  {
+    "id": "5x112_EXO_XBOW",
+    "bolt_pattern": "5x112",
+    "hub_bore": "57.1mm",
+    "platforms": [
+      "EXO_KTM_XBOW"
+    ]
+  },
+  {
+    "id": "4x108_KIT_CATERHAM",
+    "bolt_pattern": "4x108",
+    "hub_bore": "63.4mm",
+    "platforms": [
+      "KIT_CATERHAM_7"
+    ]
+  },
+  {
+    "id": "VARIES_PREWAR_LUXURY",
+    "bolt_pattern": "Varies",
+    "hub_bore": "Varies",
+    "platforms": [
+      "PREWAR_LUXURY"
+    ]
+  },
+  {
+    "id": "CENTERLOCK_PREWAR_RACING",
+    "bolt_pattern": "Center Lock",
+    "hub_bore": "N/A",
+    "platforms": [
+      "PREWAR_EURO_RACING"
+    ]
+  }
+]
