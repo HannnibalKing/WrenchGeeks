@@ -12,7 +12,11 @@ kb_files = [
     "kb_mechanical.json",
     "kb_safety.json",
     "kb_tips.json",
-    "kb_volvo_p80.json"
+    "kb_volvo_p80.json",
+    "kb_nissan_z_g.json",
+    "kb_mazda_miata.json",
+    "kb_toyota_jz_uz.json",
+    "kb_ls_junkyard_guide.json"
 ]
 
 all_data = []

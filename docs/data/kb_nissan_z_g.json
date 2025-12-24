@@ -1,0 +1,30 @@
+[
+  {
+    "category": "drivetrain",
+    "title": "Nissan CD009 Transmission Guide",
+    "content": "The CD009 (6-speed manual) is legendary for holding 1000+ hp, but not all Z33 transmissions are CD009s. \n\n*   **CD001-CD008 (2003-2004):** Weak synchros (especially 3rd gear). Avoid for high power.\n*   **CD009 (2005-2006):** Triple cone synchros on 1st, 2nd, 3rd. The one you want.\n*   **CD00A (2007+ / Replacement):** The latest version, even stronger.\n*   **ID:** Look for the shifter bracket. CD009s have a specific casting mark, but the only sure way is the VIN or case stickers. 'CD0' on the case doesn't guarantee it's a 009.",
+    "severity": "High",
+    "related_parts": ["nissan_cd009", "nissan_350z_transmission"]
+  },
+  {
+    "category": "brakes",
+    "title": "Akebono Big Brake Upgrade",
+    "content": "The 'Akebono' brakes from the 370Z Sport / G37 Sport are a massive upgrade for 350Z, G35, and S-Chassis cars.\n*   **Specs:** 14.0\" Front Rotors (4-Piston), 13.8\" Rear Rotors (2-Piston).\n*   **Fitment:** Requires adapter brackets for 350Z/G35 (non-Sport). Requires 18\" or larger wheels with good clearance (high disk).",
+    "severity": "Medium",
+    "related_parts": ["akebono_brakes", "nissan_370z_sport"]
+  },
+  {
+    "category": "mechanical",
+    "title": "VQ35 Engine Hierarchy",
+    "content": "Not all VQ35s are equal.\n*   **DE (2003-2006):** Single throttle body. Known for oil consumption but cheap. 'RevUp' versions (2005-06 Manuals) have higher redline but WORSE oil consumption.\n*   **HR (2007-2008):** Dual throttle bodies. Much stronger block, higher revs. The 'High Rev' engine. Beware of the internal oil gallery gasket failure (low oil pressure death).\n*   **VHR (370Z/G37):** 3.7L with VVEL. Complex head, great power.",
+    "severity": "High",
+    "related_parts": ["vq35de", "vq35hr", "vq37vhr"]
+  },
+  {
+    "category": "hacks",
+    "title": "3.69 Diff Gear Swap",
+    "content": "The manual 370Z/G37 Sport comes with a 3.69 final drive ratio. Swapping this diff (or ring & pinion) into an Auto G35/350Z (usually 3.3) or a base manual (3.5) is a cheap way to get significantly faster acceleration at the cost of top speed/highway RPM.",
+    "severity": "Medium",
+    "related_parts": ["nissan_r200_diff", "final_drive_369"]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "category": "mechanical",
+    "title": "Miata 1.6L 'Glass' Diff Warning",
+    "content": "The 1990-1993 Miata (1.6L) came with a 6-inch rear differential that is notoriously weak. It WILL break with stock power if launched hard, and definitely with any turbo. \n*   **The Fix:** Swap in the entire rear end (diff, axles, driveshaft) from a 1.8L (1994-2005) Miata. The 1.8L diff (7-inch) is bulletproof up to ~350hp.",
+    "severity": "Critical",
+    "related_parts": ["miata_16_diff", "miata_18_torsen"]
+  },
+  {
+    "category": "hacks",
+    "title": "The 'Exhintake' Cam Mod",
+    "content": "On 1999-2000 (NB1) and some other BP engines, you can take the exhaust camshaft and install it on the intake side. \n*   **Why:** The exhaust cam has more duration/lift than the stock intake cam. \n*   **Result:** Cheap horsepower (~6-10whp) for the cost of a junkyard cam and a new gear. Requires drilling the cam gear for proper timing.",
+    "severity": "Medium",
+    "related_parts": ["mazda_bp_engine", "exhintake_cam"]
+  },
+  {
+    "category": "mechanical",
+    "title": "Short Nose Crank (SNC) Failure",
+    "content": "Early 1990-1991 Miatas have a 'Short Nose Crank'. The crank pulley bolt can loosen, destroying the keyway and the crankshaft tip. \n*   **ID:** Look at the crank pulley. 4 slots = Short Nose (Risk). 8 slots = Long Nose (Safe). \n*   **Fix:** Check torque frequently or perform the 'Loctite Fix' if wobble starts.",
+    "severity": "High",
+    "related_parts": ["miata_snc", "b6ze_engine"]
+  },
+  {
+    "category": "interchange",
+    "title": "NB Top Hats on NA Suspension",
+    "content": "The NB (1999-2005) shock mounts ('top hats') are designed better than the NA (1990-1997) ones, allowing for more shock travel before hitting the bump stops. Swapping NB top hats onto an NA (requires matching shocks/springs or spacers) significantly improves ride quality and handling.",
+    "severity": "Medium",
+    "related_parts": ["miata_suspension", "nb_top_hats"]
+  }
+]

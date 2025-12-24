@@ -1,0 +1,37 @@
+[
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS Guide: Iron vs Aluminum Blocks",
+    "content": "Identifying GM Gen 3/4 LS-based engines in the junkyard.\n\n*   **Iron Block (Trucks):** Found in Silverado, Sierra, Tahoe, Yukon. Codes: LQ4 (6.0L), LQ9 (6.0L HO), LM7 (5.3L), LR4 (4.8L). Heavy (~200lbs+ block weight) but virtually indestructible. Great for budget turbo builds.\n*   **Aluminum Block (Cars & Some Trucks):** Found in Corvette, Camaro, GTO, Trailblazer SS, and some pickups (L33). Codes: LS1, LS2, LS3, L33. ~80-100lbs lighter than iron. Preferred for handling/track builds.",
+    "severity": "Info",
+    "related_parts": ["gm_ls_engine", "lq4", "lq9", "lm7", "ls1"]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: 4.8L vs 5.3L Identification",
+    "content": "The 4.8L (LR4) and 5.3L (LM7) truck engines look identical externally. The block casting numbers (e.g., '4.8/5.3') don't tell you which one it is.\n\n**How to tell:**\n1.  **VIN Code:** Check the 8th digit of the VIN. (e.g., 'V' is often 4.8L, 'T' is 5.3L - verify specific year codes).\n2.  **Piston Shape:** Pull a spark plug and inspect the piston top with a borescope or screwdriver.\n    *   **4.8L:** Flat top pistons.\n    *   **5.3L:** Dished pistons (most common Gen 3 LM7).\n    *   *Exception:* The L33 (Aluminum 5.3L) and some Gen 4 5.3s have flat tops.",
+    "severity": "Medium",
+    "related_parts": ["gm_lr4", "gm_lm7"]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: Cylinder Heads (Cathedral vs Rectangle)",
+    "content": "Head choice dictates intake choice and power potential.\n\n*   **Cathedral Port (Gen 3/Early Gen 4):** Tall, narrow ports. High velocity, great low-end torque.\n    *   **706 / 862:** 4.8L/5.3L heads. Small valves, small combustion chambers (bumps compression). Good for budget builds.\n    *   **243 / 799:** Found on LS6 (Corvette Z06) and LS2 (Trucks/Cars). The best factory cathedral heads. D-shaped exhaust ports, larger valves, better flow.\n*   **Rectangle Port (Gen 4):** Wide, rectangular ports. Massive flow, best for high RPM/displacement.\n    *   **821:** LS3 heads (Corvette/Camaro). Hollow stem valves (lightweight).\n    *   **823:** L92 Truck heads (6.2L). Solid valves. Almost identical flow to 821.",
+    "severity": "Info",
+    "related_parts": ["ls_cathedral_port", "ls_rectangle_port", "head_casting_243", "head_casting_821"]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: Intake Manifolds",
+    "content": "Intake choice depends on hood clearance and head type.\n\n*   **Truck Intake:** Tallest. Best low-end torque but ugly and rarely fits under car hoods (240SX, Mustang, etc.).\n*   **TBSS / NNBS (Trailblazer SS / New Body Style):** The best factory cathedral port intake. Flows significantly better than the standard truck intake and close to aftermarket units. Still tall.\n*   **Car Intakes (LS1/LS6/LS2/LS3):** Low profile. Required for most car swaps. LS6 intake is the best factory cathedral option for low clearance.",
+    "severity": "Medium",
+    "related_parts": ["ls_truck_intake", "ls6_intake", "tbss_intake"]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: Accessory Drive Spacing",
+    "content": "The harmonic balancer and pulleys come in three offsets (depths). You cannot mix and match brackets/pulleys from different offsets.\n\n1.  **Truck:** Deepest spacing (sticks out furthest from engine). Alternator mounts high driver side. Cheapest/most common.\n2.  **F-Body (Camaro/Firebird 98-02) / GTO:** Middle spacing. Alternator mounts low driver side (often interferes with frame rails/steering boxes in swaps).\n3.  **Corvette (Y-Body) / CTS-V:** Shallowest spacing (tightest to engine). Alternator mounts high driver side. Best for swaps with limited radiator clearance (e.g., Miata, S2000).",
+    "severity": "High",
+    "related_parts": ["ls_accessory_drive"]
+  }
+]
