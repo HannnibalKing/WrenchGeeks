@@ -37,6 +37,213 @@
       ]
     },
     {
+      "id": "volvo_p2_fuel_pressure_sensor",
+      "category": "Electrical & Sensors",
+      "name": "Volvo Fuel Pressure Sensor (PEM)",
+      "description": "A notorious failure point on P2 Volvos (S60/V70/XC90). Causes hesitation, stalling, and 'Reduced Engine Performance' mode. Bosch is the OEM.",
+      "specs": [
+        "Location: Fuel Rail",
+        "Symptoms: Stalling, Hesitation, Code P0089",
+        "OEM Part: Bosch 0261230110"
+      ],
+      "compatibility": [
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "S60 (P2)", "years": "2001-2009", "notes": "Common Failure" },
+            { "name": "V70 (P2)", "years": "2001-2007", "notes": "Common Failure" },
+            { "name": "XC90", "years": "2003-2014", "notes": "Common Failure" },
+            { "name": "S80 (P2)", "years": "1999-2006", "notes": "Common Failure" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VOLVO_P2", "VOLVO_P2_PLATFORM"]
+      }
+    },
+    {
+      "id": "nissan_cam_crank_sensors",
+      "category": "Electrical & Sensors",
+      "name": "Nissan VQ/QR Cam & Crank Sensors",
+      "description": "The 'Metal Can' upgrade. Older plastic-bodied sensors on VQ35DE and QR25DE engines fail internally due to heat, causing stalling and no-start. Always replace with the updated metal-bodied Hitachi sensors.",
+      "specs": [
+        "Type: Hall Effect",
+        "Upgrade: Metal Body (Hitachi)",
+        "Replace in pairs (Cam & Crank)"
+      ],
+      "compatibility": [
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "350Z", "years": "2003-2006", "notes": "Critical Maintenance" },
+            { "name": "Altima (V6 & I4)", "years": "2002-2006", "notes": "Critical Maintenance" },
+            { "name": "Maxima", "years": "2002-2008", "notes": "Critical Maintenance" },
+            { "name": "Sentra SE-R", "years": "2002-2006", "notes": "Critical Maintenance" }
+          ]
+        },
+        {
+          "make": "Infiniti",
+          "models": [
+            { "name": "G35", "years": "2003-2007", "notes": "Critical Maintenance" },
+            { "name": "FX35", "years": "2003-2008", "notes": "Critical Maintenance" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["NISSAN_Z_LEGACY", "NISSAN_ALTIMA__L31___GEN_3_", "NISSAN_MAXIMA__A34___GEN_6_"]
+      }
+    },
+    {
+      "id": "subaru_knock_sensor",
+      "category": "Electrical & Sensors",
+      "name": "Subaru EJ Knock Sensor",
+      "description": "The plastic housing on older Subaru knock sensors cracks over time, allowing moisture in and causing corrosion. This leads to false knock readings, retarded timing, and sluggish performance.",
+      "specs": [
+        "Location: Under intercooler/intake",
+        "Torque: Critical (too tight = false knock)",
+        "Orientation: 45 degrees relative to block"
+      ],
+      "compatibility": [
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "Impreza / WRX", "years": "1993-2005", "notes": "Common Failure" },
+            { "name": "Legacy / Outback", "years": "1990-2004", "notes": "Common Failure" },
+            { "name": "Forester", "years": "1998-2005", "notes": "Common Failure" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["SUBARU_IMPREZA_WRX", "SUBARU_LEGACY__BD_BG_BK___GEN_2_", "SUBARU_FORESTER__SF___GEN_1_"]
+      }
+    },
+    {
+      "id": "denso_oxygen_sensors",
+      "category": "Electrical & Sensors",
+      "name": "Denso Oxygen / AFR Sensors",
+      "description": "Denso is the OEM supplier for almost all Japanese vehicles (Toyota, Honda, Subaru, Mazda). Using Bosch or generic sensors in these cars often causes 'Heater Circuit' codes or poor fuel economy. Always stick to Denso for Asian imports.",
+      "specs": [
+        "OEM Fitment",
+        "Correct Heater Resistance (Critical for ECU)",
+        "Longer life than generic"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Camry / Corolla / RAV4", "years": "All", "notes": "OEM Part" },
+            { "name": "Tacoma / Tundra / 4Runner", "years": "All", "notes": "OEM Part" },
+            { "name": "Supra / MR2 / Celica", "years": "All", "notes": "OEM Part" }
+          ]
+        },
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic / Accord / CR-V", "years": "All", "notes": "OEM Part" },
+            { "name": "S2000 / NSX", "years": "All", "notes": "OEM Part" }
+          ]
+        },
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "Impreza / WRX / STI", "years": "All", "notes": "OEM Part" },
+            { "name": "Forester / Outback", "years": "All", "notes": "OEM Part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": [
+          "TOYOTA_CAMRY_CLASSIC", "TOYOTA_CAMRY_MODERN", "TOYOTA_RAV4_GENERATIONS", "TOYOTA_LAND_CRUISER", "TOYOTA_4RUNNER_N180", "TOYOTA_SUPRA_LEGACY", "TOYOTA_MR2",
+          "HONDA_CIVIC_GOLDEN", "HONDA_CIVIC_LEGENDS", "HONDA_CIVIC_MODERN", "HONDA_ACCORD_CLASSIC", "HONDA_CRV_RD", "HONDA_CRV_MODERN", "HONDA_S2000", "HONDA_INTEGRA_RSX",
+          "SUBARU_IMPREZA_WRX", "SUBARU_WRX_STI", "SUBARU_FORESTER__SF___GEN_1_", "SUBARU_LEGACY__BD_BG_BK___GEN_2_"
+        ]
+      }
+    },
+    {
+      "id": "bosch_maf_sensors",
+      "category": "Electrical & Sensors",
+      "name": "Bosch Mass Air Flow (MAF) Sensors",
+      "description": "Bosch invented the hot-wire MAF and supplies them for most European cars (BMW, Audi, Mercedes, Volvo, Porsche). Cleaning them with MAF cleaner works temporarily, but replacement is eventually required.",
+      "specs": [
+        "Hot Film / Hot Wire Technology",
+        "Sensitive to oil (K&N filters can damage them)",
+        "OEM for Euro"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "3-Series / 5-Series", "years": "1990-Present", "notes": "OEM Part" }
+          ]
+        },
+        {
+          "make": "Volkswagen / Audi",
+          "models": [
+            { "name": "Golf / Jetta / Passat", "years": "1990-Present", "notes": "OEM Part" },
+            { "name": "A4 / A6 / TT", "years": "1996-Present", "notes": "OEM Part" }
+          ]
+        },
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "911 / Boxster / Cayenne", "years": "1997-Present", "notes": "OEM Part" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": [
+          "BMW_E30", "BMW_E36", "BMW_E46", "BMW_E90_E92", "BMW_E39", "BMW_N54_N55",
+          "VOLKSWAGEN_GOLF__A4___MK4_", "VOLKSWAGEN_GOLF__A5___MK5_", "VOLKSWAGEN_PASSAT__B5___MK5_", "AUDI_A4_B5", "AUDI_A4_B6",
+          "PORSCHE_986_996", "PORSCHE_987_997", "VOLVO_P2", "VOLVO_P80"
+        ]
+      }
+    },
+    {
+      "id": "gm_ls_map_sensors",
+      "category": "Electrical & Sensors",
+      "name": "GM LS MAP Sensors (1/2/3 Bar)",
+      "description": "Manifold Absolute Pressure sensors for GM LS engines. Critical for forced induction.",
+      "specs": [
+        "1-Bar (Stock): Reads vacuum only (NA engines). Part #12614970.",
+        "2-Bar (Cobalt SS): Reads up to 15psi boost. Part #12615136.",
+        "3-Bar (ZR1): Reads up to 30psi boost. Part #12592525."
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Silverado / Sierra", "years": "1999-2013", "notes": "Stock is 1-Bar" },
+            { "name": "Corvette / Camaro", "years": "1997-2013", "notes": "Stock is 1-Bar" },
+            { "name": "Cobalt SS (Supercharged)", "years": "2005-2007", "notes": "Stock is 2-Bar" },
+            { "name": "Corvette ZR1 (C6)", "years": "2009-2013", "notes": "Stock is 3-Bar" }
+          ]
+        }
+      ],
+      "universal_alternatives": [
+        { "name": "GM 3-Bar MAP", "notes": "The go-to for any turbo LS build" }
+      ]
+    },
+    {
+      "id": "gm_iat_sensor",
+      "category": "Electrical & Sensors",
+      "name": "GM Open Element IAT Sensor",
+      "description": "Fast-acting Intake Air Temperature sensor. Used universally in aftermarket ECU installs (Megasquirt, Holley, etc.) because it reacts quickly to temp changes.",
+      "specs": [
+        "Thread: 3/8 NPT",
+        "Connector: Standard GM 2-pin",
+        "Open element design"
+      ],
+      "compatibility": [
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Turbo Builds", "years": "All", "notes": "Essential for accurate tuning" },
+            { "name": "GMC Syclone / Typhoon", "years": "1991-1993", "notes": "Stock Part" }
+          ]
+        }
+      ]
+    },
+    {
       "id": "vag_r8_coils",
       "category": "Electrical & Sensors",
       "name": "Audi R8 Ignition Coils (Red Top)",
@@ -544,6 +751,339 @@
       "universal_alternatives": [
         { "name": "VDO S119445001Z", "notes": "OEM Manufacturer" }
       ]
+    },
+    {
+      "id": "gm_ls_map_sensors_upgrade",
+      "category": "Electrical & Sensors",
+      "name": "GM LS MAP Sensor Upgrades (2-Bar / 3-Bar)",
+      "description": "For boosted LS builds, the stock 1-bar MAP sensor can't read positive pressure. Swapping to a 2-bar (Cobalt SS) or 3-bar (Corvette ZR1) sensor allows the ECU to fuel correctly under boost.",
+      "specs": [
+        "1-Bar: Stock (NA)",
+        "2-Bar: Cobalt SS (12615136) - Good for ~15psi",
+        "3-Bar: ZR1 (12592525) - Good for ~30psi"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Cobalt SS (Supercharged)", "years": "2005-2007", "notes": "Donor (2-Bar)" },
+            { "name": "Corvette ZR1 (C6)", "years": "2009-2013", "notes": "Donor (3-Bar)" },
+            { "name": "Silverado / Sierra", "years": "1999-2013", "notes": "Upgrade Candidate" },
+            { "name": "Camaro / Corvette", "years": "1997-2013", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_TRUCK_GMT800_GAS", "GM_TRUCK_GMT900_GAS", "GM_F_BODY_4TH_GEN", "GM_Y_BODY_C5", "GM_Y_BODY_C6", "CHEVY_MALIBU_GENERATIONS"]
+      }
+    },
+    {
+      "id": "gm_iat_open_element",
+      "category": "Electrical & Sensors",
+      "name": "GM Open Element IAT Sensor",
+      "description": "The standard for forced induction builds. Unlike the slow-reacting stock sensors (often integrated into the MAF), this open-element sensor (GMC Syclone/Typhoon style) reacts instantly to intake temp changes, essential for preventing detonation.",
+      "specs": [
+        "Response: Fast Acting",
+        "Thread: 3/8 NPT",
+        "Part Number: 25036751"
+      ],
+      "compatibility": [
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Syclone / Typhoon", "years": "1991-1993", "notes": "Stock Part" }
+          ]
+        },
+        {
+          "make": "Universal",
+          "models": [
+            { "name": "Turbo / Supercharged Builds", "years": "All", "notes": "Essential Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_S10_SONOMA", "GM_TRUCK_GMT800_GAS", "FORD_FOX", "HONDA_CIVIC_GOLDEN"]
+      }
+    },
+    {
+      "id": "nissan_z32_maf",
+      "category": "Electrical & Sensors",
+      "name": "Nissan Z32 (300ZX) N62 MAF Sensor",
+      "description": "The legendary 'N62' MAF. It flows enough air for ~500whp and is the standard upgrade for SR20DET, KA24DE, and RB20/25 builds. Requires an ECU tune (Nistune/PowerFC/etc).",
+      "specs": [
+        "Diameter: 80mm",
+        "Max HP: ~500whp",
+        "Connector: Orange Label"
+      ],
+      "compatibility": [
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "300ZX TT (Z32)", "years": "1990-1996", "notes": "Donor Vehicle" },
+            { "name": "240SX (S13/S14)", "years": "1989-1998", "notes": "Upgrade Candidate" },
+            { "name": "Skyline (R32/R33)", "years": "1989-1998", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["NISSAN_Z_SERIES", "NISSAN_S_CHASSIS", "NISSAN_SKYLINE_R32", "NISSAN_SKYLINE_R33"]
+      }
+    },
+    {
+      "id": "ford_lightning_maf",
+      "category": "Electrical & Sensors",
+      "name": "Ford Lightning 90mm MAF Sensor",
+      "description": "The 90mm MAF from the F-150 Lightning is a massive upgrade for Mustang GTs and Cobras. It supports up to ~450-500rwhp without 'pegging' (maxing out voltage).",
+      "specs": [
+        "Diameter: 90mm",
+        "Connector: 4-Pin or 6-Pin (Adapter needed)",
+        "Max HP: ~500whp"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "F-150 Lightning", "years": "1999-2004", "notes": "Donor Vehicle" },
+            { "name": "Mustang GT", "years": "1996-2004", "notes": "Upgrade Candidate" },
+            { "name": "Mustang Cobra", "years": "1996-2001", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_SN95", "FORD_F_150__GEN_10___F_SERIES_"]
+      }
+    },
+    {
+      "id": "honda_omni_map",
+      "category": "Electrical & Sensors",
+      "name": "Honda 4-Bar MAP Sensor (Omni Power)",
+      "description": "Stock Honda MAP sensors can only read up to ~11psi of boost. For serious turbo builds, a 3-Bar or 4-Bar MAP sensor is required to let the ECU see higher boost levels.",
+      "specs": [
+        "Range: 4-Bar (up to 43psi boost)",
+        "Fitment: Direct Plug-and-Play",
+        "Requires: ECU Tuning (Hondata/Crome)"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic (EG/EK)", "years": "1992-2000", "notes": "Upgrade" },
+            { "name": "Integra (DC2)", "years": "1994-2001", "notes": "Upgrade" },
+            { "name": "Prelude", "years": "1992-2001", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["HONDA_CIVIC_GOLDEN", "HONDA_CIVIC_LEGENDS", "HONDA_INTEGRA_DC2", "HONDA_PRELUDE"]
+      }
+    },
+    {
+      "id": "bmw_m50_iat",
+      "category": "Electrical & Sensors",
+      "name": "BMW M50 Manifold IAT Sensor Relocation",
+      "description": "When swapping the M50 manifold onto an M52/S52 engine, the OBD2 IAT sensor doesn't fit the OBD1 manifold directly. You need to thread the manifold or relocate the sensor to the intake boot.",
+      "specs": [
+        "Sensor: OBD2 IAT",
+        "Mod: Threading or Relocation",
+        "Benefit: Correct Intake Temps"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "328i / M3 (E36)", "years": "1996-1999", "notes": "Required for M50 Swap" },
+            { "name": "Z3 2.8 / M", "years": "1997-2000", "notes": "Required for M50 Swap" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["BMW_E36", "BMW_Z3", "BMW_5_SERIES__E34___3RD_GEN_"]
+      }
+    },
+    {
+      "id": "vw_18t_map_upgrade",
+      "category": "Electrical & Sensors",
+      "name": "VW / Audi 1.8T MAP Sensor Upgrade",
+      "description": "The stock MAP sensor on small turbo VWs (1.8T) is often a 2.5-bar sensor. Upgrading to the 3-bar sensor from the TDI or S3 allows for higher boost tuning.",
+      "specs": [
+        "Stock: 2.5 Bar (~22psi absolute)",
+        "Upgrade: 3 Bar (Bosch 0281002401)",
+        "Fitment: Direct Fit (Small probe vs Large probe)"
+      ],
+      "compatibility": [
+        {
+          "make": "Volkswagen / Audi",
+          "models": [
+            { "name": "Golf / Jetta 1.8T", "years": "1999-2005", "notes": "Upgrade" },
+            { "name": "Audi TT 225", "years": "2000-2006", "notes": "Stock (3-Bar)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VOLKSWAGEN_GOLF__A4___MK4_", "AUDI_A4_B5", "AUDI_A4_B6"]
+      }
+    },
+    {
+      "id": "toyota_supra_map",
+      "category": "Electrical & Sensors",
+      "name": "Toyota Supra TT MAP Sensor (2JZ-GTE)",
+      "description": "The 2JZ-GTE MAP sensor is a robust sensor used in many high-horsepower Toyota builds. It's often swapped onto 1JZ or 2JZ-GE engines when converting to turbo.",
+      "specs": [
+        "Range: ~18psi (Stock)",
+        "Upgrade: Denso 3-Bar (Aftermarket)",
+        "Connector: 3-Pin Denso"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Supra Turbo (Mk4)", "years": "1993-1998", "notes": "Donor Vehicle" },
+            { "name": "SC300 / IS300", "years": "1992-2005", "notes": "Upgrade (Turbo)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["TOYOTA_SUPRA_LEGACY", "LEXUS_SC_SOARER", "LEXUS_IS_ALTEZZA"]
+      }
+    },
+    {
+      "id": "corvette_c4_maf_relays",
+      "category": "Electrical & Sensors",
+      "name": "C4 Corvette MAF Burn-Off Relay",
+      "description": "On 1986-1989 C4 Corvettes (L98), the MAF burn-off relay fails, causing a Code 33/34 and poor running. The relay is supposed to heat the MAF wire to clean it after shutdown.",
+      "specs": [
+        "Location: Firewall (Driver Side)",
+        "Symptom: Check Engine Light, Stalling",
+        "Fix: Replace Relay (and connector if melted)"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Corvette (C4)", "years": "1986-1989", "notes": "Common Failure" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["CHEVY_CORVETTE"]
+      }
+    },
+    {
+      "id": "ford_ranger_dpfe",
+      "category": "Electrical & Sensors",
+      "name": "Ford DPFE Sensor (EGR Pressure)",
+      "description": "The Delta Pressure Feedback EGR (DPFE) sensor is the #1 cause of Check Engine Lights on Ford Rangers and Tauruses (P0401/P0402). The original aluminum sensors corrode internally; replace with the updated plastic version.",
+      "specs": [
+        "Type: Differential Pressure",
+        "Old Part: Aluminum (Rectangular)",
+        "New Part: Plastic (Smaller)"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Ranger", "years": "1995-2003", "notes": "High Failure Rate" },
+            { "name": "Taurus", "years": "1996-2007", "notes": "High Failure Rate" },
+            { "name": "Focus", "years": "2000-2004", "notes": "High Failure Rate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_RANGER", "FORD_RANGER_MAZDA_B"]
+      }
+    },
+    {
+      "id": "mercedes_cps_failure",
+      "category": "Electrical & Sensors",
+      "name": "Mercedes Crank Position Sensor (M112/M113)",
+      "description": "The '15-minute breakdown'. The Crank Position Sensor (CPS) on Mercedes V6 (M112) and V8 (M113) engines fails when hot, causing the car to die and not restart until it cools down.",
+      "specs": [
+        "Location: Back of engine (Driver side)",
+        "Symptom: Hot No-Start",
+        "Tool: E8 Torx Socket"
+      ],
+      "compatibility": [
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "C-Class (W203)", "years": "2001-2005", "notes": "Common Failure" },
+            { "name": "E-Class (W210/W211)", "years": "1998-2006", "notes": "Common Failure" },
+            { "name": "S-Class (W220)", "years": "2000-2006", "notes": "Common Failure" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["MERCEDES_C_CLASS", "MERCEDES_E_CLASS", "MERCEDES_W123_W124"]
+      }
+    },
+    {
+      "id": "subaru_brz_cam_sensor",
+      "category": "Electrical & Sensors",
+      "name": "Subaru FA20 Cam Position Sensor Shim",
+      "description": "Early FR-S/BRZ/86 models suffer from cam position sensor codes (P0340/P0341) due to clearance issues. The fix is often a simple shim kit or updated sensor to prevent signal loss.",
+      "specs": [
+        "Engine: FA20 / 4U-GSE",
+        "Codes: P0340, P0341",
+        "Fix: Shim or Updated Sensor"
+      ],
+      "compatibility": [
+        {
+          "make": "Subaru / Toyota",
+          "models": [
+            { "name": "BRZ / FR-S / 86", "years": "2013-2015", "notes": "Common Issue" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["SUBARU_BRZ_86", "SUBARU_TOYOTA_TWINS"]
+      }
+    },
+    {
+      "id": "evo_map_sensor",
+      "category": "Electrical & Sensors",
+      "name": "Mitsubishi Evo Omni 4-Bar MAP",
+      "description": "Like Hondas, the Mitsubishi Evo benefits greatly from an Omni Power 4-Bar MAP sensor when increasing boost. It allows for precise speed-density tuning, eliminating the restrictive MAF sensor.",
+      "specs": [
+        "Range: 4-Bar",
+        "Benefit: Removes MAF restriction",
+        "Requires: ECU Tune (TephraMod)"
+      ],
+      "compatibility": [
+        {
+          "make": "Mitsubishi",
+          "models": [
+            { "name": "Lancer Evolution (VIII/IX)", "years": "2003-2007", "notes": "Upgrade" },
+            { "name": "Lancer Evolution X", "years": "2008-2015", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["MITSUBISHI_EVO"]
+      }
+    },
+    {
+      "id": "fiero_icm_cooling",
+      "category": "Electrical & Sensors",
+      "name": "Pontiac Fiero ICM Cooling Mod",
+      "description": "The Ignition Control Module (ICM) on the Fiero sits right next to the hot exhaust and fails constantly. Relocating it or adding a heat sink/fan is mandatory for reliability.",
+      "specs": [
+        "Component: Ignition Control Module",
+        "Issue: Heat Soak",
+        "Fix: Relocation / Heat Sink"
+      ],
+      "compatibility": [
+        {
+          "make": "Pontiac",
+          "models": [
+            { "name": "Fiero (V6 & I4)", "years": "1984-1988", "notes": "Design Flaw" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PONTIAC_FIERO"]
+      }
     }
+
+
   ]
 }

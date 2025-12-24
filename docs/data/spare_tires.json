@@ -1,5 +1,41 @@
 [
   {
+    "id": "6x139_GM_TRUCK",
+    "bolt_pattern": "6x139.7 (6x5.5)",
+    "hub_bore": "78.1mm",
+    "advice": "The standard GM 6-lug pattern. Used on almost all 1500 trucks/SUVs from 1999 to present. Toyota 6-lug wheels (Tacoma/Tundra) share the bolt pattern but have a larger hub bore (106mm), so they fit GM trucks if you use hub rings. GM wheels DO NOT fit Toyotas (hub too small).",
+    "vehicles": [
+      { "make": "Chevrolet", "model": "Silverado 1500", "type": "Truck" },
+      { "make": "Chevrolet", "model": "Tahoe", "type": "SUV" },
+      { "make": "Chevrolet", "model": "Suburban 1500", "type": "SUV" },
+      { "make": "GMC", "model": "Sierra 1500", "type": "Truck" },
+      { "make": "GMC", "model": "Yukon", "type": "SUV" },
+      { "make": "Cadillac", "model": "Escalade", "type": "SUV" }
+    ]
+  },
+  {
+    "id": "8x165_GM_DODGE_OLD",
+    "bolt_pattern": "8x165.1 (8x6.5)",
+    "hub_bore": "116.7mm (GM) / 121.3mm (Dodge)",
+    "advice": "The classic 8-lug pattern. Used on Chevy HD trucks until 2010 and Dodge Ram HD until present. WARNING: 2011+ Chevy HD switched to 8x180mm. Ford used 8x6.5 until 1997, then switched to 8x170mm in 1999.",
+    "vehicles": [
+      { "make": "Chevrolet", "model": "Silverado 2500HD/3500HD", "type": "Truck" },
+      { "make": "Dodge", "model": "Ram 2500/3500", "type": "Truck" },
+      { "make": "Ford", "model": "F-250/F-350 (Pre-97)", "type": "Truck" }
+    ]
+  },
+  {
+    "id": "8x170_FORD_SUPERDUTY",
+    "bolt_pattern": "8x170mm",
+    "hub_bore": "124.9mm",
+    "advice": "Ford Super Duty specific. Introduced in 1999. DOES NOT interchange with Chevy or Dodge 8-lug wheels. 2005+ wheels have a different offset (coil spring suspension) than 99-04 (leaf spring), so check backspacing.",
+    "vehicles": [
+      { "make": "Ford", "model": "F-250 Super Duty", "type": "Truck" },
+      { "make": "Ford", "model": "F-350 Super Duty", "type": "Truck" },
+      { "make": "Ford", "model": "Excursion", "type": "SUV" }
+    ]
+  },
+  {
     "id": "5x114_NISSAN_66",
     "bolt_pattern": "5x114.3",
     "hub_bore": "66.1mm",

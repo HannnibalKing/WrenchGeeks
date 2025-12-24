@@ -1,0 +1,78 @@
+{
+  "parts": [
+    {
+      "id": "universal_obd2_refresh",
+      "category": "Electrical & Sensors",
+      "name": "OBD2 Sensor Refresh Kit (O2 / MAF / MAP)",
+      "description": "For vehicles over 100k miles, replacing the primary Oxygen (O2) sensor and cleaning/replacing the Mass Air Flow (MAF) sensor restores lost fuel economy and throttle response. Use OEM brands (Denso for Asian, Bosch for Euro/Domestic).",
+      "specs": [
+        "Interval: Every 100k miles",
+        "Benefit: +2-5 MPG, Smoother Idle",
+        "Parts: Upstream O2, MAF Sensor"
+      ],
+      "compatibility": [
+        { "make": "Universal", "models": [{ "name": "All OBD2 Vehicles", "years": "1996-Present", "notes": "Maintenance" }] }
+      ],
+      "compatibility_smart": {
+        "platforms": [
+          "FORD_F_150__GEN_10___F_SERIES_", "FORD_F_150__GEN_11___F_SERIES_", "FORD_F_150__GEN_12___F_SERIES_", "FORD_F_150__GEN_13___F_SERIES_", "FORD_F_150__GEN_14___F_SERIES_",
+          "TOYOTA_CAMRY__XV10___3RD_GEN_", "TOYOTA_CAMRY__XV20___4TH_GEN_", "TOYOTA_CAMRY__XV30___5TH_GEN_", "TOYOTA_CAMRY__XV40___6TH_GEN_", "TOYOTA_CAMRY__XV50___7TH_GEN_", "TOYOTA_CAMRY__XV70___8TH_GEN_",
+          "HONDA_ACCORD__CD_CE___5TH_GEN_", "HONDA_ACCORD__CG_CF___6TH_GEN_", "HONDA_ACCORD__CM_CL___7TH_GEN_", "HONDA_ACCORD__CP_CS___8TH_GEN_", "HONDA_ACCORD__CR___9TH_GEN_", "HONDA_ACCORD__CV___10TH_GEN_",
+          "NISSAN_ALTIMA__L30___GEN_2_", "NISSAN_ALTIMA__L32___GEN_4_", "NISSAN_ALTIMA__L33___GEN_5_", "NISSAN_ALTIMA__L34___GEN_6_",
+          "SUBARU_LEGACY__BE_BH___GEN_3_", "SUBARU_LEGACY__BM_BR___GEN_5_", "SUBARU_LEGACY__BN_BS___GEN_6_", "SUBARU_LEGACY__BW_BT___GEN_7_",
+          "VOLKSWAGEN_GOLF__A7___MK7_", "VOLKSWAGEN_GOLF__A8___MK8_", "VOLKSWAGEN_JETTA__A4___MK4_", "VOLKSWAGEN_JETTA__A5___MK5_", "VOLKSWAGEN_JETTA__A6___MK6_", "VOLKSWAGEN_JETTA__A7___MK7_",
+          "HYUNDAI_KIA_E_GMP", "HYUNDAI_KIA_J_PLATFORM", "HYUNDAI_KIA_N3", "HYUNDAI_KIA_RWD_SPORT",
+          "GM_EPSILON_1", "GM_EPSILON_2", "GM_W_BODY_GEN2", "GM_W_BODY_GEN3",
+          "CHRYSLER_LX", "CHRYSLER_LD", "CHRYSLER_LA", "DODGE_PL", "SATURN_ION", "SATURN_L_SERIES", "SATURN_VUE"
+        ]
+      }
+    },
+    {
+      "id": "universal_h4_headlight",
+      "category": "Electrical & Lighting",
+      "name": "H4 / Hella Headlight Conversion",
+      "description": "Replace dim, sealed-beam headlights with modern H4 housings. This allows you to use modern halogen or LED bulbs for 3x the light output while keeping the classic look.",
+      "specs": [
+        "Sizes: 7-inch Round, 5x7 Rectangular",
+        "Bulb: H4 Halogen (Replaceable)",
+        "Benefit: Night and Day difference"
+      ],
+      "compatibility": [
+        { "make": "Universal", "models": [{ "name": "Classic Cars with Sealed Beams", "years": "Pre-1990", "notes": "Upgrade" }] }
+      ],
+      "compatibility_smart": {
+        "platforms": [
+          "FORD_F_150__GEN_1___F_SERIES_", "FORD_F_150__GEN_2___F_SERIES_", "FORD_F_150__GEN_3___F_SERIES_", "FORD_F_150__GEN_4___F_SERIES_", "FORD_F_150__GEN_5___F_SERIES_", "FORD_F_150__GEN_6___F_SERIES_", "FORD_F_150__GEN_7___F_SERIES_", "FORD_F_150__GEN_8___F_SERIES_", "FORD_F_150__GEN_9___F_SERIES_",
+          "TOYOTA_CAMRY__V10___1ST_GEN_", "TOYOTA_CAMRY__V20___2ND_GEN_",
+          "HONDA_ACCORD__SJ_SM___1ST_GEN_", "HONDA_ACCORD__SY_AC_AD___2ND_GEN_", "HONDA_ACCORD__CA___3RD_GEN_", "HONDA_ACCORD__CB___4TH_GEN_",
+          "BMW_3_SERIES__E21___1ST_GEN_", "BMW_5_SERIES__E12___1ST_GEN_", "BMW_5_SERIES__E28___2ND_GEN_",
+          "VOLVO_RWD_BRICKS", "VOLVO_REDBLOCK",
+          "MOPAR_CLASSIC_B_BODY", "MOPAR_CLASSIC_E_BODY", "GM_MUSCLE_CLASSIC",
+          "FORD_BRONCO", "FORD_RANGER__PRE_1983_", "JEEP_CHEROKEE", "JEEP_WRANGLER"
+        ]
+      }
+    },
+    {
+      "id": "exotic_battery_tender",
+      "category": "Electrical",
+      "name": "Smart Battery Tender / Maintainer",
+      "description": "Essential for weekend cars and exotics. Modern lithium-compatible tenders keep the battery healthy during storage and prevent electronic gremlins caused by low voltage.",
+      "specs": [
+        "Type: Smart Charger / Float",
+        "Compatibility: AGM, Lithium, Lead Acid",
+        "Benefit: Prevents dead battery"
+      ],
+      "compatibility": [
+        { "make": "Universal", "models": [{ "name": "Exotics / Weekend Cars", "years": "All", "notes": "Essential" }] }
+      ],
+      "compatibility_smart": {
+        "platforms": [
+          "FERRARI_V8_MID", "LAMBORGHINI_V10", "LOTUS_ELISE_S2",
+          "EXO_ARIEL_ATOM", "EXO_KTM_XBOW",
+          "KIT_CATERHAM_7", "KIT_FACTORY_FIVE_MK4", "KIT_DF_GOBLIN", "KIT_EXOMOTIVE_EXOCET", "KIT_FACTORY_FIVE_818", "KIT_MEYERS_MANX",
+          "PORSCHE_AIRCOOLED_911", "PORSCHE_TRANSAXLE", "PORSCHE_OTHER"
+        ]
+      }
+    }
+  ]
+}

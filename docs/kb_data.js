@@ -1,5 +1,112 @@
 const WRENCHGEEKS_KB_DATA = [
   {
+    "category": "ecosystem_guide",
+    "title": "Toyota JZ Engine Ecosystem (2JZ-GTE vs 2JZ-GE)",
+    "content": "The JZ engine family is legendary, but the differences between the Turbo (GTE) and Non-Turbo (GE) variants are critical for builders.\n\n**2JZ-GTE (Turbo):**\n*   Factory Twin Turbo.\n*   Oil Squirters: Yes (under piston cooling).\n*   Head Gasket: Multi-layer steel (MLS), lower compression (~8.5:1).\n\n**2JZ-GE (Non-Turbo):**\n*   High Compression (~10:1).\n*   Oil Squirters: No (usually).\n*   **'Na-T' Conversion:** To turbocharge a GE reliably, you typically need a thicker head gasket (to lower compression) and must drill/tap the block or use a sandwich plate for turbo oil feed. The stock GE pistons are weaker than GTE pistons but can handle ~350-400whp reliably. With GTE rods/pistons, the GE block is just as strong.",
+    "severity": "Info",
+    "related_parts": [
+      "toyota_2jz_gte",
+      "toyota_2jz_ge",
+      "supra_engine"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Toyota JZ Sump Configurations",
+    "content": "Sump location is the #1 physical fitment issue when swapping JZ engines.\n\n*   **Front Sump:** Found in Toyota Aristo (JZS161) and Lexus GS300/IS300. The oil pan reservoir is at the front.\n    *   *Use Case:* Fits Lexus IS300, GS300, and some older Toyotas.\n*   **Rear Sump:** Found in Toyota Supra (JZA80) and Soarer (JZZ30). The reservoir is at the rear.\n    *   *Use Case:* Required for Nissan S-Chassis (240SX), Mazda RX-7, and BMW E36/E46 swaps to clear the subframe/crossmember.\n*   **Mid Sump:** Found in some Crown models (rare).",
+    "severity": "High",
+    "related_parts": [
+      "jz_front_sump",
+      "jz_rear_sump"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Toyota 1UZ-FE V8: Rod Strength & Boost",
+    "content": "The 1UZ-FE 4.0L V8 is a budget-friendly powerhouse, but not all years are equal for forced induction.\n\n*   **Pre-1995 (Non-VVTi):** Known as 'Thick Rod' engines. These connecting rods are significantly beefier. The stock bottom end can handle 8-10 psi of boost (approx 400-450whp) relatively reliably.\n*   **1995+ (and VVTi):** 'Thin Rod' engines. Toyota lightened the internals for efficiency. These rods are much weaker and are not recommended for boost without upgrading internals.",
+    "severity": "High",
+    "related_parts": [
+      "toyota_1uz_fe",
+      "lexus_ls400_engine"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Toyota/Lexus Transmission Adapters (CD009 & R154)",
+    "content": "Getting a manual transmission behind a UZ or JZ often involves mixing brands.\n\n*   **R154 (Toyota 5-Speed):** Factory option for 1JZ-GTE (Soarer/Supra). Strong (holds ~500-600hp), but prices have skyrocketed. Direct fit for JZ (with correct bellhousing).\n*   **CD009 (Nissan 6-Speed):** From 350Z/G35. Extremely strong and cheaper than R154. Requires an adapter plate (e.g., Collins, Fisch) and flywheel spacer to fit JZ or UZ engines. The sheer size of the CD009 bellhousing often requires transmission tunnel hammering.",
+    "severity": "Medium",
+    "related_parts": [
+      "nissan_cd009",
+      "toyota_r154",
+      "transmission_adapter"
+    ]
+  },
+  {
+    "category": "interchange",
+    "title": "Lexus/Toyota Brake Upgrades (LS400 & Supra)",
+    "content": "OEM Big Brake Kits for Toyota/Lexus chassis.\n\n*   **LS400 (UCF20 1995-2000) Front Calipers:** Aluminum 4-piston monoblock calipers. Very light and strong. \n    *   *Fitment:* Bolt-on upgrade for Lexus SC300/400, GS300/400. Requires RCA (Roll Center Adjusters) or specific rotors/brackets for some applications to clear wheels.\n*   **Supra TT (JZA80) Brakes:** Larger rotors and 4-pot iron (or aluminum on later models) calipers.\n    *   *Fitment:* Direct bolt-on for SC300/400 and GS chassis. The 'Holy Grail' of OEM Toyota braking.",
+    "severity": "Info",
+    "related_parts": [
+      "ls400_calipers",
+      "supra_tt_brakes"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS Guide: Iron vs Aluminum Blocks",
+    "content": "Identifying GM Gen 3/4 LS-based engines in the junkyard.\n\n*   **Iron Block (Trucks):** Found in Silverado, Sierra, Tahoe, Yukon. Codes: LQ4 (6.0L), LQ9 (6.0L HO), LM7 (5.3L), LR4 (4.8L). Heavy (~200lbs+ block weight) but virtually indestructible. Great for budget turbo builds.\n*   **Aluminum Block (Cars & Some Trucks):** Found in Corvette, Camaro, GTO, Trailblazer SS, and some pickups (L33). Codes: LS1, LS2, LS3, L33. ~80-100lbs lighter than iron. Preferred for handling/track builds.",
+    "severity": "Info",
+    "related_parts": [
+      "gm_ls_engine",
+      "lq4",
+      "lq9",
+      "lm7",
+      "ls1"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: 4.8L vs 5.3L Identification",
+    "content": "The 4.8L (LR4) and 5.3L (LM7) truck engines look identical externally. The block casting numbers (e.g., '4.8/5.3') don't tell you which one it is.\n\n**How to tell:**\n1.  **VIN Code:** Check the 8th digit of the VIN. (e.g., 'V' is often 4.8L, 'T' is 5.3L - verify specific year codes).\n2.  **Piston Shape:** Pull a spark plug and inspect the piston top with a borescope or screwdriver.\n    *   **4.8L:** Flat top pistons.\n    *   **5.3L:** Dished pistons (most common Gen 3 LM7).\n    *   *Exception:* The L33 (Aluminum 5.3L) and some Gen 4 5.3s have flat tops.",
+    "severity": "Medium",
+    "related_parts": [
+      "gm_lr4",
+      "gm_lm7"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: Cylinder Heads (Cathedral vs Rectangle)",
+    "content": "Head choice dictates intake choice and power potential.\n\n*   **Cathedral Port (Gen 3/Early Gen 4):** Tall, narrow ports. High velocity, great low-end torque.\n    *   **706 / 862:** 4.8L/5.3L heads. Small valves, small combustion chambers (bumps compression). Good for budget builds.\n    *   **243 / 799:** Found on LS6 (Corvette Z06) and LS2 (Trucks/Cars). The best factory cathedral heads. D-shaped exhaust ports, larger valves, better flow.\n*   **Rectangle Port (Gen 4):** Wide, rectangular ports. Massive flow, best for high RPM/displacement.\n    *   **821:** LS3 heads (Corvette/Camaro). Hollow stem valves (lightweight).\n    *   **823:** L92 Truck heads (6.2L). Solid valves. Almost identical flow to 821.",
+    "severity": "Info",
+    "related_parts": [
+      "ls_cathedral_port",
+      "ls_rectangle_port",
+      "head_casting_243",
+      "head_casting_821"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: Intake Manifolds",
+    "content": "Intake choice depends on hood clearance and head type.\n\n*   **Truck Intake:** Tallest. Best low-end torque but ugly and rarely fits under car hoods (240SX, Mustang, etc.).\n*   **TBSS / NNBS (Trailblazer SS / New Body Style):** The best factory cathedral port intake. Flows significantly better than the standard truck intake and close to aftermarket units. Still tall.\n*   **Car Intakes (LS1/LS6/LS2/LS3):** Low profile. Required for most car swaps. LS6 intake is the best factory cathedral option for low clearance.",
+    "severity": "Medium",
+    "related_parts": [
+      "ls_truck_intake",
+      "ls6_intake",
+      "tbss_intake"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: Accessory Drive Spacing",
+    "content": "The harmonic balancer and pulleys come in three offsets (depths). You cannot mix and match brackets/pulleys from different offsets.\n\n1.  **Truck:** Deepest spacing (sticks out furthest from engine). Alternator mounts high driver side. Cheapest/most common.\n2.  **F-Body (Camaro/Firebird 98-02) / GTO:** Middle spacing. Alternator mounts low driver side (often interferes with frame rails/steering boxes in swaps).\n3.  **Corvette (Y-Body) / CTS-V:** Shallowest spacing (tightest to engine). Alternator mounts high driver side. Best for swaps with limited radiator clearance (e.g., Miata, S2000).",
+    "severity": "High",
+    "related_parts": [
+      "ls_accessory_drive"
+    ]
+  },
+  {
     "category": "ecu",
     "partName": "GM '0411' PCM Swap (The LS Holy Grail)",
     "compatibleVehicles": [
@@ -254,6 +361,101 @@ const WRENCHGEEKS_KB_DATA = [
     "matchLevel": "Pro Tip"
   },
   {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS Guide: Iron vs Aluminum Blocks",
+    "content": "Identifying GM Gen 3/4 LS-based engines in the junkyard.\n\n*   **Iron Block (Trucks):** Found in Silverado, Sierra, Tahoe, Yukon. Codes: LQ4 (6.0L), LQ9 (6.0L HO), LM7 (5.3L), LR4 (4.8L). Heavy (~200lbs+ block weight) but virtually indestructible. Great for budget turbo builds.\n*   **Aluminum Block (Cars & Some Trucks):** Found in Corvette, Camaro, GTO, Trailblazer SS, and some pickups (L33). Codes: LS1, LS2, LS3, L33. ~80-100lbs lighter than iron. Preferred for handling/track builds.",
+    "severity": "Info",
+    "related_parts": [
+      "gm_ls_engine",
+      "lq4",
+      "lq9",
+      "lm7",
+      "ls1"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: 4.8L vs 5.3L Identification",
+    "content": "The 4.8L (LR4) and 5.3L (LM7) truck engines look identical externally. The block casting numbers (e.g., '4.8/5.3') don't tell you which one it is.\n\n**How to tell:**\n1.  **VIN Code:** Check the 8th digit of the VIN. (e.g., 'V' is often 4.8L, 'T' is 5.3L - verify specific year codes).\n2.  **Piston Shape:** Pull a spark plug and inspect the piston top with a borescope or screwdriver.\n    *   **4.8L:** Flat top pistons.\n    *   **5.3L:** Dished pistons (most common Gen 3 LM7).\n    *   *Exception:* The L33 (Aluminum 5.3L) and some Gen 4 5.3s have flat tops.",
+    "severity": "Medium",
+    "related_parts": [
+      "gm_lr4",
+      "gm_lm7"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: Cylinder Heads (Cathedral vs Rectangle)",
+    "content": "Head choice dictates intake choice and power potential.\n\n*   **Cathedral Port (Gen 3/Early Gen 4):** Tall, narrow ports. High velocity, great low-end torque.\n    *   **706 / 862:** 4.8L/5.3L heads. Small valves, small combustion chambers (bumps compression). Good for budget builds.\n    *   **243 / 799:** Found on LS6 (Corvette Z06) and LS2 (Trucks/Cars). The best factory cathedral heads. D-shaped exhaust ports, larger valves, better flow.\n*   **Rectangle Port (Gen 4):** Wide, rectangular ports. Massive flow, best for high RPM/displacement.\n    *   **821:** LS3 heads (Corvette/Camaro). Hollow stem valves (lightweight).\n    *   **823:** L92 Truck heads (6.2L). Solid valves. Almost identical flow to 821.",
+    "severity": "Info",
+    "related_parts": [
+      "ls_cathedral_port",
+      "ls_rectangle_port",
+      "head_casting_243",
+      "head_casting_821"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: Intake Manifolds",
+    "content": "Intake choice depends on hood clearance and head type.\n\n*   **Truck Intake:** Tallest. Best low-end torque but ugly and rarely fits under car hoods (240SX, Mustang, etc.).\n*   **TBSS / NNBS (Trailblazer SS / New Body Style):** The best factory cathedral port intake. Flows significantly better than the standard truck intake and close to aftermarket units. Still tall.\n*   **Car Intakes (LS1/LS6/LS2/LS3):** Low profile. Required for most car swaps. LS6 intake is the best factory cathedral option for low clearance.",
+    "severity": "Medium",
+    "related_parts": [
+      "ls_truck_intake",
+      "ls6_intake",
+      "tbss_intake"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Junkyard LS: Accessory Drive Spacing",
+    "content": "The harmonic balancer and pulleys come in three offsets (depths). You cannot mix and match brackets/pulleys from different offsets.\n\n1.  **Truck:** Deepest spacing (sticks out furthest from engine). Alternator mounts high driver side. Cheapest/most common.\n2.  **F-Body (Camaro/Firebird 98-02) / GTO:** Middle spacing. Alternator mounts low driver side (often interferes with frame rails/steering boxes in swaps).\n3.  **Corvette (Y-Body) / CTS-V:** Shallowest spacing (tightest to engine). Alternator mounts high driver side. Best for swaps with limited radiator clearance (e.g., Miata, S2000).",
+    "severity": "High",
+    "related_parts": [
+      "ls_accessory_drive"
+    ]
+  },
+  {
+    "category": "mechanical",
+    "title": "Miata 1.6L 'Glass' Diff Warning",
+    "content": "The 1990-1993 Miata (1.6L) came with a 6-inch rear differential that is notoriously weak. It WILL break with stock power if launched hard, and definitely with any turbo. \n*   **The Fix:** Swap in the entire rear end (diff, axles, driveshaft) from a 1.8L (1994-2005) Miata. The 1.8L diff (7-inch) is bulletproof up to ~350hp.",
+    "severity": "Critical",
+    "related_parts": [
+      "miata_16_diff",
+      "miata_18_torsen"
+    ]
+  },
+  {
+    "category": "hacks",
+    "title": "The 'Exhintake' Cam Mod",
+    "content": "On 1999-2000 (NB1) and some other BP engines, you can take the exhaust camshaft and install it on the intake side. \n*   **Why:** The exhaust cam has more duration/lift than the stock intake cam. \n*   **Result:** Cheap horsepower (~6-10whp) for the cost of a junkyard cam and a new gear. Requires drilling the cam gear for proper timing.",
+    "severity": "Medium",
+    "related_parts": [
+      "mazda_bp_engine",
+      "exhintake_cam"
+    ]
+  },
+  {
+    "category": "mechanical",
+    "title": "Short Nose Crank (SNC) Failure",
+    "content": "Early 1990-1991 Miatas have a 'Short Nose Crank'. The crank pulley bolt can loosen, destroying the keyway and the crankshaft tip. \n*   **ID:** Look at the crank pulley. 4 slots = Short Nose (Risk). 8 slots = Long Nose (Safe). \n*   **Fix:** Check torque frequently or perform the 'Loctite Fix' if wobble starts.",
+    "severity": "High",
+    "related_parts": [
+      "miata_snc",
+      "b6ze_engine"
+    ]
+  },
+  {
+    "category": "interchange",
+    "title": "NB Top Hats on NA Suspension",
+    "content": "The NB (1999-2005) shock mounts ('top hats') are designed better than the NA (1990-1997) ones, allowing for more shock travel before hitting the bump stops. Swapping NB top hats onto an NA (requires matching shocks/springs or spacers) significantly improves ride quality and handling.",
+    "severity": "Medium",
+    "related_parts": [
+      "miata_suspension",
+      "nb_top_hats"
+    ]
+  },
+  {
     "category": "mechanical",
     "partName": "Engine Timing Belt Replacement",
     "compatibleVehicles": [
@@ -282,6 +484,47 @@ const WRENCHGEEKS_KB_DATA = [
     "years": "Universal",
     "notes": "Worn bushings cause vague steering, clunking, and poor handling. Press out old bushings and press in new ones using a hydraulic press. Use polyurethane for performance, rubber for comfort. Torque to spec and grease if applicable.",
     "matchLevel": "Maintenance"
+  },
+  {
+    "category": "drivetrain",
+    "title": "Nissan CD009 Transmission Guide",
+    "content": "The CD009 (6-speed manual) is legendary for holding 1000+ hp, but not all Z33 transmissions are CD009s. \n\n*   **CD001-CD008 (2003-2004):** Weak synchros (especially 3rd gear). Avoid for high power.\n*   **CD009 (2005-2006):** Triple cone synchros on 1st, 2nd, 3rd. The one you want.\n*   **CD00A (2007+ / Replacement):** The latest version, even stronger.\n*   **ID:** Look for the shifter bracket. CD009s have a specific casting mark, but the only sure way is the VIN or case stickers. 'CD0' on the case doesn't guarantee it's a 009.",
+    "severity": "High",
+    "related_parts": [
+      "nissan_cd009",
+      "nissan_350z_transmission"
+    ]
+  },
+  {
+    "category": "brakes",
+    "title": "Akebono Big Brake Upgrade",
+    "content": "The 'Akebono' brakes from the 370Z Sport / G37 Sport are a massive upgrade for 350Z, G35, and S-Chassis cars.\n*   **Specs:** 14.0\" Front Rotors (4-Piston), 13.8\" Rear Rotors (2-Piston).\n*   **Fitment:** Requires adapter brackets for 350Z/G35 (non-Sport). Requires 18\" or larger wheels with good clearance (high disk).",
+    "severity": "Medium",
+    "related_parts": [
+      "akebono_brakes",
+      "nissan_370z_sport"
+    ]
+  },
+  {
+    "category": "mechanical",
+    "title": "VQ35 Engine Hierarchy",
+    "content": "Not all VQ35s are equal.\n*   **DE (2003-2006):** Single throttle body. Known for oil consumption but cheap. 'RevUp' versions (2005-06 Manuals) have higher redline but WORSE oil consumption.\n*   **HR (2007-2008):** Dual throttle bodies. Much stronger block, higher revs. The 'High Rev' engine. Beware of the internal oil gallery gasket failure (low oil pressure death).\n*   **VHR (370Z/G37):** 3.7L with VVEL. Complex head, great power.",
+    "severity": "High",
+    "related_parts": [
+      "vq35de",
+      "vq35hr",
+      "vq37vhr"
+    ]
+  },
+  {
+    "category": "hacks",
+    "title": "3.69 Diff Gear Swap",
+    "content": "The manual 370Z/G37 Sport comes with a 3.69 final drive ratio. Swapping this diff (or ring & pinion) into an Auto G35/350Z (usually 3.3) or a base manual (3.5) is a cheap way to get significantly faster acceleration at the cost of top speed/highway RPM.",
+    "severity": "Medium",
+    "related_parts": [
+      "nissan_r200_diff",
+      "final_drive_369"
+    ]
   },
   {
     "category": "safety",
@@ -449,6 +692,58 @@ const WRENCHGEEKS_KB_DATA = [
     ]
   },
   {
+    "category": "ecosystem_guide",
+    "title": "Toyota JZ Engine Ecosystem (2JZ-GTE vs 2JZ-GE)",
+    "content": "The JZ engine family is legendary, but the differences between the Turbo (GTE) and Non-Turbo (GE) variants are critical for builders.\n\n**2JZ-GTE (Turbo):**\n*   Factory Twin Turbo.\n*   Oil Squirters: Yes (under piston cooling).\n*   Head Gasket: Multi-layer steel (MLS), lower compression (~8.5:1).\n\n**2JZ-GE (Non-Turbo):**\n*   High Compression (~10:1).\n*   Oil Squirters: No (usually).\n*   **'Na-T' Conversion:** To turbocharge a GE reliably, you typically need a thicker head gasket (to lower compression) and must drill/tap the block or use a sandwich plate for turbo oil feed. The stock GE pistons are weaker than GTE pistons but can handle ~350-400whp reliably. With GTE rods/pistons, the GE block is just as strong.",
+    "severity": "Info",
+    "related_parts": [
+      "toyota_2jz_gte",
+      "toyota_2jz_ge",
+      "supra_engine"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Toyota JZ Sump Configurations",
+    "content": "Sump location is the #1 physical fitment issue when swapping JZ engines.\n\n*   **Front Sump:** Found in Toyota Aristo (JZS161) and Lexus GS300/IS300. The oil pan reservoir is at the front.\n    *   *Use Case:* Fits Lexus IS300, GS300, and some older Toyotas.\n*   **Rear Sump:** Found in Toyota Supra (JZA80) and Soarer (JZZ30). The reservoir is at the rear.\n    *   *Use Case:* Required for Nissan S-Chassis (240SX), Mazda RX-7, and BMW E36/E46 swaps to clear the subframe/crossmember.\n*   **Mid Sump:** Found in some Crown models (rare).",
+    "severity": "High",
+    "related_parts": [
+      "jz_front_sump",
+      "jz_rear_sump"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Toyota 1UZ-FE V8: Rod Strength & Boost",
+    "content": "The 1UZ-FE 4.0L V8 is a budget-friendly powerhouse, but not all years are equal for forced induction.\n\n*   **Pre-1995 (Non-VVTi):** Known as 'Thick Rod' engines. These connecting rods are significantly beefier. The stock bottom end can handle 8-10 psi of boost (approx 400-450whp) relatively reliably.\n*   **1995+ (and VVTi):** 'Thin Rod' engines. Toyota lightened the internals for efficiency. These rods are much weaker and are not recommended for boost without upgrading internals.",
+    "severity": "High",
+    "related_parts": [
+      "toyota_1uz_fe",
+      "lexus_ls400_engine"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Toyota/Lexus Transmission Adapters (CD009 & R154)",
+    "content": "Getting a manual transmission behind a UZ or JZ often involves mixing brands.\n\n*   **R154 (Toyota 5-Speed):** Factory option for 1JZ-GTE (Soarer/Supra). Strong (holds ~500-600hp), but prices have skyrocketed. Direct fit for JZ (with correct bellhousing).\n*   **CD009 (Nissan 6-Speed):** From 350Z/G35. Extremely strong and cheaper than R154. Requires an adapter plate (e.g., Collins, Fisch) and flywheel spacer to fit JZ or UZ engines. The sheer size of the CD009 bellhousing often requires transmission tunnel hammering.",
+    "severity": "Medium",
+    "related_parts": [
+      "nissan_cd009",
+      "toyota_r154",
+      "transmission_adapter"
+    ]
+  },
+  {
+    "category": "interchange",
+    "title": "Lexus/Toyota Brake Upgrades (LS400 & Supra)",
+    "content": "OEM Big Brake Kits for Toyota/Lexus chassis.\n\n*   **LS400 (UCF20 1995-2000) Front Calipers:** Aluminum 4-piston monoblock calipers. Very light and strong. \n    *   *Fitment:* Bolt-on upgrade for Lexus SC300/400, GS300/400. Requires RCA (Roll Center Adjusters) or specific rotors/brackets for some applications to clear wheels.\n*   **Supra TT (JZA80) Brakes:** Larger rotors and 4-pot iron (or aluminum on later models) calipers.\n    *   *Fitment:* Direct bolt-on for SC300/400 and GS chassis. The 'Holy Grail' of OEM Toyota braking.",
+    "severity": "Info",
+    "related_parts": [
+      "ls400_calipers",
+      "supra_tt_brakes"
+    ]
+  },
+  {
     "category": "mechanical",
     "title": "Volvo 850 T-5R / 850 R Identification",
     "content": "The '6750' is a typo for the legendary Volvo 850 T-5R (1995) and 850 R (1996-1997). These P80 platform cars are the holy grail of 90s Volvo performance. The T-5R was a limited run (Yellow/Black/Green) with a 15G turbo. The 850 R followed with mass production. Note: Euro Manual 850 Rs got the bigger 16T turbo and LSD (M59 transmission), while US/Auto versions kept the 15G.",
@@ -521,194 +816,6 @@ const WRENCHGEEKS_KB_DATA = [
     "related_parts": [
       "volvo_s70_t5",
       "bosch_m4.4"
-    ]
-  },
-  {
-    "category": "drivetrain",
-    "title": "Nissan CD009 Transmission Guide",
-    "content": "The CD009 (6-speed manual) is legendary for holding 1000+ hp, but not all Z33 transmissions are CD009s. \n\n*   **CD001-CD008 (2003-2004):** Weak synchros (especially 3rd gear). Avoid for high power.\n*   **CD009 (2005-2006):** Triple cone synchros on 1st, 2nd, 3rd. The one you want.\n*   **CD00A (2007+ / Replacement):** The latest version, even stronger.\n*   **ID:** Look for the shifter bracket. CD009s have a specific casting mark, but the only sure way is the VIN or case stickers. 'CD0' on the case doesn't guarantee it's a 009.",
-    "severity": "High",
-    "related_parts": [
-      "nissan_cd009",
-      "nissan_350z_transmission"
-    ]
-  },
-  {
-    "category": "brakes",
-    "title": "Akebono Big Brake Upgrade",
-    "content": "The 'Akebono' brakes from the 370Z Sport / G37 Sport are a massive upgrade for 350Z, G35, and S-Chassis cars.\n*   **Specs:** 14.0\" Front Rotors (4-Piston), 13.8\" Rear Rotors (2-Piston).\n*   **Fitment:** Requires adapter brackets for 350Z/G35 (non-Sport). Requires 18\" or larger wheels with good clearance (high disk).",
-    "severity": "Medium",
-    "related_parts": [
-      "akebono_brakes",
-      "nissan_370z_sport"
-    ]
-  },
-  {
-    "category": "mechanical",
-    "title": "VQ35 Engine Hierarchy",
-    "content": "Not all VQ35s are equal.\n*   **DE (2003-2006):** Single throttle body. Known for oil consumption but cheap. 'RevUp' versions (2005-06 Manuals) have higher redline but WORSE oil consumption.\n*   **HR (2007-2008):** Dual throttle bodies. Much stronger block, higher revs. The 'High Rev' engine. Beware of the internal oil gallery gasket failure (low oil pressure death).\n*   **VHR (370Z/G37):** 3.7L with VVEL. Complex head, great power.",
-    "severity": "High",
-    "related_parts": [
-      "vq35de",
-      "vq35hr",
-      "vq37vhr"
-    ]
-  },
-  {
-    "category": "hacks",
-    "title": "3.69 Diff Gear Swap",
-    "content": "The manual 370Z/G37 Sport comes with a 3.69 final drive ratio. Swapping this diff (or ring & pinion) into an Auto G35/350Z (usually 3.3) or a base manual (3.5) is a cheap way to get significantly faster acceleration at the cost of top speed/highway RPM.",
-    "severity": "Medium",
-    "related_parts": [
-      "nissan_r200_diff",
-      "final_drive_369"
-    ]
-  },
-  {
-    "category": "mechanical",
-    "title": "Miata 1.6L 'Glass' Diff Warning",
-    "content": "The 1990-1993 Miata (1.6L) came with a 6-inch rear differential that is notoriously weak. It WILL break with stock power if launched hard, and definitely with any turbo. \n*   **The Fix:** Swap in the entire rear end (diff, axles, driveshaft) from a 1.8L (1994-2005) Miata. The 1.8L diff (7-inch) is bulletproof up to ~350hp.",
-    "severity": "Critical",
-    "related_parts": [
-      "miata_16_diff",
-      "miata_18_torsen"
-    ]
-  },
-  {
-    "category": "hacks",
-    "title": "The 'Exhintake' Cam Mod",
-    "content": "On 1999-2000 (NB1) and some other BP engines, you can take the exhaust camshaft and install it on the intake side. \n*   **Why:** The exhaust cam has more duration/lift than the stock intake cam. \n*   **Result:** Cheap horsepower (~6-10whp) for the cost of a junkyard cam and a new gear. Requires drilling the cam gear for proper timing.",
-    "severity": "Medium",
-    "related_parts": [
-      "mazda_bp_engine",
-      "exhintake_cam"
-    ]
-  },
-  {
-    "category": "mechanical",
-    "title": "Short Nose Crank (SNC) Failure",
-    "content": "Early 1990-1991 Miatas have a 'Short Nose Crank'. The crank pulley bolt can loosen, destroying the keyway and the crankshaft tip. \n*   **ID:** Look at the crank pulley. 4 slots = Short Nose (Risk). 8 slots = Long Nose (Safe). \n*   **Fix:** Check torque frequently or perform the 'Loctite Fix' if wobble starts.",
-    "severity": "High",
-    "related_parts": [
-      "miata_snc",
-      "b6ze_engine"
-    ]
-  },
-  {
-    "category": "interchange",
-    "title": "NB Top Hats on NA Suspension",
-    "content": "The NB (1999-2005) shock mounts ('top hats') are designed better than the NA (1990-1997) ones, allowing for more shock travel before hitting the bump stops. Swapping NB top hats onto an NA (requires matching shocks/springs or spacers) significantly improves ride quality and handling.",
-    "severity": "Medium",
-    "related_parts": [
-      "miata_suspension",
-      "nb_top_hats"
-    ]
-  },
-  {
-    "category": "ecosystem_guide",
-    "title": "Toyota JZ Engine Ecosystem (2JZ-GTE vs 2JZ-GE)",
-    "content": "The JZ engine family is legendary, but the differences between the Turbo (GTE) and Non-Turbo (GE) variants are critical for builders.\n\n**2JZ-GTE (Turbo):**\n*   Factory Twin Turbo.\n*   Oil Squirters: Yes (under piston cooling).\n*   Head Gasket: Multi-layer steel (MLS), lower compression (~8.5:1).\n\n**2JZ-GE (Non-Turbo):**\n*   High Compression (~10:1).\n*   Oil Squirters: No (usually).\n*   **'Na-T' Conversion:** To turbocharge a GE reliably, you typically need a thicker head gasket (to lower compression) and must drill/tap the block or use a sandwich plate for turbo oil feed. The stock GE pistons are weaker than GTE pistons but can handle ~350-400whp reliably. With GTE rods/pistons, the GE block is just as strong.",
-    "severity": "Info",
-    "related_parts": [
-      "toyota_2jz_gte",
-      "toyota_2jz_ge",
-      "supra_engine"
-    ]
-  },
-  {
-    "category": "ecosystem_guide",
-    "title": "Toyota JZ Sump Configurations",
-    "content": "Sump location is the #1 physical fitment issue when swapping JZ engines.\n\n*   **Front Sump:** Found in Toyota Aristo (JZS161) and Lexus GS300/IS300. The oil pan reservoir is at the front.\n    *   *Use Case:* Fits Lexus IS300, GS300, and some older Toyotas.\n*   **Rear Sump:** Found in Toyota Supra (JZA80) and Soarer (JZZ30). The reservoir is at the rear.\n    *   *Use Case:* Required for Nissan S-Chassis (240SX), Mazda RX-7, and BMW E36/E46 swaps to clear the subframe/crossmember.\n*   **Mid Sump:** Found in some Crown models (rare).",
-    "severity": "High",
-    "related_parts": [
-      "jz_front_sump",
-      "jz_rear_sump"
-    ]
-  },
-  {
-    "category": "ecosystem_guide",
-    "title": "Toyota 1UZ-FE V8: Rod Strength & Boost",
-    "content": "The 1UZ-FE 4.0L V8 is a budget-friendly powerhouse, but not all years are equal for forced induction.\n\n*   **Pre-1995 (Non-VVTi):** Known as 'Thick Rod' engines. These connecting rods are significantly beefier. The stock bottom end can handle 8-10 psi of boost (approx 400-450whp) relatively reliably.\n*   **1995+ (and VVTi):** 'Thin Rod' engines. Toyota lightened the internals for efficiency. These rods are much weaker and are not recommended for boost without upgrading internals.",
-    "severity": "High",
-    "related_parts": [
-      "toyota_1uz_fe",
-      "lexus_ls400_engine"
-    ]
-  },
-  {
-    "category": "ecosystem_guide",
-    "title": "Toyota/Lexus Transmission Adapters (CD009 & R154)",
-    "content": "Getting a manual transmission behind a UZ or JZ often involves mixing brands.\n\n*   **R154 (Toyota 5-Speed):** Factory option for 1JZ-GTE (Soarer/Supra). Strong (holds ~500-600hp), but prices have skyrocketed. Direct fit for JZ (with correct bellhousing).\n*   **CD009 (Nissan 6-Speed):** From 350Z/G35. Extremely strong and cheaper than R154. Requires an adapter plate (e.g., Collins, Fisch) and flywheel spacer to fit JZ or UZ engines. The sheer size of the CD009 bellhousing often requires transmission tunnel hammering.",
-    "severity": "Medium",
-    "related_parts": [
-      "nissan_cd009",
-      "toyota_r154",
-      "transmission_adapter"
-    ]
-  },
-  {
-    "category": "interchange",
-    "title": "Lexus/Toyota Brake Upgrades (LS400 & Supra)",
-    "content": "OEM Big Brake Kits for Toyota/Lexus chassis.\n\n*   **LS400 (UCF20 1995-2000) Front Calipers:** Aluminum 4-piston monoblock calipers. Very light and strong. \n    *   *Fitment:* Bolt-on upgrade for Lexus SC300/400, GS300/400. Requires RCA (Roll Center Adjusters) or specific rotors/brackets for some applications to clear wheels.\n*   **Supra TT (JZA80) Brakes:** Larger rotors and 4-pot iron (or aluminum on later models) calipers.\n    *   *Fitment:* Direct bolt-on for SC300/400 and GS chassis. The 'Holy Grail' of OEM Toyota braking.",
-    "severity": "Info",
-    "related_parts": [
-      "ls400_calipers",
-      "supra_tt_brakes"
-    ]
-  },
-  {
-    "category": "ecosystem_guide",
-    "title": "Junkyard LS Guide: Iron vs Aluminum Blocks",
-    "content": "Identifying GM Gen 3/4 LS-based engines in the junkyard.\n\n*   **Iron Block (Trucks):** Found in Silverado, Sierra, Tahoe, Yukon. Codes: LQ4 (6.0L), LQ9 (6.0L HO), LM7 (5.3L), LR4 (4.8L). Heavy (~200lbs+ block weight) but virtually indestructible. Great for budget turbo builds.\n*   **Aluminum Block (Cars & Some Trucks):** Found in Corvette, Camaro, GTO, Trailblazer SS, and some pickups (L33). Codes: LS1, LS2, LS3, L33. ~80-100lbs lighter than iron. Preferred for handling/track builds.",
-    "severity": "Info",
-    "related_parts": [
-      "gm_ls_engine",
-      "lq4",
-      "lq9",
-      "lm7",
-      "ls1"
-    ]
-  },
-  {
-    "category": "ecosystem_guide",
-    "title": "Junkyard LS: 4.8L vs 5.3L Identification",
-    "content": "The 4.8L (LR4) and 5.3L (LM7) truck engines look identical externally. The block casting numbers (e.g., '4.8/5.3') don't tell you which one it is.\n\n**How to tell:**\n1.  **VIN Code:** Check the 8th digit of the VIN. (e.g., 'V' is often 4.8L, 'T' is 5.3L - verify specific year codes).\n2.  **Piston Shape:** Pull a spark plug and inspect the piston top with a borescope or screwdriver.\n    *   **4.8L:** Flat top pistons.\n    *   **5.3L:** Dished pistons (most common Gen 3 LM7).\n    *   *Exception:* The L33 (Aluminum 5.3L) and some Gen 4 5.3s have flat tops.",
-    "severity": "Medium",
-    "related_parts": [
-      "gm_lr4",
-      "gm_lm7"
-    ]
-  },
-  {
-    "category": "ecosystem_guide",
-    "title": "Junkyard LS: Cylinder Heads (Cathedral vs Rectangle)",
-    "content": "Head choice dictates intake choice and power potential.\n\n*   **Cathedral Port (Gen 3/Early Gen 4):** Tall, narrow ports. High velocity, great low-end torque.\n    *   **706 / 862:** 4.8L/5.3L heads. Small valves, small combustion chambers (bumps compression). Good for budget builds.\n    *   **243 / 799:** Found on LS6 (Corvette Z06) and LS2 (Trucks/Cars). The best factory cathedral heads. D-shaped exhaust ports, larger valves, better flow.\n*   **Rectangle Port (Gen 4):** Wide, rectangular ports. Massive flow, best for high RPM/displacement.\n    *   **821:** LS3 heads (Corvette/Camaro). Hollow stem valves (lightweight).\n    *   **823:** L92 Truck heads (6.2L). Solid valves. Almost identical flow to 821.",
-    "severity": "Info",
-    "related_parts": [
-      "ls_cathedral_port",
-      "ls_rectangle_port",
-      "head_casting_243",
-      "head_casting_821"
-    ]
-  },
-  {
-    "category": "ecosystem_guide",
-    "title": "Junkyard LS: Intake Manifolds",
-    "content": "Intake choice depends on hood clearance and head type.\n\n*   **Truck Intake:** Tallest. Best low-end torque but ugly and rarely fits under car hoods (240SX, Mustang, etc.).\n*   **TBSS / NNBS (Trailblazer SS / New Body Style):** The best factory cathedral port intake. Flows significantly better than the standard truck intake and close to aftermarket units. Still tall.\n*   **Car Intakes (LS1/LS6/LS2/LS3):** Low profile. Required for most car swaps. LS6 intake is the best factory cathedral option for low clearance.",
-    "severity": "Medium",
-    "related_parts": [
-      "ls_truck_intake",
-      "ls6_intake",
-      "tbss_intake"
-    ]
-  },
-  {
-    "category": "ecosystem_guide",
-    "title": "Junkyard LS: Accessory Drive Spacing",
-    "content": "The harmonic balancer and pulleys come in three offsets (depths). You cannot mix and match brackets/pulleys from different offsets.\n\n1.  **Truck:** Deepest spacing (sticks out furthest from engine). Alternator mounts high driver side. Cheapest/most common.\n2.  **F-Body (Camaro/Firebird 98-02) / GTO:** Middle spacing. Alternator mounts low driver side (often interferes with frame rails/steering boxes in swaps).\n3.  **Corvette (Y-Body) / CTS-V:** Shallowest spacing (tightest to engine). Alternator mounts high driver side. Best for swaps with limited radiator clearance (e.g., Miata, S2000).",
-    "severity": "High",
-    "related_parts": [
-      "ls_accessory_drive"
     ]
   }
 ];

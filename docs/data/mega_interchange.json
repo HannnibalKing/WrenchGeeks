@@ -26,6 +26,83 @@
       }
     },
     {
+      "id": "gm_corvette_servo",
+      "category": "Drivetrain",
+      "name": "Corvette Servo (4L60E)",
+      "description": "The legendary 'Vette Servo'. A cheap, easy upgrade for any GM truck or car with the 4L60E transmission. Firms up the 1-2 shift and increases holding power.",
+      "specs": [
+        "Part Number: 8492969 (Piston) + 8642486 (Cover)",
+        "Increases band apply area",
+        "Can be installed without removing transmission"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Silverado 1500", "years": "1999-2013", "notes": "Best bang-for-buck trans upgrade" },
+            { "name": "Tahoe / Suburban", "years": "1995-2013", "notes": "Recommended for towing" },
+            { "name": "Camaro / Firebird", "years": "1993-2002", "notes": "Upgrade" },
+            { "name": "S10 / Blazer", "years": "1993-2004", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_GMT800", "GM_GMT400", "GM_F_BODY_4TH_GEN", "GM_S10_2ND_GEN", "CHEVY_CAMARO", "PONTIAC_FIREBIRD"]
+      }
+    },
+    {
+      "id": "bmw_n54_injectors",
+      "category": "Engine",
+      "name": "N54 Index 12 Injectors",
+      "description": "The only permanent fix for leaking fuel injectors on the N54 engine. Older revisions (Index 1-11) are prone to leaking, causing misfires and oil dilution.",
+      "specs": [
+        "Must be coded to the ECU (INPA/ProTool)",
+        "Index 12 is the final revision",
+        "Do not mix Index 12 with older injectors in the same bank"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "335i (E90/E92)", "years": "2007-2010", "notes": "Critical Maintenance" },
+            { "name": "135i (E82)", "years": "2008-2010", "notes": "Critical Maintenance" },
+            { "name": "535i (E60)", "years": "2008-2010", "notes": "Critical Maintenance" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["BMW_N54_N55", "BMW_E90_E92"]
+      }
+    },
+    {
+      "id": "ford_mustang_s550_irs",
+      "category": "Suspension",
+      "name": "S550 Mustang IRS Subframe",
+      "description": "The entire Independent Rear Suspension (IRS) subframe from a 2015+ Mustang. A popular swap for older F100 trucks and even classic Mustangs (with major fabrication) to get modern handling.",
+      "specs": [
+        "Factory Limited Slip Diff (usually)",
+        "Modern Disc Brakes",
+        "Self-contained unit"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang (S550)", "years": "2015-2023", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "F-100", "years": "1953-1979", "notes": "Popular Swap (Requires Fab)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_S550", "FORD_F_SERIES_CLASSIC"]
+      }
+    },
+    {
       "id": "ford_taurus_efan",
       "category": "Cooling",
       "name": "Ford Taurus 2-Speed E-Fan",
@@ -93,6 +170,147 @@
       ],
       "compatibility_smart": {
         "platforms": ["VOLKSWAGEN_GOLF__A5___MK5_", "VOLKSWAGEN_GOLF__A6___MK6_", "AUDI_A4_B5", "AUDI_A4_B6", "AUDI_A4_B7"]
+      }
+    },
+    {
+      "id": "gm_hydroboost_unit",
+      "category": "Brakes",
+      "name": "GM Hydroboost Brake Booster",
+      "description": "Hydraulic brake booster powered by the power steering pump instead of engine vacuum. Provides massive clamping force. Standard on HD trucks and diesels.",
+      "specs": [
+        "Powered by Power Steering Pump",
+        "Eliminates vacuum dependency (great for big cams/boost)",
+        "Massive stopping power increase"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Silverado 2500HD/3500HD", "years": "2001-2010", "notes": "Donor Vehicle" },
+            { "name": "Suburban 2500", "years": "2000-2013", "notes": "Donor Vehicle" },
+            { "name": "Silverado 1500", "years": "1999-2013", "notes": "Upgrade (Requires PS lines)" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Wrangler (TJ/JK)", "years": "1997-2018", "notes": "Hardcore Upgrade (Requires fab)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_GMT800", "GM_GMT900"]
+      }
+    },
+    {
+      "id": "ford_dana_60_superduty",
+      "category": "Drivetrain",
+      "name": "Ford Super Duty Dana 60 Front Axle",
+      "description": "The 'King of Axles'. The 1999-2004 F-350 front axle is a driver-drop, high-pinion Dana 60 with leaf spring perches. 2005+ is wider with coil buckets (Super 60).",
+      "specs": [
+        "Ring Gear: 9.75 inch",
+        "Axle Shafts: 35 spline (inner)",
+        "Bolt Pattern: 8x170mm"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "F-350 Super Duty", "years": "1999-2004", "notes": "Donor (Leaf Spring)" },
+            { "name": "F-250/F-350 Super Duty", "years": "2005-2016", "notes": "Donor (Coil Spring / Super 60)" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Wrangler (TJ/JK/JL)", "years": "1997-Present", "notes": "The 'One Ton' Swap" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_SUPER_DUTY_GENERATIONS"]
+      }
+    },
+    {
+      "id": "chrysler_lh_swaybar",
+      "category": "Suspension",
+      "name": "300M Special Rear Sway Bar",
+      "description": "The thickest factory rear sway bar (22mm solid) available for the LH platform. Found on the 'Special' edition 300M. Drastically reduces body roll on base models.",
+      "specs": [
+        "Diameter: 22mm (Solid)",
+        "Direct Bolt-on",
+        "Includes stiffer bushings"
+      ],
+      "compatibility": [
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300M Special", "years": "2002-2004", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Intrepid (All)", "years": "1993-2004", "notes": "Upgrade" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "Concorde / LHS", "years": "1993-2004", "notes": "Upgrade" },
+            { "name": "300M (Base)", "years": "1999-2004", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["CHRYSLER_LH_PLATFORM"]
+      }
+    },
+    {
+      "id": "porsche_944_brakes_vw",
+      "category": "Brakes",
+      "name": "Porsche 944 Brake Swap (VW Aircooled)",
+      "description": "Adapting Porsche 944 (non-turbo or turbo) disc brakes to classic VW Beetles and Buses. Provides massive stopping power and the correct 5x130 bolt pattern for Porsche wheels.",
+      "specs": [
+        "Requires caliper brackets (Old Speed, CSP, etc.)",
+        "Rear: 944 trailing arms can be swapped into IRS Beetles/Buses",
+        "Front: 944 hubs can be machined to fit VW spindles"
+      ],
+      "compatibility": [
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Beetle (Type 1)", "years": "1967-1979", "notes": "Major Upgrade" },
+            { "name": "Super Beetle", "years": "1971-1979", "notes": "Major Upgrade" },
+            { "name": "Karmann Ghia", "years": "1967-1974", "notes": "Major Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VW_AIRCOOLED_LEGENDS"]
+      }
+    },
+    {
+      "id": "tbss_intake_swap",
+      "category": "Engine",
+      "name": "Trailblazer SS (TBSS) Intake Manifold",
+      "description": "The best factory cathedral-port intake manifold for GM LS engines. Flows significantly better than the standard truck intake and looks cleaner.",
+      "specs": [
+        "90mm Throttle Body opening (4-bolt)",
+        "Requires X-Link adapter for older drive-by-wire throttle bodies",
+        "Higher flow runners"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Silverado 1500", "years": "1999-2007", "notes": "Upgrade (Gains 15-20hp)" },
+            { "name": "Tahoe / Suburban", "years": "2000-2006", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_GMT800", "GM_TRUCK_GENERATIONS"]
       }
     },
     {

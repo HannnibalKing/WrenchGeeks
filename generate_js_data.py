@@ -4,23 +4,11 @@ import os
 data_dir = "docs/data"
 output_file = "docs/kb_data.js"
 
-kb_files = [
-    "kb_ecu.json",
-    "kb_electrical.json",
-    "kb_fabrication.json",
-    "kb_hacks.json",
-    "kb_mechanical.json",
-    "kb_safety.json",
-    "kb_tips.json",
-    "kb_volvo_p80.json",
-    "kb_nissan_z_g.json",
-    "kb_mazda_miata.json",
-    "kb_toyota_jz_uz.json",
-    "kb_ls_junkyard_guide.json"
-]
+kb_files = [f for f in os.listdir(data_dir) if f.startswith("kb_") and f.endswith(".json")]
 
 all_data = []
 
+print(f"Found {len(kb_files)} KB files.")
 print("Reading KB files...")
 for filename in kb_files:
     filepath = os.path.join(data_dir, filename)

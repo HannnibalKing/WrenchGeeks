@@ -49,6 +49,36 @@
       "compatibility_smart": { "platforms": ["FORD_F_SERIES_GEN_10", "BMW_E30", "BMW_E36", "VOLVO_200_SERIES", "VOLVO_700_SERIES"] }
     },
     {
+      "id": "universal_high_flow_cat",
+      "category": "Exhaust",
+      "name": "MagnaFlow / Vibrant High Flow Catalytic Converter",
+      "description": "Universal high-flow catalytic converters. Essential for engine swaps to remain street legal (in some areas) without choking horsepower. 200-cell or 300-cell metal core flows much better than stock ceramic.",
+      "specs": [
+        "Core: Metallic Substrate (Durable)",
+        "Cell Count: 200 (Race) or 300 (Street)",
+        "Inlet/Outlet: 2.5\", 3.0\""
+      ],
+      "compatibility": [
+        { "make": "Universal", "models": [{ "name": "All Vehicles", "years": "All", "notes": "Custom Weld-in" }] }
+      ],
+      "compatibility_smart": { "platforms": [] }
+    },
+    {
+      "id": "vibrant_resonator",
+      "category": "Exhaust",
+      "name": "Vibrant Ultra Quiet Resonator",
+      "description": "The 'Drone Killer'. If your engine swap or custom exhaust is too loud or drones on the highway, this is the fix. Straight-through design but cancels specific frequencies.",
+      "specs": [
+        "Material: 304 Stainless Steel",
+        "Design: Straight-through (No restriction)",
+        "Use: Weld into mid-pipe"
+      ],
+      "compatibility": [
+        { "make": "Universal", "models": [{ "name": "All Vehicles", "years": "All", "notes": "Custom Weld-in" }] }
+      ],
+      "compatibility_smart": { "platforms": [] }
+    },
+    {
       "id": "gm_3bar_map",
       "category": "Sensors",
       "name": "GM 3-Bar MAP Sensor",

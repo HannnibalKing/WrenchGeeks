@@ -227,9 +227,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const dataFiles = [
         "data/relationships.json",
-        "data/transmissions.json", // NEW
-        "data/lighting_interchange.json", // NEW
-        "data/spare_tires.json", // NEW - Maria's Advice
+        "data/transmissions.json",
+        "data/lighting_interchange.json",
+        "data/spare_tires.json",
         "data/tips.json",
         "data/fuel_system.json",
         "data/electrical_sensors.json",
@@ -247,6 +247,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/old_timer_secrets.json",
         "data/maintenance_ref.json",
         "data/maintenance_ref_part2.json",
+        "data/maintenance_ref_part3.json",
+        "data/maintenance_ref_part4.json",
         "data/universal_parts.json",
         "data/badge_engineering.json",
         "data/global_platforms.json",
@@ -267,16 +269,29 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/workshop_hacks.json",
         "data/electrical_basics.json",
         "data/additive_warnings.json",
-        "data/economy_interchange.json",
-        "data/honda_mitsubishi_deep_dive.json",
-        "data/subaru_lego_city.json",
-        "data/korean_genesis_secrets.json",
-        "data/weird_euro_cousins.json",
         "data/audio_electronics.json",
-        "data/ecu_secrets.json",
-        "data/porsche_generations.json",
         "data/bmw_mercedes_generations.json",
-        "data/buick_legends.json"
+        "data/buick_legends.json",
+        "data/economy_interchange.json",
+        "data/ecu_secrets.json",
+        "data/honda_mitsubishi_deep_dive.json",
+        "data/kb_ecosystems.json",
+        "data/kb_ecu.json",
+        "data/kb_electrical.json",
+        "data/kb_fabrication.json",
+        "data/kb_hacks.json",
+        "data/kb_ls_junkyard_guide.json",
+        "data/kb_mazda_miata.json",
+        "data/kb_mechanical.json",
+        "data/kb_nissan_z_g.json",
+        "data/kb_safety.json",
+        "data/kb_tips.json",
+        "data/kb_toyota_jz_uz.json",
+        "data/kb_volvo_p80.json",
+        "data/korean_genesis_secrets.json",
+        "data/porsche_generations.json",
+        "data/subaru_lego_city.json",
+        "data/weird_euro_cousins.json"
     ];
 
     let relationships = { engines: {}, platforms: {}, transmissions: {} };
@@ -334,8 +349,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
             compatibilityEngine = new CompatibilityEngine(relationships, lightingData, spareTireData);
             
-            partsData = allData.filter(d => d.parts).flatMap(d => d.parts);
-            tipsData = allData.filter(d => d.tips).flatMap(d => d.tips);
+            // Initialize KB Data if not exists
+            if (typeof window.WRENCHGEEKS_KB_DATA === 'undefined') {
+                window.WRENCHGEEKS_KB_DATA = [];
+            }
+
+            partsData = [];
+            tipsData = [];
+
+            allData.forEach(d => {
+                if (Array.isArray(d)) {
+                    if (d.length > 0) {
+                        // Skip specialized data already handled
+                        if (d[0].part_type === "Headlight") return; 
+                        if (d[0].bolt_pattern) return;
+
+                        // KB / Tips Arrays
+                        if (d[0].category || d[0].title) {
+                            window.WRENCHGEEKS_KB_DATA.push(...d);
+                            tipsData.push(...d); 
+                        }
+                    }
+                } else {
+                    if (d.parts) partsData.push(...d.parts);
+                    if (d.tips) {
+                        tipsData.push(...d.tips);
+                        window.WRENCHGEEKS_KB_DATA.push(...d.tips);
+                    }
+                    if (d.swaps) partsData.push(...d.swaps);
+                    if (d.articles) {
+                        window.WRENCHGEEKS_KB_DATA.push(...d.articles);
+                        tipsData.push(...d.articles);
+                    }
+                }
+            });
 
             // Populate index from Relationships (so all vehicles appear, even without parts)
             if (relationships.platforms) {
@@ -760,6 +807,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             displayTips(make, model);
             displayMariaAdvice(vehicleAttrs.spareTireGroupId, make, model, vehicleAttrs.vehicleType);
+            
+            // Update Knowledge Base with vehicle context
+            renderKnowledgeBase(getActiveCategory(), '', make, model);
 
             let filteredParts = parts;
 
@@ -1100,7 +1150,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function refreshKB() {
-        renderKnowledgeBase(getActiveCategory(), '');
+        const make = makeSelect ? makeSelect.value : null;
+        const model = modelSelect ? modelSelect.value : null;
+        renderKnowledgeBase(getActiveCategory(), '', make, model);
     }
 
     kbFilters.forEach(filter => {
@@ -1111,15 +1163,62 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    function renderKnowledgeBase(filter, query) {
+    function renderKnowledgeBase(filter, query, make, model) {
         if (!kbContent) return;
         kbContent.innerHTML = '';
+
+        const normalizeMake = (m) => {
+            m = m.toLowerCase();
+            if (m === 'chevy') return 'chevrolet';
+            if (m === 'vw') return 'volkswagen';
+            if (m === 'mercedes') return 'mercedes-benz';
+            return m;
+        };
 
         const kbItems = (typeof WRENCHGEEKS_KB_DATA !== 'undefined' ? WRENCHGEEKS_KB_DATA : []).filter(item => {
             const cat = (item.category || '').toLowerCase();
             const categoryMatch = (filter === 'all' || cat === filter);
 
             if (!categoryMatch) return false;
+
+            // Vehicle Filter (Maria's Tips Logic)
+            if (make && make !== "") {
+                const vehicles = item.compatibleVehicles || [];
+                const isUniversal = vehicles.some(v => v.toLowerCase().includes("universal"));
+                
+                if (!isUniversal) {
+                    const targetMake = normalizeMake(make);
+                    const targetModel = model ? model.toLowerCase().replace(/[^a-z0-9]/g, "") : "";
+
+                    const isCompatible = vehicles.some(v => {
+                        const vLower = v.toLowerCase();
+                        
+                        // Check Make
+                        const vMakeMatch = vLower.includes(targetMake) || vLower.includes(make.toLowerCase());
+                        if (!vMakeMatch) {
+                            // Handle aliases in reverse (e.g. item says "Chevy", user selected "Chevrolet")
+                            if (targetMake === 'chevrolet' && vLower.includes('chevy')) return true; // Wait, need to check model too
+                            if (targetMake === 'volkswagen' && vLower.includes('vw')) return true;
+                            if (targetMake === 'mercedes-benz' && vLower.includes('mercedes')) return true;
+                            return false; 
+                        }
+
+                        // Check Model (if selected)
+                        if (targetModel) {
+                            // Normalize the vehicle string from the KB item to check for model match
+                            const vNormalized = vLower.replace(/[^a-z0-9]/g, "");
+                            
+                            // Simple inclusion check: does "hondacivic1992" include "civic"? Yes.
+                            // Does "hondacivic1992" include "accord"? No.
+                            if (!vNormalized.includes(targetModel)) return false;
+                        }
+
+                        return true;
+                    });
+                    
+                    if (!isCompatible) return false;
+                }
+            }
 
             if (!query) return true;
 

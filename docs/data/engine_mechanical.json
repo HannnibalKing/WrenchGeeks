@@ -33,6 +33,303 @@
       "universal_alternatives": []
     },
     {
+      "id": "volvo_r_manifold",
+      "category": "Engine Mechanical",
+      "name": "Volvo 'R' Exhaust Manifold",
+      "description": "The exhaust manifold from the S60R/V70R (K24 turbo cars). It flows significantly better than the standard T5 manifold and is a direct bolt-on upgrade for P2 Volvos. Known as the 'Japan' manifold.",
+      "specs": [
+        "Material: High Nickel Iron",
+        "Flow: ~30% better than stock T5",
+        "Flange: Volvo T3/T4 Hybrid"
+      ],
+      "compatibility": [
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "S60R / V70R", "years": "2004-2007", "notes": "Stock Part" },
+            { "name": "S60 T5", "years": "2001-2009", "notes": "Upgrade" },
+            { "name": "V70 T5", "years": "2001-2007", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VOLVO_P2", "VOLVO_P2_PLATFORM"]
+      }
+    },
+    {
+      "id": "bmw_m50_manifold",
+      "category": "Engine Mechanical",
+      "name": "BMW M50 Intake Manifold Swap",
+      "description": "The M50B25 intake manifold from the E36 325i/525i has significantly larger runners than the M52/S52 manifold found in later E36s and Z3s. Swapping it restores top-end power choked by the factory manifold.",
+      "specs": [
+        "Runner Width: Larger than M52",
+        "Gains: ~15-20whp at top end",
+        "Trade-off: Slight loss of low-end torque"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "325i / 525i (E36/E34)", "years": "1992-1995", "notes": "Donor Vehicle" },
+            { "name": "328i / M3 (E36)", "years": "1996-1999", "notes": "Upgrade Candidate" },
+            { "name": "Z3 2.8 / M", "years": "1997-2000", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["BMW_E36", "BMW_E39", "BMW_Z3"]
+      }
+    },
+    {
+      "id": "honda_rbc_manifold",
+      "category": "Engine Mechanical",
+      "name": "Honda RBC / RRC Intake Manifold",
+      "description": "The RBC intake manifold from the Euro R / Civic Si (06-11) is the best OEM manifold for K-Series engines. The RRC (Civic Type R) is even better but more expensive. Essential for K20/K24 builds.",
+      "specs": [
+        "Flow: High RPM optimized",
+        "Gains: 10-15whp with tune",
+        "Requires: Adapter plate for throttle body"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic Si (8th Gen)", "years": "2006-2011", "notes": "Donor Vehicle (RBC)" },
+            { "name": "Civic Type R (FD2)", "years": "2007-2011", "notes": "Donor Vehicle (RRC)" },
+            { "name": "RSX Type S", "years": "2002-2006", "notes": "Upgrade Candidate" },
+            { "name": "Civic Si (EP3)", "years": "2002-2005", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["HONDA_CIVIC_MODERN", "HONDA_INTEGRA_RSX", "HONDA_CIVIC_LEGENDS"]
+      }
+    },
+    {
+      "id": "gm_tbss_intake",
+      "category": "Engine Mechanical",
+      "name": "GM TBSS / NNBS Intake Manifold",
+      "description": "The Trailblazer SS (TBSS) or 'New Body Style' (NNBS) truck intake is the best flowing factory cathedral port intake. It outperforms the LS6 intake in some cases and is a massive upgrade for older 4.8/5.3/6.0 trucks.",
+      "specs": [
+        "Port Type: Cathedral",
+        "Throttle Body: 4-bolt (requires adapter for 3-bolt)",
+        "Gains: 15-25hp over stock truck intake"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet / GMC",
+          "models": [
+            { "name": "Trailblazer SS", "years": "2006-2009", "notes": "Donor Vehicle" },
+            { "name": "Silverado / Sierra (GMT900)", "years": "2007-2013", "notes": "Donor Vehicle" },
+            { "name": "Silverado / Sierra (GMT800)", "years": "1999-2006", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_TRUCK_GMT800_GAS", "GM_TRUCK_GMT800_HD_GAS", "GM_TRUCK_GMT900_GAS"]
+      }
+    },
+    {
+      "id": "ford_gt40_intake",
+      "category": "Engine Mechanical",
+      "name": "Ford GT40 / Explorer Intake",
+      "description": "The GT40 intake (tubular) and Explorer intake (cast) flow significantly better than the stock HO intake on Fox Body Mustangs. A legendary budget upgrade for the 5.0L Windsor.",
+      "specs": [
+        "Runner Design: Long runner for torque",
+        "Gains: 20-30hp with matching heads",
+        "Source: 96-01 Ford Explorer V8"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Explorer V8", "years": "1996-2001", "notes": "Donor Vehicle" },
+            { "name": "Mustang GT / LX", "years": "1987-1993", "notes": "Upgrade Candidate" },
+            { "name": "Mustang GT / Cobra", "years": "1994-1995", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_FOX", "FORD_SN95"]
+      }
+    },
+    {
+      "id": "subaru_sti_intercooler",
+      "category": "Engine Mechanical",
+      "name": "Subaru STI Top Mount Intercooler (TMIC)",
+      "description": "The STI intercooler is larger and more efficient than the WRX or Forester XT units. It's a direct bolt-on for many EJ turbo cars, supporting up to ~350-400whp.",
+      "specs": [
+        "Core Size: ~20% larger than WRX",
+        "Construction: Bar and Plate (usually)",
+        "Benefit: Lower intake temps, less heat soak"
+      ],
+      "compatibility": [
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "WRX STI", "years": "2004-2021", "notes": "Donor Vehicle" },
+            { "name": "WRX", "years": "2002-2014", "notes": "Upgrade Candidate" },
+            { "name": "Forester XT", "years": "2004-2008", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["SUBARU_IMPREZA_WRX", "SUBARU_FORESTER__SF___GEN_1_", "SUBARU_FORESTER__SG___GEN_2_"]
+      }
+    },
+    {
+      "id": "ford_46_pi_intake",
+      "category": "Engine Mechanical",
+      "name": "Ford 4.6L PI Intake Manifold Swap",
+      "description": "The 'Performance Improved' (PI) intake manifold from 1999-2004 Mustangs/Crown Vics flows much better than the non-PI (1992-1998) intake. It's a popular swap for older 4.6L cars, gaining ~15hp.",
+      "specs": [
+        "Runners: Deeper / Better Flow",
+        "Gains: 15-20hp (with PI cams)",
+        "Note: Requires RTV on coolant ports for non-PI heads"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang GT", "years": "1996-1998", "notes": "Upgrade Candidate" },
+            { "name": "Crown Victoria / Grand Marquis", "years": "1992-2000", "notes": "Upgrade Candidate" },
+            { "name": "Town Car", "years": "1991-2000", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_PANTHER", "FORD_SN95"]
+      }
+    },
+    {
+      "id": "hemi_64_intake_swap",
+      "category": "Engine Mechanical",
+      "name": "Hemi 6.4L (392) Intake Manifold Swap",
+      "description": "The active runner intake manifold from the 6.4L (392) SRT8 engines flows significantly better than the 5.7L Eagle intake. It's a direct bolt-on for 2009+ 5.7L Hemi engines.",
+      "specs": [
+        "Runners: Dual Runner (Active)",
+        "Gains: 15-20whp / Broad Torque Curve",
+        "Requires: MSD Window Switch (to activate runners)"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge / Chrysler",
+          "models": [
+            { "name": "Charger / Challenger R/T (5.7L)", "years": "2009-Present", "notes": "Upgrade Candidate" },
+            { "name": "300C (5.7L)", "years": "2009-Present", "notes": "Upgrade Candidate" },
+            { "name": "Ram 1500 (5.7L)", "years": "2009-Present", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["CHRYSLER_LX", "CHRYSLER_LD", "CHRYSLER_LA", "RAM_DS_DJ_D2"]
+      }
+    },
+    {
+      "id": "jeep_40_intake_swap",
+      "category": "Engine Mechanical",
+      "name": "Jeep 4.0L 'Horseshoe' Intake Manifold",
+      "description": "The 1999-2006 intake manifold (curved runners) flows much better than the older log-style intake found on 1987-1998 4.0L engines. A popular junkyard upgrade for XJs and YJs.",
+      "specs": [
+        "Runners: Curved/Equal Length",
+        "Gains: 15-20hp / Better Torque",
+        "Requires: Power Steering Pump Bracket modification"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Grand Cherokee (WJ)", "years": "1999-2004", "notes": "Donor Vehicle" },
+            { "name": "Wrangler (TJ)", "years": "2000-2006", "notes": "Donor Vehicle" },
+            { "name": "Cherokee (XJ)", "years": "1987-1999", "notes": "Upgrade Candidate" },
+            { "name": "Wrangler (YJ)", "years": "1991-1995", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["JEEP_CHEROKEE_XJ", "JEEP_WRANGLER__YJ_", "JEEP_WRANGLER__TJ_"]
+      }
+    },
+    {
+      "id": "mitsubishi_3000gt_y_pipe",
+      "category": "Engine Mechanical",
+      "name": "3000GT / Stealth Intake Y-Pipe",
+      "description": "The factory plastic intake Y-pipe on the Twin Turbo 3000GT/Stealth is prone to cracking under boost and heat, causing massive boost leaks. Upgrading to an aluminum or stainless steel pipe is mandatory for reliability.",
+      "specs": [
+        "Material: Aluminum/Stainless",
+        "Replaces: Factory Plastic Pipe",
+        "Fixes: Boost Leaks"
+      ],
+      "compatibility": [
+        {
+          "make": "Mitsubishi",
+          "models": [
+            { "name": "3000GT VR-4", "years": "1991-1999", "notes": "Critical Upgrade" }
+          ]
+        },
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Stealth R/T Turbo", "years": "1991-1996", "notes": "Critical Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["MITSUBISHI_3000GT"]
+      }
+    },
+    {
+      "id": "ford_gt40_intake",
+      "category": "Engine Mechanical",
+      "name": "Ford GT40 / Cobra Intake Manifold",
+      "description": "The legendary intake manifold found on 1993 Cobras and 1996-2001 Ford Explorers (5.0L). Flows significantly better than the stock HO intake.",
+      "specs": [
+        "Tubular upper (GT40) or Cast upper (Explorer)",
+        "Lower manifold is identical",
+        "Direct bolt-on for Fox Body / SN95 5.0L"
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_FOX", "FORD_SN95"]
+      },
+      "universal_alternatives": [
+        { "name": "Edelbrock Performer", "notes": "Aftermarket equivalent" }
+      ]
+    },
+    {
+      "id": "gm_ls6_intake",
+      "category": "Engine Mechanical",
+      "name": "GM LS6 Intake Manifold",
+      "description": "The factory intake from the C5 Z06. The best factory cathedral port intake for cars (TBSS is best for trucks). Gains 15-20hp over LS1 intake.",
+      "specs": [
+        "Part Number: 12573572 or 88894339",
+        "Flat bottom (no EGR provision)",
+        "Direct swap for LS1/LS2"
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_F_BODY_4TH_GEN", "PONTIAC_GTO", "CHEVY_CORVETTE_C5"]
+      },
+      "universal_alternatives": [
+        { "name": "FAST 92mm", "notes": "Aftermarket upgrade" }
+      ]
+    },
+    {
+      "id": "honda_whale_penis_intake",
+      "category": "Engine Mechanical",
+      "name": "J's Racing 'Tsuchinoko' Intake",
+      "description": "Affectionately known as the 'Whale Penis' intake due to its shape. Made of carbon fiber or Kevlar, it provides massive airflow for B-Series engines.",
+      "specs": [
+        "Material: Carbon Fiber",
+        "Shape: Large chamber for resonance",
+        "Sound: Incredible VTEC crossover roar"
+      ],
+      "compatibility_smart": {
+        "platforms": ["HONDA_CIVIC_GOLDEN", "ACURA_INTEGRA_DC2"]
+      },
+      "universal_alternatives": [
+        { "name": "AEM Cold Air", "notes": "Standard tube intake" }
+      ]
+    },
+    {
       "id": "evo_16g_turbo",
       "category": "Engine Mechanical",
       "name": "Mitsubishi TD05H-16G6 Turbo (Evo III)",

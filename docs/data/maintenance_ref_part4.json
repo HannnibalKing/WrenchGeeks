@@ -1,0 +1,550 @@
+{
+  "parts": [
+    {
+      "id": "holden_commodore_classic_rb30_turbo",
+      "name": "VL Commodore RB30ET Turbo Kit",
+      "description": "Turbocharge the N/A RB30 in your VL Commodore. The 'Godzilla' of Aussie engines.",
+      "price": "$1500",
+      "source": "Maatouks Racing",
+      "compatibility_smart": {
+        "platforms": ["HOLDEN_COMMODORE_CLASSIC"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "ford_falcon_classic_cleveland",
+      "name": "Cleveland 351 V8 Intake",
+      "description": "Edelbrock Performer intake for the 351 Cleveland found in XA-XE Falcons.",
+      "price": "$400",
+      "source": "Edelbrock",
+      "compatibility_smart": {
+        "platforms": ["FORD_FALCON_CLASSIC"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "mazda_miata_master_kit",
+      "name": "Miata (NA/NB) Suspension Refresh Kit",
+      "description": "Complete bushing and ball joint overhaul kit. Essential for restoring the legendary handling of the Roadster.",
+      "price": "$350-500",
+      "source": "Energy Suspension / Prothane",
+      "compatibility_smart": {
+        "platforms": ["MAZDA_MIATA"]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "mazda_rotary_apex_seals",
+      "name": "RX-7 Apex Seal Kit (2mm/3mm)",
+      "description": "The heart of the rotary. Upgrade to Atkins or Goopy Performance seals for higher boost handling.",
+      "price": "$300-600",
+      "source": "Atkins Rotary / Mazdatrix",
+      "compatibility_smart": {
+        "platforms": ["MAZDA_ROTARY"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "skyline_gtr_rb26_oil_pump",
+      "name": "RB26DETT N1 Oil Pump",
+      "description": "Critical upgrade for any RB26. The stock pump gear shatters at high RPM. N1 or Spline Drive is mandatory.",
+      "price": "$400",
+      "source": "Nissan / Tomei",
+      "compatibility_smart": {
+        "platforms": ["NISSAN_SKYLINE_GTR", "NISSAN_SKYLINE_GT_R"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "volvo_redblock_turbo_plus",
+      "name": "Volvo Redblock 'Turbo+' Kit",
+      "description": "Factory upgrade kit that increased boost pressure. Now replicated with manual boost controllers and chips.",
+      "price": "$50-200",
+      "source": "IPD USA / Turbobricks",
+      "compatibility_smart": {
+        "platforms": ["VOLVO_RWD_TURBO"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "volvo_p80_pcv_system",
+      "name": "PCV Breather System Kit",
+      "description": "The Achilles heel of the Whiteblock engine. Must be replaced every 100k miles to prevent seal blowout.",
+      "price": "$150",
+      "source": "FCP Euro",
+      "compatibility_smart": {
+        "platforms": ["VOLVO_P80_PLATFORM"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "saab_dic_cassette",
+      "name": "Direct Ignition Cassette (Red/Black)",
+      "description": "The famous SAAB DIC. Red for Trionic 5, Black for Trionic 7. Do not use aftermarket, only SEM/OEM.",
+      "price": "$300",
+      "source": "ESAABParts / Orio",
+      "compatibility_smart": {
+        "platforms": ["SAAB_LEGENDS", "SAAB_GM2900"]
+      },
+      "category": "Electrical"
+    },
+    {
+      "id": "holden_commodore_ls_swap",
+      "name": "Commodore LS Conversion Mounts",
+      "description": "Mounts to drop an LS1/LS3 into older VN-VS Commodores. The ultimate Aussie sleeper.",
+      "price": "$400",
+      "source": "Tuff Mounts / Castlemaine Rod Shop",
+      "compatibility_smart": {
+        "platforms": ["HOLDEN_COMMODORE_VN_VS", "HOLDEN_COMMODORE_VT_VZ", "HOLDEN_COMMODORE_VE_VF"]
+      },
+      "category": "Engine Swap"
+    },
+    {
+      "id": "ford_falcon_barra_swap",
+      "name": "Barra Swap Mounts (EA-AU)",
+      "description": "Put the mighty Barra Turbo into the lighter EA-AU chassis. 1000hp capable taxi motor.",
+      "price": "$450",
+      "source": "Tuff Mounts",
+      "compatibility_smart": {
+        "platforms": ["FORD_FALCON_EA_AU", "FORD_FALCON_BA_FG"]
+      },
+      "category": "Engine Swap"
+    },
+    {
+      "id": "geo_tracker_lift_kit",
+      "name": "2-inch Coil Spacer Lift",
+      "description": "Simple lift for the Tracker/Sidekick. Fits 235/75R15 tires for surprising off-road capability.",
+      "price": "$100",
+      "source": "Low Range Offroad",
+      "compatibility_smart": {
+        "platforms": ["GEO_TRACKER", "SUZUKI_OFFROAD"]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "geo_metro_3cyl_turbo",
+      "name": "G10 3-Cylinder Turbo Manifold",
+      "description": "Rare factory turbo parts or custom log manifold to boost the 1.0L 3-banger.",
+      "price": "$200",
+      "source": "Suzuki Performance",
+      "compatibility_smart": {
+        "platforms": ["GEO_METRO", "SUZUKI_SWIFT_CULTUS"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "subaru_forester_lift",
+      "name": "Forester ADF Lift Kit (2 inch)",
+      "description": "Anderson Design & Fabrication spacers. The standard for lifting Foresters for trail duty.",
+      "price": "$500",
+      "source": "ADF",
+      "compatibility_smart": {
+        "platforms": ["SUBARU_FORESTER__SH___GEN_3_", "SUBARU_FORESTER__SJ___GEN_4_", "SUBARU_FORESTER__SK___GEN_5_"]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "subaru_legacy_gt_turbo",
+      "name": "VF52 Turbo Upgrade",
+      "description": "Direct bolt-on upgrade for Legacy GT. Good for 300whp with supporting mods.",
+      "price": "$900",
+      "source": "IHI / Cobb",
+      "compatibility_smart": {
+        "platforms": ["SUBARU_LEGACY__BC_BF_BJ___GEN_1_"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "toyota_corolla_ae86_lsd",
+      "name": "AE86 GTS LSD (T282)",
+      "description": "Factory Limited Slip Diff for the RWD Corolla. Essential for drifting.",
+      "price": "$800",
+      "source": "Toyota / Cusco",
+      "compatibility_smart": {
+        "platforms": ["TOYOTA_COROLLA__E80___5TH_GEN_"]
+      },
+      "category": "Drivetrain"
+    },
+    {
+      "id": "toyota_corolla_modern_swaybar",
+      "name": "TRD Rear Sway Bar",
+      "description": "Drastically reduces understeer on FWD Corollas. Best bang-for-buck handling mod.",
+      "price": "$200",
+      "source": "TRD / Whiteline",
+      "compatibility_smart": {
+        "platforms": [
+          "TOYOTA_COROLLA__E90___6TH_GEN_",
+          "TOYOTA_COROLLA__E100___7TH_GEN_",
+          "TOYOTA_COROLLA__E110___8TH_GEN_",
+          "TOYOTA_COROLLA__E120_E130___9TH_GEN_",
+          "TOYOTA_COROLLA__E140_E150___10TH_GEN_",
+          "TOYOTA_COROLLA__E160_E170___11TH_GEN_",
+          "TOYOTA_COROLLA__E210___12TH_GEN_"
+        ]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "honda_civic_ef_si_trans",
+      "name": "Si Transmission (L3)",
+      "description": "Short ratio gearbox for the EF Civic. The best upgrade for a DX/LX.",
+      "price": "$300",
+      "source": "Honda",
+      "compatibility_smart": {
+        "platforms": ["HONDA_CIVIC__AG_AH_AT___3RD_GEN_"]
+      },
+      "category": "Drivetrain"
+    },
+    {
+      "id": "honda_civic_2nd_gen_weber",
+      "name": "Weber Carburetor Conversion",
+      "description": "Replace the complex CVCC carb with a simple Weber 32/36. More power, easier tuning.",
+      "price": "$350",
+      "source": "Redline",
+      "compatibility_smart": {
+        "platforms": ["HONDA_CIVIC__SL_SS___2ND_GEN_"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "nissan_maxima_vq35_swap",
+      "name": "VQ35DE Engine Swap",
+      "description": "Swap the 3.5L V6 from a newer Maxima/Altima into older chassis. 250+ hp NA.",
+      "price": "$800",
+      "source": "Nissan",
+      "compatibility_smart": {
+        "platforms": [
+          "NISSAN_MAXIMA__J30___GEN_3_",
+          "NISSAN_MAXIMA__A32___GEN_4_",
+          "NISSAN_MAXIMA__A33___GEN_5_",
+          "NISSAN_ALTIMA__U13___GEN_1_"
+        ]
+      },
+      "category": "Engine Swap"
+    },
+    {
+      "id": "mitsubishi_galant_vr4_brakes",
+      "name": "VR-4 / Evo Brake Upgrade",
+      "description": "Bolt on Evo Brembos or VR-4 calipers to the standard Galant/Legnum.",
+      "price": "$600",
+      "source": "Mitsubishi",
+      "compatibility_smart": {
+        "platforms": ["MITSUBISHI_GALANT_LEGNUM"]
+      },
+      "category": "Brakes"
+    },
+    {
+      "id": "mitsubishi_pajero_lift",
+      "name": "OME Suspension Lift",
+      "description": "Old Man Emu springs and shocks. The gold standard for Montero/Pajero overland builds.",
+      "price": "$1200",
+      "source": "ARB / OME",
+      "compatibility_smart": {
+        "platforms": ["MITSUBISHI_PAJERO_MONTERO"]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "bmw_m50_intake_manifold",
+      "name": "M50 Intake Manifold Swap",
+      "description": "Swap the OBD1 M50 manifold onto M52/S52 engines for better top-end flow.",
+      "price": "$150",
+      "source": "BMW",
+      "compatibility_smart": {
+        "platforms": ["BMW_M50_M52"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "jaguar_x_type_transfer_case",
+      "name": "Transfer Case Reinforcement",
+      "description": "The weak link of the AWD X-Type. Ensure fluid is changed and cooling is adequate.",
+      "price": "$N/A",
+      "source": "Jaguar",
+      "compatibility_smart": {
+        "platforms": ["JAGUAR_X_TYPE"]
+      },
+      "category": "Drivetrain"
+    },
+    {
+      "id": "land_rover_coil_conversion",
+      "name": "Air to Coil Spring Conversion",
+      "description": "Delete the troublesome air suspension on P38/L322 Range Rovers for reliability.",
+      "price": "$800",
+      "source": "Atlantic British",
+      "compatibility_smart": {
+        "platforms": ["LAND_ROVER_CLASSIC", "LAND_ROVER_L322"]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "fiat_500_abarth_tune",
+      "name": "Eurocompulsion Tune",
+      "description": "Wake up the 1.4L MultiAir. Adds 30-40hp and improves throttle response.",
+      "price": "$500",
+      "source": "Eurocompulsion",
+      "compatibility_smart": {
+        "platforms": ["FIAT_500_ABARTH", "ALFA_ROMEO_MODERN"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "french_hot_hatch_torsion_bar",
+      "name": "Rear Torsion Bar Adjustment",
+      "description": "Lower the rear of your Peugeot/Citroen/Renault by re-indexing the torsion bars.",
+      "price": "Free",
+      "source": "DIY",
+      "compatibility_smart": {
+        "platforms": [
+          "FRENCH_HOT_HATCH_PEUGEOT",
+          "FRENCH_HOT_HATCH_CITROEN",
+          "FRENCH_HOT_HATCH_RENAULT"
+        ]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "prewar_ford_flathead_heads",
+      "name": "Edelbrock Finned Aluminum Heads",
+      "description": "Classic hot rod upgrade for the Flathead V8. Improves cooling and compression.",
+      "price": "$800",
+      "source": "Edelbrock",
+      "compatibility_smart": {
+        "platforms": ["FORD_FLATHEAD_ERA", "FORD_MODEL_T_A", "PREWAR_LUXURY", "PREWAR_EURO_RACING"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "gm_j_body_supercharger",
+      "name": "Eaton M62 Supercharger (L67)",
+      "description": "Adapt the GM 3800 supercharger to the 2.2L/2.4L J-Body engines. Custom work required.",
+      "price": "$300",
+      "source": "GM / Junkyard",
+      "compatibility_smart": {
+        "platforms": ["GM_J_BODY", "GM_H_BODY", "PONTIAC_GRAND_PRIX", "PONTIAC_VIBE", "PONTIAC_SOLSTICE"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "saturn_s_series_oil_consumption",
+      "name": "Piston Soak / Ring Cleaning",
+      "description": "The 1.9L Saturn engines are notorious for stuck oil rings. A piston soak can help.",
+      "price": "$20",
+      "source": "Maintenance",
+      "compatibility_smart": {
+        "platforms": ["SATURN_S_SERIES"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "chrysler_k_car_turbo",
+      "name": "Turbo II Conversion",
+      "description": "Swap the intercooled Turbo II setup onto any K-Car derivative. 174hp in a shoebox.",
+      "price": "$400",
+      "source": "Dodge / Chrysler",
+      "compatibility_smart": {
+        "platforms": ["CHRYSLER_K_DERIVATIVES", "CHRYSLER_MINIVANS"]
+      },
+      "category": "Engine Swap"
+    },
+    {
+      "id": "chrysler_crossfire_v8",
+      "name": "M113 V8 Swap",
+      "description": "Since it's a Mercedes SLK320 underneath, the Mercedes V8 fits with effort.",
+      "price": "$2000",
+      "source": "Mercedes",
+      "compatibility_smart": {
+        "platforms": ["CHRYSLER_CROSSFIRE"]
+      },
+      "category": "Engine Swap"
+    },
+    {
+      "id": "kei_car_boost_controller",
+      "name": "Manual Boost Controller",
+      "description": "Turn up the boost on the 660cc turbo engines. Keep it safe (under 1.0 bar).",
+      "price": "$50",
+      "source": "Universal",
+      "compatibility_smart": {
+        "platforms": ["ABC_KEI_SPORTS", "SUZUKI_KEI_CLASSIC"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "vw_mk3_vr6_swap",
+      "name": "VR6 Engine Swap",
+      "description": "The definitive swap for Mk3 Golf/Jetta. The Wookie growl is legendary.",
+      "price": "$1000",
+      "source": "VW",
+      "compatibility_smart": {
+        "platforms": ["VOLKSWAGEN_GOLF__A3___MK3_", "VOLKSWAGEN_JETTA__A3___MK3_"]
+      },
+      "category": "Engine Swap"
+    },
+    {
+      "id": "vw_passat_tdi_tune",
+      "name": "Malone Stage 2 Tune",
+      "description": "Unlock the torque of the TDI. Great for towing and economy.",
+      "price": "$400",
+      "source": "Malone Tuning",
+      "compatibility_smart": {
+        "platforms": [
+          "VOLKSWAGEN_PASSAT__B1___MK1_",
+          "VOLKSWAGEN_PASSAT__B2___MK2_",
+          "VOLKSWAGEN_PASSAT__B3___MK3_",
+          "VOLKSWAGEN_PASSAT__B4___MK4_",
+          "VOLKSWAGEN_PASSAT__B6___MK6_",
+          "VOLKSWAGEN_PASSAT__B7___MK7_",
+          "VOLKSWAGEN_PASSAT__B8___MK8_"
+        ]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "rally_homologation_lights",
+      "name": "Hella Rallye 4000 Spotlights",
+      "description": "Period correct rally lights for your homologation special.",
+      "price": "$300",
+      "source": "Hella",
+      "compatibility_smart": {
+        "platforms": [
+          "RALLY_HOMOLOGATION_FORD",
+          "RALLY_HOMOLOGATION_JAPAN",
+          "RALLY_HOMOLOGATION_LANCIA"
+        ]
+      },
+      "category": "Exterior"
+    },
+    {
+      "id": "ram_truck_leveling_kit",
+      "name": "Bilstein 5100 Adjustable Struts",
+      "description": "Level the front end of your Ram 1500. Better ride than spacers.",
+      "price": "$250",
+      "source": "Bilstein",
+      "compatibility_smart": {
+        "platforms": ["RAM_DS_DT"]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "cadillac_catera_ls_swap",
+      "name": "LSE (LS Engine) Swap",
+      "description": "The Catera is an Omega B. It fits an LS V8 just like the GTO/Commodore.",
+      "price": "$3000",
+      "source": "Lingenfelter / Custom",
+      "compatibility_smart": {
+        "platforms": ["CADILLAC_CATERA"]
+      },
+      "category": "Engine Swap"
+    },
+    {
+      "id": "british_roadster_electric",
+      "name": "Lucas Replacement Wiring Harness",
+      "description": "Replace the 'Prince of Darkness' wiring with a modern, reliable harness.",
+      "price": "$400",
+      "source": "Autosparks",
+      "compatibility_smart": {
+        "platforms": ["BRITISH_ROADSTER_AUSTIN"]
+      },
+      "category": "Electrical"
+    },
+    {
+      "id": "geo_storm_isuzuparts",
+      "name": "Isuzu Impulse Suspension Parts",
+      "description": "The Geo Storm is an Isuzu Impulse. Use Impulse Handling by Lotus parts for upgrades.",
+      "price": "$Varies",
+      "source": "Isuzu",
+      "compatibility_smart": {
+        "platforms": ["GEO_STORM", "GEO_PRIZM"]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "honda_rwd_mid_nsx_tires",
+      "name": "Sticky Summer Tires (215/45R16 & 245/40R17)",
+      "description": "The NSX/S2000 are tire sensitive. Use Bridgestone Potenza or Michelin Pilot Sport.",
+      "price": "$800",
+      "source": "Tire Rack",
+      "compatibility_smart": {
+        "platforms": ["HONDA_RWD_MID", "HONDA_DC5_EP3"]
+      },
+      "category": "Wheels/Tires"
+    },
+    {
+      "id": "hyundai_genesis_coupe_lsd",
+      "name": "Torsen LSD Swap",
+      "description": "Swap the open diff for the Torsen LSD from the R-Spec/Track models.",
+      "price": "$600",
+      "source": "Hyundai",
+      "compatibility_smart": {
+        "platforms": ["HYUNDAI_GENESIS_COUPE"]
+      },
+      "category": "Drivetrain"
+    },
+    {
+      "id": "mini_cooper_pulley",
+      "name": "15% / 17% Supercharger Pulley",
+      "description": "The best mod for the R53 Mini Cooper S. More boost, more whine.",
+      "price": "$150",
+      "source": "Alta / Cravenspeed",
+      "compatibility_smart": {
+        "platforms": ["MINI_COOPER_MODERN"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "type_four_platform_brakes",
+      "name": "Alfa 164 / Saab 9000 Brake Interchange",
+      "description": "The Type 4 platform mates (Alfa 164, Saab 9000, Fiat Croma, Lancia Thema) share many brake parts.",
+      "price": "$Varies",
+      "source": "OEM",
+      "compatibility_smart": {
+        "platforms": ["TYPE_FOUR_PLATFORM"]
+      },
+      "category": "Brakes"
+    },
+    {
+      "id": "chevy_modern_family_tune",
+      "name": "Trifecta Tune",
+      "description": "Tuning for modern GM turbo engines (Cruze, Malibu, Equinox).",
+      "price": "$300",
+      "source": "Trifecta",
+      "compatibility_smart": {
+        "platforms": ["CHEVY_MODERN_FAMILY"]
+      },
+      "category": "Engine"
+    },
+    {
+      "id": "ford_ct120_escort_zx2",
+      "name": "ZX2 S/R Struts",
+      "description": "Tokico struts from the rare Escort ZX2 S/R. Great handling upgrade.",
+      "price": "$400",
+      "source": "Tokico",
+      "compatibility_smart": {
+        "platforms": ["FORD_CT120_ESCORT"]
+      },
+      "category": "Suspension"
+    },
+    {
+      "id": "ford_mustang_generations_shifter",
+      "name": "Short Throw Shifter",
+      "description": "Essential for any Mustang (Fox, SN95, S197, S550). Fixes the sloppy stock throw.",
+      "price": "$200",
+      "source": "Steeda / Hurst",
+      "compatibility_smart": {
+        "platforms": ["FORD_MUSTANG_GENERATIONS"]
+      },
+      "category": "Drivetrain"
+    },
+    {
+      "id": "toyota_gr_modern_exhaust",
+      "name": "Cat-back Exhaust",
+      "description": "Unleash the sound of the GR Yaris/Corolla/Supra/86.",
+      "price": "$1000",
+      "source": "HKS / Tomei",
+      "compatibility_smart": {
+        "platforms": ["TOYOTA_GR_MODERN"]
+      },
+      "category": "Engine"
+    }
+  ]
+}

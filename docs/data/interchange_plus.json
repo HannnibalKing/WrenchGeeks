@@ -63,12 +63,50 @@
           "models": [
             { "name": "Caprice / Impala SS", "years": "1991-1996", "notes": "Highly Recommended" },
             { "name": "Tahoe / Suburban", "years": "1992-2006", "notes": "Highly Recommended" },
-            { "name": "Camaro / Firebird", "years": "1982-2002", "notes": "Highly Recommended" }
+            { "name": "Camaro / Firebird", "years": "1982-2002", "notes": "Highly Recommended" },
+            { "name": "Silverado / Sierra", "years": "1988-2013", "notes": "Highly Recommended" }
           ]
         }
       ],
       "compatibility_smart": {
-        "platforms": ["GM_B_BODY", "GM_GMT400", "GM_F_BODY_3RD_GEN", "GM_F_BODY_4TH_GEN"]
+        "platforms": ["GM_B_BODY", "GM_GMT400", "GM_GMT800", "GM_GMT900", "GM_F_BODY_3RD_GEN", "GM_F_BODY_4TH_GEN"]
+      }
+    },
+    {
+      "id": "ford_panther_suspension_swap",
+      "category": "Suspension",
+      "name": "Crown Vic Front Suspension Swap (The 'Crown Vic Swap')",
+      "description": "The entire front suspension crossmember from a 2003-2011 Crown Victoria is a self-contained aluminum unit with rack-and-pinion steering, disc brakes, and coil-overs. It bolts onto almost any old truck frame (F100, C10) with minimal fabrication.",
+      "specs": [
+        "Aluminum Crossmember (Lightweight)",
+        "Modern Rack & Pinion Steering",
+        "12-inch Disc Brakes (Mustang wheels fit)",
+        "Track width matches classic trucks well"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Crown Victoria", "years": "2003-2011", "notes": "Donor Vehicle" },
+            { "name": "Grand Marquis", "years": "2003-2011", "notes": "Donor Vehicle" },
+            { "name": "Town Car", "years": "2003-2011", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "F-100", "years": "1953-1979", "notes": "Popular Swap" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "C10", "years": "1960-1987", "notes": "Popular Swap (Requires fab)" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_PANTHER", "FORD_F_SERIES_CLASSIC", "GM_TRUCK_CLASSIC"]
       }
     },
     {
@@ -91,6 +129,30 @@
       ],
       "compatibility_smart": {
         "platforms": ["MAZDA_MIATA_NA"]
+      }
+    },
+    {
+      "id": "gto_classic_disc_swap",
+      "category": "Brakes",
+      "name": "GM A-Body Disc Brake Swap",
+      "description": "Converting 1964-1972 GM A-Bodies (GTO, Chevelle, 442, Skylark) from drum brakes to front discs using spindles/rotors from 1969-1972 models or B-Body spindles.",
+      "specs": [
+        "Uses 1969-72 A-Body Spindles (Direct Bolt-on)",
+        "Or 1977-96 B-Body Spindles (Tall Spindle Swap - Improves Geometry but induces bump steer)",
+        "Requires new master cylinder/proportioning valve"
+      ],
+      "compatibility": [
+        {
+          "make": "Pontiac",
+          "models": [
+            { "name": "GTO", "years": "1964-1972", "notes": "Upgrade" },
+            { "name": "LeMans", "years": "1964-1972", "notes": "Upgrade" },
+            { "name": "Tempest", "years": "1964-1972", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PONTIAC_GTO", "GM_A_BODY_CLASSIC"]
       }
     },
     {

@@ -3,7 +3,7 @@ import re
 
 def check_missing_files():
     # Read JS file
-    with open('docs/script.v2.js', 'r', encoding='utf-8') as f:
+    with open('docs/script.v9.js', 'r', encoding='utf-8') as f:
         content = f.read()
 
     # Extract dataFiles array

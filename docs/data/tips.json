@@ -63,6 +63,86 @@
       "content": "Direct Injection engines (Cooper S / THP) do not wash the intake valves with fuel. Carbon builds up rapidly, causing misfires and power loss. Walnut blasting the intake valves is required maintenance every 40k-60k miles.",
       "severity": "Medium",
       "related_parts": []
+    },
+    {
+      "id": "tip_gm_4l60e_sunshell",
+      "platform": "GM_TRUCK_GENERATIONS",
+      "title": "4L60E 'No Reverse' (The Sun Shell)",
+      "content": "The 4L60E transmission (found in almost all 1500 trucks/SUVs 1993-2013) has a weak factory 'Sun Shell'. When it strips, you lose Reverse, 2nd, and 4th gear. If you are rebuilding, ALWAYS upgrade to a hardened 'Beast' sun shell.",
+      "severity": "High",
+      "related_parts": ["gm_corvette_servo"]
+    },
+    {
+      "id": "tip_gm_afm_dod",
+      "platform": "GM_TRUCK_MODERN",
+      "title": "AFM / DOD Lifter Failure",
+      "content": "Gen 4 LS engines (2007-2013 5.3L) with Active Fuel Management (AFM/DOD) are prone to lifter collapse, which can wipe out the camshaft. It is highly recommended to install an AFM Delete Kit (new cam, lifters, valley cover) and tune it out.",
+      "severity": "Critical",
+      "related_parts": []
+    },
+    {
+      "id": "tip_dodge_kdp",
+      "platform": "DODGE_RAM_GENERATIONS",
+      "title": "Killer Dowel Pin (KDP)",
+      "content": "On 12-valve and early 24-valve Cummins engines (1989-2002), a steel dowel pin in the timing case can vibrate loose and fall into the gears, cracking the timing case and causing massive oil leaks. A $5 tab kit fixes this permanently.",
+      "severity": "Critical",
+      "related_parts": []
+    },
+    {
+      "id": "tip_dodge_dash",
+      "platform": "DODGE_RAM_GENERATIONS",
+      "title": "The Cracking Dashboard",
+      "content": "2nd Gen Ram (1994-2002) dashboards are made of a plastic that becomes extremely brittle with UV exposure. They often shatter into sharp shards. Dash caps or full replacements are the only fix.",
+      "severity": "Low",
+      "related_parts": []
+    },
+    {
+      "id": "tip_ford_triton_plugs",
+      "platform": "FORD_F_SERIES_MODERN",
+      "title": "5.4L Triton Spark Plug Ejection",
+      "content": "Early 2-valve 5.4L/6.8L engines (1997-2003) have few threads in the head and can spit spark plugs out. Later 3-valve engines (2004-2008) have 2-piece plugs that break off in the head during removal. Special extraction tools are mandatory for 3V tune-ups.",
+      "severity": "High",
+      "related_parts": []
+    },
+    {
+      "id": "tip_ford_60_powerstroke",
+      "platform": "FORD_SUPER_DUTY_GENERATIONS",
+      "title": "6.0L PowerStroke 'Bulletproofing'",
+      "content": "The 6.0L PowerStroke (2003-2007) is infamous for head gasket failure due to stretching head bolts and clogged EGR coolers. 'Bulletproofing' involves installing ARP Head Studs, a new EGR cooler (or delete), and an upgraded oil cooler.",
+      "severity": "Critical",
+      "related_parts": []
+    },
+    {
+      "id": "tip_bmw_n54_hpfp",
+      "platform": "BMW_N54_N55",
+      "title": "N54 High Pressure Fuel Pump (HPFP)",
+      "content": "The N54 engine (335i/135i/535i) is legendary for power but infamous for HPFP failure. Symptoms include long cranks and limp mode. BMW extended the warranty on these, but most are now expired. Ensure you have the latest revision pump.",
+      "severity": "High",
+      "related_parts": []
+    },
+    {
+      "id": "tip_bmw_e90_waterpump",
+      "platform": "BMW_E90_E92",
+      "title": "Electric Water Pump Failure",
+      "content": "Unlike older BMWs, the E90/E60 generation uses an electric water pump. They fail suddenly and without warning around 60k-80k miles, leaving you stranded immediately. If you are over 80k miles on the original pump, replace it proactively.",
+      "severity": "High",
+      "related_parts": []
+    },
+    {
+      "id": "tip_mustang_mt82",
+      "platform": "FORD_S550",
+      "title": "MT-82 Transmission Lockout",
+      "content": "The MT-82 manual transmission in 2011+ Mustangs is known for high-RPM lockout (refusing to go into gear). This is often caused by the remote shifter design twisting under load. A transmission mount insert and aftermarket shifter bracket usually fix this.",
+      "severity": "Medium",
+      "related_parts": []
+    },
+    {
+      "id": "tip_camaro_v4_mode",
+      "platform": "CHEVY_CAMARO",
+      "title": "AFM / V4 Mode Shudder",
+      "content": "Automatic SS models (L99/LT1) have Active Fuel Management. The transition between V4 and V8 mode can cause torque converter shudder and eventual failure. A 'Range Device' or tune can disable V4 mode to save the transmission.",
+      "severity": "Medium",
+      "related_parts": []
     }
   ]
 }

@@ -1,6 +1,50 @@
 {
   "parts": [
     {
+      "id": "gm_ls_swap_universal",
+      "category": "Engine",
+      "name": "GM LS Engine Swap (Gen 3/4)",
+      "description": "The 'Swap the World' engine. 4.8L/5.3L/6.0L Vortec truck engines are cheap, plentiful, and make massive power with boost. Fits in almost anything.",
+      "specs": [
+        "Gen 3 (24x reluctor, cable throttle usually)",
+        "Gen 4 (58x reluctor, DBW, better rods)",
+        "Requires custom mounts/harness/ECU"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "S10 / Blazer", "years": "1982-2004", "notes": "Common Swap" },
+            { "name": "C/K Trucks (OBS)", "years": "1988-1998", "notes": "Modern Power Upgrade" },
+            { "name": "Camaro (Gen 2/3)", "years": "1970-1992", "notes": "Common Swap" },
+            { "name": "Monte Carlo / G-Body", "years": "1978-1988", "notes": "Common Swap" }
+          ]
+        },
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang (Fox Body)", "years": "1979-1993", "notes": "Sacrilege but fast" }
+          ]
+        },
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "240SX (S13/S14)", "years": "1989-1998", "notes": "Drift Standard" },
+            { "name": "350Z", "years": "2003-2008", "notes": "Reliable Power" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "RX-7 (FC/FD)", "years": "1986-2002", "notes": "V8 Swap" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_S10_2ND_GEN", "GM_TRUCK_CLASSIC", "GM_G_BODY_RWD", "FORD_FOX", "NISSAN_S_CHASSIS", "MAZDA_RX7"]
+      }
+    },
+    {
       "id": "vw_mk1_mk2_02a_swap",
       "category": "Drivetrain",
       "name": "VW 02A Transmission Swap",
@@ -92,6 +136,98 @@
       ],
       "compatibility_smart": {
         "platforms": ["FORD_FOX"]
+      }
+    },
+    {
+      "id": "mustang_coyote_swap",
+      "category": "Engine",
+      "name": "Ford 5.0L Coyote Swap",
+      "description": "Swapping the modern 5.0L Coyote V8 into older Mustang chassis. Requires K-member swap, hydroboost or manual brakes (due to width), and control pack.",
+      "specs": [
+        "400+ HP Stock",
+        "Wide engine (tight fit)",
+        "Requires aftermarket K-Member"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang (Fox Body)", "years": "1979-1993", "notes": "Major Upgrade" },
+            { "name": "Mustang (SN95)", "years": "1994-2004", "notes": "Major Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_FOX", "FORD_SN95_NEWEDGE"]
+      }
+    },
+    {
+      "id": "gm_ls_swap_trucks",
+      "category": "Engine",
+      "name": "GM LS Engine Swap (Trucks)",
+      "description": "The definitive guide to putting an LS (4.8/5.3/6.0) into older GM trucks. Square bodies require adapter plates; OBS trucks are easier but need wiring work.",
+      "specs": [
+        "Dirty Dingo Mounts recommended",
+        "Walbro 255 fuel pump",
+        "Standalone harness"
+      ],
+      "compatibility": [
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "C/K Series (Square Body)", "years": "1973-1987", "notes": "Upgrade" },
+            { "name": "C/K Series (OBS)", "years": "1988-1998", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["GM_TRUCK_CLASSIC"]
+      }
+    },
+    {
+      "id": "vw_aircooled_subaru_swap",
+      "category": "Engine",
+      "name": "Subaru EJ into VW Aircooled",
+      "description": "Replacing the aircooled flat-4 with a water-cooled Subaru EJ22 or EJ25. Doubles or triples horsepower. Requires radiator mounting (often under floor or front mount).",
+      "specs": [
+        "Adapter plate required (Kennedy Engineering)",
+        "Radiator plumbing is the hardest part",
+        "Reversed intake manifold often needed"
+      ],
+      "compatibility": [
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Beetle", "years": "1938-2003", "notes": "Major Upgrade" },
+            { "name": "Bus (T1/T2)", "years": "1950-1979", "notes": "Major Upgrade" },
+            { "name": "Vanagon (T3)", "years": "1980-1991", "notes": "Common Swap" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["VW_AIRCOOLED_LEGENDS", "VW_T3_VANAGON"]
+      }
+    },
+    {
+      "id": "pontiac_gto_brake_upgrade",
+      "category": "Brakes",
+      "name": "CTS-V / Corvette Brake Upgrade",
+      "description": "Fitting 4-piston or 6-piston Brembo calipers from a CTS-V or C6 Z06 onto the 2004-2006 GTO. Requires brackets and 18+ inch wheels.",
+      "specs": [
+        "CTS-V Gen 1 (4-piston) or Gen 2 (6-piston)",
+        "Requires caliper brackets",
+        "Drilling knuckles may be required"
+      ],
+      "compatibility": [
+        {
+          "make": "Pontiac",
+          "models": [
+            { "name": "GTO", "years": "2004-2006", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PONTIAC_GTO"]
       }
     },
     {

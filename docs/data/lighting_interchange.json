@@ -41,6 +41,55 @@
   },
   {
     "part_type": "Headlight",
+    "family_id": "JEEP_7_INCH_ROUND",
+    "generations": [
+      {
+        "id": "SEALED_BEAM_7",
+        "name": "Sealed Beam Halogen (H6024)",
+        "years": "1945-2006",
+        "connector": "H4 (3-Prong)",
+        "notes": "Standard dim yellow light."
+      },
+      {
+        "id": "JEEP_JK_H13",
+        "name": "Jeep JK Halogen",
+        "years": "2007-2018",
+        "connector": "H13",
+        "notes": "Plastic lens, H13 bulb."
+      },
+      {
+        "id": "LED_7_INCH_UNIVERSAL",
+        "name": "7-Inch LED Projector (Universal)",
+        "years": "Universal",
+        "connector": "H4 (Usually includes H13 adapter)",
+        "notes": "Massive upgrade. Fits CJ, YJ, TJ, JK (with adapter), Miata NA, Classic Trucks, Classic Mustang, Classic Camaro."
+      }
+    ],
+    "interchange_notes": "The 7-inch round headlight is the most universal part in history. Fits Jeep CJ/TJ/JK, Miata NA, Classic Mini, Defender, F100, C10, Mustang Gen 1, Camaro Gen 1/2."
+  },
+  {
+    "part_type": "Headlight",
+    "family_id": "GM_TRUCK_OBS_HEADLIGHTS",
+    "generations": [
+      {
+        "id": "OBS_SEALED_BEAM",
+        "name": "W/T Sealed Beam (Work Truck)",
+        "years": "1988-1998",
+        "connector": "H4",
+        "notes": "Single rectangular sealed beam. Basic grille."
+      },
+      {
+        "id": "OBS_COMPOSITE",
+        "name": "Silverado Composite",
+        "years": "1988-1998",
+        "connector": "9005/9006",
+        "notes": "Separate high/low bulbs. Requires different grille and pigtails if swapping from W/T."
+      }
+    ],
+    "interchange_notes": "Swapping from Sealed Beam to Composite requires the Silverado grille, headlight buckets, and wiring pigtails."
+  },
+  {
+    "part_type": "Headlight",
     "family_id": "BMW_E46_HEADLIGHTS",
     "generations": [
       {

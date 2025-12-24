@@ -1,6 +1,250 @@
 {
   "parts": [
     {
+      "id": "miata_shifter_rebuild",
+      "category": "Drivetrain & Transmission",
+      "name": "Miata Shifter Rebuild Kit",
+      "description": "The rubber boots and plastic bushings in the Miata shifter turret disintegrate over time, making the shifter feel sloppy and letting heat/noise into the cabin. A rebuild kit restores the 'rifle-bolt' feel.",
+      "specs": [
+        "Includes: Upper/Lower Boots, Pivot Cup, Wave Washers",
+        "Fluid: Replace turret oil (GL-4) while in there",
+        "Time: 30-60 mins"
+      ],
+      "compatibility": [
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "Miata (NA)", "years": "1990-1997", "notes": "Maintenance Item" },
+            { "name": "Miata (NB)", "years": "1999-2005", "notes": "Maintenance Item" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["MAZDA_MIATA_NA", "MAZDA_MIATA_NB"]
+      },
+      "universal_alternatives": [
+        { "name": "Brass Shifter Bushing", "notes": "Upgrade over plastic for tighter feel" }
+      ]
+    },
+    {
+      "id": "bmw_e60_shifter",
+      "category": "Drivetrain & Transmission",
+      "name": "BMW E60 545i Short Shifter",
+      "description": "The OEM shifter lever from the E60 545i is a popular budget 'short shifter' for E36 and E46 BMWs. It reduces throw significantly while maintaining OEM isolation and feel.",
+      "specs": [
+        "Throw Reduction: ~30-40%",
+        "Height: Slightly lower than stock",
+        "Part Number: 25117546373"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "545i (E60)", "years": "2004-2005", "notes": "Donor Vehicle" },
+            { "name": "3-Series (E36)", "years": "1992-1999", "notes": "Upgrade Candidate" },
+            { "name": "3-Series (E46)", "years": "1999-2006", "notes": "Upgrade Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["BMW_E36", "BMW_E46", "BMW_E39"]
+      }
+    },
+    {
+      "id": "honda_k_shifter_cables",
+      "category": "Drivetrain & Transmission",
+      "name": "Honda K-Series Shifter Cable Upgrade",
+      "description": "Stock shifter cables on RSX and 8th Gen Civics stretch over time, leading to missed gears. Upgrading to Hybrid Racing or Acuity cables eliminates play and improves shift confidence.",
+      "specs": [
+        "Material: Stainless Steel core",
+        "Bushings: Solid metal (vs rubber)",
+        "Benefit: Precise gate selection"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "RSX / RSX Type S", "years": "2002-2006", "notes": "Common Failure" },
+            { "name": "Civic Si (8th Gen)", "years": "2006-2011", "notes": "Common Failure" },
+            { "name": "K-Swap Vehicles", "years": "All", "notes": "Essential Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["HONDA_INTEGRA_RSX", "HONDA_CIVIC_MODERN"]
+      }
+    },
+    {
+      "id": "ford_mgw_shifter",
+      "category": "Drivetrain & Transmission",
+      "name": "MGW Short Throw Shifter",
+      "description": "Widely considered the gold standard for Mustang shifters (T5, T45, T56, MT82). It replaces the entire shifter assembly, not just the handle, eliminating the sloppy factory remote mount design.",
+      "specs": [
+        "Design: Race-spec mechanism",
+        "Throw: Adjustable (on some models)",
+        "Fixes: 2nd-3rd lockout issues"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Mustang (SN95)", "years": "1994-2004", "notes": "Upgrade" },
+            { "name": "Mustang (S197)", "years": "2005-2014", "notes": "Upgrade" },
+            { "name": "Mustang (S550)", "years": "2015-2023", "notes": "Upgrade" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_SN95", "FORD_S197", "FORD_S550"]
+      }
+    },
+    {
+      "id": "nissan_cd009_swap",
+      "category": "Drivetrain & Transmission",
+      "name": "Nissan CD009 6-Speed Transmission",
+      "description": "The CD009 (late model 350Z/G35) transmission is legendary for its strength, handling 1000hp+ on stock internals. It's a popular swap for S-Chassis, 2JZ builds, and LS swaps.",
+      "specs": [
+        "Gears: 6-Speed Manual",
+        "Strength: Extremely High",
+        "Syncros: Triple cone (smoother shifting)"
+      ],
+      "compatibility": [
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "350Z / G35 (Late)", "years": "2005-2008", "notes": "Donor Vehicle" },
+            { "name": "240SX (S13/S14)", "years": "1989-1998", "notes": "Swap Candidate" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["NISSAN_Z_SERIES", "NISSAN_S_CHASSIS"]
+      }
+    },
+    {
+      "id": "ford_4r70w_jmod",
+      "category": "Drivetrain & Transmission",
+      "name": "Ford 4R70W 'J-Mod' (Valve Body Drill)",
+      "description": "Named after Jerry Wroblewski (Ford transmission engineer), the J-Mod involves drilling specific holes in the valve body separator plate to increase fluid flow to the clutches. It makes shifts faster, firmer, and actually EXTENDS transmission life by reducing slip.",
+      "specs": [
+        "Cost: Free (just gaskets/fluid)",
+        "Benefit: Faster Shifts, Less Heat",
+        "Difficulty: Moderate (Valve body removal)"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Crown Victoria / Grand Marquis", "years": "1992-2011", "notes": "Highly Recommended" },
+            { "name": "Mustang GT (Auto)", "years": "1996-2004", "notes": "Highly Recommended" },
+            { "name": "F-150 (4R70W)", "years": "1994-2003", "notes": "Recommended" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["FORD_PANTHER", "FORD_SN95", "FORD_F150_10TH_GEN"]
+      }
+    },
+    {
+      "id": "nag1_conductor_plate",
+      "category": "Drivetrain & Transmission",
+      "name": "NAG1 / 722.6 Transmission Conductor Plate",
+      "description": "The conductor plate sits on top of the valve body in the Mercedes 722.6 (NAG1/WA580) transmission. Speed sensors built into the plate fail, causing the transmission to get stuck in 'Limp Mode' (2nd gear).",
+      "specs": [
+        "Symptoms: Limp Mode, P0715 Code",
+        "Fix: Replace Conductor Plate + Connector Plug",
+        "Fluid: Requires dipstick tool to check level"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge / Chrysler",
+          "models": [
+            { "name": "Charger / Challenger / 300 (5-Speed)", "years": "2005-2014", "notes": "Common Failure" },
+            { "name": "Sprinter Van", "years": "2003-2006", "notes": "Common Failure" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Grand Cherokee (WK)", "years": "2005-2010", "notes": "3.7L/5.7L/6.1L" },
+            { "name": "Wrangler (JK)", "years": "2012-2018", "notes": "WA580 Auto" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E-Class (W210/W211)", "years": "1996-2006", "notes": "722.6 Trans" },
+            { "name": "C-Class (W202/W203)", "years": "1996-2005", "notes": "722.6 Trans" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["CHRYSLER_LX", "CHRYSLER_LD", "CHRYSLER_LA", "JEEP_WK", "JEEP_WRANGLER_JK", "MERCEDES_W210", "MERCEDES_W211"]
+      }
+    },
+    {
+      "id": "mg_overdrive_solenoid",
+      "category": "Drivetrain & Transmission",
+      "name": "Laycock Overdrive Solenoid",
+      "description": "The solenoid that engages the overdrive unit on classic British roadsters. If OD fails to engage or drops out, this is the usual suspect. Shared across many British Leyland cars.",
+      "specs": [
+        "Voltage: 12V",
+        "Current: High draw (use a relay)",
+        "Fitment: Laycock Type J / Type LH"
+      ],
+      "compatibility": [
+        {
+          "make": "MG",
+          "models": [
+            { "name": "MGB", "years": "1962-1980", "notes": "Common Failure" }
+          ]
+        },
+        {
+          "make": "Triumph",
+          "models": [
+            { "name": "Spitfire", "years": "1962-1980", "notes": "Common Failure" },
+            { "name": "TR6", "years": "1969-1976", "notes": "Common Failure" }
+          ]
+        },
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "240 (M46 Trans)", "years": "1975-1986", "notes": "Same Solenoid" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["BRITISH_ROADSTER_MG", "BRITISH_ROADSTER_TRIUMPH", "VOLVO_200_SERIES"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "porsche_944_shift_linkage",
+      "category": "Drivetrain & Transmission",
+      "name": "Porsche 944 Short Shifter / Linkage",
+      "description": "The factory shift linkage on the 944 wears out at the transaxle end, causing extreme slop (stirring soup). Aftermarket linkages use heim joints to permanently fix this.",
+      "specs": [
+        "Location: Rear (on Transaxle)",
+        "Upgrade: Heim Joint / Rose Joint",
+        "Result: Precise, mechanical feel"
+      ],
+      "compatibility": [
+        {
+          "make": "Porsche",
+          "models": [
+            { "name": "944 (All)", "years": "1982-1991", "notes": "Highly Recommended" },
+            { "name": "924S", "years": "1986-1988", "notes": "Highly Recommended" }
+          ]
+        }
+      ],
+      "compatibility_smart": {
+        "platforms": ["PORSCHE_924_944"]
+      },
+      "universal_alternatives": [
+        { "name": "Only944 Shifter", "notes": "Popular aftermarket solution" }
+      ]
+    },
+    {
       "id": "tiptronic_filter_zf5hp19",
       "category": "Drivetrain & Transmission",
       "name": "Tiptronic Transmission Filter (ZF 5HP19)",

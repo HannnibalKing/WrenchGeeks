@@ -1,5 +1,33 @@
 {
   "transmissions": {
+    "VW_020_LINKAGE": [
+      {
+        "make": "Volkswagen",
+        "model": "Golf (Mk1/Mk2)",
+        "years": "1974-1992",
+        "notes": "Rod shifter. Prone to sloppy bushings. Upgrade: USRT SmartShift Kit."
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Jetta (Mk1/Mk2)",
+        "years": "1979-1992",
+        "notes": "Rod shifter. Upgrade: USRT SmartShift Kit."
+      }
+    ],
+    "HONDA_B_SERIES_LINKAGE": [
+      {
+        "make": "Honda",
+        "model": "Civic (EG/EK)",
+        "years": "1992-2000",
+        "notes": "Dual rod linkage. Upgrade: Energy Suspension Bushings + Skunk2 Short Throw."
+      },
+      {
+        "make": "Acura",
+        "model": "Integra (DC2)",
+        "years": "1994-2001",
+        "notes": "Dual rod linkage. Upgrade: Hybrid Racing Shifter."
+      }
+    ],
     "NISSAN_CD009": [
       {
         "make": "Nissan",
@@ -31,19 +59,25 @@
         "make": "Chevrolet",
         "model": "Camaro (Gen 4)",
         "years": "1998-2002",
-        "notes": "LS1 Input Shaft. F-Body Tailhousing."
+        "notes": "LS1 Input Shaft. F-Body Tailhousing. Best shifter: MGW."
       },
       {
         "make": "Pontiac",
         "model": "Firebird (Gen 4)",
         "years": "1998-2002",
-        "notes": "Same as Camaro."
+        "notes": "Same as Camaro. Best shifter: MGW."
+      },
+      {
+        "make": "Pontiac",
+        "model": "GTO",
+        "years": "2004-2006",
+        "notes": "GTO specific shifter location (remote mount). Needs Gmm Ripshift or MGW-P."
       },
       {
         "make": "Ford",
         "model": "Mustang Cobra",
         "years": "2003-2004",
-        "notes": "Terminator Spec. 10-spline input (upgradeable to 26)."
+        "notes": "Terminator Spec. 10-spline input. Best shifter: MGW."
       },
       {
         "make": "Dodge",
