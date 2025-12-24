@@ -5,15 +5,15 @@
     "hub_bore": "66.1mm",
     "advice": "The 'Space Saver' from a Maxima or Altima often fits the Z/G cars if you don't have the Brembo brakes. If you have Brembos, you need the specific 18-inch spare from a G35 Coupe or 350Z Track model.",
     "vehicles": [
-      { "make": "Nissan", "model": "350Z" },
-      { "make": "Infiniti", "model": "G35 Coupe" },
-      { "make": "Infiniti", "model": "G35 Sedan" },
-      { "make": "Nissan", "model": "Maxima" },
-      { "make": "Nissan", "model": "Altima" },
-      { "make": "Nissan", "model": "Rogue" },
-      { "make": "Nissan", "model": "Murano" },
-      { "make": "Infiniti", "model": "G37" },
-      { "make": "Infiniti", "model": "Q50" }
+      { "make": "Nissan", "model": "350Z", "type": "Car" },
+      { "make": "Infiniti", "model": "G35 Coupe", "type": "Car" },
+      { "make": "Infiniti", "model": "G35 Sedan", "type": "Car" },
+      { "make": "Nissan", "model": "Maxima", "type": "Car" },
+      { "make": "Nissan", "model": "Altima", "type": "Car" },
+      { "make": "Nissan", "model": "Rogue", "type": "SUV" },
+      { "make": "Nissan", "model": "Murano", "type": "SUV" },
+      { "make": "Infiniti", "model": "G37", "type": "Car" },
+      { "make": "Infiniti", "model": "Q50", "type": "Car" }
     ]
   },
   {
@@ -22,13 +22,13 @@
     "hub_bore": "72.56mm",
     "advice": "BMW spares are plentiful. A 3-Series spare (E46) is a great trunk-saver for other 5x120 cars. Watch out for the E39 5-Series—it has a huge hub bore (74.1mm) and won't fit other BMWs without rings, and other BMW wheels won't fit IT at all.",
     "vehicles": [
-      { "make": "BMW", "model": "3-Series" },
-      { "make": "BMW", "model": "Z3" },
-      { "make": "BMW", "model": "Z4" },
-      { "make": "BMW", "model": "5-Series" },
-      { "make": "BMW", "model": "1-Series" },
-      { "make": "BMW", "model": "X3" },
-      { "make": "BMW", "model": "X5" }
+      { "make": "BMW", "model": "3-Series", "type": "Car" },
+      { "make": "BMW", "model": "Z3", "type": "Car" },
+      { "make": "BMW", "model": "Z4", "type": "Car" },
+      { "make": "BMW", "model": "5-Series", "type": "Car" },
+      { "make": "BMW", "model": "1-Series", "type": "Car" },
+      { "make": "BMW", "model": "X3", "type": "SUV" },
+      { "make": "BMW", "model": "X5", "type": "SUV" }
     ]
   },
   {
@@ -37,13 +37,13 @@
     "hub_bore": "Mixed (54.1mm - 56.1mm)",
     "advice": "The 'Miata Daisy' spare is legendary, but for a cheap replacement, grab a 4x100 donut from a 90s Corolla or Civic. Just check the center hole—Honda hubs are slightly bigger (56.1mm) than Mazda (54.1mm), so a Honda spare fits a Miata, but a Miata spare won't fit a Civic!",
     "vehicles": [
-      { "make": "Mazda", "model": "Miata" },
-      { "make": "Honda", "model": "Civic" },
-      { "make": "Toyota", "model": "Corolla" },
-      { "make": "Acura", "model": "Integra" },
-      { "make": "Honda", "model": "Fit" },
-      { "make": "Toyota", "model": "Yaris" },
-      { "make": "Mazda", "model": "Protege" }
+      { "make": "Mazda", "model": "Miata", "type": "Car" },
+      { "make": "Honda", "model": "Civic", "type": "Car" },
+      { "make": "Toyota", "model": "Corolla", "type": "Car" },
+      { "make": "Acura", "model": "Integra", "type": "Car" },
+      { "make": "Honda", "model": "Fit", "type": "Car" },
+      { "make": "Toyota", "model": "Yaris", "type": "Car" },
+      { "make": "Mazda", "model": "Protege", "type": "Car" }
     ]
   },
   {
@@ -52,12 +52,12 @@
     "hub_bore": "70.5mm",
     "advice": "Mustang spares are easy to find. They share the bolt pattern with Nissan/Toyota, but the Ford hub is HUGE (70.5mm). This means a Mustang wheel fits almost anything (Nissan, Toyota, etc.), but nothing else fits a Mustang.",
     "vehicles": [
-      { "make": "Ford", "model": "Mustang" },
-      { "make": "Ford", "model": "Crown Victoria" },
-      { "make": "Lincoln", "model": "Town Car" },
-      { "make": "Mercury", "model": "Grand Marquis" },
-      { "make": "Ford", "model": "Ranger" },
-      { "make": "Ford", "model": "Explorer" }
+      { "make": "Ford", "model": "Mustang", "type": "Car" },
+      { "make": "Ford", "model": "Crown Victoria", "type": "Car" },
+      { "make": "Lincoln", "model": "Town Car", "type": "Car" },
+      { "make": "Mercury", "model": "Grand Marquis", "type": "Car" },
+      { "make": "Ford", "model": "Ranger", "type": "Truck" },
+      { "make": "Ford", "model": "Explorer", "type": "SUV" }
     ]
   },
   {
@@ -66,14 +66,14 @@
     "hub_bore": "60.1mm",
     "advice": "Toyota uses a 60.1mm hub bore. This is smaller than Nissan (66.1) and Ford (70.5). You CANNOT use a Toyota spare on a Nissan or Ford, but you CAN use a Nissan or Ford spare on a Toyota (it will just be lug-centric, which is fine for a temporary spare).",
     "vehicles": [
-      { "make": "Toyota", "model": "Camry" },
-      { "make": "Toyota", "model": "Avalon" },
-      { "make": "Toyota", "model": "RAV4" },
-      { "make": "Toyota", "model": "Highlander" },
-      { "make": "Lexus", "model": "IS" },
-      { "make": "Lexus", "model": "ES" },
-      { "make": "Lexus", "model": "GS" },
-      { "make": "Lexus", "model": "RX" }
+      { "make": "Toyota", "model": "Camry", "type": "Car" },
+      { "make": "Toyota", "model": "Avalon", "type": "Car" },
+      { "make": "Toyota", "model": "RAV4", "type": "SUV" },
+      { "make": "Toyota", "model": "Highlander", "type": "SUV" },
+      { "make": "Lexus", "model": "IS", "type": "Car" },
+      { "make": "Lexus", "model": "ES", "type": "Car" },
+      { "make": "Lexus", "model": "GS", "type": "Car" },
+      { "make": "Lexus", "model": "RX", "type": "SUV" }
     ]
   },
   {
@@ -82,13 +82,13 @@
     "hub_bore": "64.1mm",
     "advice": "Honda uses a 64.1mm hub. Similar to Toyota, you can use a Nissan (66.1) or Ford (70.5) spare on a Honda, but a Honda spare won't fit a Nissan. Acura TL/TSX spares are great donors for 5-lug Civics.",
     "vehicles": [
-      { "make": "Honda", "model": "Accord" },
-      { "make": "Honda", "model": "Civic" },
-      { "make": "Honda", "model": "CR-V" },
-      { "make": "Honda", "model": "Element" },
-      { "make": "Acura", "model": "TSX" },
-      { "make": "Acura", "model": "TL" },
-      { "make": "Acura", "model": "RSX" }
+      { "make": "Honda", "model": "Accord", "type": "Car" },
+      { "make": "Honda", "model": "Civic", "type": "Car" },
+      { "make": "Honda", "model": "CR-V", "type": "SUV" },
+      { "make": "Honda", "model": "Element", "type": "SUV" },
+      { "make": "Acura", "model": "TSX", "type": "Car" },
+      { "make": "Acura", "model": "TL", "type": "Car" },
+      { "make": "Acura", "model": "RSX", "type": "Car" }
     ]
   },
   {
@@ -97,19 +97,19 @@
     "hub_bore": "56.1mm (Subaru) vs 57.1mm (VW)",
     "advice": "Subaru spares are tricky because of AWD. You MUST ensure the spare tire diameter matches your other tires within 1/4 inch, or you will destroy your center differential. Note on Hubs: VW hubs are 57.1mm, Subaru is 56.1mm. A VW spare fits a Subaru (loose), but a Subaru spare WON'T fit a VW.",
     "vehicles": [
-      { "make": "Subaru", "model": "Impreza" },
-      { "make": "Subaru", "model": "WRX" },
-      { "make": "Subaru", "model": "Forester" },
-      { "make": "Subaru", "model": "Legacy" },
-      { "make": "Subaru", "model": "Outback" },
-      { "make": "Toyota", "model": "Celica" },
-      { "make": "Toyota", "model": "Matrix" },
-      { "make": "Volkswagen", "model": "Golf" },
-      { "make": "Volkswagen", "model": "Jetta" },
-      { "make": "Scion", "model": "tC" },
-      { "make": "Scion", "model": "FR-S" },
-      { "make": "Toyota", "model": "86" },
-      { "make": "Subaru", "model": "BRZ" }
+      { "make": "Subaru", "model": "Impreza", "type": "Car" },
+      { "make": "Subaru", "model": "WRX", "type": "Car" },
+      { "make": "Subaru", "model": "Forester", "type": "SUV" },
+      { "make": "Subaru", "model": "Legacy", "type": "Car" },
+      { "make": "Subaru", "model": "Outback", "type": "SUV" },
+      { "make": "Toyota", "model": "Celica", "type": "Car" },
+      { "make": "Toyota", "model": "Matrix", "type": "Car" },
+      { "make": "Volkswagen", "model": "Golf", "type": "Car" },
+      { "make": "Volkswagen", "model": "Jetta", "type": "Car" },
+      { "make": "Scion", "model": "tC", "type": "Car" },
+      { "make": "Scion", "model": "FR-S", "type": "Car" },
+      { "make": "Toyota", "model": "86", "type": "Car" },
+      { "make": "Subaru", "model": "BRZ", "type": "Car" }
     ]
   },
   {
@@ -118,19 +118,19 @@
     "hub_bore": "67.1mm",
     "advice": "The 'Universal Asian' size. Hyundai, Kia, Mazda, and Mitsubishi all use the 67.1mm hub. This is slightly larger than Nissan (66.1) and Toyota (60.1). A spare from this group fits almost ANY 5-lug Asian car (except Honda/Subaru), but Nissan/Toyota spares are too small to fit these cars.",
     "vehicles": [
-      { "make": "Hyundai", "model": "Genesis Coupe" },
-      { "make": "Hyundai", "model": "Veloster" },
-      { "make": "Hyundai", "model": "Sonata" },
-      { "make": "Hyundai", "model": "Elantra" },
-      { "make": "Kia", "model": "Optima" },
-      { "make": "Kia", "model": "Stinger" },
-      { "make": "Kia", "model": "Forte" },
-      { "make": "Mazda", "model": "Mazda3" },
-      { "make": "Mazda", "model": "Mazda6" },
-      { "make": "Mazda", "model": "RX-8" },
-      { "make": "Mitsubishi", "model": "Lancer" },
-      { "make": "Mitsubishi", "model": "Eclipse" },
-      { "make": "Mitsubishi", "model": "Evo" }
+      { "make": "Hyundai", "model": "Genesis Coupe", "type": "Car" },
+      { "make": "Hyundai", "model": "Veloster", "type": "Car" },
+      { "make": "Hyundai", "model": "Sonata", "type": "Car" },
+      { "make": "Hyundai", "model": "Elantra", "type": "Car" },
+      { "make": "Kia", "model": "Optima", "type": "Car" },
+      { "make": "Kia", "model": "Stinger", "type": "Car" },
+      { "make": "Kia", "model": "Forte", "type": "Car" },
+      { "make": "Mazda", "model": "Mazda3", "type": "Car" },
+      { "make": "Mazda", "model": "Mazda6", "type": "Car" },
+      { "make": "Mazda", "model": "RX-8", "type": "Car" },
+      { "make": "Mitsubishi", "model": "Lancer", "type": "Car" },
+      { "make": "Mitsubishi", "model": "Eclipse", "type": "Car" },
+      { "make": "Mitsubishi", "model": "Evo", "type": "Car" }
     ]
   },
   {
@@ -139,13 +139,13 @@
     "hub_bore": "66.6mm (Merc/Audi) vs 57.1mm (VW)",
     "advice": "Mercedes and newer Audis use 66.6mm hubs. Older VWs/Audis use 57.1mm. A Mercedes spare fits a VW (with a gap), but a VW spare won't fit a Mercedes. Always check caliper clearance on German cars!",
     "vehicles": [
-      { "make": "Volkswagen", "model": "Golf" },
-      { "make": "Volkswagen", "model": "GTI" },
-      { "make": "Volkswagen", "model": "Passat" },
-      { "make": "Audi", "model": "A4" },
-      { "make": "Audi", "model": "A6" },
-      { "make": "Mercedes-Benz", "model": "C-Class" },
-      { "make": "Mercedes-Benz", "model": "E-Class" }
+      { "make": "Volkswagen", "model": "Golf", "type": "Car" },
+      { "make": "Volkswagen", "model": "GTI", "type": "Car" },
+      { "make": "Volkswagen", "model": "Passat", "type": "Car" },
+      { "make": "Audi", "model": "A4", "type": "Car" },
+      { "make": "Audi", "model": "A6", "type": "Car" },
+      { "make": "Mercedes-Benz", "model": "C-Class", "type": "Car" },
+      { "make": "Mercedes-Benz", "model": "E-Class", "type": "Car" }
     ]
   },
   {
@@ -154,13 +154,13 @@
     "hub_bore": "63.4mm",
     "advice": "The 'Ford/Volvo Alliance' means spares from a Volvo S40/V50/S60 often fit Ford Focus (2012+) and Fusion. Jaguar also uses this pattern. It's a weird size, so grab one if you see it.",
     "vehicles": [
-      { "make": "Ford", "model": "Focus" },
-      { "make": "Ford", "model": "Fusion" },
-      { "make": "Volvo", "model": "S40" },
-      { "make": "Volvo", "model": "S60" },
-      { "make": "Volvo", "model": "V50" },
-      { "make": "Volvo", "model": "XC60" },
-      { "make": "Jaguar", "model": "X-Type" }
+      { "make": "Ford", "model": "Focus", "type": "Car" },
+      { "make": "Ford", "model": "Fusion", "type": "Car" },
+      { "make": "Volvo", "model": "S40", "type": "Car" },
+      { "make": "Volvo", "model": "S60", "type": "Car" },
+      { "make": "Volvo", "model": "V50", "type": "Car" },
+      { "make": "Volvo", "model": "XC60", "type": "SUV" },
+      { "make": "Jaguar", "model": "X-Type", "type": "Car" }
     ]
   },
   {
@@ -169,14 +169,14 @@
     "hub_bore": "Various (106mm+)",
     "advice": "The universal truck pattern. Chevy Silverado, Toyota Tacoma/Tundra, and Nissan Titan all share the bolt pattern. However, hub bores vary wildly. A Chevy wheel (78mm hub) won't fit a Toyota (106mm hub), but a Toyota wheel fits almost anything.",
     "vehicles": [
-      { "make": "Chevrolet", "model": "Silverado" },
-      { "make": "Chevrolet", "model": "Tahoe" },
-      { "make": "GMC", "model": "Sierra" },
-      { "make": "Toyota", "model": "Tacoma" },
-      { "make": "Toyota", "model": "Tundra" },
-      { "make": "Toyota", "model": "4Runner" },
-      { "make": "Nissan", "model": "Titan" },
-      { "make": "Nissan", "model": "Armada" }
+      { "make": "Chevrolet", "model": "Silverado", "type": "Truck" },
+      { "make": "Chevrolet", "model": "Tahoe", "type": "SUV" },
+      { "make": "GMC", "model": "Sierra", "type": "Truck" },
+      { "make": "Toyota", "model": "Tacoma", "type": "Truck" },
+      { "make": "Toyota", "model": "Tundra", "type": "Truck" },
+      { "make": "Toyota", "model": "4Runner", "type": "SUV" },
+      { "make": "Nissan", "model": "Titan", "type": "Truck" },
+      { "make": "Nissan", "model": "Armada", "type": "SUV" }
     ]
   }
 ]

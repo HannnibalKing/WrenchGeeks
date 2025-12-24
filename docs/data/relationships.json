@@ -608,6 +608,128 @@
         "notes": "Platform Mate (Epsilon II)"
       }
     ],
+    "GM_W_BODY_GEN2": [
+      {
+        "make": "Buick",
+        "model": "Regal",
+        "years": "1997–2004",
+        "notes": "Platform Mate (W-Body)"
+      },
+      {
+        "make": "Buick",
+        "model": "Century",
+        "years": "1997–2005",
+        "notes": "Platform Mate (W-Body)"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Grand Prix",
+        "years": "1997–2003",
+        "notes": "Platform Mate (W-Body)"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Impala",
+        "years": "2000–2005",
+        "notes": "Platform Mate (W-Body)"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Monte Carlo",
+        "years": "2000–2005",
+        "notes": "Platform Mate (W-Body)"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "Intrigue",
+        "years": "1998–2002",
+        "notes": "Platform Mate (W-Body)"
+      }
+    ],
+    "GM_W_BODY_GEN3": [
+      {
+        "make": "Pontiac",
+        "model": "Grand Prix",
+        "years": "2004–2008",
+        "notes": "Platform Mate (W-Body)"
+      },
+      {
+        "make": "Buick",
+        "model": "LaCrosse",
+        "years": "2005–2009",
+        "notes": "Platform Mate (W-Body)"
+      },
+      {
+        "make": "Buick",
+        "model": "Allure",
+        "years": "2005–2009",
+        "notes": "Platform Mate (W-Body - Canada)"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Impala",
+        "years": "2006–2016",
+        "notes": "Platform Mate (W-Body)"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Monte Carlo",
+        "years": "2006–2007",
+        "notes": "Platform Mate (W-Body)"
+      }
+    ],
+    "GM_H_BODY": [
+      {
+        "make": "Buick",
+        "model": "LeSabre",
+        "years": "2000–2005",
+        "notes": "Platform Mate (H-Body)"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Bonneville",
+        "years": "2000–2005",
+        "notes": "Platform Mate (H-Body)"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "Aurora",
+        "years": "2001–2003",
+        "notes": "Platform Mate (G-Body/H-Body Hybrid)"
+      }
+    ],
+    "GM_G_BODY_RWD": [
+      {
+        "make": "Buick",
+        "model": "Regal / Grand National",
+        "years": "1982–1987",
+        "notes": "Platform Mate (G-Body)"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Monte Carlo",
+        "years": "1981–1988",
+        "notes": "Platform Mate (G-Body)"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "Cutlass Supreme",
+        "years": "1982–1988",
+        "notes": "Platform Mate (G-Body)"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Grand Prix",
+        "years": "1982–1987",
+        "notes": "Platform Mate (G-Body)"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "El Camino",
+        "years": "1982–1987",
+        "notes": "Platform Mate (G-Body)"
+      }
+    ],
     "SAAB_SUBARU_GG": [
       {
         "make": "Saab",
@@ -6089,9 +6211,21 @@
       },
       {
         "make": "Pontiac",
+        "model": "Grand Prix GT/SE",
+        "years": "1997–2008",
+        "notes": "Engine Match (L36/L26 NA)"
+      },
+      {
+        "make": "Pontiac",
         "model": "Bonneville SSEi",
         "years": "1992–2005",
         "notes": "Engine Match (L67 Supercharged)"
+      },
+      {
+        "make": "Pontiac",
+        "model": "Bonneville SE/SLE",
+        "years": "1992–2005",
+        "notes": "Engine Match (L36 NA)"
       },
       {
         "make": "Buick",
@@ -6100,9 +6234,57 @@
         "notes": "Engine Match (L67 Supercharged)"
       },
       {
+        "make": "Buick",
+        "model": "Regal LS",
+        "years": "1997–2004",
+        "notes": "Engine Match (L36 NA)"
+      },
+      {
+        "make": "Buick",
+        "model": "LeSabre",
+        "years": "1996–2005",
+        "notes": "Engine Match (L36 NA)"
+      },
+      {
+        "make": "Buick",
+        "model": "Park Avenue Ultra",
+        "years": "1996–2005",
+        "notes": "Engine Match (L67 Supercharged)"
+      },
+      {
+        "make": "Buick",
+        "model": "Park Avenue",
+        "years": "1996–2005",
+        "notes": "Engine Match (L36 NA)"
+      },
+      {
         "make": "Chevrolet",
         "model": "Impala SS",
         "years": "2004–2005",
+        "notes": "Engine Match (L67 Supercharged)"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Impala",
+        "years": "2000–2005",
+        "notes": "Engine Match (L36 NA)"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Monte Carlo SS",
+        "years": "2004–2005",
+        "notes": "Engine Match (L67 Supercharged)"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Monte Carlo",
+        "years": "2000–2005",
+        "notes": "Engine Match (L36 NA)"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "LSS",
+        "years": "1996–1999",
         "notes": "Engine Match (L67 Supercharged)"
       },
       {

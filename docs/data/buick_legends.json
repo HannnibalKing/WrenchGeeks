@@ -1,0 +1,157 @@
+[
+  {
+    "parts": [
+      {
+        "name": "L67 Supercharger Top Swap Kit",
+        "category": "Engine Mechanical",
+        "description": "Everything needed to convert a naturally aspirated 3800 Series II (L36) to Supercharged (L67). Requires heads, lower intake, supercharger (M90), fuel rail, injectors, throttle body, idler stand, and harmonic balancer.",
+        "compatibility": [
+          {
+            "make": "Pontiac",
+            "models": [
+              { "name": "Grand Prix GT", "years": "1997-2003", "notes": "Direct Bolt-on (Requires ECU Tune)" },
+              { "name": "Bonneville SE", "years": "1996-2005", "notes": "Direct Bolt-on (Requires ECU Tune)" },
+              { "name": "Firebird (V6)", "years": "1996-2002", "notes": "Requires cowl modification for M90 clearance" }
+            ]
+          },
+          {
+            "make": "Buick",
+            "models": [
+              { "name": "Regal LS", "years": "1997-2004", "notes": "Direct Bolt-on (Requires ECU Tune)" },
+              { "name": "LeSabre", "years": "1996-2005", "notes": "Direct Bolt-on (Requires ECU Tune)" },
+              { "name": "Park Avenue", "years": "1996-2005", "notes": "Direct Bolt-on (Requires ECU Tune)" }
+            ]
+          },
+          {
+            "make": "Chevrolet",
+            "models": [
+              { "name": "Impala", "years": "2000-2005", "notes": "Direct Bolt-on (Requires ECU Tune)" },
+              { "name": "Monte Carlo", "years": "2000-2005", "notes": "Direct Bolt-on (Requires ECU Tune)" },
+              { "name": "Camaro (V6)", "years": "1996-2002", "notes": "Requires cowl modification for M90 clearance" }
+            ]
+          }
+        ],
+        "compatibility_smart": {
+          "engines": ["GM_3800_SERIES"]
+        },
+        "pro_tip": "You CANNOT just bolt the supercharger onto the L36 heads. The fuel injectors go into the heads on the L67, but into the intake on the L36. You MUST swap the heads or machine the L36 heads to accept the injectors. Also, the L36 has higher compression (9.4:1) than the L67 (8.5:1), so you'll make more power but need to be careful with timing/knock.",
+        "average_price": "$300 - $600 (Junkyard)"
+      },
+      {
+        "name": "Regal GS / Brembo Brake Upgrade",
+        "category": "Brakes",
+        "description": "4-Piston Brembo Calipers and 355mm Rotors from the Buick Regal GS (2012-2017).",
+        "compatibility": [
+          {
+            "make": "Buick",
+            "models": [
+              { "name": "Regal Turbo", "years": "2011-2017", "notes": "Direct Bolt-on (Requires 19\"+ Wheels)" },
+              { "name": "LaCrosse", "years": "2010-2016", "notes": "Direct Bolt-on (Requires 19\"+ Wheels)" }
+            ]
+          },
+          {
+            "make": "Chevrolet",
+            "models": [
+              { "name": "Malibu", "years": "2013-2015", "notes": "Direct Bolt-on (Requires 19\"+ Wheels)" },
+              { "name": "Impala (New Gen)", "years": "2014-2020", "notes": "Direct Bolt-on (Requires 19\"+ Wheels)" }
+            ]
+          },
+          {
+            "make": "Cadillac",
+            "models": [
+              { "name": "XTS", "years": "2013-2019", "notes": "Same Calipers (J55 Option)" }
+            ]
+          }
+        ],
+        "compatibility_smart": {
+          "platforms": ["GM_EPSILON_2"]
+        },
+        "pro_tip": "These massive 4-piston Brembos are a direct bolt-on for Epsilon II cars. You need the calipers, pads, rotors, and the caliper bolts (they are specific). You MUST run 19-inch or larger wheels to clear them. Some 18s might fit with spacers, but it's tight.",
+        "average_price": "$250 - $400 (Per Pair)"
+      },
+      {
+        "name": "Grand National Intercooler (Stock Location)",
+        "category": "Engine Mechanical",
+        "description": "Stock or upgraded intercooler for the Buick 3.8L Turbo (LC2).",
+        "compatibility": [
+          {
+            "make": "Buick",
+            "models": [
+              { "name": "Grand National", "years": "1986-1987", "notes": "Direct Fit" },
+              { "name": "Regal T-Type", "years": "1986-1987", "notes": "Direct Fit" },
+              { "name": "GNX", "years": "1987", "notes": "Direct Fit" }
+            ]
+          },
+          {
+            "make": "Pontiac",
+            "models": [
+              { "name": "Trans Am (Turbo)", "years": "1989", "notes": "Different piping required (20th Anniversary)" }
+            ]
+          }
+        ],
+        "pro_tip": "The stock 'SLIC' (Stock Location Intercooler) has a restrictive scoop. Upgrading to a 'stretched' SLIC or a Front Mount Intercooler (FMIC) is essential for builds over 400hp. The 1989 Turbo Trans Am used the same engine but different heads (FWD style) and different intercooler packaging.",
+        "average_price": "$150 - $800"
+      },
+      {
+        "name": "GMPP Handling Kit (Sway Bars & STB)",
+        "category": "Suspension/Steering",
+        "description": "GM Performance Parts sway bars and strut tower braces originally for the Impala SS and Grand Prix GXP.",
+        "compatibility": [
+          {
+            "make": "Buick",
+            "models": [
+              { "name": "Regal", "years": "1997-2004", "notes": "Direct Bolt-on" },
+              { "name": "Century", "years": "1997-2005", "notes": "Direct Bolt-on (Huge Upgrade)" },
+              { "name": "LaCrosse", "years": "2005-2009", "notes": "Direct Bolt-on" }
+            ]
+          },
+          {
+            "make": "Pontiac",
+            "models": [
+              { "name": "Grand Prix", "years": "1997-2008", "notes": "Direct Bolt-on" }
+            ]
+          },
+          {
+            "make": "Chevrolet",
+            "models": [
+              { "name": "Impala", "years": "2000-2013", "notes": "Direct Bolt-on" },
+              { "name": "Monte Carlo", "years": "2000-2007", "notes": "Direct Bolt-on" }
+            ]
+          }
+        ],
+        "compatibility_smart": {
+          "platforms": ["GM_W_BODY_GEN2", "GM_W_BODY_GEN3"]
+        },
+        "pro_tip": "The W-Body chassis is floppy. Adding the GMPP front and rear strut tower braces (STB) and the thicker sway bars from an Impala SS or GXP transforms the handling. Don't forget to upgrade the sway bar bushings to polyurethane, as the stock rubber ones rot out.",
+        "average_price": "$50 - $150"
+      },
+      {
+        "name": "Northstar Throttle Body Swap",
+        "category": "Engine Mechanical",
+        "description": "Upgrading the L67/L32 throttle body to the larger unit from a Cadillac Northstar V8.",
+        "compatibility": [
+          {
+            "make": "Buick",
+            "models": [
+              { "name": "Regal GS", "years": "1997-2004", "notes": "Requires Adapter Plate + MAF tuning" },
+              { "name": "Park Avenue Ultra", "years": "1996-2005", "notes": "Requires Adapter Plate + MAF tuning" },
+              { "name": "Riviera", "years": "1996-1999", "notes": "Requires Adapter Plate + MAF tuning" }
+            ]
+          },
+          {
+            "make": "Pontiac",
+            "models": [
+              { "name": "Grand Prix GTP", "years": "1997-2008", "notes": "Requires Adapter Plate + MAF tuning" },
+              { "name": "Bonneville SSEi", "years": "1996-2005", "notes": "Requires Adapter Plate + MAF tuning" }
+            ]
+          }
+        ],
+        "compatibility_smart": {
+          "engines": ["GM_3800_SERIES"]
+        },
+        "pro_tip": "The stock L67 TB is 69mm. The Northstar TB is 75mm. You need an adapter plate (ZZP or intense-racing) and you MUST tune the MAF table, or the car will run lean and shift poorly. Great for ported supercharger builds.",
+        "average_price": "$40 - $100"
+      }
+    ]
+  }
+]

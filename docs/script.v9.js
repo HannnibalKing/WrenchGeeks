@@ -71,7 +71,12 @@ class CompatibilityEngine {
                 return g.vehicles.some(v => {
                     if (v.make !== make) return false;
                     const vName = this.normalize(v.model || v.name);
-                    return vName === target || vName.includes(target) || target.includes(vName);
+                    const isMatch = vName === target || vName.includes(target) || target.includes(vName);
+                    if (isMatch) {
+                        attributes.vehicleType = v.type; // Capture Type
+                        return true;
+                    }
+                    return false;
                 });
             });
             if (group) {
@@ -270,7 +275,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/audio_electronics.json",
         "data/ecu_secrets.json",
         "data/porsche_generations.json",
-        "data/bmw_mercedes_generations.json"
+        "data/bmw_mercedes_generations.json",
+        "data/buick_legends.json"
     ];
 
     let relationships = { engines: {}, platforms: {}, transmissions: {} };
@@ -753,7 +759,7 @@ document.addEventListener("DOMContentLoaded", () => {
             displayDonors(vehicleAttrs.platformId, vehicleAttrs.engineId, vehicleAttrs.transmissionId, make, model);
 
             displayTips(make, model);
-            displayMariaAdvice(vehicleAttrs.spareTireGroupId, make, model);
+            displayMariaAdvice(vehicleAttrs.spareTireGroupId, make, model, vehicleAttrs.vehicleType);
 
             let filteredParts = parts;
 
@@ -859,36 +865,54 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function displayMariaAdvice(groupId, make, model) {
-        if (!tipsList || !groupId) return;
+    function displayMariaAdvice(groupId, make, model, vehicleType) {
+        const mariaSection = document.getElementById("mariaSection");
+        const mariaContent = document.getElementById("mariaContent");
+        
+        if (!mariaSection || !mariaContent) return;
+        
+        mariaSection.classList.add("hidden");
+        mariaContent.innerHTML = "";
+
+        if (!groupId) return;
         
         const group = spareTireData.find(g => g.id === groupId);
         if (!group) return;
 
-        tipsList.classList.remove("hidden");
-        
-        const div = document.createElement("div");
-        div.className = "tip-card tip-success"; // Use success color for Maria's advice
-        div.style.borderLeft = "4px solid #e91e63"; // Pink accent for Maria
+        mariaSection.classList.remove("hidden");
         
         // Filter out current vehicle from list
-        const otherVehicles = group.vehicles.filter(v => {
+        let otherVehicles = group.vehicles.filter(v => {
             const vName = v.model || v.name;
             return !(v.make === make && (vName === model || model.includes(vName)));
         });
 
+        // Safety Filter: Vehicle Type
+        let safetyWarning = "";
+        if (vehicleType) {
+            const originalCount = otherVehicles.length;
+            const safeVehicles = otherVehicles.filter(v => v.type === vehicleType);
+            
+            if (safeVehicles.length < originalCount) {
+                safetyWarning = `<div style="margin-top:0.5rem; padding:0.5rem; background:rgba(255, 152, 0, 0.1); border-left:3px solid #ff9800; font-size:0.9em;">
+                    <strong>⚠️ Safety Check:</strong> We hid ${originalCount - safeVehicles.length} donors because they are a different vehicle class (e.g., Truck vs Car). 
+                    Using a spare from a different class can be dangerous due to load rating and tire diameter differences.
+                </div>`;
+                otherVehicles = safeVehicles;
+            }
+        }
+
         const vehicleList = otherVehicles.map(v => `<li><strong>${v.make} ${v.model}</strong> ${v.notes ? `(${v.notes})` : ""}</li>`).join("");
 
-        div.innerHTML = `
-            <h4 style="color:#e91e63;">👩‍🔧 Maria's Advice: Spare Tire Secret</h4>
+        mariaContent.innerHTML = `
             <p><strong>Bolt Pattern:</strong> ${group.bolt_pattern} | <strong>Hub Bore:</strong> ${group.hub_bore}</p>
             <p>${group.advice}</p>
-            <p><strong>Compatible Donors:</strong></p>
+            ${safetyWarning}
+            <p><strong>Compatible Donors (${vehicleType || "All Types"}):</strong></p>
             <ul style="margin-top:0.5rem; padding-left:1.2rem;">
                 ${vehicleList}
             </ul>
         `;
-        tipsList.insertBefore(div, tipsList.firstChild); // Put Maria's advice at the top
     }
 
     function displayDonors(platformId, engineId, transmissionId, make, model) {
@@ -1064,7 +1088,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    const kbSearchInput = document.getElementById('kbSearchInput');
+    const kbSearchInput = null;
 
     function getActiveCategory() {
         const activeBtn = document.querySelector('.filter-btn.active');
@@ -1072,11 +1096,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function getSearchQuery() {
-        return kbSearchInput ? kbSearchInput.value.toLowerCase().trim() : '';
+        return '';
     }
 
     function refreshKB() {
-        renderKnowledgeBase(getActiveCategory(), getSearchQuery());
+        renderKnowledgeBase(getActiveCategory(), '');
     }
 
     kbFilters.forEach(filter => {
@@ -1086,10 +1110,6 @@ document.addEventListener("DOMContentLoaded", () => {
             refreshKB();
         });
     });
-
-    if (kbSearchInput) {
-        kbSearchInput.addEventListener('input', refreshKB);
-    }
 
     function renderKnowledgeBase(filter, query) {
         if (!kbContent) return;
