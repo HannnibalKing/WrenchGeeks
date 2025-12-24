@@ -952,16 +952,39 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        const vehicleList = otherVehicles.map(v => `<li><strong>${v.make} ${v.model}</strong> ${v.notes ? `(${v.notes})` : ""}</li>`).join("");
+        let vehicleListHtml = "";
+        if (otherVehicles.length > 25) {
+            const mid = Math.ceil(otherVehicles.length / 2);
+            const left = otherVehicles.slice(0, mid);
+            const right = otherVehicles.slice(mid);
+            
+            const renderLi = v => `<li><strong>${v.make} ${v.model}</strong> ${v.notes ? `(${v.notes})` : ""}</li>`;
+            
+            vehicleListHtml = `
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <ul style="margin-top:0.5rem; padding-left:1.2rem;">
+                        ${left.map(renderLi).join("")}
+                    </ul>
+                    <ul style="margin-top:0.5rem; padding-left:1.2rem;">
+                        ${right.map(renderLi).join("")}
+                    </ul>
+                </div>
+            `;
+        } else {
+            const listItems = otherVehicles.map(v => `<li><strong>${v.make} ${v.model}</strong> ${v.notes ? `(${v.notes})` : ""}</li>`).join("");
+            vehicleListHtml = `
+                <ul style="margin-top:0.5rem; padding-left:1.2rem;">
+                    ${listItems}
+                </ul>
+            `;
+        }
 
         mariaContent.innerHTML = `
             <p><strong>Bolt Pattern:</strong> ${group.bolt_pattern} | <strong>Hub Bore:</strong> ${group.hub_bore}</p>
             <p>${group.advice}</p>
             ${safetyWarning}
             <p><strong>Compatible Donors (${vehicleType || "All Types"}):</strong></p>
-            <ul style="margin-top:0.5rem; padding-left:1.2rem;">
-                ${vehicleList}
-            </ul>
+            ${vehicleListHtml}
         `;
     }
 
