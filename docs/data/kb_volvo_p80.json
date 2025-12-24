@@ -1,0 +1,51 @@
+[
+  {
+    "category": "mechanical",
+    "title": "Volvo 850 T-5R / 850 R Identification",
+    "content": "The '6750' is a typo for the legendary Volvo 850 T-5R (1995) and 850 R (1996-1997). These P80 platform cars are the holy grail of 90s Volvo performance. The T-5R was a limited run (Yellow/Black/Green) with a 15G turbo. The 850 R followed with mass production. Note: Euro Manual 850 Rs got the bigger 16T turbo and LSD (M59 transmission), while US/Auto versions kept the 15G.",
+    "severity": "Info",
+    "related_parts": ["volvo_850_t5r", "volvo_850_r", "p80_platform"]
+  },
+  {
+    "category": "interchange",
+    "title": "P80 Platform 'Lego' Interchange",
+    "content": "The Volvo P80 platform is highly modular. Most mechanical parts are interchangeable between the 850 (1993-1997), S70/V70 (1998-2000), and C70 (1998-2004). You can often bolt newer parts (brakes, turbos, manifolds) from the 1999-2000 models onto an older 850.",
+    "severity": "High",
+    "related_parts": ["volvo_s70", "volvo_v70", "volvo_c70"]
+  },
+  {
+    "category": "hacks",
+    "title": "The 'Japan' Manifold Upgrade",
+    "content": "The best factory exhaust manifold for an 850 is the 'Japan' or 'R' manifold (Part # 30637921) found on 2004-2007 S60 R / V70 R models. It flows significantly better than the stock 850 manifold and is a direct bolt-on to the 5-cylinder head. Look for it on P2 chassis R models in the junkyard.",
+    "severity": "High",
+    "related_parts": ["volvo_r_manifold", "volvo_s60r", "volvo_v70r"]
+  },
+  {
+    "category": "mechanical",
+    "title": "Mitsubishi TD04HL Turbo Hierarchy",
+    "content": "Stock 850 turbos run out of breath quickly. Upgrade path: 15G (Stock T-5R) -> 16T (1998 S70 T5) -> 18T (V70 R Phase 3) -> 19T (2000 V70 R AWD). The 19T is the 'Holy Grail' of stock-frame turbos, good for 330hp+. Warning: Check your exhaust flange type (Conical, Straight, or Angled) before buying.",
+    "severity": "Medium",
+    "related_parts": ["td04hl_15g", "td04hl_16t", "td04hl_18t", "td04hl_19t"]
+  },
+  {
+    "category": "hacks",
+    "title": "302mm Brake Upgrade (OEM+)",
+    "content": "The cheapest big brake kit for an 850. You need the caliper brackets (Part # 8602456) and 302mm rotors from a 1999-2000 V70 R or C70. You reuse your existing calipers; the bracket just moves them further out for more leverage. Requires 16-inch wheels minimum.",
+    "severity": "Medium",
+    "related_parts": ["volvo_302mm_brakes", "volvo_8602456"]
+  },
+  {
+    "category": "mechanical",
+    "title": "Whiteblock Internals: N vs RN",
+    "content": "The 850 uses the 'N' engine (1993-1998). The newer 'RN' engines (1999+, found in S60/V70) feature lighter cranks, longer rods, and better flowing heads. You can swap an RN block (e.g., from a 2002 S60 T5) into an 850 for a stronger base, but keep your original manifolds and sensors.",
+    "severity": "High",
+    "related_parts": ["volvo_whiteblock", "volvo_rn_engine"]
+  },
+  {
+    "category": "tips",
+    "title": "Junkyard Gold: 1998 S70 T5",
+    "content": "If you see a 1998 S70 T5 in the yard, grab the ECU (tunable M4.4), the 16T turbo (straight flange), and the White Injectors (350cc). These are perfect upgrades for a base 850 Turbo.",
+    "severity": "Medium",
+    "related_parts": ["volvo_s70_t5", "bosch_m4.4"]
+  }
+]
