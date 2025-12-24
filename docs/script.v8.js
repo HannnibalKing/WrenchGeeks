@@ -1112,15 +1112,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     .then(data => updateCounter(data.value))
                     .catch(err => {
                         console.error('All API counters failed:', err);
-                        // Final Fallback: LocalStorage (so it never shows empty)
-                        let localCount = localStorage.getItem('wrenchgeeks_local_visits');
-                        if (!localCount) {
-                            localCount = 1337; // Start at a cool number
-                        } else {
-                            localCount = parseInt(localCount) + 1;
-                        }
-                        localStorage.setItem('wrenchgeeks_local_visits', localCount);
-                        updateCounter(localCount);
+                        // If both fail, show dashes (no fake numbers)
+                        const digits = flipCounter.querySelectorAll('.digit');
+                        digits.forEach(d => d.innerText = '-');
                     });
             });
     }
