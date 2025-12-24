@@ -1050,4 +1050,38 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // --- Retro Visitor Counter ---
+    const flipCounter = document.getElementById('flip-counter');
+    if (flipCounter) {
+        // Using countapi.xyz as a fallback since counterapi.dev might be blocked or rate-limited
+        // Namespace: wrenchgeeks_v2, Key: visits
+        const updateCounter = (count) => {
+            const countStr = count.toString().padStart(6, '0');
+            const digits = flipCounter.querySelectorAll('.digit');
+            countStr.split('').forEach((num, index) => {
+                if (digits[index]) digits[index].innerText = num;
+            });
+        };
+
+        // Try primary service
+        fetch('https://api.counterapi.dev/v1/wrenchgeeks/visits/up')
+            .then(res => {
+                if (!res.ok) throw new Error('Primary counter failed');
+                return res.json();
+            })
+            .then(data => updateCounter(data.count))
+            .catch(() => {
+                // Fallback to secondary service
+                console.log('Primary counter failed, trying fallback...');
+                fetch('https://api.countapi.xyz/hit/wrenchgeeks_v2/visits')
+                    .then(res => res.json())
+                    .then(data => updateCounter(data.value))
+                    .catch(err => {
+                        console.error('All counters failed:', err);
+                        const digits = flipCounter.querySelectorAll('.digit');
+                        digits.forEach(d => d.innerText = '-');
+                    });
+            });
+    }
+
 });

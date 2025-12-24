@@ -565,8 +565,73 @@ button#searchButton:not(:disabled) {
 .cashapp { background-color: #00D632; }
 .venmo { background-color: #008CFF; }
 .paypal { background-color: #00457C; }
+.crypto { background-color: #F7931A; }
 
+/* --- RETRO FLIP COUNTER --- */
+.retro-counter-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    z-index: 100; /* Ensure it sits on top */
+}
 
- . c r y p t o   {   b a c k g r o u n d - c o l o r :   # F 7 9 3 1 A ;   } 
-  
- 
+.flip-counter {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 5px;
+}
+
+.digit {
+    background-color: #111;
+    color: var(--accent-color);
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 30px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+/* The 'Split' effect */
+.digit::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    z-index: 2;
+}
+
+/* Glossy top half */
+.digit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    z-index: 1;
+}
+
+.counter-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+

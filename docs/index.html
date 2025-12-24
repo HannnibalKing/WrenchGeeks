@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WrenchGeeks - The Garage</title>
-    <link rel="stylesheet" href="style.v2.css">
+    <link rel="stylesheet" href="style.v3.css">
 </head>
 <body>
-    <header>
+    <header style="position: relative;">
         <div class="container" style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+            
             <h1 style="margin:0;">WrenchGeeks 🔧</h1>
             <nav class="main-nav">
                 <button class="nav-tab active" data-target="searchSection">Find Parts</button>
                 <button class="nav-tab" data-target="knowledgeSection">Knowledge Base</button>
             </nav>
+        </div>
+
+        <!-- RETRO COUNTER (Top Right) -->
+        <div class="retro-counter-box" style="position: absolute; top: 15px; right: 20px;">
+            <div id="flip-counter" class="flip-counter">
+                <span class="digit">0</span><span class="digit">0</span><span class="digit">0</span><span class="digit">0</span><span class="digit">0</span><span class="digit">0</span>
+            </div>
+            <div class="counter-label">MECHANICS HAVE VIEWED THIS SITE</div>
         </div>
     </header>
 
@@ -218,6 +227,6 @@
     </footer>
 
     <script src="kb_data.js"></script>
-    <script src="script.v3.js"></script>
+    <script src="script.v4.js"></script>
 </body>
 </html>
