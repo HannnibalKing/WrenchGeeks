@@ -19,5 +19,79 @@
     "content": "Always check fluid levels when the engine is cold. Hot fluids expand and give false readings. Use the dipstick for oil, and check the reservoir for other fluids.",
     "severity": "Medium",
     "related_parts": []
+  },
+  {
+    "category": "mechanical",
+    "title": "Nissan CD009 Transmission Identification",
+    "content": "The CD009 (and its replacement, the CD00A) is the strongest version of the Nissan 6-speed manual found in the 350Z and G35. \n\n**Identification:**\n*   **Early (CD001-CD008):** Found in 2003-2004 models. Prone to synchro grinding (especially 3rd gear). Avoid for high power.\n*   **CD009 (2005-2006):** Found in 'RevUp' engine models and late DEs. Features triple-cone synchros on 1st, 2nd, and 3rd, and double-cone on 4th. The case usually has 'CD009' stamped or cast near the shifter, but not always. The surest sign is the VIN year or a physical inspection of the synchros.\n*   **CD00A:** The current service replacement part from Nissan. It is functionally identical to the CD009 but with minor casting updates.\n\n**Swap Notes:** The CD009 bellhousing bolt pattern fits all VQ35DE, VQ35HR, and VQ37VHR engines, but the starter location and clutch slave cylinder setup differ between DE (external slave) and HR/VHR (internal CSC).",
+    "severity": "Info",
+    "related_parts": [
+      "nissan_cd009",
+      "nissan_cd00a",
+      "vq35de_transmission"
+    ]
+  },
+  {
+    "category": "interchange",
+    "title": "Akebono Big Brake Upgrade (Nissan Z/G)",
+    "content": "The 'Sport Package' brakes from the 370Z (Z34) and G37 (V36) are a massive upgrade for older Nissan chassis (350Z, S13, S14, S15).\n\n**Specs:**\n*   **Front:** 4-Piston Calipers, 14.0\" (355mm) Rotors.\n*   **Rear:** 2-Piston Calipers, 13.8\" (350mm) Rotors.\n\n**Fitment:**\n*   **370Z / G37:** Direct bolt-on for base models (requires 19\" wheels or specific 18\"s with clearance).\n*   **350Z (Z33) / G35 (V35):** Requires adapter brackets (caliper mounting spacing is different). The brake lines also differ (banjo bolt vs. direct line).\n*   **S-Chassis (240SX):** Requires adapter brackets and usually 17\"+ wheels with low offset.",
+    "severity": "High",
+    "related_parts": [
+      "nissan_akebono_calipers",
+      "nissan_370z_brakes",
+      "infiniti_g37_brakes"
+    ]
+  },
+  {
+    "category": "mechanical",
+    "title": "Miata 1.6L vs 1.8L Differentials (The 'Glass' Diff)",
+    "content": "The rear differential is the weak link in early Miatas.\n\n*   **1.6L (1990-1993):** Uses a 6-inch ring gear. Known as the 'Glass Diff'. It is extremely fragile and can break even at stock power levels if launched hard. Avoid spending money on LSDs for this unit.\n*   **1.8L (1994-2005):** Uses a 7-inch ring gear. Significantly stronger. Can handle 250+ whp reliably. \n\n**Upgrade Path:** If you have a 1.6L NA, the best upgrade is to swap the entire rear subframe, driveshaft, and axles from a 1.8L car. The Torsen LSD found in 1994+ 'R' package and some 'M' editions is the holy grail for street/track builds.",
+    "severity": "Critical",
+    "related_parts": [
+      "mazda_miata_diff",
+      "mazda_torsen_lsd",
+      "mazda_viscous_lsd"
+    ]
+  },
+  {
+    "category": "hacks",
+    "title": "The 'Exhintake' Cam Mod (Mazda BP Engine)",
+    "content": "A legendary budget power mod for the Mazda 1.8L BP engine (NA/NB).\n\n**The Hack:** The exhaust camshaft from a BP engine has a duration and lift profile that works aggressively well on the *intake* side. By sourcing a second exhaust cam and installing it in the intake position, you gain duration (typically ~251° vs stock ~240°) and lift.\n\n**The Catch:** You cannot just bolt it in. You must either:\n1.  Drill a new dowel pin hole in the cam gear to correct the timing.\n2.  Use an adjustable cam gear to dial out the phase difference.\n\n**Result:** A cheap 6-10whp gain at the top end, often for the cost of a junkyard camshaft.",
+    "severity": "Medium",
+    "related_parts": [
+      "mazda_bp_engine",
+      "mazda_miata_cams"
+    ]
+  },
+  {
+    "category": "mechanical",
+    "title": "Nissan VQ35DE vs. RevUp vs. HR",
+    "content": "Not all 3.5L VQ engines are created equal. Knowing the difference is vital for swaps and parts ordering.\n\n*   **VQ35DE (2003-2006):** Single throttle body. Intake collector is flat on top. Redline ~6600. Known for oil consumption in later years.\n*   **VQ35DE 'RevUp' (2005-2006 35th Anniv/Track):** Variable exhaust timing added. Redline 7000. Notorious for high oil consumption.\n*   **VQ35HR (2007-2008 350Z):** 'High Rev'. Dual throttle bodies. Symmetrical intake. Redline 7500. 80% different internal parts. Much stronger block, taller deck height. Transmission bolt pattern is same, but slave cylinder is internal (CSC).\n*   **VQ37VHR (370Z/G37):** The 3.7L evolution of the HR. Adds VVEL (Variable Valve Event and Lift).",
+    "severity": "Info",
+    "related_parts": [
+      "nissan_vq35de",
+      "nissan_vq35hr",
+      "nissan_vq37vhr"
+    ]
+  },
+  {
+    "category": "safety",
+    "title": "Miata 'Short Nose' Crank Failure (1990-1991)",
+    "content": "Early 1.6L Miatas (1990-early 1991) have a crankshaft with a shorter 'nose' (keyway area) for the crank pulley bolt. \n\n**The Issue:** If the crank bolt is not torqued perfectly (or if it loosens over time), the keyway will wallow out, causing the crank pulley to wobble. This eventually destroys the crankshaft tip, requiring an engine replacement or a risky 'Loctite fix'.\n\n**Identification:** Check the crank pulley. If it has 4 slots, it's likely a Short Nose. If it has 8 slots, it's the updated Long Nose (safer). VIN cutoff is roughly ending in 209447.",
+    "severity": "Critical",
+    "related_parts": [
+      "mazda_b6ze_crank",
+      "mazda_miata_crank_pulley"
+    ]
+  },
+  {
+    "category": "interchange",
+    "title": "Nissan 370Z / G37 Rear Diff Ratios",
+    "content": "Swapping differential pumpkins is a popular way to change final drive ratios in the Z/G platform.\n\n*   **Manual 370Z/G37:** 3.69 ratio. Good balance.\n*   **Automatic 370Z/G37:** 3.36 ratio. Longer gears for highway cruising.\n*   **Manual 350Z/G35:** 3.54 ratio.\n*   **Automatic 350Z/G35:** 3.36 ratio.\n\n**The Upgrade:** Installing a Manual 370Z diff (3.69) into an Auto 370Z (3.36) provides a significant acceleration bump (effectively 'shortening' the gears). Ensure you match the input flange (3-bolt vs 4-bolt) or swap the flange from your old diff.",
+    "severity": "Medium",
+    "related_parts": [
+      "nissan_r200_diff",
+      "nissan_370z_diff"
+    ]
   }
 ]

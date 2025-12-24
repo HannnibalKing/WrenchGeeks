@@ -971,27 +971,57 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    const kbSearchInput = document.getElementById('kbSearchInput');
+
+    function getActiveCategory() {
+        const activeBtn = document.querySelector('.filter-btn.active');
+        return activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+    }
+
+    function getSearchQuery() {
+        return kbSearchInput ? kbSearchInput.value.toLowerCase().trim() : '';
+    }
+
+    function refreshKB() {
+        renderKnowledgeBase(getActiveCategory(), getSearchQuery());
+    }
+
     kbFilters.forEach(filter => {
         filter.addEventListener('click', () => {
             kbFilters.forEach(f => f.classList.remove('active'));
             filter.classList.add('active');
-            renderKnowledgeBase(filter.getAttribute('data-filter')); // Changed attribute to data-filter
+            refreshKB();
         });
     });
 
-    function renderKnowledgeBase(filter) {
+    if (kbSearchInput) {
+        kbSearchInput.addEventListener('input', refreshKB);
+    }
+
+    function renderKnowledgeBase(filter, query) {
         if (!kbContent) return;
         kbContent.innerHTML = '';
 
         // Use the global WRENCHGEEKS_KB_DATA variable
         const kbItems = (typeof WRENCHGEEKS_KB_DATA !== 'undefined' ? WRENCHGEEKS_KB_DATA : []).filter(item => {
+            // 1. Category Filter
             const cat = (item.category || '').toLowerCase();
-            if (filter === 'all') return true;
-            return cat === filter;
+            const categoryMatch = (filter === 'all' || cat === filter);
+
+            if (!categoryMatch) return false;
+
+            // 2. Search Query Filter
+            if (!query) return true;
+
+            const title = (item.title || item.partName || '').toLowerCase();
+            const content = (item.content || item.notes || item.description || '').toLowerCase();
+            const related = (item.related_parts || []).join(' ').toLowerCase();
+            
+            return title.includes(query) || content.includes(query) || related.includes(query);
         });
 
         if (kbItems.length === 0) {
-            kbContent.innerHTML = '<p style=\'grid-column: 1/-1; text-align:center; color:var(--text-muted);\'>No articles found in this category.</p>';
+            kbContent.innerHTML = '<p style=\'grid-column: 1/-1; text-align:center; color:var(--text-muted);\'>No articles found matching your criteria.</p>';
             return;
         }
 
@@ -1015,7 +1045,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Initial Render
-    renderKnowledgeBase('all');
+    refreshKB();
 
     // --- Donate Modal Logic ---
     const donateBtn = document.getElementById('donateBtn');
