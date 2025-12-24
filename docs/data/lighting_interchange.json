@@ -1,0 +1,98 @@
+[
+  {
+    "part_type": "Headlight",
+    "family_id": "NISSAN_Z33_HEADLIGHTS",
+    "generations": [
+      {
+        "id": "Z33_DE_HID",
+        "name": "350Z Pre-Facelift HID",
+        "years": "2003-2005",
+        "connector": "6-pin",
+        "notes": "Standard HID. Prone to yellowing."
+      },
+      {
+        "id": "Z33_HR_BI_XENON",
+        "name": "350Z Facelift Bi-Xenon",
+        "years": "2006-2009",
+        "connector": "8-pin",
+        "notes": "Desirable upgrade. Requires rewiring for 03-05 cars."
+      }
+    ],
+    "interchange_notes": "06+ lights physically fit 03-05 but require connector modification."
+  },
+  {
+    "part_type": "Taillight",
+    "family_id": "NISSAN_Z33_TAILLIGHTS",
+    "generations": [
+      {
+        "id": "Z33_PRE_LED",
+        "name": "350Z Pre-Facelift",
+        "years": "2003-2005",
+        "notes": "Red/Clear standard."
+      },
+      {
+        "id": "Z33_POST_LED",
+        "name": "350Z Facelift LED",
+        "years": "2006-2009",
+        "notes": "Full LED. Direct plug-and-play for older models."
+      }
+    ],
+    "interchange_notes": "Direct fit across all years."
+  },
+  {
+    "part_type": "Headlight",
+    "family_id": "BMW_E46_HEADLIGHTS",
+    "generations": [
+      {
+        "id": "E46_PRE_LCI_SEDAN",
+        "name": "E46 Sedan Pre-Facelift",
+        "years": "1999-2001",
+        "notes": "Turn signal clips in."
+      },
+      {
+        "id": "E46_LCI_SEDAN",
+        "name": "E46 Sedan Facelift",
+        "years": "2002-2005",
+        "notes": "Turn signal screws in. Fenders are different."
+      },
+      {
+        "id": "E46_COUPE_PRE_LCI",
+        "name": "E46 Coupe Pre-Facelift",
+        "years": "2000-2003",
+        "notes": "Different shape than sedan."
+      },
+      {
+        "id": "E46_COUPE_LCI",
+        "name": "E46 Coupe Facelift",
+        "years": "2004-2006",
+        "notes": "One-piece unit style. Not interchangeable with pre-LCI fenders."
+      }
+    ],
+    "interchange_notes": "Strictly generation specific. Fenders must match headlights."
+  },
+  {
+    "part_type": "Headlight",
+    "family_id": "SUBARU_GD_HEADLIGHTS",
+    "generations": [
+      {
+        "id": "GD_BUGEYE",
+        "name": "Impreza Bugeye",
+        "years": "2002-2003",
+        "notes": "Round lights."
+      },
+      {
+        "id": "GD_BLOBEYE",
+        "name": "Impreza Blobeye",
+        "years": "2004-2005",
+        "notes": "Teardrop style. Requires new bumper/fenders/hood to swap to Bugeye."
+      },
+      {
+        "id": "GD_HAWKEYE",
+        "name": "Impreza Hawkeye",
+        "years": "2006-2007",
+        "notes": "Sharp style. Requires front end conversion to swap."
+      }
+    ],
+    "interchange_notes": "Requires full front-end conversion (Fenders, Hood, Bumper, Grill) to swap between generations."
+  }
+]

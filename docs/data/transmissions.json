@@ -1,0 +1,110 @@
+{
+  "transmissions": {
+    "NISSAN_CD009": [
+      {
+        "make": "Nissan",
+        "model": "350Z",
+        "years": "2003-2006",
+        "notes": "CD001/CD008/CD009 depending on year. CD009 is the updated version."
+      },
+      {
+        "make": "Infiniti",
+        "model": "G35 Coupe",
+        "years": "2003-2007",
+        "notes": "Manual Only. Direct swap with 350Z."
+      },
+      {
+        "make": "Infiniti",
+        "model": "G35 Sedan",
+        "years": "2003-2006",
+        "notes": "Manual Only (Rare)."
+      }
+    ],
+    "TREMEC_T56": [
+      {
+        "make": "Chevrolet",
+        "model": "Corvette (C5)",
+        "years": "1997-2004",
+        "notes": "Rear Transaxle configuration. Not directly swappable with front-mount T56."
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Camaro (Gen 4)",
+        "years": "1998-2002",
+        "notes": "LS1 Input Shaft. F-Body Tailhousing."
+      },
+      {
+        "make": "Pontiac",
+        "model": "Firebird (Gen 4)",
+        "years": "1998-2002",
+        "notes": "Same as Camaro."
+      },
+      {
+        "make": "Ford",
+        "model": "Mustang Cobra",
+        "years": "2003-2004",
+        "notes": "Terminator Spec. 10-spline input (upgradeable to 26)."
+      },
+      {
+        "make": "Dodge",
+        "model": "Viper (Gen 2)",
+        "years": "1996-2002",
+        "notes": "Strongest stock T56. Different input shaft/mounting."
+      }
+    ],
+    "ZF_8HP_GEN1": [
+      {
+        "make": "BMW",
+        "model": "3-Series (F30)",
+        "years": "2012-2015",
+        "notes": "ZF 8HP45. Requires coding to swap (ISN matched to DME)."
+      },
+      {
+        "make": "BMW",
+        "model": "5-Series (F10)",
+        "years": "2011-2016",
+        "notes": "ZF 8HP45 or 8HP70 depending on engine."
+      },
+      {
+        "make": "Dodge",
+        "model": "Charger",
+        "years": "2012-Present",
+        "notes": "TorqueFlite 8 (Licensed ZF 8HP). Bellhousing pattern differs from BMW."
+      }
+    ],
+    "HONDA_K_SERIES_6MT": [
+      {
+        "make": "Acura",
+        "model": "RSX Type-S",
+        "years": "2002-2006",
+        "notes": "4.3 or 4.7 Final Drive. High desirability."
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (8th Gen)",
+        "years": "2006-2011",
+        "notes": "LSD Standard. Different VSS location than RSX."
+      },
+      {
+        "make": "Acura",
+        "model": "TSX",
+        "years": "2004-2008",
+        "notes": "Magnesium case. Great gear ratios."
+      }
+    ],
+    "GETRAG_420G": [
+      {
+        "make": "BMW",
+        "model": "M3 (E46)",
+        "years": "2001-2006",
+        "notes": "6-Speed Manual. Robust but not rebuildable."
+      },
+      {
+        "make": "BMW",
+        "model": "M5 (E39)",
+        "years": "1999-2003",
+        "notes": "Different bellhousing than M3 (V8 vs I6)."
+      }
+    ]
+  }
+}
