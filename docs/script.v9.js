@@ -4,9 +4,12 @@ class CompatibilityEngine {
         this.lightingData = lightingData || [];
         this.spareTireData = spareTireData || [];
         // Cache for vehicle attributes to avoid repeated lookups
+        // Limit cache size to prevent unbounded memory growth
         this.attributeCache = new Map();
+        this.attributeCacheMaxSize = 500;
         // Cache for normalized strings to avoid repeated normalization
         this.normalizeCache = new Map();
+        this.normalizeCacheMaxSize = 1000;
     }
 
     normalize(str) {
@@ -16,6 +19,13 @@ class CompatibilityEngine {
             return this.normalizeCache.get(str);
         }
         const normalized = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+        
+        // Simple LRU: If cache is full, delete oldest entry (first key)
+        if (this.normalizeCache.size >= this.normalizeCacheMaxSize) {
+            const firstKey = this.normalizeCache.keys().next().value;
+            this.normalizeCache.delete(firstKey);
+        }
+        
         this.normalizeCache.set(str, normalized);
         return normalized;
     }
@@ -85,7 +95,11 @@ class CompatibilityEngine {
             }
         }
         
-        // Store in cache before returning
+        // Store in cache before returning with LRU eviction
+        if (this.attributeCache.size >= this.attributeCacheMaxSize) {
+            const firstKey = this.attributeCache.keys().next().value;
+            this.attributeCache.delete(firstKey);
+        }
         this.attributeCache.set(cacheKey, attributes);
         return attributes;
     }
@@ -357,6 +371,8 @@ document.addEventListener("DOMContentLoaded", () => {
             compatibilityEngine = new CompatibilityEngine(relationships, lightingData, spareTireData);
             
             // Build reverse index for lore lookups - O(n) build, O(1) lookup
+            // This runs during initialization and may take a few ms with large datasets,
+            // but dramatically improves performance during part details viewing
             loreLookupIndex = buildLoreLookupIndex(relationships);
             
             // Initialize KB Data if not exists
@@ -1118,10 +1134,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     // Optimized: Use pre-built lore index for O(1) lookup instead of nested loops
                     let lore = "";
-                    if (loreLookupIndex) {
+                    if (loreLookupIndex && compatibilityEngine) {
                         const modelName = m.name || m.model;
-                        const normalize = compatibilityEngine ? compatibilityEngine.normalize.bind(compatibilityEngine) : (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-                        const key = `${group.make}:${normalize(modelName)}`;
+                        const key = `${group.make}:${compatibilityEngine.normalize(modelName)}`;
                         lore = loreLookupIndex.get(key) || "";
                     }
 
