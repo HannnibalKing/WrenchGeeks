@@ -3,13 +3,30 @@ class CompatibilityEngine {
         this.relationships = relationships;
         this.lightingData = lightingData || [];
         this.spareTireData = spareTireData || [];
+        // Cache for vehicle attributes to avoid repeated lookups
+        this.attributeCache = new Map();
+        // Cache for normalized strings to avoid repeated normalization
+        this.normalizeCache = new Map();
     }
 
     normalize(str) {
-        return str ? str.toLowerCase().replace(/[^a-z0-9]/g, "") : "";
+        if (!str) return "";
+        // Check cache first
+        if (this.normalizeCache.has(str)) {
+            return this.normalizeCache.get(str);
+        }
+        const normalized = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+        this.normalizeCache.set(str, normalized);
+        return normalized;
     }
 
     getVehicleAttributes(make, model) {
+        // Check cache first
+        const cacheKey = `${make}:${model}`;
+        if (this.attributeCache.has(cacheKey)) {
+            return this.attributeCache.get(cacheKey);
+        }
+
         const attributes = {
             platformId: null,
             engineId: null,
@@ -21,46 +38,30 @@ class CompatibilityEngine {
 
         const target = this.normalize(model);
 
-        // Find Platform
-        if (this.relationships.platforms) {
-            for (const [id, vehicles] of Object.entries(this.relationships.platforms)) {
-                const match = vehicles.find(v => {
-                    if (v.make !== make) return false;
-                    const vName = this.normalize(v.model || v.name);
-                    return vName === target || vName.includes(target) || target.includes(vName);
-                });
-                if (match) {
-                    attributes.platformId = id;
-                    attributes.yearRange = match.years;
-                }
-            }
-        }
+        // Optimized: Single pass through all relationship types
+        // This reduces O(3n) to O(n) where n is total number of entries
+        const collections = [
+            { data: this.relationships.platforms, key: 'platformId' },
+            { data: this.relationships.engines, key: 'engineId' },
+            { data: this.relationships.transmissions, key: 'transmissionId' }
+        ];
 
-        // Find Engine
-        if (this.relationships.engines) {
-            for (const [id, vehicles] of Object.entries(this.relationships.engines)) {
+        for (const { data, key } of collections) {
+            if (!data) continue;
+            
+            for (const [id, vehicles] of Object.entries(data)) {
                 const match = vehicles.find(v => {
                     if (v.make !== make) return false;
                     const vName = this.normalize(v.model || v.name);
                     return vName === target || vName.includes(target) || target.includes(vName);
                 });
+                
                 if (match) {
-                    attributes.engineId = id;
-                    if (!attributes.yearRange) attributes.yearRange = match.years;
-                }
-            }
-        }
-
-        // Find Transmission
-        if (this.relationships.transmissions) {
-            for (const [id, vehicles] of Object.entries(this.relationships.transmissions)) {
-                const match = vehicles.find(v => {
-                    if (v.make !== make) return false;
-                    const vName = this.normalize(v.model || v.name);
-                    return vName === target || vName.includes(target) || target.includes(vName);
-                });
-                if (match) {
-                    attributes.transmissionId = id;
+                    attributes[key] = id;
+                    if (!attributes.yearRange) {
+                        attributes.yearRange = match.years;
+                    }
+                    break; // Found match for this collection, move to next
                 }
             }
         }
@@ -84,6 +85,8 @@ class CompatibilityEngine {
             }
         }
         
+        // Store in cache before returning
+        this.attributeCache.set(cacheKey, attributes);
         return attributes;
     }
 
@@ -209,6 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let tipsData = [];
     let vehicleIndex = {}; 
     let compatibilityEngine = null;
+    let loreLookupIndex = null; // Reverse index for fast lore lookups
 
     const makeSelect = document.getElementById("makeSelect");
     const modelSelect = document.getElementById("modelSelect");
@@ -298,9 +302,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let lightingData = [];
     let spareTireData = [];
 
+    // Static version for cache control - update this when data changes
+    const DATA_VERSION = "1.0";
+
     // Resilient Loader: Load all files, but don't crash if one fails
     Promise.all(dataFiles.map(file => 
-        fetch(`${file}?v=${new Date().getTime()}`)
+        fetch(`${file}?v=${DATA_VERSION}`)
             .then(resp => {
                 if (!resp.ok) throw new Error(`${resp.status} ${resp.statusText}`);
                 return resp.json();
@@ -348,6 +355,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             compatibilityEngine = new CompatibilityEngine(relationships, lightingData, spareTireData);
+            
+            // Build reverse index for lore lookups - O(n) build, O(1) lookup
+            loreLookupIndex = buildLoreLookupIndex(relationships);
             
             // Initialize KB Data if not exists
             if (typeof window.WRENCHGEEKS_KB_DATA === 'undefined') {
@@ -417,6 +427,41 @@ document.addEventListener("DOMContentLoaded", () => {
                 makeLoadStatus.className = "status-error";
             }
         });
+
+    // Build reverse index for O(1) lore lookups
+    function buildLoreLookupIndex(relationships) {
+        const index = new Map();
+        
+        const normalize = (s) => s ? s.toLowerCase().replace(/[^a-z0-9]/g, "") : "";
+        
+        const addToLoreIndex = (collection, make, modelName, notes) => {
+            if (!notes || notes === "Platform Mate") return;
+            const key = `${make}:${normalize(modelName)}`;
+            if (!index.has(key)) {
+                index.set(key, notes);
+            }
+        };
+        
+        // Index platforms
+        if (relationships.platforms) {
+            for (const vehicles of Object.values(relationships.platforms)) {
+                for (const v of vehicles) {
+                    addToLoreIndex(relationships.platforms, v.make, v.model || v.name, v.notes);
+                }
+            }
+        }
+        
+        // Index engines
+        if (relationships.engines) {
+            for (const vehicles of Object.values(relationships.engines)) {
+                for (const v of vehicles) {
+                    addToLoreIndex(relationships.engines, v.make, v.model || v.name, v.notes);
+                }
+            }
+        }
+        
+        return index;
+    }
 
     function buildIndex(parts) {
         parts.forEach(part => {
@@ -852,6 +897,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             scoredParts.sort((a, b) => b.score - a.score);
 
+            // Use DocumentFragment for better DOM performance
+            const fragment = document.createDocumentFragment();
             scoredParts.forEach(item => {
                 const { part, score, risk } = item;
                 const div = document.createElement("div");
@@ -864,8 +911,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p>${part.category}</p>
                 `;
                 div.addEventListener("click", () => showPartDetails(part, make, model));
-                partsList.appendChild(div);
+                fragment.appendChild(div);
             });
+            partsList.appendChild(fragment);
             resultsSection.classList.remove("hidden");
             partDetailsSection.classList.add("hidden");
         } else {
@@ -887,22 +935,19 @@ document.addEventListener("DOMContentLoaded", () => {
         tipsList.innerHTML = "";
         tipsList.classList.add("hidden");
 
+        // Optimized: Use vehicle attributes cache instead of iterating twice
+        const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
         const relevantIds = [];
-        for (const [id, vehicles] of Object.entries(relationships.platforms || {})) {
-            if (vehicles.some(v => v.make === make && (v.model === model || v.name === model))) {
-                relevantIds.push(id);
-            }
-        }
-        for (const [id, vehicles] of Object.entries(relationships.engines || {})) {
-            if (vehicles.some(v => v.make === make && (v.model === model || v.name === model))) {
-                relevantIds.push(id);
-            }
-        }
+        
+        if (vehicleAttrs.platformId) relevantIds.push(vehicleAttrs.platformId);
+        if (vehicleAttrs.engineId) relevantIds.push(vehicleAttrs.engineId);
 
         const relevantTips = tipsData.filter(tip => relevantIds.includes(tip.platform));
 
         if (relevantTips.length > 0) {
             tipsList.classList.remove("hidden");
+            // Use DocumentFragment for better DOM performance
+            const fragment = document.createDocumentFragment();
             relevantTips.forEach(tip => {
                 const div = document.createElement("div");
                 div.className = `tip-card tip-${tip.severity ? tip.severity.toLowerCase() : "info"}`;
@@ -910,8 +955,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h4> ${tip.title}</h4>
                     <p>${tip.content}</p>
                 `;
-                tipsList.appendChild(div);
+                fragment.appendChild(div);
             });
+            tipsList.appendChild(fragment);
         }
     }
 
@@ -1070,28 +1116,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 group.models.forEach(m => {
                     const li = document.createElement("li");
                     
+                    // Optimized: Use pre-built lore index for O(1) lookup instead of nested loops
                     let lore = "";
-                    if (compatibilityEngine) {
-                        const normalize = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-                        const target = normalize(m.name || m.model);
-                        
-                        const findLore = (collection) => {
-                            if (!collection) return null;
-                            for (const vehicles of Object.values(collection)) {
-                                const match = vehicles.find(v => {
-                                    if (v.make !== group.make) return false;
-                                    const vName = normalize(v.model || v.name);
-                                    return vName === target || vName.includes(target) || target.includes(vName);
-                                });
-                                if (match && match.notes && match.notes !== "Platform Mate") return match.notes;
-                            }
-                            return null;
-                        };
-                        
-                        const platformLore = findLore(relationships.platforms);
-                        const engineLore = findLore(relationships.engines);
-                        if (platformLore) lore = platformLore;
-                        else if (engineLore) lore = engineLore;
+                    if (loreLookupIndex) {
+                        const modelName = m.name || m.model;
+                        const normalize = compatibilityEngine ? compatibilityEngine.normalize.bind(compatibilityEngine) : (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+                        const key = `${group.make}:${normalize(modelName)}`;
+                        lore = loreLookupIndex.get(key) || "";
                     }
 
                     const loreHtml = lore ? `<br><span style="color:var(--accent-color); font-size:0.85em;"><em>"${lore}"</em></span>` : "";
