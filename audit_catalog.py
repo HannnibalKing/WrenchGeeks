@@ -33,14 +33,21 @@ def audit_catalog():
                 for v in vehicles:
                     vehicle_counts[v['make']].add(v['model'] or v['name'])
 
-    # 2. Scan Parts Data (The "Reality" of what we have parts for)
+    # 2. Optimized: Single pass through all data files
+    # Load and cache all JSON files at once to avoid repeated I/O
+    data_files_cache = {}
+    
     for filename in os.listdir(DATA_DIR):
         if not filename.endswith('.json') or filename == 'relationships.json' or filename.startswith('kb_'):
             continue
-            
-        data = load_json(os.path.join(DATA_DIR, filename))
-        if not data: continue
         
+        filepath = os.path.join(DATA_DIR, filename)
+        data = load_json(filepath)
+        if data:
+            data_files_cache[filename] = data
+    
+    # Process cached data
+    for filename, data in data_files_cache.items():
         # Handle different file structures (list of parts vs object with 'parts' key)
         parts_list = []
         if isinstance(data, list):
@@ -95,14 +102,14 @@ def audit_catalog():
         if not found:
             print(f"[MISSING] {make} is completely missing from the catalog.")
 
-    # 5. Empty Data Files Check
+    # 5. Empty Data Files Check - use cached data
     print("\n--- Empty or Low Content Files ---")
-    for filename in os.listdir(DATA_DIR):
-        if not filename.endswith('.json') or filename.startswith('kb_'): continue
-        data = load_json(os.path.join(DATA_DIR, filename))
+    for filename, data in data_files_cache.items():
         count = 0
-        if isinstance(data, list): count = len(data)
-        elif isinstance(data, dict) and 'parts' in data: count = len(data['parts'])
+        if isinstance(data, list): 
+            count = len(data)
+        elif isinstance(data, dict) and 'parts' in data: 
+            count = len(data['parts'])
         
         if count < 5:
             print(f"{filename}: Only {count} items")
