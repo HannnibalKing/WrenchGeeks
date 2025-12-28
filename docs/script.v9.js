@@ -384,6 +384,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     if (d.parts) partsData.push(...d.parts);
                     if (d.tips) {
+                        // Merge Pro Tips into Big Mike's Secrets
+                        d.tips.forEach(t => {
+                            if (!t.category) t.category = "Did You Know?";
+                        });
                         tipsData.push(...d.tips);
                         window.WRENCHGEEKS_KB_DATA.push(...d.tips);
                     }
@@ -722,24 +726,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 const option = document.createElement("option");
                 option.value = fullModelName; 
                 
-                const match = fullModelName.match(/\((.*?)\)$/);
-                let displayText = "";
+                let displayText = fullModelName;
 
-                if (match) {
-                    displayText = match[1];
-                } else {
-                    const normalize = s => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-                    const normBase = normalize(baseModel);
-                    const normFull = normalize(fullModelName);
-                    
-                    if (normFull.includes(normBase) && normFull !== normBase) {
-                        displayText = fullModelName;
-                    } else {
-                        displayText = fullModelName;
+                // Smart Display Name Logic
+                // If the full name starts with the base model, strip it for cleaner display
+                if (fullModelName.toLowerCase().startsWith(baseModel.toLowerCase())) {
+                    const stripped = fullModelName.substring(baseModel.length).trim();
+                    if (stripped) {
+                        displayText = stripped;
                     }
                 }
                 
-                if (displayText === baseModel) displayText = "Standard / All Years";
+                if (displayText === fullModelName && displayText === baseModel) {
+                     displayText = "Standard / All Years";
+                }
 
                 let yearInfo = "";
                 if (yearRange && !displayText.includes(yearRange)) {
@@ -797,30 +797,34 @@ document.addEventListener("DOMContentLoaded", () => {
             resultsSection.classList.remove("hidden");
             partsList.innerHTML = "<p>Checking catalog...</p>";
 
-            const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
-            
-            if (!parts || parts.length === 0) {
-                partsList.innerHTML = `
-                    <div class="card" style="border-left: 4px solid var(--accent-color);">
-                        <h3>🚧 Catalog Update Pending</h3>
-                        <p>We have this vehicle in our registry, but we haven't indexed any compatible parts for it yet.</p>
-                        <p>Check back soon as we continue to expand our interchange database.</p>
-                    </div>`;
-                return;
-            }
+            const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
 
             selectedVehicleName.textContent = `${make} ${model} ${year && year !== "Unknown" ? `(${year})` : ""}`;
             partsList.innerHTML = "";
             
-            const vehicleAttrs = compatibilityEngine ? compatibilityEngine.getVehicleAttributes(make, model) : {};
-
             displayDonors(vehicleAttrs.platformId, vehicleAttrs.engineId, vehicleAttrs.transmissionId, make, model);
 
             displayTips(make, model);
-            displayMariaAdvice(vehicleAttrs.spareTireGroupId, make, model, vehicleAttrs.vehicleType);
             
             // Update Knowledge Base with vehicle context
             renderKnowledgeBase(getActiveCategory(), '', make, model);
+
+            // Display Spare Tire Info (formerly Maria's Advice)
+            displaySpareTireInfo(vehicleAttrs.spareTireGroupId, make, model, vehicleAttrs.vehicleType);
+
+            const parts = vehicleIndex[make] ? vehicleIndex[make][model] : [];
+            
+            if (!parts || parts.length === 0) {
+                const noPartsDiv = document.createElement("div");
+                noPartsDiv.className = "card";
+                noPartsDiv.style.borderLeft = "4px solid var(--accent-color)";
+                noPartsDiv.innerHTML = `
+                    <h3>🚧 Catalog Update Pending</h3>
+                    <p>We have this vehicle in our registry, but we haven't indexed any compatible parts for it yet.</p>
+                    <p>Check back soon as we continue to expand our interchange database.</p>`;
+                partsList.appendChild(noPartsDiv);
+                return;
+            }
 
             let filteredParts = parts;
 
@@ -955,22 +959,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function displayMariaAdvice(groupId, make, model, vehicleType) {
-        const mariaSection = document.getElementById("mariaSection");
-        const mariaContent = document.getElementById("mariaContent");
-        
-        if (!mariaSection || !mariaContent) return;
-        
-        mariaSection.classList.add("hidden");
-        mariaContent.innerHTML = "";
-
+    function displaySpareTireInfo(groupId, make, model, vehicleType) {
         if (!groupId) return;
         
         const group = spareTireData.find(g => g.id === groupId);
         if (!group) return;
 
-        mariaSection.classList.remove("hidden");
-        
         // Filter out current vehicle from list
         let otherVehicles = group.vehicles.filter(v => {
             const vName = v.model || v.name;
@@ -1019,13 +1013,17 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         }
 
-        mariaContent.innerHTML = `
+        const div = document.createElement("div");
+        div.className = "card";
+        div.innerHTML = `
+            <h4>Spare Tire Compatibility</h4>
             <p><strong>Bolt Pattern:</strong> ${group.bolt_pattern} | <strong>Hub Bore:</strong> ${group.hub_bore}</p>
             <p>${group.advice}</p>
             ${safetyWarning}
             <p><strong>Compatible Donors (${vehicleType || "All Types"}):</strong></p>
             ${vehicleListHtml}
         `;
+        partsList.appendChild(div);
     }
 
     function displayDonors(platformId, engineId, transmissionId, make, model) {
