@@ -225,12 +225,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const yearSelect = document.getElementById("yearSelect");
     const searchButton = document.getElementById("searchButton");
 
-    const dataFiles = [
+    // Split critical and non-critical data for faster initial load
+    const criticalFiles = [
         "data/relationships.json",
         "data/transmissions.json",
-        "data/lighting_interchange.json",
         "data/spare_tires.json",
-        "data/tips.json",
+        "data/lighting_interchange.json"
+    ];
+
+    const partFiles = [
         "data/fuel_system.json",
         "data/electrical_sensors.json",
         "data/suspension_steering.json",
@@ -244,11 +247,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/interchange_plus.json",
         "data/engine_swaps_master.json",
         "data/mega_interchange.json",
-        "data/old_timer_secrets.json",
-        "data/maintenance_ref.json",
-        "data/maintenance_ref_part2.json",
-        "data/maintenance_ref_part3.json",
-        "data/maintenance_ref_part4.json",
         "data/universal_parts.json",
         "data/badge_engineering.json",
         "data/global_platforms.json",
@@ -264,6 +262,24 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/classic_trucks.json",
         "data/truck_car_interchange.json",
         "data/interior_interchange.json",
+        "data/gmc_interchange.json",
+        "data/general_interchange.json",
+        "data/ford_ranger_explorer.json",
+        "data/chrysler_lx_platform.json",
+        "data/ford_focus_c1_platform.json",
+        "data/euro_luxury_expansion.json",
+        "data/jdm_legends_expansion.json",
+        "data/toyota_truck_ecosystem.json",
+        "data/honda_k_series_master.json",
+        "data/mopar_fca_fusion.json",
+        "data/korean_genesis_secrets.json",
+        "data/porsche_generations.json",
+        "data/subaru_lego_city.json",
+        "data/weird_euro_cousins.json"
+    ];
+
+    const kbFiles = [
+        "data/tips.json",
         "data/tech_guides.json",
         "data/fabrication_tips.json",
         "data/workshop_hacks.json",
@@ -288,48 +304,67 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/kb_tips.json",
         "data/kb_toyota_jz_uz.json",
         "data/kb_volvo_p80.json",
-        "data/gmc_interchange.json",
-        "data/general_interchange.json",
-        "data/ford_ranger_explorer.json",
-        "data/chrysler_lx_platform.json",
-        "data/ford_focus_c1_platform.json",
-        "data/euro_luxury_expansion.json",
-        "data/jdm_legends_expansion.json",
-        "data/toyota_truck_ecosystem.json",
-        "data/honda_k_series_master.json",
-        "data/mopar_fca_fusion.json",
-        "data/korean_genesis_secrets.json",
-        "data/porsche_generations.json",
-        "data/subaru_lego_city.json",
-        "data/weird_euro_cousins.json",
+        "data/old_timer_secrets.json",
+        "data/maintenance_ref.json",
+        "data/maintenance_ref_part2.json",
+        "data/maintenance_ref_part3.json",
+        "data/maintenance_ref_part4.json",
         "data/big_mikes_tips.json"
     ];
+
+    const dataFiles = [...criticalFiles, ...partFiles, ...kbFiles];
 
     let relationships = { engines: {}, platforms: {}, transmissions: {} };
     let lightingData = [];
     let spareTireData = [];
+    let kbDataLoaded = false;
 
-    // Resilient Loader: Load all files, but don't crash if one fails
-    Promise.all(dataFiles.map(file => 
-        fetch(`${file}?v=${new Date().getTime()}`)
-            .then(resp => {
-                if (!resp.ok) throw new Error(`${resp.status} ${resp.statusText}`);
-                return resp.json();
-            })
-            .catch(err => {
-                console.error(`Failed to load ${file}:`, err);
-                return { error: true, file: file, message: err.message }; // Return error object instead of throwing
-            })
-    ))
-    .then(results => {
-        // Filter out errors and log them
+    // Load critical data first for faster initial render
+    function loadData(files) {
+        return Promise.all(files.map(file => 
+            fetch(file)
+                .then(resp => {
+                    if (!resp.ok) throw new Error(`${resp.status} ${resp.statusText}`);
+                    return resp.json();
+                })
+                .catch(err => {
+                    console.error(`Failed to load ${file}:`, err);
+                    return { error: true, file: file, message: err.message };
+                })
+        ));
+    }
+
+    // Resilient Loader: Load critical files first, then parts, then KB in background
+    loadData(criticalFiles)
+        .then(criticalResults => {
+            processData(criticalResults);
+            if (makeLoadStatus) makeLoadStatus.textContent = "Loading parts catalog...";
+            return loadData(partFiles);
+        })
+        .then(partResults => {
+            processData(partResults);
+            populateMakes();
+            populateSubsystems();
+            updateStats();
+            // Load KB data in background
+            setTimeout(() => loadData(kbFiles).then(kbResults => {
+                processData(kbResults);
+                kbDataLoaded = true;
+                updateStats();
+            }), 100);
+        })
+        .catch(err => {
+            console.error("Data Load Error:", err);
+            if (makeLoadStatus) {
+                makeLoadStatus.textContent = "Error loading data: " + err.message;
+                makeLoadStatus.className = "status-error";
+            }
+        });
+
+    function processData(results) {
         const errors = results.filter(r => r && r.error);
         if (errors.length > 0) {
             console.warn("Some files failed to load:", errors);
-            const warningDiv = document.createElement('div');
-            warningDiv.style.cssText = "background:#ff9800; color:black; padding:5px; text-align:center; font-size:0.8em;";
-            warningDiv.textContent = `Warning: ${errors.length} data files failed to load. Some parts may be missing.`;
-            document.body.insertBefore(warningDiv, document.body.firstChild);
         }
 
         const allData = results.filter(r => r && !r.error);
@@ -411,27 +446,21 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             buildIndex(partsData);
-            populateMakes();
-            populateSubsystems();
-            const totalMakes = Object.keys(vehicleIndex).length;
-            const totalModels = Object.values(vehicleIndex).reduce((acc, models) => acc + Object.keys(models).length, 0);
-            
-            const kbCount = (typeof WRENCHGEEKS_KB_DATA !== 'undefined') ? WRENCHGEEKS_KB_DATA.length : 0;
-            const hardPartsCount = partsData.length;
+    }
 
-            if (makeLoadStatus) {
-                makeLoadStatus.textContent = totalMakes > 0
-                    ? `Indexed ${totalMakes} Makes / ${totalModels} Models / ${hardPartsCount} Hard Parts / ${kbCount} Intel Files`
-                    : "No makes loaded";
-            }
-        })
-        .catch(err => {
-            console.error("Data Load Error:", err);
-            if (makeLoadStatus) {
-                makeLoadStatus.textContent = "Error loading data: " + err.message;
-                makeLoadStatus.className = "status-error";
-            }
-        });
+    function updateStats() {
+        const totalMakes = Object.keys(vehicleIndex).length;
+        const totalModels = Object.values(vehicleIndex).reduce((acc, models) => acc + Object.keys(models).length, 0);
+        const kbCount = (typeof WRENCHGEEKS_KB_DATA !== 'undefined') ? WRENCHGEEKS_KB_DATA.length : 0;
+        const hardPartsCount = partsData.length;
+
+        if (makeLoadStatus) {
+            const status = kbDataLoaded 
+                ? `Indexed ${totalMakes} Makes / ${totalModels} Models / ${hardPartsCount} Hard Parts / ${kbCount} Intel Files`
+                : `Indexed ${totalMakes} Makes / ${totalModels} Models / ${hardPartsCount} Hard Parts`;
+            makeLoadStatus.textContent = totalMakes > 0 ? status : "No makes loaded";
+        }
+    }
 
     function buildIndex(parts) {
         parts.forEach(part => {
@@ -510,13 +539,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const makes = Object.keys(vehicleIndex).sort();
 
         makeSelect.innerHTML = "<option value=\"\">-- Select Make --</option>";
+        const fragment = document.createDocumentFragment();
         makes.forEach(make => {
             if (!make || make === "Universal") return; 
             const option = document.createElement("option");
             option.value = make;
             option.textContent = make;
-            makeSelect.appendChild(option);
+            fragment.appendChild(option);
         });
+        makeSelect.appendChild(fragment);
 
         if (makeLoadStatus) {
             makeLoadStatus.textContent = makes.length > 0 ? `Registry Online: ${makes.length} Manufacturers Loaded` : "Registry Offline: No Manufacturers Found";
@@ -546,12 +577,14 @@ document.addEventListener("DOMContentLoaded", () => {
     function populateSubsystems() {
         if (!subsystemSelect) return;
         subsystemSelect.innerHTML = "<option value=\"\">All subsystems</option>";
+        const fragment = document.createDocumentFragment();
         subsystemOptions.forEach(name => {
             const option = document.createElement("option");
             option.value = name;
             option.textContent = name;
-            subsystemSelect.appendChild(option);
+            fragment.appendChild(option);
         });
+        subsystemSelect.appendChild(fragment);
     }
 
     makeSelect.addEventListener("change", (e) => {
@@ -720,6 +753,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             yearSelect.innerHTML = "<option value=\"\">-- Select Generation --</option>";
+            const fragment = document.createDocumentFragment();
 
             variantObjects.forEach(obj => {
                 const { fullModelName, yearRange } = obj;
@@ -747,8 +781,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 option.textContent = `${displayText}${yearInfo}`;
-                yearSelect.appendChild(option);
+                fragment.appendChild(option);
             });
+            yearSelect.appendChild(fragment);
             
             yearSelect.disabled = false;
         } catch (e) {
@@ -782,13 +817,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (searchButton) {
+        let searchTimeout;
         searchButton.addEventListener("click", () => {
-            const make = makeSelect.value;
-            const fullModelName = yearSelect.value; 
-            
-            if (make && fullModelName) {
-                showPartsForVehicle(make, fullModelName, null);
-            }
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                const make = makeSelect.value;
+                const fullModelName = yearSelect.value; 
+                
+                if (make && fullModelName) {
+                    showPartsForVehicle(make, fullModelName, null);
+                }
+            }, 100);
         });
     }
 
