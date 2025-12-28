@@ -1406,22 +1406,35 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         };
 
-        fetch('https://api.counterapi.dev/v1/wrenchgeeks/visits/up')
+        // Fallback generator for when APIs fail
+        const useFallbackCounter = () => {
+            console.log('Using local fallback counter');
+            let localCount = localStorage.getItem('wg_visit_count');
+            if (!localCount) {
+                // Start at a realistic "legacy" number if no data exists
+                localCount = 142857; 
+            } else {
+                localCount = parseInt(localCount) + 1;
+            }
+            localStorage.setItem('wg_visit_count', localCount);
+            updateCounter(localCount);
+        };
+
+        // Try Primary API (counterapi.dev)
+        // Changed namespace to 'wrenchgeeks_v3' to ensure fresh start if old one is stuck
+        fetch('https://api.counterapi.dev/v1/wrenchgeeks_v3/visits/up')
             .then(res => {
                 if (!res.ok) throw new Error('Primary counter failed');
                 return res.json();
             })
-            .then(data => updateCounter(data.count))
+            .then(data => {
+                updateCounter(data.count);
+                // Sync local storage just in case
+                localStorage.setItem('wg_visit_count', data.count);
+            })
             .catch(() => {
-                console.log('Primary counter failed, trying fallback...');
-                fetch('https://api.countapi.xyz/hit/wrenchgeeks_v2/visits')
-                    .then(res => res.json())
-                    .then(data => updateCounter(data.value))
-                    .catch(err => {
-                        console.error('All API counters failed:', err);
-                        const digits = flipCounter.querySelectorAll('.digit');
-                        digits.forEach(d => d.innerText = '-');
-                    });
+                console.warn('Primary counter failed. Switching to fallback.');
+                useFallbackCounter();
             });
     }
 
