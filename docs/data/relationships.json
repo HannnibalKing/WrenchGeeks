@@ -519,93 +519,27 @@
     "DAIMLER_CHRYSLER_LX": [
       {
         "make": "Dodge",
-        "model": "Charger (LX - 6th Gen) Base/SXT",
+        "model": "Charger (LX - 6th Gen)",
         "years": "2006–2010",
-        "notes": "Platform Mate (LX)"
+        "notes": "All trims (Base/SXT/R/T/SRT8) - Platform Mate (LX)"
       },
       {
         "make": "Dodge",
-        "model": "Charger (LX - 6th Gen) R/T",
-        "years": "2006–2010",
-        "notes": "Platform Mate (LX)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Charger (LX - 6th Gen) SRT8",
-        "years": "2006–2010",
-        "notes": "Platform Mate (LX)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Charger (LD - 7th Gen) SXT/GT",
+        "model": "Charger (LD - 7th Gen)",
         "years": "2011–2023",
-        "notes": "Platform Mate (LD)"
+        "notes": "All trims (SXT/GT/R/T/Scat Pack/Hellcat) - Platform Mate (LD)"
       },
       {
         "make": "Dodge",
-        "model": "Charger (LD - 7th Gen) R/T",
-        "years": "2011–2023",
-        "notes": "Platform Mate (LD)"
+        "model": "Challenger (LC - 3rd Gen)",
+        "years": "2008–2014",
+        "notes": "All trims (Base/SXT/R/T/SRT8) - Platform Mate (LC)"
       },
       {
         "make": "Dodge",
-        "model": "Charger (LD - 7th Gen) Scat Pack",
+        "model": "Challenger (LA - 3rd Gen Facelift)",
         "years": "2015–2023",
-        "notes": "Platform Mate (LD)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Charger (LD - 7th Gen) SRT Hellcat",
-        "years": "2015–2023",
-        "notes": "Platform Mate (LD)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Challenger (LC - 3rd Gen) Base/SXT",
-        "years": "2008–2014",
-        "notes": "Platform Mate (LC)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Challenger (LC - 3rd Gen) R/T",
-        "years": "2008–2014",
-        "notes": "Platform Mate (LC)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Challenger (LC - 3rd Gen) SRT8",
-        "years": "2008–2014",
-        "notes": "Platform Mate (LC)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Challenger (LA - 3rd Gen Facelift) SXT/GT",
-        "years": "2015–Present",
-        "notes": "Platform Mate (LA)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Challenger (LA - 3rd Gen Facelift) R/T",
-        "years": "2015–Present",
-        "notes": "Platform Mate (LA)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Challenger (LA - 3rd Gen Facelift) Scat Pack",
-        "years": "2015–Present",
-        "notes": "Platform Mate (LA)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Challenger (LA - 3rd Gen Facelift) SRT Hellcat",
-        "years": "2015–Present",
-        "notes": "Platform Mate (LA)"
-      },
-      {
-        "make": "Dodge",
-        "model": "Challenger (LA - 3rd Gen Facelift) SRT Demon",
-        "years": "2018",
-        "notes": "Platform Mate (LA)"
+        "notes": "All trims (SXT/GT/R/T/Scat Pack/Hellcat/Demon) - Platform Mate (LA)"
       },
       {
         "make": "Chrysler",
@@ -1293,9 +1227,9 @@
     "MOPAR_CLASSIC_B_BODY": [
       {
         "make": "Dodge",
-        "model": "Charger",
+        "model": "Charger (B-Body - 1st/2nd Gen)",
         "years": "1966–1978",
-        "notes": "Platform Mate"
+        "notes": "Classic Muscle - Platform Mate"
       },
       {
         "make": "Dodge",
@@ -1313,9 +1247,9 @@
     "MOPAR_CLASSIC_E_BODY": [
       {
         "make": "Dodge",
-        "model": "Challenger",
+        "model": "Challenger (E-Body - 1st Gen)",
         "years": "1970–1974",
-        "notes": "Platform Mate"
+        "notes": "Classic Muscle - Platform Mate"
       },
       {
         "make": "Plymouth",
