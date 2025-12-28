@@ -974,9 +974,18 @@ document.addEventListener("DOMContentLoaded", () => {
             return !(v.make === make && (vName === model || model.includes(vName)));
         });
 
-        // Always show by bolt pattern only; warn user about tire size/load differences
-        const safetyWarning = `<div style="margin-top:0.5rem; padding:0.5rem; background:rgba(255, 152, 0, 0.1); border-left:3px solid #ff9800; font-size:0.9em;">
-            <strong>⚠️ Bolt Pattern Only:</strong> These vehicles share the same bolt pattern${group.hub_bore ? ` (Hub Bore ${group.hub_bore})` : ""}. Tire diameter and load ratings may differ — verify size, load, and class (car vs SUV/truck) before using any spare.
+        // Bolt-pattern-only view with prominent size/pressure reminders
+        const safetyWarning = `<div style="margin-top:0.5rem; padding:0.75rem; background:rgba(255, 152, 0, 0.1); border-left:3px solid #ff9800; font-size:0.9em;">
+            <strong>⚠️ Bolt Pattern Only:</strong> These donors share the same bolt pattern${group.hub_bore ? ` (Hub Bore ${group.hub_bore})` : ""}. Wheel and tire sizes, load index, and class (car vs SUV/truck) can differ.
+            <br>Match overall tire diameter within ~3% of your factory size and keep the load rating at or above factory spec.
+        </div>`;
+
+        const factoryReminder = `<div style="margin-top:0.5rem; padding:0.75rem; background:rgba(100, 255, 218, 0.08); border-left:3px solid #64ffda; font-size:0.9em;">
+            <strong>Factory Tire & PSI:</strong> Use the size and cold pressures on your driver-door placard (often front/rear differ). Do not guess from the spare.
+        </div>`;
+
+        const spareUsage = `<div style="margin-top:0.5rem; padding:0.75rem; background:rgba(255, 215, 0, 0.08); border-left:3px solid #ffd700; font-size:0.9em;">
+            <strong>Spare Use:</strong> Inflate to the PSI printed on the spare (compact donuts are typically 60 PSI). Stay under 50 mph and 50 miles, and re-torque lugs after 50 miles.
         </div>`;
 
         let vehicleListHtml = "";
@@ -1010,10 +1019,12 @@ document.addEventListener("DOMContentLoaded", () => {
         div.className = "card";
         div.innerHTML = `
             <h4>Spare Tire Compatibility</h4>
-            <p><strong>Bolt Pattern:</strong> ${group.bolt_pattern} | <strong>Hub Bore:</strong> ${group.hub_bore}</p>
+            <p><strong>Bolt Pattern:</strong> ${group.bolt_pattern}${group.hub_bore ? ` • <strong>Hub Bore:</strong> ${group.hub_bore}` : ""}</p>
             <p>${group.advice}</p>
+            ${factoryReminder}
+            ${spareUsage}
             ${safetyWarning}
-            <p><strong>Compatible Donors (${vehicleType || "All Types"}):</strong></p>
+            <p style="margin-top:0.75rem;"><strong>Donor Spares (bolt pattern match):</strong></p>
             ${vehicleListHtml}
         `;
         partsList.appendChild(div);
