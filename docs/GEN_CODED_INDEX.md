@@ -145,6 +145,7 @@
 - **Model:** Camaro SS (4th Gen) — **Years:** 1998–2002 — **Group:** GM_LS_GEN3 (engines) — Engine Match
 - **Model:** Silverado 1500 (GMT800 - 1st Gen) — **Years:** 1999–2007 — **Group:** GM_LS_GEN3 (engines) — Engine Match
 - **Model:** Corvette (C6 - 6th Gen) — **Years:** 2005–2007 — **Group:** GM_LS_GEN4 (engines) — Engine Match (LS2)
+- **Model:** Silverado/Sierra (GMT800/GMT900) — **Years:** 1999–2013 — **Group:** GM_LS_TRUCK (engines) — 4.8/5.3/6.0L - Junkyard Gold (LR4/LM7/LQ4/LQ9)
 - **Model:** Silverado/Sierra 2500/3500 (LB7) — **Years:** 2001–2004 — **Group:** GM_DURAMAX (engines) — Injector Issues
 - **Model:** Silverado/Sierra 2500/3500 (LLY/LBZ) — **Years:** 2004–2007 — **Group:** GM_DURAMAX (engines) — The Golden Child (LBZ)
 - **Model:** Silverado/Sierra 2500/3500 (LMM/LML/L5P) — **Years:** 2007–Present — **Group:** GM_DURAMAX (engines) — Emissions Era
@@ -165,6 +166,7 @@
 - **Model:** Cobalt (Gen 1) — **Years:** 2005–2007 — **Group:** GM_ECOTEC_LSJ (engines) — SS Supercharged trim - Engine Match (2.0L SC)
 - **Model:** C/K 1500 (V6) — **Years:** 1988–1998 — **Group:** GM_VORTEC_4300 (engines) — Base Truck Engine
 - **Model:** Cobalt (Gen 1) — **Years:** 2008–2010 — **Group:** GM_ECOTEC_LNF (engines) — SS Turbo trim - Engine Match (LNF)
+- **Model:** City Express (NV200) — **Years:** 2015–2018 — **Group:** NISSAN_CHEVY_NV200 (engines) — Rebadged NV200
 
 ## Chrysler
 - **Model:** 300 (LX - 1st Gen) — **Years:** 2005–2010 — **Group:** DAIMLER_CHRYSLER_LX (platforms) — Platform Mate (LX)
@@ -217,11 +219,17 @@
 - **Model:** Caravan (RT - Gen 5) — **Years:** 2008–2020 — **Group:** CHRYSLER_VW_RT (engines) — Grand Caravan - Platform Mate
 
 ## Eagle
+- **Model:** Vision (LH) — **Years:** 1993–1997 — **Group:** CHRYSLER_LH_PLATFORM (platforms) — Cab Forward (LH)
 - **Model:** Talon (1G) — **Years:** 1990–1994 — **Group:** MITSUBISHI_DSM (platforms) — DSM
 - **Model:** Talon (2G) — **Years:** 1995–1998 — **Group:** MITSUBISHI_DSM (platforms) — DSM
+- **Model:** Talon (1G/2G - TSi) — **Years:** 1990–1998 — **Group:** MITSUBISHI_4G63 (engines) — TSi trim - 4G63T engine
+
+## Fiat
+- **Model:** Coupe (Type 175 - Turbo) — **Years:** 1993–1996 — **Group:** LANCIA_LAMPREDI_TC (engines) — Turbo trim - 16V Turbo engine
 
 ## Ford
 - **Model:** Mondeo (Mk3) — **Years:** 2000–2007 — **Group:** JAGUAR_X_TYPE (platforms) — Platform Donor (CD132)
+- **Model:** Contour / Mystique (CDW27) — **Years:** 1995–2000 — **Group:** JAGUAR_X_TYPE (platforms) — CDW27 platform - Jaguar X-Type predecessor
 - **Model:** Mustang (Gen 1) — **Years:** 1964–1973 — **Group:** FORD_MUSTANG_GENERATIONS (platforms) — The Original Pony Car
 - **Model:** Mustang II (Gen 2) — **Years:** 1974–1978 — **Group:** FORD_MUSTANG_GENERATIONS (platforms) — Pinto Based
 - **Model:** Mustang (Fox Body - Gen 3) — **Years:** 1979–1993 — **Group:** FORD_MUSTANG_GENERATIONS (platforms) — 5.0 Legend
@@ -236,6 +244,7 @@
 - **Model:** Mustang (S197 - Gen 1) — **Years:** 2005–2009 — **Group:** FORD_S197 (platforms) — Platform Mate
 - **Model:** Mustang (S197 - Gen 2) — **Years:** 2010–2014 — **Group:** FORD_S197 (platforms) — Platform Mate
 - **Model:** Mustang (S550) — **Years:** 2015–2023 — **Group:** FORD_S550 (platforms) — Platform Mate
+- **Model:** Mustang (S550 - Gen 6 - Shelby GT350) — **Years:** 2015–2020 — **Group:** FORD_S550 (platforms) — Shelby GT350 performance trim - flat-plane crank 5.2L
 - **Model:** Model 18 / Model 40 (V8) — **Years:** 1932–1934 — **Group:** FORD_FLATHEAD_ERA (platforms) — First Low-Priced V8
 - **Model:** F-1 / F-100 (Gen 1) — **Years:** 1948–1952 — **Group:** FORD_F_SERIES_CLASSIC (platforms) — Bonus Built
 - **Model:** F-100 (Gen 2) — **Years:** 1953–1956 — **Group:** FORD_F_SERIES_CLASSIC (platforms) — Effie
@@ -280,6 +289,8 @@
 - **Model:** Falcon (FG/FG X) — **Years:** 2008–2016 — **Group:** FORD_FALCON_BA_FG (platforms) — The Final Falcon
 - **Model:** Territory (SX-SZ) — **Years:** 2004–2016 — **Group:** FORD_FALCON_BA_FG (platforms) — Falcon SUV
 - **Model:** Mustang (Fox/SN95) — **Years:** 1987–2004 — **Group:** KIT_FACTORY_FIVE_MK4 (platforms) — Donor Platform
+- **Model:** Sierra (Mk1/Mk2) — **Years:** 1982–1993 — **Group:** KIT_CATERHAM_7 (platforms) — Common donor
+- **Model:** Sierra (Mk1/Mk2) — **Years:** 1986–1992 — **Group:** RALLY_HOMOLOGATION_FORD (platforms) — RS Cosworth trim - Touring Car Legend
 - **Model:** Ranger (Gen 1/2) — **Years:** 1983–1992 — **Group:** FORD_RANGER (platforms) — Compact Truck
 - **Model:** Ranger (Gen 3) — **Years:** 1993–1997 — **Group:** FORD_RANGER (platforms) — Splash Era
 - **Model:** Ranger (Gen 4) — **Years:** 1998–2011 — **Group:** FORD_RANGER (platforms) — Last Compact
@@ -312,6 +323,7 @@
 - **Model:** Focus RS (Mk2) — **Years:** 2009–2010 — **Group:** VOLVO_WHITEBLOCK (engines) — Engine Match (Volvo T5)
 - **Model:** Falcon (BA/BF/FG) — **Years:** 2002–2016 — **Group:** FORD_BARRA (engines) — XR6 Turbo trim - Engine Match (Barra 240T/270T/310T)
 - **Model:** Territory (SY) — **Years:** 2006–2011 — **Group:** FORD_BARRA (engines) — Turbo trim - Engine Match (Barra Turbo)
+- **Model:** Sierra (Mk1/Mk2) — **Years:** 1986–1992 — **Group:** FORD_COSWORTH_YB (engines) — RS Cosworth trim - Engine Match (YBB/YBG)
 - **Model:** Escort RS Cosworth (Big Turbo) — **Years:** 1992–1994 — **Group:** FORD_COSWORTH_YB (engines) — Engine Match (YBT - Blue Top)
 - **Model:** Escort RS Cosworth (Small Turbo) — **Years:** 1994–1996 — **Group:** FORD_COSWORTH_YB (engines) — Engine Match (YBP - Silver Top)
 
@@ -330,6 +342,7 @@
 ## Holden
 - **Model:** Commodore (VB-VL) — **Years:** 1978–1988 — **Group:** HOLDEN_COMMODORE_CLASSIC (platforms) — The Beginning (Opel Rekord Base)
 - **Model:** Calais (VK-VL) — **Years:** 1984–1988 — **Group:** HOLDEN_COMMODORE_CLASSIC (platforms) — Luxury Trim
+- **Model:** Commodore (VL) — **Years:** 1986–1988 — **Group:** HOLDEN_COMMODORE_CLASSIC (platforms) — Turbo trim - RB30ET Powered Legend
 - **Model:** Commodore (VN-VS) — **Years:** 1988–1997 — **Group:** HOLDEN_COMMODORE_VN_VS (platforms) — The Mang Mang Era
 - **Model:** Ute (VG-VS) — **Years:** 1990–2000 — **Group:** HOLDEN_COMMODORE_VN_VS (platforms) — Workhorse
 - **Model:** Statesman (VQ-VS) — **Years:** 1990–1999 — **Group:** HOLDEN_COMMODORE_VN_VS (platforms) — LWB Luxury
@@ -401,12 +414,16 @@
 - **Model:** Tucson (NX4) — **Years:** 2020-Present — **Group:** HYUNDAI_KIA_N3 (platforms) — N3 Platform
 - **Model:** Elantra (CN7) — **Years:** 2020-Present — **Group:** HYUNDAI_KIA_J_PLATFORM (platforms) — K3 Platform
 - **Model:** Veloster (JS) — **Years:** 2018-2022 — **Group:** HYUNDAI_KIA_J_PLATFORM (platforms) — J6 Platform
+- **Model:** Genesis Coupe (BK1/BK2) — **Years:** 2010–2014 — **Group:** HYUNDAI_THETA_II (engines) — 2.0T trim - Engine Match (Theta II - 4B11T Relative)
+- **Model:** Genesis Coupe (BK1/BK2) — **Years:** 2010–2016 — **Group:** HYUNDAI_LAMBDA_V6 (engines) — 3.8 trim - Engine Match (Lambda II RS)
+- **Model:** Genesis Sedan (DH) — **Years:** 2009–2014 — **Group:** HYUNDAI_LAMBDA_V6 (engines) — 3.8 trim - Engine Match (Lambda II)
 
 ## Infiniti
 - **Model:** G20 (P10/P11) — **Years:** 1991–2002 — **Group:** NISSAN_SR20 (engines) — Engine Match (SR20DE)
 
 ## Isuzu
 - **Model:** Impulse (Gen 2) — **Years:** 1990–1992 — **Group:** GEO_STORM (platforms) — Platform Mate
+- **Model:** Oasis (MC/MD) — **Years:** 1996–1999 — **Group:** HONDA_F_SERIES (engines) — Engine Match (F22)
 
 ## Jeep
 - **Model:** Compass (MP) — **Years:** 2017–Present — **Group:** FCA_SMALL_WIDE (platforms) — Platform Mate
@@ -442,11 +459,14 @@
 - **Model:** K5 (DL3) — **Years:** 2019-Present — **Group:** HYUNDAI_KIA_N3 (platforms) — N3 Platform
 - **Model:** Sportage (NQ5) — **Years:** 2021-Present — **Group:** HYUNDAI_KIA_N3 (platforms) — N3 Platform
 - **Model:** Forte / K3 (BD) — **Years:** 2018-Present — **Group:** HYUNDAI_KIA_J_PLATFORM (platforms) — J6 Platform
+- **Model:** Stinger (CK) — **Years:** 2017-2023 — **Group:** HYUNDAI_KIA_RWD_SPORT (platforms) — RWD/AWD Sport Sedan
+- **Model:** Stinger (CK) — **Years:** 2018–2023 — **Group:** HYUNDAI_LAMBDA_V6 (engines) — GT trim - Engine Match (Lambda II T-GDi)
 
 ## Land Rover
 - **Model:** Range Rover (L322 - BMW Era) — **Years:** 2002–2005 — **Group:** LAND_ROVER_L322 (platforms) — BMW M62 Engine
 - **Model:** Range Rover (L322 - Ford Era) — **Years:** 2006–2009 — **Group:** LAND_ROVER_L322 (platforms) — Jaguar AJ-V8 Engine
 - **Model:** Range Rover (L322 - Facelift) — **Years:** 2010–2012 — **Group:** LAND_ROVER_L322 (platforms) — 5.0L V8
+- **Model:** Range Rover (Gen 1) — **Years:** 1970–1996 — **Group:** LAND_ROVER_CLASSIC (platforms) — Classic generation 4x4
 - **Model:** Range Rover (P38) — **Years:** 1994–2002 — **Group:** LAND_ROVER_CLASSIC (platforms) — Air Suspension Woes
 - **Model:** LR3 (4.0L V6) — **Years:** 2005–2009 — **Group:** FORD_COLOGNE_V6 (engines) — Yes, really. It's a Cologne V6.
 
@@ -481,6 +501,7 @@
 - **Model:** Exige (Series 2) — **Years:** 2004–2011 — **Group:** LOTUS_ELISE_S2 (platforms) — Hardtop Track Weapon
 - **Model:** Elise (Series 2) — **Years:** 2004–2011 — **Group:** TOYOTA_2ZZ_GE (engines) — Engine Match (2ZZ-GE)
 - **Model:** Exige (Series 2) — **Years:** 2004–2011 — **Group:** TOYOTA_2ZZ_GE (engines) — Engine Match (2ZZ-GE)
+- **Model:** Evora (A111R / A111R2) — **Years:** 2009–2021 — **Group:** TOYOTA_2GR_FE (engines) — Gen 1-2 supercar - 2GR-FE engine
 
 ## Mazda
 - **Model:** B-Series (B2300/B3000/B4000) — **Years:** 1994–2010 — **Group:** FORD_RANGER_MAZDA_B (platforms) — Rebadged Ranger
@@ -534,6 +555,7 @@
 - **Model:** Countryman (R60) — **Years:** 2010-2016 — **Group:** PSA_PF2 (platforms) — Platform Host
 - **Model:** Cooper S (R56 - 2nd Gen) — **Years:** 2007–2013 — **Group:** PSA_PRINCE (engines) — Engine Match (N14/N18)
 - **Model:** Cooper S (R55/R57 - 2nd Gen) — **Years:** 2007–2014 — **Group:** PSA_PRINCE (engines) — Engine Match (N14/N18)
+- **Model:** Mini (Classic - MkI/MkII/MkIII) — **Years:** 1959–2000 — **Group:** BMC_A_SERIES (engines) — Classic generation A-Series engine
 
 ## Mitsubishi
 - **Model:** Lancer Evolution (I-III) — **Years:** 1992–1996 — **Group:** MITSUBISHI_EVO (platforms) — Early Rally
@@ -551,6 +573,8 @@
 - **Model:** Galant (9th Gen USDM) — **Years:** 2004-2012 — **Group:** MITSUBISHI_GALANT_LEGNUM (platforms) — Shares bones with Endeavor/Outlander; 2.4 4G69 and 3.8 6G75
 - **Model:** Pajero / Montero (V20) — **Years:** 1991-1999 — **Group:** MITSUBISHI_PAJERO_MONTERO (platforms) — The Dakar Legend
 - **Model:** Pajero Evolution (V55W) — **Years:** 1997-1999 — **Group:** MITSUBISHI_PAJERO_MONTERO (platforms) — Homologation Special
+- **Model:** Lancer (CZ4A - Gen X) — **Years:** 2007–2016 — **Group:** HYUNDAI_THETA_II (engines) — Evolution X trim - 4B11T engine
+- **Model:** Lancer (Gen I-IX - Evolution) — **Years:** 1992–2007 — **Group:** MITSUBISHI_4G63 (engines) — Evolution trim - 4G63T turbo engine
 - **Model:** Eclipse GS-T/GSX (1G/2G) — **Years:** 1990–1999 — **Group:** MITSUBISHI_4G63 (engines) — Engine Match (4G63T)
 
 ## Nissan
@@ -585,9 +609,17 @@
 - **Model:** Maxima (A32 - Gen 4) — **Years:** 1994-1999 — **Group:** NISSAN_MAXIMA__A32___GEN_4_ (platforms) — VQ30DE engine, lighter rear suspension.
 - **Model:** Maxima (A33 - Gen 5) — **Years:** 1999-2003 — **Group:** NISSAN_MAXIMA__A33___GEN_5_ (platforms) — Anniversary edition, 3.5L V6 later.
 - **Model:** Maxima (A34 - Gen 6) — **Years:** 2003-2008 — **Group:** NISSAN_MAXIMA__A34___GEN_6_ (platforms) — Distinctive styling, moved upmarket.
+- **Model:** Silvia / 240SX / 180SX (S13/S14/S15) — **Years:** 1989–2002 — **Group:** NISSAN_SR20 (engines) — Gen 3-5 - SR20DE/DET engine match
 - **Model:** Sentra SE-R (B13) — **Years:** 1991–1994 — **Group:** NISSAN_SR20 (engines) — Engine Match (SR20DE)
 - **Model:** Skyline (R32/R33/R34) — **Years:** 1989–2002 — **Group:** NISSAN_RB_SERIES (engines) — GT-R trim - Engine Match (RB26DETT)
 - **Model:** Skyline (R32/R33/R34) — **Years:** 1989–2001 — **Group:** NISSAN_RB_SERIES (engines) — GTS-t/GT-T trim - Engine Match (RB20/RB25)
+
+## Oldsmobile
+- **Model:** Cutlass Supreme (G-Body) — **Years:** 1982–1988 — **Group:** GM_G_BODY_RWD (platforms) — G-Body platform performance variant
+- **Model:** LSS (W-Body) — **Years:** 1996–1999 — **Group:** GM_3800_SERIES (engines) — W-Body platform - L67 Supercharged 3800 engine
+
+## Opel
+- **Model:** Insignia (GA) — **Years:** 2008–2017 — **Group:** GM_EPSILON_2 (platforms) — Generation A platform
 
 ## Plymouth
 - **Model:** Voyager (NS - Gen 2) — **Years:** 1991–1995 — **Group:** CHRYSLER_MINIVANS (platforms) — All trims (Voyager/Grand Voyager) - Platform Mate
@@ -605,6 +637,7 @@
 - **Model:** GTO (Gen 5) — **Years:** 2004–2006 — **Group:** PONTIAC_GTO (platforms) — Holden Monaro Rebadge (LS1/LS2)
 - **Model:** G8 (WM) — **Years:** 2008–2009 — **Group:** PONTIAC_G8 (platforms) — All trims (Base V6/GT V8/GXP LS3) - Zeta Platform
 - **Model:** Grand Prix (Gen 5-8) — **Years:** 1988–2008 — **Group:** PONTIAC_GRAND_PRIX (platforms) — W-Body (FWD)
+- **Model:** Solstice (Kappa) — **Years:** 2006–2010 — **Group:** PONTIAC_SOLSTICE (platforms) — Kappa Platform compact roadster
 - **Model:** GTO (Gen 5) — **Years:** 2004–2006 — **Group:** HOLDEN_COMMODORE_VT_VZ (platforms) — Rebadged Monaro
 - **Model:** Firebird Trans Am (4th Gen) — **Years:** 1998–2002 — **Group:** GM_LS_GEN3 (engines) — Engine Match
 - **Model:** GTO (Gen 5) — **Years:** 2005–2006 — **Group:** GM_LS_GEN4 (engines) — Engine Match (LS2)
@@ -613,6 +646,7 @@
 - **Model:** Grand Prix (Gen 6-7) — **Years:** 1997–2008 — **Group:** GM_3800_SERIES (engines) — GTP trim - Engine Match (L67/L32 Supercharged)
 - **Model:** Grand Prix (Gen 6-7) — **Years:** 1997–2008 — **Group:** GM_3800_SERIES (engines) — GT/SE trim - Engine Match (L36/L26 NA)
 - **Model:** Firebird (Gen 4) — **Years:** 1995–2002 — **Group:** GM_3800_SERIES (engines) — Engine Match (L36 NA)
+- **Model:** Solstice (Kappa - Gen 1) — **Years:** 2007–2009 — **Group:** GM_ECOTEC_LNF (engines) — GXP trim - LNF turbo engine
 
 ## Porsche
 - **Model:** 911 Carrera (996.1 - 5th Gen) — **Years:** 1999–2001 — **Group:** PORSCHE_986_996 (platforms) — Platform Mate
@@ -670,6 +704,7 @@
 - **Model:** 9-3 (NG - 2nd Gen) — **Years:** 2003–2011 — **Group:** GM_EPSILON_1 (platforms) — Platform Mate (Epsilon I)
 - **Model:** 9-5 (NG - 2nd Gen) — **Years:** 2010–2011 — **Group:** GM_EPSILON_2 (platforms) — Platform Mate (Epsilon II)
 - **Model:** 9-5 (Gen 1) — **Years:** 1997–2009 — **Group:** SATURN_L_SERIES (platforms) — GM2900 Platform
+- **Model:** 900 (C900 - Classic) — **Years:** 1978-1993 — **Group:** SAAB_LEGENDS (platforms) — Classic generation - turbo pioneer
 - **Model:** 9-3 (OG) — **Years:** 1998-2002 — **Group:** SAAB_LEGENDS (platforms) — Viggen Era
 - **Model:** 9-5 (OG) — **Years:** 1997-2009 — **Group:** SAAB_LEGENDS (platforms) — Aero Era
 - **Model:** 900 (NG) — **Years:** 1994–1998 — **Group:** SAAB_GM2900 (platforms) — GM Era
@@ -678,6 +713,8 @@
 - **Model:** 9-3 2.0T (B207) — **Years:** 2003–2011 — **Group:** GM_ECOTEC_GEN2 (engines) — Engine Match (LK9)
 - **Model:** 9-3 Aero V6 (B284) — **Years:** 2006–2009 — **Group:** GM_HFV6_TURBO (engines) — Engine Match (LP9)
 - **Model:** 9-5 NG Turbo6 (A28NER) — **Years:** 2010–2011 — **Group:** GM_HFV6_TURBO (engines) — Engine Match (LP9)
+- **Model:** 900 (C900 - Turbo) — **Years:** 1978–1993 — **Group:** SAAB_H_ENGINE (engines) — Turbo trim - B201/B202 engine
+- **Model:** 9000 (Type 4 - Turbo) — **Years:** 1985–1998 — **Group:** SAAB_H_ENGINE (engines) — Turbo trim - B204/B234 engine
 
 ## Saturn
 - **Model:** SL (Sedan) — **Years:** 1991–2002 — **Group:** SATURN_S_SERIES (platforms) — Z-Body (Plastic Panels)
@@ -725,6 +762,7 @@
 - **Model:** WRX (VA) — **Years:** 2015–2021 — **Group:** SUBARU_FA20 (engines) — Engine Match (FA20F Turbo)
 
 ## Suzuki
+- **Model:** Sidekick (DA/DB) — **Years:** 1989–1998 — **Group:** GEO_TRACKER (platforms) — Gen 1-2 compact SUV
 - **Model:** Swift GTi (AA34S) — **Years:** 1988-1994 — **Group:** SUZUKI_SWIFT_CULTUS (platforms) — Cultus GTi - High revving 1.3L
 - **Model:** Swift Sport (ZC31S) — **Years:** 2005-2010 — **Group:** SUZUKI_SWIFT_CULTUS (platforms) — Modern Hot Hatch
 - **Model:** Swift Sport (ZC32S) — **Years:** 2010-2017 — **Group:** SUZUKI_SWIFT_CULTUS (platforms) — 1.6L NA
@@ -784,6 +822,7 @@
 - **Model:** Celica (T230 - 7th Gen) — **Years:** 2000–2005 — **Group:** TOYOTA_2ZZ_GE (engines) — GT-S trim - Engine Match (2ZZ-GE)
 - **Model:** Matrix (E130 - 1st Gen) — **Years:** 2003–2006 — **Group:** TOYOTA_2ZZ_GE (engines) — XRS trim - Engine Match (2ZZ-GE)
 - **Model:** Corolla (E120 - 9th Gen) — **Years:** 2005–2006 — **Group:** TOYOTA_2ZZ_GE (engines) — XRS trim - Engine Match (2ZZ-GE)
+- **Model:** Sienna (XL20) — **Years:** 2007–2016 — **Group:** TOYOTA_2GR_FE (engines) — Gen 2 minivan - 2GR-FE engine
 - **Model:** Camry (XV10/XV20 - 3rd/4th Gen) — **Years:** 1992–2001 — **Group:** TOYOTA_S_SERIES (engines) — Engine Match (5S-FE)
 - **Model:** Celica (T180/T200 - 5th/6th Gen) — **Years:** 1990–1999 — **Group:** TOYOTA_S_SERIES (engines) — GT trim - Engine Match (5S-FE)
 - **Model:** MR2 (SW20) NA — **Years:** 1990–1995 — **Group:** TOYOTA_S_SERIES (engines) — Engine Match (5S-FE)
@@ -829,6 +868,7 @@
 - **Model:** Passat (B6 - Mk6) — **Years:** 2005-2010 — **Group:** VOLKSWAGEN_PASSAT__B6___MK6_ (platforms) — Returned to transverse engine layout (PQ46).
 - **Model:** Passat (B7 - Mk7) — **Years:** 2010-2015 — **Group:** VOLKSWAGEN_PASSAT__B7___MK7_ (platforms) — Facelift of B6; NMS version split for US market.
 - **Model:** Passat (B8 - Mk8) — **Years:** 2015-Present — **Group:** VOLKSWAGEN_PASSAT__B8___MK8_ (platforms) — MQB platform (Euro version).
+- **Model:** Passat (B5/B5.5) — **Years:** 1998–2005 — **Group:** VAG_18T (engines) — 1.8T trim
 - **Model:** Touareg (7L - 1st Gen) 3.2L — **Years:** 2002–2006 — **Group:** VAG_VR6_32 (engines) — Engine Match (VR6)
 - **Model:** Golf R32 (Mk4/Mk5) — **Years:** 2004, 2008 — **Group:** VAG_VR6_32 (engines) — Engine Match (VR6)
 - **Model:** Beetle (Type 1) — **Years:** 1938–2003 — **Group:** VW_AIRCOOLED (engines) — The People's Car
@@ -847,4 +887,5 @@
 - **Model:** S60 (Gen 1) — **Years:** 2000–2009 — **Group:** VOLVO_P2_PLATFORM (platforms) — Spaceball Shifter
 - **Model:** V70 (Gen 2) — **Years:** 2000–2007 — **Group:** VOLVO_P2_PLATFORM (platforms) — Wagon Life
 - **Model:** XC90 (Gen 1) — **Years:** 2002–2014 — **Group:** VOLVO_P2_PLATFORM (platforms) — V8 Yamaha Option
+- **Model:** 240 / 740 / 940 (Turbo) — **Years:** 1981–1998 — **Group:** VOLVO_REDBLOCK (engines) — Turbo trim - B21FT/B230FT engine
 

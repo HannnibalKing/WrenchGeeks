@@ -713,9 +713,9 @@
       },
       {
         "make": "Opel",
-        "model": "Insignia A",
+        "model": "Insignia (GA)",
         "years": "2008–2017",
-        "notes": "Platform Mate (Epsilon II)"
+        "notes": "Generation A platform"
       },
       {
         "make": "Chevrolet",
@@ -829,9 +829,9 @@
       },
       {
         "make": "Oldsmobile",
-        "model": "Cutlass Supreme",
+        "model": "Cutlass Supreme (G-Body)",
         "years": "1982–1988",
-        "notes": "Platform Mate (G-Body)"
+        "notes": "G-Body platform performance variant"
       },
       {
         "make": "Pontiac",
@@ -915,9 +915,9 @@
       },
       {
         "make": "Ford",
-        "model": "Contour / Mystique",
+        "model": "Contour / Mystique (CDW27)",
         "years": "1995–2000",
-        "notes": "Predecessor (CDW27)"
+        "notes": "CDW27 platform - Jaguar X-Type predecessor"
       }
     ],
     "CADILLAC_CATERA": [
@@ -1067,9 +1067,9 @@
       },
       {
         "make": "Ford",
-        "model": "Shelby GT350",
+        "model": "Mustang (S550 - Gen 6 - Shelby GT350)",
         "years": "2015–2020",
-        "notes": "Platform Mate"
+        "notes": "Shelby GT350 performance trim - flat-plane crank 5.2L"
       }
     ],
     "DODGE_VIPER": [
@@ -1299,7 +1299,7 @@
       },
       {
         "make": "Eagle",
-        "model": "Vision",
+        "model": "Vision (LH)",
         "years": "1993–1997",
         "notes": "Cab Forward (LH)"
       }
@@ -1969,9 +1969,9 @@
     "PONTIAC_SOLSTICE": [
       {
         "make": "Pontiac",
-        "model": "Solstice",
+        "model": "Solstice (Kappa)",
         "years": "2006–2010",
-        "notes": "Kappa Platform"
+        "notes": "Kappa Platform compact roadster"
       },
       {
         "make": "Saturn",
@@ -2713,9 +2713,9 @@
       },
       {
         "make": "Suzuki",
-        "model": "Sidekick",
+        "model": "Sidekick (DA/DB)",
         "years": "1989–1998",
-        "notes": "Platform Mate"
+        "notes": "Gen 1-2 compact SUV"
       },
       {
         "make": "Suzuki",
@@ -3223,9 +3223,9 @@
     "SAAB_LEGENDS": [
       {
         "make": "Saab",
-        "model": "900 Classic",
+        "model": "900 (C900 - Classic)",
         "years": "1978-1993",
-        "notes": "Turbo Pioneer"
+        "notes": "Classic generation - turbo pioneer"
       },
       {
         "make": "Saab",
@@ -3831,9 +3831,9 @@
       },
       {
         "make": "Holden",
-        "model": "VL Turbo",
+        "model": "Commodore (VL)",
         "years": "1986–1988",
-        "notes": "RB30ET Powered Legend"
+        "notes": "Turbo trim - RB30ET Powered Legend"
       }
     ],
     "HOLDEN_COMMODORE_VN_VS": [
@@ -4191,9 +4191,9 @@
       },
       {
         "make": "Ford",
-        "model": "Sierra",
+        "model": "Sierra (Mk1/Mk2)",
         "years": "1982–1993",
-        "notes": "Common Donor"
+        "notes": "Common donor"
       }
     ],
     "BRITISH_ROADSTER_MG": [
@@ -4339,9 +4339,9 @@
       },
       {
         "make": "Ford",
-        "model": "Sierra RS Cosworth",
+        "model": "Sierra (Mk1/Mk2)",
         "years": "1986–1992",
-        "notes": "Touring Car Legend"
+        "notes": "RS Cosworth trim - Touring Car Legend"
       }
     ],
     "RALLY_HOMOLOGATION_JAPAN": [
@@ -4893,9 +4893,9 @@
       },
       {
         "make": "Land Rover",
-        "model": "Range Rover Classic",
+        "model": "Range Rover (Gen 1)",
         "years": "1970–1996",
-        "notes": "Luxury 4x4"
+        "notes": "Classic generation 4x4"
       },
       {
         "make": "Land Rover",
@@ -5917,7 +5917,7 @@
     "HYUNDAI_KIA_RWD_SPORT": [
       {
         "make": "Kia",
-        "model": "Stinger",
+        "model": "Stinger (CK)",
         "years": "2017-2023",
         "notes": "RWD/AWD Sport Sedan"
       },
@@ -5945,9 +5945,9 @@
       },
       {
         "make": "Volkswagen",
-        "model": "Passat 1.8T",
+        "model": "Passat (B5/B5.5)",
         "years": "1998–2005",
-        "notes": "Engine Match"
+        "notes": "1.8T trim"
       },
       {
         "make": "Audi",
@@ -6017,9 +6017,9 @@
     "GM_LS_TRUCK": [
       {
         "make": "Chevrolet",
-        "model": "Silverado/Sierra 4.8L/5.3L/6.0L",
+        "model": "Silverado/Sierra (GMT800/GMT900)",
         "years": "1999–2013",
-        "notes": "Junkyard Gold (LR4/LM7/LQ4/LQ9)"
+        "notes": "4.8/5.3/6.0L - Junkyard Gold (LR4/LM7/LQ4/LQ9)"
       },
       {
         "make": "Chevrolet",
@@ -6205,9 +6205,9 @@
     "TOYOTA_2GR_FE": [
       {
         "make": "Lotus",
-        "model": "Evora",
+        "model": "Evora (A111R / A111R2)",
         "years": "2009–2021",
-        "notes": "Engine Match (2GR-FE)"
+        "notes": "Gen 1-2 supercar - 2GR-FE engine"
       },
       {
         "make": "Lotus",
@@ -6223,9 +6223,9 @@
       },
       {
         "make": "Toyota",
-        "model": "Sienna",
+        "model": "Sienna (XL20)",
         "years": "2007–2016",
-        "notes": "Engine Match (2GR-FE)"
+        "notes": "Gen 2 minivan - 2GR-FE engine"
       },
       {
         "make": "Toyota",
@@ -6537,35 +6537,35 @@
     "HYUNDAI_THETA_II": [
       {
         "make": "Hyundai",
-        "model": "Genesis Coupe 2.0T",
+        "model": "Genesis Coupe (BK1/BK2)",
         "years": "2010–2014",
-        "notes": "Engine Match (Theta II - 4B11T Relative)"
+        "notes": "2.0T trim - Engine Match (Theta II - 4B11T Relative)"
       },
       {
         "make": "Mitsubishi",
-        "model": "Lancer Evolution X",
+        "model": "Lancer (CZ4A - Gen X)",
         "years": "2007–2016",
-        "notes": "Engine Match (4B11T - Block Similarities)"
+        "notes": "Evolution X trim - 4B11T engine"
       }
     ],
     "HYUNDAI_LAMBDA_V6": [
       {
         "make": "Hyundai",
-        "model": "Genesis Coupe 3.8",
+        "model": "Genesis Coupe (BK1/BK2)",
         "years": "2010–2016",
-        "notes": "Engine Match (Lambda II RS)"
+        "notes": "3.8 trim - Engine Match (Lambda II RS)"
       },
       {
         "make": "Hyundai",
-        "model": "Genesis Sedan 3.8",
+        "model": "Genesis Sedan (DH)",
         "years": "2009–2014",
-        "notes": "Engine Match (Lambda II)"
+        "notes": "3.8 trim - Engine Match (Lambda II)"
       },
       {
         "make": "Kia",
-        "model": "Stinger GT",
+        "model": "Stinger (CK)",
         "years": "2018–2023",
-        "notes": "Engine Match (Lambda II T-GDi)"
+        "notes": "GT trim - Engine Match (Lambda II T-GDi)"
       }
     ],
     "FORD_DURATEC_V6": [
@@ -7049,9 +7049,9 @@
       },
       {
         "make": "Oldsmobile",
-        "model": "LSS",
+        "model": "LSS (W-Body)",
         "years": "1996–1999",
-        "notes": "Engine Match (L67 Supercharged)"
+        "notes": "W-Body platform - L67 Supercharged 3800 engine"
       },
       {
         "make": "Pontiac",
@@ -7149,7 +7149,7 @@
       },
       {
         "make": "Isuzu",
-        "model": "Oasis",
+        "model": "Oasis (MC/MD)",
         "years": "1996–1999",
         "notes": "Engine Match (F22)"
       }
@@ -7297,9 +7297,9 @@
     "NISSAN_SR20": [
       {
         "make": "Nissan",
-        "model": "Silvia/180SX/240SX",
+        "model": "Silvia / 240SX / 180SX (S13/S14/S15)",
         "years": "1989–2002",
-        "notes": "Engine Match (SR20DE/DET)"
+        "notes": "Gen 3-5 - SR20DE/DET engine match"
       },
       {
         "make": "Nissan",
@@ -7423,9 +7423,9 @@
     "MITSUBISHI_4G63": [
       {
         "make": "Mitsubishi",
-        "model": "Lancer Evolution I-IX",
+        "model": "Lancer (Gen I-IX - Evolution)",
         "years": "1992–2007",
-        "notes": "Engine Match (4G63T)"
+        "notes": "Evolution trim - 4G63T turbo engine"
       },
       {
         "make": "Mitsubishi",
@@ -7435,9 +7435,9 @@
       },
       {
         "make": "Eagle",
-        "model": "Talon TSi",
+        "model": "Talon (1G/2G - TSi)",
         "years": "1990–1998",
-        "notes": "Engine Match (4G63T)"
+        "notes": "TSi trim - 4G63T engine"
       },
       {
         "make": "Mitsubishi",
@@ -7531,9 +7531,9 @@
     "VOLVO_REDBLOCK": [
       {
         "make": "Volvo",
-        "model": "240/740/940 Turbo",
+        "model": "240 / 740 / 940 (Turbo)",
         "years": "1981–1998",
-        "notes": "Engine Match (B21FT/B230FT)"
+        "notes": "Turbo trim - B21FT/B230FT engine"
       }
     ],
     "VOLVO_WHITEBLOCK": [
@@ -7559,15 +7559,15 @@
     "SAAB_H_ENGINE": [
       {
         "make": "Saab",
-        "model": "900 Turbo",
+        "model": "900 (C900 - Turbo)",
         "years": "1978–1993",
-        "notes": "Engine Match (B201/B202)"
+        "notes": "Turbo trim - B201/B202 engine"
       },
       {
         "make": "Saab",
-        "model": "9000 Turbo",
+        "model": "9000 (Type 4 - Turbo)",
         "years": "1985–1998",
-        "notes": "Engine Match (B204/B234)"
+        "notes": "Turbo trim - B204/B234 engine"
       },
       {
         "make": "Saab",
@@ -7771,9 +7771,9 @@
       },
       {
         "make": "Pontiac",
-        "model": "Solstice",
+        "model": "Solstice (Kappa - Gen 1)",
         "years": "2007–2009",
-        "notes": "GXP trim - Engine Match (LNF)"
+        "notes": "GXP trim - LNF turbo engine"
       },
       {
         "make": "Saturn",
@@ -7823,9 +7823,9 @@
       },
       {
         "make": "Mini",
-        "model": "Classic Mini",
+        "model": "Mini (Classic - MkI/MkII/MkIII)",
         "years": "1959–2000",
-        "notes": "Engine Match (A-Series)"
+        "notes": "Classic generation A-Series engine"
       }
     ],
     "BMC_B_SERIES": [
@@ -7871,9 +7871,9 @@
     "FORD_COSWORTH_YB": [
       {
         "make": "Ford",
-        "model": "Sierra RS Cosworth",
+        "model": "Sierra (Mk1/Mk2)",
         "years": "1986–1992",
-        "notes": "Engine Match (YBB/YBG)"
+        "notes": "RS Cosworth trim - Engine Match (YBB/YBG)"
       },
       {
         "make": "Ford",
@@ -7903,9 +7903,9 @@
       },
       {
         "make": "Fiat",
-        "model": "Coupe Turbo",
+        "model": "Coupe (Type 175 - Turbo)",
         "years": "1993–1996",
-        "notes": "Engine Match (16V Turbo)"
+        "notes": "Turbo trim - 16V Turbo engine"
       },
       {
         "make": "Alfa Romeo",
@@ -8045,7 +8045,7 @@
       },
       {
         "make": "Chevrolet",
-        "model": "City Express",
+        "model": "City Express (NV200)",
         "years": "2015–2018",
         "notes": "Rebadged NV200"
       }
