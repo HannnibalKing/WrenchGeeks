@@ -6191,27 +6191,27 @@
       },
       {
         "make": "Toyota",
-        "model": "Celica GT-S",
+        "model": "Celica (T230 - 7th Gen)",
         "years": "2000–2005",
-        "notes": "Engine Match (2ZZ-GE)"
+        "notes": "GT-S trim - Engine Match (2ZZ-GE)"
       },
       {
         "make": "Toyota",
-        "model": "Matrix XRS",
+        "model": "Matrix (E130 - 1st Gen)",
         "years": "2003–2006",
-        "notes": "Engine Match (2ZZ-GE)"
+        "notes": "XRS trim - Engine Match (2ZZ-GE)"
       },
       {
         "make": "Pontiac",
-        "model": "Vibe GT",
+        "model": "Vibe (E130 - 1st Gen)",
         "years": "2003–2006",
-        "notes": "Engine Match (2ZZ-GE)"
+        "notes": "GT trim - Engine Match (2ZZ-GE)"
       },
       {
         "make": "Toyota",
-        "model": "Corolla XRS",
+        "model": "Corolla (E120 - 9th Gen)",
         "years": "2005–2006",
-        "notes": "Engine Match (2ZZ-GE)"
+        "notes": "XRS trim - Engine Match (2ZZ-GE)"
       }
     ],
     "TOYOTA_2GR_FE": [
@@ -6521,9 +6521,9 @@
       },
       {
         "make": "Subaru",
-        "model": "Impreza WRX",
+        "model": "Impreza (GD/GG - 2nd Gen)",
         "years": "2002–2005",
-        "notes": "Engine Match (EJ205)"
+        "notes": "WRX trim - Engine Match (EJ205)"
       }
     ],
     "SUBARU_EJ255": [
@@ -6535,15 +6535,15 @@
       },
       {
         "make": "Subaru",
-        "model": "Impreza WRX",
+        "model": "Impreza (GE/GH/GR/GV - 3rd/4th Gen)",
         "years": "2006–2014",
-        "notes": "Engine Match (EJ255)"
+        "notes": "WRX trim - Engine Match (EJ255)"
       },
       {
         "make": "Subaru",
-        "model": "Forester XT",
+        "model": "Forester (SG/SH - 2nd/3rd Gen)",
         "years": "2004–2013",
-        "notes": "Engine Match (EJ255)"
+        "notes": "XT trim - Engine Match (EJ255)"
       }
     ],
     "HYUNDAI_THETA_II": [
@@ -6687,9 +6687,9 @@
     "FORD_MODULAR_2V": [
       {
         "make": "Ford",
-        "model": "Mustang GT",
+        "model": "Mustang (SN95 - Gen 4)",
         "years": "1996–2004",
-        "notes": "Engine Match (4.6L 2V)"
+        "notes": "GT trim - Engine Match (4.6L 2V)"
       },
       {
         "make": "Ford",
@@ -6767,15 +6767,15 @@
     "DODGE_24_TURBO": [
       {
         "make": "Dodge",
-        "model": "Neon SRT-4",
+        "model": "Neon (PL - 2nd Gen)",
         "years": "2003–2005",
-        "notes": "Engine Match (2.4L Turbo)"
+        "notes": "SRT-4 trim - Engine Match (2.4L Turbo)"
       },
       {
         "make": "Chrysler",
-        "model": "PT Cruiser GT",
+        "model": "PT Cruiser",
         "years": "2003–2010",
-        "notes": "Engine Match (2.4L Turbo)"
+        "notes": "GT trim - Engine Match (2.4L Turbo)"
       }
     ],
     "CUMMINS_ISB_59": [
@@ -6831,27 +6831,21 @@
     "FORD_ECOBOOST_4": [
       {
         "make": "Ford",
-        "model": "Focus ST",
+        "model": "Focus (C346 - 3rd Gen)",
         "years": "2013–2018",
-        "notes": "Engine Match (2.0L EcoBoost)"
+        "notes": "ST/RS trims - Engine Match (2.0L/2.3L EcoBoost)"
       },
       {
         "make": "Ford",
-        "model": "Focus RS",
-        "years": "2016–2018",
-        "notes": "Engine Match (2.3L EcoBoost)"
-      },
-      {
-        "make": "Ford",
-        "model": "Mustang EcoBoost",
+        "model": "Mustang (S550 - Gen 6)",
         "years": "2015–Present",
-        "notes": "Engine Match (2.3L EcoBoost)"
+        "notes": "EcoBoost trim - Engine Match (2.3L EcoBoost)"
       },
       {
         "make": "Ford",
-        "model": "Fiesta ST",
+        "model": "Fiesta (Mk7 - 7th Gen)",
         "years": "2014–2019",
-        "notes": "Engine Match (1.6L EcoBoost)"
+        "notes": "ST trim - Engine Match (1.6L EcoBoost)"
       }
     ],
     "FORD_ECOBOOST_6": [
@@ -7129,15 +7123,15 @@
     "TOYOTA_S_SERIES": [
       {
         "make": "Toyota",
-        "model": "Camry",
+        "model": "Camry (XV10/XV20 - 3rd/4th Gen)",
         "years": "1992–2001",
         "notes": "Engine Match (5S-FE)"
       },
       {
         "make": "Toyota",
-        "model": "Celica GT",
+        "model": "Celica (T180/T200 - 5th/6th Gen)",
         "years": "1990–1999",
-        "notes": "Engine Match (5S-FE)"
+        "notes": "GT trim - Engine Match (5S-FE)"
       },
       {
         "make": "Toyota",
