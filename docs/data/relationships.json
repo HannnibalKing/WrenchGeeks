@@ -1119,9 +1119,9 @@
       },
       {
         "make": "Dodge",
-        "model": "Neon SRT-4",
+        "model": "Neon (2nd Gen)",
         "years": "2003–2005",
-        "notes": "Platform Mate"
+        "notes": "SRT-4 trim - Platform Mate"
       },
       {
         "make": "Chrysler",
@@ -1935,21 +1935,9 @@
     "PONTIAC_G8": [
       {
         "make": "Pontiac",
-        "model": "G8 Base",
+        "model": "G8 (WM)",
         "years": "2008–2009",
-        "notes": "Zeta Platform (V6)"
-      },
-      {
-        "make": "Pontiac",
-        "model": "G8 GT",
-        "years": "2008–2009",
-        "notes": "Zeta Platform (L76 V8)"
-      },
-      {
-        "make": "Pontiac",
-        "model": "G8 GXP",
-        "years": "2009",
-        "notes": "Zeta Platform (LS3 V8)"
+        "notes": "All trims (Base V6/GT V8/GXP LS3) - Zeta Platform"
       },
       {
         "make": "Chevrolet",
@@ -2037,15 +2025,15 @@
     "SATURN_ION": [
       {
         "make": "Saturn",
-        "model": "Ion (Sedan/Coupe)",
+        "model": "Ion",
         "years": "2003–2007",
-        "notes": "Delta Platform"
+        "notes": "All trims - Delta Platform"
       },
       {
         "make": "Saturn",
-        "model": "Ion Red Line",
+        "model": "Ion",
         "years": "2004–2007",
-        "notes": "Delta Platform (LSJ Supercharged)"
+        "notes": "Red Line trim - Delta Platform (LSJ Supercharged)"
       },
       {
         "make": "Chevrolet",
@@ -2987,9 +2975,9 @@
       },
       {
         "make": "Dodge",
-        "model": "Stealth R/T Turbo",
+        "model": "Stealth",
         "years": "1991–1996",
-        "notes": "Platform Mate"
+        "notes": "R/T Turbo trim - Platform Mate"
       }
     ],
     "MITSUBISHI_GALANT_LEGNUM": [
@@ -4129,9 +4117,9 @@
       },
       {
         "make": "Chevrolet",
-        "model": "Cobalt SS",
+        "model": "Cobalt (Gen 1)",
         "years": "2005–2010",
-        "notes": "Donor Platform"
+        "notes": "SS trim - Donor Platform"
       }
     ],
     "KIT_MEYERS_MANX": [
@@ -6015,9 +6003,9 @@
       },
       {
         "make": "Chevrolet",
-        "model": "TrailBlazer SS",
+        "model": "TrailBlazer",
         "years": "2006–2009",
-        "notes": "Engine Match (LS2)"
+        "notes": "SS trim - Engine Match (LS2)"
       },
       {
         "make": "Saab",
@@ -6469,15 +6457,15 @@
       },
       {
         "make": "Chevrolet",
-        "model": "Cobalt SS Supercharged",
+        "model": "Cobalt (Gen 1)",
         "years": "2005–2007",
-        "notes": "Engine Match (LSJ - Block/Head similar)"
+        "notes": "SS Supercharged trim - Engine Match (LSJ - Block/Head similar)"
       },
       {
         "make": "Chevrolet",
-        "model": "Cobalt SS Turbo",
+        "model": "Cobalt (Gen 1)",
         "years": "2008–2010",
-        "notes": "Engine Match (LNF - Block/Head similar)"
+        "notes": "SS Turbo trim - Engine Match (LNF - Block/Head similar)"
       },
       {
         "make": "Opel",
@@ -6713,15 +6701,15 @@
     "FORD_MODULAR_4V": [
       {
         "make": "Ford",
-        "model": "Mustang SVT Cobra",
+        "model": "Mustang (SN95 - Gen 4)",
         "years": "1996–2001",
-        "notes": "Engine Match (4.6L 4V NA)"
+        "notes": "SVT Cobra trim - Engine Match (4.6L 4V NA)"
       },
       {
         "make": "Ford",
-        "model": "Mustang Mach 1",
+        "model": "Mustang (SN95 - Gen 4)",
         "years": "2003–2004",
-        "notes": "Engine Match (4.6L 4V NA)"
+        "notes": "Mach 1 trim - Engine Match (4.6L 4V NA)"
       },
       {
         "make": "Lincoln",
@@ -6897,9 +6885,9 @@
       },
       {
         "make": "Chevrolet",
-        "model": "Chevelle SS",
+        "model": "Chevelle",
         "years": "1965–1972",
-        "notes": "Engine Match (BBC)"
+        "notes": "SS trim - Engine Match (BBC)"
       }
     ],
     "GM_LT_GEN5": [
@@ -6957,21 +6945,21 @@
     "GM_LS4_FWD": [
       {
         "make": "Pontiac",
-        "model": "Grand Prix GXP",
+        "model": "Grand Prix (Gen 8)",
         "years": "2005–2008",
-        "notes": "Engine Match (5.3L LS4 V8)"
+        "notes": "GXP trim - Engine Match (5.3L LS4 V8)"
       },
       {
         "make": "Chevrolet",
-        "model": "Impala SS",
+        "model": "Impala (Gen 9)",
         "years": "2006–2009",
-        "notes": "Engine Match (5.3L LS4 V8)"
+        "notes": "SS trim - Engine Match (5.3L LS4 V8)"
       },
       {
         "make": "Chevrolet",
-        "model": "Monte Carlo SS",
+        "model": "Monte Carlo (Gen 6)",
         "years": "2006–2007",
-        "notes": "Engine Match (5.3L LS4 V8)"
+        "notes": "SS trim - Engine Match (5.3L LS4 V8)"
       },
       {
         "make": "Buick",
@@ -6983,39 +6971,39 @@
     "GM_3800_SERIES": [
       {
         "make": "Pontiac",
-        "model": "Grand Prix GTP",
+        "model": "Grand Prix (Gen 6-7)",
         "years": "1997–2008",
-        "notes": "Engine Match (L67/L32 Supercharged)"
+        "notes": "GTP trim - Engine Match (L67/L32 Supercharged)"
       },
       {
         "make": "Pontiac",
-        "model": "Grand Prix GT/SE",
+        "model": "Grand Prix (Gen 6-7)",
         "years": "1997–2008",
-        "notes": "Engine Match (L36/L26 NA)"
+        "notes": "GT/SE trim - Engine Match (L36/L26 NA)"
       },
       {
         "make": "Pontiac",
-        "model": "Bonneville SSEi",
+        "model": "Bonneville",
         "years": "1992–2005",
-        "notes": "Engine Match (L67 Supercharged)"
+        "notes": "SSEi trim - Engine Match (L67 Supercharged)"
       },
       {
         "make": "Pontiac",
-        "model": "Bonneville SE/SLE",
+        "model": "Bonneville",
         "years": "1992–2005",
-        "notes": "Engine Match (L36 NA)"
+        "notes": "SE/SLE trim - Engine Match (L36 NA)"
       },
       {
         "make": "Buick",
-        "model": "Regal GS",
+        "model": "Regal",
         "years": "1997–2004",
-        "notes": "Engine Match (L67 Supercharged)"
+        "notes": "GS trim - Engine Match (L67 Supercharged)"
       },
       {
         "make": "Buick",
-        "model": "Regal LS",
+        "model": "Regal",
         "years": "1997–2004",
-        "notes": "Engine Match (L36 NA)"
+        "notes": "LS trim - Engine Match (L36 NA)"
       },
       {
         "make": "Buick",
@@ -7037,27 +7025,27 @@
       },
       {
         "make": "Chevrolet",
-        "model": "Impala SS",
+        "model": "Impala (Gen 8)",
         "years": "2004–2005",
-        "notes": "Engine Match (L67 Supercharged)"
+        "notes": "SS trim - Engine Match (L67 Supercharged)"
       },
       {
         "make": "Chevrolet",
-        "model": "Impala",
+        "model": "Impala (Gen 8)",
         "years": "2000–2005",
-        "notes": "Engine Match (L36 NA)"
+        "notes": "All trims - Engine Match (L36 NA)"
       },
       {
         "make": "Chevrolet",
-        "model": "Monte Carlo SS",
+        "model": "Monte Carlo (Gen 6)",
         "years": "2004–2005",
-        "notes": "Engine Match (L67 Supercharged)"
+        "notes": "SS trim - Engine Match (L67 Supercharged)"
       },
       {
         "make": "Chevrolet",
-        "model": "Monte Carlo",
+        "model": "Monte Carlo (Gen 6)",
         "years": "2000–2005",
-        "notes": "Engine Match (L36 NA)"
+        "notes": "All trims - Engine Match (L36 NA)"
       },
       {
         "make": "Oldsmobile",
@@ -7081,15 +7069,15 @@
     "GM_ECOTEC_LSJ": [
       {
         "make": "Saturn",
-        "model": "Ion Red Line",
+        "model": "Ion",
         "years": "2004–2007",
-        "notes": "Engine Match (2.0L SC)"
+        "notes": "Red Line trim - Engine Match (2.0L SC)"
       },
       {
         "make": "Chevrolet",
-        "model": "Cobalt SS Supercharged",
+        "model": "Cobalt (Gen 1)",
         "years": "2005–2007",
-        "notes": "Engine Match (2.0L SC)"
+        "notes": "SS Supercharged trim - Engine Match (2.0L SC)"
       }
     ],
     "SATURN_19L": [
@@ -7329,15 +7317,15 @@
     "NISSAN_RB_SERIES": [
       {
         "make": "Nissan",
-        "model": "Skyline GT-R",
+        "model": "Skyline (R32/R33/R34)",
         "years": "1989–2002",
-        "notes": "Engine Match (RB26DETT)"
+        "notes": "GT-R trim - Engine Match (RB26DETT)"
       },
       {
         "make": "Nissan",
-        "model": "Skyline GTS-t/GT-T",
+        "model": "Skyline (R32/R33/R34)",
         "years": "1989–2001",
-        "notes": "Engine Match (RB20/RB25)"
+        "notes": "GTS-t/GT-T trim - Engine Match (RB20/RB25)"
       }
     ],
     "NISSAN_VQ_SERIES": [
@@ -7475,9 +7463,9 @@
     "SUBARU_EJ257": [
       {
         "make": "Subaru",
-        "model": "WRX STI",
+        "model": "Impreza (GD/GE/GR/GV - 2nd/3rd/4th Gen)",
         "years": "2004–2021",
-        "notes": "Engine Match (EJ257)"
+        "notes": "WRX STI trim - Engine Match (EJ257)"
       }
     ],
     "SUBARU_FA20": [
@@ -7509,9 +7497,9 @@
       },
       {
         "make": "Dodge",
-        "model": "Intrepid R/T",
+        "model": "Intrepid",
         "years": "2000–2004",
-        "notes": "Engine Match (3.5L EGG)"
+        "notes": "R/T trim - Engine Match (3.5L EGG)"
       }
     ],
     "MERCEDES_M112": [
@@ -7777,21 +7765,21 @@
     "GM_ECOTEC_LNF": [
       {
         "make": "Chevrolet",
-        "model": "Cobalt SS Turbo",
+        "model": "Cobalt (Gen 1)",
         "years": "2008–2010",
-        "notes": "Engine Match (LNF)"
+        "notes": "SS Turbo trim - Engine Match (LNF)"
       },
       {
         "make": "Pontiac",
-        "model": "Solstice GXP",
+        "model": "Solstice",
         "years": "2007–2009",
-        "notes": "Engine Match (LNF)"
+        "notes": "GXP trim - Engine Match (LNF)"
       },
       {
         "make": "Saturn",
-        "model": "Sky Red Line",
+        "model": "Sky",
         "years": "2007–2010",
-        "notes": "Engine Match (LNF)"
+        "notes": "Red Line trim - Engine Match (LNF)"
       },
       {
         "make": "Ariel",
