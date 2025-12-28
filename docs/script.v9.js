@@ -1024,7 +1024,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ${factoryReminder}
             ${spareUsage}
             ${safetyWarning}
-            <p style="margin-top:0.75rem;"><strong>Donor Spares (bolt pattern match):</strong></p>
+            <p style="margin-top:0.75rem;"><strong>Donor Spares (bolt pattern match):</strong> Always verify tire size, load rating, and pressure against your vehicle's door placard before using any spare.</p>
             ${vehicleListHtml}
         `;
         partsList.appendChild(div);
