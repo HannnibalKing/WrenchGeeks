@@ -179,6 +179,16 @@ button#searchButton:disabled {
     margin-bottom: 1.5rem;
 }
 
+.big-mike-banner {
+    border: 2px solid #FFD700;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.25);
+}
+
+.big-mike-tip {
+    border: 2px solid #FFD700 !important;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.25);
+}
+
 .hidden { display: none; }
 
 .grid-list {

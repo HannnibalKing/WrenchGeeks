@@ -944,6 +944,9 @@ document.addEventListener("DOMContentLoaded", () => {
             relevantTips.forEach(tip => {
                 const div = document.createElement("div");
                 div.className = `tip-card tip-${tip.severity ? tip.severity.toLowerCase() : "info"}`;
+                if ((tip.category || "").toLowerCase().includes("did you know")) {
+                    div.classList.add("big-mike-tip");
+                }
                 
                 // Add "Big Mike" badge if it's from that category
                 const badge = tip.category === "Did You Know?" 
@@ -959,57 +962,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Classify a vehicle into broad classes for safety filtering of spares
-    function classifyVehicleCategory(entry) {
-        const make = (entry.make || "").toLowerCase();
-        const name = ((entry.model || entry.name || "") + " " + (entry.notes || "")).toLowerCase();
-
-        // Truck / SUV / Crossover keywords
-        const suvKeywords = [
-            "cr-v", "crv", "rav4", "4runner", "highlander", "pilot", "passport", "mdx", "rdx", "xc", "cx-", "cx5", "cx-5", "cx9", "cx-9",
-            "forester", "outback", "ascent", "tribeca", "encore", "enclave", "traverse", "equinox", "terrain", "trailblazer", "blazer",
-            "escape", "explorer", "expedition", "edge", "bronco", "bronco sport", "navigator", "aviator",
-            "cherokee", "grand cherokee", "wagoneer", "wrangler", "renegade", "compass", "gladiator",
-            "tahoe", "suburban", "yukon", "sequoia", "land cruiser", "landcruiser", "prado",
-            "tacoma", "tundra", "f-", "f150", "f-150", "f250", "f-250", "silverado", "sierra", "ram",
-            "durango", "journey", "pacifica", "sienna", "odyssey", "pilot", "pathfinder", "armada", "qx", "qx4",
-            "x1", "x2", "x3", "x4", "x5", "x6", "x7", "gle", "gls", "g-class", "g550", "glc", "glb", "gla",
-            "q3", "q5", "q7", "q8", "sq5", "sq7", "sq8"
-        ];
-
-        const isSUV = suvKeywords.some(k => name.includes(k)) || make === "jeep" || make === "gmc" && name.includes("jimmy");
-        if (isSUV) return "Truck/SUV";
-        return "Car";
-    }
-
     function displaySpareTireInfo(groupId, make, model, vehicleType) {
         if (!groupId) return;
         
         const group = spareTireData.find(g => g.id === groupId);
         if (!group) return;
 
-        // Filter out current vehicle from list
+        // Filter out the current vehicle from list
         let otherVehicles = group.vehicles.filter(v => {
             const vName = v.model || v.name;
             return !(v.make === make && (vName === model || model.includes(vName)));
         });
 
-        // Safety Filter: Always trust classifier for the selected vehicle (data labels can be wrong)
-        const targetType = classifyVehicleCategory({ make, model });
-        let safetyWarning = "";
-        const originalCount = otherVehicles.length;
-        const safeVehicles = otherVehicles.filter(v => {
-            const donorType = v.type || classifyVehicleCategory(v);
-            return donorType === targetType;
-        });
-
-        if (safeVehicles.length < originalCount) {
-            safetyWarning = `<div style="margin-top:0.5rem; padding:0.5rem; background:rgba(255, 152, 0, 0.1); border-left:3px solid #ff9800; font-size:0.9em;">
-                <strong>⚠️ Safety Check:</strong> We hid ${originalCount - safeVehicles.length} donors because they are a different vehicle class (e.g., Truck vs Car). 
-                Using a spare from a different class can be dangerous due to load rating and tire diameter differences.
-            </div>`;
-            otherVehicles = safeVehicles;
-        }
+        // Always show by bolt pattern only; warn user about tire size/load differences
+        const safetyWarning = `<div style="margin-top:0.5rem; padding:0.5rem; background:rgba(255, 152, 0, 0.1); border-left:3px solid #ff9800; font-size:0.9em;">
+            <strong>⚠️ Bolt Pattern Only:</strong> These vehicles share the same bolt pattern${group.hub_bore ? ` (Hub Bore ${group.hub_bore})` : ""}. Tire diameter and load ratings may differ — verify size, load, and class (car vs SUV/truck) before using any spare.
+        </div>`;
 
         let vehicleListHtml = "";
         if (otherVehicles.length > 25) {
