@@ -994,8 +994,8 @@ document.addEventListener("DOMContentLoaded", () => {
             return !(v.make === make && (vName === model || model.includes(vName)));
         });
 
-        // Safety Filter: Vehicle Type (fallback to classifier if data mislabeled)
-        const targetType = vehicleType || classifyVehicleCategory({ make, model });
+        // Safety Filter: Always trust classifier for the selected vehicle (data labels can be wrong)
+        const targetType = classifyVehicleCategory({ make, model });
         let safetyWarning = "";
         const originalCount = otherVehicles.length;
         const safeVehicles = otherVehicles.filter(v => {
