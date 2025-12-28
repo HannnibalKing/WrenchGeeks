@@ -8,17 +8,20 @@
       {
         "make": "BMW",
         "model": "3-Series (E30)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E30"
       },
       {
         "make": "BMW",
         "model": "M3 (E30)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E30"
       },
       {
         "make": "BMW",
         "model": "3-Series (E21 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_3_SERIES__E21___1ST_GEN_"
       }
     ]
   },
@@ -31,112 +34,134 @@
       {
         "make": "BMW",
         "model": "3-Series (E36 - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E36"
       },
       {
         "make": "BMW",
         "model": "M3 (E36 - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E36"
       },
       {
         "make": "BMW",
         "model": "3-Series (E46 - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E46"
       },
       {
         "make": "BMW",
         "model": "M3 (E46 - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E46"
       },
       {
         "make": "BMW",
         "model": "3-Series Sedan (E90)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E90_E92"
       },
       {
         "make": "BMW",
         "model": "3-Series Coupe (E92)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E90_E92"
       },
       {
         "make": "BMW",
         "model": "M3 (E90/E92/E93)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E90_E92"
       },
       {
         "make": "BMW",
         "model": "325i (E36)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_M50_M52"
       },
       {
         "make": "BMW",
         "model": "525i (E34)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_M50_M52"
       },
       {
         "make": "BMW",
         "model": "328i (E36)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_M50_M52"
       },
       {
         "make": "BMW",
         "model": "323i/328i (E46)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_M50_M52"
       },
       {
         "make": "BMW",
         "model": "528i (E39)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_M50_M52"
       },
       {
         "make": "BMW",
         "model": "Z3 2.8",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_M50_M52"
       },
       {
         "make": "BMW",
         "model": "335i (E90/E92)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_N54_N55"
       },
       {
         "make": "BMW",
         "model": "135i (E82)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_N54_N55"
       },
       {
         "make": "BMW",
         "model": "535i (E60)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_N54_N55"
       },
       {
         "make": "BMW",
         "model": "Z4 sDrive35i",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_N54_N55"
       },
       {
         "make": "BMW",
         "model": "335i (E90/E92 LCI)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_N54_N55"
       },
       {
         "make": "BMW",
         "model": "M2 (F87)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_N54_N55"
       },
       {
         "make": "BMW",
         "model": "5-Series (E12 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_5_SERIES__E12___1ST_GEN_"
       },
       {
         "make": "BMW",
         "model": "5-Series (E28 - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_5_SERIES__E28___2ND_GEN_"
       },
       {
         "make": "BMW",
         "model": "5-Series (E34 - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_5_SERIES__E34___3RD_GEN_"
       }
     ]
   },
@@ -149,12 +174,14 @@
       {
         "make": "BMW",
         "model": "5-Series (E39)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E39"
       },
       {
         "make": "BMW",
         "model": "M5 (E39)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BMW_E39"
       }
     ]
   },
@@ -167,122 +194,146 @@
       {
         "make": "Volkswagen",
         "model": "Golf (A1 - Mk1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_GOLF__A1___MK1_"
       },
       {
         "make": "Volkswagen",
         "model": "Golf (A2 - Mk2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_GOLF__A2___MK2_"
       },
       {
         "make": "Volkswagen",
         "model": "Golf (A3 - Mk3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_GOLF__A3___MK3_"
       },
       {
         "make": "Volkswagen",
         "model": "Jetta (A1 - Mk1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_JETTA__A1___MK1_"
       },
       {
         "make": "Volkswagen",
         "model": "Jetta (A2 - Mk2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_JETTA__A2___MK2_"
       },
       {
         "make": "Volkswagen",
         "model": "Jetta (A3 - Mk3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_JETTA__A3___MK3_"
       },
       {
         "make": "Volkswagen",
         "model": "Passat (B1 - Mk1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_PASSAT__B1___MK1_"
       },
       {
         "make": "Volkswagen",
         "model": "Passat (B2 - Mk2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_PASSAT__B2___MK2_"
       },
       {
         "make": "Volkswagen",
         "model": "Passat (B3 - Mk3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_PASSAT__B3___MK3_"
       },
       {
         "make": "Volkswagen",
         "model": "Passat (B4 - Mk4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_PASSAT__B4___MK4_"
       },
       {
         "make": "Geo",
         "model": "Metro",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GEO_METRO"
       },
       {
         "make": "Chevrolet",
         "model": "Metro",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GEO_METRO"
       },
       {
         "make": "Suzuki",
         "model": "Swift",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GEO_METRO"
       },
       {
         "make": "Pontiac",
         "model": "Firefly",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GEO_METRO"
       },
       {
         "make": "Geo",
         "model": "Prizm",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GEO_PRIZM"
       },
       {
         "make": "Chevrolet",
         "model": "Prizm",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GEO_PRIZM"
       },
       {
         "make": "Toyota",
         "model": "Corolla",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GEO_PRIZM"
       },
       {
         "make": "Saturn",
         "model": "SL (Sedan)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_S_SERIES"
       },
       {
         "make": "Saturn",
         "model": "SC (Coupe)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_S_SERIES"
       },
       {
         "make": "Saturn",
         "model": "SW (Wagon)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_S_SERIES"
       },
       {
         "make": "Saturn",
         "model": "Ion (Sedan/Coupe)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_ION"
       },
       {
         "make": "Saturn",
         "model": "Ion Red Line",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_ION"
       },
       {
         "make": "Chevrolet",
         "model": "Cobalt",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_ION"
       },
       {
         "make": "Chevrolet",
         "model": "HHR",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_ION"
       }
     ]
   },
@@ -295,282 +346,374 @@
       {
         "make": "Volkswagen",
         "model": "Golf (Mk4 - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_MK4"
       },
       {
         "make": "Volkswagen",
         "model": "Jetta (Mk4 - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_MK4"
       },
       {
         "make": "Volkswagen",
         "model": "Beetle (A4 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_MK4"
       },
       {
         "make": "Audi",
         "model": "TT (Mk1 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_MK4"
       },
       {
         "make": "Audi",
         "model": "A3 (8L - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_MK4"
       },
       {
         "make": "Volkswagen",
         "model": "Golf (A4 - Mk4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_GOLF__A4___MK4_"
       },
       {
         "make": "Volkswagen",
         "model": "Jetta (A4 - Mk4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_JETTA__A4___MK4_"
       },
       {
         "make": "Subaru",
         "model": "Impreza WRX/STI (GC8)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_IMPREZA_WRX"
       },
       {
         "make": "Subaru",
         "model": "Impreza WRX/STI (GD - Bugeye)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_IMPREZA_WRX"
       },
       {
         "make": "Subaru",
         "model": "Impreza WRX/STI (GD - Blobeye)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_IMPREZA_WRX"
       },
       {
         "make": "Subaru",
         "model": "Impreza WRX/STI (GD - Hawkeye)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_IMPREZA_WRX"
       },
       {
         "make": "Subaru",
         "model": "Impreza WRX/STI (GR/GV)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_IMPREZA_WRX"
       },
       {
         "make": "Subaru",
         "model": "WRX / STI (VA)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_IMPREZA_WRX"
       },
       {
         "make": "Subaru",
         "model": "WRX (VB)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_IMPREZA_WRX"
       },
       {
         "make": "Subaru",
         "model": "Legacy (BC/BF/BJ - Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_LEGACY__BC_BF_BJ___GEN_1_"
       },
       {
         "make": "Subaru",
         "model": "Legacy (BD/BG/BK - Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_LEGACY__BD_BG_BK___GEN_2_"
       },
       {
         "make": "Subaru",
         "model": "Legacy (BE/BH - Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_LEGACY__BE_BH___GEN_3_"
       },
       {
         "make": "Subaru",
         "model": "Legacy (BL/BP - Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_LEGACY__BL_BP___GEN_4_"
       },
       {
         "make": "Subaru",
         "model": "Legacy (BM/BR - Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_LEGACY__BM_BR___GEN_5_"
       },
       {
         "make": "Subaru",
         "model": "Forester (SF - Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_FORESTER__SF___GEN_1_"
       },
       {
         "make": "Subaru",
         "model": "Forester (SG - Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_FORESTER__SG___GEN_2_"
       },
       {
         "make": "Subaru",
         "model": "Forester (SH - Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_FORESTER__SH___GEN_3_"
       },
       {
         "make": "Subaru",
         "model": "Forester (SJ - Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_FORESTER__SJ___GEN_4_"
       },
       {
         "make": "Subaru",
         "model": "BRZ (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_BRZ_86"
       },
       {
         "make": "Toyota",
         "model": "86 / GT86",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_BRZ_86"
       },
       {
         "make": "Scion",
         "model": "FR-S",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_BRZ_86"
       },
       {
         "make": "Subaru",
         "model": "BRZ (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_BRZ_86"
       },
       {
         "make": "Toyota",
         "model": "GR86",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_BRZ_86"
       },
       {
         "make": "Subaru",
         "model": "BRZ (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_TOYOTA_TWINS"
       },
       {
         "make": "Scion",
         "model": "FR-S",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_TOYOTA_TWINS"
       },
       {
         "make": "Toyota",
         "model": "86",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_TOYOTA_TWINS"
       },
       {
         "make": "Subaru",
         "model": "BRZ (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_TOYOTA_TWINS"
       },
       {
         "make": "Toyota",
         "model": "GR86",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_TOYOTA_TWINS"
       },
       {
         "make": "Chevrolet",
         "model": "Cavalier (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_J_BODY"
       },
       {
         "make": "Chevrolet",
         "model": "Cavalier (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_J_BODY"
       },
       {
         "make": "Pontiac",
         "model": "Sunbird",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_J_BODY"
       },
       {
         "make": "Pontiac",
         "model": "Sunfire",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_J_BODY"
       },
       {
         "make": "Pontiac",
         "model": "Vibe",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_VIBE"
       },
       {
         "make": "Toyota",
         "model": "Matrix",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_VIBE"
       },
       {
         "make": "Pontiac",
         "model": "Fiero",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_FIERO"
       },
       {
         "make": "Plymouth",
         "model": "Prowler",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_PROWLER"
       },
       {
         "make": "Chrysler",
         "model": "Prowler",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_PROWLER"
       },
       {
         "make": "Dodge",
         "model": "Spirit",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_K_DERIVATIVES"
       },
       {
         "make": "Plymouth",
         "model": "Acclaim",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_K_DERIVATIVES"
       },
       {
         "make": "Dodge",
         "model": "Shadow",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_K_DERIVATIVES"
       },
       {
         "make": "Plymouth",
         "model": "Sundance",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_K_DERIVATIVES"
       },
       {
         "make": "Chrysler",
         "model": "LeBaron (Sedan/Coupe)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_K_DERIVATIVES"
       },
       {
         "make": "Dodge",
         "model": "Caravan / Grand Caravan (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_MINIVANS"
       },
       {
         "make": "Plymouth",
         "model": "Voyager / Grand Voyager (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_MINIVANS"
       },
       {
         "make": "Chrysler",
         "model": "Town & Country (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_MINIVANS"
       },
       {
         "make": "Dodge",
         "model": "Caravan (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_MINIVANS"
       },
       {
         "make": "Dodge",
         "model": "Caravan (Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_MINIVANS"
       },
       {
         "make": "Dodge",
         "model": "Neon (1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DODGE_PL"
       },
       {
         "make": "Dodge",
         "model": "Neon (2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DODGE_PL"
       },
       {
         "make": "Dodge",
         "model": "Neon SRT-4",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DODGE_PL"
       },
       {
         "make": "Chrysler",
         "model": "PT Cruiser",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DODGE_PL"
+      },
+      {
+        "make": "Saab",
+        "model": "9-2X Aero",
+        "type": "Car",
+        "platform_id": "SAAB_SUBARU_GG"
+      },
+      {
+        "make": "Subaru",
+        "model": "Impreza WRX (GG Wagon)",
+        "type": "Car",
+        "platform_id": "SAAB_SUBARU_GG"
+      },
+      {
+        "make": "Toyota",
+        "model": "Celica GT-Four (ST185/ST205)",
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_JAPAN"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant VR-4",
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_JAPAN"
+      },
+      {
+        "make": "Subaru",
+        "model": "Legacy RS",
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_JAPAN"
+      },
+      {
+        "make": "Nissan",
+        "model": "Pulsar GTI-R",
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_JAPAN"
       }
     ]
   },
@@ -583,187 +726,242 @@
       {
         "make": "Volkswagen",
         "model": "Golf (A5 - Mk5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_GOLF__A5___MK5_"
       },
       {
         "make": "Volkswagen",
         "model": "Golf (A6 - Mk6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_GOLF__A6___MK6_"
       },
       {
         "make": "Volkswagen",
         "model": "Golf (A7 - Mk7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_GOLF__A7___MK7_"
       },
       {
         "make": "Volkswagen",
         "model": "Golf (A8 - Mk8)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_GOLF__A8___MK8_"
       },
       {
         "make": "Volkswagen",
         "model": "Jetta (A5 - Mk5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_JETTA__A5___MK5_"
       },
       {
         "make": "Volkswagen",
         "model": "Jetta (A6 - Mk6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_JETTA__A6___MK6_"
       },
       {
         "make": "Volkswagen",
         "model": "Jetta (A7 - Mk7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_JETTA__A7___MK7_"
       },
       {
         "make": "Volkswagen",
         "model": "Passat (B5 - Mk5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_PASSAT__B5___MK5_"
       },
       {
         "make": "Volkswagen",
         "model": "Passat (B6 - Mk6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_PASSAT__B6___MK6_"
       },
       {
         "make": "Volkswagen",
         "model": "Passat (B7 - Mk7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_PASSAT__B7___MK7_"
       },
       {
         "make": "Volkswagen",
         "model": "Passat (B8 - Mk8)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLKSWAGEN_PASSAT__B8___MK8_"
       },
       {
         "make": "Porsche",
         "model": "Cayenne (955/957 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VAG_PL71"
       },
       {
         "make": "Volkswagen",
         "model": "Touareg (7L - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VAG_PL71"
       },
       {
         "make": "Audi",
         "model": "Q7 (4L - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VAG_PL71"
       },
       {
         "make": "Porsche",
         "model": "Macan (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VAG_MLB_GEN1"
       },
       {
         "make": "Audi",
         "model": "Q5 (8R - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VAG_MLB_GEN1"
       },
       {
         "make": "Audi",
         "model": "A4 (B8 - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VAG_MLB_GEN1"
       },
       {
         "make": "Volkswagen",
         "model": "Passat (B5/B5.5 - 5th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VAG_PL45"
       },
       {
         "make": "Audi",
         "model": "A4 (B5 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VAG_PL45"
       },
       {
         "make": "Audi",
         "model": "A6 (C5 - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VAG_PL45"
       },
       {
         "make": "Mercedes-Benz",
         "model": "E-Class (W123)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_W123_W124"
       },
       {
         "make": "Mercedes-Benz",
         "model": "E-Class (W124)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_W123_W124"
       },
       {
         "make": "Mercedes-Benz",
         "model": "190E (W201)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_W123_W124"
       },
       {
         "make": "Mercedes-Benz",
         "model": "190E (W201)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_C_CLASS"
       },
       {
         "make": "Mercedes-Benz",
         "model": "C-Class (W202)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_C_CLASS"
       },
       {
         "make": "Mercedes-Benz",
         "model": "C-Class (W203)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_C_CLASS"
       },
       {
         "make": "Mercedes-Benz",
         "model": "C-Class (W204)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_C_CLASS"
       },
       {
         "make": "Mercedes-Benz",
         "model": "C-Class (W205)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_C_CLASS"
       },
       {
         "make": "Mercedes-Benz",
         "model": "E-Class (W123)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_E_CLASS"
       },
       {
         "make": "Mercedes-Benz",
         "model": "E-Class (W124)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_E_CLASS"
       },
       {
         "make": "Mercedes-Benz",
         "model": "E-Class (W210)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_E_CLASS"
       },
       {
         "make": "Mercedes-Benz",
         "model": "E-Class (W211)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_E_CLASS"
       },
       {
         "make": "Mercedes-Benz",
         "model": "E-Class (W212)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MERCEDES_E_CLASS"
       },
       {
         "make": "Chrysler",
         "model": "Crossfire",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_CROSSFIRE"
       },
       {
         "make": "Chrysler",
         "model": "Crossfire SRT-6",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_CROSSFIRE"
       },
       {
         "make": "Mercedes-Benz",
         "model": "SLK320 (R170)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_CROSSFIRE"
       },
       {
         "make": "Mercedes-Benz",
         "model": "SLK32 AMG (R170)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_CROSSFIRE"
+      },
+      {
+        "make": "Lamborghini",
+        "model": "Gallardo",
+        "type": "Car",
+        "platform_id": "LAMBORGHINI_V10"
+      },
+      {
+        "make": "Lamborghini",
+        "model": "Hurac\u00e1n",
+        "type": "Car",
+        "platform_id": "LAMBORGHINI_V10"
+      },
+      {
+        "make": "Audi",
+        "model": "R8 (V10)",
+        "type": "Car",
+        "platform_id": "LAMBORGHINI_V10"
       }
     ]
   },
@@ -776,137 +974,164 @@
       {
         "make": "Porsche",
         "model": "911 Carrera (996.1 - 5th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_986_996"
       },
       {
         "make": "Porsche",
         "model": "911 Carrera (996.2 - 5th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_986_996"
       },
       {
         "make": "Porsche",
         "model": "Boxster (986 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_986_996"
       },
       {
         "make": "Porsche",
         "model": "911 (993 - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_AIRCOOLED_911"
       },
       {
         "make": "Porsche",
         "model": "911 (964 - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_AIRCOOLED_911"
       },
       {
         "make": "Porsche",
         "model": "911 G-Series (SC/Carrera)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_AIRCOOLED_911"
       },
       {
         "make": "Porsche",
         "model": "911 Classic (Longhood)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_AIRCOOLED_911"
       },
       {
         "make": "Porsche",
         "model": "911 Carrera (997.1 - 6th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_987_997"
       },
       {
         "make": "Porsche",
         "model": "911 Carrera (997.2 - 6th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_987_997"
       },
       {
         "make": "Porsche",
         "model": "Boxster (987 - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_987_997"
       },
       {
         "make": "Porsche",
         "model": "Cayman (987c - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_987_997"
       },
       {
         "make": "Porsche",
         "model": "911 Carrera (991.1 - 7th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_981_991"
       },
       {
         "make": "Porsche",
         "model": "911 Carrera (991.2 - 7th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_981_991"
       },
       {
         "make": "Porsche",
         "model": "Boxster (981 - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_981_991"
       },
       {
         "make": "Porsche",
         "model": "Cayman (981c - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_981_991"
       },
       {
         "make": "Porsche",
         "model": "911 Carrera (992 - 8th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_718_992"
       },
       {
         "make": "Porsche",
         "model": "718 Boxster (982 - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_718_992"
       },
       {
         "make": "Porsche",
         "model": "718 Cayman (982c - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_718_992"
       },
       {
         "make": "Porsche",
         "model": "Panamera (970 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_OTHER"
       },
       {
         "make": "Porsche",
         "model": "Panamera (971 - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_OTHER"
       },
       {
         "make": "Porsche",
         "model": "Taycan (J1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_OTHER"
       },
       {
         "make": "Porsche",
         "model": "914",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_OTHER"
       },
       {
         "make": "Porsche",
         "model": "928",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_TRANSAXLE"
       },
       {
         "make": "Porsche",
         "model": "968",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_TRANSAXLE"
       },
       {
         "make": "Porsche",
         "model": "924",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_924_944"
       },
       {
         "make": "Porsche",
         "model": "944",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_924_944"
       },
       {
         "make": "Porsche",
         "model": "968",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PORSCHE_924_944"
       }
     ]
   },
@@ -919,192 +1144,278 @@
       {
         "make": "Volvo",
         "model": "240 Series",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_REDBLOCK"
       },
       {
         "make": "Volvo",
         "model": "740 / 760",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_REDBLOCK"
       },
       {
         "make": "Volvo",
         "model": "940 / 960",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_REDBLOCK"
       },
       {
         "make": "Volvo",
         "model": "850 / 850 R",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P80_PLATFORM"
       },
       {
         "make": "Volvo",
         "model": "S70 / V70 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P80_PLATFORM"
       },
       {
         "make": "Volvo",
         "model": "C70 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P80_PLATFORM"
       },
       {
         "make": "Volvo",
         "model": "240 Series",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_RWD_BRICKS"
       },
       {
         "make": "Volvo",
         "model": "740/760",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_RWD_BRICKS"
       },
       {
         "make": "Volvo",
         "model": "940/960",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_RWD_BRICKS"
       },
       {
         "make": "Volvo",
         "model": "850 T-5R / R",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P80"
       },
       {
         "make": "Volvo",
         "model": "S70 / V70 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P80"
       },
       {
         "make": "Volvo",
         "model": "C70 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P80"
       },
       {
         "make": "Volvo",
         "model": "S60 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P2"
       },
       {
         "make": "Volvo",
         "model": "V70 (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P2"
       },
       {
         "make": "Volvo",
         "model": "S60R / V70R",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P2"
       },
       {
         "make": "Volvo",
         "model": "XC90 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P2"
       },
       {
         "make": "Volvo",
         "model": "S80 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P2"
       },
       {
         "make": "Volvo",
         "model": "S60 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P2_PLATFORM"
       },
       {
         "make": "Volvo",
         "model": "V70 (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P2_PLATFORM"
       },
       {
         "make": "Volvo",
         "model": "S60 R / V70 R",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P2_PLATFORM"
       },
       {
         "make": "Volvo",
         "model": "XC90 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_P2_PLATFORM"
       },
       {
         "make": "Volvo",
         "model": "240 Series",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_RWD_TURBO"
       },
       {
         "make": "Volvo",
         "model": "740 / 760",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_RWD_TURBO"
       },
       {
         "make": "Volvo",
         "model": "940 / 960",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VOLVO_RWD_TURBO"
       },
       {
         "make": "Ford",
         "model": "Escort (Gen 2 - US)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_CT120_ESCORT"
       },
       {
         "make": "Ford",
         "model": "Escort (Gen 3 - US)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_CT120_ESCORT"
       },
       {
         "make": "Mercury",
         "model": "Tracer",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_CT120_ESCORT"
       },
       {
         "make": "Mazda",
         "model": "Proteg\u00e9 (BG)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_CT120_ESCORT"
       },
       {
         "make": "Jaguar",
         "model": "X-Type",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JAGUAR_X_TYPE"
       },
       {
         "make": "Ford",
         "model": "Mondeo (Mk3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JAGUAR_X_TYPE"
       },
       {
         "make": "Ford",
         "model": "Contour / Mystique",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JAGUAR_X_TYPE"
       },
       {
         "make": "Ferrari",
         "model": "308 GTB/GTS",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FERRARI_V8_MID"
       },
       {
         "make": "Ferrari",
         "model": "328 GTB/GTS",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FERRARI_V8_MID"
       },
       {
         "make": "Ferrari",
         "model": "348",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FERRARI_V8_MID"
       },
       {
         "make": "Ferrari",
         "model": "F355",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FERRARI_V8_MID"
       },
       {
         "make": "Ferrari",
         "model": "360 Modena",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FERRARI_V8_MID"
       },
       {
         "make": "Ferrari",
         "model": "F430",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FERRARI_V8_MID"
       },
       {
         "make": "Ferrari",
         "model": "458 Italia",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FERRARI_V8_MID"
+      },
+      {
+        "make": "Ford",
+        "model": "Focus (Mk2 Euro / Mk3 Global)",
+        "type": "Car",
+        "platform_id": "FORD_C1_PLATFORM"
+      },
+      {
+        "make": "Mazda",
+        "model": "Mazda3 (BK/BL)",
+        "type": "Car",
+        "platform_id": "FORD_C1_PLATFORM"
+      },
+      {
+        "make": "Volvo",
+        "model": "C30",
+        "type": "Car",
+        "platform_id": "FORD_C1_PLATFORM"
+      },
+      {
+        "make": "Volvo",
+        "model": "S40 / V50",
+        "type": "Car",
+        "platform_id": "FORD_C1_PLATFORM"
+      },
+      {
+        "make": "Mazda",
+        "model": "Mazda5",
+        "type": "Car",
+        "platform_id": "FORD_C1_PLATFORM"
+      },
+      {
+        "make": "Lotus",
+        "model": "Esprit (S1/S2/S3)",
+        "type": "Car",
+        "platform_id": "LOTUS_ESPRIT"
+      },
+      {
+        "make": "Lotus",
+        "model": "Esprit (X180/S4/V8)",
+        "type": "Car",
+        "platform_id": "LOTUS_ESPRIT"
+      },
+      {
+        "make": "Polestar",
+        "model": "Polestar 2",
+        "type": "Car",
+        "platform_id": "POLESTAR_CMA"
       }
     ]
   },
@@ -1117,102 +1428,158 @@
       {
         "make": "Ford",
         "model": "Mustang (Fox Body)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FOX"
       },
       {
         "make": "Mercury",
         "model": "Capri",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FOX"
       },
       {
         "make": "Ford",
         "model": "Fairmont",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FOX"
       },
       {
         "make": "Ford",
         "model": "Thunderbird (Fox)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FOX"
       },
       {
         "make": "Ford",
         "model": "Focus ST (Mk3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_COMPACT_PERFORMANCE"
       },
       {
         "make": "Ford",
         "model": "Focus RS (Mk3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_COMPACT_PERFORMANCE"
       },
       {
         "make": "Ford",
         "model": "Fiesta ST (Mk7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_COMPACT_PERFORMANCE"
       },
       {
         "make": "Ford",
         "model": "Escort RS Cosworth",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_COMPACT_PERFORMANCE"
       },
       {
         "make": "Saab",
         "model": "900 Classic",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SAAB_LEGENDS"
       },
       {
         "make": "Saab",
         "model": "9000",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SAAB_LEGENDS"
       },
       {
         "make": "Saab",
         "model": "9-3 (OG)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SAAB_LEGENDS"
       },
       {
         "make": "Saab",
         "model": "9-5 (OG)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SAAB_LEGENDS"
       },
       {
         "make": "Peugeot",
         "model": "205 GTI",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FRENCH_HOT_HATCH_PEUGEOT"
       },
       {
         "make": "Peugeot",
         "model": "106 Rallye",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FRENCH_HOT_HATCH_PEUGEOT"
       },
       {
         "make": "Peugeot",
         "model": "306 GTI-6",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FRENCH_HOT_HATCH_PEUGEOT"
       },
       {
         "make": "Citro\u00ebn",
         "model": "Saxo VTS",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FRENCH_HOT_HATCH_CITROEN"
       },
       {
         "make": "Citro\u00ebn",
         "model": "AX GT",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FRENCH_HOT_HATCH_CITROEN"
       },
       {
         "make": "Caterham",
         "model": "Seven",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_CATERHAM_7"
       },
       {
         "make": "Lotus",
         "model": "Seven",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_CATERHAM_7"
       },
       {
         "make": "Ford",
         "model": "Sierra",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_CATERHAM_7"
+      },
+      {
+        "make": "Mini",
+        "model": "Cooper (R50/R52/R53)",
+        "type": "Car",
+        "platform_id": "PSA_PF1"
+      },
+      {
+        "make": "Mini",
+        "model": "Cooper (R56/R57)",
+        "type": "Car",
+        "platform_id": "PSA_PF1"
+      },
+      {
+        "make": "Mini",
+        "model": "Countryman (R60)",
+        "type": "Car",
+        "platform_id": "PSA_PF2"
+      },
+      {
+        "make": "Ford",
+        "model": "Escort RS Cosworth",
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_FORD"
+      },
+      {
+        "make": "Ford",
+        "model": "RS200",
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_FORD"
+      },
+      {
+        "make": "Ford",
+        "model": "Sierra RS Cosworth",
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_FORD"
       }
     ]
   },
@@ -1225,202 +1592,278 @@
       {
         "make": "Honda",
         "model": "Civic (EF - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_GOLDEN"
       },
       {
         "make": "Honda",
         "model": "Civic (EG - 5th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_GOLDEN"
       },
       {
         "make": "Honda",
         "model": "Civic (EK - 6th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_GOLDEN"
       },
       {
         "make": "Honda",
         "model": "CR-X (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_GOLDEN"
       },
       {
         "make": "Honda",
         "model": "Del Sol",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_GOLDEN"
       },
       {
         "make": "Acura",
         "model": "Integra (DA - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_GOLDEN"
       },
       {
         "make": "Acura",
         "model": "Integra (DC2 - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_GOLDEN"
       },
       {
         "make": "Honda",
         "model": "Civic (EF)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_LEGENDS"
       },
       {
         "make": "Honda",
         "model": "Civic (EG)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_LEGENDS"
       },
       {
         "make": "Honda",
         "model": "Civic (EK)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_LEGENDS"
       },
       {
         "make": "Honda",
         "model": "Civic Si (EP3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_LEGENDS"
       },
       {
         "make": "Honda",
         "model": "Civic Si (FA5/FG2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_LEGENDS"
       },
       {
         "make": "Honda",
         "model": "Civic (SB/SG - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC__SB_SG___1ST_GEN_"
       },
       {
         "make": "Honda",
         "model": "Civic (SL/SS - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC__SL_SS___2ND_GEN_"
       },
       {
         "make": "Honda",
         "model": "Civic (AG/AH/AT - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC__AG_AH_AT___3RD_GEN_"
       },
       {
         "make": "Mazda",
         "model": "MX-5 Miata (NA)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_MIATA"
       },
       {
         "make": "Mazda",
         "model": "MX-5 Miata (NB)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_MIATA"
       },
       {
         "make": "Mazda",
         "model": "MX-5 Miata (NC)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_MIATA"
       },
       {
         "make": "Mazda",
         "model": "MX-5 Miata (ND)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_MIATA"
       },
       {
         "make": "Toyota",
         "model": "Corolla (E80 - 5th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_COROLLA__E80___5TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Corolla (E90 - 6th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_COROLLA__E90___6TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Corolla (E100 - 7th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_COROLLA__E100___7TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "MR2 (AW11 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_MR2"
       },
       {
         "make": "Toyota",
         "model": "MR2 (SW20 - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_MR2"
       },
       {
         "make": "Toyota",
         "model": "MR2 Spyder (ZZW30)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_MR2"
       },
       {
         "make": "Autozam",
         "model": "AZ-1",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "ABC_KEI_SPORTS"
       },
       {
         "make": "Honda",
         "model": "Beat",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "ABC_KEI_SPORTS"
       },
       {
         "make": "Suzuki",
         "model": "Cappuccino",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "ABC_KEI_SPORTS"
       },
       {
         "make": "Daihatsu",
         "model": "Copen",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "ABC_KEI_SPORTS"
       },
       {
         "make": "Suzuki",
         "model": "Swift GTi (AA34S)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUZUKI_SWIFT_CULTUS"
       },
       {
         "make": "Geo",
         "model": "Metro",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUZUKI_SWIFT_CULTUS"
       },
       {
         "make": "Suzuki",
         "model": "Swift Sport (ZC31S)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUZUKI_SWIFT_CULTUS"
       },
       {
         "make": "Suzuki",
         "model": "Swift Sport (ZC32S)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUZUKI_SWIFT_CULTUS"
       },
       {
         "make": "Suzuki",
         "model": "Swift Sport (ZC33S)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUZUKI_SWIFT_CULTUS"
       },
       {
         "make": "Exomotive",
         "model": "Exocet",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_EXOMOTIVE_EXOCET"
       },
       {
         "make": "Mazda",
         "model": "MX-5 Miata (NA/NB)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_EXOMOTIVE_EXOCET"
       },
       {
         "make": "Ariel",
         "model": "Atom 2",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "EXO_ARIEL_ATOM"
       },
       {
         "make": "Ariel",
         "model": "Atom 3",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "EXO_ARIEL_ATOM"
       },
       {
         "make": "Honda",
         "model": "Civic Type R (EP3/FD2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "EXO_ARIEL_ATOM"
       },
       {
         "make": "Chevrolet",
         "model": "Cobalt SS",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "EXO_ARIEL_ATOM"
+      },
+      {
+        "make": "Lotus",
+        "model": "Elise (Series 2)",
+        "type": "Car",
+        "platform_id": "LOTUS_ELISE_S2"
+      },
+      {
+        "make": "Lotus",
+        "model": "Exige (Series 2)",
+        "type": "Car",
+        "platform_id": "LOTUS_ELISE_S2"
+      },
+      {
+        "make": "Lotus",
+        "model": "2-Eleven",
+        "type": "Car",
+        "platform_id": "LOTUS_ELISE_S2"
+      },
+      {
+        "make": "Renault",
+        "model": "Clio Williams",
+        "type": "Car",
+        "platform_id": "FRENCH_HOT_HATCH_RENAULT"
+      },
+      {
+        "make": "Renault",
+        "model": "Clio V6",
+        "type": "Car",
+        "platform_id": "FRENCH_HOT_HATCH_RENAULT"
+      },
+      {
+        "make": "Renault",
+        "model": "Megane R26.R",
+        "type": "Car",
+        "platform_id": "FRENCH_HOT_HATCH_RENAULT"
       }
     ]
   },
@@ -1433,1027 +1876,1484 @@
       {
         "make": "Honda",
         "model": "Accord (CB7 - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD_CLASSIC"
       },
       {
         "make": "Honda",
         "model": "Accord (CD - 5th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD_CLASSIC"
       },
       {
         "make": "Honda",
         "model": "Accord (CG - 6th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD_CLASSIC"
       },
       {
         "make": "Honda",
         "model": "CR-V (RD1 - Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CRV_RD"
       },
       {
         "make": "Honda",
         "model": "CR-V (RD4 - Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CRV_RD"
       },
       {
         "make": "Honda",
         "model": "CR-V (RE - Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CRV_MODERN"
       },
       {
         "make": "Honda",
         "model": "CR-V (RM - Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CRV_MODERN"
       },
       {
         "make": "Honda",
         "model": "CR-V (RW - Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CRV_MODERN"
       },
       {
         "make": "Honda",
         "model": "CR-V (RS - Gen 6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CRV_MODERN"
       },
       {
         "make": "Honda",
         "model": "S2000 (AP1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_S2000"
       },
       {
         "make": "Honda",
         "model": "S2000 (AP2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_S2000"
       },
       {
         "make": "Acura",
         "model": "Integra (DA9)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_INTEGRA_RSX"
       },
       {
         "make": "Acura",
         "model": "Integra (DC2/DC4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_INTEGRA_RSX"
       },
       {
         "make": "Acura",
         "model": "RSX (DC5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_INTEGRA_RSX"
       },
       {
         "make": "Acura",
         "model": "RSX (DC5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_DC5_EP3"
       },
       {
         "make": "Honda",
         "model": "Civic Si (EP3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_DC5_EP3"
       },
       {
         "make": "Honda",
         "model": "Civic Si (FG2/FA5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_DC5_EP3"
       },
       {
         "make": "Acura",
         "model": "TSX (CL9)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_DC5_EP3"
       },
       {
         "make": "Honda",
         "model": "Civic (EP3 - 7th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_MODERN"
       },
       {
         "make": "Acura",
         "model": "RSX (DC5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_MODERN"
       },
       {
         "make": "Honda",
         "model": "Civic (FA/FG - 8th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_MODERN"
       },
       {
         "make": "Honda",
         "model": "Civic (FB/FG - 9th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_MODERN"
       },
       {
         "make": "Honda",
         "model": "Civic (FC/FK - 10th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_MODERN"
       },
       {
         "make": "Honda",
         "model": "Civic (FL - 11th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_CIVIC_MODERN"
       },
       {
         "make": "Honda",
         "model": "S2000 (AP1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_RWD_MID"
       },
       {
         "make": "Honda",
         "model": "S2000 (AP2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_RWD_MID"
       },
       {
         "make": "Acura",
         "model": "NSX (NA1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_RWD_MID"
       },
       {
         "make": "Acura",
         "model": "NSX (NA2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_RWD_MID"
       },
       {
         "make": "Acura",
         "model": "NSX (NC1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_RWD_MID"
       },
       {
         "make": "Honda",
         "model": "Accord (SJ/SM - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__SJ_SM___1ST_GEN_"
       },
       {
         "make": "Honda",
         "model": "Accord (SY/AC/AD - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__SY_AC_AD___2ND_GEN_"
       },
       {
         "make": "Honda",
         "model": "Accord (CA - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__CA___3RD_GEN_"
       },
       {
         "make": "Honda",
         "model": "Accord (CB - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__CB___4TH_GEN_"
       },
       {
         "make": "Honda",
         "model": "Accord (CD/CE - 5th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__CD_CE___5TH_GEN_"
       },
       {
         "make": "Honda",
         "model": "Accord (CG/CF - 6th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__CG_CF___6TH_GEN_"
       },
       {
         "make": "Honda",
         "model": "Accord (CM/CL - 7th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__CM_CL___7TH_GEN_"
       },
       {
         "make": "Honda",
         "model": "Accord (CP/CS - 8th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__CP_CS___8TH_GEN_"
       },
       {
         "make": "Honda",
         "model": "Accord (CR - 9th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__CR___9TH_GEN_"
       },
       {
         "make": "Honda",
         "model": "Accord (CV - 10th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HONDA_ACCORD__CV___10TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "RAV4 (XA10 - Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_RAV4_GENERATIONS"
       },
       {
         "make": "Toyota",
         "model": "RAV4 (XA20 - Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_RAV4_GENERATIONS"
       },
       {
         "make": "Toyota",
         "model": "RAV4 (XA30 - Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_RAV4_GENERATIONS"
       },
       {
         "make": "Toyota",
         "model": "RAV4 (XA40 - Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_RAV4_GENERATIONS"
       },
       {
         "make": "Toyota",
         "model": "RAV4 (XA50 - Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_RAV4_GENERATIONS"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV10)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY_CLASSIC"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV20)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY_CLASSIC"
       },
       {
         "make": "Lexus",
         "model": "ES300 (XV10)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY_CLASSIC"
       },
       {
         "make": "Lexus",
         "model": "ES300 (XV20)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY_CLASSIC"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV30 - Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY_MODERN"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV40 - Gen 6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY_MODERN"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV50 - Gen 7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY_MODERN"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV70 - Gen 8)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY_MODERN"
       },
       {
         "make": "Toyota",
         "model": "Supra (Mk3 - A70)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_SUPRA_LEGACY"
       },
       {
         "make": "Toyota",
         "model": "Supra (Mk4 - A80)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_SUPRA_LEGACY"
       },
       {
         "make": "Lexus",
         "model": "SC300 / SC400",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_SUPRA_LEGACY"
       },
       {
         "make": "Toyota",
         "model": "GR Supra (Mk5 - A90)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_GR_MODERN"
       },
       {
         "make": "Toyota",
         "model": "GR86",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_GR_MODERN"
       },
       {
         "make": "Toyota",
         "model": "GR Corolla",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_GR_MODERN"
       },
       {
         "make": "Toyota",
         "model": "GR Yaris",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_GR_MODERN"
       },
       {
         "make": "Toyota",
         "model": "Camry (V10 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY__V10___1ST_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Camry (V20 - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY__V20___2ND_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV10 - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY__XV10___3RD_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV20 - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY__XV20___4TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV30 - 5th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY__XV30___5TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV40 - 6th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY__XV40___6TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV50 - 7th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY__XV50___7TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Camry (XV70 - 8th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_CAMRY__XV70___8TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Corolla (E110 - 8th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_COROLLA__E110___8TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Corolla (E120/E130 - 9th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_COROLLA__E120_E130___9TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Corolla (E140/E150 - 10th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_COROLLA__E140_E150___10TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Corolla (E160/E170 - 11th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_COROLLA__E160_E170___11TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Corolla (E210 - 12th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_COROLLA__E210___12TH_GEN_"
       },
       {
         "make": "Toyota",
         "model": "Supra (MK4 - 4th Gen) NA",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_2JZ_GE"
       },
       {
         "make": "Lexus",
         "model": "SC300 (Z30 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_2JZ_GE"
       },
       {
         "make": "Lexus",
         "model": "GS300 (S140/S160)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_2JZ_GE"
       },
       {
         "make": "Lexus",
         "model": "IS300 (XE10 - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_2JZ_GE"
       },
       {
         "make": "Lexus",
         "model": "LS400 (UCF10/20)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_UZ_FE"
       },
       {
         "make": "Lexus",
         "model": "SC400 (UZZ30)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_UZ_FE"
       },
       {
         "make": "Lexus",
         "model": "GS400 (UZS160)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_UZ_FE"
       },
       {
         "make": "Lexus",
         "model": "LS430 (UCF30)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_UZ_FE"
       },
       {
         "make": "Lexus",
         "model": "GS430 (UZS190)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_UZ_FE"
       },
       {
         "make": "Lexus",
         "model": "SC430 (UZZ40)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TOYOTA_UZ_FE"
       },
       {
         "make": "Nissan",
         "model": "Silvia / 240SX (S13)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_S_CHASSIS"
       },
       {
         "make": "Nissan",
         "model": "Silvia / 240SX (S14)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_S_CHASSIS"
       },
       {
         "make": "Nissan",
         "model": "Silvia (S15)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_S_CHASSIS"
       },
       {
         "make": "Nissan",
         "model": "180SX / 200SX",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_S_CHASSIS"
       },
       {
         "make": "Nissan",
         "model": "300ZX (Z32)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_Z_CAR"
       },
       {
         "make": "Nissan",
         "model": "350Z (Z33)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_Z_CAR"
       },
       {
         "make": "Nissan",
         "model": "370Z (Z34)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_Z_CAR"
       },
       {
         "make": "Nissan",
         "model": "Z (RZ34)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_Z_CAR"
       },
       {
         "make": "Nissan",
         "model": "Skyline GT-R (R32)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_SKYLINE_GTR"
       },
       {
         "make": "Nissan",
         "model": "Skyline GT-R (R33)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_SKYLINE_GTR"
       },
       {
         "make": "Nissan",
         "model": "Skyline GT-R (R34)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_SKYLINE_GTR"
       },
       {
         "make": "Nissan",
         "model": "GT-R (R35)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_SKYLINE_GTR"
       },
       {
         "make": "Nissan",
         "model": "Skyline GT-R (R32)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_SKYLINE_GT_R"
       },
       {
         "make": "Nissan",
         "model": "Skyline GT-R (R33)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_SKYLINE_GT_R"
       },
       {
         "make": "Nissan",
         "model": "Skyline GT-R (R34)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_SKYLINE_GT_R"
       },
       {
         "make": "Nissan",
         "model": "240Z / 260Z / 280Z (S30)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_Z_LEGACY"
       },
       {
         "make": "Nissan",
         "model": "280ZX (S130)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_Z_LEGACY"
       },
       {
         "make": "Nissan",
         "model": "300ZX (Z31)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_Z_LEGACY"
       },
       {
         "make": "Nissan",
         "model": "300ZX (Z32)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_Z_LEGACY"
       },
       {
         "make": "Nissan",
         "model": "350Z (Z33)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_FM_PLATFORM"
       },
       {
         "make": "Nissan",
         "model": "370Z (Z34)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_FM_PLATFORM"
       },
       {
         "make": "Nissan",
         "model": "Z (RZ34)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_FM_PLATFORM"
       },
       {
         "make": "Infiniti",
         "model": "G35 Coupe/Sedan",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_FM_PLATFORM"
       },
       {
         "make": "Infiniti",
         "model": "G37 Coupe/Sedan",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_FM_PLATFORM"
       },
       {
         "make": "Infiniti",
         "model": "Q50 / Q60",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_FM_PLATFORM"
       },
       {
         "make": "Nissan",
         "model": "Altima (U13 - Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_ALTIMA__U13___GEN_1_"
       },
       {
         "make": "Nissan",
         "model": "Altima (L30 - Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_ALTIMA__L30___GEN_2_"
       },
       {
         "make": "Nissan",
         "model": "Altima (L31 - Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_ALTIMA__L31___GEN_3_"
       },
       {
         "make": "Nissan",
         "model": "Altima (L32 - Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_ALTIMA__L32___GEN_4_"
       },
       {
         "make": "Nissan",
         "model": "Altima (L33 - Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_ALTIMA__L33___GEN_5_"
       },
       {
         "make": "Nissan",
         "model": "Altima (L34 - Gen 6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_ALTIMA__L34___GEN_6_"
       },
       {
         "make": "Nissan",
         "model": "Maxima (J30 - Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_MAXIMA__J30___GEN_3_"
       },
       {
         "make": "Nissan",
         "model": "Maxima (A32 - Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_MAXIMA__A32___GEN_4_"
       },
       {
         "make": "Nissan",
         "model": "Maxima (A33 - Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_MAXIMA__A33___GEN_5_"
       },
       {
         "make": "Nissan",
         "model": "Maxima (A34 - Gen 6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_MAXIMA__A34___GEN_6_"
       },
       {
         "make": "Mazda",
         "model": "RX-7 (FC)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_RX7"
       },
       {
         "make": "Mazda",
         "model": "RX-7 (FD)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_RX7"
       },
       {
         "make": "Mazda",
         "model": "RX-7 (FB - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_ROTARY"
       },
       {
         "make": "Mazda",
         "model": "RX-7 (FC - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_ROTARY"
       },
       {
         "make": "Mazda",
         "model": "RX-7 (FD - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_ROTARY"
       },
       {
         "make": "Mazda",
         "model": "RX-8 (SE3P)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MAZDA_ROTARY"
       },
       {
         "make": "Mitsubishi",
         "model": "Lancer Evolution (I-III)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_EVO"
       },
       {
         "make": "Mitsubishi",
         "model": "Lancer Evolution (IV-VI)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_EVO"
       },
       {
         "make": "Mitsubishi",
         "model": "Lancer Evolution (VII-IX)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_EVO"
       },
       {
         "make": "Mitsubishi",
         "model": "Lancer Evolution (X)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_EVO"
       },
       {
         "make": "Mitsubishi",
         "model": "Eclipse (1G)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_DSM"
       },
       {
         "make": "Eagle",
         "model": "Talon (1G)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_DSM"
       },
       {
         "make": "Plymouth",
         "model": "Laser",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_DSM"
       },
       {
         "make": "Mitsubishi",
         "model": "Eclipse (2G)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_DSM"
       },
       {
         "make": "Eagle",
         "model": "Talon (2G)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_DSM"
       },
       {
         "make": "Mitsubishi",
         "model": "3000GT VR-4",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_3000GT"
       },
       {
         "make": "Dodge",
         "model": "Stealth R/T Turbo",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_3000GT"
       },
       {
         "make": "Mitsubishi",
         "model": "Galant VR-4 (E39A)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_GALANT_LEGNUM"
       },
       {
         "make": "Mitsubishi",
         "model": "Galant VR-4 (EC5A)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_GALANT_LEGNUM"
       },
       {
         "make": "Mitsubishi",
         "model": "Legnum VR-4",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MITSUBISHI_GALANT_LEGNUM"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (5th Gen E11/E12)",
+        "type": "Car",
+        "platform_id": "MITSUBISHI_GALANT_LEGNUM"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (6th Gen E30/E50)",
+        "type": "Car",
+        "platform_id": "MITSUBISHI_GALANT_LEGNUM"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (7th Gen EA1/EA3)",
+        "type": "Car",
+        "platform_id": "MITSUBISHI_GALANT_LEGNUM"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (8th Gen)",
+        "type": "Car",
+        "platform_id": "MITSUBISHI_GALANT_LEGNUM"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (9th Gen USDM)",
+        "type": "Car",
+        "platform_id": "MITSUBISHI_GALANT_LEGNUM"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "type": "Car",
+        "platform_id": "MITSUBISHI_GALANT_LEGNUM"
       },
       {
         "make": "Subaru",
         "model": "Impreza WRX STI (GD - Blobeye/Hawkeye)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_WRX_STI"
       },
       {
         "make": "Subaru",
         "model": "Impreza WRX STI (GR/GV - Hatch/Sedan)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_WRX_STI"
       },
       {
         "make": "Subaru",
         "model": "WRX STI (VA)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_WRX_STI"
       },
       {
         "make": "Subaru",
         "model": "Legacy GT (BL/BP)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_WRX_STI"
       },
       {
         "make": "Subaru",
         "model": "Legacy (BN/BS - Gen 6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_LEGACY__BN_BS___GEN_6_"
       },
       {
         "make": "Subaru",
         "model": "Legacy (BW/BT - Gen 7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_LEGACY__BW_BT___GEN_7_"
       },
       {
         "make": "Subaru",
         "model": "Forester (SK - Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUBARU_FORESTER__SK___GEN_5_"
       },
       {
         "make": "Hyundai",
         "model": "Genesis Coupe (BK1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_GENESIS_COUPE"
       },
       {
         "make": "Hyundai",
         "model": "Genesis Coupe (BK2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_GENESIS_COUPE"
       },
       {
         "make": "Hyundai",
         "model": "Ioniq 5",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_E_GMP"
       },
       {
         "make": "Kia",
         "model": "EV6",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_E_GMP"
       },
       {
         "make": "Genesis",
         "model": "GV60",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_E_GMP"
       },
       {
         "make": "Hyundai",
         "model": "Sonata (DN8)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_N3"
       },
       {
         "make": "Kia",
         "model": "K5 (DL3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_N3"
       },
       {
         "make": "Hyundai",
         "model": "Tucson (NX4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_N3"
       },
       {
         "make": "Kia",
         "model": "Sportage (NQ5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_N3"
       },
       {
         "make": "Hyundai",
         "model": "Elantra (CN7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_J_PLATFORM"
       },
       {
         "make": "Kia",
         "model": "Forte / K3 (BD)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_J_PLATFORM"
       },
       {
         "make": "Hyundai",
         "model": "Veloster (JS)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_J_PLATFORM"
       },
       {
         "make": "Kia",
         "model": "Stinger",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_RWD_SPORT"
       },
       {
         "make": "Genesis",
         "model": "G70",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HYUNDAI_KIA_RWD_SPORT"
       },
       {
         "make": "Ford",
         "model": "Mustang (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_MUSTANG_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Mustang II (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_MUSTANG_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Mustang (Fox Body - Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_MUSTANG_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Mustang (SN95 - Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_MUSTANG_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Mustang (S197 - Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_MUSTANG_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Mustang (S550 - Gen 6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_MUSTANG_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Mustang (S650 - Gen 7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_MUSTANG_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Mustang (SN95)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SN95_NEWEDGE"
       },
       {
         "make": "Ford",
         "model": "Mustang (New Edge)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SN95_NEWEDGE"
       },
       {
         "make": "Ford",
         "model": "Mustang (S197 - Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_S197"
       },
       {
         "make": "Ford",
         "model": "Mustang (S197 - Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_S197"
       },
       {
         "make": "Ford",
         "model": "Mustang (S550)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_S550"
       },
       {
         "make": "Ford",
         "model": "Shelby GT350",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_S550"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_RANGER_MAZDA_B"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_RANGER_MAZDA_B"
       },
       {
         "make": "Mazda",
         "model": "B-Series (B2300/B3000/B4000)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_RANGER_MAZDA_B"
       },
       {
         "make": "Ford",
         "model": "Explorer (Gen 1/2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_RANGER_MAZDA_B"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 1/2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_RANGER"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_RANGER"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_RANGER"
       },
       {
         "make": "Ford",
         "model": "Ranger (T6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_RANGER"
       },
       {
         "make": "Ford",
         "model": "Crown Victoria",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_PANTHER"
       },
       {
         "make": "Mercury",
         "model": "Grand Marquis",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_PANTHER"
       },
       {
         "make": "Lincoln",
         "model": "Town Car",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_PANTHER"
       },
       {
         "make": "Mercury",
         "model": "Marauder",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_PANTHER"
       },
       {
         "make": "Ford",
         "model": "Falcon (XK-XP)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_CLASSIC"
       },
       {
         "make": "Ford",
         "model": "Falcon (XR-XY)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_CLASSIC"
       },
       {
         "make": "Ford",
         "model": "Falcon (XA-XC)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_CLASSIC"
       },
       {
         "make": "Ford",
         "model": "Falcon (XD-XF)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_CLASSIC"
       },
       {
         "make": "Ford",
         "model": "Falcon (EA-ED)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_EA_AU"
       },
       {
         "make": "Ford",
         "model": "Falcon (EF-EL)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_EA_AU"
       },
       {
         "make": "Ford",
         "model": "Falcon (AU)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_EA_AU"
       },
       {
         "make": "Ford",
         "model": "Falcon (BA/BF)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_BA_FG"
       },
       {
         "make": "Ford",
         "model": "Falcon (FG/FG X)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_BA_FG"
       },
       {
         "make": "Ford",
         "model": "Territory (SX-SZ)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_FALCON_BA_FG"
       },
       {
         "make": "Jeep",
         "model": "Cherokee (XJ)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_CHEROKEE_XJ"
       },
       {
         "make": "Jeep",
         "model": "Comanche (MJ)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_CHEROKEE_XJ"
       },
       {
         "make": "Jeep",
         "model": "Grand Cherokee (ZJ)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_CHEROKEE_XJ"
       },
       {
         "make": "Jeep",
         "model": "Wrangler (TJ)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_WRANGLER_TJ"
       },
       {
         "make": "Jeep",
         "model": "Wrangler Unlimited (LJ)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_WRANGLER_TJ"
       },
       {
         "make": "AMC",
         "model": "Eagle",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_AMC_40"
       },
       {
         "make": "Jeep",
         "model": "Cherokee (XJ) 4.0L",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_AMC_40"
       },
       {
         "make": "Jeep",
         "model": "Wrangler (YJ/TJ) 4.0L",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_AMC_40"
       },
       {
         "make": "Jeep",
         "model": "Grand Cherokee (ZJ/WJ) 4.0L",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_AMC_40"
       },
       {
         "make": "Jeep",
         "model": "Cherokee (XJ)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "JEEP_XJ"
       },
       {
         "make": "Factory Five",
         "model": "Mk4 Roadster",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_FACTORY_FIVE_MK4"
       },
       {
         "make": "Ford",
         "model": "Mustang (Fox/SN95)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_FACTORY_FIVE_MK4"
+      },
+      {
+        "make": "Aston Martin",
+        "model": "DB9",
+        "type": "Car",
+        "platform_id": "ASTON_MARTIN_VH"
+      },
+      {
+        "make": "Aston Martin",
+        "model": "V8 Vantage",
+        "type": "Car",
+        "platform_id": "ASTON_MARTIN_VH"
+      },
+      {
+        "make": "Aston Martin",
+        "model": "DBS V12",
+        "type": "Car",
+        "platform_id": "ASTON_MARTIN_VH"
+      },
+      {
+        "make": "Aston Martin",
+        "model": "Rapide",
+        "type": "Car",
+        "platform_id": "ASTON_MARTIN_VH"
+      },
+      {
+        "make": "Ford",
+        "model": "Ranger",
+        "type": "Car",
+        "platform_id": "FORD_RANGER_RBV"
+      },
+      {
+        "make": "Mazda",
+        "model": "B-Series (B2300/B3000/B4000)",
+        "type": "Car",
+        "platform_id": "FORD_RANGER_RBV"
+      },
+      {
+        "make": "Ford",
+        "model": "Explorer",
+        "type": "Car",
+        "platform_id": "FORD_RANGER_RBV"
+      },
+      {
+        "make": "Mercury",
+        "model": "Mountaineer",
+        "type": "Car",
+        "platform_id": "FORD_RANGER_RBV"
+      },
+      {
+        "make": "Ford",
+        "model": "Explorer Sport Trac",
+        "type": "Car",
+        "platform_id": "FORD_RANGER_RBV"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (EP3)",
+        "type": "Car",
+        "platform_id": "HONDA_K_SERIES_PLATFORM"
+      },
+      {
+        "make": "Acura",
+        "model": "RSX / RSX Type-S",
+        "type": "Car",
+        "platform_id": "HONDA_K_SERIES_PLATFORM"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (FG2/FA5)",
+        "type": "Car",
+        "platform_id": "HONDA_K_SERIES_PLATFORM"
+      },
+      {
+        "make": "Acura",
+        "model": "TSX (CL9)",
+        "type": "Car",
+        "platform_id": "HONDA_K_SERIES_PLATFORM"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CM)",
+        "type": "Car",
+        "platform_id": "HONDA_K_SERIES_PLATFORM"
+      },
+      {
+        "make": "Honda",
+        "model": "CR-V (RD)",
+        "type": "Car",
+        "platform_id": "HONDA_K_SERIES_PLATFORM"
+      },
+      {
+        "make": "Honda",
+        "model": "Element",
+        "type": "Car",
+        "platform_id": "HONDA_K_SERIES_PLATFORM"
+      },
+      {
+        "make": "Jeep",
+        "model": "Cherokee (XJ)",
+        "type": "Car",
+        "platform_id": "JEEP_CHEROKEE"
+      },
+      {
+        "make": "Jeep",
+        "model": "Grand Cherokee (ZJ)",
+        "type": "Car",
+        "platform_id": "JEEP_CHEROKEE"
+      },
+      {
+        "make": "Jeep",
+        "model": "Grand Cherokee (WJ)",
+        "type": "Car",
+        "platform_id": "JEEP_CHEROKEE"
+      },
+      {
+        "make": "Jeep",
+        "model": "Grand Cherokee (WK)",
+        "type": "Car",
+        "platform_id": "JEEP_CHEROKEE"
+      },
+      {
+        "make": "Jeep",
+        "model": "Grand Cherokee (WK2)",
+        "type": "Car",
+        "platform_id": "JEEP_CHEROKEE"
+      },
+      {
+        "make": "Lexus",
+        "model": "LS400 (UCF10 - 1st Gen)",
+        "type": "Car",
+        "platform_id": "LEXUS_LS_UCF"
+      },
+      {
+        "make": "Lexus",
+        "model": "LS400 (UCF20 - 2nd Gen)",
+        "type": "Car",
+        "platform_id": "LEXUS_LS_UCF"
+      },
+      {
+        "make": "Toyota",
+        "model": "Celsior (UCF10/20)",
+        "type": "Car",
+        "platform_id": "LEXUS_LS_UCF"
+      },
+      {
+        "make": "Maserati",
+        "model": "GranTurismo",
+        "type": "Car",
+        "platform_id": "MASERATI_M145"
+      },
+      {
+        "make": "Maserati",
+        "model": "GranCabrio",
+        "type": "Car",
+        "platform_id": "MASERATI_M145"
+      },
+      {
+        "make": "Dodge",
+        "model": "Charger",
+        "type": "Car",
+        "platform_id": "MOPAR_CLASSIC_B_BODY"
+      },
+      {
+        "make": "Dodge",
+        "model": "Coronet",
+        "type": "Car",
+        "platform_id": "MOPAR_CLASSIC_B_BODY"
+      },
+      {
+        "make": "Plymouth",
+        "model": "Road Runner",
+        "type": "Car",
+        "platform_id": "MOPAR_CLASSIC_B_BODY"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger",
+        "type": "Car",
+        "platform_id": "MOPAR_CLASSIC_E_BODY"
+      },
+      {
+        "make": "Plymouth",
+        "model": "Barracuda",
+        "type": "Car",
+        "platform_id": "MOPAR_CLASSIC_E_BODY"
+      },
+      {
+        "make": "Tesla",
+        "model": "Model 3",
+        "type": "Car",
+        "platform_id": "TESLA_MODEL_3_Y"
+      },
+      {
+        "make": "Tesla",
+        "model": "Model Y",
+        "type": "Car",
+        "platform_id": "TESLA_MODEL_3_Y"
+      },
+      {
+        "make": "Facel Vega",
+        "model": "HK500",
+        "type": "Car",
+        "platform_id": "FACEL_VEGA_V8"
+      },
+      {
+        "make": "Facel Vega",
+        "model": "Facel II",
+        "type": "Car",
+        "platform_id": "FACEL_VEGA_V8"
+      },
+      {
+        "make": "Bricklin",
+        "model": "SV-1",
+        "type": "Car",
+        "platform_id": "BRICKLIN_SV1"
       }
     ]
   },
@@ -2466,177 +3366,272 @@
       {
         "make": "Chevrolet",
         "model": "C/K Series (Action Line)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "C/K Series (Square Body)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "C/K Series (GMT400 - OBS)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 1500 (GMT800 - NBS)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 2500HD/3500HD (GMT800)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 1500 (GMT900 - NNBS)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 2500HD/3500HD (GMT900)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 1500 (K2XX)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 2500HD/3500HD (K2XX)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 1500 (T1XX)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 2500HD/3500HD (T1XX)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "S10 (Gen 1)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "S10 (Gen 2)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Colorado (Gen 1)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Colorado (Gen 2)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Colorado (Gen 3)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "C/K Series (Square Body)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_CLASSIC"
       },
       {
         "make": "Chevrolet",
         "model": "C/K Series (GMT400 - OBS)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_CLASSIC"
       },
       {
         "make": "GMC",
         "model": "Sierra (GMT400)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_CLASSIC"
+      },
+      {
+        "make": "GMC",
+        "model": "C/K Series (Square Body)",
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_CLASSIC"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 1500 (GMT800 - NBS)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
       },
       {
         "make": "GMC",
         "model": "Sierra 1500 (GMT800)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
+      },
+      {
+        "make": "GMC",
+        "model": "Sierra 1500 (GMT900)",
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
+      },
+      {
+        "make": "GMC",
+        "model": "Yukon / Yukon XL (GMT800)",
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
+      },
+      {
+        "make": "GMC",
+        "model": "Yukon / Yukon XL (GMT900)",
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
+      },
+      {
+        "make": "GMC",
+        "model": "Sierra 1500 (K2XX)",
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
+      },
+      {
+        "make": "GMC",
+        "model": "Sierra 1500 (T1XX)",
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
       },
       {
         "make": "Chevrolet",
         "model": "Tahoe / Suburban (GMT800)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 1500 (GMT900 - NNBS)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 1500 (K2XX)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
       },
       {
         "make": "Chevrolet",
         "model": "Silverado 1500 (T1XX)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_TRUCK_MODERN"
       },
       {
         "make": "Toyota",
         "model": "Land Cruiser (J80)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_LAND_CRUISER"
       },
       {
         "make": "Lexus",
         "model": "LX450",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_LAND_CRUISER"
       },
       {
         "make": "Toyota",
         "model": "Land Cruiser (J100)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_LAND_CRUISER"
       },
       {
         "make": "Lexus",
         "model": "LX470",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_LAND_CRUISER"
       },
       {
         "make": "Toyota",
         "model": "4Runner (3rd Gen)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_4RUNNER_N180"
       },
       {
         "make": "Toyota",
         "model": "Tacoma (1st Gen)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_4RUNNER_N180"
       },
       {
         "make": "Mitsubishi",
         "model": "Pajero / Montero (V20)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "MITSUBISHI_PAJERO_MONTERO"
       },
       {
         "make": "Mitsubishi",
         "model": "Pajero Evolution (V55W)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "MITSUBISHI_PAJERO_MONTERO"
       },
       {
         "make": "Hyundai",
         "model": "Galloper",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "MITSUBISHI_PAJERO_MONTERO"
       },
       {
         "make": "Ford",
         "model": "Ranger (Pre-1983)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_RANGER__PRE_1983_"
+      },
+      {
+        "make": "Toyota",
+        "model": "Tacoma (1st Gen)",
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_TRUCK_FRAME"
+      },
+      {
+        "make": "Toyota",
+        "model": "4Runner (3rd Gen)",
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_TRUCK_FRAME"
+      },
+      {
+        "make": "Toyota",
+        "model": "Tundra (1st Gen)",
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_TRUCK_FRAME"
+      },
+      {
+        "make": "Toyota",
+        "model": "Sequoia (1st Gen)",
+        "type": "Truck/SUV",
+        "platform_id": "TOYOTA_TRUCK_FRAME"
       }
     ]
   },
@@ -2649,282 +3644,356 @@
       {
         "make": "Chevrolet",
         "model": "Cruze (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MODERN_FAMILY"
       },
       {
         "make": "Chevrolet",
         "model": "Cruze (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MODERN_FAMILY"
       },
       {
         "make": "Chevrolet",
         "model": "Equinox (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MODERN_FAMILY"
       },
       {
         "make": "Chevrolet",
         "model": "Equinox (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MODERN_FAMILY"
       },
       {
         "make": "Chevrolet",
         "model": "Traverse (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MODERN_FAMILY"
       },
       {
         "make": "Chevrolet",
         "model": "Traverse (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MODERN_FAMILY"
       },
       {
         "make": "Chevrolet",
         "model": "Sonic",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MODERN_FAMILY"
       },
       {
         "make": "Chevrolet",
         "model": "Spark",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MODERN_FAMILY"
       },
       {
         "make": "Chevrolet",
         "model": "Malibu (Gen 4 - G-Body)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MALIBU_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Malibu (Gen 5 - N-Body)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MALIBU_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Malibu (Gen 6 - Epsilon)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MALIBU_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Malibu (Gen 7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MALIBU_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Malibu (Gen 8)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MALIBU_GENERATIONS"
       },
       {
         "make": "Chevrolet",
         "model": "Malibu (Gen 9)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_MALIBU_GENERATIONS"
       },
       {
         "make": "Saab",
         "model": "9-5 (NG - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_2"
       },
       {
         "make": "Buick",
         "model": "Regal (Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_2"
       },
       {
         "make": "Buick",
         "model": "LaCrosse (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_2"
       },
       {
         "make": "Opel",
         "model": "Insignia A",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_2"
       },
       {
         "make": "Chevrolet",
         "model": "Malibu (Gen 8)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_2"
       },
       {
         "make": "Chevrolet",
         "model": "Camaro (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CAMARO"
       },
       {
         "make": "Chevrolet",
         "model": "Camaro (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CAMARO"
       },
       {
         "make": "Chevrolet",
         "model": "Camaro (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CAMARO"
       },
       {
         "make": "Chevrolet",
         "model": "Camaro (Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CAMARO"
       },
       {
         "make": "Chevrolet",
         "model": "Camaro (Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CAMARO"
       },
       {
         "make": "Chevrolet",
         "model": "Camaro (Gen 6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CAMARO"
       },
       {
         "make": "Pontiac",
         "model": "G8 Base",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_G8"
       },
       {
         "make": "Pontiac",
         "model": "G8 GT",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_G8"
       },
       {
         "make": "Pontiac",
         "model": "G8 GXP",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_G8"
       },
       {
         "make": "Chevrolet",
         "model": "SS Sedan",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_G8"
       },
       {
         "make": "Chevrolet",
         "model": "Caprice PPV",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_G8"
       },
       {
         "make": "Pontiac",
         "model": "GTO (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_GTO"
       },
       {
         "make": "Pontiac",
         "model": "GTO (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_GTO"
       },
       {
         "make": "Pontiac",
         "model": "GTO (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_GTO"
       },
       {
         "make": "Pontiac",
         "model": "GTO (Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_GTO"
       },
       {
         "make": "Pontiac",
         "model": "GTO (Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_GTO"
       },
       {
         "make": "Holden",
         "model": "Commodore (VB-VL)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_CLASSIC"
       },
       {
         "make": "Holden",
         "model": "Calais (VK-VL)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_CLASSIC"
       },
       {
         "make": "Holden",
         "model": "VL Turbo",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_CLASSIC"
       },
       {
         "make": "Holden",
         "model": "Commodore (VN-VS)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VN_VS"
       },
       {
         "make": "Holden",
         "model": "Ute (VG-VS)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VN_VS"
       },
       {
         "make": "Holden",
         "model": "Statesman (VQ-VS)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VN_VS"
       },
       {
         "make": "Toyota",
         "model": "Lexcen",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VN_VS"
       },
       {
         "make": "Holden",
         "model": "Commodore (VT-VZ)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VT_VZ"
       },
       {
         "make": "Holden",
         "model": "Monaro (V2/VZ)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VT_VZ"
       },
       {
         "make": "Pontiac",
         "model": "GTO (Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VT_VZ"
       },
       {
         "make": "Chevrolet",
         "model": "Lumina SS",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VT_VZ"
       },
       {
         "make": "Holden",
         "model": "Commodore (VE)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VE_VF"
       },
       {
         "make": "Holden",
         "model": "Commodore (VF)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VE_VF"
       },
       {
         "make": "Pontiac",
         "model": "G8",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VE_VF"
       },
       {
         "make": "Chevrolet",
         "model": "SS Sedan",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "HOLDEN_COMMODORE_VE_VF"
       },
       {
         "make": "Cadillac",
         "model": "Catera",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CADILLAC_CATERA"
       },
       {
         "make": "Opel",
         "model": "Omega B",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CADILLAC_CATERA"
       },
       {
         "make": "Pontiac",
         "model": "GTO (Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CADILLAC_CATERA"
       },
       {
         "make": "Saab",
         "model": "900 (NG)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SAAB_GM2900"
       },
       {
         "make": "Saab",
         "model": "9-3 (OG)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SAAB_GM2900"
       },
       {
         "make": "Saab",
         "model": "9-5 (OG)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SAAB_GM2900"
+      },
+      {
+        "make": "Tesla",
+        "model": "Model S",
+        "type": "Car",
+        "platform_id": "TESLA_MODEL_S_X"
+      },
+      {
+        "make": "Tesla",
+        "model": "Model X",
+        "type": "Car",
+        "platform_id": "TESLA_MODEL_S_X"
+      },
+      {
+        "make": "Lucid",
+        "model": "Air",
+        "type": "Car",
+        "platform_id": "LUCID_AIR"
       }
     ]
   },
@@ -2937,132 +4006,200 @@
       {
         "make": "Chevrolet",
         "model": "Corvette (C1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CORVETTE"
       },
       {
         "make": "Chevrolet",
         "model": "Corvette (C2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CORVETTE"
       },
       {
         "make": "Chevrolet",
         "model": "Corvette (C3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CORVETTE"
       },
       {
         "make": "Chevrolet",
         "model": "Corvette (C4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CORVETTE"
       },
       {
         "make": "Chevrolet",
         "model": "Corvette (C5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CORVETTE"
       },
       {
         "make": "Chevrolet",
         "model": "Corvette (C6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CORVETTE"
       },
       {
         "make": "Chevrolet",
         "model": "Corvette (C7)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CORVETTE"
       },
       {
         "make": "Chevrolet",
         "model": "Corvette (C8)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHEVY_CORVETTE"
       },
       {
         "make": "Chevrolet",
         "model": "S-10 (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_S10_SONOMA"
       },
       {
         "make": "GMC",
         "model": "Sonoma (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_S10_SONOMA"
       },
       {
         "make": "Chevrolet",
         "model": "Blazer",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_S10_SONOMA"
       },
       {
         "make": "GMC",
         "model": "Jimmy",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_S10_SONOMA"
       },
       {
         "make": "Oldsmobile",
         "model": "Bravada",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_S10_SONOMA"
       },
       {
         "make": "Buick",
         "model": "Regal / Grand National",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_G_BODY_RWD"
       },
       {
         "make": "Chevrolet",
         "model": "Monte Carlo",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_G_BODY_RWD"
       },
       {
         "make": "Oldsmobile",
         "model": "Cutlass Supreme",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_G_BODY_RWD"
       },
       {
         "make": "Pontiac",
         "model": "Grand Prix",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_G_BODY_RWD"
       },
       {
         "make": "Chevrolet",
         "model": "El Camino",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_G_BODY_RWD"
       },
       {
         "make": "Chevrolet",
         "model": "Chevelle",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_MUSCLE_CLASSIC"
       },
       {
         "make": "Chevrolet",
         "model": "Nova",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_MUSCLE_CLASSIC"
       },
       {
         "make": "Chevrolet",
         "model": "Impala",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_MUSCLE_CLASSIC"
       },
       {
         "make": "Chevrolet",
         "model": "El Camino",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_MUSCLE_CLASSIC"
       },
       {
         "make": "Pontiac",
         "model": "Firebird (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_FIREBIRD"
       },
       {
         "make": "Pontiac",
         "model": "Firebird (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_FIREBIRD"
       },
       {
         "make": "Pontiac",
         "model": "Firebird (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_FIREBIRD"
       },
       {
         "make": "Pontiac",
         "model": "Firebird (Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_FIREBIRD"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "S-10 (Gen 2)",
+        "type": "Car",
+        "platform_id": "GM_S10_2ND_GEN"
+      },
+      {
+        "make": "GMC",
+        "model": "Sonoma (Gen 2)",
+        "type": "Car",
+        "platform_id": "GM_S10_2ND_GEN"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Blazer",
+        "type": "Car",
+        "platform_id": "GM_S10_2ND_GEN"
+      },
+      {
+        "make": "GMC",
+        "model": "Jimmy",
+        "type": "Car",
+        "platform_id": "GM_S10_2ND_GEN"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "Bravada",
+        "type": "Car",
+        "platform_id": "GM_S10_2ND_GEN"
+      },
+      {
+        "make": "Iso",
+        "model": "Grifo",
+        "type": "Car",
+        "platform_id": "ISO_GRIFO_SERIES"
+      },
+      {
+        "make": "Iso",
+        "model": "Rivolta",
+        "type": "Car",
+        "platform_id": "ISO_GRIFO_SERIES"
       }
     ]
   },
@@ -3075,290 +4212,382 @@
       {
         "make": "Buick",
         "model": "Regal",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN2"
       },
       {
         "make": "Buick",
         "model": "Century",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN2"
       },
       {
         "make": "Pontiac",
         "model": "Grand Prix",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN2"
       },
       {
         "make": "Chevrolet",
         "model": "Impala",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN2"
       },
       {
         "make": "Chevrolet",
         "model": "Monte Carlo",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN2"
       },
       {
         "make": "Oldsmobile",
         "model": "Intrigue",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN2"
       },
       {
         "make": "Pontiac",
         "model": "Grand Prix",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN3"
       },
       {
         "make": "Buick",
         "model": "LaCrosse",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN3"
       },
       {
         "make": "Buick",
         "model": "Allure",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN3"
       },
       {
         "make": "Chevrolet",
         "model": "Impala",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN3"
       },
       {
         "make": "Chevrolet",
         "model": "Monte Carlo",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_W_BODY_GEN3"
       },
       {
         "make": "Buick",
         "model": "LeSabre",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_H_BODY"
       },
       {
         "make": "Pontiac",
         "model": "Bonneville",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_H_BODY"
       },
       {
         "make": "Oldsmobile",
         "model": "Aurora",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_H_BODY"
       },
       {
         "make": "Pontiac",
         "model": "Grand Prix (Gen 5-8)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_GRAND_PRIX"
       },
       {
         "make": "Pontiac",
         "model": "Bonneville",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_GRAND_PRIX"
       },
       {
         "make": "Dodge",
         "model": "Charger (LX - 6th Gen) Base/SXT",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Charger (LX - 6th Gen) R/T",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Charger (LX - 6th Gen) SRT8",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Charger (LD - 7th Gen) SXT/GT",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Charger (LD - 7th Gen) R/T",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Charger (LD - 7th Gen) Scat Pack",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Charger (LD - 7th Gen) SRT Hellcat",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Challenger (LC - 3rd Gen) Base/SXT",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Challenger (LC - 3rd Gen) R/T",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Challenger (LC - 3rd Gen) SRT8",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Challenger (LA - 3rd Gen Facelift) SXT/GT",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Challenger (LA - 3rd Gen Facelift) R/T",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Challenger (LA - 3rd Gen Facelift) Scat Pack",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Challenger (LA - 3rd Gen Facelift) SRT Hellcat",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Dodge",
         "model": "Challenger (LA - 3rd Gen Facelift) SRT Demon",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Chrysler",
         "model": "300 (LX - 1st Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Chrysler",
         "model": "300 (LD - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Mercedes-Benz",
         "model": "E-Class (W211 - 3rd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Mercedes-Benz",
         "model": "S-Class (W220 - 4th Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DAIMLER_CHRYSLER_LX"
       },
       {
         "make": "Chrysler",
         "model": "300M",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_LH_PLATFORM"
       },
       {
         "make": "Chrysler",
         "model": "Concorde",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_LH_PLATFORM"
       },
       {
         "make": "Chrysler",
         "model": "LHS",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_LH_PLATFORM"
       },
       {
         "make": "Dodge",
         "model": "Intrepid",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_LH_PLATFORM"
       },
       {
         "make": "Eagle",
         "model": "Vision",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "CHRYSLER_LH_PLATFORM"
       }
     ]
   },
   {
     "bolt_pattern": "5x110",
     "hub_bore": "65.1mm",
-    "advice": "Oddball GM pattern. Malibu, Cobalt SS, Saab 9-3.",
+    "advice": "Oddball pattern shared by GM (Malibu/Cobalt/Saab) and modern Jeep/Fiat (Cherokee KL/Renegade).",
     "id": "5x110_GM",
     "vehicles": [
       {
         "make": "Saab",
         "model": "9-3 (NG - 2nd Gen)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_1"
       },
       {
         "make": "Chevrolet",
         "model": "Malibu (Gen 6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_1"
       },
       {
         "make": "Pontiac",
         "model": "G6",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_1"
       },
       {
         "make": "Saturn",
         "model": "Aura",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_1"
       },
       {
         "make": "Opel",
         "model": "Vectra C",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_1"
       },
       {
         "make": "Cadillac",
         "model": "BLS",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GM_EPSILON_1"
       },
       {
         "make": "Pontiac",
         "model": "Solstice",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_SOLSTICE"
       },
       {
         "make": "Saturn",
         "model": "Sky",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PONTIAC_SOLSTICE"
       },
       {
         "make": "Saturn",
         "model": "L-Series (Sedan/Wagon)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_L_SERIES"
       },
       {
         "make": "Saab",
         "model": "9-5 (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_L_SERIES"
       },
       {
         "make": "Saturn",
         "model": "Vue (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_VUE"
       },
       {
         "make": "Saturn",
         "model": "Vue (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_VUE"
       },
       {
         "make": "Chevrolet",
         "model": "Equinox (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_VUE"
       },
       {
         "make": "Pontiac",
         "model": "Torrent",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SATURN_VUE"
       },
       {
         "make": "DF Kit Car",
         "model": "Goblin",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_DF_GOBLIN"
       },
       {
         "make": "Chevrolet",
         "model": "Cobalt SS",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_DF_GOBLIN"
+      },
+      {
+        "make": "Dodge",
+        "model": "Dart",
+        "type": "Car",
+        "platform_id": "FCA_CUSW"
+      },
+      {
+        "make": "Chrysler",
+        "model": "200 (UF)",
+        "type": "Car",
+        "platform_id": "FCA_CUSW"
+      },
+      {
+        "make": "Jeep",
+        "model": "Cherokee (KL)",
+        "type": "Car",
+        "platform_id": "FCA_CUSW"
+      },
+      {
+        "make": "Jeep",
+        "model": "Renegade",
+        "type": "Car",
+        "platform_id": "FCA_SMALL_WIDE"
+      },
+      {
+        "make": "Fiat",
+        "model": "500X",
+        "type": "Car",
+        "platform_id": "FCA_SMALL_WIDE"
+      },
+      {
+        "make": "Jeep",
+        "model": "Compass (MP)",
+        "type": "Car",
+        "platform_id": "FCA_SMALL_WIDE"
       }
     ]
   },
@@ -3371,57 +4600,68 @@
       {
         "make": "Jeep",
         "model": "Wrangler (JK)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "JEEP_WRANGLER_JK"
       },
       {
         "make": "Jeep",
         "model": "Wrangler Unlimited (JKU)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "JEEP_WRANGLER_JK"
       },
       {
         "make": "Jeep",
         "model": "Wrangler (YJ)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "JEEP_WRANGLER"
       },
       {
         "make": "Jeep",
         "model": "Wrangler (TJ)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "JEEP_WRANGLER"
       },
       {
         "make": "Jeep",
         "model": "Wrangler (JK)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "JEEP_WRANGLER"
       },
       {
         "make": "Jeep",
         "model": "Wrangler (JL)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "JEEP_WRANGLER"
       },
       {
         "make": "Jeep",
         "model": "Gladiator (JT)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "JEEP_WRANGLER"
       },
       {
         "make": "Saab",
         "model": "9-7X",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_GMT360"
       },
       {
         "make": "Chevrolet",
         "model": "TrailBlazer",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_GMT360"
       },
       {
         "make": "GMC",
         "model": "Envoy",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_GMT360"
       },
       {
         "make": "Buick",
         "model": "Rainier",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GM_GMT360"
       }
     ]
   },
@@ -3434,212 +4674,284 @@
       {
         "make": "Dodge",
         "model": "Ram (Gen 1 - D/W Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Dodge",
         "model": "Ram 1500 (Gen 2 - BR/BE)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Dodge",
         "model": "Ram 2500/3500 (Gen 2)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Dodge",
         "model": "Ram 1500 (Gen 3 - DR/DH)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Dodge",
         "model": "Ram 2500/3500 (Gen 3)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Ram",
         "model": "1500 (Gen 4 - DS)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Ram",
         "model": "2500/3500 (Gen 4 - DJ/D2)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Ram",
         "model": "1500 (Gen 5 - DT)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Ram",
         "model": "2500/3500 (Gen 5)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Dodge",
         "model": "Dakota (Gen 1)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Dodge",
         "model": "Dakota (Gen 2)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Dodge",
         "model": "Dakota (Gen 3)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "DODGE_RAM_GENERATIONS"
       },
       {
         "make": "Ram",
         "model": "1500 (DS - 4th Gen)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "RAM_DS_DT"
       },
       {
         "make": "Ram",
         "model": "1500 Classic (DS)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "RAM_DS_DT"
       },
       {
         "make": "Ram",
         "model": "1500 (DT - 5th Gen)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "RAM_DS_DT"
       },
       {
         "make": "Ford",
         "model": "F-1 / F-100 (Gen 1)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_CLASSIC"
       },
       {
         "make": "Ford",
         "model": "F-100 (Gen 2)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_CLASSIC"
       },
       {
         "make": "Ford",
         "model": "F-100 (Gen 3-5)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_CLASSIC"
       },
       {
         "make": "Ford",
         "model": "F-100 / F-150 (Gen 6 - Dentside)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_CLASSIC"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 7-9 - Bullnose/Brick/OBS)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_CLASSIC"
       },
       {
         "make": "Ford",
         "model": "Bronco (Gen 1)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_BRONCO"
       },
       {
         "make": "Ford",
         "model": "Bronco (Gen 2-5)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_BRONCO"
       },
       {
         "make": "Ford",
         "model": "Bronco (Gen 6)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_BRONCO"
       },
       {
         "make": "Ford",
         "model": "Bronco Sport",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_BRONCO"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 1 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_1___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 2 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_2___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 3 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_3___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 4 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_4___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 5 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_5___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 6 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_6___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 7 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_7___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 8 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_8___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 9 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_9___F_SERIES_"
       },
       {
         "make": "Suzuki",
         "model": "Samurai / Jimny (SJ413)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "SUZUKI_OFFROAD"
       },
       {
         "make": "Suzuki",
         "model": "Jimny (JB23/JB43)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "SUZUKI_OFFROAD"
       },
       {
         "make": "Suzuki",
         "model": "Jimny (JB64/JB74)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "SUZUKI_OFFROAD"
       },
       {
         "make": "Suzuki",
         "model": "Sidekick / Vitara (1st Gen)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "SUZUKI_OFFROAD"
       },
       {
         "make": "Geo",
         "model": "Tracker",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "SUZUKI_OFFROAD"
       },
       {
         "make": "Geo",
         "model": "Tracker",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GEO_TRACKER"
       },
       {
         "make": "Chevrolet",
         "model": "Tracker",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GEO_TRACKER"
       },
       {
         "make": "Suzuki",
         "model": "Sidekick",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GEO_TRACKER"
       },
       {
         "make": "Suzuki",
         "model": "Vitara",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "GEO_TRACKER"
+      },
+      {
+        "make": "Ford",
+        "model": "Model 18 / Model 40 (V8)",
+        "type": "Truck/SUV",
+        "platform_id": "FORD_FLATHEAD_ERA"
+      },
+      {
+        "make": "Ford",
+        "model": "Deluxe / Super Deluxe",
+        "type": "Truck/SUV",
+        "platform_id": "FORD_FLATHEAD_ERA"
+      },
+      {
+        "make": "Ford",
+        "model": "Custom / Crestline",
+        "type": "Truck/SUV",
+        "platform_id": "FORD_FLATHEAD_ERA"
+      },
+      {
+        "make": "Rivian",
+        "model": "R1T",
+        "type": "Truck/SUV",
+        "platform_id": "RIVIAN_R1"
+      },
+      {
+        "make": "Rivian",
+        "model": "R1S",
+        "type": "Truck/SUV",
+        "platform_id": "RIVIAN_R1"
       }
     ]
   },
@@ -3652,47 +4964,56 @@
       {
         "make": "Ford",
         "model": "F-150 (Gen 10 - Jellybean)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_MODERN"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 11)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_MODERN"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 12)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_MODERN"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 13 - Aluminum)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_MODERN"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 14)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_SERIES_MODERN"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 11 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_11___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 12 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_12___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 13 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_13___F_SERIES_"
       },
       {
         "make": "Ford",
         "model": "F-150 (Gen 14 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_14___F_SERIES_"
       }
     ]
   },
@@ -3705,7 +5026,8 @@
       {
         "make": "Ford",
         "model": "F-150 (Gen 10 - F-Series)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "FORD_F_150__GEN_10___F_SERIES_"
       }
     ]
   },
@@ -3718,52 +5040,62 @@
       {
         "make": "Ford",
         "model": "F-250/F-350 Super Duty (Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "F-250/F-350 Super Duty (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "F-250/F-350 Super Duty (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "F-250/F-350 Super Duty (Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "F-250/F-350 Super Duty (Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 1/2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 5 - T6)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       },
       {
         "make": "Ford",
         "model": "Ranger (Gen 6 - P703)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FORD_SUPER_DUTY_GENERATIONS"
       }
     ]
   },
@@ -3776,47 +5108,56 @@
       {
         "make": "Volkswagen",
         "model": "Beetle (Type 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_AIRCOOLED_LEGENDS"
       },
       {
         "make": "Volkswagen",
         "model": "Bus / Transporter (Type 2 T1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_AIRCOOLED_LEGENDS"
       },
       {
         "make": "Volkswagen",
         "model": "Bus / Transporter (Type 2 T2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_AIRCOOLED_LEGENDS"
       },
       {
         "make": "Volkswagen",
         "model": "Type 3 (Squareback/Fastback)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_AIRCOOLED_LEGENDS"
       },
       {
         "make": "Volkswagen",
         "model": "Karmann Ghia (Type 14)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_AIRCOOLED_LEGENDS"
       },
       {
         "make": "Volkswagen",
         "model": "Super Beetle",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_AIRCOOLED_LEGENDS"
       },
       {
         "make": "Volkswagen",
         "model": "Thing (Type 181)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "VW_AIRCOOLED_LEGENDS"
       },
       {
         "make": "Meyers Manx",
         "model": "Manx",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_MEYERS_MANX"
       },
       {
         "make": "Volkswagen",
         "model": "Beetle (Type 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_MEYERS_MANX"
       }
     ]
   },
@@ -3829,62 +5170,74 @@
       {
         "make": "Fiat",
         "model": "500 Abarth",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FIAT_500_ABARTH"
       },
       {
         "make": "Fiat",
         "model": "124 Spider",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "FIAT_500_ABARTH"
       },
       {
         "make": "Alfa Romeo",
         "model": "Giulia (952)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "ALFA_ROMEO_MODERN"
       },
       {
         "make": "Alfa Romeo",
         "model": "Stelvio (949)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "ALFA_ROMEO_MODERN"
       },
       {
         "make": "Alfa Romeo",
         "model": "4C",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "ALFA_ROMEO_MODERN"
       },
       {
         "make": "Saab",
         "model": "9000",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TYPE_FOUR_PLATFORM"
       },
       {
         "make": "Alfa Romeo",
         "model": "164",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TYPE_FOUR_PLATFORM"
       },
       {
         "make": "Fiat",
         "model": "Croma",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TYPE_FOUR_PLATFORM"
       },
       {
         "make": "Lancia",
         "model": "Thema",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "TYPE_FOUR_PLATFORM"
       },
       {
         "make": "Lancia",
         "model": "Delta HF Integrale",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_LANCIA"
       },
       {
         "make": "Lancia",
         "model": "Stratos",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_LANCIA"
       },
       {
         "make": "Lancia",
         "model": "037",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "RALLY_HOMOLOGATION_LANCIA"
       }
     ]
   },
@@ -3897,32 +5250,38 @@
       {
         "make": "Nissan",
         "model": "Altima (U13 - Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NISSAN_ALTIMA__U13___GEN_1_"
       },
       {
         "make": "Suzuki",
         "model": "Alto Works",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUZUKI_KEI_CLASSIC"
       },
       {
         "make": "Suzuki",
         "model": "Jimny (JA11/JA12/JA22)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUZUKI_KEI_CLASSIC"
       },
       {
         "make": "Suzuki",
         "model": "Carry / Every",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "SUZUKI_KEI_CLASSIC"
       },
       {
         "make": "Geo",
         "model": "Storm",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GEO_STORM"
       },
       {
         "make": "Isuzu",
         "model": "Impulse (Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "GEO_STORM"
       }
     ]
   },
@@ -3935,27 +5294,32 @@
       {
         "make": "Dodge",
         "model": "Viper (SR I - Gen 1)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DODGE_VIPER"
       },
       {
         "make": "Dodge",
         "model": "Viper (SR II - Gen 2)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DODGE_VIPER"
       },
       {
         "make": "Dodge",
         "model": "Viper (ZB I - Gen 3)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DODGE_VIPER"
       },
       {
         "make": "Dodge",
         "model": "Viper (ZB II - Gen 4)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DODGE_VIPER"
       },
       {
         "make": "Dodge",
         "model": "Viper (VX - Gen 5)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "DODGE_VIPER"
       }
     ]
   },
@@ -3968,27 +5332,32 @@
       {
         "make": "Land Rover",
         "model": "Defender 90/110",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "LAND_ROVER_CLASSIC"
       },
       {
         "make": "Land Rover",
         "model": "Discovery 1",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "LAND_ROVER_CLASSIC"
       },
       {
         "make": "Land Rover",
         "model": "Discovery 2",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "LAND_ROVER_CLASSIC"
       },
       {
         "make": "Land Rover",
         "model": "Range Rover Classic",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "LAND_ROVER_CLASSIC"
       },
       {
         "make": "Land Rover",
         "model": "Range Rover (P38)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "LAND_ROVER_CLASSIC"
       }
     ]
   },
@@ -4001,17 +5370,20 @@
       {
         "make": "Land Rover",
         "model": "Range Rover (L322 - BMW Era)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "LAND_ROVER_L322"
       },
       {
         "make": "Land Rover",
         "model": "Range Rover (L322 - Ford Era)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "LAND_ROVER_L322"
       },
       {
         "make": "Land Rover",
         "model": "Range Rover (L322 - Facelift)",
-        "type": "Truck/SUV"
+        "type": "Truck/SUV",
+        "platform_id": "LAND_ROVER_L322"
       }
     ]
   },
@@ -4024,32 +5396,38 @@
       {
         "make": "Mini",
         "model": "Cooper (R50)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MINI_COOPER_MODERN"
       },
       {
         "make": "Mini",
         "model": "Cooper S (R53)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MINI_COOPER_MODERN"
       },
       {
         "make": "Mini",
         "model": "Cooper S (R56)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MINI_COOPER_MODERN"
       },
       {
         "make": "Mini",
         "model": "Cooper S (F56)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "MINI_COOPER_MODERN"
       },
       {
         "make": "Austin-Healey",
         "model": "Sprite (Frogeye)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BRITISH_ROADSTER_AUSTIN"
       },
       {
         "make": "Austin-Healey",
         "model": "3000",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BRITISH_ROADSTER_AUSTIN"
       }
     ]
   },
@@ -4062,32 +5440,38 @@
       {
         "make": "MG",
         "model": "MGB",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BRITISH_ROADSTER_MG"
       },
       {
         "make": "MG",
         "model": "Midget",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BRITISH_ROADSTER_MG"
       },
       {
         "make": "MG",
         "model": "MGA",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BRITISH_ROADSTER_MG"
       },
       {
         "make": "Triumph",
         "model": "Spitfire",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BRITISH_ROADSTER_TRIUMPH"
       },
       {
         "make": "Triumph",
         "model": "TR6",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BRITISH_ROADSTER_TRIUMPH"
       },
       {
         "make": "Triumph",
         "model": "GT6",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "BRITISH_ROADSTER_TRIUMPH"
       }
     ]
   },
@@ -4100,27 +5484,38 @@
       {
         "make": "Bugatti",
         "model": "Type 35",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PREWAR_EURO_RACING"
       },
       {
         "make": "Alfa Romeo",
         "model": "8C 2300",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PREWAR_EURO_RACING"
       },
       {
         "make": "Bentley",
         "model": "Blower Bentley (4\u00bd Litre)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PREWAR_EURO_RACING"
       },
       {
         "make": "KTM",
         "model": "X-Bow",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "EXO_KTM_XBOW"
       },
       {
         "make": "Audi",
         "model": "TT 2.0 TFSI",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "EXO_KTM_XBOW"
+      },
+      {
+        "make": "McLaren",
+        "model": "F1",
+        "type": "Car",
+        "platform_id": "MCLAREN_F1"
       }
     ]
   },
@@ -4133,42 +5528,86 @@
       {
         "make": "Duesenberg",
         "model": "Model J",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PREWAR_LUXURY"
       },
       {
         "make": "Packard",
         "model": "Twelve",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PREWAR_LUXURY"
       },
       {
         "make": "Cadillac",
         "model": "V-16",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "PREWAR_LUXURY"
       },
       {
         "make": "Subaru",
         "model": "Outback (Legacy Based)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NICHE_BUILD_BATTLEWAGON"
       },
       {
         "make": "Volvo",
         "model": "V70 XC / XC70",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NICHE_BUILD_BATTLEWAGON"
       },
       {
         "make": "AMC",
         "model": "Eagle Wagon",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "NICHE_BUILD_BATTLEWAGON"
       },
       {
         "make": "Factory Five",
         "model": "818 S/R/C",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_FACTORY_FIVE_818"
       },
       {
         "make": "Subaru",
         "model": "Impreza WRX (GD/GG)",
-        "type": "Car"
+        "type": "Car",
+        "platform_id": "KIT_FACTORY_FIVE_818"
+      },
+      {
+        "make": "Ford",
+        "model": "Model T",
+        "type": "Car",
+        "platform_id": "FORD_MODEL_T_A"
+      },
+      {
+        "make": "Ford",
+        "model": "Model A",
+        "type": "Car",
+        "platform_id": "FORD_MODEL_T_A"
+      },
+      {
+        "make": "Lamborghini",
+        "model": "Countach",
+        "type": "Car",
+        "platform_id": "LAMBORGHINI_V12"
+      },
+      {
+        "make": "Lamborghini",
+        "model": "Diablo",
+        "type": "Car",
+        "platform_id": "LAMBORGHINI_V12"
+      },
+      {
+        "make": "Lamborghini",
+        "model": "Murci\u00e9lago",
+        "type": "Car",
+        "platform_id": "LAMBORGHINI_V12"
+      },
+      {
+        "make": "Lamborghini",
+        "model": "Aventador",
+        "type": "Car",
+        "platform_id": "LAMBORGHINI_V12"
       }
     ]
   }

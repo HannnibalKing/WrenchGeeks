@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "vehicle": "Ford Fox Body (Mustang/Fairmont/T-Bird)",
+    "title": "The Ultimate Lego Set",
+    "description": "Running from 1978 to 1993 (and up to 2004 for the Mustang chassis), the Fox platform is the king of interchange. You can bolt 2004 Mustang Cobra brakes onto a 1978 Ford Fairmont. Engines, transmissions (T5), rear ends (8.8), and suspension parts swap freely between Mustangs, Thunderbirds, LTDs, Mercury Capris, and Lincoln Mark VIIs.",
+    "interchange_score": "10/10",
+    "badges": ["RWD", "V8 Ready", "Cheap"]
+  },
+  {
+    "rank": 2,
+    "vehicle": "Honda Civic (1992-2000 EG/EK)",
+    "title": "Golden Era Honda",
+    "description": "The 'Lego' of the import world. You can swap engines (B-Series, K-Series), suspension, brakes, and seats between the Civic, Integra (DC2), CR-V (RD1), and Del Sol. Want big brakes? Bolt on Integra knuckles. Want AWD? Use CR-V drivetrain parts.",
+    "interchange_score": "9.8/10",
+    "badges": ["JDM Legend", "Easy to Work On"]
+  },
+  {
+    "rank": 3,
+    "vehicle": "Chevy S10 / GMC Sonoma (2nd Gen)",
+    "title": "The General's Swiss Army Knife",
+    "description": "The S10 chassis shares DNA with the G-Body (Monte Carlo) and full-size trucks. You can swap in almost any Chevy V8 (LS or Small Block), use brakes from a Corvette (with adapters), and rear axles from an Explorer (with mods). It's the cheapest way to build a fast truck.",
+    "interchange_score": "9.5/10",
+    "badges": ["Truck", "LS Swap Candidate"]
+  },
+  {
+    "rank": 4,
+    "vehicle": "VW Golf Mk4 / Jetta Mk4",
+    "title": "The VAG Parts Bin",
+    "description": "The PQ34 platform underpins the Golf, Jetta, Beetle, Audi TT, and Audi A3. You can put Audi TT suspension and brakes on a Golf TDI. Interiors, engines (1.8T, VR6, TDI), and even AWD systems (Haldex) are swappable across the entire family.",
+    "interchange_score": "9.2/10",
+    "badges": ["Euro", "TDI Friendly"]
+  },
+  {
+    "rank": 5,
+    "vehicle": "Jeep Cherokee XJ (1984-2001)",
+    "title": "The Unkillable Box",
+    "description": "The XJ shares parts with the Wrangler (TJ/YJ) and Grand Cherokee (ZJ). You can swap in a V8 ZJ tie rod for an upgrade, use Wrangler wheels, or grab injectors from a Dodge Neon. The 4.0L engine is legendary and parts are available everywhere.",
+    "interchange_score": "9.0/10",
+    "badges": ["4x4", "Offroad"]
+  },
+  {
+    "rank": 6,
+    "vehicle": "Subaru Impreza (GD/GG Chassis)",
+    "title": "The Rally Lego",
+    "description": "From 2002-2007, the Impreza, WRX, STI, Forester, and Legacy shared massive amounts of DNA. You can bolt STI suspension onto a Forester, put WRX brakes on a Legacy, or swap entire drivetrains. The 'Saabaru' (Saab 9-2X) is also just a WRX in disguise.",
+    "interchange_score": "8.8/10",
+    "badges": ["AWD", "Rally"]
+  },
+  {
+    "rank": 7,
+    "vehicle": "BMW 3-Series (E36/E46)",
+    "title": "The Bavarian Standard",
+    "description": "BMW is great at keeping things consistent. You can swap engines (M50/M52/M54), transmissions (ZF/Getrag), and brakes across the E36 and E46 generations. Z3 and Z4 parts often fit too. Want a faster steering rack? Grab one from a Z3.",
+    "interchange_score": "8.5/10",
+    "badges": ["Drift Tax", "RWD"]
+  },
+  {
+    "rank": 8,
+    "vehicle": "Ford Ranger (1998-2011)",
+    "title": "The Danger Ranger",
+    "description": "Shares its chassis with the Mazda B-Series and many parts with the Ford Explorer (Sport Trac). You can swap in the Explorer 5.0L V8, rear axle (8.8 disc brake), and bucket seats. It's the easiest way to build a V8 mini-truck.",
+    "interchange_score": "8.2/10",
+    "badges": ["Truck", "V8 Swap"]
+  },
+  {
+    "rank": 9,
+    "vehicle": "GM G-Body (Monte Carlo/Cutlass/Regal)",
+    "title": "The Muscle Car Swan Song",
+    "description": "The 1978-1988 G-Body platform is shared by Chevy, Pontiac, Oldsmobile, and Buick. You can swap bodies, frames, suspension, and engines freely. Want a Grand National engine in a Monte Carlo? It bolts right in.",
+    "interchange_score": "8.0/10",
+    "badges": ["Classic", "Muscle"]
+  },
+  {
+    "rank": 10,
+    "vehicle": "Toyota Camry (XV10/XV20)",
+    "title": "The Beige Sleeper",
+    "description": "The 90s Camry shares its platform with the Lexus ES300. You can swap the Lexus interior, bigger brakes, and smoother suspension directly onto the Camry. The V6 engines (1MZ-FE) are bulletproof and shared with the Avalon and Sienna.",
+    "interchange_score": "7.5/10",
+    "badges": ["Reliable", "Sleeper"]
+  }
+]

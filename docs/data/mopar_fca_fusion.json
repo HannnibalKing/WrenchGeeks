@@ -1,0 +1,237 @@
+{
+  "parts": [
+    {
+      "id": "fca_small_wide_brakes",
+      "category": "Brakes",
+      "name": "Jeep Renegade / Fiat 500X Brake Interchange",
+      "description": "The Jeep Renegade and Fiat 500X share the FCA 'Small Wide 4x4' platform. Brake rotors, pads, and calipers are identical between equivalent trims (e.g., Renegade Trailhawk and 500X Trekking).",
+      "specs": [
+        "Front Rotors: 305mm (most models)",
+        "Rear Rotors: 278mm",
+        "Parts are often cheaper when searched for as 'Fiat' parts"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Renegade", "years": "2015-Present", "notes": "BU Chassis" },
+            { "name": "Compass", "years": "2017-Present", "notes": "MP Chassis (2nd Gen)" }
+          ]
+        },
+        {
+          "make": "Fiat",
+          "models": [
+            { "name": "500X", "years": "2016-Present", "notes": "Platform Mate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dodge_dart_200_suspension",
+      "category": "Suspension",
+      "name": "Dodge Dart / Chrysler 200 Suspension",
+      "description": "The Dodge Dart (PF) and Chrysler 200 (UF) share the CUSW (Compact US Wide) platform, derived from the Alfa Romeo Giulietta. Many suspension components interchange, though spring rates differ.",
+      "specs": [
+        "Rear Control Arms: Identical geometry",
+        "Front Struts: Physically fit, but damping varies",
+        "Sway bar end links are common failure points and interchangeable"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Dart", "years": "2013-2016", "notes": "PF Chassis" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "200", "years": "2015-2017", "notes": "UF Chassis (2nd Gen)" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Cherokee", "years": "2014-Present", "notes": "KL Chassis (CUSW based)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jeep_cherokee_kl_trailhawk_lift",
+      "category": "Suspension",
+      "name": "Jeep Cherokee (KL) Trailhawk Suspension Lift",
+      "description": "The Trailhawk trim of the Cherokee (KL) comes with a factory 1-inch lift compared to Sport/Latitude/Limited trims. You can swap Trailhawk struts, springs, and rear knuckles onto a non-Trailhawk for a factory lift.",
+      "specs": [
+        "Trailhawk Rear Knuckles: Allow for larger tires",
+        "Trailhawk Struts: Longer travel",
+        "Requires alignment"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Cherokee (KL)", "years": "2014-Present", "notes": "Trailhawk parts fit all trims" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiat_124_miata_nd_parts",
+      "category": "Suspension",
+      "name": "Fiat 124 Spider / Mazda Miata (ND) Suspension",
+      "description": "The 'Fiata' (124 Spider) is built by Mazda on the ND Miata platform. Suspension arms, coilovers, sway bars, and brakes are largely interchangeable. Engines are different (Fiat 1.4T vs Mazda 2.0L).",
+      "specs": [
+        "Coilovers: ND Miata coilovers fit Fiat 124",
+        "Sway Bars: Interchangeable",
+        "Brakes: Interchangeable (Standard vs Brembo packages exist for both)"
+      ],
+      "compatibility": [
+        {
+          "make": "Fiat",
+          "models": [
+            { "name": "124 Spider", "years": "2017-2020", "notes": "Based on ND Miata" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "MX-5 Miata", "years": "2016-Present", "notes": "ND Chassis" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dodge_journey_avenger_parts",
+      "category": "Engine - Mechanical",
+      "name": "Dodge Journey / Avenger / Grand Caravan 3.6L Pentastar",
+      "description": "The 3.6L Pentastar V6 is ubiquitous across FCA. While oil pans and intake manifolds vary by vehicle (FWD vs RWD, hood clearance), the long block is largely the same. 2011-2013 heads had issues; 2014+ are updated.",
+      "specs": [
+        "Engine: 3.6L Pentastar V6",
+        "Oil Filter Housing: Prone to cracking, updated part fits all",
+        "Rocker Arms: Prone to failure, same part across all models"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Journey", "years": "2011-2020", "notes": "Pentastar" },
+            { "name": "Avenger", "years": "2011-2014", "notes": "Pentastar" },
+            { "name": "Grand Caravan", "years": "2011-2020", "notes": "Pentastar" },
+            { "name": "Challenger / Charger", "years": "2011-Present", "notes": "Pentastar (RWD config)" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "200", "years": "2011-2014", "notes": "Pentastar (1st Gen)" },
+            { "name": "Town & Country", "years": "2011-2016", "notes": "Pentastar" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alfa_romeo_giulia_stelvio_parts",
+      "category": "Engine - Mechanical",
+      "name": "Alfa Romeo Giulia / Stelvio 2.0T Parts",
+      "description": "The Giulia and Stelvio share the Giorgio platform. The 2.0L Turbo engine and ZF 8-speed transmission are identical. Maintenance parts like oil filters and belts are shared.",
+      "specs": [
+        "Platform: Giorgio",
+        "Brakes: Brake-by-wire system (IBS) shared",
+        "Oil Filter: 04892339AA (Mopar part number often cheaper)"
+      ],
+      "compatibility": [
+        {
+          "make": "Alfa Romeo",
+          "models": [
+            { "name": "Giulia", "years": "2017-Present", "notes": "Sedan" },
+            { "name": "Stelvio", "years": "2018-Present", "notes": "SUV" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jeep_wrangler_jl_gladiator_parts",
+      "category": "Body - Exterior",
+      "name": "Jeep Wrangler JL / Gladiator JT Front End",
+      "description": "The front clip (grille, headlights, fenders, hood) is interchangeable between the Wrangler JL and Gladiator JT. The Gladiator grille has wider mesh openings for better cooling.",
+      "specs": [
+        "Grille: Direct swap",
+        "Headlights: Direct swap (Halogen to LED requires wiring/programming)",
+        "Bumper: Direct swap"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Wrangler", "years": "2018-Present", "notes": "JL Chassis" },
+            { "name": "Gladiator", "years": "2020-Present", "notes": "JT Chassis" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ram_promaster_fiat_ducato",
+      "category": "Body - Exterior",
+      "name": "Ram ProMaster / Fiat Ducato Parts",
+      "description": "The Ram ProMaster is a rebadged Fiat Ducato. Body panels, mirrors, and taillights are interchangeable with the European Ducato, Peugeot Boxer, and Citroen Jumper.",
+      "specs": [
+        "Mirrors: Often cheaper from Euro suppliers",
+        "Taillights: Identical",
+        "Headlights: DOT vs E-Code differences, but physically fit"
+      ],
+      "compatibility": [
+        {
+          "make": "Ram",
+          "models": [
+            { "name": "ProMaster 1500/2500/3500", "years": "2014-Present", "notes": "US Market" }
+          ]
+        },
+        {
+          "make": "Fiat",
+          "models": [
+            { "name": "Ducato", "years": "2006-Present", "notes": "Euro Market" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dodge_neon_srt4_brakes",
+      "category": "Brakes",
+      "name": "Neon SRT-4 Rear Brake Swap",
+      "description": "The rear disc brakes from a Neon SRT-4 (or 4-wheel disc Neon R/T) can be swapped onto a base model Neon (drum brakes). Requires the entire knuckle assembly and e-brake cables.",
+      "specs": [
+        "SRT-4 Rear Rotors: 270mm vented",
+        "Base Neon: Drums",
+        "Direct bolt-on if swapping knuckles"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Neon SRT-4", "years": "2003-2005", "notes": "Donor" },
+            { "name": "Neon", "years": "2000-2005", "notes": "Recipient (2nd Gen)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chrysler_pacifica_awd_parts",
+      "category": "Drivetrain",
+      "name": "Chrysler Pacifica AWD Shaft",
+      "description": "The AWD driveshaft on the Chrysler Pacifica (2004-2008 crossover, not the minivan) is a common failure point. It is specific to the CS platform but shares carrier bearing designs with other Mercedes-era Chrysler AWDs.",
+      "specs": [
+        "Carrier bearings are replaceable separately (aftermarket)",
+        "OEM sells only complete shaft"
+      ],
+      "compatibility": [
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "Pacifica", "years": "2004-2008", "notes": "Crossover (CS)" }
+          ]
+        }
+      ]
+    }
+  ]
+}

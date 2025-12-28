@@ -1,0 +1,237 @@
+{
+  "parts": [
+    {
+      "id": "mitsubishi_evo_x_brakes",
+      "category": "Brakes",
+      "name": "Mitsubishi Evo X Brembos on Lancer Ralliart / Outlander",
+      "description": "The Brembo brakes from an Evo X can be fitted to a Lancer Ralliart or V6 Outlander (GT). The front calipers bolt up, but rotors and dust shields differ.",
+      "specs": [
+        "Front: 4-piston Brembo",
+        "Rear: 2-piston Brembo",
+        "Requires Evo X Rotors",
+        "Outlander requires 18\" wheels"
+      ],
+      "compatibility": [
+        {
+          "make": "Mitsubishi",
+          "models": [
+            { "name": "Lancer Evolution X", "years": "2008-2015", "notes": "Donor" },
+            { "name": "Lancer Ralliart", "years": "2009-2015", "notes": "Recipient" },
+            { "name": "Outlander V6 (GT)", "years": "2007-2013", "notes": "Recipient (CW5W)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nissan_fm_akebono_brakes",
+      "category": "Brakes",
+      "name": "Nissan Akebono Big Brake Kit (370Z/G37)",
+      "description": "The massive 4-piston front / 2-piston rear Akebono calipers found on the 370Z Sport and G37 Sport are a direct bolt-on for many Nissan/Infiniti vehicles, including 350Z, G35, M35/M45, and FX35/45. Requires adapter brackets for some older models (350Z/G35).",
+      "specs": [
+        "Front Rotors: 355mm (14\")",
+        "Rear Rotors: 350mm (13.8\")",
+        "Requires 18\" or 19\" wheels depending on spoke design"
+      ],
+      "compatibility": [
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "370Z", "years": "2009-2020", "notes": "Donor (Sport Pkg)" },
+            { "name": "350Z", "years": "2003-2008", "notes": "Requires Brackets" }
+          ]
+        },
+        {
+          "make": "Infiniti",
+          "models": [
+            { "name": "G37 Sport", "years": "2008-2013", "notes": "Donor" },
+            { "name": "G35 Sedan/Coupe", "years": "2003-2008", "notes": "Requires Brackets" },
+            { "name": "M35 / M45", "years": "2006-2010", "notes": "Direct Bolt-on (Check banjo bolts)" },
+            { "name": "FX35 / FX45", "years": "2003-2008", "notes": "Direct Bolt-on" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subaru_legacy_gt_brakes",
+      "category": "Brakes",
+      "name": "Subaru Legacy GT (LGT) Brake Upgrade",
+      "description": "The front brakes from a 2005-2009 Legacy GT are significantly larger (316mm) than standard WRX or Impreza brakes. They are a direct bolt-on upgrade for almost any Subaru from 1993-2014 (excluding STi 5x114 hubs).",
+      "specs": [
+        "LGT Front Rotor: 316mm x 30mm",
+        "WRX Front Rotor: 294mm x 24mm",
+        "Clears most 17\" wheels"
+      ],
+      "compatibility": [
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "Legacy GT", "years": "2005-2009", "notes": "Donor" },
+            { "name": "Impreza / WRX", "years": "2002-2014", "notes": "Recipient" },
+            { "name": "Forester", "years": "1998-2013", "notes": "Recipient" },
+            { "name": "Outback", "years": "2000-2009", "notes": "Recipient" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subaru_sti_transmission_swap",
+      "category": "Drivetrain",
+      "name": "Subaru 6-Speed STI Transmission Swap",
+      "description": "The STI 6-speed manual transmission is legendary for its strength. It can be swapped into WRXs, Foresters, and Legacys. Requires matching rear differential ratio (usually R180) and axles.",
+      "specs": [
+        "Bulletproof up to ~600hp stock",
+        "DCCD (Driver Controlled Center Diff) requires controller for full functionality",
+        "Requires STI driveshaft, axles, hubs (or hybrid axles)"
+      ],
+      "compatibility": [
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "WRX STI", "years": "2004-2021", "notes": "Donor" },
+            { "name": "WRX", "years": "2002-2014", "notes": "Recipient" },
+            { "name": "Forester XT", "years": "2004-2008", "notes": "Recipient" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nissan_vq35_intake_swap",
+      "category": "Engine - Mechanical",
+      "name": "Nissan VQ35HR / VQ37VHR Intake Manifold on DE",
+      "description": "While not a direct bolt-on, the lower intake manifold from the HR (High Rev) engines can be adapted to the older DE engines for better flow. The upper plenum from a 'RevUp' DE is a direct bolt-on for non-RevUp DEs.",
+      "specs": [
+        "RevUp Plenum (2005-2006) -> Non-RevUp (2003-2004): Direct swap, gains top end",
+        "HR Manifold -> DE: Requires machining/adapters"
+      ],
+      "compatibility": [
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "350Z", "years": "2003-2006", "notes": "VQ35DE" }
+          ]
+        },
+        {
+          "make": "Infiniti",
+          "models": [
+            { "name": "G35", "years": "2003-2007", "notes": "VQ35DE" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_crv_awd_swap",
+      "category": "Drivetrain",
+      "name": "Honda CR-V AWD Drivetrain into Civic/Integra",
+      "description": "The AWD system from a 1st or 2nd Gen CR-V (B-Series or K-Series) can be transplanted into a Civic or Integra. This is a major fabrication project requiring a custom fuel cell, rear subframe modification, and driveshaft shortening.",
+      "specs": [
+        "B-Series AWD: CR-V (1997-2001) transmission + rear diff",
+        "K-Series AWD: CR-V (2002-2006) or Element transmission + rear diff",
+        "High difficulty: 'AWD Civic' builds are popular for drag racing"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "CR-V", "years": "1997-2001", "notes": "B-Series Donor" },
+            { "name": "CR-V", "years": "2002-2006", "notes": "K-Series Donor" },
+            { "name": "Civic", "years": "1992-2000", "notes": "Recipient (EG/EK)" },
+            { "name": "Integra", "years": "1994-2001", "notes": "Recipient (DC2)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mazda_rx7_fd_brakes",
+      "category": "Brakes",
+      "name": "Mazda RX-7 (FD) Brakes on RX-8 / NC Miata",
+      "description": "Interestingly, while the RX-8 is newer, the FD RX-7 4-piston front calipers are lighter and offer excellent clamping force. They can be adapted to other Mazdas, though RX-8 brakes are generally considered sufficient.",
+      "specs": [
+        "FD Calipers: 4-piston, lightweight aluminum",
+        "Requires brackets for most applications"
+      ],
+      "compatibility": [
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "RX-7 (FD)", "years": "1993-2002", "notes": "Donor" },
+            { "name": "MX-5 Miata (NC)", "years": "2006-2015", "notes": "Possible Recipient" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_aristo_2jz_swap",
+      "category": "Engine - Mechanical",
+      "name": "Toyota Aristo 2JZ-GTE Swap into GS300 / IS300",
+      "description": "The JDM Toyota Aristo (V300) is the twin of the Lexus GS300 but came with the twin-turbo 2JZ-GTE. This is the most direct engine swap for a GS300 (JZS160) or IS300 (XE10), as mounts and oil pans largely match.",
+      "specs": [
+        "Engine: 2JZ-GTE VVTi (usually)",
+        "Transmission: Aristo 4-speed auto is weak point, swap to R154 or CD009 manual",
+        "Wiring: Harness merge required"
+      ],
+      "compatibility": [
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "GS300", "years": "1998-2005", "notes": "Direct Chassis Match" },
+            { "name": "IS300", "years": "2001-2005", "notes": "Requires tight fitment" },
+            { "name": "SC300", "years": "1992-2000", "notes": "Direct Chassis Match" }
+          ]
+        },
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Aristo", "years": "1997-2005", "notes": "Donor (JDM)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nissan_s_chassis_suspension",
+      "category": "Suspension",
+      "name": "Nissan S13 / S14 / S15 Suspension Interchange",
+      "description": "Suspension arms are largely interchangeable between S13 (240SX), S14, and S15 Silvias, with some exceptions. S14/S15 rear subframes are wider and have better geometry (anti-squat) than S13.",
+      "specs": [
+        "S14/S15 Rear Subframe -> S13: Popular upgrade (requires offset bushings)",
+        "Front Lower Control Arms: S14 are longer (more camber/track width) than S13",
+        "Knuckles: S14/S15 are 5-lug, S13 is 4-lug (usually)"
+      ],
+      "compatibility": [
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "240SX (S13)", "years": "1989-1994", "notes": "Recipient" },
+            { "name": "240SX (S14)", "years": "1995-1998", "notes": "Donor/Recipient" },
+            { "name": "Silvia (S15)", "years": "1999-2002", "notes": "Donor (JDM)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mitsubishi_dsm_brakes",
+      "category": "Brakes",
+      "name": "Mitsubishi 3000GT VR4 Brakes on DSM",
+      "description": "The 4-piston front calipers from a 3000GT VR4 (or Stealth TT) bolt onto 1st and 2nd Gen Eclipse/Talon/Laser (DSM) with minor modifications (rotors need redrilling or specific brackets).",
+      "specs": [
+        "VR4 Calipers: 4-piston Sumitomo",
+        "Rotors: 314mm (Requires 16\"+ wheels)",
+        "Cheap big brake kit for DSMs"
+      ],
+      "compatibility": [
+        {
+          "make": "Mitsubishi",
+          "models": [
+            { "name": "3000GT VR4", "years": "1991-1999", "notes": "Donor" },
+            { "name": "Eclipse GSX/GST", "years": "1990-1999", "notes": "Recipient" }
+          ]
+        },
+        {
+          "make": "Eagle",
+          "models": [
+            { "name": "Talon TSi", "years": "1990-1998", "notes": "Recipient" }
+          ]
+        }
+      ]
+    }
+  ]
+}

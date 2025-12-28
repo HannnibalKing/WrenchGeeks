@@ -1,0 +1,195 @@
+{
+  "parts": [
+    {
+      "id": "gmc_sierra_silverado_bed",
+      "category": "Body - Exterior",
+      "name": "GMC Sierra / Chevy Silverado Bed Swap (GMT800/GMT900)",
+      "description": "The pickup beds are physically interchangeable between GMC Sierra and Chevy Silverado of the same generation and bed length (Short/Standard/Long). However, the taillights and outer bed skins have different styling lines.",
+      "specs": [
+        "Direct Bolt-on",
+        "Fuel filler neck location matches",
+        "Wiring harness for taillights may differ slightly"
+      ],
+      "compatibility": [
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Sierra 1500/2500/3500", "years": "1999-2006 (GMT800)", "notes": "Direct swap with Silverado GMT800" },
+            { "name": "Sierra 1500/2500/3500", "years": "2007-2013 (GMT900)", "notes": "Direct swap with Silverado GMT900" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Silverado 1500/2500/3500", "years": "1999-2006 (GMT800)", "notes": "Direct swap with Sierra GMT800" },
+            { "name": "Silverado 1500/2500/3500", "years": "2007-2013 (GMT900)", "notes": "Direct swap with Sierra GMT900" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gmc_yukon_tahoe_front_clip",
+      "category": "Body - Exterior",
+      "name": "GMC Yukon / Chevy Tahoe Front Clip Swap",
+      "description": "You can swap the entire front clip (fenders, hood, grille, bumper, headlights) between GMC Yukon and Chevy Tahoe/Suburban of the same generation. This is popular for giving a Chevy the 'GMC Denali' look or vice versa.",
+      "specs": [
+        "Requires swapping all front body panels together",
+        "Core support is usually the same",
+        "Wiring for headlights may need modification"
+      ],
+      "compatibility": [
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Yukon / Yukon XL", "years": "2000-2006 (GMT800)", "notes": "Swaps with Tahoe/Suburban GMT800" },
+            { "name": "Yukon / Yukon XL", "years": "2007-2014 (GMT900)", "notes": "Swaps with Tahoe/Suburban GMT900" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Tahoe / Suburban", "years": "2000-2006 (GMT800)", "notes": "Swaps with Yukon GMT800" },
+            { "name": "Tahoe / Suburban", "years": "2007-2014 (GMT900)", "notes": "Swaps with Yukon GMT900" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gmc_envoy_trailblazer_engine",
+      "category": "Engine - Mechanical",
+      "name": "GMC Envoy / Chevy Trailblazer 4.2L Atlas Engine",
+      "description": "The Vortec 4200 (LL8) Inline-6 engine is identical between the GMC Envoy, Chevy Trailblazer, Buick Rainier, Oldsmobile Bravada, Isuzu Ascender, and Saab 9-7X. Long block is interchangeable.",
+      "specs": [
+        "Engine Code: LL8",
+        "Oil pans may differ for 4WD vs 2WD",
+        "Later years (2006+) have different reluctor wheels/sensors"
+      ],
+      "compatibility": [
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Envoy", "years": "2002-2009", "notes": "Direct interchange" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Trailblazer", "years": "2002-2009", "notes": "Direct interchange" }
+          ]
+        },
+        {
+          "make": "Buick",
+          "models": [
+            { "name": "Rainier", "years": "2004-2007", "notes": "Direct interchange" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gmc_canyon_colorado_doors",
+      "category": "Body - Exterior",
+      "name": "GMC Canyon / Chevy Colorado Doors (1st Gen)",
+      "description": "Doors are fully interchangeable between the first generation GMC Canyon, Chevy Colorado, and Isuzu i-Series trucks.",
+      "specs": [
+        "Front doors fit all cab configurations",
+        "Rear doors specific to Crew Cab or Extended Cab",
+        "Interior panels may have different trim"
+      ],
+      "compatibility": [
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Canyon", "years": "2004-2012", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Colorado", "years": "2004-2012", "notes": "Direct fit" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gmc_savana_express_bumpers",
+      "category": "Body - Exterior",
+      "name": "GMC Savana / Chevy Express Bumpers",
+      "description": "Front and rear bumpers are interchangeable between GMC Savana and Chevy Express vans. The front bumper style changed in 2003 but mounts are similar.",
+      "specs": [
+        "1996-2002 bumpers interchange",
+        "2003-Present bumpers interchange",
+        "Rear bumpers fit all years 1996-Present"
+      ],
+      "compatibility": [
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Savana 1500/2500/3500", "years": "1996-Present", "notes": "Direct fit" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Express 1500/2500/3500", "years": "1996-Present", "notes": "Direct fit" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gmc_acadia_traverse_suspension",
+      "category": "Suspension",
+      "name": "GMC Acadia / Chevy Traverse Suspension Components",
+      "description": "Control arms, struts, shocks, and sway bars are largely interchangeable between the Lambda platform vehicles: GMC Acadia, Chevy Traverse, Buick Enclave, and Saturn Outlook.",
+      "specs": [
+        "Platform: GM Lambda",
+        "Check specific part numbers for spring rates (tuning differences)",
+        "Hard parts (arms, knuckles) are identical"
+      ],
+      "compatibility": [
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Acadia", "years": "2007-2016", "notes": "Lambda Platform" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Traverse", "years": "2009-2017", "notes": "Lambda Platform" }
+          ]
+        },
+        {
+          "make": "Buick",
+          "models": [
+            { "name": "Enclave", "years": "2008-2017", "notes": "Lambda Platform" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gmc_terrain_equinox_interior",
+      "category": "Interior",
+      "name": "GMC Terrain / Chevy Equinox Interior Parts",
+      "description": "Many interior components like seats (frames), window switches, center console internals, and carpet are shared between the GMC Terrain and Chevy Equinox (Theta platform).",
+      "specs": [
+        "Dashboards are different",
+        "Door panels are different",
+        "Seats bolt in but may have different fabric/leather patterns"
+      ],
+      "compatibility": [
+        {
+          "make": "GMC",
+          "models": [
+            { "name": "Terrain", "years": "2010-2017", "notes": "Theta Platform" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "Equinox", "years": "2010-2017", "notes": "Theta Platform" }
+          ]
+        }
+      ]
+    }
+  ]
+}

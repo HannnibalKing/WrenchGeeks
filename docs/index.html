@@ -14,6 +14,7 @@
             <nav class="main-nav">
                 <button class="nav-tab active" data-target="searchSection">Find Parts</button>
                 <button class="nav-tab" data-target="knowledgeSection">Knowledge Base</button>
+                <button class="nav-tab" data-target="top10Section">Top 10 Interchange</button>
             </nav>
         </div>
 
@@ -218,11 +219,29 @@
                     <button class="btn-secondary filter-btn" data-filter="hacks">Hacks</button>
                     <button class="btn-secondary filter-btn" data-filter="ecu">ECU Tuning</button>
                     <button class="btn-secondary filter-btn" data-filter="tips">Pro Tips</button>
+                    <button class="btn-secondary filter-btn" data-filter="did you know?" style="border-color: #FFD700; color: #FFD700;">Big Mike's Secrets</button>
                 </div>
+            </div>
+
+            <div id="bigMikeBanner" class="card hidden" style="border-left: 4px solid #FFD700; background: rgba(255, 215, 0, 0.1); margin-bottom: 2rem;">
+                <h3 style="color: #FFD700; margin-top: 0;">🧔 Big Mike says:</h3>
+                <p>"Listen up, rookie. These ain't in the manual. This is the stuff you learn after 30 years of busting knuckles and drinking bad coffee."</p>
             </div>
 
             <div id="kbGrid" class="grid-list">
                 <!-- Content injected by JS -->
+            </div>
+        </div>
+
+        <!-- TOP 10 INTERCHANGE SECTION -->
+        <div id="top10Section" class="content-section hidden">
+            <div class="kb-header" style="text-align:center; margin-bottom:2rem;">
+                <h2>🏆 The Interchange Hall of Fame</h2>
+                <p>The absolute best cars for parts swapping, ranked by "Lego Factor".</p>
+            </div>
+            <div id="top10Grid" class="grid-list">
+                <!-- Content injected by JS -->
+                <p style="text-align:center; color:var(--text-muted);">Loading rankings...</p>
             </div>
         </div>
     </main>

@@ -1,0 +1,128 @@
+{
+  "parts": [
+    {
+      "id": "ford_ranger_explorer_88_rear",
+      "category": "Drivetrain",
+      "name": "Ford Explorer 8.8\" Rear Axle Swap",
+      "description": "The Ford Explorer (1995-2001) 8.8-inch rear axle is a legendary swap for Ford Rangers, Jeep Wranglers (YJ/TJ), and Jeep Cherokees (XJ). It is significantly stronger than the stock Ranger 7.5\" or Jeep Dana 35.",
+      "specs": [
+        "31-spline axles (stronger than Ranger 28-spline)",
+        "Disc brakes (1995-2001 models)",
+        "Common ratios: 3.73 (D4), 4.10 (D2), Limited Slip (LSD)",
+        "Width is almost identical to Ranger"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Ranger", "years": "1993-2011", "notes": "Direct bolt-in (spring perches may need moving for lift)" },
+            { "name": "Explorer", "years": "1995-2001", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "B-Series (B2300/B3000/B4000)", "years": "1994-2009", "notes": "Direct bolt-in" }
+          ]
+        },
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Wrangler (YJ/TJ)", "years": "1987-2006", "notes": "Requires welding new spring perches" },
+            { "name": "Cherokee (XJ)", "years": "1984-2001", "notes": "Requires welding new spring perches" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ford_ranger_explorer_seats",
+      "category": "Interior",
+      "name": "Ford Explorer Power Leather Seats",
+      "description": "Front seats from a 1995-2001 Ford Explorer (or Mercury Mountaineer) are a direct bolt-in upgrade for 1998-2011 Ford Rangers and Mazda B-Series trucks. Much more comfortable than the stock Ranger bench or buckets.",
+      "specs": [
+        "Direct bolt-in for Extended Cab Rangers",
+        "Standard Cab Rangers may require swapping seat tracks from original seats",
+        "Power wiring requires running 12V and Ground"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Ranger", "years": "1998-2011", "notes": "Direct fit (Extended Cab)" },
+            { "name": "Explorer", "years": "1995-2001", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Mercury",
+          "models": [
+            { "name": "Mountaineer", "years": "1997-2001", "notes": "Donor Vehicle" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ford_ranger_overhead_console",
+      "category": "Interior",
+      "name": "Ford Explorer Overhead Console",
+      "description": "The overhead console from a 1995-2001 Explorer (featuring compass, thermometer, and map lights) can be installed into a Ranger. Requires cutting the headliner and running a few wires.",
+      "specs": [
+        "Requires temp sensor from donor (mounted behind grille)",
+        "Grab the mounting bracket from the donor roof"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Ranger", "years": "1993-2011", "notes": "Custom install (popular mod)" },
+            { "name": "Explorer", "years": "1995-2001", "notes": "Donor Vehicle" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ford_ranger_leaf_springs",
+      "category": "Suspension",
+      "name": "Chevy 64-inch Leaf Spring Swap",
+      "description": "Using 64-inch leaf springs from a 1988-1998 Chevy 1500 (OBS) on a Ford Ranger provides massive suspension travel and a smoother ride for off-road builds. Known as the 'Chevy 64 swap'.",
+      "specs": [
+        "Requires moving front spring hangers forward",
+        "Requires new shackles",
+        "Provides 14+ inches of travel"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Ranger", "years": "1983-2011", "notes": "Requires fabrication" }
+          ]
+        },
+        {
+          "make": "Chevrolet",
+          "models": [
+            { "name": "C/K 1500", "years": "1988-1998", "notes": "Donor Vehicle" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ford_ranger_mustang_wheels",
+      "category": "Wheels",
+      "name": "Ford Mustang Wheels on Ranger",
+      "description": "Ford Ranger and Ford Mustang share the same 5x114.3 (5x4.5) bolt pattern. Many Mustang wheels fit Rangers, though offsets differ. Newer Mustang wheels (S197/S550) have high positive offset and may require spacers.",
+      "specs": [
+        "Bolt Pattern: 5x114.3",
+        "Center Bore: 70.5mm (Match)",
+        "SN95 (94-04) wheels fit best"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Ranger", "years": "1983-2011", "notes": "5x114.3" },
+            { "name": "Mustang", "years": "1994-2014", "notes": "Donor Vehicle" }
+          ]
+        }
+      ]
+    }
+  ]
+}

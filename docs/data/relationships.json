@@ -1,5 +1,99 @@
 {
   "platforms": {
+    "TESLA_MODEL_3_Y": [
+      {
+        "make": "Tesla",
+        "model": "Model 3",
+        "years": "2017-Present",
+        "notes": "Shares chassis with Model Y"
+      },
+      {
+        "make": "Tesla",
+        "model": "Model Y",
+        "years": "2020-Present",
+        "notes": "Shares chassis with Model 3"
+      }
+    ],
+    "TESLA_MODEL_S_X": [
+      {
+        "make": "Tesla",
+        "model": "Model S",
+        "years": "2012-Present",
+        "notes": "Large EV Platform"
+      },
+      {
+        "make": "Tesla",
+        "model": "Model X",
+        "years": "2015-Present",
+        "notes": "Large EV Platform"
+      }
+    ],
+    "RIVIAN_R1": [
+      {
+        "make": "Rivian",
+        "model": "R1T",
+        "years": "2022-Present",
+        "notes": "Skateboard Platform"
+      },
+      {
+        "make": "Rivian",
+        "model": "R1S",
+        "years": "2022-Present",
+        "notes": "Skateboard Platform"
+      }
+    ],
+    "LUCID_AIR": [
+      {
+        "make": "Lucid",
+        "model": "Air",
+        "years": "2021-Present",
+        "notes": "LEAP Platform"
+      }
+    ],
+    "POLESTAR_CMA": [
+      {
+        "make": "Polestar",
+        "model": "Polestar 2",
+        "years": "2020-Present",
+        "notes": "Volvo CMA Platform"
+      }
+    ],
+    "ISO_GRIFO_SERIES": [
+      {
+        "make": "Iso",
+        "model": "Grifo",
+        "years": "1965-1974",
+        "notes": "Chevy V8 Powered"
+      },
+      {
+        "make": "Iso",
+        "model": "Rivolta",
+        "years": "1962-1970",
+        "notes": "Chevy V8 Powered"
+      }
+    ],
+    "FACEL_VEGA_V8": [
+      {
+        "make": "Facel Vega",
+        "model": "HK500",
+        "years": "1959-1961",
+        "notes": "Chrysler Hemi/Wedge V8"
+      },
+      {
+        "make": "Facel Vega",
+        "model": "Facel II",
+        "years": "1962-1964",
+        "notes": "Chrysler V8"
+      }
+    ],
+    "BRICKLIN_SV1": [
+      {
+        "make": "Bricklin",
+        "model": "SV-1",
+        "years": "1974-1976",
+        "notes": "AMC/Ford V8"
+      }
+    ],
     "PORSCHE_986_996": [
       {
         "make": "Porsche",
@@ -1744,6 +1838,12 @@
         "model": "Sierra (GMT400)",
         "years": "1988–1998",
         "notes": "Platform Mate"
+      },
+      {
+        "make": "GMC",
+        "model": "C/K Series (Square Body)",
+        "years": "1973–1987",
+        "notes": "Platform Mate"
       }
     ],
     "GM_TRUCK_MODERN": [
@@ -1757,6 +1857,36 @@
         "make": "GMC",
         "model": "Sierra 1500 (GMT800)",
         "years": "1999–2006",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "GMC",
+        "model": "Sierra 1500 (GMT900)",
+        "years": "2007–2013",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "GMC",
+        "model": "Yukon / Yukon XL (GMT800)",
+        "years": "2000–2006",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "GMC",
+        "model": "Yukon / Yukon XL (GMT900)",
+        "years": "2007–2014",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "GMC",
+        "model": "Sierra 1500 (K2XX)",
+        "years": "2014–2018",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "GMC",
+        "model": "Sierra 1500 (T1XX)",
+        "years": "2019–Present",
         "notes": "Platform Mate"
       },
       {
@@ -2222,6 +2352,212 @@
         "model": "Bravada",
         "years": "1996–2001",
         "notes": "Luxury S-10"
+      }
+    ],
+    "GM_S10_2ND_GEN": [
+      {
+        "make": "Chevrolet",
+        "model": "S-10 (Gen 2)",
+        "years": "1994–2004",
+        "notes": "The Mini Truck"
+      },
+      {
+        "make": "GMC",
+        "model": "Sonoma (Gen 2)",
+        "years": "1994–2004",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "Chevrolet",
+        "model": "Blazer",
+        "years": "1995–2005",
+        "notes": "SUV Variant"
+      },
+      {
+        "make": "GMC",
+        "model": "Jimmy",
+        "years": "1995–2001",
+        "notes": "SUV Variant"
+      },
+      {
+        "make": "Oldsmobile",
+        "model": "Bravada",
+        "years": "1996–2001",
+        "notes": "Luxury S-10"
+      }
+    ],
+    "FORD_RANGER_RBV": [
+      {
+        "make": "Ford",
+        "model": "Ranger",
+        "years": "1983–2011",
+        "notes": "The Compact Truck King"
+      },
+      {
+        "make": "Mazda",
+        "model": "B-Series (B2300/B3000/B4000)",
+        "years": "1994–2009",
+        "notes": "Rebadged Ranger"
+      },
+      {
+        "make": "Ford",
+        "model": "Explorer",
+        "years": "1991–2001",
+        "notes": "SUV Variant (Gen 1/2)"
+      },
+      {
+        "make": "Mercury",
+        "model": "Mountaineer",
+        "years": "1997–2001",
+        "notes": "Luxury Explorer"
+      },
+      {
+        "make": "Ford",
+        "model": "Explorer Sport Trac",
+        "years": "2001–2005",
+        "notes": "Crew Cab Ranger in disguise"
+      }
+    ],
+    "FORD_C1_PLATFORM": [
+      {
+        "make": "Ford",
+        "model": "Focus (Mk2 Euro / Mk3 Global)",
+        "years": "2004–2018",
+        "notes": "Global C-Car"
+      },
+      {
+        "make": "Mazda",
+        "model": "Mazda3 (BK/BL)",
+        "years": "2004–2013",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "Volvo",
+        "model": "C30",
+        "years": "2007–2013",
+        "notes": "Platform Mate (P1)"
+      },
+      {
+        "make": "Volvo",
+        "model": "S40 / V50",
+        "years": "2004–2012",
+        "notes": "Platform Mate (P1)"
+      },
+      {
+        "make": "Mazda",
+        "model": "Mazda5",
+        "years": "2006–2015",
+        "notes": "Minivan Variant"
+      }
+    ],
+    "FCA_SMALL_WIDE": [
+      {
+        "make": "Jeep",
+        "model": "Renegade",
+        "years": "2015–Present",
+        "notes": "Small Wide 4x4"
+      },
+      {
+        "make": "Fiat",
+        "model": "500X",
+        "years": "2016–Present",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "Jeep",
+        "model": "Compass (MP)",
+        "years": "2017–Present",
+        "notes": "Platform Mate"
+      }
+    ],
+    "FCA_CUSW": [
+      {
+        "make": "Dodge",
+        "model": "Dart",
+        "years": "2013–2016",
+        "notes": "Alfa DNA"
+      },
+      {
+        "make": "Chrysler",
+        "model": "200 (UF)",
+        "years": "2015–2017",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "Jeep",
+        "model": "Cherokee (KL)",
+        "years": "2014–Present",
+        "notes": "Platform Mate"
+      }
+    ],
+    "TOYOTA_TRUCK_FRAME": [
+      {
+        "make": "Toyota",
+        "model": "Tacoma (1st Gen)",
+        "years": "1995–2004",
+        "notes": "Compact/Midsize"
+      },
+      {
+        "make": "Toyota",
+        "model": "4Runner (3rd Gen)",
+        "years": "1996–2002",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "Toyota",
+        "model": "Tundra (1st Gen)",
+        "years": "2000–2006",
+        "notes": "Full Size Donor"
+      },
+      {
+        "make": "Toyota",
+        "model": "Sequoia (1st Gen)",
+        "years": "2001–2007",
+        "notes": "Full Size Donor"
+      }
+    ],
+    "HONDA_K_SERIES_PLATFORM": [
+      {
+        "make": "Honda",
+        "model": "Civic Si (EP3)",
+        "years": "2002–2005",
+        "notes": "K20A3"
+      },
+      {
+        "make": "Acura",
+        "model": "RSX / RSX Type-S",
+        "years": "2002–2006",
+        "notes": "K20A2/Z1"
+      },
+      {
+        "make": "Honda",
+        "model": "Civic Si (FG2/FA5)",
+        "years": "2006–2011",
+        "notes": "K20Z3"
+      },
+      {
+        "make": "Acura",
+        "model": "TSX (CL9)",
+        "years": "2004–2008",
+        "notes": "K24A2"
+      },
+      {
+        "make": "Honda",
+        "model": "Accord (CM)",
+        "years": "2003–2007",
+        "notes": "K24A4/A8"
+      },
+      {
+        "make": "Honda",
+        "model": "CR-V (RD)",
+        "years": "2002–2006",
+        "notes": "K24A1"
+      },
+      {
+        "make": "Honda",
+        "model": "Element",
+        "years": "2003–2011",
+        "notes": "K24A4"
       }
     ],
     "JEEP_CHEROKEE_XJ": [
@@ -2740,6 +3076,42 @@
         "model": "Legnum VR-4",
         "years": "1996-2002",
         "notes": "Wagon version of Galant VR-4"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (5th Gen E11/E12)",
+        "years": "1983-1987",
+        "notes": "Early FWD era; shares bits with early Lancer/Space Wagon"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (6th Gen E30/E50)",
+        "years": "1987-1993",
+        "notes": "Non-VR4 trims sharing 1G DSM/early Eclipse underpinnings"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (7th Gen EA1/EA3)",
+        "years": "1993-1998",
+        "notes": "FWD sedan; overlaps with early Lancer/Carisma components"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (8th Gen)",
+        "years": "1999-2003",
+        "notes": "USDM platform mate to 3rd-gen Eclipse; easy suspension/brake cross-fit"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant (9th Gen USDM)",
+        "years": "2004-2012",
+        "notes": "Shares bones with Endeavor/Outlander; 2.4 4G69 and 3.8 6G75"
+      },
+      {
+        "make": "Mitsubishi",
+        "model": "Galant",
+        "years": "1988-2003",
+        "notes": "Catch-all alias so Galant shows in menus and searches"
       }
     ],
     "MITSUBISHI_PAJERO_MONTERO": [

@@ -1,0 +1,239 @@
+{
+  "parts": [
+    {
+      "id": "ford_panther_suspension",
+      "category": "Suspension",
+      "name": "Ford Panther Platform Suspension Swap",
+      "description": "Suspension components (control arms, spindles, springs, shocks) are interchangeable between Ford Crown Victoria, Mercury Grand Marquis, and Lincoln Town Car of the same vintage. 2003+ models have a completely different front suspension (aluminum cradle) than 1979-2002 models.",
+      "specs": [
+        "1979-2002: Recirculating ball steering, stamped arms",
+        "2003-2011: Rack & pinion, aluminum control arms, coil-overs",
+        "Police Interceptor (P71) parts are heavy duty upgrades for civilian models"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Crown Victoria", "years": "1992-2011", "notes": "Panther Platform" }
+          ]
+        },
+        {
+          "make": "Mercury",
+          "models": [
+            { "name": "Grand Marquis", "years": "1992-2011", "notes": "Panther Platform" }
+          ]
+        },
+        {
+          "make": "Lincoln",
+          "models": [
+            { "name": "Town Car", "years": "1990-2011", "notes": "Panther Platform (Air suspension common on rear)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_civic_integra_brakes",
+      "category": "Brakes",
+      "name": "Honda Civic / Acura Integra Brake Swap",
+      "description": "Acura Integra (DC2) front and rear disc brakes are a direct bolt-on upgrade for Honda Civics (EG/EK). The 'Big Brake' upgrade involves using Integra knuckles and calipers.",
+      "specs": [
+        "Integra front rotors are larger (10.3\")",
+        "Rear disc conversion requires Integra trailing arms and e-brake cables",
+        "Master cylinder upgrade recommended (15/16\" or 1\")"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic", "years": "1992-2000", "notes": "EG/EK Chassis" },
+            { "name": "CRX / Del Sol", "years": "1988-1997", "notes": "EF/EG Chassis" }
+          ]
+        },
+        {
+          "make": "Acura",
+          "models": [
+            { "name": "Integra", "years": "1994-2001", "notes": "Donor vehicle" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_camry_es_mounts",
+      "category": "Engine - Mechanical",
+      "name": "Toyota Camry / Lexus ES Engine Mounts",
+      "description": "Engine and transmission mounts are shared between Toyota Camry and Lexus ES models of the same generation (XV chassis).",
+      "specs": [
+        "Check engine configuration (V6 vs I4)",
+        "Dog bone mounts are common failure points and interchangeable"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Camry", "years": "2002-2006", "notes": "XV30 Chassis" },
+            { "name": "Camry", "years": "2007-2011", "notes": "XV40 Chassis" }
+          ]
+        },
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "ES300 / ES330", "years": "2002-2006", "notes": "XV30 Chassis" },
+            { "name": "ES350", "years": "2007-2012", "notes": "XV40 Chassis" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nissan_z_g_suspension",
+      "category": "Suspension",
+      "name": "Nissan 350Z / Infiniti G35 Suspension Arms",
+      "description": "Most suspension arms (control arms, camber arms, toe arms) are identical between the Nissan 350Z (Z33) and Infiniti G35 (V35).",
+      "specs": [
+        "Front lower control arms are a common wear item",
+        "Rear spring buckets are interchangeable",
+        "Shocks/Springs fit but have different rates/lengths (G35 is heavier)"
+      ],
+      "compatibility": [
+        {
+          "make": "Nissan",
+          "models": [
+            { "name": "350Z", "years": "2003-2008", "notes": "Z33 Chassis" }
+          ]
+        },
+        {
+          "make": "Infiniti",
+          "models": [
+            { "name": "G35 Coupe/Sedan", "years": "2003-2007", "notes": "V35 Chassis" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vw_audi_mqb_brakes",
+      "category": "Brakes",
+      "name": "VW Golf / Audi A3 MQB Brake Swap",
+      "description": "Brake components (calipers, rotors, pads) are highly interchangeable across the VW Group MQB platform. You can bolt Porsche Macan (4-piston) calipers onto a VW Golf GTI or Audi A3 with minimal modification.",
+      "specs": [
+        "Platform: MQB",
+        "Macan Caliper Swap: Requires specific rotors (usually 340mm or 345mm)",
+        "Golf R / S3 brakes are a direct upgrade for base Golf / A3"
+      ],
+      "compatibility": [
+        {
+          "make": "Volkswagen",
+          "models": [
+            { "name": "Golf / GTI / R", "years": "2015-2021", "notes": "Mk7 MQB" }
+          ]
+        },
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A3 / S3", "years": "2015-2020", "notes": "8V MQB" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subaru_impreza_forester_suspension",
+      "category": "Suspension",
+      "name": "Subaru Impreza / Forester Suspension Swap",
+      "description": "Forester struts are longer than Impreza struts, allowing for a cheap lift on an Impreza or a drop on a Forester (using Impreza struts). Top hats usually match within generations.",
+      "specs": [
+        "SF Forester (98-02) <-> GC/GD Impreza (93-07)",
+        "SG Forester (03-08) <-> GD/GG Impreza (02-07)",
+        "Requires alignment after swap"
+      ],
+      "compatibility": [
+        {
+          "make": "Subaru",
+          "models": [
+            { "name": "Impreza / WRX", "years": "2002-2007", "notes": "GD/GG Chassis" },
+            { "name": "Forester", "years": "2003-2008", "notes": "SG Chassis" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mazda_miata_rx8_suspension",
+      "category": "Suspension",
+      "name": "Mazda Miata (NC) / RX-8 Suspension Parts",
+      "description": "The NC Miata shares its chassis architecture with the RX-8. Front control arms, hubs, and brakes can be swapped. RX-8 sway bars are a popular upgrade for the NC Miata.",
+      "specs": [
+        "RX-8 Yellow Dot sway bars are stiffer",
+        "RX-8 front hubs are stronger (5-lug vs 5-lug, but beefier bearing)",
+        "Brakes: RX-8 brakes are larger but require 17\" wheels"
+      ],
+      "compatibility": [
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "MX-5 Miata", "years": "2006-2015", "notes": "NC Chassis" },
+            { "name": "RX-8", "years": "2004-2011", "notes": "SE3P Chassis" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jeep_xj_zj_suspension",
+      "category": "Suspension",
+      "name": "Jeep Cherokee XJ / Grand Cherokee ZJ Suspension",
+      "description": "Front suspension components (coils, control arms, track bar) are interchangeable between XJ Cherokee and ZJ Grand Cherokee. V8 ZJ coils give about 1-2 inches of lift on an XJ.",
+      "specs": [
+        "ZJ V8 Front Coils -> XJ Lift",
+        "ZJ Tie Rod -> XJ Upgrade (Solid bar vs hollow)",
+        "Control arms are same length"
+      ],
+      "compatibility": [
+        {
+          "make": "Jeep",
+          "models": [
+            { "name": "Cherokee", "years": "1984-2001", "notes": "XJ Chassis" },
+            { "name": "Grand Cherokee", "years": "1993-1998", "notes": "ZJ Chassis" },
+            { "name": "Wrangler", "years": "1997-2006", "notes": "TJ Chassis (Front suspension similar)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dodge_ram_durango_parts",
+      "category": "Engine - Mechanical",
+      "name": "Dodge Ram / Durango / Dakota Magnum Engines",
+      "description": "The 5.2L (318) and 5.9L (360) Magnum V8s are interchangeable between Ram, Dakota, and Durango. Accessories and oil pans may vary.",
+      "specs": [
+        "Magnum V8s (1992-2003)",
+        "Intake manifolds (Keggers) are interchangeable",
+        "Sensors are largely the same"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Ram 1500/2500", "years": "1994-2001", "notes": "2nd Gen Ram" },
+            { "name": "Dakota", "years": "1997-2004", "notes": "2nd Gen Dakota" },
+            { "name": "Durango", "years": "1998-2003", "notes": "1st Gen Durango" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw_e36_e46_parts",
+      "category": "Drivetrain",
+      "name": "BMW E36 / E46 Parts Bin",
+      "description": "Many parts interchange between E36 and E46 3-Series, especially engines (M50/M52/M54 families) and transmissions (ZF/Getrag).",
+      "specs": [
+        "E46 steering rack (Purple Tag) is a popular upgrade for E36",
+        "Rear trailing arm bushings (RTABs) are same size",
+        "Wheels are interchangeable (5x120, similar offsets)"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "3 Series", "years": "1992-1999", "notes": "E36 Chassis" },
+            { "name": "3 Series", "years": "1999-2006", "notes": "E46 Chassis" }
+          ]
+        }
+      ]
+    }
+  ]
+}

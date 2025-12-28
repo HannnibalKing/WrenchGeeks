@@ -288,10 +288,21 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/kb_tips.json",
         "data/kb_toyota_jz_uz.json",
         "data/kb_volvo_p80.json",
+        "data/gmc_interchange.json",
+        "data/general_interchange.json",
+        "data/ford_ranger_explorer.json",
+        "data/chrysler_lx_platform.json",
+        "data/ford_focus_c1_platform.json",
+        "data/euro_luxury_expansion.json",
+        "data/jdm_legends_expansion.json",
+        "data/toyota_truck_ecosystem.json",
+        "data/honda_k_series_master.json",
+        "data/mopar_fca_fusion.json",
         "data/korean_genesis_secrets.json",
         "data/porsche_generations.json",
         "data/subaru_lego_city.json",
-        "data/weird_euro_cousins.json"
+        "data/weird_euro_cousins.json",
+        "data/big_mikes_tips.json"
     ];
 
     let relationships = { engines: {}, platforms: {}, transmissions: {} };
@@ -365,7 +376,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         if (d[0].bolt_pattern) return;
 
                         // KB / Tips Arrays
-                        if (d[0].category || d[0].title) {
+                        if (d[0].category || d[0].title || d[0].partName) {
                             window.WRENCHGEEKS_KB_DATA.push(...d);
                             tipsData.push(...d); 
                         }
@@ -402,11 +413,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const totalModels = Object.values(vehicleIndex).reduce((acc, models) => acc + Object.keys(models).length, 0);
             
             const kbCount = (typeof WRENCHGEEKS_KB_DATA !== 'undefined') ? WRENCHGEEKS_KB_DATA.length : 0;
-            const totalParts = partsData.length + kbCount;
+            const hardPartsCount = partsData.length;
 
             if (makeLoadStatus) {
                 makeLoadStatus.textContent = totalMakes > 0
-                    ? `Loaded ${totalMakes} makes / ${totalModels} models / ${totalParts} parts`
+                    ? `Indexed ${totalMakes} Makes / ${totalModels} Models / ${hardPartsCount} Hard Parts / ${kbCount} Intel Files`
                     : "No makes loaded";
             }
         })
@@ -899,15 +910,44 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        const relevantTips = tipsData.filter(tip => relevantIds.includes(tip.platform));
+        const relevantTips = tipsData.filter(tip => {
+            // Check Platform ID
+            if (tip.platform && relevantIds.includes(tip.platform)) return true;
+
+            // Check Keywords (Big Mike's Logic)
+            if (tip.keywords && Array.isArray(tip.keywords)) {
+                const makeLower = make.toLowerCase();
+                const modelLower = model.toLowerCase();
+                
+                // Check if any keyword matches the make or model
+                const hasMake = tip.keywords.some(k => makeLower.includes(k));
+                const hasModel = tip.keywords.some(k => modelLower.includes(k));
+                
+                // If the tip is about this car (e.g. "Saab 9-2X"), show it.
+                // Or if the tip mentions this car as a donor/recipient.
+                if (hasMake && hasModel) return true;
+                
+                // Also check if the tip content mentions the car explicitly
+                const contentLower = (tip.content || "").toLowerCase();
+                if (contentLower.includes(makeLower) && contentLower.includes(modelLower)) return true;
+            }
+
+            return false;
+        });
 
         if (relevantTips.length > 0) {
             tipsList.classList.remove("hidden");
             relevantTips.forEach(tip => {
                 const div = document.createElement("div");
                 div.className = `tip-card tip-${tip.severity ? tip.severity.toLowerCase() : "info"}`;
+                
+                // Add "Big Mike" badge if it's from that category
+                const badge = tip.category === "Did You Know?" 
+                    ? `<span style="background:#FFD700; color:black; padding:2px 6px; border-radius:4px; font-size:0.7em; font-weight:bold; margin-right:5px;">BIG MIKE SAYS</span>` 
+                    : "";
+
                 div.innerHTML = `
-                    <h4> ${tip.title}</h4>
+                    <h4>${badge} ${tip.title}</h4>
                     <p>${tip.content}</p>
                 `;
                 tipsList.appendChild(div);
@@ -1182,6 +1222,17 @@ document.addEventListener("DOMContentLoaded", () => {
         filter.addEventListener('click', () => {
             kbFilters.forEach(f => f.classList.remove('active'));
             filter.classList.add('active');
+            
+            // Big Mike Banner Logic
+            const banner = document.getElementById('bigMikeBanner');
+            if (banner) {
+                if (filter.getAttribute('data-filter') === 'did you know?') {
+                    banner.classList.remove('hidden');
+                } else {
+                    banner.classList.add('hidden');
+                }
+            }
+
             refreshKB();
         });
     });
@@ -1277,6 +1328,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     refreshKB();
+
+    // --- TOP 10 INTERCHANGE LOGIC ---
+    const top10Grid = document.getElementById('top10Grid');
+    if (top10Grid) {
+        fetch('data/top_10_interchange.json')
+            .then(response => response.json())
+            .then(data => {
+                top10Grid.innerHTML = '';
+                data.sort((a, b) => a.rank - b.rank);
+                
+                data.forEach(car => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.style.borderLeft = '4px solid var(--accent-color)';
+                    
+                    const badgesHtml = (car.badges || []).map(b => 
+                        `<span class="tag" style="font-size:0.7em; margin-right:5px; border:1px solid var(--text-muted); padding:2px 6px; border-radius:10px;">${b}</span>`
+                    ).join('');
+
+                    card.innerHTML = `
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                            <h2 style="margin:0; color:var(--accent-color); font-size:2em;">#${car.rank}</h2>
+                            <span style="background:rgba(100,255,218,0.1); color:var(--accent-color); padding:4px 8px; border-radius:4px; font-weight:bold;">Score: ${car.interchange_score}</span>
+                        </div>
+                        <h3 style="margin:0 0 5px 0;">${car.vehicle}</h3>
+                        <p style="font-style:italic; color:var(--text-muted); margin-bottom:10px;">"${car.title}"</p>
+                        <p>${car.description}</p>
+                        <div style="margin-top:10px;">${badgesHtml}</div>
+                    `;
+                    top10Grid.appendChild(card);
+                });
+            })
+            .catch(err => {
+                console.error('Error loading Top 10:', err);
+                top10Grid.innerHTML = '<p style="text-align:center; color:var(--danger-color);">Failed to load rankings.</p>';
+            });
+    }
 
     const donateBtn = document.getElementById('donateBtn');
     const donateModal = document.getElementById('donateModal');

@@ -1,0 +1,205 @@
+{
+  "parts": [
+    {
+      "id": "bmw_e60_f10_control_arms",
+      "category": "Suspension",
+      "name": "BMW 5-Series (E60/F10) Control Arm Upgrade",
+      "description": "The front tension struts (thrust arms) on the E60 and F10 5-Series are fluid-filled and prone to failure. Upgrading to the M5 version (E60 M5 or F10 M5) provides solid rubber bushings or monoballs for better steering feel and longevity.",
+      "specs": [
+        "E60: M5 Tension Struts fit non-M (check bushing width)",
+        "F10: M5 arms are a direct bolt-on for 535i/550i",
+        "Improves steering precision significantly"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "5 Series (E60)", "years": "2004-2010", "notes": "Upgrade" },
+            { "name": "5 Series (F10)", "years": "2011-2016", "notes": "Upgrade" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercedes_w204_c63_control_arms",
+      "category": "Suspension",
+      "name": "Mercedes C63 AMG Control Arms on W204",
+      "description": "The front lower control arms from the C63 AMG fit standard W204 C-Class models. They have stiffer bushings and slightly different geometry for more negative camber.",
+      "specs": [
+        "Direct bolt-on",
+        "Increases negative camber",
+        "Stiffer bushings reduce deflection"
+      ],
+      "compatibility": [
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "C-Class (W204)", "years": "2008-2014", "notes": "C300/C350" },
+            { "name": "C63 AMG (W204)", "years": "2008-2014", "notes": "Donor" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini_r53_r56_brakes",
+      "category": "Brakes",
+      "name": "Mini Cooper R56 S Brake Swap to R53",
+      "description": "The front brakes from the 2nd Gen (R56) Mini Cooper S are a direct bolt-on upgrade for the 1st Gen (R53) Mini Cooper S. They are significantly larger (294mm vs 276mm).",
+      "specs": [
+        "R56 S Rotors: 294mm",
+        "R53 S Rotors: 276mm",
+        "Requires R56 S Calipers, Carriers, Rotors, and Lines"
+      ],
+      "compatibility": [
+        {
+          "make": "Mini",
+          "models": [
+            { "name": "Cooper S (R53)", "years": "2002-2006", "notes": "Recipient" },
+            { "name": "Cooper S (R56)", "years": "2007-2013", "notes": "Donor" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "land_rover_lr3_lr4_control_arms",
+      "category": "Suspension",
+      "name": "Land Rover LR3 / LR4 Control Arm Interchange",
+      "description": "Front lower control arms are interchangeable between LR3 and LR4. The LR4 arms have updated, larger bushings that last longer than the original LR3 design.",
+      "specs": [
+        "LR4 arms fit LR3 directly",
+        "Heavy duty upgrade",
+        "Always replace hardware (eccentric bolts) when swapping"
+      ],
+      "compatibility": [
+        {
+          "make": "Land Rover",
+          "models": [
+            { "name": "LR3 / Discovery 3", "years": "2005-2009", "notes": "Recipient" },
+            { "name": "LR4 / Discovery 4", "years": "2010-2016", "notes": "Donor" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw_n54_n55_injectors",
+      "category": "Engine - Fuel",
+      "name": "BMW N54 Injector Index 12",
+      "description": "While not a cross-model swap, upgrading early N54 injectors (Index 1-10) to Index 12 is critical. These injectors are specific to the N54 but used across all N54 platforms (135i, 335i, 535i, Z4).",
+      "specs": [
+        "Must code new injector values into DME",
+        "Do not mix Index 11/12 with older indexes in the same bank"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "335i (E90/E92)", "years": "2007-2010", "notes": "N54 Engine" },
+            { "name": "535i (E60)", "years": "2008-2010", "notes": "N54 Engine" },
+            { "name": "135i (E82)", "years": "2008-2010", "notes": "N54 Engine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercedes_m113_supercharger",
+      "category": "Engine - Mechanical",
+      "name": "Mercedes M113K Supercharger Swap",
+      "description": "The supercharger assembly from an E55/SL55 AMG (M113K engine) can be retrofitted onto a standard M113 V8 (E500, S500, CLK500), though it requires significant fabrication, lower compression pistons, and ECU tuning.",
+      "specs": [
+        "Donor: E55, SL55, CLS55, S55, G55 AMG",
+        "Recipient: Any M113 5.0L or 4.3L V8",
+        "High difficulty: Requires custom pulley/belt routing and cooling"
+      ],
+      "compatibility": [
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E55 AMG (W211)", "years": "2003-2006", "notes": "Donor" },
+            { "name": "E500 (W211)", "years": "2003-2006", "notes": "Recipient (Major Mods)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jaguar_xf_xj_brakes",
+      "category": "Brakes",
+      "name": "Jaguar XFR / Supercharged Brake Upgrade",
+      "description": "The larger brakes from the Supercharged or XFR models (380mm front) can be fitted to standard XF or XJ models with the correct caliper carriers and 19\"+ wheels.",
+      "specs": [
+        "Standard: 326mm or 355mm",
+        "Supercharged: 380mm",
+        "Calipers are often the same casting, just different carriers (brackets)"
+      ],
+      "compatibility": [
+        {
+          "make": "Jaguar",
+          "models": [
+            { "name": "XF (X250)", "years": "2009-2015", "notes": "Upgrade" },
+            { "name": "XJ (X351)", "years": "2010-2019", "notes": "Upgrade" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volvo_p3_brakes",
+      "category": "Brakes",
+      "name": "Volvo P3 (S60/V60) 336mm Brake Upgrade",
+      "description": "Volvo P3 platform cars (S60, V60, S80, XC70) often come with 300mm or 316mm brakes. You can upgrade to the 336mm brakes found on the T6 / R-Design models simply by swapping the caliper bracket and rotors. The caliper itself is often identical.",
+      "specs": [
+        "Requires 17\" wheels minimum",
+        "Caliper Piston: 60mm (Same for 316mm and 336mm)",
+        "Bracket Part Number: 31400764 (Verify)"
+      ],
+      "compatibility": [
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "S60", "years": "2011-2018", "notes": "P3 Platform" },
+            { "name": "V60", "years": "2014-2018", "notes": "P3 Platform" },
+            { "name": "XC70", "years": "2008-2016", "notes": "P3 Platform" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audi_b8_s4_brakes",
+      "category": "Brakes",
+      "name": "Audi S4 (B8) Brake Swap to A4",
+      "description": "The front brakes from a B8 S4 (345mm rotors, larger calipers) bolt directly onto a B8 A4. A very popular OEM+ upgrade.",
+      "specs": [
+        "A4 Rotors: 320mm",
+        "S4 Rotors: 345mm",
+        "Requires S4 Calipers, Carriers, Rotors, Pads"
+      ],
+      "compatibility": [
+        {
+          "make": "Audi",
+          "models": [
+            { "name": "A4 (B8)", "years": "2009-2016", "notes": "Recipient" },
+            { "name": "S4 (B8)", "years": "2010-2016", "notes": "Donor" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw_f30_m_performance_brakes",
+      "category": "Brakes",
+      "name": "BMW F30 M-Sport / M-Performance Brakes",
+      "description": "The 4-piston Brembo front calipers (Blue, Red, Orange, or Yellow) found on F30 335i/340i M-Sport models or sold as the M-Performance kit fit all F30 3-Series models. Requires 18\" wheels.",
+      "specs": [
+        "Rotors: 340mm (Grey/Blue Caliper) or 370mm (M-Performance)",
+        "Rear: 2-piston Brembo (345mm)",
+        "Coding required for DSC to account for larger brakes"
+      ],
+      "compatibility": [
+        {
+          "make": "BMW",
+          "models": [
+            { "name": "3 Series (F30)", "years": "2012-2018", "notes": "Direct Bolt-on" },
+            { "name": "4 Series (F32)", "years": "2014-2020", "notes": "Direct Bolt-on" }
+          ]
+        }
+      ]
+    }
+  ]
+}

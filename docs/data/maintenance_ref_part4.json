@@ -234,6 +234,39 @@
       "category": "Brakes"
     },
     {
+      "id": "mitsubishi_galant_6g_dsm_brakes",
+      "name": "1G DSM Twin-Piston Brake Swap",
+      "description": "Use 1G DSM / VR-4 twin-piston front calipers and larger rotors on 6G Galant E30/E50 knuckles for a direct bolt-on upgrade.",
+      "price": "$350",
+      "source": "Mitsubishi",
+      "compatibility_smart": {
+        "platforms": ["MITSUBISHI_GALANT_LEGNUM"]
+      },
+      "category": "Brakes"
+    },
+    {
+      "id": "mitsubishi_galant_7g_5lug_swap",
+      "name": "7G Galant 5-Lug / Brake Upgrade",
+      "description": "Swap Carisma/Lancer/Evo I-III front knuckles to convert 7G Galant (EA1/EA3) to 5x114.3 and larger brakes; rear can use Carisma hub assemblies.",
+      "price": "$500",
+      "source": "Mitsubishi",
+      "compatibility_smart": {
+        "platforms": ["MITSUBISHI_GALANT_LEGNUM"]
+      },
+      "category": "Brakes"
+    },
+    {
+      "id": "mitsubishi_galant_9g_brake_upgrade",
+      "name": "Endeavor/Outlander Front Brake Upgrade",
+      "description": "9G Galant can run Endeavor/early Outlander dual-piston calipers and larger rotors; direct fit with matching brackets.",
+      "price": "$450",
+      "source": "Mitsubishi",
+      "compatibility_smart": {
+        "platforms": ["MITSUBISHI_GALANT_LEGNUM"]
+      },
+      "category": "Brakes"
+    },
+    {
       "id": "mitsubishi_pajero_lift",
       "name": "OME Suspension Lift",
       "description": "Old Man Emu springs and shocks. The gold standard for Montero/Pajero overland builds.",

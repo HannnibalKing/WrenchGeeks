@@ -1,0 +1,100 @@
+{
+  "parts": [
+    {
+      "id": "ford_c1_brakes",
+      "category": "Brakes",
+      "name": "Mazdaspeed3 / Volvo C30 Brake Swap",
+      "description": "The Ford C1 platform is shared between the Ford Focus (Mk2 Euro / Mk3 Global), Mazda3 (BK/BL), and Volvo C30/S40/V50. Brake components are highly interchangeable. Mazdaspeed3 front brakes are a massive upgrade for a standard Mazda3 or Focus.",
+      "specs": [
+        "Mazdaspeed3 Front Rotors: 320mm",
+        "Volvo C30 T5 Front Rotors: 300mm or 320mm",
+        "Calipers bolt up to the knuckles across the platform"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Focus", "years": "2012-2018", "notes": "Mk3 (Global)" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "Mazda3", "years": "2004-2013", "notes": "BK/BL Chassis" },
+            { "name": "Mazdaspeed3", "years": "2007-2013", "notes": "Donor Vehicle" }
+          ]
+        },
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "C30", "years": "2007-2013", "notes": "P1 Chassis" },
+            { "name": "S40 / V50", "years": "2004-2012", "notes": "P1 Chassis" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ford_c1_suspension",
+      "category": "Suspension",
+      "name": "C1 Platform Rear Sway Bar Interchange",
+      "description": "Rear sway bars are interchangeable between Mazda3, Mazdaspeed3, Ford Focus, and Volvo C30. The Mazdaspeed3 rear bar is a cheap upgrade for base models.",
+      "specs": [
+        "Mazdaspeed3 Rear Bar: 26mm (Solid)",
+        "Whiteline / Eibach aftermarket bars fit all three makes",
+        "End links are also compatible"
+      ],
+      "compatibility": [
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Focus", "years": "2012-2018", "notes": "Mk3" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "Mazda3", "years": "2004-2013", "notes": "BK/BL" }
+          ]
+        },
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "C30 / S40 / V50", "years": "2004-2012", "notes": "P1" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ford_c1_control_arms",
+      "category": "Suspension",
+      "name": "C1 Platform Control Arms",
+      "description": "Front lower control arms and rear control arms (camber arms, toe arms) are shared across the C1 platform. You can often use 'Ford Focus' parts on a Volvo S40 for a fraction of the price.",
+      "specs": [
+        "Rear Camber Arms: Identical geometry",
+        "Front Lower Control Arms: Check ball joint cone size (18mm vs 21mm depending on year/model)",
+        "Bushings are interchangeable"
+      ],
+      "compatibility": [
+        {
+          "make": "Volvo",
+          "models": [
+            { "name": "C30", "years": "2007-2013", "notes": "Use Focus parts to save money" },
+            { "name": "S40 / V50", "years": "2004-2012", "notes": "Use Focus parts to save money" }
+          ]
+        },
+        {
+          "make": "Ford",
+          "models": [
+            { "name": "Focus", "years": "2012-2018", "notes": "Mk3" }
+          ]
+        },
+        {
+          "make": "Mazda",
+          "models": [
+            { "name": "Mazda3", "years": "2004-2013", "notes": "BK/BL" }
+          ]
+        }
+      ]
+    }
+  ]
+}

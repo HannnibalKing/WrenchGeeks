@@ -1,0 +1,338 @@
+[
+  {
+    "id": "did_you_know_saabaru",
+    "category": "Did You Know?",
+    "title": "The 'Saabaru' Secret",
+    "content": "The Saab 9-2X is literally a Subaru Impreza Wagon with a different nose and tail. You can buy parts for a 2005 Subaru WRX and they will bolt directly onto a Saab 9-2X Aero. It’s usually 30% cheaper to buy the 'Subaru' part than the 'Saab' part.",
+    "severity": "Info",
+    "keywords": ["saab", "9-2x", "subaru", "impreza", "wrx"]
+  },
+  {
+    "id": "did_you_know_crossfire",
+    "category": "Did You Know?",
+    "title": "The German Chrysler",
+    "content": "The Chrysler Crossfire is 80% a Mercedes-Benz SLK320 (R170 chassis). If you look closely at the suspension components, they often have the Mercedes 'Star' logo stamped right next to the Chrysler logo.",
+    "severity": "Info",
+    "keywords": ["chrysler", "crossfire", "mercedes", "slk", "r170"]
+  },
+  {
+    "id": "did_you_know_vibe",
+    "category": "Did You Know?",
+    "title": "The Reliable Pontiac",
+    "content": "The Pontiac Vibe is a Toyota Matrix (Corolla based) built by NUMMI. Never buy engine parts from GM for this car. Go to Toyota; the parts are often higher quality and cheaper.",
+    "severity": "Info",
+    "keywords": ["pontiac", "vibe", "toyota", "matrix", "corolla"]
+  },
+  {
+    "id": "did_you_know_diablo",
+    "category": "Did You Know?",
+    "title": "Supercar Imposter",
+    "content": "The Lamborghini Diablo (1999+) headlights are from a Nissan 300ZX (Z32). Lamborghini bought them from Nissan and put a carbon fiber strip across the top to hide the 'NISSAN' logo embossed on the glass.",
+    "severity": "Info",
+    "keywords": ["lamborghini", "diablo", "nissan", "300zx", "z32", "headlights"]
+  },
+  {
+    "id": "did_you_know_aston",
+    "category": "Did You Know?",
+    "title": "Fancy Ford Parts",
+    "content": "The interior door handles on the Aston Martin DB7 are from a Mazda Miata (NB). The key fob for the V8 Vantage is actually a Volvo key wrapped in leather.",
+    "severity": "Info",
+    "keywords": ["aston martin", "db7", "vantage", "mazda", "miata", "volvo", "key"]
+  },
+  {
+    "id": "did_you_know_hei",
+    "category": "Did You Know?",
+    "title": "Universal Ignition Fix",
+    "content": "The GM 4-Pin Ignition Module (Part # D1906) is so robust it can run the ignition on almost any car with a magnetic pickup distributor. Old timers use it to replace expensive igniters on Mazda RX-7s and Toyota 4AGEs.",
+    "severity": "Info",
+    "keywords": ["gm", "ignition", "module", "mazda", "rx7", "toyota", "4age"]
+  },
+  {
+    "id": "did_you_know_volvo_relay",
+    "category": "Did You Know?",
+    "title": "Indestructible Fan Relay",
+    "content": "The cooling fan relay from a 90s Volvo 850/940 handles massive current and has two speeds. It is the only reliable way to run a massive Ford Taurus electric fan on a Jeep Cherokee without melting your wiring.",
+    "severity": "Info",
+    "keywords": ["volvo", "relay", "fan", "jeep", "cherokee", "taurus"]
+  },
+  {
+    "id": "did_you_know_mopar_regulator",
+    "category": "Did You Know?",
+    "title": "ECU Saver Hack",
+    "content": "On 90s Jeeps and Dodges, if the voltage regulator inside the ECU fails, you don't need a new computer. You can wire in an external voltage regulator from a 1970s Dodge (Part # VR125) for $20.",
+    "severity": "Info",
+    "keywords": ["jeep", "dodge", "ecu", "regulator", "alternator"]
+  },
+  {
+    "id": "did_you_know_neon_injectors",
+    "category": "Did You Know?",
+    "title": "Neon Injector Swap",
+    "content": "Fuel injectors from a Dodge Neon (Part ending in '703') have a better spray pattern than stock Jeep 4.0L injectors. They bolt right into a Jeep Cherokee (XJ) and give better throttle response.",
+    "severity": "Info",
+    "keywords": ["jeep", "cherokee", "xj", "4.0l", "neon", "injectors"]
+  },
+  {
+    "id": "did_you_know_mclaren_mirrors",
+    "category": "Did You Know?",
+    "title": "The Million Dollar Mirrors",
+    "content": "The McLaren F1, one of the most expensive cars ever made, uses side mirrors from the VW Corrado and taillights from a Dutch bus (Bova Futura).",
+    "severity": "Info",
+    "keywords": ["mclaren", "f1", "vw", "corrado", "mirrors"]
+  },
+  {
+    "id": "did_you_know_lotus_toyota",
+    "category": "Did You Know?",
+    "title": "Lotus Esprit Taillights",
+    "content": "The Lotus Esprit (V8 models) uses the iconic round taillights from the Toyota Corolla AE86 (Trueno/Levin).",
+    "severity": "Info",
+    "keywords": ["lotus", "esprit", "toyota", "corolla", "ae86", "taillights"]
+  },
+  {
+    "id": "did_you_know_maserati_chrysler",
+    "category": "Did You Know?",
+    "title": "Maserati's American Heart",
+    "content": "Modern Maseratis (Ghibli/Quattroporte) share their window switches, infotainment system (Uconnect), and headlight switches with the Dodge Charger and Chrysler 300. Next time a switch breaks, check the Dodge dealer first.",
+    "severity": "Info",
+    "keywords": ["maserati", "ghibli", "quattroporte", "dodge", "charger", "chrysler", "300"]
+  },
+  {
+    "id": "did_you_know_ford_gt_focus",
+    "category": "Did You Know?",
+    "title": "Supercar on a Budget",
+    "content": "The 2005 Ford GT uses the steering column and key cylinder from a Ford Focus. It also uses the HVAC controls from a Ford Mustang.",
+    "severity": "Info",
+    "keywords": ["ford", "gt", "focus", "mustang", "steering"]
+  },
+  {
+    "id": "did_you_know_jaguar_rover",
+    "category": "Did You Know?",
+    "title": "Jaguar XJ220 Taillights",
+    "content": "The legendary Jaguar XJ220 uses taillights from the humble Rover 200. They are just mounted behind a grille to disguise them.",
+    "severity": "Info",
+    "keywords": ["jaguar", "xj220", "rover", "200", "taillights"]
+  },
+  {
+    "id": "did_you_know_viper_mitsubishi",
+    "category": "Did You Know?",
+    "title": "Viper's Japanese Eyes",
+    "content": "The first-generation Dodge Viper used side mirrors from the Mitsubishi 3000GT (Dodge Stealth).",
+    "severity": "Info",
+    "keywords": ["dodge", "viper", "mitsubishi", "3000gt", "stealth", "mirrors"]
+  },
+  {
+    "id": "did_you_know_pagani_rover",
+    "category": "Did You Know?",
+    "title": "Pagani's Climate Control",
+    "content": "The Pagani Zonda, a multi-million dollar hypercar, uses the climate control panel from a Rover 45.",
+    "severity": "Info",
+    "keywords": ["pagani", "zonda", "rover", "45", "climate"]
+  },
+  {
+    "id": "did_you_know_noble_hyundai",
+    "category": "Did You Know?",
+    "title": "Noble M12 Taillights",
+    "content": "The Noble M12 uses taillights from the first-generation Hyundai Sonata.",
+    "severity": "Info",
+    "keywords": ["noble", "m12", "hyundai", "sonata", "taillights"]
+  },
+  {
+    "id": "did_you_know_invicta_passat",
+    "category": "Did You Know?",
+    "title": "Invicta S1 Taillights",
+    "content": "The Invicta S1 uses VW Passat (B5) taillights, but they are rotated 90 degrees to look different.",
+    "severity": "Info",
+    "keywords": ["invicta", "s1", "vw", "passat", "taillights"]
+  },
+  {
+    "id": "did_you_know_mg_sv_fiat",
+    "category": "Did You Know?",
+    "title": "MG SV Headlights",
+    "content": "The MG SV supercar uses headlights from the Fiat Punto (Mk2).",
+    "severity": "Info",
+    "keywords": ["mg", "sv", "fiat", "punto", "headlights"]
+  },
+  {
+    "id": "did_you_know_ssc_focus",
+    "category": "Did You Know?",
+    "title": "SSC Ultimate Aero Headlights",
+    "content": "The SSC Ultimate Aero, once the fastest car in the world, uses headlights from the Ford Focus (Mk1).",
+    "severity": "Info",
+    "keywords": ["ssc", "ultimate aero", "ford", "focus", "headlights"]
+  },
+  {
+    "id": "did_you_know_lotus_vauxhall",
+    "category": "Did You Know?",
+    "title": "Lotus Elise Indicators",
+    "content": "The Lotus Elise (S1) uses indicator stalks from the Vauxhall Corsa (Opel Corsa B).",
+    "severity": "Info",
+    "keywords": ["lotus", "elise", "vauxhall", "corsa", "opel"]
+  },
+  {
+    "id": "did_you_know_tvr_fiesta",
+    "category": "Did You Know?",
+    "title": "TVR Griffith Taillights",
+    "content": "The TVR Griffith uses Ford Fiesta (Mk3) taillights, but they are mounted upside down and swapped left-to-right.",
+    "severity": "Info",
+    "keywords": ["tvr", "griffith", "ford", "fiesta", "taillights"]
+  },
+  {
+    "id": "did_you_know_audi_porsche",
+    "category": "Did You Know?",
+    "title": "Audi RS2 Mirrors",
+    "content": "The Audi RS2 Avant was a collaboration with Porsche. It uses Porsche 993 side mirrors, indicators, and wheels (Cup 1s).",
+    "severity": "Info",
+    "keywords": ["audi", "rs2", "porsche", "993", "mirrors"]
+  },
+  {
+    "id": "did_you_know_landrover_bmw",
+    "category": "Did You Know?",
+    "title": "Range Rover's German Heart",
+    "content": "The early Range Rover L322 (2002-2005) was developed when BMW owned Land Rover. It uses the BMW M62 V8 engine and much of the E39 5-Series electronics.",
+    "severity": "Info",
+    "keywords": ["range rover", "l322", "bmw", "m62", "e39"]
+  },
+  {
+    "id": "did_you_know_volvo_ford",
+    "category": "Did You Know?",
+    "title": "Volvo's Ford Era",
+    "content": "The Volvo P3 platform (S80, V70, XC60) shares many suspension components with the Ford Mondeo and S-Max. You can often use Ford-stamped control arms for a fraction of the price.",
+    "severity": "Info",
+    "keywords": ["volvo", "p3", "s80", "v70", "xc60", "ford", "mondeo"]
+  },
+  {
+    "id": "did_you_know_lotus_celica",
+    "category": "Did You Know?",
+    "title": "Lotus Elise Engine",
+    "content": "The Lotus Elise 111R and Exige use the Toyota 2ZZ-GE engine, the same high-revving engine found in the Toyota Celica GTS and Matrix XRS.",
+    "severity": "Info",
+    "keywords": ["lotus", "elise", "exige", "toyota", "2zz-ge", "celica"]
+  },
+  {
+    "id": "did_you_know_mosler",
+    "category": "Did You Know?",
+    "title": "Mosler's Corvette DNA",
+    "content": "The Mosler MT900 is essentially a Corvette C5 turned up to 11. It uses the LS1/LS6/LS7 engine, C5 suspension arms, and even C5 door handles. The steering rack is from a Porsche 911 (996).",
+    "severity": "Info",
+    "keywords": ["mosler", "mt900", "corvette", "c5", "ls1", "ls6", "ls7", "porsche", "996"]
+  },
+  {
+    "id": "did_you_know_koenigsegg_ford",
+    "category": "Did You Know?",
+    "title": "Koenigsegg's Humble Roots",
+    "content": "The early Koenigsegg CC8S and CCR engines were heavily modified versions of the Ford Modular 4.6L V8 found in the Mustang Cobra. They eventually built their own, but the architecture started with Ford.",
+    "severity": "Info",
+    "keywords": ["koenigsegg", "cc8s", "ccr", "ford", "modular", "v8", "mustang"]
+  },
+  {
+    "id": "did_you_know_spyker_audi",
+    "category": "Did You Know?",
+    "title": "Spyker's German Heart",
+    "content": "The Spyker C8 uses the 4.2L V8 engine from the Audi S4 and A8. It's a reliable German heart in a quirky Dutch body.",
+    "severity": "Info",
+    "keywords": ["spyker", "c8", "audi", "v8", "s4", "a8"]
+  },
+  {
+    "id": "did_you_know_wiesmann_bmw",
+    "category": "Did You Know?",
+    "title": "Wiesmann's M-Power",
+    "content": "Wiesmann roadsters are powered exclusively by BMW engines. The MF3 uses the E46 M3 engine (S54), the MF4 uses the V8 (N62/S65), and the MF5 uses the V10 (S85) from the M5.",
+    "severity": "Info",
+    "keywords": ["wiesmann", "mf3", "mf4", "mf5", "bmw", "m3", "m5", "s54", "s85"]
+  },
+  {
+    "id": "did_you_know_morgan_mini",
+    "category": "Did You Know?",
+    "title": "Morgan's Cross-Eyed Look",
+    "content": "The Series 1 Morgan Aero 8 is famous for its 'cross-eyed' look, which was caused by using VW New Beetle headlights mounted backwards. Later models switched to Mini Cooper headlights.",
+    "severity": "Info",
+    "keywords": ["morgan", "aero 8", "vw", "beetle", "mini", "cooper", "headlights"]
+  },
+  {
+    "id": "did_you_know_pantera_ford",
+    "category": "Did You Know?",
+    "title": "The Italian Muscle Car",
+    "content": "The De Tomaso Pantera looks Italian but is powered by a Ford 351 Cleveland V8. You can buy engine parts at any auto parts store for a fraction of the price of Ferrari parts.",
+    "severity": "Info",
+    "keywords": ["de tomaso", "pantera", "ford", "351", "cleveland", "v8"]
+  },
+  {
+    "id": "did_you_know_delorean_prv",
+    "category": "Did You Know?",
+    "title": "DeLorean's French Engine",
+    "content": "The DMC-12 DeLorean is powered by the PRV V6 (Peugeot-Renault-Volvo). This same engine was used in the Volvo 760, Peugeot 505, and even the Dodge Monaco.",
+    "severity": "Info",
+    "keywords": ["delorean", "dmc-12", "prv", "volvo", "peugeot", "renault", "v6"]
+  },
+  {
+    "id": "did_you_know_vector_gm",
+    "category": "Did You Know?",
+    "title": "Vector's GM Parts Bin",
+    "content": "The Vector W8, despite looking like a spaceship, used a GM Turbo-Hydramatic 425 transmission (from an Oldsmobile Toronado) and a modified Chevy small block V8.",
+    "severity": "Info",
+    "keywords": ["vector", "w8", "gm", "oldsmobile", "toronado", "chevy", "v8"]
+  },
+  {
+    "id": "did_you_know_jensen_mopar",
+    "category": "Did You Know?",
+    "title": "Jensen's Mopar Power",
+    "content": "The Jensen Interceptor is a British GT car with a Chrysler 383 or 440 Big Block V8. It combines British luxury with American torque and reliability.",
+    "severity": "Info",
+    "keywords": ["jensen", "interceptor", "chrysler", "mopar", "383", "440", "v8"]
+  },
+  {
+    "id": "did_you_know_sunbeam_tiger",
+    "category": "Did You Know?",
+    "title": "The Poor Man's Cobra",
+    "content": "The Sunbeam Tiger is a Sunbeam Alpine roadster with a Ford 260 or 289 V8 shoehorned in by Carroll Shelby. It shares the same DNA as the Cobra but is much more affordable.",
+    "severity": "Info",
+    "keywords": ["sunbeam", "tiger", "ford", "260", "289", "v8", "shelby"]
+  },
+  {
+    "id": "did_you_know_tesla_mercedes",
+    "category": "Did You Know?",
+    "title": "Tesla's German Roots",
+    "content": "The early Tesla Model S (pre-2016 facelift especially) raided the Mercedes-Benz parts bin. The steering column stalks (turn signal, cruise control) and window switches are direct lifts from the Mercedes E-Class (W212). If you need a replacement window switch, check the Mercedes part number—it might be cheaper.",
+    "severity": "Info",
+    "keywords": ["tesla", "model s", "mercedes", "w212", "e-class", "switchgear"]
+  },
+  {
+    "id": "did_you_know_tesla_ford_brakes",
+    "category": "Did You Know?",
+    "title": "Tesla's Blue Oval Brakes",
+    "content": "While the calipers are often Brembo, the brake booster on early Model S units is shared with the Ford Fusion (Mondeo). It's a Bosch iBooster system that was widely used, meaning you don't always need to pay the 'Tesla Tax' for braking components.",
+    "severity": "Info",
+    "keywords": ["tesla", "model s", "ford", "fusion", "mondeo", "brakes", "ibooster"]
+  },
+  {
+    "id": "did_you_know_polestar_volvo",
+    "category": "Did You Know?",
+    "title": "Polestar's Volvo DNA",
+    "content": "The Polestar 2 sits on the CMA platform, same as the Volvo XC40. This means suspension arms, wheel hubs, and a vast amount of switchgear are identical. If you're fixing a crashed Polestar 2, look at XC40 parts diagrams for compatible mechanical bits.",
+    "severity": "Info",
+    "keywords": ["polestar", "volvo", "xc40", "cma", "suspension"]
+  },
+  {
+    "id": "did_you_know_taycan_etron",
+    "category": "Did You Know?",
+    "title": "The J1 Twins",
+    "content": "The Audi e-tron GT and Porsche Taycan share the J1 platform. This goes beyond just the chassis; the 800V battery architecture, suspension air springs, and thermal management systems are largely interchangeable. You're driving a Porsche in an Audi suit (or vice versa).",
+    "severity": "Info",
+    "keywords": ["audi", "etron gt", "porsche", "taycan", "j1", "platform"]
+  },
+  {
+    "id": "did_you_know_mache_escape",
+    "category": "Did You Know?",
+    "title": "Mustang in Name, Focus in Spirit",
+    "content": "The Mustang Mach-E is built on a heavily modified version of the Global C2 platform, which underpins the Ford Focus (Mk4) and Escape/Kuga. While the chassis is stretched for batteries, many suspension hard points and interior switchgear modules are shared with the humble Escape.",
+    "severity": "Info",
+    "keywords": ["ford", "mustang", "mach-e", "escape", "focus", "c2", "platform"]
+  },
+  {
+    "id": "did_you_know_lotus_geely",
+    "category": "Did You Know?",
+    "title": "The Geely Connection",
+    "content": "The Lotus Eletre is a radical departure for Lotus, built on the EPA (Electric Premium Architecture). This platform is a derivative of Geely's SEA architecture, meaning the Eletre shares DNA with the Polestar 4 and Zeekr 001. Don't be surprised to find Geely group part numbers on modules deep inside the dash.",
+    "severity": "Info",
+    "keywords": ["lotus", "eletre", "geely", "polestar", "sea", "platform"]
+  }
+]

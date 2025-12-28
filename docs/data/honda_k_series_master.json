@@ -1,0 +1,246 @@
+{
+  "parts": [
+    {
+      "id": "honda_k20_k24_head_swap",
+      "category": "Engine - Mechanical",
+      "name": "K24/K20 'Frankenstein' Engine Build",
+      "description": "Combining the high-flow cylinder head from a K20A2/Z1/Z3 (Civic Si, RSX-S) with the larger displacement block from a K24A2/A4/A8 (TSX, Accord, CR-V, Element). Best of both worlds: Torque + High RPM flow.",
+      "specs": [
+        "Head: K20A2, K20Z1, K20Z3 (True VTEC on intake & exhaust)",
+        "Block: K24A2 (TSX - Best pistons/rods), K24A4 (Accord/Element - cheaper)",
+        "Requires: K24 head gasket, CR-V passenger mount bracket (for EK/EG swaps)"
+      ],
+      "compatibility": [
+        {
+          "make": "Acura",
+          "models": [
+            { "name": "RSX Type-S", "years": "2002-2006", "notes": "Head Donor (K20A2/Z1)" },
+            { "name": "TSX", "years": "2004-2008", "notes": "Block Donor (K24A2 - Best)" }
+          ]
+        },
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic Si", "years": "2006-2011", "notes": "Head Donor (K20Z3)" },
+            { "name": "Accord", "years": "2003-2007", "notes": "Block Donor (K24A4/A8)" },
+            { "name": "CR-V", "years": "2002-2006", "notes": "Block Donor (K24A1)" },
+            { "name": "Element", "years": "2003-2011", "notes": "Block Donor (K24A4)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_rbc_intake_swap",
+      "category": "Engine - Mechanical",
+      "name": "RBC Intake Manifold Swap",
+      "description": "The RBC intake manifold from the 2006-2011 Civic Si (K20Z3) is the best factory intake for K-Series engines. It flows significantly better than the PRB (RSX) or RBB (TSX) manifolds.",
+      "specs": [
+        "Requires cutting the water neck flange (or buying a pre-cut one) to fit RSX/EP3 heads",
+        "Requires adapter for throttle body (if using cable throttle)",
+        "Gains: 5-10whp mid-range and top-end"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic Si", "years": "2006-2011", "notes": "Donor (RBC Manifold)" }
+          ]
+        },
+        {
+          "make": "Acura",
+          "models": [
+            { "name": "RSX Type-S", "years": "2002-2006", "notes": "Recipient" },
+            { "name": "TSX", "years": "2004-2008", "notes": "Recipient" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_tl_type_s_brembos",
+      "category": "Brakes",
+      "name": "Acura TL Type-S Brembo Swap",
+      "description": "The 4-piston Brembo calipers from the Acura TL Type-S (2007-2008) are a popular upgrade for other Honda/Acura models. They bolt directly to the knuckles of the 2004-2008 TSX and 2003-2007 Accord V6 (6MT).",
+      "specs": [
+        "Calipers: 4-piston Brembo",
+        "Rotors: 310mm x 25mm",
+        "Requires TL-S Knuckles for some applications, or S2000 rotors with modification"
+      ],
+      "compatibility": [
+        {
+          "make": "Acura",
+          "models": [
+            { "name": "TL Type-S", "years": "2007-2008", "notes": "Donor" },
+            { "name": "TSX", "years": "2004-2008", "notes": "Direct Bolt-on" }
+          ]
+        },
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Accord V6 (6MT)", "years": "2003-2007", "notes": "Direct Bolt-on" },
+            { "name": "S2000", "years": "2000-2009", "notes": "Requires machining/brackets" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_k_series_oil_pump",
+      "category": "Engine - Mechanical",
+      "name": "K20A2 Oil Pump Swap on K24",
+      "description": "The K24A2 (TSX) oil pump has balance shafts that rob power and cause cavitation at high RPM (over 7500). Swapping to the K20A2 (RSX-S) oil pump removes the balance shafts, freeing up horsepower and allowing safe revs to 8500+.",
+      "specs": [
+        "Requires K20A2 Oil Pump, Chain, Guide, and Baffle",
+        "Requires modifying K24 block (tapping an oil passage)",
+        "Essential for high-revving K24 builds"
+      ],
+      "compatibility": [
+        {
+          "make": "Acura",
+          "models": [
+            { "name": "RSX Type-S", "years": "2002-2006", "notes": "Donor Pump" },
+            { "name": "TSX", "years": "2004-2008", "notes": "Recipient Engine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_civic_ep3_seats",
+      "category": "Interior",
+      "name": "Civic Si (EP3) / RSX Seat Swap",
+      "description": "Front seats from the EP3 Civic Si and DC5 RSX are interchangeable with the EM2 Civic (2001-2005) and fit older Civics (EG/EK) with rail modifications.",
+      "specs": [
+        "EP3 Seats: Heavily bolstered 'Recaro style' (USDM are not Recaro)",
+        "RSX Seats: Leather buckets with integrated headrests",
+        "Direct bolt-in for 2001-2005 Civic"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Civic Si (EP3)", "years": "2002-2005", "notes": "Donor" },
+            { "name": "Civic (EM2)", "years": "2001-2005", "notes": "Recipient" }
+          ]
+        },
+        {
+          "make": "Acura",
+          "models": [
+            { "name": "RSX", "years": "2002-2006", "notes": "Donor" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_j_series_intake",
+      "category": "Engine - Mechanical",
+      "name": "J37 Intake Manifold / Throttle Body Swap",
+      "description": "The intake manifold and throttle body from the J37 engine (Acura MDX/TL SH-AWD) flow significantly more than the J30/J32/J35 components. A popular upgrade for Accord V6 and TL owners.",
+      "specs": [
+        "J37 Throttle Body: 80mm inlet (vs ~64mm stock)",
+        "Requires adapter plate for some manifolds",
+        "Magnesium manifold is lighter and flows better"
+      ],
+      "compatibility": [
+        {
+          "make": "Acura",
+          "models": [
+            { "name": "MDX", "years": "2007-2013", "notes": "Donor (J37)" },
+            { "name": "TL SH-AWD", "years": "2009-2014", "notes": "Donor (J37)" },
+            { "name": "TL", "years": "2004-2008", "notes": "Recipient (J32/J35)" }
+          ]
+        },
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Accord V6", "years": "2003-2012", "notes": "Recipient (J30/J35)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_element_awd_parts",
+      "category": "Drivetrain",
+      "name": "Honda Element / CR-V Rear Diff Interchange",
+      "description": "The rear differentials are largely interchangeable between Element and 2nd Gen CR-V. The Element rear diff is often cheaper and easier to find.",
+      "specs": [
+        "Dual Pump System (DPS)",
+        "Fluid: Honda Dual Pump Fluid II ONLY",
+        "Direct swap"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Element", "years": "2003-2011", "notes": "Interchangeable" },
+            { "name": "CR-V", "years": "2002-2006", "notes": "Interchangeable" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_fit_ge8_intake",
+      "category": "Engine - Mechanical",
+      "name": "Honda Fit (GE8) Intake Manifold on CR-Z",
+      "description": "The intake manifold from the 2nd Gen Honda Fit (GE8) flows better than the stock CR-Z (LEA) manifold. It is a direct bolt-on upgrade for the CR-Z hybrid.",
+      "specs": [
+        "Direct bolt-on",
+        "Gains top-end power",
+        "Cheap junkyard upgrade"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Fit", "years": "2009-2013", "notes": "Donor (GE8)" },
+            { "name": "CR-Z", "years": "2011-2016", "notes": "Recipient" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acura_rl_calipers",
+      "category": "Brakes",
+      "name": "Acura RL (KB1) 4-Piston Caliper Swap",
+      "description": "The 4-piston Advics calipers from the 2005-2012 Acura RL are massive and cheap. They can be retrofitted to many Hondas (Civic, Accord, TSX) using a specific bracket (Fastbrakes or custom).",
+      "specs": [
+        "Radial mount calipers (requires bracket)",
+        "Uses 12.8\" rotors (usually 350Z or similar)",
+        "Very large pad area"
+      ],
+      "compatibility": [
+        {
+          "make": "Acura",
+          "models": [
+            { "name": "RL", "years": "2005-2012", "notes": "Donor" },
+            { "name": "TSX", "years": "2004-2014", "notes": "Recipient (with bracket)" }
+          ]
+        },
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "Accord", "years": "2003-2012", "notes": "Recipient (with bracket)" },
+            { "name": "Civic Si (8th/9th Gen)", "years": "2006-2015", "notes": "Recipient (with bracket)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "honda_s2000_ap2_retainers",
+      "category": "Engine - Mechanical",
+      "name": "S2000 AP2 Valve Retainers in AP1",
+      "description": "The intake valve retainers on the AP1 (2.0L) S2000 are prone to cracking if the engine is over-revved. Swapping to the stronger AP2 (2.2L) retainers and keepers is a critical reliability upgrade.",
+      "specs": [
+        "AP2 Retainers are thicker/stronger",
+        "Direct fit for intake side",
+        "Exhaust side usually fine with AP1 retainers"
+      ],
+      "compatibility": [
+        {
+          "make": "Honda",
+          "models": [
+            { "name": "S2000 (AP1)", "years": "2000-2003", "notes": "Recipient" },
+            { "name": "S2000 (AP2)", "years": "2004-2009", "notes": "Donor Parts" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -58,6 +58,40 @@
     "matchLevel": "Match - Direct Fit"
   },
   {
+    "partName": "Mitsubishi Galant (7G) / Carisma / Lancer",
+    "compatibleVehicles": [
+      "Mitsubishi Galant (1993-1998)",
+      "Mitsubishi Carisma (1995-2004)",
+      "Mitsubishi Lancer (CB/CE 1992-2000)",
+      "Mitsubishi Mirage (1992-1996)"
+    ],
+    "years": "1992-2004",
+    "notes": "7th gen Galant shares suspension subframes and 4G9x driveline bits with Carisma/Lancer/Mirage. Brakes, hubs, and control arms swap with minor hardware changes.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
+    "partName": "Mitsubishi Galant (6G E30/E50) / 1G DSM",
+    "compatibleVehicles": [
+      "Mitsubishi Galant (1987-1993)",
+      "Mitsubishi Eclipse / Eagle Talon / Plymouth Laser (1990-1994)",
+      "Mitsubishi Galant VR-4 (E39A)"
+    ],
+    "years": "1987-1994",
+    "notes": "Non-VR4 6G Galants share the E30/E50 chassis with 1G DSM. Front knuckles, brakes, and many 4G63/4G37 engine ancillaries interchange. AWD hardware requires VR-4 donors.",
+    "matchLevel": "Match - Direct Fit"
+  },
+  {
+    "partName": "Mitsubishi Galant (9G) / Endeavor / Outlander",
+    "compatibleVehicles": [
+      "Mitsubishi Galant (2004-2012)",
+      "Mitsubishi Endeavor (2004-2008)",
+      "Mitsubishi Outlander (CU/CL 2003-2006)"
+    ],
+    "years": "2003-2012",
+    "notes": "9th gen Galant shares the PS platform with Endeavor and early Outlander. 6G75/4G69 engine parts, front brakes, and struts swap; rear subframes are similar but track width may need spacer consideration.",
+    "matchLevel": "Match - Minor Mods"
+  },
+  {
     "partName": "Toyota Corolla / Matrix / Pontiac Vibe Brakes",
     "compatibleVehicles": [
       "Toyota Corolla (2003-2008)",

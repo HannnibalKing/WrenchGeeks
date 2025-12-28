@@ -1,0 +1,111 @@
+{
+  "parts": [
+    {
+      "id": "chrysler_lx_mercedes_suspension",
+      "category": "Suspension",
+      "name": "Mercedes W211 / W220 Suspension Parts on LX/LD",
+      "description": "The Chrysler LX platform (Charger, 300, Magnum, Challenger) borrows heavily from Mercedes-Benz architecture. Many front suspension components are shared with the W220 S-Class, and the rear suspension is derived from the W211 E-Class.",
+      "specs": [
+        "Front Upper Control Arms: Similar to W220",
+        "Rear Subframe/Arms: Similar to W211",
+        "Transmission: NAG1 (W5A580) is a Mercedes 722.6"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger", "years": "2006-Present", "notes": "LX/LD Platform" },
+            { "name": "Challenger", "years": "2008-Present", "notes": "LC/LA Platform" },
+            { "name": "Magnum", "years": "2005-2008", "notes": "LX Platform" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300", "years": "2005-Present", "notes": "LX/LD Platform" }
+          ]
+        },
+        {
+          "make": "Mercedes-Benz",
+          "models": [
+            { "name": "E-Class (W211)", "years": "2003-2009", "notes": "Rear suspension architecture donor" },
+            { "name": "S-Class (W220)", "years": "1999-2005", "notes": "Front suspension architecture donor" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chrysler_lx_srt_brakes",
+      "category": "Brakes",
+      "name": "SRT8 Brembo Brake Swap",
+      "description": "The 4-piston (2006-2014) or 6-piston (2015+) Brembo brakes from SRT8/Hellcat models can be swapped onto lower trim Chargers/Challengers (R/T, SXT).",
+      "specs": [
+        "Requires SRT Knuckles (Spindles) for the calipers to bolt up",
+        "Requires 20\" wheels for clearance",
+        "Massive stopping power upgrade"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger (R/T, SXT)", "years": "2006-Present", "notes": "Requires knuckles" },
+            { "name": "Challenger (R/T, SXT)", "years": "2008-Present", "notes": "Requires knuckles" }
+          ]
+        },
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger SRT8 / Hellcat", "years": "2006-Present", "notes": "Donor Vehicle" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chrysler_lx_seats",
+      "category": "Interior",
+      "name": "Charger / Challenger / 300 Seat Swap",
+      "description": "Front seats are physically interchangeable between all LX/LD/LC/LA cars (Charger, Challenger, 300, Magnum). You can put Hellcat seats in a V6 Charger, or 300 seats in a Magnum.",
+      "specs": [
+        "Rails bolt directly to the floor",
+        "Wiring connectors changed around 2011 (pre-facelift vs post-facelift)",
+        "Airbag sensors may need calibration"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger", "years": "2006-Present", "notes": "Direct bolt-in" },
+            { "name": "Challenger", "years": "2008-Present", "notes": "Direct bolt-in (Fronts only)" },
+            { "name": "Magnum", "years": "2005-2008", "notes": "Direct bolt-in" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300", "years": "2005-Present", "notes": "Direct bolt-in" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chrysler_lx_diff_swap",
+      "category": "Drivetrain",
+      "name": "Getrag Limited Slip Diff Swap",
+      "description": "The Getrag LSD differentials found in SRT8 models (2009+) are a popular upgrade for R/T models equipped with open differentials (215mm or 226mm axles).",
+      "specs": [
+        "Requires swapping axles/hubs if moving from 215mm to 226mm Getrag",
+        "Pink bolts = Getrag LSD",
+        "Significantly stronger than the open diffs"
+      ],
+      "compatibility": [
+        {
+          "make": "Dodge",
+          "models": [
+            { "name": "Charger R/T", "years": "2006-Present", "notes": "Upgrade" },
+            { "name": "Challenger R/T", "years": "2009-Present", "notes": "Upgrade" }
+          ]
+        }
+      ]
+    }
+  ]
+}

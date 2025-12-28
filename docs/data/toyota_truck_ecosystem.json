@@ -1,0 +1,229 @@
+{
+  "parts": [
+    {
+      "id": "toyota_tundra_brake_upgrade",
+      "category": "Brakes",
+      "name": "Toyota Tundra 13WL / 13WE Brake Upgrade",
+      "description": "The front calipers from a 1st Gen Tundra (2000-2006) are a direct bolt-on upgrade for 3rd Gen 4Runners and 1st Gen Tacomas. The '13WL' casting (231mm) is the larger, more desirable version.",
+      "specs": [
+        "13WL Caliper: 231mm pad area (Requires 16\" wheels)",
+        "13WE Caliper: 199mm pad area (Fits some 15\" wheels)",
+        "Rotors: Must use Tundra rotors",
+        "Dust shield trimming required"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "4Runner", "years": "1996-2002", "notes": "3rd Gen" },
+            { "name": "Tacoma", "years": "1995-2004", "notes": "1st Gen (6-lug only)" },
+            { "name": "Tundra", "years": "2000-2006", "notes": "Donor" },
+            { "name": "Sequoia", "years": "2001-2007", "notes": "Donor" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_fj_suspension_swap",
+      "category": "Suspension",
+      "name": "FJ Cruiser / 5th Gen 4Runner Suspension on 4th Gen 4Runner",
+      "description": "Stock suspension (coils and shocks) from an FJ Cruiser or 5th Gen 4Runner fits directly onto a 4th Gen 4Runner. Since the FJ/5th Gen are heavier, this provides a cheap 1-inch lift and firmer ride for the 4th Gen.",
+      "specs": [
+        "Front Struts: Direct bolt-on",
+        "Rear Coils/Shocks: Direct bolt-on",
+        "Gain: ~0.5 to 1.0 inch lift"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "4Runner", "years": "2003-2009", "notes": "Recipient (4th Gen)" },
+            { "name": "FJ Cruiser", "years": "2007-2014", "notes": "Donor" },
+            { "name": "4Runner", "years": "2010-2023", "notes": "Donor (5th Gen)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_tacoma_bed_swap",
+      "category": "Body - Exterior",
+      "name": "Tacoma Bed Swap (2nd Gen)",
+      "description": "Beds are interchangeable between 2nd Gen Tacomas (2005-2015) of the same length (5ft Short Bed vs 6ft Long Bed). The composite bed resists rust, but the tailgate skin can be damaged.",
+      "specs": [
+        "Check bed length carefully",
+        "Taillights interchange 2005-2015",
+        "2012-2015 front clips can be swapped onto 2005-2011 trucks (requires hood, grille, headlights, bumper)"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Tacoma", "years": "2005-2015", "notes": "2nd Gen" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_elocker_retrofit",
+      "category": "Drivetrain",
+      "name": "Toyota E-Locker Retrofit",
+      "description": "The factory Electric Locking Differential (E-Locker) found in TRD Off-Road Tacomas and 4Runners can be retrofitted into non-locker axles. Requires modifying the axle housing (cutting/drilling/tapping) or swapping the entire axle assembly.",
+      "specs": [
+        "8\" Rear Diff with E-Locker",
+        "Requires wiring harness and switch",
+        "Axle Swap is easier than housing modification"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Tacoma", "years": "1995-2004", "notes": "TRD Off-Road Donor" },
+            { "name": "4Runner", "years": "1996-2002", "notes": "Limited/Locker Donor" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_2uz_manifold_swap",
+      "category": "Engine - Mechanical",
+      "name": "2UZ-FE Intake Manifold Swap (Tundra to GX470)",
+      "description": "The non-VVTi 2UZ-FE intake manifold (early Tundra/Land Cruiser) is sometimes swapped, but the more common mod is swapping the headers. Tundra headers (tubular) flow better than the log-style manifolds found on the GX470 / 4Runner V8.",
+      "specs": [
+        "Tundra Headers -> GX470/4Runner V8",
+        "Requires welding/flange modification usually",
+        "Significant torque gains"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Tundra", "years": "2000-2004", "notes": "Donor (Tubular Manifolds)" },
+            { "name": "4Runner (V8)", "years": "2003-2009", "notes": "Recipient" },
+            { "name": "Land Cruiser", "years": "1998-2007", "notes": "100 Series" }
+          ]
+        },
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "GX470", "years": "2003-2009", "notes": "Recipient" },
+            { "name": "LX470", "years": "1998-2007", "notes": "Recipient" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_steering_rack_bushings",
+      "category": "Suspension",
+      "name": "Tacoma / 4Runner Poly Steering Rack Bushings",
+      "description": "Stock rubber steering rack bushings on 1st Gen Tacomas and 3rd Gen 4Runners degrade, causing sloppy steering. Polyurethane bushings are a cheap and effective upgrade.",
+      "specs": [
+        "Fixes 'wandering' steering",
+        "Difficult install (rack removal recommended)",
+        "Fits 95-04 Tacoma and 96-02 4Runner"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Tacoma", "years": "1995-2004", "notes": "1st Gen" },
+            { "name": "4Runner", "years": "1996-2002", "notes": "3rd Gen" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_supra_tt_brakes_on_sc",
+      "category": "Brakes",
+      "name": "Supra Turbo (Mk4) Brakes on SC300/SC400",
+      "description": "The legendary Mk4 Supra Turbo 4-piston front brakes are a direct bolt-on for the Lexus SC300 and SC400 (Z30 chassis).",
+      "specs": [
+        "Front: 4-piston Sumitomo",
+        "Rear: 2-piston",
+        "Requires 17\" wheels",
+        "Requires trimming dust shields"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Supra Turbo", "years": "1993-1998", "notes": "Donor" }
+          ]
+        },
+        {
+          "make": "Lexus",
+          "models": [
+            { "name": "SC300 / SC400", "years": "1992-2000", "notes": "Direct Bolt-on" },
+            { "name": "GS300 / GS400", "years": "1993-2005", "notes": "Direct Bolt-on (Gen 1/2)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_mr2_spyder_2zz_swap",
+      "category": "Engine - Mechanical",
+      "name": "MR2 Spyder 2ZZ-GE Engine Swap",
+      "description": "The MR2 Spyder (ZZW30) came with the 1ZZ-FE. Swapping in the high-revving 2ZZ-GE (from Celica GTS or Lotus Elise) is the factory-style upgrade Toyota should have built. Mounts match, wiring requires modification.",
+      "specs": [
+        "Engine: 2ZZ-GE (180hp, 8200rpm redline)",
+        "Transmission: C60 6-speed (recommended)",
+        "Requires 2ZZ ECU and header adaptation"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "MR2 Spyder", "years": "2000-2005", "notes": "Recipient" },
+            { "name": "Celica GTS", "years": "2000-2005", "notes": "Donor" },
+            { "name": "Matrix XRS", "years": "2003-2006", "notes": "Donor" }
+          ]
+        },
+        {
+          "make": "Pontiac",
+          "models": [
+            { "name": "Vibe GT", "years": "2003-2006", "notes": "Donor" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_ae86_gts_rear_end",
+      "category": "Drivetrain",
+      "name": "Corolla GT-S (AE86) Rear Axle Swap",
+      "description": "Swapping the disc brake, limited-slip rear axle from a Corolla GT-S (AE86) into a base model SR5 (drum brakes, open diff) is the standard drift upgrade.",
+      "specs": [
+        "GT-S Axle: Disc brakes, LSD (usually)",
+        "SR5 Axle: Drum brakes, Open diff",
+        "Direct bolt-in for AE86 chassis"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Corolla GT-S", "years": "1984-1987", "notes": "Donor (AE86)" },
+            { "name": "Corolla SR5", "years": "1984-1987", "notes": "Recipient (AE86)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota_pickup_22re_head",
+      "category": "Engine - Mechanical",
+      "name": "20R Head on 22R Block (Hybrid)",
+      "description": "Building a '20/22R Hybrid' involves putting the better-flowing cylinder head from an older 20R engine onto the larger displacement 22R block. Increases compression and flow.",
+      "specs": [
+        "Head: 20R (Round intake ports)",
+        "Block: 22R (2.4L)",
+        "Requires specific intake manifold (20R style)"
+      ],
+      "compatibility": [
+        {
+          "make": "Toyota",
+          "models": [
+            { "name": "Pickup / Celica", "years": "1975-1980", "notes": "20R Donor" },
+            { "name": "Pickup / 4Runner", "years": "1981-1995", "notes": "22R Recipient" }
+          ]
+        }
+      ]
+    }
+  ]
+}
