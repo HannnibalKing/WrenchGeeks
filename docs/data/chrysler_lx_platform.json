@@ -101,8 +101,8 @@
         {
           "make": "Dodge",
           "models": [
-            { "name": "Charger R/T", "years": "2006-Present", "notes": "Upgrade" },
-            { "name": "Challenger R/T", "years": "2009-Present", "notes": "Upgrade" }
+            { "name": "Charger (LX/LD - 6th/7th Gen)", "years": "2006-2023", "notes": "All trims - Upgrade" },
+            { "name": "Challenger (LC/LA - 3rd Gen)", "years": "2008-2023", "notes": "All trims - Upgrade" }
           ]
         }
       ]

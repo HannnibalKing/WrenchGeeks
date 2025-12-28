@@ -306,9 +306,9 @@
         {
           "make": "Dodge",
           "models": [
-            { "name": "Charger R/T / SRT8", "years": "2006–2014", "notes": "Upgrade (NAG1 5-Speed)" },
-            { "name": "Challenger R/T / SRT8", "years": "2008–2014", "notes": "Upgrade (NAG1 5-Speed)" },
-            { "name": "Magnum R/T / SRT8", "years": "2005–2008", "notes": "Upgrade (NAG1 5-Speed)" }
+            { "name": "Charger (LX - 6th Gen)", "years": "2006–2010", "notes": "All trims - Upgrade (NAG1 5-Speed)" },
+            { "name": "Challenger (LC - 3rd Gen)", "years": "2008–2014", "notes": "All trims - Upgrade (NAG1 5-Speed)" },
+            { "name": "Magnum", "years": "2005–2008", "notes": "All trims - Upgrade (NAG1 5-Speed)" }
           ]
         },
         {

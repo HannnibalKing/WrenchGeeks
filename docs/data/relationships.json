@@ -6081,9 +6081,21 @@
       },
       {
         "make": "Dodge",
-        "model": "Charger/Challenger R/T",
-        "years": "2006–Present",
-        "notes": "Engine Match"
+        "model": "Charger (LX/LD - 6th/7th Gen)",
+        "years": "2006–2023",
+        "notes": "5.7L Hemi - Engine Match"
+      },
+      {
+        "make": "Dodge",
+        "model": "Challenger (LC/LA - 3rd Gen)",
+        "years": "2008–2023",
+        "notes": "5.7L Hemi - Engine Match"
+      },
+      {
+        "make": "Dodge",
+        "model": "Magnum",
+        "years": "2005–2008",
+        "notes": "5.7L Hemi - Engine Match"
       },
       {
         "make": "Jeep",

@@ -213,11 +213,22 @@
       ],
       "compatibility": [
         {
-          "make": "Dodge / Chrysler",
+          "make": "Dodge",
           "models": [
-            { "name": "Charger / Challenger R/T (5.7L)", "years": "2009-Present", "notes": "Upgrade Candidate" },
-            { "name": "300C (5.7L)", "years": "2009-Present", "notes": "Upgrade Candidate" },
-            { "name": "Ram 1500 (5.7L)", "years": "2009-Present", "notes": "Upgrade Candidate" }
+            { "name": "Charger (LD - 7th Gen)", "years": "2011-2023", "notes": "5.7L Hemi - Upgrade Candidate" },
+            { "name": "Challenger (LA - 3rd Gen Facelift)", "years": "2015-2023", "notes": "5.7L Hemi - Upgrade Candidate" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300 (LD - 2nd Gen)", "years": "2011-2023", "notes": "5.7L Hemi - Upgrade Candidate" }
+          ]
+        },
+        {
+          "make": "Ram",
+          "models": [
+            { "name": "1500 (Gen 4/5)", "years": "2009-Present", "notes": "5.7L Hemi - Upgrade Candidate" }
           ]
         }
       ],
@@ -493,8 +504,8 @@
           "make": "Dodge",
           "models": [
             { "name": "Challenger Hellcat", "years": "2015–Present", "notes": "Stock Part" },
-            { "name": "Challenger R/T / Scat Pack", "years": "2015–Present", "notes": "Direct Upgrade" },
-            { "name": "Charger R/T / Scat Pack", "years": "2015–Present", "notes": "Direct Upgrade (Requires grille duct)" }
+            { "name": "Challenger (LA - 3rd Gen Facelift)", "years": "2015–2023", "notes": "5.7L/6.4L Hemi - Direct Upgrade" },
+            { "name": "Charger (LD - 7th Gen)", "years": "2015–2023", "notes": "5.7L/6.4L Hemi - Direct Upgrade (Requires grille duct)" }
           ]
         }
       ],
@@ -629,8 +640,8 @@
           "models": [
             { "name": "Challenger SRT 392", "years": "2011–2023", "notes": "Stock Part" },
             { "name": "Charger SRT 392", "years": "2011–2023", "notes": "Stock Part" },
-            { "name": "Challenger R/T (5.7L)", "years": "2009–2023", "notes": "Upgrade (Requires adapter/controller)" },
-            { "name": "Charger R/T (5.7L)", "years": "2009–2023", "notes": "Upgrade (Requires adapter/controller)" }
+            { "name": "Challenger (LC/LA - 3rd Gen)", "years": "2008–2023", "notes": "5.7L Hemi - Upgrade (Requires adapter/controller)" },
+            { "name": "Charger (LX/LD - 6th/7th Gen)", "years": "2006–2023", "notes": "5.7L Hemi - Upgrade (Requires adapter/controller)" }
           ]
         }
       ],
