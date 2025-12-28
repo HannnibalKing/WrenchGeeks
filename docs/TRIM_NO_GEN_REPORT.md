@@ -2,33 +2,9 @@
 
 Entries with performance/trim keywords but no generation/chassis code in the model.
 
-## Acura
-- **Model:** Integra GS-R/Type R — **Years:** 1994–2001 — **Group:** HONDA_B_SERIES (engines) — Engine Match (B18C1/C5)
-
-## Audi
-- **Model:** TT 2.0 TFSI — **Years:** 2006–2014 — **Group:** EXO_KTM_XBOW (platforms) — Engine Donor
-
-## Buick
-- **Model:** LaCrosse — **Years:** 2005–2009 — **Group:** GM_W_BODY_GEN3 (platforms) — Platform Mate (W-Body)
-- **Model:** LaCrosse Super — **Years:** 2008–2009 — **Group:** GM_LS4_FWD (engines) — Engine Match (5.3L LS4 V8)
-
 ## Chevrolet
-- **Model:** SS Sedan — **Years:** 2014–2017 — **Group:** PONTIAC_G8 (platforms) — Zeta Platform (VF Commodore)
-- **Model:** Lumina SS — **Years:** 1998–2006 — **Group:** HOLDEN_COMMODORE_VT_VZ (platforms) — Middle East Export
-- **Model:** SS Sedan — **Years:** 2014–2017 — **Group:** HOLDEN_COMMODORE_VE_VF (platforms) — Rebadged VF
-- **Model:** Cobalt SS — **Years:** 2005–2007 — **Group:** EXO_ARIEL_ATOM (platforms) — Engine Donor (LSJ)
 - **Model:** Silverado/Sierra 4.8L/5.3L/6.0L — **Years:** 1999–2013 — **Group:** GM_LS_TRUCK (engines) — Junkyard Gold (LR4/LM7/LQ4/LQ9)
 - **Model:** City Express — **Years:** 2015–2018 — **Group:** NISSAN_CHEVY_NV200 (engines) — Rebadged NV200
-
-## Chrysler
-- **Model:** Crossfire — **Years:** 2004–2008 — **Group:** CHRYSLER_CROSSFIRE (platforms) — Mercedes R170 Platform
-- **Model:** Crossfire SRT-6 — **Years:** 2005–2006 — **Group:** CHRYSLER_CROSSFIRE (platforms) — Mercedes R170 Platform (AMG)
-- **Model:** Crossfire — **Years:** 2004–2008 — **Group:** MERCEDES_M112 (engines) — Engine Match (3.2L V6)
-- **Model:** Crossfire SRT-6 — **Years:** 2005–2006 — **Group:** MERCEDES_M112 (engines) — Engine Match (3.2L SC V6)
-
-## Dodge
-- **Model:** Ram SRT-10 — **Years:** 2004–2006 — **Group:** DODGE_VIPER_V10 (engines) — Engine Match (8.3L V10)
-- **Model:** Stealth R/T Turbo — **Years:** 1991–1996 — **Group:** MITSUBISHI_6G72 (engines) — Engine Match (6G72TT)
 
 ## Eagle
 - **Model:** Vision — **Years:** 1993–1997 — **Group:** CHRYSLER_LH_PLATFORM (platforms) — Cab Forward (LH)
@@ -42,8 +18,6 @@ Entries with performance/trim keywords but no generation/chassis code in the mod
 - **Model:** Shelby GT350 — **Years:** 2015–2020 — **Group:** FORD_S550 (platforms) — Platform Mate
 - **Model:** Sierra — **Years:** 1982–1993 — **Group:** KIT_CATERHAM_7 (platforms) — Common Donor
 - **Model:** Sierra RS Cosworth — **Years:** 1986–1992 — **Group:** RALLY_HOMOLOGATION_FORD (platforms) — Touring Car Legend
-- **Model:** Falcon XR6 Turbo — **Years:** 2002–2016 — **Group:** FORD_BARRA (engines) — Engine Match (Barra 240T/270T/310T)
-- **Model:** Territory Turbo — **Years:** 2006–2011 — **Group:** FORD_BARRA (engines) — Engine Match (Barra Turbo)
 - **Model:** Sierra RS Cosworth — **Years:** 1986–1992 — **Group:** FORD_COSWORTH_YB (engines) — Engine Match (YBB/YBG)
 
 ## Holden

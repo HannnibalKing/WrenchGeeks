@@ -13,6 +13,7 @@
 - **Model:** NSX (NA1) — **Years:** 1991–1996 — **Group:** HONDA_RWD_MID (platforms) — Senna's Input
 - **Model:** NSX (NA2) — **Years:** 1997–2005 — **Group:** HONDA_RWD_MID (platforms) — 3.2L Update
 - **Model:** NSX (NC1) — **Years:** 2017–2022 — **Group:** HONDA_RWD_MID (platforms) — Hybrid Supercar
+- **Model:** Integra (DC2 - Gen 3) — **Years:** 1994–2001 — **Group:** HONDA_B_SERIES (engines) — GS-R/Type R trims - Engine Match (B18C1/C5)
 - **Model:** TSX (Gen 1) — **Years:** 2004–2008 — **Group:** HONDA_K_SERIES (engines) — Engine Match (K24A2)
 
 ## Alfa Romeo
@@ -28,6 +29,7 @@
 - **Model:** A4 (B5 - 1st Gen) — **Years:** 1996–2001 — **Group:** VAG_PL45 (platforms) — Platform Mate (PL45)
 - **Model:** A6 (C5 - 2nd Gen) — **Years:** 1997–2004 — **Group:** VAG_PL45 (platforms) — Platform Mate (PL45/C5)
 - **Model:** R8 (V10) — **Years:** 2009–2023 — **Group:** LAMBORGHINI_V10 (platforms) — Platform Mate
+- **Model:** TT (8J) — **Years:** 2006–2014 — **Group:** EXO_KTM_XBOW (platforms) — 2.0 TFSI engine donor
 - **Model:** TT (Mk1/Mk2) 3.2L — **Years:** 2003–2006 — **Group:** VAG_VR6_32 (engines) — Engine Match (VR6)
 - **Model:** S3 (8P) — **Years:** 2006–2012 — **Group:** AUDI_20_TFSI (engines) — Engine Match (2.0 TFSI)
 
@@ -71,6 +73,8 @@
 ## Buick
 - **Model:** Regal (Gen 5) — **Years:** 2011–2017 — **Group:** GM_EPSILON_2 (platforms) — Platform Mate (Epsilon II)
 - **Model:** LaCrosse (Gen 2) — **Years:** 2010–2016 — **Group:** GM_EPSILON_2 (platforms) — Platform Mate (Epsilon II)
+- **Model:** LaCrosse (Gen 1) — **Years:** 2005–2009 — **Group:** GM_W_BODY_GEN3 (platforms) — Platform Mate (W-Body)
+- **Model:** LaCrosse (Gen 1) — **Years:** 2008–2009 — **Group:** GM_LS4_FWD (engines) — Super trim - Engine Match (5.3L LS4 V8)
 
 ## Cadillac
 - **Model:** CTS-V (Gen 3) — **Years:** 2016–2019 — **Group:** GM_LT_GEN5 (engines) — Engine Match (LT4)
@@ -127,12 +131,16 @@
 - **Model:** Silverado 1500 (GMT900 - NNBS) — **Years:** 2007–2013 — **Group:** GM_TRUCK_MODERN (platforms) — Gen 4 LS
 - **Model:** Silverado 1500 (K2XX) — **Years:** 2014–2018 — **Group:** GM_TRUCK_MODERN (platforms) — Gen 5 LT
 - **Model:** Silverado 1500 (T1XX) — **Years:** 2019–Present — **Group:** GM_TRUCK_MODERN (platforms) — Current Gen
+- **Model:** SS (VF) — **Years:** 2014–2017 — **Group:** PONTIAC_G8 (platforms) — Rebadged VF Commodore - Zeta Platform
 - **Model:** Equinox (Gen 1) — **Years:** 2005–2009 — **Group:** SATURN_VUE (platforms) — Theta Platform
 - **Model:** Cavalier (Gen 2) — **Years:** 1988–1994 — **Group:** GM_J_BODY (platforms) — The Roach
 - **Model:** Cavalier (Gen 3) — **Years:** 1995–2005 — **Group:** GM_J_BODY (platforms) — The Cockroach
 - **Model:** S-10 (Gen 2) — **Years:** 1994–2004 — **Group:** GM_S10_SONOMA (platforms) — The Mini Truck
 - **Model:** S-10 (Gen 2) — **Years:** 1994–2004 — **Group:** GM_S10_2ND_GEN (platforms) — The Mini Truck
+- **Model:** Lumina (VZ) — **Years:** 1998–2006 — **Group:** HOLDEN_COMMODORE_VT_VZ (platforms) — SS trim - Middle East Export (Holden Commodore VZ)
+- **Model:** SS (VF) — **Years:** 2014–2017 — **Group:** HOLDEN_COMMODORE_VE_VF (platforms) — Rebadged VF Commodore
 - **Model:** Cobalt (Gen 1) — **Years:** 2005–2010 — **Group:** KIT_DF_GOBLIN (platforms) — SS trim - Donor Platform
+- **Model:** Cobalt (Gen 1) — **Years:** 2005–2007 — **Group:** EXO_ARIEL_ATOM (platforms) — SS trim - Engine Donor (LSJ)
 - **Model:** Corvette (C5 - 5th Gen) — **Years:** 1997–2004 — **Group:** GM_LS_GEN3 (engines) — Engine Match
 - **Model:** Camaro SS (4th Gen) — **Years:** 1998–2002 — **Group:** GM_LS_GEN3 (engines) — Engine Match
 - **Model:** Silverado 1500 (GMT800 - 1st Gen) — **Years:** 1999–2007 — **Group:** GM_LS_GEN3 (engines) — Engine Match
@@ -161,9 +169,13 @@
 ## Chrysler
 - **Model:** 300 (LX - 1st Gen) — **Years:** 2005–2010 — **Group:** DAIMLER_CHRYSLER_LX (platforms) — Platform Mate (LX)
 - **Model:** 300 (LD - 2nd Gen) — **Years:** 2011–Present — **Group:** DAIMLER_CHRYSLER_LX (platforms) — Platform Mate (LD)
+- **Model:** Crossfire (R170) — **Years:** 2004–2008 — **Group:** CHRYSLER_CROSSFIRE (platforms) — Mercedes R170 Platform
+- **Model:** Crossfire (R170) — **Years:** 2005–2006 — **Group:** CHRYSLER_CROSSFIRE (platforms) — SRT-6 trim - Mercedes R170 Platform (AMG)
 - **Model:** 200 (UF) — **Years:** 2015–2017 — **Group:** FCA_CUSW (platforms) — Platform Mate
 - **Model:** Town & Country (NS - Gen 2) — **Years:** 1991–1995 — **Group:** CHRYSLER_MINIVANS (platforms) — Luxury Van
 - **Model:** LeBaron (Sedan/Coupe) — **Years:** 1987–1995 — **Group:** CHRYSLER_K_DERIVATIVES (platforms) — J-Body (K-Based)
+- **Model:** Crossfire (R170) — **Years:** 2004–2008 — **Group:** MERCEDES_M112 (engines) — Engine Match (3.2L V6)
+- **Model:** Crossfire (R170) — **Years:** 2005–2006 — **Group:** MERCEDES_M112 (engines) — SRT-6 trim - Engine Match (3.2L SC V6)
 - **Model:** Town & Country (RT - Gen 5) — **Years:** 2008–2016 — **Group:** CHRYSLER_VW_RT (engines) — Platform Host
 
 ## Dodge
@@ -198,8 +210,10 @@
 - **Model:** Challenger (LA - 3rd Gen) SRT Hellcat — **Years:** 2015–Present — **Group:** CHRYSLER_HEMI_62_SC (engines) — Engine Match (Hellcat)
 - **Model:** Challenger (LA - 3rd Gen) SRT Demon — **Years:** 2018 — **Group:** CHRYSLER_HEMI_62_SC (engines) — Engine Match (Demon)
 - **Model:** Durango (WD - 3rd Gen) — **Years:** 2021, 2023 — **Group:** CHRYSLER_HEMI_62_SC (engines) — SRT Hellcat trim - Engine Match (Hellcat)
+- **Model:** Ram 1500 (DR - Gen 3) — **Years:** 2004–2006 — **Group:** DODGE_VIPER_V10 (engines) — SRT-10 trim - Engine Match (8.3L V10)
 - **Model:** Neon (PL - 2nd Gen) — **Years:** 2003–2005 — **Group:** DODGE_24_TURBO (engines) — SRT-4 trim - Engine Match (2.4L Turbo)
 - **Model:** Caravan (Gen 2-4) — **Years:** 1990–2010 — **Group:** CHRYSLER_33_38_V6 (engines) — All trims - Ubiquitous Minivan V6 (3.3L/3.8L)
+- **Model:** Stealth (Z16A) — **Years:** 1991–1996 — **Group:** MITSUBISHI_6G72 (engines) — R/T Turbo trim - Engine Match (6G72TT)
 - **Model:** Caravan (RT - Gen 5) — **Years:** 2008–2020 — **Group:** CHRYSLER_VW_RT (engines) — Grand Caravan - Platform Mate
 
 ## Eagle
@@ -296,6 +310,8 @@
 - **Model:** Mustang (S550 - Gen 6) — **Years:** 2015–Present — **Group:** FORD_ECOBOOST_4 (engines) — EcoBoost trim - Engine Match (2.3L EcoBoost)
 - **Model:** Fiesta (Mk7 - 7th Gen) — **Years:** 2014–2019 — **Group:** FORD_ECOBOOST_4 (engines) — ST trim - Engine Match (1.6L EcoBoost)
 - **Model:** Focus RS (Mk2) — **Years:** 2009–2010 — **Group:** VOLVO_WHITEBLOCK (engines) — Engine Match (Volvo T5)
+- **Model:** Falcon (BA/BF/FG) — **Years:** 2002–2016 — **Group:** FORD_BARRA (engines) — XR6 Turbo trim - Engine Match (Barra 240T/270T/310T)
+- **Model:** Territory (SY) — **Years:** 2006–2011 — **Group:** FORD_BARRA (engines) — Turbo trim - Engine Match (Barra Turbo)
 - **Model:** Escort RS Cosworth (Big Turbo) — **Years:** 1992–1994 — **Group:** FORD_COSWORTH_YB (engines) — Engine Match (YBT - Blue Top)
 - **Model:** Escort RS Cosworth (Small Turbo) — **Years:** 1994–1996 — **Group:** FORD_COSWORTH_YB (engines) — Engine Match (YBP - Silver Top)
 

@@ -771,7 +771,7 @@
       },
       {
         "make": "Buick",
-        "model": "LaCrosse",
+        "model": "LaCrosse (Gen 1)",
         "years": "2005–2009",
         "notes": "Platform Mate (W-Body)"
       },
@@ -1307,15 +1307,15 @@
     "CHRYSLER_CROSSFIRE": [
       {
         "make": "Chrysler",
-        "model": "Crossfire",
+        "model": "Crossfire (R170)",
         "years": "2004–2008",
         "notes": "Mercedes R170 Platform"
       },
       {
         "make": "Chrysler",
-        "model": "Crossfire SRT-6",
+        "model": "Crossfire (R170)",
         "years": "2005–2006",
-        "notes": "Mercedes R170 Platform (AMG)"
+        "notes": "SRT-6 trim - Mercedes R170 Platform (AMG)"
       },
       {
         "make": "Mercedes-Benz",
@@ -1941,9 +1941,9 @@
       },
       {
         "make": "Chevrolet",
-        "model": "SS Sedan",
+        "model": "SS (VF)",
         "years": "2014–2017",
-        "notes": "Zeta Platform (VF Commodore)"
+        "notes": "Rebadged VF Commodore - Zeta Platform"
       },
       {
         "make": "Chevrolet",
@@ -3883,9 +3883,9 @@
       },
       {
         "make": "Chevrolet",
-        "model": "Lumina SS",
+        "model": "Lumina (VZ)",
         "years": "1998–2006",
-        "notes": "Middle East Export"
+        "notes": "SS trim - Middle East Export (Holden Commodore VZ)"
       }
     ],
     "HOLDEN_COMMODORE_VE_VF": [
@@ -3909,9 +3909,9 @@
       },
       {
         "make": "Chevrolet",
-        "model": "SS Sedan",
+        "model": "SS (VF)",
         "years": "2014–2017",
-        "notes": "Rebadged VF"
+        "notes": "Rebadged VF Commodore"
       }
     ],
     "FORD_FALCON_CLASSIC": [
@@ -4157,9 +4157,9 @@
       },
       {
         "make": "Chevrolet",
-        "model": "Cobalt SS",
+        "model": "Cobalt (Gen 1)",
         "years": "2005–2007",
-        "notes": "Engine Donor (LSJ)"
+        "notes": "SS trim - Engine Donor (LSJ)"
       }
     ],
     "EXO_KTM_XBOW": [
@@ -4171,9 +4171,9 @@
       },
       {
         "make": "Audi",
-        "model": "TT 2.0 TFSI",
+        "model": "TT (8J)",
         "years": "2006–2014",
-        "notes": "Engine Donor"
+        "notes": "2.0 TFSI engine donor"
       }
     ],
     "KIT_CATERHAM_7": [
@@ -6747,9 +6747,9 @@
       },
       {
         "make": "Dodge",
-        "model": "Ram SRT-10",
+        "model": "Ram 1500 (DR - Gen 3)",
         "years": "2004–2006",
-        "notes": "Engine Match (8.3L V10)"
+        "notes": "SRT-10 trim - Engine Match (8.3L V10)"
       }
     ],
     "DODGE_24_TURBO": [
@@ -6963,9 +6963,9 @@
       },
       {
         "make": "Buick",
-        "model": "LaCrosse Super",
+        "model": "LaCrosse (Gen 1)",
         "years": "2008–2009",
-        "notes": "Engine Match (5.3L LS4 V8)"
+        "notes": "Super trim - Engine Match (5.3L LS4 V8)"
       }
     ],
     "GM_3800_SERIES": [
@@ -7369,9 +7369,9 @@
       },
       {
         "make": "Acura",
-        "model": "Integra GS-R/Type R",
+        "model": "Integra (DC2 - Gen 3)",
         "years": "1994–2001",
-        "notes": "Engine Match (B18C1/C5)"
+        "notes": "GS-R/Type R trims - Engine Match (B18C1/C5)"
       },
       {
         "make": "Honda",
@@ -7455,9 +7455,9 @@
       },
       {
         "make": "Dodge",
-        "model": "Stealth R/T Turbo",
+        "model": "Stealth (Z16A)",
         "years": "1991–1996",
-        "notes": "Engine Match (6G72TT)"
+        "notes": "R/T Turbo trim - Engine Match (6G72TT)"
       }
     ],
     "SUBARU_EJ257": [
@@ -7505,15 +7505,15 @@
     "MERCEDES_M112": [
       {
         "make": "Chrysler",
-        "model": "Crossfire",
+        "model": "Crossfire (R170)",
         "years": "2004–2008",
         "notes": "Engine Match (3.2L V6)"
       },
       {
         "make": "Chrysler",
-        "model": "Crossfire SRT-6",
+        "model": "Crossfire (R170)",
         "years": "2005–2006",
-        "notes": "Engine Match (3.2L SC V6)"
+        "notes": "SRT-6 trim - Engine Match (3.2L SC V6)"
       },
       {
         "make": "Mercedes-Benz",
@@ -7645,15 +7645,15 @@
     "FORD_BARRA": [
       {
         "make": "Ford",
-        "model": "Falcon XR6 Turbo",
+        "model": "Falcon (BA/BF/FG)",
         "years": "2002–2016",
-        "notes": "Engine Match (Barra 240T/270T/310T)"
+        "notes": "XR6 Turbo trim - Engine Match (Barra 240T/270T/310T)"
       },
       {
         "make": "Ford",
-        "model": "Territory Turbo",
+        "model": "Territory (SY)",
         "years": "2006–2011",
-        "notes": "Engine Match (Barra Turbo)"
+        "notes": "Turbo trim - Engine Match (Barra Turbo)"
       },
       {
         "make": "FPV",
