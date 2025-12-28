@@ -959,6 +959,29 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Classify a vehicle into broad classes for safety filtering of spares
+    function classifyVehicleCategory(entry) {
+        const make = (entry.make || "").toLowerCase();
+        const name = ((entry.model || entry.name || "") + " " + (entry.notes || "")).toLowerCase();
+
+        // Truck / SUV / Crossover keywords
+        const suvKeywords = [
+            "cr-v", "crv", "rav4", "4runner", "highlander", "pilot", "passport", "mdx", "rdx", "xc", "cx-", "cx5", "cx-5", "cx9", "cx-9",
+            "forester", "outback", "ascent", "tribeca", "encore", "enclave", "traverse", "equinox", "terrain", "trailblazer", "blazer",
+            "escape", "explorer", "expedition", "edge", "bronco", "bronco sport", "navigator", "aviator",
+            "cherokee", "grand cherokee", "wagoneer", "wrangler", "renegade", "compass", "gladiator",
+            "tahoe", "suburban", "yukon", "sequoia", "land cruiser", "landcruiser", "prado",
+            "tacoma", "tundra", "f-", "f150", "f-150", "f250", "f-250", "silverado", "sierra", "ram",
+            "durango", "journey", "pacifica", "sienna", "odyssey", "pilot", "pathfinder", "armada", "qx", "qx4",
+            "x1", "x2", "x3", "x4", "x5", "x6", "x7", "gle", "gls", "g-class", "g550", "glc", "glb", "gla",
+            "q3", "q5", "q7", "q8", "sq5", "sq7", "sq8"
+        ];
+
+        const isSUV = suvKeywords.some(k => name.includes(k)) || make === "jeep" || make === "gmc" && name.includes("jimmy");
+        if (isSUV) return "Truck/SUV";
+        return "Car";
+    }
+
     function displaySpareTireInfo(groupId, make, model, vehicleType) {
         if (!groupId) return;
         
@@ -971,19 +994,21 @@ document.addEventListener("DOMContentLoaded", () => {
             return !(v.make === make && (vName === model || model.includes(vName)));
         });
 
-        // Safety Filter: Vehicle Type
+        // Safety Filter: Vehicle Type (fallback to classifier if data mislabeled)
+        const targetType = vehicleType || classifyVehicleCategory({ make, model });
         let safetyWarning = "";
-        if (vehicleType) {
-            const originalCount = otherVehicles.length;
-            const safeVehicles = otherVehicles.filter(v => v.type === vehicleType);
-            
-            if (safeVehicles.length < originalCount) {
-                safetyWarning = `<div style="margin-top:0.5rem; padding:0.5rem; background:rgba(255, 152, 0, 0.1); border-left:3px solid #ff9800; font-size:0.9em;">
-                    <strong>⚠️ Safety Check:</strong> We hid ${originalCount - safeVehicles.length} donors because they are a different vehicle class (e.g., Truck vs Car). 
-                    Using a spare from a different class can be dangerous due to load rating and tire diameter differences.
-                </div>`;
-                otherVehicles = safeVehicles;
-            }
+        const originalCount = otherVehicles.length;
+        const safeVehicles = otherVehicles.filter(v => {
+            const donorType = v.type || classifyVehicleCategory(v);
+            return donorType === targetType;
+        });
+
+        if (safeVehicles.length < originalCount) {
+            safetyWarning = `<div style="margin-top:0.5rem; padding:0.5rem; background:rgba(255, 152, 0, 0.1); border-left:3px solid #ff9800; font-size:0.9em;">
+                <strong>⚠️ Safety Check:</strong> We hid ${originalCount - safeVehicles.length} donors because they are a different vehicle class (e.g., Truck vs Car). 
+                Using a spare from a different class can be dangerous due to load rating and tire diameter differences.
+            </div>`;
+            otherVehicles = safeVehicles;
         }
 
         let vehicleListHtml = "";
