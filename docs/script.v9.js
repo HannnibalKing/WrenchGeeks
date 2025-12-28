@@ -1411,21 +1411,24 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log('Using local fallback counter');
             let localCount = localStorage.getItem('wg_visit_count');
             if (!localCount) {
-                // Start at a realistic "legacy" number if no data exists
-                localCount = 142857; 
-            } else {
-                localCount = parseInt(localCount) + 1;
+                // Fallback to the last known real count from the server if local storage is empty
+                localCount = 73; 
             }
-            localStorage.setItem('wg_visit_count', localCount);
+            // We don't increment locally to avoid drift, just show what we have
             updateCounter(localCount);
         };
 
         // Try Primary API (counterapi.dev)
-        // Changed namespace to 'wrenchgeeks_v3' to ensure fresh start if old one is stuck
-        fetch('https://api.counterapi.dev/v1/wrenchgeeks_v3/visits/up')
+        // Using original 'wrenchgeeks' namespace which has historical real data
+        fetch('https://api.counterapi.dev/v1/wrenchgeeks/visits/up')
             .then(res => {
                 if (!res.ok) throw new Error('Primary counter failed');
                 return res.json();
+            })
+            .then(data => {
+                updateCounter(data.count);
+                // Save successful count to local storage for future fallbacks
+                localStorage.setItem('wg_visit_count', data.count);
             })
             .then(data => {
                 updateCounter(data.count);
