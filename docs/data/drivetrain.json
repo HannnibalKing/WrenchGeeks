@@ -157,10 +157,17 @@
       ],
       "compatibility": [
         {
-          "make": "Dodge / Chrysler",
+          "make": "Dodge",
           "models": [
-            { "name": "Charger / Challenger / 300 (5-Speed)", "years": "2005-2014", "notes": "Common Failure" },
+            { "name": "Charger (5-Speed)", "years": "2005-2014", "notes": "Common Failure" },
+            { "name": "Challenger (5-Speed)", "years": "2008-2014", "notes": "Common Failure" },
             { "name": "Sprinter Van", "years": "2003-2006", "notes": "Common Failure" }
+          ]
+        },
+        {
+          "make": "Chrysler",
+          "models": [
+            { "name": "300 (5-Speed)", "years": "2005-2014", "notes": "Common Failure" }
           ]
         },
         {
