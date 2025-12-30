@@ -1,6 +1,36 @@
 {
   "parts": [
     {
+      "id": "maserati_f1_pump",
+      "category": "Drivetrain & Transmission",
+      "name": "Maserati F1 Transmission Pump Motor",
+      "description": "The hydraulic pump motor for the Cambiocorsa F1 transmission is identical to the Alfa Romeo Selespeed motor. Swap just the electric motor to save thousands.",
+      "specs": [
+        "Source: Alfa Romeo 156 Selespeed / Fiat Stilo Abarth",
+        "Part: Electric Motor Only (Magneti Marelli)",
+        "Savings: ~80-90%"
+      ],
+      "compatibility_smart": {
+        "platforms": ["MASERATI_M138"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "zf_8hp_service_kit",
+      "category": "Drivetrain & Transmission",
+      "name": "ZF 8HP Transmission Service Kit",
+      "description": "Maserati charges a premium for the transmission pan and fluid for the ZF 8HP. Use the standard ZF service kit for BMW or Dodge applications (check specific transmission code, e.g., 8HP70).",
+      "specs": [
+        "Transmission: ZF 8HP (8HP50 / 8HP70)",
+        "Includes: Pan (with filter), Bolts, Lifeguard Fluid",
+        "Source: ZF Aftermarket / BMW / Dodge"
+      ],
+      "compatibility_smart": {
+        "platforms": ["MASERATI_M156", "MASERATI_M157", "MASERATI_M161"]
+      },
+      "universal_alternatives": []
+    },
+    {
       "id": "miata_shifter_rebuild",
       "category": "Drivetrain & Transmission",
       "name": "Miata Shifter Rebuild Kit",

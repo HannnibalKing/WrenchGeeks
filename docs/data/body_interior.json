@@ -63,6 +63,35 @@
       "universal_alternatives": []
     },
     {
+      "id": "maserati_ghibli_window_switch",
+      "category": "Body & Interior",
+      "name": "Maserati Ghibli/QP Window Master Switch",
+      "description": "The main window switch cluster in the Maserati Ghibli and Quattroporte VI is shared with the Dodge Charger and Chrysler 300.",
+      "specs": [
+        "Source: Chrysler / Dodge",
+        "Part Number: Check Mopar equivalents",
+        "Savings: ~85%"
+      ],
+      "compatibility_smart": {
+        "platforms": ["MASERATI_M157", "MASERATI_M156", "MASERATI_M161"]
+      },
+      "universal_alternatives": []
+    },
+    {
+      "id": "maserati_start_button",
+      "category": "Body & Interior",
+      "name": "Maserati Start/Stop Button",
+      "description": "The 'Keyless Go' start button in modern Maseratis is a standard Jeep/Dodge part. If the lettering wears off, swap it with a Jeep Grand Cherokee button.",
+      "specs": [
+        "Source: Jeep Grand Cherokee (WK2)",
+        "Fitment: Direct Swap"
+      ],
+      "compatibility_smart": {
+        "platforms": ["MASERATI_M157", "MASERATI_M161"]
+      },
+      "universal_alternatives": []
+    },
+    {
       "id": "g8_gxp_diffuser",
       "category": "Body & Interior",
       "name": "G8 GXP Rear Diffuser",

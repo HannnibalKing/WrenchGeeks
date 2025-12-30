@@ -542,6 +542,12 @@
         "notes": "All trims (SXT/GT/R/T/Scat Pack/Hellcat/Demon) - Platform Mate (LA)"
       },
       {
+        "make": "Dodge",
+        "model": "Magnum",
+        "years": "2005–2008",
+        "notes": "Wagon Variant (LX)"
+      },
+      {
         "make": "Chrysler",
         "model": "300 (LX - 1st Gen)",
         "years": "2005–2010",
@@ -1070,6 +1076,100 @@
         "model": "Mustang (S550 - Gen 6 - Shelby GT350)",
         "years": "2015–2020",
         "notes": "Shelby GT350 performance trim - flat-plane crank 5.2L"
+      }
+    ],
+    "FORD_CD3": [
+      {
+        "make": "Ford",
+        "model": "Fusion (Gen 1)",
+        "years": "2006–2012",
+        "notes": "Mazda6 Based"
+      },
+      {
+        "make": "Mercury",
+        "model": "Milan",
+        "years": "2006–2011",
+        "notes": "Platform Mate"
+      },
+      {
+        "make": "Lincoln",
+        "model": "MKZ (Gen 1)",
+        "years": "2007–2012",
+        "notes": "Originally Zephyr"
+      },
+      {
+        "make": "Lincoln",
+        "model": "Zephyr",
+        "years": "2006",
+        "notes": "One Year Only"
+      },
+      {
+        "make": "Ford",
+        "model": "Edge (Gen 1)",
+        "years": "2007–2014",
+        "notes": "Crossover Variant"
+      },
+      {
+        "make": "Lincoln",
+        "model": "MKX (Gen 1)",
+        "years": "2007–2015",
+        "notes": "Luxury Edge"
+      },
+      {
+        "make": "Mazda",
+        "model": "Mazda6 (US)",
+        "years": "2003–2008",
+        "notes": "Platform Donor"
+      },
+      {
+        "make": "Mazda",
+        "model": "CX-9 (Gen 1)",
+        "years": "2007–2015",
+        "notes": "Stretched CD3"
+      }
+    ],
+    "FORD_CD4": [
+      {
+        "make": "Ford",
+        "model": "Fusion (Gen 2)",
+        "years": "2013–2020",
+        "notes": "Global Platform"
+      },
+      {
+        "make": "Ford",
+        "model": "Mondeo (Mk5)",
+        "years": "2014–2022",
+        "notes": "Euro Twin"
+      },
+      {
+        "make": "Lincoln",
+        "model": "MKZ (Gen 2)",
+        "years": "2013–2020",
+        "notes": "Luxury Variant"
+      },
+      {
+        "make": "Ford",
+        "model": "Edge (Gen 2)",
+        "years": "2015–2024",
+        "notes": "CD4 Crossover"
+      },
+      {
+        "make": "Lincoln",
+        "model": "MKX (Gen 2)",
+        "years": "2016–2018",
+        "notes": "Renamed Nautilus"
+      },
+      {
+        "make": "Lincoln",
+        "model": "Nautilus",
+        "years": "2019–2023",
+        "notes": "Updated MKX"
+      },
+      {
+        "make": "Lincoln",
+        "model": "Continental",
+        "years": "2017–2020",
+        "notes": "Stretched CD4"
       }
     ],
     "DODGE_VIPER": [
@@ -2154,10 +2254,22 @@
         "notes": "Bigger & Softer"
       },
       {
+        "make": "Lexus",
+        "model": "ES300/330 (XV30)",
+        "years": "2001–2006",
+        "notes": "Luxury Camry"
+      },
+      {
         "make": "Toyota",
         "model": "Camry (XV40 - Gen 6)",
         "years": "2006–2011",
         "notes": "Hybrid Intro"
+      },
+      {
+        "make": "Lexus",
+        "model": "ES350 (XV40)",
+        "years": "2006–2012",
+        "notes": "V6 Standard"
       },
       {
         "make": "Toyota",
@@ -2166,10 +2278,52 @@
         "notes": "Sharp Edges"
       },
       {
+        "make": "Lexus",
+        "model": "ES350/300h (XV60)",
+        "years": "2012–2018",
+        "notes": "Hybrid Option"
+      },
+      {
         "make": "Toyota",
         "model": "Camry (XV70 - Gen 8)",
         "years": "2017–Present",
         "notes": "TNGA Sporty"
+      },
+      {
+        "make": "Toyota",
+        "model": "Avalon (Gen 3)",
+        "years": "2005–2012",
+        "notes": "Stretched Camry"
+      },
+      {
+        "make": "Toyota",
+        "model": "Avalon (Gen 4)",
+        "years": "2012–2018",
+        "notes": "Flagship Sedan"
+      },
+      {
+        "make": "Toyota",
+        "model": "Highlander (Gen 1)",
+        "years": "2001–2007",
+        "notes": "Camry SUV"
+      },
+      {
+        "make": "Toyota",
+        "model": "Highlander (Gen 2)",
+        "years": "2008–2013",
+        "notes": "Larger K Platform"
+      },
+      {
+        "make": "Lexus",
+        "model": "RX330/350 (Gen 2)",
+        "years": "2003–2008",
+        "notes": "Luxury Crossover"
+      },
+      {
+        "make": "Toyota",
+        "model": "Sienna (Gen 2)",
+        "years": "2004–2010",
+        "notes": "Minivan K Platform"
       }
     ],
     "HONDA_ACCORD_CLASSIC": [
@@ -3734,6 +3888,92 @@
         "notes": "Convertible"
       }
     ],
+    "MASERATI_M138": [
+      {
+        "make": "Maserati",
+        "model": "Coupe (4200 GT)",
+        "years": "2001–2007",
+        "notes": "Ferrari F136 V8"
+      },
+      {
+        "make": "Maserati",
+        "model": "Spyder (4200 GT)",
+        "years": "2001–2007",
+        "notes": "Convertible"
+      }
+    ],
+    "MASERATI_M139": [
+      {
+        "make": "Maserati",
+        "model": "Quattroporte V",
+        "years": "2003–2012",
+        "notes": "Pininfarina Design"
+      }
+    ],
+    "MASERATI_M156": [
+      {
+        "make": "Maserati",
+        "model": "Quattroporte VI",
+        "years": "2013–Present",
+        "notes": "Shared with Ghibli"
+      }
+    ],
+    "MASERATI_M157": [
+      {
+        "make": "Maserati",
+        "model": "Ghibli III",
+        "years": "2013–Present",
+        "notes": "Baby Quattroporte"
+      }
+    ],
+    "MASERATI_M161": [
+      {
+        "make": "Maserati",
+        "model": "Levante",
+        "years": "2016–Present",
+        "notes": "SUV Platform"
+      }
+    ],
+    "MASERATI_M138": [
+      {
+        "make": "Maserati",
+        "model": "Coupe (4200 GT)",
+        "years": "2001-2007"
+      },
+      {
+        "make": "Maserati",
+        "model": "Spyder (4200 GT)",
+        "years": "2001-2007"
+      }
+    ],
+    "MASERATI_M139": [
+      {
+        "make": "Maserati",
+        "model": "Quattroporte V",
+        "years": "2003-2012"
+      }
+    ],
+    "MASERATI_M156": [
+      {
+        "make": "Maserati",
+        "model": "Quattroporte VI",
+        "years": "2013-Present"
+      }
+    ],
+    "MASERATI_M157": [
+      {
+        "make": "Maserati",
+        "model": "Ghibli III",
+        "years": "2013-Present"
+      }
+    ],
+    "MASERATI_M161": [
+      {
+        "make": "Maserati",
+        "model": "Levante",
+        "years": "2016-Present"
+      }
+    ],
     "LAND_ROVER_L322": [
       {
         "make": "Land Rover",
@@ -4396,6 +4636,12 @@
         "notes": "Evolution"
       },
       {
+        "make": "Acura",
+        "model": "ILX (Gen 1)",
+        "years": "2013–2022",
+        "notes": "Luxury Civic (9th Gen Based)"
+      },
+      {
         "make": "Honda",
         "model": "Civic (FC/FK - 10th Gen)",
         "years": "2016–2021",
@@ -4565,9 +4811,45 @@
       },
       {
         "make": "Infiniti",
-        "model": "Q50 / Q60",
-        "years": "2014–Present",
-        "notes": "Platform Mate"
+        "model": "Q50",
+        "years": "2014–2023",
+        "notes": "Modern FM Sedan"
+      },
+      {
+        "make": "Infiniti",
+        "model": "Q60",
+        "years": "2014–2022",
+        "notes": "Modern FM Coupe"
+      },
+      {
+        "make": "Infiniti",
+        "model": "FX35/FX45 (S50)",
+        "years": "2003–2008",
+        "notes": "The Bionic Cheetah"
+      },
+      {
+        "make": "Infiniti",
+        "model": "FX35/FX50 (S51)",
+        "years": "2009–2013",
+        "notes": "Updated FM SUV"
+      },
+      {
+        "make": "Infiniti",
+        "model": "QX70",
+        "years": "2014–2017",
+        "notes": "Renamed FX"
+      },
+      {
+        "make": "Infiniti",
+        "model": "EX35/EX37",
+        "years": "2008–2013",
+        "notes": "Compact FM Crossover"
+      },
+      {
+        "make": "Infiniti",
+        "model": "QX50 (Gen 1)",
+        "years": "2014–2017",
+        "notes": "Renamed EX"
       }
     ],
     "SUBARU_IMPREZA_WRX": [
@@ -5058,6 +5340,12 @@
         "model": "Golf (A5 - Mk5)",
         "years": "2003-2008",
         "notes": "Rabbit name returned briefly in NA."
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Tiguan (Gen 1)",
+        "years": "2007–2016",
+        "notes": "PQ35 Platform SUV"
       }
     ],
     "VOLKSWAGEN_GOLF__A6___MK6_": [
@@ -5074,6 +5362,18 @@
         "model": "Golf (A7 - Mk7)",
         "years": "2012-2020",
         "notes": "MQB platform, significant weight reduction."
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Tiguan (Gen 2)",
+        "years": "2016–Present",
+        "notes": "MQB Platform SUV"
+      },
+      {
+        "make": "Volkswagen",
+        "model": "Atlas",
+        "years": "2017–Present",
+        "notes": "MQB Platform Large SUV"
       }
     ],
     "VOLKSWAGEN_GOLF__A8___MK8_": [

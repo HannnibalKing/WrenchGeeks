@@ -1,0 +1,177 @@
+[
+  {
+    "id": "maserati_platform_codes",
+    "category": "Platform Guide",
+    "name": "Maserati Internal Platform Codes",
+    "description": "Reference list of Maserati internal project codes for identifying parts compatibility.",
+    "specs": [
+      "M138: Coupe / Spyder (4200 GT) (2001-2007)",
+      "M139: Quattroporte V (2003-2012)",
+      "M145: GranTurismo / GranCabrio (2007-2019)",
+      "M156: Quattroporte VI (2013-Present)",
+      "M157: Ghibli III (2013-Present)",
+      "M161: Levante (2016-Present)",
+      "M149: MC20 (2020-Present)"
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M138", "MASERATI_M139", "MASERATI_M145", "MASERATI_M156", "MASERATI_M157", "MASERATI_M161"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_chrysler_uconnect",
+    "category": "Interior & Electrical",
+    "name": "Maserati Touch Control (MTC) / Uconnect",
+    "description": "The infotainment system in the Ghibli (M157), Quattroporte VI (M156), and Levante (M161) is a re-skinned Chrysler Uconnect 8.4 system.",
+    "specs": [
+      "Part: 8.4-inch Touchscreen Unit",
+      "Source: Chrysler 300, Dodge Charger, Jeep Grand Cherokee",
+      "Notes: While the hardware is Panasonic/Harman and shared, the firmware is Maserati-specific. You cannot simply plug a Dodge unit in without reprogramming/unlocking, but screens and digitizers are often interchangeable for repairs."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M156", "MASERATI_M157", "MASERATI_M161", "CHRYSLER_LX_LD"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_window_switches_modern",
+    "category": "Interior & Electrical",
+    "name": "Window & Mirror Switches (Ghibli/Levante)",
+    "description": "Master window switches and mirror controls in M156/M157/M161 are direct parts bin shares from the Chrysler/Dodge lineup.",
+    "specs": [
+      "Part: Master Window Switch",
+      "Source: Dodge Charger (2011+), Chrysler 300, Jeep Grand Cherokee",
+      "Maserati Tax: ~$350+ from dealer",
+      "Dodge Price: ~$40-$80 used/new",
+      "Notes: Look for the version with power folding mirrors if your Maserati has them."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M156", "MASERATI_M157", "MASERATI_M161", "DODGE_CHARGER", "JEEP_GRAND_CHEROKEE"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_granturismo_switches",
+    "category": "Interior & Electrical",
+    "name": "GranTurismo Window Switches",
+    "description": "The M145 GranTurismo uses window switches that are shared with the Alfa Romeo MiTo and some Fiat models, and surprisingly, the Dodge Dart (later years) / Chrysler 200.",
+    "specs": [
+      "Part: Single Window Switch / Mirror Knob",
+      "Source: Alfa Romeo MiTo, Fiat Punto, Dodge Dart (2013+)",
+      "Notes: The 'sticky button' issue common in Maseratis can be fixed by swapping the plastic covers from the cheaper Fiat/Dodge parts."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M145", "ALFA_ROMEO_MITO", "DODGE_DART"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_zf_8hp",
+    "category": "Drivetrain",
+    "name": "ZF 8HP Transmission Parts",
+    "description": "Modern Maseratis use the ZF 8HP70 or 8HP50 transmission. Service parts are identical to BMW, Dodge, and Jaguar.",
+    "specs": [
+      "Part: Transmission Pan / Filter Kit",
+      "Source: ZF Aftermarket (BMW/Dodge fitment)",
+      "Maserati Price: ~$500 for 'Maserati' branded pan",
+      "ZF Price: ~$100 for OEM ZF pan",
+      "Fluid: ZF Lifeguard 8 (Shell L12108) - same as BMW ATF 3+, Mopar 8 & 9 Speed ATF."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M156", "MASERATI_M157", "MASERATI_M161", "BMW_F_SERIES", "DODGE_CHARGER"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_start_stop_button",
+    "category": "Interior & Electrical",
+    "name": "Engine Start/Stop Button",
+    "description": "The 'Engine Start' button in the Ghibli and Levante is the same part used in the Jeep Grand Cherokee and Chrysler 300, just with a different bezel or cap sometimes.",
+    "specs": [
+      "Part: Keyless Go Start Button",
+      "Source: Jeep Grand Cherokee (WK2), Chrysler 300",
+      "Notes: If the switch fails, the Mopar part is a direct functional replacement."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M156", "MASERATI_M157", "MASERATI_M161", "JEEP_WK2"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_hvac_actuators",
+    "category": "Interior & Electrical",
+    "name": "HVAC Blend Door Actuators",
+    "description": "The clicking noise in your Maserati dashboard is likely a failed blend door actuator. These are standard Valeo or Bosch parts used across the FCA (Stellantis) lineup.",
+    "specs": [
+      "Part: Blend Door Actuator",
+      "Source: Dodge Charger, Chrysler 300, Jeep Grand Cherokee",
+      "Maserati Price: ~$100+",
+      "Dodge Price: ~$30",
+      "Notes: Verify the part number on the sticker (e.g., Bosch number) to confirm the rotation range."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M156", "MASERATI_M157", "MASERATI_M161"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_4200_f1_pump",
+    "category": "Drivetrain",
+    "name": "Cambiocorsa / F1 Pump (M138)",
+    "description": "The hydraulic pump for the Cambiocorsa transmission in the 4200 GT / Spyder is a Magneti Marelli part shared with Ferrari and Alfa Romeo.",
+    "specs": [
+      "Part: Selespeed / F1 Pump Electric Motor",
+      "Source: Alfa Romeo 156 Selespeed, Fiat Stilo Abarth",
+      "Notes: You can often replace just the electric motor (from an Alfa Selespeed pump) rather than the entire hydraulic assembly, saving thousands."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M138", "ALFA_ROMEO_156", "FERRARI_360"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_biturbo_parts",
+    "category": "Vintage",
+    "name": "Biturbo Era Interchange",
+    "description": "Parts for the Biturbo era (Biturbo, 222, 430, Spyder) are often shared with other Italian cars of the 80s.",
+    "specs": [
+      "Alternator: Often Bosch, shared with BMW E30 or similar era European cars.",
+      "Starter: Bosch, shared with BMW/Alfa.",
+      "Fuse Box: Known weak point, uses standard ceramic fuses.",
+      "Steering Rack: Some models used a rack similar to the BMW E21 (check mounting)."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_BITURBO"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_f160_oil_filter",
+    "category": "Engine Mechanical",
+    "name": "V6 (F160) Oil Filter",
+    "description": "The oil filter for the Maserati V6 (Ghibli/Levante) is specific, but the housing design is similar to other FCA Pentastar applications. However, DO NOT use a Pentastar filter blindly.",
+    "specs": [
+      "Part: Oil Filter Cartridge",
+      "Notes: While the engine block is cast by Chrysler, the internals are Ferrari. Stick to the OEM or high-quality aftermarket (UFI, Mahle) specified for Maserati. The 'Maserati Tax' here is real but risking a $20k engine for a $10 filter is not recommended."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M157", "MASERATI_M161"]
+    },
+    "universal_alternatives": []
+  },
+  {
+    "id": "maserati_granturismo_air_compressor",
+    "category": "Suspension",
+    "name": "Suspension Air Compressor (Levante)",
+    "description": "The air suspension compressor on the Levante is a WABCO unit.",
+    "specs": [
+      "Part: Air Suspension Compressor",
+      "Source: Jeep Grand Cherokee (WK2), Ram 1500",
+      "Notes: The WABCO unit is identical. You might need to swap the electrical connector or mounting bracket, but the pump itself is the same."
+    ],
+    "compatibility_smart": {
+      "platforms": ["MASERATI_M161", "JEEP_WK2", "RAM_1500"]
+    },
+    "universal_alternatives": []
+  }
+]

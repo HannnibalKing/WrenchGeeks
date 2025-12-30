@@ -1,6 +1,21 @@
 {
   "parts": [
     {
+      "id": "levante_air_compressor",
+      "category": "Suspension & Steering",
+      "name": "Maserati Levante Air Suspension Compressor",
+      "description": "The air suspension compressor for the Maserati Levante is a standard WABCO unit shared with the Jeep Grand Cherokee and Ram 1500.",
+      "specs": [
+        "Manufacturer: WABCO",
+        "Source: Jeep Grand Cherokee (WK2) / Ram 1500",
+        "Savings: ~60-70%"
+      ],
+      "compatibility_smart": {
+        "platforms": ["MASERATI_M161"]
+      },
+      "universal_alternatives": []
+    },
+    {
       "id": "bmw_e36_steering_rack",
       "category": "Suspension & Steering",
       "name": "BMW E36 Steering Rack",

@@ -309,8 +309,26 @@ const WRENCHGEEKS_KB_DATA = [
     "notes": "If a screw head is slightly stripped, wet the tip of your screwdriver (saliva or water) and dip it into fine dirt, sand, or valve grinding compound. The grit fills the gaps between the tool and the screw head, providing massive extra grip to break it loose without drilling.",
     "matchLevel": "Pro Tip"
   },
-
-
+  {
+    "category": "hacks",
+    "partName": "Safety: Brake Cleaner & Welding (DEADLY)",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "NEVER weld on metal that has been cleaned with Chlorinated Brake Cleaner (usually Red bottle). The UV light from the welding arc turns the residue into Phosgene Gas (a WWI nerve agent). It can kill you or cause permanent lung damage instantly. Use Acetone or Non-Chlorinated cleaner for weld prep.",
+    "matchLevel": "Critical Safety"
+  },
+  {
+    "category": "hacks",
+    "partName": "Solvents: What NOT to use on Plastic/Rubber",
+    "compatibleVehicles": [
+      "Universal"
+    ],
+    "years": "Universal",
+    "notes": "1. ACETONE: Instantly melts ABS plastic (interior trim, sensor housings). 2. BRAKE CLEANER: Swells and destroys rubber seals, o-rings, and boots. 3. GASOLINE: Dries out rubber, causing cracking. USE: Silicone spray or soapy water for rubber. Use Isopropyl Alcohol or dedicated interior cleaner for plastics.",
+    "matchLevel": "Pro Tip"
+  },
   {
     "category": "hacks",
     "partName": "Hack: The 'Acetone & ATF' Penetrating Fluid",
@@ -323,72 +341,13 @@ const WRENCHGEEKS_KB_DATA = [
   },
   {
     "category": "hacks",
-    "partName": "Hack: Stripped Screw/Bolt Removal (Rubber Band Method)",
+    "partName": "Cleaning: Aluminum vs. Oven Cleaner",
     "compatibleVehicles": [
-      "Universal"
+      "Aluminum Heads",
+      "Intakes"
     ],
     "years": "Universal",
-    "notes": "If screw head is stripped: 1. Place wide rubber band over stripped head. 2. Press screwdriver firmly through rubber into screw. 3. Rubber fills gaps, provides grip. 4. Slowly back it out. Works for slightly stripped screws. For severe stripping: use locking pliers (Vise-Grips), steel wool trick, or left-hand drill bit.",
-    "matchLevel": "Pro Tip"
-  },
-  {
-    "category": "hacks",
-    "partName": "Hack: Steel Wool Trick for Rounded Bolts",
-    "compatibleVehicles": [
-      "Universal"
-    ],
-    "years": "Universal",
-    "notes": "Bolt head rounded off? Layer steel wool (#0000 fine) on top of rounded bolt, then apply wrench/socket firmly on top. Wool fibers grip into rounded edges, providing traction. Twist slowly—don't rush. Often works where nothing else will. Keep pulling, don't let socket slip off.",
-    "matchLevel": "Pro Tip"
-  },
-  {
-    "category": "hacks",
-    "partName": "Hack: Heat & Tap Method for Stuck Bolts",
-    "compatibleVehicles": [
-      "Universal"
-    ],
-    "years": "Universal",
-    "notes": "Bolt won't budge? 1. Heat bolt with heat gun (not direct flame). 2. Heat expands metal, breaks rust bond. 3. Gently tap socket onto bolt with hammer. 4. Wait for slight cooling, then twist. Heat cycle weakens corrosion. Never use on plastic-handled tools (they melt)—use metal socket/wrench only.",
-    "matchLevel": "Pro Tip"
-  },
-  {
-    "category": "hacks",
-    "partName": "Hack: Pre-Spray Before Disassembly (Time-Saver)",
-    "compatibleVehicles": [
-      "Universal"
-    ],
-    "years": "Universal",
-    "notes": "Spray all bolts with penetrating oil (PB Blaster, WD-40, or homemade Acetone+ATF mix) 30 minutes BEFORE you start disassembly. Let it soak. Dramatically reduces removal time, especially on rusty fasteners. For severely rusted bolts: soak overnight. This prevents stripped bolts and saves 20+ minutes of frustration.",
-    "matchLevel": "Pro Tip"
-  },
-  {
-    "category": "hacks",
-    "partName": "Hack: Organized Fastener Removal (No Lost Bolts)",
-    "compatibleVehicles": [
-      "Universal"
-    ],
-    "years": "Universal",
-    "notes": "When disassembling complex parts: 1. Use ziplock bags labeled with location/size. 2. Use magnetic tray with partitions. 3. Take phone photos of bolt locations before removal. 4. Mark hoses with tape + marker (shows routing before disconnect). Saves 30+ minutes on reassembly and prevents wrong fasteners going in wrong holes.",
-    "matchLevel": "Pro Tip"
-  },
-  {
-    "category": "hacks",
-    "partName": "Hack: Vinegar Soak for Light Rust",
-    "compatibleVehicles": [
-      "Fasteners", "Hardware"
-    ],
-    "years": "Universal",
-    "notes": "Light surface rust on fasteners? Soak in white vinegar (equal parts vinegar + water) overnight. Phosphoric acid eats rust. Works great for washers, bolts, old hardware. Rinse and dry immediately. For tougher rust: use Coca-Cola (phosphoric acid). Not as fast as heat, but safe and no fumes.",
-    "matchLevel": "Pro Tip"
-  },
-  {
-    "category": "hacks",
-    "partName": "Hack: Oil Color Tells the Story",
-    "compatibleVehicles": [
-      "Universal"
-    ],
-    "years": "Universal",
-    "notes": "Check your dipstick: Clear/honey = good oil. Black = oil change overdue. Milky/gray = coolant mixing (bad—head gasket?). Brown sludge = long neglect. Oil that smells burnt = excessive heat (low oil level or cooling issue). Oil in coolant = worse (engine internals mixing). These colors tell if engine is healthy or headed for trouble.",
+    "notes": "NEVER use oven cleaner (Sodium Hydroxide / Lye) to clean aluminum parts. It reacts violently, turning the aluminum black and dissolving it. Use 'Aluminum Safe' degreasers (like Simple Green Aircraft or specific aluminum brighteners) or a brass wire brush.",
     "matchLevel": "Pro Tip"
   },
   {
@@ -398,7 +357,7 @@ const WRENCHGEEKS_KB_DATA = [
       "Universal"
     ],
     "years": "Universal",
-    "notes": "If bolt snaps off flush: 1. PREP: Clean area with Acetone or non-chlorinated cleaner (NEVER chlorinated brake cleaner—see Safety section). 2. Place washer over hole. 3. Weld washer to broken stud (heat breaks rust bond). 4. Weld nut to washer. 5. Cool slightly, unscrew. Heat cycle is the secret. Ventilate well. See Safety section for cleaner rules.",
+    "notes": "If a bolt snaps off flush: 1. Place a washer over the hole. 2. Weld the washer to the broken bolt stud (the heat helps break the rust bond). 3. Weld a nut to the washer. 4. Let it cool slightly (not fully). 5. Unscrew it. The heat cycle is the secret sauce.",
     "matchLevel": "Pro Tip"
   },
   {
@@ -454,6 +413,38 @@ const WRENCHGEEKS_KB_DATA = [
     "severity": "High",
     "related_parts": [
       "ls_accessory_drive"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "The Maserati Tax Guide: Dodge Parts in Italian Suits",
+    "content": "Owning a modern Maserati (Ghibli, Quattroporte, Levante) doesn't have to bankrupt you. Since the Fiat-Chrysler merger, these cars share a massive amount of DNA with Dodge, Jeep, and Chrysler. Knowing which parts cross-reference can save you 80-90%.\n\n**The Golden Rule:** Never buy a part from a Maserati dealer without checking the part number on the sticker first. If it says 'Mopar', 'Valeo', or 'Bosch', you can buy it cheaper elsewhere.\n\n**Key Interchanges:**\n*   **Window Switches:** The master switch in the Ghibli/QP is physically identical to the Dodge Charger/Chrysler 300. The buttons in the GranTurismo are from the Alfa Romeo MiTo/Dodge Dart.\n*   **Infotainment:** The 'Maserati Touch Control' is just a reskinned Chrysler Uconnect 8.4 system. While the firmware is specific, the screen hardware is often shared.\n*   **Start Button:** The 'Keyless Go' button is a standard Jeep Grand Cherokee part.\n*   **HVAC Actuators:** The clicking noise in your dash? That's a $30 Dodge blend door actuator, not a $400 Maserati part.\n*   **Transmission:** The ZF 8HP is bulletproof, but Maserati charges a fortune for service. Buy the pan/filter kit for a BMW or Dodge (ZF 8HP70/50) for a fraction of the price.",
+    "severity": "Info",
+    "related_parts": [
+      "maserati_window_switches",
+      "maserati_start_button",
+      "maserati_hvac_actuator",
+      "zf_8hp_service_kit"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Maserati F1 Transmission Pump Hack (4200 GT / Spyder)",
+    "content": "The 'Cambiocorsa' F1 transmission in the 4200 GT and Spyder is a Magneti Marelli system. The most common failure is the hydraulic pump motor burning out.\n\n**The Fix:**\n*   **Maserati Dealer:** Will sell you the entire pump assembly for ~$2,500.\n*   **The Hack:** The electric motor itself is identical to the one used in the **Alfa Romeo 156 Selespeed** and **Fiat Stilo Abarth**. You can buy just the motor for ~$300-400 and swap it onto your existing pump head. It's a direct fit and saves you thousands.",
+    "severity": "High",
+    "related_parts": [
+      "maserati_f1_pump",
+      "alfa_selespeed_motor"
+    ]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Levante Air Suspension Compressor",
+    "content": "The Maserati Levante rides on air suspension that is prone to compressor failure. The unit is made by WABCO.\n\n**Interchange:**\n*   This same WABCO compressor is used in the **Jeep Grand Cherokee (WK2)** and **Ram 1500**. \n*   Don't pay the Trident tax. Order the Jeep part or a WABCO aftermarket replacement for the Grand Cherokee.",
+    "severity": "Medium",
+    "related_parts": [
+      "levante_air_compressor",
+      "jeep_wk2_compressor"
     ]
   },
   {
@@ -632,36 +623,6 @@ const WRENCHGEEKS_KB_DATA = [
     "title": "Things to Look Out For (Across All Vehicle Types)",
     "content": "Rust around suspension mounts \u2014 catastrophic failure risk. Cracked or swollen brake hoses \u2014 they can burst under pressure. Loose or missing wheel fasteners \u2014 wheels can walk off. Fuel line seepage or damp spots \u2014 fire hazard. Battery corrosion or bulging \u2014 risk of acid leaks or explosion. Worn engine/transmission mounts \u2014 can cause sudden shifts or binding. Rodent damage to wiring \u2014 especially in parked or stored vehicles. Old or brittle vacuum lines \u2014 cause stalling, surging, or lean conditions. Loose heat shields or exhaust hangers \u2014 can drop or rattle into moving parts. Tire dry rot \u2014 even if tread looks good.",
     "severity": "Critical"
-  },
-  {
-    "category": "safety",
-    "title": "DEADLY: Brake Cleaner & Welding",
-    "content": "NEVER weld on metal cleaned with Chlorinated Brake Cleaner (usually red bottle). The UV light from welding arc converts residue into Phosgene Gas (WWI nerve agent). Causes death or permanent lung damage instantly. ALWAYS use Acetone or non-chlorinated cleaner for weld prep. Check product label before using any cleaner on surfaces you plan to weld.",
-    "severity": "Critical"
-  },
-  {
-    "category": "safety",
-    "title": "Chemical Storage & Container Reuse Dangers",
-    "content": "NEVER reuse containers that held hazardous materials. Fuel containers cannot hold water/oil (fuel residue = flammable vapors). Old oil jugs contaminate new oil. Used brake fluid absorbs moisture. Plastic bottles dissolve in solvents. One drop of oil in brake system ruins it (seals swell, brakes fail). Always label containers with contents + date. Store incompatible chemicals separately: flammables away from oxidizers (bleach), oils away from water-based cleaners. Keep secondary containment pads under all chemical storage. No food/drinks/smoking in work areas.",
-    "severity": "Critical"
-  },
-  {
-    "category": "safety",
-    "title": "Dangerous Chemical Combinations (NEVER MIX)",
-    "content": "Bleach + Ammonia = Chloramine gas (lethal). Bleach + Vinegar/Acid = Chlorine gas. Gasoline + Diesel = Wrong combustion. Motor Oil + Brake Fluid = Brake failure. Two-part Epoxy + Water = Emulsification, loss of strength. Acetone + Plastics = Melting. Antifreeze + Brake Fluid = Gelled sediment. Different coolant brands = Silicate precipitation (clogging). Used oil + Oxidizers = Spontaneous combustion risk. Always check SDS (Safety Data Sheet) for your chemicals. If mixing unknown chemicals, don't—dispose safely instead.",
-    "severity": "Critical"
-  },
-  {
-    "category": "safety",
-    "title": "Solvents & Materials: Know What Eats What",
-    "content": "ACETONE: Instantly melts ABS plastic (interior trim, sensors). BRAKE CLEANER: Swells and destroys rubber seals, o-rings, boots. GASOLINE: Dries rubber, causing cracking. OVEN CLEANER (Lye): Reacts violently with aluminum, dissolving it. USE INSTEAD: Silicone spray or soapy water on rubber. Isopropyl Alcohol or dedicated cleaner on plastics. Aluminum-safe degreasers (Simple Green Aircraft) on aluminum. Always test on scrap material first if unsure.",
-    "severity": "High"
-  },
-  {
-    "category": "safety",
-    "title": "Ventilation When Using Volatile Chemicals",
-    "content": "Gasoline & Diesel vapors: Explosive range 1.4-7.6% in air. Brake cleaner & Acetone: Settle in low areas (under racks), accumulate in lungs. Spray paint & Solvent fumes: Cross-ventilation minimum, fume hood preferred. Heavy vapors sink to floor—keep fans running during AND 15 min after use. No smoking, open flames, or hot surfaces within 20 feet of flammables. Tight workspaces (engine bay): Step back frequently for fresh air. If dizzy/nauseous, leave immediately and get fresh air.",
-    "severity": "High"
   },
   {
     "category": "tips",

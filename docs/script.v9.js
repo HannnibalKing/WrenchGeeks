@@ -297,6 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "data/kb_fabrication.json",
         "data/kb_hacks.json",
         "data/kb_ls_junkyard_guide.json",
+        "data/kb_maserati.json",
         "data/kb_mazda_miata.json",
         "data/kb_mechanical.json",
         "data/kb_nissan_z_g.json",
@@ -1054,6 +1055,9 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         }
 
+        const listId = `spare-list-${Date.now()}`;
+        const btnId = `spare-btn-${Date.now()}`;
+
         const div = document.createElement("div");
         div.className = "card";
         div.innerHTML = `
@@ -1063,10 +1067,32 @@ document.addEventListener("DOMContentLoaded", () => {
             ${factoryReminder}
             ${spareUsage}
             ${safetyWarning}
+            ${otherVehicles.length > 0 ? `
             <p style="margin-top:0.75rem;"><strong>Donor Spares (bolt pattern match):</strong> Always verify tire size, load rating, and pressure against your vehicle's door placard before using any spare.</p>
-            ${vehicleListHtml}
+            
+            <button id="${btnId}" class="btn-secondary" style="width:100%; margin-top:0.5rem; margin-bottom:0.5rem;">
+                Show ${otherVehicles.length} Compatible Donors
+            </button>
+            <div id="${listId}" class="hidden">
+                ${vehicleListHtml}
+            </div>` : `<p style="margin-top:0.75rem; color:var(--text-muted);"><em>No other compatible donors found in database.</em></p>`}
         `;
         partsList.appendChild(div);
+
+        const btn = div.querySelector(`#${btnId}`);
+        const list = div.querySelector(`#${listId}`);
+        if (btn && list) {
+            btn.addEventListener("click", () => {
+                const isHidden = list.classList.contains("hidden");
+                if (isHidden) {
+                    list.classList.remove("hidden");
+                    btn.textContent = "Hide Compatible Donors";
+                } else {
+                    list.classList.add("hidden");
+                    btn.textContent = `Show ${otherVehicles.length} Compatible Donors`;
+                }
+            });
+        }
     }
 
     function displayDonors(platformId, engineId, transmissionId, make, model) {

@@ -1,0 +1,23 @@
+[
+  {
+    "category": "ecosystem_guide",
+    "title": "The Maserati Tax Guide: Dodge Parts in Italian Suits",
+    "content": "Owning a modern Maserati (Ghibli, Quattroporte, Levante) doesn't have to bankrupt you. Since the Fiat-Chrysler merger, these cars share a massive amount of DNA with Dodge, Jeep, and Chrysler. Knowing which parts cross-reference can save you 80-90%.\n\n**The Golden Rule:** Never buy a part from a Maserati dealer without checking the part number on the sticker first. If it says 'Mopar', 'Valeo', or 'Bosch', you can buy it cheaper elsewhere.\n\n**Key Interchanges:**\n*   **Window Switches:** The master switch in the Ghibli/QP is physically identical to the Dodge Charger/Chrysler 300. The buttons in the GranTurismo are from the Alfa Romeo MiTo/Dodge Dart.\n*   **Infotainment:** The 'Maserati Touch Control' is just a reskinned Chrysler Uconnect 8.4 system. While the firmware is specific, the screen hardware is often shared.\n*   **Start Button:** The 'Keyless Go' button is a standard Jeep Grand Cherokee part.\n*   **HVAC Actuators:** The clicking noise in your dash? That's a $30 Dodge blend door actuator, not a $400 Maserati part.\n*   **Transmission:** The ZF 8HP is bulletproof, but Maserati charges a fortune for service. Buy the pan/filter kit for a BMW or Dodge (ZF 8HP70/50) for a fraction of the price.",
+    "severity": "Info",
+    "related_parts": ["maserati_window_switches", "maserati_start_button", "maserati_hvac_actuator", "zf_8hp_service_kit"]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Maserati F1 Transmission Pump Hack (4200 GT / Spyder)",
+    "content": "The 'Cambiocorsa' F1 transmission in the 4200 GT and Spyder is a Magneti Marelli system. The most common failure is the hydraulic pump motor burning out.\n\n**The Fix:**\n*   **Maserati Dealer:** Will sell you the entire pump assembly for ~$2,500.\n*   **The Hack:** The electric motor itself is identical to the one used in the **Alfa Romeo 156 Selespeed** and **Fiat Stilo Abarth**. You can buy just the motor for ~$300-400 and swap it onto your existing pump head. It's a direct fit and saves you thousands.",
+    "severity": "High",
+    "related_parts": ["maserati_f1_pump", "alfa_selespeed_motor"]
+  },
+  {
+    "category": "ecosystem_guide",
+    "title": "Levante Air Suspension Compressor",
+    "content": "The Maserati Levante rides on air suspension that is prone to compressor failure. The unit is made by WABCO.\n\n**Interchange:**\n*   This same WABCO compressor is used in the **Jeep Grand Cherokee (WK2)** and **Ram 1500**. \n*   Don't pay the Trident tax. Order the Jeep part or a WABCO aftermarket replacement for the Grand Cherokee.",
+    "severity": "Medium",
+    "related_parts": ["levante_air_compressor", "jeep_wk2_compressor"]
+  }
+]
